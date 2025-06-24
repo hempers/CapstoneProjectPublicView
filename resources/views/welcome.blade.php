@@ -13,6 +13,10 @@
         body {
             font-family: 'Montserrat', sans-serif;
         }
+        
+        .nav-link.active {
+            color: #09CA16 !important;
+        }
     </style>
 </head>
 
@@ -23,44 +27,195 @@
             <div class="flex items-center justify-center sm:justify-start w-full sm:w-auto mb-4 sm:mb-0">
                 <img src="/images/PCAppTrack.png" alt="CFIDP Logo" class="h-10 sm:h-12">
             </div>
-            
+
             <!-- Mobile menu button (hidden on larger screens) -->
             <div class="sm:hidden w-full flex justify-end mb-2">
                 <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
-            
+
             <!-- Navigation -->
-            <nav id="nav-links" class="hidden sm:flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-3 sm:space-y-0">
-                <a href="{{ url('/') }}" class="text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center"
-                    style="color: {{ Request::is('/') ? '#09CA16' : 'inherit' }}; transition: color 0.1s;"
-                    onmouseover="this.style.color='#09CA16'"
-                    onmouseout="this.style.color='{{ Request::is('/') ? '#09CA16' : 'inherit' }}'">Home</a>
-                <a href="{{ url('/track') }}" class="text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center"
-                    style="color: {{ Request::is('track') ? '#09CA16' : 'inherit' }}; transition: color 0.1s;"
-                    onmouseover="this.style.color='#09CA16'"
-                    onmouseout="this.style.color='{{ Request::is('track') ? '#09CA16' : 'inherit' }}'">Track
+            <nav id="nav-links"
+                class="hidden sm:flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-3 sm:space-y-0">
+                <a href="{{ url('/') }}" id="nav-home" class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center{{ Request::is('/') ? ' active' : '' }}"
+                    style="transition: color 0.1s;">Home</a>
+                <a href="#track-section" id="nav-track" class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center"
+                    style="transition: color 0.1s;">Track
                     Application</a>
-                <a href="{{ url('/about') }}" class="text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center"
-                    style="color: {{ Request::is('about') ? '#09CA16' : 'inherit' }}; transition: color 0.1s;"
-                    onmouseover="this.style.color='#09CA16'"
-                    onmouseout="this.style.color='{{ Request::is('about') ? '#09CA16' : 'inherit' }}'">About Us</a>
+                <a href="{{ url('/about') }}" id="nav-about" class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center{{ Request::is('about') ? ' active' : '' }}"
+                    style="transition: color 0.1s;">About Us</a>
             </nav>
         </div>
     </header>
-    
-    <!-- Mobile menu toggle script -->
+
+    <!-- Mobile menu toggle script and smooth scroll -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile menu toggle
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const navLinks = document.getElementById('nav-links');
-            
+
             if (mobileMenuButton && navLinks) {
-                mobileMenuButton.addEventListener('click', function() {
+                mobileMenuButton.addEventListener('click', function () {
                     navLinks.classList.toggle('hidden');
+                });
+            }
+            
+            // Handle navigation link active styles
+            const navItems = document.querySelectorAll('.nav-link');
+            
+            // Apply initial active styling based on classes
+            navItems.forEach(link => {
+                if (link.classList.contains('active')) {
+                    link.style.color = '#09CA16';
+                } else {
+                    link.style.color = 'inherit';
+                }
+                
+                // Add hover and mouseout events
+                link.addEventListener('mouseover', function() {
+                    this.style.color = '#09CA16';
+                });
+                
+                link.addEventListener('mouseout', function() {
+                    if (this.classList.contains('active')) {
+                        this.style.color = '#09CA16';
+                    } else {
+                        this.style.color = 'inherit';
+                    }
+                });
+            });
+            
+            // Special handling for anchor links (like Track Application)
+            const anchorLinks = document.querySelectorAll('a[href^="#"]');
+            
+            anchorLinks.forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    // Set all nav links to inactive
+                    navItems.forEach(link => {
+                        link.classList.remove('active');
+                        link.style.color = 'inherit';
+                    });
+                    
+                    // Set this link to active
+                    this.classList.add('active');
+                    this.style.color = '#09CA16';
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        // Close mobile menu if it's open
+                        if (navLinks && !navLinks.classList.contains('hidden') && window.innerWidth < 640) {
+                            navLinks.classList.add('hidden');
+                        }
+                        
+                        // Scroll to the target with smooth behavior
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70, // Offset for header height
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Make Track Application link active when scrolled to that section
+            const trackSection = document.getElementById('track-section');
+            const trackNavLink = document.getElementById('nav-track');
+            
+            if (trackSection && trackNavLink) {
+                window.addEventListener('scroll', function() {
+                    const trackSectionTop = trackSection.getBoundingClientRect().top;
+                    const trackSectionBottom = trackSection.getBoundingClientRect().bottom;
+                    
+                    // Check if track section is in viewport
+                    if (trackSectionTop < window.innerHeight/2 && trackSectionBottom > 0) {
+                        // Set all nav links to inactive
+                        navItems.forEach(link => {
+                            link.classList.remove('active');
+                            link.style.color = 'inherit';
+                        });
+                        
+                        // Set track link to active
+                        trackNavLink.classList.add('active');
+                        trackNavLink.style.color = '#09CA16';
+                    } else if (window.scrollY < 100) {
+                        // At the top of the page, activate the home link
+                        navItems.forEach(link => {
+                            link.classList.remove('active');
+                            link.style.color = 'inherit';
+                        });
+                        
+                        const homeLink = document.getElementById('nav-home');
+                        if (homeLink && window.location.pathname === '/' || window.location.pathname === '') {
+                            homeLink.classList.add('active');
+                            homeLink.style.color = '#09CA16';
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- Initialize active nav item on page load -->
+    <script>
+        // Run this after the page is fully loaded
+        window.addEventListener('load', function() {
+            // Set initial active state for navigation based on current URL
+            const currentPath = window.location.pathname;
+            const navItems = document.querySelectorAll('.nav-link');
+            let activeNavFound = false;
+            
+            // Check if we have a hash in the URL (for anchor links)
+            const currentHash = window.location.hash;
+            
+            navItems.forEach(link => {
+                // For regular route links
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                    link.style.color = '#09CA16';
+                    activeNavFound = true;
+                }
+                // For anchor links
+                else if (currentHash && link.getAttribute('href') === currentHash) {
+                    link.classList.add('active');
+                    link.style.color = '#09CA16';
+                    activeNavFound = true;
+                }
+            });
+            
+            // If no active link is found and we're on the home page, activate the home nav
+            if (!activeNavFound && (currentPath === '/' || currentPath === '')) {
+                const homeLink = document.getElementById('nav-home');
+                if (homeLink) {
+                    homeLink.classList.add('active');
+                    homeLink.style.color = '#09CA16';
+                }
+            }
+            
+            // Set up click handler for hero Track Application button
+            const trackBtn = document.querySelector('.track-btn');
+            if (trackBtn) {
+                trackBtn.addEventListener('click', function() {
+                    // Set all nav links to inactive
+                    navItems.forEach(link => {
+                        link.classList.remove('active');
+                        link.style.color = 'inherit';
+                    });
+                    
+                    // Set track link to active
+                    const trackNavLink = document.getElementById('nav-track');
+                    if (trackNavLink) {
+                        trackNavLink.classList.add('active');
+                        trackNavLink.style.color = '#09CA16';
+                    }
                 });
             }
         });
@@ -85,7 +240,7 @@
 
 
                 </p>
-                <a href="#" class="inline-block text-white font-bold px-6 py-2 rounded ml-16"
+                <a href="#track-section" class="track-btn inline-block text-white font-bold px-6 py-2 rounded ml-16"
                     style="background-color: #09CA16; transition: background-color 0.2s;"
                     onmouseover="this.style.backgroundColor='#079510'"
                     onmouseout="this.style.backgroundColor='#09CA16'">
@@ -101,25 +256,25 @@
     </section>
 
     <!-- Tracking Form Section -->
-    <section class="py-16 relative overflow-hidden" style="background-color: #f0ffe4;">
+    <section id="track-section" class="py-16 relative overflow-hidden" style="background-color:rgb(230, 253, 212);">
         <!-- Decorative leaf images for background -->
         <div class="absolute left-0 top-0 opacity-20">
-            <img src="/images/leaf-left.png" alt="" class="h-48">
+            <img src="/images/leaf-left.svg" alt="" class="h-100 mr-20">
         </div>
         <div class="absolute right-0 bottom-0 opacity-20">
-            <img src="/images/leaf-bottom" alt="" class="h-48">
+            <img src="/images/leaf-right.svg" alt="" class="h-100">
         </div>
 
         <div class="container mx-auto px-4 text-center relative z-10">
-            <h2 class="text-4xl font-bold mb-3" style="color: #09CA16;">CocoTrack Application Tracking</h2>
+            <h2 class="text-4xl font-bold mb-3" style="color: #09CA16;">PCAppTrack Application Tracking</h2>
             <p class="text-sm text-gray-600 mb-8 max-w-2xl mx-auto">
                 Ilagay lamang ang iyong natatanging tracking number sa itinakdang field o pumunta
                 sa seksyong 'Subaybayan ang Aking Panukala.'
             </p>
 
-            <div class="flex max-w-md mx-auto">
-                <input type="text" placeholder="Enter a Tracking Number"
-                    class="flex-grow px-4 py-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+            <div class="flex max-w-md mx-auto text-sm">
+                <input type="text" placeholder="Ilagay ang iyong reference ID"
+                    class="flex-grow px-4 py-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-xs placeholder:text-xs">
                 <button type="submit" class="px-6 py-2 rounded-r text-white font-medium"
                     style="background-color: #09CA16;">
                     Track
@@ -143,7 +298,7 @@
                 sustainable farming practices tulad ng replanting ng mga puno at intercropping
                 (hal. pagtatanim ng kape o cacao kasama ng niyog). Pinopondohan ang programang ito mula sa Coconut Levy
                 Trust Fund</p>
-            <img src="/images/header.svg" alt="CFIDP Group Photo" class="w-2/3 h-1/2 md:w-1/2">
+            <img src="/images/cfidpgp.png" alt="CFIDP Group Photo" class="w-2/3 h-1/2 md:w-1/2">
         </div>
     </section>
 
