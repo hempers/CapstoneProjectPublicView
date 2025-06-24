@@ -7,30 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CFIDP Proposal Requirements</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="bg-white text-gray-800">
     <!-- Header -->
     <header class="bg-white shadow sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center px-4 py-4">
-            <img src="/path-to-logo.png" alt="CFIDP Logo" class="h-10">
+            <img src="/images/PCAppTrack.png" alt="CFIDP Logo" class="h-10">
             <nav class="space-x-4">
-                <a href="#" class="text-green-600 hover:underline">Home</a>
-                <a href="#" class="text-green-600 hover:underline">Track Application</a>
-                <a href="#" class="hover:underline">About Us</a>
+                <a href="#" class="text-sm hover:underline" style="color: inherit; transition: color 0.1s;" onmouseover="this.style.color='#09CA16'" onmouseout="this.style.color='inherit'">Home</a>
+                <a href="#" class="text-sm hover:underline" style="color: inherit; transition: color 0.1s;" onmouseover="this.style.color='#09CA16'" onmouseout="this.style.color='inherit'">Track Application</a>
+                <a href="#" class="text-sm hover:underline" style="color: inherit; transition: color 0.1s;" onmouseover="this.style.color='#09CA16'" onmouseout="this.style.color='inherit'">About Us</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-green-50 py-12 text-center">
-        <h1 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4">Application <span class="text-green-600">Tracking
-                Monitoring System</span></h1>
-        <p class="max-w-xl mx-auto mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum nec
-            justo non lacinia. Duis finibus erat vel purus mattis, ac facilisis tortor porttitor.</p>
-        <a href="#" class="inline-block bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Track
-            Application</a>
-    </section>
+    <section class="bg-green-50 py-12">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <!-- Text Section (moved first for left-side position) -->
+        <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0">
+            <h1 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4 ml-5">
+                Application <span style="color: #09CA16;">Tracking Monitoring</span> System
+            </h1>
+            <p class="mb-6 ml-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum nec
+                justo non lacinia. Duis finibus erat vel purus mattis, ac facilisis tortor porttitor.
+            </p>
+            <a href="#" class="inline-block bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 ml-5">
+                Track Application
+            </a>
+        </div>
+
+        <!-- Image Section (now second for right-side position) -->
+        <div class="w-full md:w-1/2">
+            <div class="h-64 bg-gray-200 flex items-center justify-center">
+                <p class="text-gray-500">Hero Image Placeholder</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- CFIDP Introduction -->
     <section class="container mx-auto px-4 py-12">
