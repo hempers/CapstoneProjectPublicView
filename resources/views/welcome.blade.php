@@ -13,7 +13,7 @@
         body {
             font-family: 'Montserrat', sans-serif;
         }
-        
+
         .nav-link.active {
             color: #09CA16 !important;
         }
@@ -42,12 +42,15 @@
             <!-- Navigation -->
             <nav id="nav-links"
                 class="hidden sm:flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-3 sm:space-y-0">
-                <a href="{{ url('/') }}" id="nav-home" class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center{{ Request::is('/') ? ' active' : '' }}"
+                <a href="{{ url('/') }}" id="nav-home"
+                    class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center{{ Request::is('/') ? ' active' : '' }}"
                     style="transition: color 0.1s;">Home</a>
-                <a href="#track-section" id="nav-track" class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center"
+                <a href="#track-section" id="nav-track"
+                    class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center"
                     style="transition: color 0.1s;">Track
                     Application</a>
-                <a href="{{ url('/about') }}" id="nav-about" class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center{{ Request::is('about') ? ' active' : '' }}"
+                <a href="{{ url('/about') }}" id="nav-about"
+                    class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center{{ Request::is('about') ? ' active' : '' }}"
                     style="transition: color 0.1s;">About Us</a>
             </nav>
         </div>
@@ -65,10 +68,10 @@
                     navLinks.classList.toggle('hidden');
                 });
             }
-            
+
             // Handle navigation link active styles
             const navItems = document.querySelectorAll('.nav-link');
-            
+
             // Apply initial active styling based on classes
             navItems.forEach(link => {
                 if (link.classList.contains('active')) {
@@ -76,13 +79,13 @@
                 } else {
                     link.style.color = 'inherit';
                 }
-                
+
                 // Add hover and mouseout events
-                link.addEventListener('mouseover', function() {
+                link.addEventListener('mouseover', function () {
                     this.style.color = '#09CA16';
                 });
-                
-                link.addEventListener('mouseout', function() {
+
+                link.addEventListener('mouseout', function () {
                     if (this.classList.contains('active')) {
                         this.style.color = '#09CA16';
                     } else {
@@ -90,33 +93,33 @@
                     }
                 });
             });
-            
+
             // Special handling for anchor links (like Track Application)
             const anchorLinks = document.querySelectorAll('a[href^="#"]');
-            
+
             anchorLinks.forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
-                    
+
                     // Set all nav links to inactive
                     navItems.forEach(link => {
                         link.classList.remove('active');
                         link.style.color = 'inherit';
                     });
-                    
+
                     // Set this link to active
                     this.classList.add('active');
                     this.style.color = '#09CA16';
-                    
+
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
-                    
+
                     if (targetElement) {
                         // Close mobile menu if it's open
                         if (navLinks && !navLinks.classList.contains('hidden') && window.innerWidth < 640) {
                             navLinks.classList.add('hidden');
                         }
-                        
+
                         // Scroll to the target with smooth behavior
                         window.scrollTo({
                             top: targetElement.offsetTop - 70, // Offset for header height
@@ -125,24 +128,24 @@
                     }
                 });
             });
-            
+
             // Make Track Application link active when scrolled to that section
             const trackSection = document.getElementById('track-section');
             const trackNavLink = document.getElementById('nav-track');
-            
+
             if (trackSection && trackNavLink) {
-                window.addEventListener('scroll', function() {
+                window.addEventListener('scroll', function () {
                     const trackSectionTop = trackSection.getBoundingClientRect().top;
                     const trackSectionBottom = trackSection.getBoundingClientRect().bottom;
-                    
+
                     // Check if track section is in viewport
-                    if (trackSectionTop < window.innerHeight/2 && trackSectionBottom > 0) {
+                    if (trackSectionTop < window.innerHeight / 2 && trackSectionBottom > 0) {
                         // Set all nav links to inactive
                         navItems.forEach(link => {
                             link.classList.remove('active');
                             link.style.color = 'inherit';
                         });
-                        
+
                         // Set track link to active
                         trackNavLink.classList.add('active');
                         trackNavLink.style.color = '#09CA16';
@@ -152,7 +155,7 @@
                             link.classList.remove('active');
                             link.style.color = 'inherit';
                         });
-                        
+
                         const homeLink = document.getElementById('nav-home');
                         if (homeLink && window.location.pathname === '/' || window.location.pathname === '') {
                             homeLink.classList.add('active');
@@ -167,15 +170,15 @@
     <!-- Initialize active nav item on page load -->
     <script>
         // Run this after the page is fully loaded
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             // Set initial active state for navigation based on current URL
             const currentPath = window.location.pathname;
             const navItems = document.querySelectorAll('.nav-link');
             let activeNavFound = false;
-            
+
             // Check if we have a hash in the URL (for anchor links)
             const currentHash = window.location.hash;
-            
+
             navItems.forEach(link => {
                 // For regular route links
                 if (link.getAttribute('href') === currentPath) {
@@ -190,7 +193,7 @@
                     activeNavFound = true;
                 }
             });
-            
+
             // If no active link is found and we're on the home page, activate the home nav
             if (!activeNavFound && (currentPath === '/' || currentPath === '')) {
                 const homeLink = document.getElementById('nav-home');
@@ -199,17 +202,17 @@
                     homeLink.style.color = '#09CA16';
                 }
             }
-            
+
             // Set up click handler for hero Track Application button
             const trackBtn = document.querySelector('.track-btn');
             if (trackBtn) {
-                trackBtn.addEventListener('click', function() {
+                trackBtn.addEventListener('click', function () {
                     // Set all nav links to inactive
                     navItems.forEach(link => {
                         link.classList.remove('active');
                         link.style.color = 'inherit';
                     });
-                    
+
                     // Set track link to active
                     const trackNavLink = document.getElementById('nav-track');
                     if (trackNavLink) {
@@ -230,7 +233,8 @@
                     Application <span style="color: #09CA16;">Tracking Monitoring</span> System
                 </h1>
                 <p class="text-sm text-justify mb-6 ml-16 mr-9 mt-2 ">
-                    <span class="font-light text-gray-800">Ang <span class="font-bold text-green-800">PCAppTrack</span> ay isang online
+                    <span class="font-light text-gray-800">Ang <span class="font-bold text-green-800">PCAppTrack</span>
+                        ay isang online
                         na sistema ng programang CFIDP sa ilalim ng PCA Region V na tumutulong sa
                         pagsubaybay ng mga aplikasyon sa ilalim ng CFIDP. Gamit ang reference ID, mas madaling masilip
                         ang status
@@ -289,22 +293,22 @@
                 style="color: #09CA16;">CFIDP?</span></h2>
         <div class="flex flex-col md:flex-row items-center text-sm text-justify gap-9 ml-5 mr-4">
             <div class="flex-1">
-                <p>Ang Coconut Farmers and Industry Development Plan (CFIDP) 
-                    ay isang pangunahing programa ng pamahalaan sa ilalim ng 
-                    Republic Act No. 11524, na idinisenyo upang tugunan ang pangangailangan ng mga magniniyog at palaguin
-                    ang industriya ng niyog sa Pilipinas. Layunin ng CFIDP na 
+                <p>Ang Coconut Farmers and Industry Development Plan (CFIDP)
+                    ay isang pangunahing programa ng pamahalaan sa ilalim ng
+                    Republic Act No. 11524, na idinisenyo upang tugunan ang pangangailangan ng mga magniniyog at
+                    palaguin
+                    ang industriya ng niyog sa Pilipinas. Layunin ng CFIDP na
                     paunlarin ang kabuhayan ng 2.5 milyong magniniyog sa pamamagitan ng pagtaas ng kita, pagbibigay ng
                     seguro sa pananim, at pag-aaral para sa kanilang mga anak.
                     Kasama rin dito ang modernisasyon ng sektor sa tulong ng makabagong teknolohiya, pananaliksik, at
                     sustainable farming practices tulad ng replanting ng mga puno at intercropping
-                    (hal. pagtatanim ng kape o cacao kasama ng niyog). Pinopondohan ang programang ito mula sa Coconut Levy
+                    (hal. pagtatanim ng kape o cacao kasama ng niyog). Pinopondohan ang programang ito mula sa Coconut
+                    Levy
                     Trust Fund.</p>
-                <a href="https://ati2.da.gov.ph/ati-4b/content/sites/default/files/2022-12/faqs_coconut_farmers_and_industry_development_plan.pdf" 
-                   target="_blank" 
-                   class="inline-block mt-3 text-sm font-medium" 
-                   style="color: #09CA16; transition: color 0.2s;" 
-                   onmouseover="this.style.color='#079510'" 
-                   onmouseout="this.style.color='#09CA16'">
+                <a href="https://ati2.da.gov.ph/ati-4b/content/sites/default/files/2022-12/faqs_coconut_farmers_and_industry_development_plan.pdf"
+                    target="_blank" class="inline-block mt-3 text-sm font-medium"
+                    style="color: #09CA16; transition: color 0.2s;" onmouseover="this.style.color='#079510'"
+                    onmouseout="this.style.color='#09CA16'">
                     Read more <span class="ml-1">→</span>
                 </a>
             </div>
@@ -318,16 +322,21 @@
             <!-- Header styled like the image -->
             <div class="text-center mb-12">
                 <h3 class="text-3xl md:text-4xl font-bold text-green-900 mb-1">MGA KAILANGANG IHANDA</h3>
-                <p class="text-lg md:text-xl font-medium text-green-900 mb-6">NA MGA DOKUMENTO PARA SA <span style="font-weight: bold; color: #09CA16;">CFIDP PROPOSAL</span></p>
+                <p class="text-lg md:text-xl font-bold mb-6 text-green-900">NA MGA DOKUMENTO PARA SA <span
+                        style="color: #09CA16; font-weight: bold;">CFIDP PROPOSAL</span></p>
                 <div class="w-32 h-1 bg-green-600 mx-auto"></div>
             </div>
 
             <!-- Card Example -->
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-600">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-600">
                     <h4 class="text-lg font-bold text-green-800 mb-4 flex items-center">
-                        <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                            </path>
                         </svg>
                         Social Protection
                     </h4>
@@ -355,10 +364,14 @@
                     </ul>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-600">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-600">
                     <h4 class="text-lg font-bold text-green-800 mb-4 flex items-center">
-                        <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                            </path>
                         </svg>
                         Integrated Coconut Processing
                     </h4>
@@ -378,10 +391,13 @@
                     </ul>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-600">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-600">
                     <h4 class="text-lg font-bold text-green-800 mb-4 flex items-center">
-                        <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         Support Services
                     </h4>
@@ -405,38 +421,137 @@
                     </ul>
                 </div>
             </div>
-            
-            <!-- Optional: Add a subtle call-to-action -->
-            <div class="text-center mt-8">
-                <a href="#" class="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 transition-colors text-white font-medium rounded-lg shadow-md">
-                    Kumuha ng Karagdagang Impormasyon
-                </a>
-            </div>
-        </div>
-        
-        <!-- Decorative element at the bottom -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden h-12 -mb-1">
-            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0" class="text-white">
-                <polygon class="fill-current" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
         </div>
     </section>
 
-    <div class="container mx-auto px-4 text-center">
-        <p class="mb-4 text-lg font-semibold">IMPLEMENTING AGENCIES</p>
-        <div class="flex justify-center flex-wrap gap-6">
-            <img src="/path-to-logo1.png" alt="Agency Logo" class="h-10">
-            <img src="/path-to-logo2.png" alt="Agency Logo" class="h-10">
-            <img src="/path-to-logo3.png" alt="Agency Logo" class="h-10">
-            <img src="/path-to-logo4.png" alt="Agency Logo" class="h-10">
-            <img src="/path-to-logo5.png" alt="Agency Logo" class="h-10">
+    <section class="bg-white py-12">
+        <div class="text-center w-full">
+            <p class="mb-8 text-2xl font-bold text-green-900">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO</p>
+            
+            <!-- Marquee-style logo scroll container -->
+            <div class="logo-scroll-container overflow-hidden w-full relative">
+                <div class="logo-track flex items-center py-4 animated-scroll" id="logoTrack">
+                    <!-- First set of logos -->
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/DA.svg" alt="Agency Logo 1" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/ATI.svg" alt="Agency Logo 2" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/ATI.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/ATI.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/ATI.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate set for continuous scrolling -->
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/ATI.svg" alt="Agency Logo 1" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/DA.svg" alt="Agency Logo 2" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/DA.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/DA.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/ATI.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        
+        <style>
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);  /* Move half the width to create continuous loop */
+                }
+            }
+            
+            .animated-scroll {
+                animation: scroll 30s linear infinite;
+            }
+            
+            /* Pause animation on hover */
+            .logo-scroll-container:hover .animated-scroll {
+                animation-play-state: paused;
+            }
+            
+            /* Add subtle transition for smoother user experience */
+            .logo-item .rounded-full {
+                transition: all 0.1s ease;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            /* Subtle hover effects */
+            .logo-item:hover .rounded-full {
+                transform: scale(1.1);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+                border: 2px solid #ffffff;
+            }
+        </style>
+        
+        <!-- Script for responsive behavior -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const logoTrack = document.getElementById('logoTrack');
+                let scrollSpeed = 30; // Default scroll speed in seconds
+                
+                // Adjust animation speed based on screen width
+                function adjustScrollSpeed() {
+                    if (window.innerWidth < 640) { // Mobile
+                        scrollSpeed = 20;
+                    } else if (window.innerWidth < 1024) { // Tablet
+                        scrollSpeed = 25;
+                    } else { // Desktop
+                        scrollSpeed = 30;
+                    }
+                    
+                    logoTrack.style.animationDuration = `${scrollSpeed}s`;
+                }
+                
+                // Initial adjustment
+                adjustScrollSpeed();
+                
+                // Adjust on window resize
+                window.addEventListener('resize', adjustScrollSpeed);
+            });
+        </script>
+    </section>
     <!-- Implementing Agencies -->
-    <footer class="bg-green-600 text-white py-6 mt-12">
-        <p class="mt-4 text-xs">&copy; CocoTrack All Rights Reserved</p>
-
-    </footer>
+    <footer class="bg-green-600 text-white py-3 mt-12 flex justify-center items-center">
+        <p class="text-sm">&copy; 2025 PCAppTrack All Rights Reserved</p>
+    </footer>   
 </body>
 
 </html>
