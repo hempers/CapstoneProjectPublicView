@@ -434,54 +434,89 @@
                     <!-- First set of logos -->
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/DA.svg" alt="Agency Logo 1" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/DA.svg" alt="Agency Logo 1" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/ATI.svg" alt="Agency Logo 2" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/TESDA.svg" alt="Agency Logo 2" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/ATI.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/HVCDP.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/ATI.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/BAI.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/ATI.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/DTI.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                     
                     <!-- Duplicate set for continuous scrolling -->
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/ATI.svg" alt="Agency Logo 1" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/DOST.svg" alt="Agency Logo 1" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/DA.svg" alt="Agency Logo 2" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/CHED.svg" alt="Agency Logo 2" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/DA.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/CDA.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/DA.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/PCIC.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-10">
                         <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/ATI.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                            <img src="/images/IA logos/ATI.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/LBP.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/NDA.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DBP.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DA.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/TESDA.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/HVCDP.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-10">
+                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/BAI.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
                 </div>
