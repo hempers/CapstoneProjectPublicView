@@ -230,13 +230,13 @@
                     Application <span style="color: #09CA16;">Tracking Monitoring</span> System
                 </h1>
                 <p class="text-sm text-justify mb-6 ml-16 mr-9 mt-2 ">
-                    <span class="font-light text-gray-800">Ang <span class="font-bold">PCAppTrack</span> ay isang online
+                    <span class="font-light text-gray-800">Ang <span class="font-bold text-green-800">PCAppTrack</span> ay isang online
                         na sistema ng programang CFIDP sa ilalim ng PCA Region V na tumutulong sa
                         pagsubaybay ng mga aplikasyon sa ilalim ng CFIDP. Gamit ang reference ID, mas madaling masilip
                         ang status
                         ng aplikasyon — walang login na kailangan
 
-                        <br> <br>Mabilis. Organisado. Para sa mga magsasakang Pilipino.</span>
+                        <br> <br>Mabilis. Organisado. Para sa mga magniniyog na Pilipino.</span>
 
 
                 </p>
@@ -313,44 +313,112 @@
     </section>
 
     <!-- Requirements Section -->
-    <section class="bg-gray-50 py-12">
+    <section class="bg-green-50 py-16">
         <div class="container mx-auto px-4">
-            <h3 class="text-xl md:text-2xl font-bold text-center text-green-600 mb-8">MGA KAILANGANG IHANDA: MGA
-                DOKUMENTO PARA SA <span class="text-green-700">CFIDP PROPOSAL</span></h3>
+            <!-- Header styled like the image -->
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold text-green-900 mb-1">MGA KAILANGANG IHANDA</h3>
+                <p class="text-lg md:text-xl font-medium text-green-900 mb-6">NA MGA DOKUMENTO PARA SA <span style="font-weight: bold; color: #09CA16;">CFIDP PROPOSAL</span></p>
+                <div class="w-32 h-1 bg-green-600 mx-auto"></div>
+            </div>
 
             <!-- Card Example -->
-            <div class="grid gap-6">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="text-lg font-bold text-green-700 mb-4">Social Protection</h4>
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                        <li>Training and Farm Schools (TESDA, DA-ATI)</li>
-                        <li>Enrollment and NutriBun/Snack Choice</li>
-                        <li>Medical and Crop Tree (one-time)</li>
-                        <li>Documentary Requirements</li>
-                        <li>Operational Sample Steps</li>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-600">
+                    <h4 class="text-lg font-bold text-green-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                        Social Protection
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Training and Farm Schools <span class="text-gray-500">(TESDA, DA-ATI)</span></span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Enrollment and NutriBun/Snack Choice</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Medical and Crop Tree <span class="text-gray-500">(one-time)</span></span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Documentary Requirements</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Operational Sample Steps</span>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="text-lg font-bold text-green-700 mb-4">Integrated Coconut Processing and Downstream
-                        Products</h4>
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                        <li>Shared Processing Facilities (PhilMech)</li>
-                        <li>Loan for Eligible Recipients</li>
-                        <li>Proposal Format</li>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-600">
+                    <h4 class="text-lg font-bold text-green-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                        Integrated Coconut Processing
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Shared Processing Facilities <span class="text-gray-500">(PhilMech)</span></span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Loan for Eligible Recipients</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Proposal Format</span>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="text-lg font-bold text-green-700 mb-4">Support Services</h4>
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                        <li>Credit (LDP, DDP)</li>
-                        <li>Documentary Requirements</li>
-                        <li>Infrastructure (DPWH)</li>
-                        <li>Checklist and Other Forms</li>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-600">
+                    <h4 class="text-lg font-bold text-green-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Support Services
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Credit <span class="text-gray-500">(LDP, DDP)</span></span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Documentary Requirements</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Infrastructure <span class="text-gray-500">(DPWH)</span></span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Checklist and Other Forms</span>
+                        </li>
                     </ul>
                 </div>
             </div>
+            
+            <!-- Optional: Add a subtle call-to-action -->
+            <div class="text-center mt-8">
+                <a href="#" class="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 transition-colors text-white font-medium rounded-lg shadow-md">
+                    Kumuha ng Karagdagang Impormasyon
+                </a>
+            </div>
+        </div>
+        
+        <!-- Decorative element at the bottom -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden h-12 -mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0" class="text-white">
+                <polygon class="fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
         </div>
     </section>
 
