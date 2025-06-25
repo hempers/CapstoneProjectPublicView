@@ -425,7 +425,8 @@
 
     <section class="bg-white py-12">
         <div class="text-center w-full">
-            <p class="mb-8 text-2xl font-bold text-green-900">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO</p>
+            <h1 class="mb-0 text-3xl font-extrabold text-green-900 mb-12">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO</h1>
+            
 
             <!-- Truly seamless, infinite scroll carousel -->
             <div class="logo-scroll-container overflow-hidden w-full relative">
@@ -434,7 +435,7 @@
                     <!-- Original set of logos -->
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DA.svg" alt="DA Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -442,39 +443,33 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                         <p>Technical Education and Skills Development Authority</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md">
+                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo">
                         </div>
                         <p>High-Value Crops Development Program</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md">
+                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo">
                         </div>
                         <p>Bureau of Animal Industry</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md">
+                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo">
                         </div>
                         <p>Department of Trade and Industry</p>
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -482,7 +477,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -490,7 +485,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -498,7 +493,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -506,7 +501,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -514,7 +509,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -522,7 +517,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -530,7 +525,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -538,7 +533,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -546,7 +541,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -559,7 +554,7 @@
                     <!-- Duplicate set of logos -->
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DA.svg" alt="DA Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -567,7 +562,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -575,7 +570,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -583,7 +578,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -591,7 +586,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -599,7 +594,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -607,7 +602,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -615,7 +610,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -623,7 +618,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -631,7 +626,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -639,7 +634,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -647,7 +642,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -655,7 +650,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -663,7 +658,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -671,7 +666,7 @@
                     </div>
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
@@ -738,6 +733,7 @@
                 align-items: center;
                 width: 180px;
                 /* Give consistent width for all items */
+                margin: 0 20px;
             }
 
             /* Logo name styling */
@@ -745,9 +741,9 @@
                 margin-top: 12px;
                 font-size: 0.7rem;
                 text-align: center;
-                color:rgb(2, 54, 1);
+                color: rgb(2, 54, 1);
                 /* Gray-700 for good readability */
-                max-width: 120px;
+                max-width: 15   0px;
                 line-height: 1.2;
                 font-weight: 500;
                 height: auto;
@@ -759,6 +755,25 @@
                 transition: all 0.3s ease;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                 border: 2px solid transparent;
+                width: 96px;
+                height: 96px;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            /* Standardized logo image styling */
+            .logo-circle img {
+                max-width: 70%;
+                max-height: 70%;
+                width: auto;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+                vertical-align: middle;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
 
             .logo-circle:hover {
@@ -783,6 +798,56 @@
         <!-- Script for responsive behavior -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
+                // Standardize all logo elements structure and styling
+                function standardizeLogoElements() {
+                    // Get all logo circles
+                    const logoCircles = document.querySelectorAll('.logo-circle');
+                    
+                    // For each logo circle
+                    logoCircles.forEach(circle => {
+                        // Remove any extra classes
+                        circle.className = 'logo-circle rounded-full bg-green-100 p-3 shadow-md';
+                        
+                        // Ensure proper styling
+                        circle.style.width = '96px';
+                        circle.style.height = '96px';
+                        circle.style.position = 'relative';
+                        circle.style.overflow = 'hidden';
+                        
+                        // Get the image inside
+                        const img = circle.querySelector('img');
+                        if (img) {
+                            // Remove any classes from the image
+                            img.className = '';
+                            
+                            // Ensure proper styling
+                            img.style.maxWidth = '70%';
+                            img.style.maxHeight = '70%';
+                            img.style.position = 'absolute';
+                            img.style.top = '50%';
+                            img.style.left = '50%';
+                            img.style.transform = 'translate(-50%, -50%)';
+                            
+                            // Special case for TESDA logo which appears to be positioned differently
+                            if (img.alt === 'TESDA Logo') {
+                                img.style.maxHeight = '60%';
+                            }
+                        }
+                    });
+                    
+                    // Get all logo items
+                    const logoItems = document.querySelectorAll('.logo-item');
+                    
+                    // For each logo item
+                    logoItems.forEach(item => {
+                        // Remove any extra classes
+                        item.className = 'logo-item';
+                        item.style.margin = '0 20px';
+                    });
+                }
+                
+                // Run the standardization on page load
+                standardizeLogoElements();
                 const logoTracks = document.querySelectorAll('.logo-track');
                 const logoContainer = document.querySelector('.logo-scroll-container');
                 let scrollSpeed = 80; // Base scroll speed in seconds - slowed down for better readability
@@ -838,12 +903,36 @@
                     observer.observe(track1);
                 }
 
+                // Function to ensure consistent vertical alignment of all logos
+                function enforceLogoAlignment() {
+                    const allLogoImages = document.querySelectorAll('.logo-circle img');
+                    
+                    allLogoImages.forEach(img => {
+                        // Set specific styles for TESDA logo (if needed)
+                        if (img.alt === "TESDA Logo") {
+                            img.style.maxHeight = '60%'; // Slightly smaller to match others
+                        }
+                        
+                        // Ensure all logos are properly centered
+                        setTimeout(() => {
+                            img.style.position = 'absolute';
+                            img.style.top = '50%';
+                            img.style.left = '50%';
+                            img.style.transform = 'translate(-50%, -50%)';
+                        }, 100);
+                    });
+                }
+
                 // Initial adjustments
                 adjustScrollSpeed();
                 setupSeamlessScrolling();
+                enforceLogoAlignment();
 
                 // Adjust on window resize
-                window.addEventListener('resize', adjustScrollSpeed);
+                window.addEventListener('resize', () => {
+                    adjustScrollSpeed();
+                    enforceLogoAlignment();
+                });
             });
         </script>
     </section>
