@@ -552,128 +552,8 @@
                         </div>
                         <p>PhilMech</p>
                     </div>
-                     <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DA.svg" alt="DA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Agriculture</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Technical Education and Skills Development Authority</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>High-Value Crops Development Program</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Bureau of Animal Industry</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Trade and Industry</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Science and Technology</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Commission on Higher Education</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Cooperative Development Authority</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Philippine Crop Insurance Corporation</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Agricultural Training Institute</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Land Bank of the Philippines</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>National Dairy Authority</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Development Bank of the Philippines</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Public Works and Highways</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>PhilMech</p>
-                    </div>
                 </div>
-                
+
                 <!-- Second logo track (duplicate for seamless effect) -->
                 <div class="logo-track flex items-center py-4" id="logoTrack2">
                     <!-- Duplicate set of logos -->
@@ -821,28 +701,32 @@
             /* Creating the seamless effect with two identical tracks */
             #logoTrack1 {
                 animation: scroll 80s linear infinite;
+                animation-play-state: running;
             }
 
             #logoTrack2 {
                 animation: scroll2 80s linear infinite;
+                animation-play-state: running;
             }
 
             /* Animations for the two tracks */
             @keyframes scroll {
-                from {
+                0% {
                     transform: translateX(0);
                 }
-                to {
+
+                100% {
                     transform: translateX(-100%);
                 }
             }
 
             @keyframes scroll2 {
-                from {
-                    transform: translateX(100%);
-                }
-                to {
+                0% {
                     transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
                 }
             }
 
@@ -853,21 +737,20 @@
                 flex-direction: column;
                 align-items: center;
                 width: 180px;
-                /* Increased width to accommodate full text */
+                /* Give consistent width for all items */
             }
 
             /* Logo name styling */
             .logo-item p {
-                margin-top: 6px;
+                margin-top: 12px;
                 font-size: 0.7rem;
                 text-align: center;
-                color: #374151;
+                color:rgb(2, 54, 1);
                 /* Gray-700 for good readability */
-                max-width: 140px;
+                max-width: 120px;
                 line-height: 1.2;
                 font-weight: 500;
                 height: auto;
-                /* Allow full text display */
                 padding-bottom: 5px;
             }
 
@@ -881,8 +764,7 @@
             .logo-circle:hover {
                 transform: scale(1.1);
                 box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-                border: 2px solid #ffffff;
-                background-color: #10B981;
+                background-color: rgb(195, 238, 181);
                 /* Brighter green on hover */
             }
 
@@ -892,24 +774,9 @@
             }
 
             /* Pause animation on hover */
-            .logo-scroll-container:hover .logo-track {
-                animation-play-state: paused;
-            }
-
-            /* Additional responsive adjustments */
-            @media (max-width: 640px) {
-                .logo-item {
-                    width: 160px;
-                    margin: 0 10px;
-                }
-                .logo-circle {
-                    height: 22px;
-                    width: 22px;
-                }
-                .logo-item p {
-                    font-size: 0.65rem;
-                    max-width: 140px;
-                }
+            .logo-scroll-container:hover #logoTrack1,
+            .logo-scroll-container:hover #logoTrack2 {
+                animation-play-state: paused !important;
             }
         </style>
 
@@ -917,50 +784,66 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const logoTracks = document.querySelectorAll('.logo-track');
-                let scrollSpeed = 40; // Base scroll speed in seconds
+                const logoContainer = document.querySelector('.logo-scroll-container');
+                let scrollSpeed = 80; // Base scroll speed in seconds - slowed down for better readability
+
+                // Add specific hover event handlers
+                if (logoContainer) {
+                    logoContainer.addEventListener('mouseenter', function () {
+                        logoTracks.forEach(track => {
+                            track.style.animationPlayState = 'paused';
+                        });
+                    });
+
+                    logoContainer.addEventListener('mouseleave', function () {
+                        logoTracks.forEach(track => {
+                            track.style.animationPlayState = 'running';
+                        });
+                    });
+                }
 
                 // Function to adjust animation speed based on screen size
                 function adjustScrollSpeed() {
                     if (window.innerWidth < 640) { // Mobile
-                        scrollSpeed = 50;
+                        scrollSpeed = 60;
                     } else if (window.innerWidth < 1024) { // Tablet
-                        scrollSpeed = 65;
+                        scrollSpeed = 70;
                     } else { // Desktop
                         scrollSpeed = 80;
                     }
 
-                    // Apply to both tracks with appropriate animation
-                    document.getElementById('logoTrack1').style.animationDuration = `${scrollSpeed}s`;
-                    document.getElementById('logoTrack2').style.animationDuration = `${scrollSpeed}s`;
+                    // Apply to both tracks
+                    logoTracks.forEach(track => {
+                        track.style.animationDuration = `${scrollSpeed}s`;
+                    });
                 }
 
-                // Ensure that both tracks have equal width items
-                function equalizeTrackContents() {
+                // Setup truly seamless scrolling
+                function setupSeamlessScrolling() {
+                    // Calculate total width needed
                     const track1 = document.getElementById('logoTrack1');
                     const track2 = document.getElementById('logoTrack2');
-                    
-                    // Make sure both tracks have the same width
-                    const logoItems = track1.querySelectorAll('.logo-item');
-                    const totalWidth = Array.from(logoItems).reduce((sum, item) => {
-                        return sum + item.offsetWidth;
-                    }, 0);
-                    
-                    // Set minimum width to ensure smooth scrolling
-                    track1.style.minWidth = `${totalWidth}px`;
-                    track2.style.minWidth = `${totalWidth}px`;
+
+                    // Make sure the second track starts exactly where the first one ends
+                    const observer = new ResizeObserver(entries => {
+                        for (let entry of entries) {
+                            if (entry.target === track1) {
+                                // Ensure track2 positioning is correct
+                                track2.style.left = '100%';
+                            }
+                        }
+                    });
+
+                    // Start observing for changes
+                    observer.observe(track1);
                 }
 
                 // Initial adjustments
                 adjustScrollSpeed();
-                
-                // Run equalization after a slight delay to ensure all elements are rendered
-                setTimeout(equalizeTrackContents, 500);
+                setupSeamlessScrolling();
 
                 // Adjust on window resize
-                window.addEventListener('resize', function() {
-                    adjustScrollSpeed();
-                    equalizeTrackContents();
-                });
+                window.addEventListener('resize', adjustScrollSpeed);
             });
         </script>
     </section>
