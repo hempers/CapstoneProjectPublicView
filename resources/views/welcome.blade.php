@@ -284,21 +284,31 @@
     </section>
 
     <!-- CFIDP Introduction -->
-    <section class="container mx-auto px-4 py-12">
-        <h2 class="text-xl md:text-3xl font-bold text-green-900 mb-4 ml-5">ANO ANG <span
-                class="text-green-200">CFIDP?</span></h2>
-        <div class="flex flex-col md:flex-row items-center text-justify gap-8 ml-5 mr-5">
-            <p class="flex-1">Ang Coconut Farmers and Industry Development Plan (CFIDP) 
-                ay isang pangunahing programa ng pamahalaan sa ilalim ng 
-                Republic Act No. 11524, na idinisenyo upang tugunan ang pangangailangan ng mga magniniyog at palaguin
-                ang industriya ng niyog sa Pilipinas. Layunin ng CFIDP na 
-                paunlarin ang kabuhayan ng 2.5 milyong magniniyog sa pamamagitan ng pagtaas ng kita, pagbibigay ng
-                seguro sa pananim, at pag-aaral para sa kanilang mga anak.
-                Kasama rin dito ang modernisasyon ng sektor sa tulong ng makabagong teknolohiya, pananaliksik, at
-                sustainable farming practices tulad ng replanting ng mga puno at intercropping
-                (hal. pagtatanim ng kape o cacao kasama ng niyog). Pinopondohan ang programang ito mula sa Coconut Levy
-                Trust Fund</p>
-            <img src="/images/cfidpgp.png" alt="CFIDP Group Photo" class="w-2/3 h-1/2 md:w-1/2">
+    <section class="container mx-auto px-10 py-20">
+        <h2 class="text-xl md:text-3xl font-bold text-green-900 mb-1 ml-5">ANO ANG <span
+                style="color: #09CA16;">CFIDP?</span></h2>
+        <div class="flex flex-col md:flex-row items-center text-sm text-justify gap-9 ml-5 mr-4">
+            <div class="flex-1">
+                <p>Ang Coconut Farmers and Industry Development Plan (CFIDP) 
+                    ay isang pangunahing programa ng pamahalaan sa ilalim ng 
+                    Republic Act No. 11524, na idinisenyo upang tugunan ang pangangailangan ng mga magniniyog at palaguin
+                    ang industriya ng niyog sa Pilipinas. Layunin ng CFIDP na 
+                    paunlarin ang kabuhayan ng 2.5 milyong magniniyog sa pamamagitan ng pagtaas ng kita, pagbibigay ng
+                    seguro sa pananim, at pag-aaral para sa kanilang mga anak.
+                    Kasama rin dito ang modernisasyon ng sektor sa tulong ng makabagong teknolohiya, pananaliksik, at
+                    sustainable farming practices tulad ng replanting ng mga puno at intercropping
+                    (hal. pagtatanim ng kape o cacao kasama ng niyog). Pinopondohan ang programang ito mula sa Coconut Levy
+                    Trust Fund.</p>
+                <a href="https://ati2.da.gov.ph/ati-4b/content/sites/default/files/2022-12/faqs_coconut_farmers_and_industry_development_plan.pdf" 
+                   target="_blank" 
+                   class="inline-block mt-3 text-sm font-medium" 
+                   style="color: #09CA16; transition: color 0.2s;" 
+                   onmouseover="this.style.color='#079510'" 
+                   onmouseout="this.style.color='#09CA16'">
+                    Read more <span class="ml-1">→</span>
+                </a>
+            </div>
+            <img src="/images/cfidpgp.png" alt="CFIDP Group Photo" class="w-3/5 h-auto md:w-2/5">
         </div>
     </section>
 
