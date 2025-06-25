@@ -426,7 +426,7 @@
     <section class="bg-white py-12">
         <div class="text-center w-full">
             <h1 class="mb-0 text-3xl font-extrabold text-green-900 mb-12">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO</h1>
-            
+
 
             <!-- Truly seamless, infinite scroll carousel -->
             <div class="logo-scroll-container overflow-hidden w-full relative">
@@ -743,7 +743,7 @@
                 text-align: center;
                 color: rgb(2, 54, 1);
                 /* Gray-700 for good readability */
-                max-width: 15   0px;
+                max-width: 15 0px;
                 line-height: 1.2;
                 font-weight: 500;
                 height: auto;
@@ -760,7 +760,7 @@
                 position: relative;
                 overflow: hidden;
             }
-            
+
             /* Standardized logo image styling */
             .logo-circle img {
                 max-width: 70%;
@@ -802,24 +802,24 @@
                 function standardizeLogoElements() {
                     // Get all logo circles
                     const logoCircles = document.querySelectorAll('.logo-circle');
-                    
+
                     // For each logo circle
                     logoCircles.forEach(circle => {
                         // Remove any extra classes
                         circle.className = 'logo-circle rounded-full bg-green-100 p-3 shadow-md';
-                        
+
                         // Ensure proper styling
                         circle.style.width = '96px';
                         circle.style.height = '96px';
                         circle.style.position = 'relative';
                         circle.style.overflow = 'hidden';
-                        
+
                         // Get the image inside
                         const img = circle.querySelector('img');
                         if (img) {
                             // Remove any classes from the image
                             img.className = '';
-                            
+
                             // Ensure proper styling
                             img.style.maxWidth = '70%';
                             img.style.maxHeight = '70%';
@@ -827,17 +827,17 @@
                             img.style.top = '50%';
                             img.style.left = '50%';
                             img.style.transform = 'translate(-50%, -50%)';
-                            
+
                             // Special case for TESDA logo which appears to be positioned differently
                             if (img.alt === 'TESDA Logo') {
                                 img.style.maxHeight = '60%';
                             }
                         }
                     });
-                    
+
                     // Get all logo items
                     const logoItems = document.querySelectorAll('.logo-item');
-                    
+
                     // For each logo item
                     logoItems.forEach(item => {
                         // Remove any extra classes
@@ -845,7 +845,7 @@
                         item.style.margin = '0 20px';
                     });
                 }
-                
+
                 // Run the standardization on page load
                 standardizeLogoElements();
                 const logoTracks = document.querySelectorAll('.logo-track');
@@ -906,13 +906,13 @@
                 // Function to ensure consistent vertical alignment of all logos
                 function enforceLogoAlignment() {
                     const allLogoImages = document.querySelectorAll('.logo-circle img');
-                    
+
                     allLogoImages.forEach(img => {
                         // Set specific styles for TESDA logo (if needed)
                         if (img.alt === "TESDA Logo") {
                             img.style.maxHeight = '60%'; // Slightly smaller to match others
                         }
-                        
+
                         // Ensure all logos are properly centered
                         setTimeout(() => {
                             img.style.position = 'absolute';
