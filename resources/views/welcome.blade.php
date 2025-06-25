@@ -272,8 +272,7 @@
         <div class="container mx-auto px-4 text-center relative z-10">
             <h2 class="text-4xl font-bold mb-3" style="color: #09CA16;">PCAppTrack Application Tracking</h2>
             <p class="text-sm text-gray-600 mb-8 max-w-2xl mx-auto">
-                Ilagay lamang ang iyong natatanging tracking number sa itinakdang field o pumunta
-                sa seksyong 'Subaybayan ang Aking Panukala.'
+                Ilagay lamang ang iyong natatanging Reference ID sa itinakdang field.
             </p>
 
             <div class="flex max-w-md mx-auto text-sm">
@@ -428,155 +427,254 @@
         <div class="text-center w-full">
             <p class="mb-8 text-2xl font-bold text-green-900">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO</p>
             
-            <!-- Marquee-style logo scroll container -->
+            <!-- Truly seamless, infinite scroll carousel -->
             <div class="logo-scroll-container overflow-hidden w-full relative">
-                <div class="logo-track flex items-center py-4 animated-scroll" id="logoTrack">
-                    <!-- First set of logos -->
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DA.svg" alt="Agency Logo 1" class="max-h-20 max-w-20 object-contain m-auto">
+                <!-- First logo track -->
+                <div class="logo-track flex items-center py-4" id="logoTrack1">
+                    <!-- Original set of logos -->
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DA.svg" alt="DA Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/TESDA.svg" alt="Agency Logo 2" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/HVCDP.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/BAI.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DTI.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    
-                    <!-- Duplicate set for continuous scrolling -->
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DOST.svg" alt="Agency Logo 1" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/CHED.svg" alt="Agency Logo 2" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/CDA.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/PCIC.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/ATI.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/LBP.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/NDA.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DBP.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DA.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DA.svg" alt="DA Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/TESDA.svg" alt="Agency Logo 5" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/HVCDP.svg" alt="Agency Logo 3" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-10">
-                        <div class="rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/BAI.svg" alt="Agency Logo 4" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo" class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                     </div>
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                    <div class="logo-item flex-shrink-0 mx-6">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
         
         <style>
-            @keyframes scroll {
-                0% {
-                    transform: translateX(0);
-                }
-                100% {
-                    transform: translateX(-50%);  /* Move half the width to create continuous loop */
-                }
+            /* Seamless carousel container */
+            .logo-scroll-container {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
             }
             
-            .animated-scroll {
-                animation: scroll 30s linear infinite;
+            /* Logo tracks */
+            .logo-track {
+                display: flex;
+                animation: scroll 40s linear infinite;
+                will-change: transform;
+            }
+            
+            /* Creating the seamless effect with two identical tracks */
+            #logoTrack1 {
+                animation: scroll 40s linear infinite;
+            }
+            
+            #logoTrack2 {
+                animation: scroll2 40s linear infinite;
+                position: absolute;
+                top: 0;
+                left: 100%;
+            }
+            
+            /* Animations for the two tracks */
+            @keyframes scroll {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-100%); }
+            }
+            
+            @keyframes scroll2 {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-100%); }
+            }
+            
+            /* Logo item styling */
+            .logo-item {
+                flex-shrink: 0;
+            }
+            
+            /* Hover effects and styling */
+            .logo-circle {
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border: 2px solid transparent;
+            }
+            
+            .logo-circle:hover {
+                transform: scale(1.1);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+                border: 2px solid #ffffff;
+                background-color: #10B981; /* Brighter green on hover */
             }
             
             /* Pause animation on hover */
-            .logo-scroll-container:hover .animated-scroll {
+            .logo-scroll-container:hover .logo-track {
                 animation-play-state: paused;
-            }
-            
-            /* Add subtle transition for smoother user experience */
-            .logo-item .rounded-full {
-                transition: all 0.1s ease;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            }
-            
-            /* Subtle hover effects */
-            .logo-item:hover .rounded-full {
-                transform: scale(1.1);
-                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-                border: 2px solid #ffffff;
             }
         </style>
         
         <!-- Script for responsive behavior -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                const logoTrack = document.getElementById('logoTrack');
-                let scrollSpeed = 30; // Default scroll speed in seconds
+                const logoTracks = document.querySelectorAll('.logo-track');
+                let scrollSpeed = 40; // Base scroll speed in seconds
                 
-                // Adjust animation speed based on screen width
+                // Function to adjust animation speed based on screen size
                 function adjustScrollSpeed() {
                     if (window.innerWidth < 640) { // Mobile
-                        scrollSpeed = 20;
-                    } else if (window.innerWidth < 1024) { // Tablet
                         scrollSpeed = 25;
-                    } else { // Desktop
+                    } else if (window.innerWidth < 1024) { // Tablet
                         scrollSpeed = 30;
+                    } else { // Desktop
+                        scrollSpeed = 40;
                     }
                     
-                    logoTrack.style.animationDuration = `${scrollSpeed}s`;
+                    // Apply to both tracks
+                    logoTracks.forEach(track => {
+                        track.style.animationDuration = `${scrollSpeed}s`;
+                    });
                 }
                 
-                // Initial adjustment
+                // Setup truly seamless scrolling
+                function setupSeamlessScrolling() {
+                    // Calculate total width needed
+                    const track1 = document.getElementById('logoTrack1');
+                    const track2 = document.getElementById('logoTrack2');
+                    
+                    // Make sure the second track starts exactly where the first one ends
+                    const observer = new ResizeObserver(entries => {
+                        for (let entry of entries) {
+                            if (entry.target === track1) {
+                                // Ensure track2 positioning is correct
+                                track2.style.left = '100%';
+                            }
+                        }
+                    });
+                    
+                    // Start observing for changes
+                    observer.observe(track1);
+                }
+                
+                // Initial adjustments
                 adjustScrollSpeed();
+                setupSeamlessScrolling();
                 
                 // Adjust on window resize
                 window.addEventListener('resize', adjustScrollSpeed);
