@@ -426,265 +426,548 @@
     <section class="bg-white py-12">
         <div class="text-center w-full">
             <p class="mb-8 text-2xl font-bold text-green-900">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO</p>
-            
+
             <!-- Truly seamless, infinite scroll carousel -->
             <div class="logo-scroll-container overflow-hidden w-full relative">
                 <!-- First logo track -->
                 <div class="logo-track flex items-center py-4" id="logoTrack1">
                     <!-- Original set of logos -->
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DA.svg" alt="DA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DA.svg" alt="DA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Department of Agriculture</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Technical Education and Skills Development Authority</p>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>High-Value Crops Development Program</p>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Bureau of Animal Industry</p>
                     </div>
                     <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Department of Trade and Industry</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Department of Science and Technology</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Commission on Higher Education</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Cooperative Development Authority</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Philippine Crop Insurance Corporation</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Agricultural Training Institute</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Land Bank of the Philippines</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>National Dairy Authority</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Development Bank of the Philippines</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Department of Public Works and Highways</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DA.svg" alt="DA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>PhilMech</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                     <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DA.svg" alt="DA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Department of Agriculture</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Technical Education and Skills Development Authority</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>High-Value Crops Development Program</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Bureau of Animal Industry</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Department of Trade and Industry</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Department of Science and Technology</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Commission on Higher Education</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Cooperative Development Authority</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Philippine Crop Insurance Corporation</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Agricultural Training Institute</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>Land Bank of the Philippines</p>
                     </div>
-                    <div class="logo-item flex-shrink-0 mx-6">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
-                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo" class="max-h-20 max-w-20 object-contain m-auto">
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
+                        <p>National Dairy Authority</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Development Bank of the Philippines</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Department of Public Works and Highways</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>PhilMech</p>
                     </div>
                 </div>
+                
+                <!-- Second logo track (duplicate for seamless effect) -->
+                <div class="logo-track flex items-center py-4" id="logoTrack2">
+                    <!-- Duplicate set of logos -->
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DA.svg" alt="DA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Department of Agriculture</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Technical Education and Skills Development Authority</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>High-Value Crops Development Program</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Bureau of Animal Industry</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Department of Trade and Industry</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Department of Science and Technology</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Commission on Higher Education</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Cooperative Development Authority</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Philippine Crop Insurance Corporation</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Agricultural Training Institute</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Land Bank of the Philippines</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>National Dairy Authority</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Development Bank of the Philippines</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>Department of Public Works and Highways</p>
+                    </div>
+                    <div class="logo-item">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-24 w-24">
+                            <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
+                        </div>
+                        <p>PhilMech</p>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
         <style>
             /* Seamless carousel container */
             .logo-scroll-container {
                 position: relative;
                 width: 100%;
                 overflow: hidden;
+                display: flex;
             }
-            
+
             /* Logo tracks */
             .logo-track {
                 display: flex;
-                animation: scroll 40s linear infinite;
+                flex-shrink: 0;
+                min-width: 100%;
                 will-change: transform;
             }
-            
+
             /* Creating the seamless effect with two identical tracks */
             #logoTrack1 {
-                animation: scroll 40s linear infinite;
+                animation: scroll 80s linear infinite;
             }
-            
+
             #logoTrack2 {
-                animation: scroll2 40s linear infinite;
-                position: absolute;
-                top: 0;
-                left: 100%;
+                animation: scroll2 80s linear infinite;
             }
-            
+
             /* Animations for the two tracks */
             @keyframes scroll {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-100%); }
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
             }
-            
+
             @keyframes scroll2 {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-100%); }
+                from {
+                    transform: translateX(100%);
+                }
+                to {
+                    transform: translateX(0);
+                }
             }
-            
+
             /* Logo item styling */
             .logo-item {
                 flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 180px;
+                /* Increased width to accommodate full text */
             }
-            
+
+            /* Logo name styling */
+            .logo-item p {
+                margin-top: 6px;
+                font-size: 0.7rem;
+                text-align: center;
+                color: #374151;
+                /* Gray-700 for good readability */
+                max-width: 140px;
+                line-height: 1.2;
+                font-weight: 500;
+                height: auto;
+                /* Allow full text display */
+                padding-bottom: 5px;
+            }
+
             /* Hover effects and styling */
             .logo-circle {
                 transition: all 0.3s ease;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                 border: 2px solid transparent;
             }
-            
+
             .logo-circle:hover {
                 transform: scale(1.1);
                 box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
                 border: 2px solid #ffffff;
-                background-color: #10B981; /* Brighter green on hover */
+                background-color: #10B981;
+                /* Brighter green on hover */
             }
-            
+
+            /* Adjust spacing between logo items */
+            .logo-item {
+                margin: 0 20px;
+            }
+
             /* Pause animation on hover */
             .logo-scroll-container:hover .logo-track {
                 animation-play-state: paused;
             }
+
+            /* Additional responsive adjustments */
+            @media (max-width: 640px) {
+                .logo-item {
+                    width: 160px;
+                    margin: 0 10px;
+                }
+                .logo-circle {
+                    height: 22px;
+                    width: 22px;
+                }
+                .logo-item p {
+                    font-size: 0.65rem;
+                    max-width: 140px;
+                }
+            }
         </style>
-        
+
         <!-- Script for responsive behavior -->
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 const logoTracks = document.querySelectorAll('.logo-track');
                 let scrollSpeed = 40; // Base scroll speed in seconds
-                
+
                 // Function to adjust animation speed based on screen size
                 function adjustScrollSpeed() {
                     if (window.innerWidth < 640) { // Mobile
-                        scrollSpeed = 25;
+                        scrollSpeed = 50;
                     } else if (window.innerWidth < 1024) { // Tablet
-                        scrollSpeed = 30;
+                        scrollSpeed = 65;
                     } else { // Desktop
-                        scrollSpeed = 40;
+                        scrollSpeed = 80;
                     }
-                    
-                    // Apply to both tracks
-                    logoTracks.forEach(track => {
-                        track.style.animationDuration = `${scrollSpeed}s`;
-                    });
+
+                    // Apply to both tracks with appropriate animation
+                    document.getElementById('logoTrack1').style.animationDuration = `${scrollSpeed}s`;
+                    document.getElementById('logoTrack2').style.animationDuration = `${scrollSpeed}s`;
                 }
-                
-                // Setup truly seamless scrolling
-                function setupSeamlessScrolling() {
-                    // Calculate total width needed
+
+                // Ensure that both tracks have equal width items
+                function equalizeTrackContents() {
                     const track1 = document.getElementById('logoTrack1');
                     const track2 = document.getElementById('logoTrack2');
                     
-                    // Make sure the second track starts exactly where the first one ends
-                    const observer = new ResizeObserver(entries => {
-                        for (let entry of entries) {
-                            if (entry.target === track1) {
-                                // Ensure track2 positioning is correct
-                                track2.style.left = '100%';
-                            }
-                        }
-                    });
+                    // Make sure both tracks have the same width
+                    const logoItems = track1.querySelectorAll('.logo-item');
+                    const totalWidth = Array.from(logoItems).reduce((sum, item) => {
+                        return sum + item.offsetWidth;
+                    }, 0);
                     
-                    // Start observing for changes
-                    observer.observe(track1);
+                    // Set minimum width to ensure smooth scrolling
+                    track1.style.minWidth = `${totalWidth}px`;
+                    track2.style.minWidth = `${totalWidth}px`;
                 }
-                
+
                 // Initial adjustments
                 adjustScrollSpeed();
-                setupSeamlessScrolling();
                 
+                // Run equalization after a slight delay to ensure all elements are rendered
+                setTimeout(equalizeTrackContents, 500);
+
                 // Adjust on window resize
-                window.addEventListener('resize', adjustScrollSpeed);
+                window.addEventListener('resize', function() {
+                    adjustScrollSpeed();
+                    equalizeTrackContents();
+                });
             });
         </script>
     </section>
     <!-- Implementing Agencies -->
     <footer class="bg-green-600 text-white py-3 mt-12 flex justify-center items-center">
         <p class="text-sm">&copy; 2025 PCAppTrack All Rights Reserved</p>
-    </footer>   
+    </footer>
 </body>
 
 </html>
