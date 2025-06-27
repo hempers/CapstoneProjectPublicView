@@ -4,71 +4,143 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Application; // Replace with your actual Application model
+use App\Models\applications; // Your actual model name
 use Illuminate\Http\JsonResponse;
 
 class ApplicationController extends Controller
 {
-    public function getByReferenceId(string $referenceId): JsonResponse
+    public function show(string $applicationId): JsonResponse
     {
+        // Add CORS headers for API access
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+        header('Access-Control-Allow-Headers: Content-Type, Authorization');
+
         try {
-            // Find the application by reference ID
-            // Replace 'Application' with your actual model name
-            // Replace 'reference_id' with your actual column name
-            $application = Application::where('reference_id', $referenceId)->first();
+            // Find the application by ApplicationID (your primary key)
+            $application = applications::where('ApplicationID', $applicationId)->first();
             
             if (!$application) {
                 return response()->json([
-                    'error' => 'Application not found'
-                ], 404);
+                    'message' => 'Application not found'
+                ], 404)->header('Access-Control-Allow-Origin', '*');
             }
 
-            // Format the response data
+            // Format the response data using your actual column names
             $responseData = [
-                'reference_id' => $application->reference_id,
-                'title' => $application->title,
-                'proponent_name' => $application->proponent_name,
-                'date_submitted' => $application->date_submitted,
-                'current_status' => $application->current_status,
-                'amount_requested' => $application->amount_requested,
-                'program_type' => $application->program_type,
-                'province' => $application->province,
-                'municipality' => $application->municipality,
-                'contact_number' => $application->contact_number,
-                'history' => $this->getApplicationHistory($application->id),
-                'requirements' => $this->getApplicationRequirements($application->id)
+                'reference_id' => $application->ApplicationID, // Using ApplicationID as reference
+                'title' => $application->ApplicationTitle,
+                'proponent_name' => $this->getApplicantName($application->ApplicantID),
+                'date_submitted' => $application->DateSubmitted,
+                'current_status' => $application->GeneralStatus,
+                'amount_requested' => $this->getAmountRequested($application->ApplicationID),
+                'program_type' => $application->CFIDPProgramCategory,
+                'province' => $this->getProvinceName($application->ProvincialOfficeID),
+                'municipality' => $this->getMunicipalityName($application->ApplicantID),
+                'contact_number' => $this->getContactNumber($application->ApplicantID),
+                'history' => $this->getApplicationHistory($application->ApplicationID),
+                'requirements' => $this->getApplicationRequirements($application->ApplicationID)
             ];
 
-            return response()->json($responseData);
+            return response()->json($responseData)->header('Access-Control-Allow-Origin', '*');
 
         } catch (\Exception $e) {
             return response()->json([
-                'error' => 'Failed to fetch application data'
-            ], 500);
+                'message' => 'Failed to fetch application data',
+                'error' => $e->getMessage()
+            ], 500)->header('Access-Control-Allow-Origin', '*');
+        }
+    }
+
+    // Helper method to get applicant name
+    private function getApplicantName($applicantId)
+    {
+        try {
+            $applicant = \DB::table('applicant')->where('ApplicantID', $applicantId)->first();
+            return $applicant ? ($applicant->FirstName . ' ' . $applicant->LastName) : 'Unknown';
+        } catch (\Exception $e) {
+            return 'Unknown';
+        }
+    }
+
+    // Helper method to get amount requested (you might have this in a separate table)
+    private function getAmountRequested($applicationId)
+    {
+        try {
+            // Adjust this based on where you store the amount requested
+            // This might be in a project details table or budget table
+            return 'Contact office for details';
+        } catch (\Exception $e) {
+            return 'N/A';
+        }
+    }
+
+    // Helper method to get province name
+    private function getProvinceName($provincialOfficeId)
+    {
+        try {
+            $office = \DB::table('offices')->where('OfficeID', $provincialOfficeId)->first();
+            return $office ? $office->OfficeName : 'Unknown';
+        } catch (\Exception $e) {
+            return 'Unknown';
+        }
+    }
+
+    // Helper method to get municipality (from applicant address)
+    private function getMunicipalityName($applicantId)
+    {
+        try {
+            $applicant = \DB::table('applicant')->where('ApplicantID', $applicantId)->first();
+            return $applicant && isset($applicant->Municipality) ? $applicant->Municipality : 'Unknown';
+        } catch (\Exception $e) {
+            return 'Unknown';
+        }
+    }
+
+    // Helper method to get contact number
+    private function getContactNumber($applicantId)
+    {
+        try {
+            $applicant = \DB::table('applicant')->where('ApplicantID', $applicantId)->first();
+            return $applicant && isset($applicant->ContactNumber) ? $applicant->ContactNumber : 'Not provided';
+        } catch (\Exception $e) {
+            return 'Not provided';
         }
     }
 
     private function getApplicationHistory($applicationId)
     {
-        // Replace this with your actual history logic
-        // This is just an example - adjust based on your database structure
         try {
-            // If you have a separate history table
-            $history = \DB::table('application_history')
-                ->where('application_id', $applicationId)
-                ->orderBy('created_at', 'desc')
-                ->get()
-                ->map(function ($item) {
-                    return [
-                        'date' => $item->created_at,
-                        'action' => $item->action,
-                        'remarks' => $item->remarks,
-                        'personnel' => $item->personnel,
-                        'office' => $item->office,
-                        'status' => $item->status
-                    ];
-                })
-                ->toArray();
+            // If you have application history/tracking table, adjust the table name
+            // For now, creating a simple history from the application status
+            $application = \DB::table('applications')->where('ApplicationID', $applicationId)->first();
+            
+            if (!$application) {
+                return [];
+            }
+
+            $history = [
+                [
+                    'date' => $application->DateSubmitted,
+                    'action' => 'Application Submitted',
+                    'remarks' => 'Application submitted to ' . $application->CFIDPProgramCategory,
+                    'personnel' => 'System',
+                    'office' => 'Provincial Office',
+                    'status' => 'Completed'
+                ]
+            ];
+
+            // Add current status as latest entry
+            if ($application->LastUpdated) {
+                $history[] = [
+                    'date' => date('Y-m-d', strtotime($application->LastUpdated)),
+                    'action' => 'Status Update',
+                    'remarks' => 'Current status: ' . $application->GeneralStatus,
+                    'personnel' => 'System',
+                    'office' => 'Processing Office',
+                    'status' => $application->GeneralStatus
+                ];
+            }
 
             return $history;
         } catch (\Exception $e) {
@@ -78,20 +150,63 @@ class ApplicationController extends Controller
 
     private function getApplicationRequirements($applicationId)
     {
-        // Replace this with your actual requirements logic
         try {
-            // If you have a separate requirements table
-            $requirements = \DB::table('application_requirements')
-                ->where('application_id', $applicationId)
-                ->get()
-                ->map(function ($item) {
-                    return [
-                        'name' => $item->requirement_name,
-                        'description' => $item->description,
-                        'status' => $item->status // 'completed', 'missing', 'pending'
+            // Basic requirements based on your CFIDPProgramCategory
+            $application = \DB::table('applications')->where('ApplicationID', $applicationId)->first();
+            
+            if (!$application) {
+                return [];
+            }
+
+            $requirements = [];
+            
+            // Basic requirements for all applications
+            $requirements[] = [
+                'name' => 'Application Form',
+                'description' => 'Completed CFIDP application form',
+                'status' => 'completed'
+            ];
+
+            $requirements[] = [
+                'name' => 'Valid ID',
+                'description' => 'Government-issued identification',
+                'status' => 'completed'
+            ];
+
+            // Add specific requirements based on program category
+            switch ($application->CFIDPProgramCategory) {
+                case 'Credit':
+                    $requirements[] = [
+                        'name' => 'Income Statement',
+                        'description' => 'Proof of income or financial capacity',
+                        'status' => $application->ValidationStatus === 'Validated' ? 'completed' : 'pending'
                     ];
-                })
-                ->toArray();
+                    break;
+                    
+                case 'Trainings and Farm Schools':
+                    $requirements[] = [
+                        'name' => 'Farmer Certification',
+                        'description' => 'Proof of being a coconut farmer',
+                        'status' => $application->ValidationStatus === 'Validated' ? 'completed' : 'pending'
+                    ];
+                    break;
+                    
+                case 'Shared Processing Facilities':
+                    $requirements[] = [
+                        'name' => 'Project Proposal',
+                        'description' => 'Detailed project implementation plan',
+                        'status' => $application->ValidationStatus === 'Validated' ? 'completed' : 'pending'
+                    ];
+                    break;
+                    
+                case 'Infrastructure':
+                    $requirements[] = [
+                        'name' => 'Site Plan',
+                        'description' => 'Detailed site and construction plan',
+                        'status' => $application->ValidationStatus === 'Validated' ? 'completed' : 'pending'
+                    ];
+                    break;
+            }
 
             return $requirements;
         } catch (\Exception $e) {

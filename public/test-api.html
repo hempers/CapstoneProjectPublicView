@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test - CFIDP Application Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .result { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .error { background: #ffe6e6; border: 1px solid #ff0000; }
+        .success { background: #e6ffe6; border: 1px solid #00ff00; }
+        input, button { padding: 10px; margin: 5px; }
+        button { background: #09CA16; color: white; border: none; cursor: pointer; }
+        button:hover { background: #079510; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CFIDP Application API Test</h1>
+        <p>Use this page to test your API before integrating with the main website.</p>
+        
+        <div>
+            <label>Enter Application ID:</label><br>
+            <input type="text" id="appId" placeholder="e.g., 1, 2, 3..." style="width: 300px;">
+            <button onclick="testAPI()">Test API</button>
+        </div>
+        
+        <div id="result" class="result" style="display: none;">
+            <h3>API Response:</h3>
+            <pre id="responseData"></pre>
+        </div>
+    </div>
+
+    <script>
+        async function testAPI() {
+            const appId = document.getElementById('appId').value.trim();
+            const resultDiv = document.getElementById('result');
+            const responseData = document.getElementById('responseData');
+            
+            if (!appId) {
+                alert('Please enter an Application ID');
+                return;
+            }
+            
+            try {
+                console.log('Testing API with Application ID:', appId);
+                
+                const response = await fetch(`/api/applications/${appId}`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                console.log('Response status:', response.status);
+                const data = await response.json();
+                console.log('Response data:', data);
+                
+                resultDiv.style.display = 'block';
+                resultDiv.className = response.ok ? 'result success' : 'result error';
+                responseData.textContent = JSON.stringify(data, null, 2);
+                
+            } catch (error) {
+                console.error('Error testing API:', error);
+                resultDiv.style.display = 'block';
+                resultDiv.className = 'result error';
+                responseData.textContent = 'Error: ' + error.message;
+            }
+        }
+        
+        // Test on page load with a sample ID
+        window.onload = function() {
+            console.log('API Test page loaded');
+            console.log('To test the API:');
+            console.log('1. Enter an Application ID that exists in your database');
+            console.log('2. Click "Test API"');
+            console.log('3. Check the response below');
+        };
+    </script>
+</body>
+</html>

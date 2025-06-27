@@ -446,8 +446,9 @@
             // Function to fetch application data from external Laravel project
             async function fetchApplicationData(referenceId) {
                 try {
-                    // Replace this URL with your actual external Laravel project API endpoint
-                    const response = await fetch(`YOUR_EXTERNAL_API_URL/api/applications/${referenceId}`, {
+                    // Since this is the same project, we can use a relative URL
+                    // If this were a different project, you'd use: http://127.0.0.1:8000/api/applications/${referenceId}
+                    const response = await fetch(`/api/applications/${referenceId}`, {
                         method: 'GET',
                         headers: {
                             'Content-Type': 'application/json',
