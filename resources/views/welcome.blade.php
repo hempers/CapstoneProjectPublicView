@@ -287,9 +287,13 @@
             <!-- Loading Spinner -->
             <div id="loadingSpinner" class="hidden mt-4">
                 <div class="inline-flex items-center">
-                    <svg class="animate-spin h-5 w-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    <svg class="animate-spin h-5 w-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                        </circle>
+                        <path class="opacity-75" fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                        </path>
                     </svg>
                     <span class="text-green-600">Searching for application...</span>
                 </div>
@@ -299,7 +303,9 @@
             <div id="errorMessage" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-md">
                 <div class="flex">
                     <svg class="w-5 h-5 text-red-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                            clip-rule="evenodd"></path>
                     </svg>
                     <span id="errorText" class="text-red-700 text-sm"></span>
                 </div>
@@ -310,22 +316,24 @@
         <div id="applicationModal" class="fixed inset-0 z-50 hidden overflow-y-auto">
             <!-- Modal Backdrop -->
             <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
-            
+
             <!-- Modal Content -->
             <div class="flex items-center justify-center min-h-screen p-4">
-                <div class="relative bg-white rounded-lg shadow-xl max-w-5xl w-full mx-4 md:mx-auto max-h-screen overflow-y-auto">
+                <div
+                    class="relative bg-white rounded-lg shadow-xl max-w-5xl w-full mx-4 md:mx-auto max-h-screen overflow-y-auto">
                     <!-- Modal Header -->
                     <div class="bg-green-600 text-white p-4 rounded-t-lg">
                         <div class="flex justify-between items-center">
                             <h2 class="text-xl font-bold">Application Details</h2>
                             <button id="closeModal" class="text-white hover:text-gray-200 focus:outline-none">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"></path>
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    
+
                     <!-- Modal Body -->
                     <div class="p-6">
                         <!-- Application Info Grid -->
@@ -340,7 +348,8 @@
 
                                 <!-- Application Title -->
                                 <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Application Title</label>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Application
+                                        Title</label>
                                     <div class="text-gray-900" id="modalApplicationTitle">-</div>
                                 </div>
 
@@ -359,7 +368,8 @@
                                 <!-- Current Status -->
                                 <div class="bg-gray-50 p-4 rounded-lg">
                                     <label class="block text-sm font-medium text-gray-700 mb-1">Current Status</label>
-                                    <div id="modalCurrentStatus" class="inline-block px-3 py-1 rounded-full text-sm font-medium">-</div>
+                                    <div id="modalCurrentStatus"
+                                        class="inline-block px-3 py-1 rounded-full text-sm font-medium">-</div>
                                 </div>
                             </div>
 
@@ -404,12 +414,24 @@
                                 <table class="min-w-full divide-y divide-gray-200">
                                     <thead class="bg-green-50">
                                         <tr>
-                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Date</th>
-                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Action</th>
-                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Remarks</th>
-                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Personnel</th>
-                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Office</th>
-                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Status</th>
+                                            <th
+                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                                                Date</th>
+                                            <th
+                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                                                Action</th>
+                                            <th
+                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                                                Remarks</th>
+                                            <th
+                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                                                Personnel</th>
+                                            <th
+                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                                                Office</th>
+                                            <th
+                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
+                                                Status</th>
                                         </tr>
                                     </thead>
                                     <tbody id="modalHistoryTable" class="bg-white divide-y divide-gray-200">
@@ -433,8 +455,10 @@
     </section>
 
     <!-- JavaScript for Modal and API Functionality -->
+
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const trackButton = document.getElementById('trackButton');
             const closeModalBtn = document.getElementById('closeModal');
             const applicationModal = document.getElementById('applicationModal');
@@ -442,224 +466,204 @@
             const loadingSpinner = document.getElementById('loadingSpinner');
             const errorMessage = document.getElementById('errorMessage');
             const errorText = document.getElementById('errorText');
+            // Get API URL from environment variable
+            const API_BASE_URL = '{{ env("EXTERNAL_API_URL", "http://127.0.0.1:8001") }}';
 
-            // Function to fetch application data from external Laravel project
-            async function fetchApplicationData(referenceId) {
+            // Function to fetch application data from your other Laravel project
+            async function fetchApplicationData(applicationId) {
                 try {
-                    // Since this is the same project, we can use a relative URL
-                    // If this were a different project, you'd use: http://127.0.0.1:8000/api/applications/${referenceId}
-                    const response = await fetch(`/api/applications/${referenceId}`, {
+                    // Replace with your other Laravel project's URL and port
+                    const API_BASE_URL = 'http://127.0.0.1:8001'; // Adjust port as needed
+
+                    const response = await fetch(`${API_BASE_URL}/api/applications/${applicationId}`, {
                         method: 'GET',
                         headers: {
                             'Content-Type': 'application/json',
                             'Accept': 'application/json',
-                            // Add any necessary authentication headers here
-                            // 'Authorization': 'Bearer your-token'
+                            // Add authentication if your other API requires it
+                            // 'Authorization': 'Bearer your-token-here'
                         }
                     });
 
                     if (!response.ok) {
                         if (response.status === 404) {
-                            throw new Error('Application not found. Please check your reference ID.');
+                            throw new Error('Application not found. Please check your Application ID.');
                         } else {
-                            throw new Error('Failed to fetch application data. Please try again.');
+                            throw new Error(`API Error: ${response.status} - ${response.statusText}`);
                         }
                     }
 
                     const data = await response.json();
                     return data;
                 } catch (error) {
+                    console.error('API Error:', error);
                     throw error;
                 }
             }
 
             // Function to populate modal with application data
             function populateModal(data) {
-                // Populate basic information
+                // Update the modal with the received data
                 document.getElementById('modalReferenceId').textContent = data.reference_id || '-';
                 document.getElementById('modalApplicationTitle').textContent = data.title || '-';
                 document.getElementById('modalProponent').textContent = data.proponent_name || '-';
                 document.getElementById('modalDateSubmitted').textContent = data.date_submitted || '-';
-                document.getElementById('modalAmountRequested').textContent = data.amount_requested ? 
+                document.getElementById('modalAmountRequested').textContent = data.amount_requested ?
                     `₱${parseFloat(data.amount_requested).toLocaleString()}` : '-';
                 document.getElementById('modalProgramType').textContent = data.program_type || '-';
                 document.getElementById('modalProvince').textContent = data.province || '-';
                 document.getElementById('modalMunicipality').textContent = data.municipality || '-';
                 document.getElementById('modalContactNumber').textContent = data.contact_number || '-';
 
-                // Set status with appropriate styling
+                // Update status with color coding
                 const statusElement = document.getElementById('modalCurrentStatus');
                 const status = data.current_status || 'Unknown';
                 statusElement.textContent = status;
-                
+
                 // Apply status-specific styling
                 statusElement.className = 'inline-block px-3 py-1 rounded-full text-sm font-medium ';
-                if (status.toLowerCase().includes('approved')) {
-                    statusElement.className += 'bg-green-100 text-green-800';
-                } else if (status.toLowerCase().includes('pending')) {
-                    statusElement.className += 'bg-yellow-100 text-yellow-800';
-                } else if (status.toLowerCase().includes('rejected')) {
-                    statusElement.className += 'bg-red-100 text-red-800';
-                } else {
-                    statusElement.className += 'bg-gray-100 text-gray-800';
+                switch (status.toLowerCase()) {
+                    case 'pending':
+                        statusElement.className += 'bg-yellow-100 text-yellow-800';
+                        break;
+                    case 'approved':
+                        statusElement.className += 'bg-green-100 text-green-800';
+                        break;
+                    case 'validated':
+                        statusElement.className += 'bg-blue-100 text-blue-800';
+                        break;
+                    default:
+                        statusElement.className += 'bg-gray-100 text-gray-800';
                 }
 
                 // Populate history table
                 const historyTable = document.getElementById('modalHistoryTable');
                 historyTable.innerHTML = '';
-                
+
                 if (data.history && data.history.length > 0) {
                     data.history.forEach(item => {
                         const row = document.createElement('tr');
-                        row.className = 'hover:bg-gray-50';
+                        row.className = 'border-b border-gray-200';
                         row.innerHTML = `
-                            <td class="px-4 py-3 text-sm text-gray-900">${item.date || '-'}</td>
-                            <td class="px-4 py-3 text-sm text-gray-900">${item.action || '-'}</td>
-                            <td class="px-4 py-3 text-sm text-gray-900">${item.remarks || '-'}</td>
-                            <td class="px-4 py-3 text-sm text-gray-900">${item.personnel || '-'}</td>
-                            <td class="px-4 py-3 text-sm text-gray-900">${item.office || '-'}</td>
-                            <td class="px-4 py-3 text-sm">
-                                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full 
-                                    ${item.status && item.status.toLowerCase().includes('completed') ? 'bg-green-100 text-green-800' : 
-                                      item.status && item.status.toLowerCase().includes('pending') ? 'bg-yellow-100 text-yellow-800' : 
-                                      'bg-gray-100 text-gray-800'}">
-                                    ${item.status || '-'}
-                                </span>
-                            </td>
-                        `;
+                    <td class="px-4 py-3 text-sm">${item.date || '-'}</td>
+                    <td class="px-4 py-3 text-sm">${item.remarks || '-'}</td>
+                    <td class="px-4 py-3 text-sm">${item.action || '-'}</td>
+                    <td class="px-4 py-3 text-sm">${item.personnel || '-'}</td>
+                    <td class="px-4 py-3 text-sm">${item.office || '-'}</td>
+                    <td class="px-4 py-3 text-sm">
+                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full 
+                            ${item.status && item.status.toLowerCase().includes('completed') ? 'bg-green-100 text-green-800' :
+                                item.status && item.status.toLowerCase().includes('pending') ? 'bg-yellow-100 text-yellow-800' :
+                                    'bg-gray-100 text-gray-800'}">
+                            ${item.status || '-'}
+                        </span>
+                    </td>
+                `;
                         historyTable.appendChild(row);
                     });
                 } else {
                     const row = document.createElement('tr');
                     row.innerHTML = `
-                        <td colspan="6" class="px-4 py-8 text-center text-gray-500">
-                            No history records found
-                        </td>
-                    `;
+                <td colspan="6" class="px-4 py-8 text-center text-gray-500">
+                    No history records found
+                </td>
+            `;
                     historyTable.appendChild(row);
                 }
 
                 // Populate requirements
                 const requirementsContainer = document.getElementById('modalRequirements');
                 requirementsContainer.innerHTML = '';
-                
+
                 if (data.requirements && data.requirements.length > 0) {
                     data.requirements.forEach(req => {
                         const reqElement = document.createElement('div');
-                        reqElement.className = `p-3 rounded-md flex items-start ${
-                            req.status === 'completed' ? 'bg-green-50' : 
-                            req.status === 'missing' ? 'bg-red-50' : 'bg-yellow-50'
-                        }`;
-                        
-                        const iconClass = req.status === 'completed' ? 'text-green-600' : 
-                                         req.status === 'missing' ? 'text-red-600' : 'text-yellow-600';
-                        
-                        const icon = req.status === 'completed' ? '✓' : 
-                                    req.status === 'missing' ? '!' : '•';
-                        
+                        reqElement.className = 'flex items-center justify-between p-3 border border-gray-200 rounded-lg';
+
+                        const statusClass = req.status === 'completed' ? 'text-green-600' :
+                            req.status === 'missing' ? 'text-red-600' : 'text-yellow-600';
+                        const statusIcon = req.status === 'completed' ? '✓' :
+                            req.status === 'missing' ? '✗' : '⚠';
+
                         reqElement.innerHTML = `
-                            <span class="font-bold ${iconClass} mr-2">${icon}</span>
-                            <div>
-                                <p class="font-medium ${iconClass}">${req.name}</p>
-                                ${req.description ? `<p class="text-sm text-gray-600 mt-1">${req.description}</p>` : ''}
-                            </div>
-                        `;
+                    <div>
+                        <h4 class="font-medium text-gray-900">${req.name}</h4>
+                        ${req.description ? `<p class="text-sm text-gray-600">${req.description}</p>` : ''}
+                    </div>
+                    <span class="${statusClass} font-medium">${statusIcon} ${req.status}</span>
+                `;
                         requirementsContainer.appendChild(reqElement);
                     });
                 } else {
-                    requirementsContainer.innerHTML = `
-                        <div class="text-center text-gray-500 py-4">
-                            No requirements information available
-                        </div>
-                    `;
+                    requirementsContainer.innerHTML = '<p class="text-gray-500 text-center py-4">No requirements information available</p>';
                 }
             }
 
-            // Function to open modal
-            function openModal() {
-                applicationModal.classList.remove('hidden');
-                document.body.classList.add('overflow-hidden');
-            }
-            
-            // Function to close modal
-            function closeModal() {
+            // Close modal function
+            function closeModalFunc() {
                 applicationModal.classList.add('hidden');
-                document.body.classList.remove('overflow-hidden');
+                errorMessage.classList.add('hidden');
+                loadingSpinner.classList.add('hidden');
             }
 
-            // Function to show loading state
-            function showLoading() {
+            // Track button click handler
+            trackButton.addEventListener('click', async function (e) {
+                e.preventDefault();
+
+                const applicationId = referenceIdInput.value.trim();
+
+                if (!applicationId) {
+                    alert('Please enter an Application ID');
+                    return;
+                }
+
+                // Show loading state
                 loadingSpinner.classList.remove('hidden');
                 errorMessage.classList.add('hidden');
                 trackButton.disabled = true;
                 trackButton.textContent = 'Searching...';
-            }
 
-            // Function to hide loading state
-            function hideLoading() {
-                loadingSpinner.classList.add('hidden');
-                trackButton.disabled = false;
-                trackButton.textContent = 'Track';
-            }
-
-            // Function to show error
-            function showError(message) {
-                errorText.textContent = message;
-                errorMessage.classList.remove('hidden');
-            }
-
-            // Event listener for track button
-            if (trackButton) {
-                trackButton.addEventListener('click', async function(e) {
-                    e.preventDefault();
-                    
-                    const referenceId = referenceIdInput.value.trim();
-                    
-                    if (!referenceId) {
-                        showError('Please enter a reference ID.');
-                        return;
-                    }
-
-                    showLoading();
-
-                    try {
-                        const applicationData = await fetchApplicationData(referenceId);
-                        populateModal(applicationData);
-                        hideLoading();
-                        openModal();
-                    } catch (error) {
-                        hideLoading();
-                        showError(error.message);
-                        console.error('Error fetching application data:', error);
-                    }
-                });
-            }
-            
-            // Event listener for close button
-            if (closeModalBtn) {
-                closeModalBtn.addEventListener('click', closeModal);
-            }
-            
-            // Close modal when clicking outside
-            window.addEventListener('click', function(event) {
-                if (event.target === applicationModal) {
-                    closeModal();
+                try {
+                    const data = await fetchApplicationData(applicationId);
+                    populateModal(data);
+                    applicationModal.classList.remove('hidden');
+                } catch (error) {
+                    errorText.textContent = error.message;
+                    errorMessage.classList.remove('hidden');
+                } finally {
+                    loadingSpinner.classList.add('hidden');
+                    trackButton.disabled = false;
+                    trackButton.textContent = 'Track';
                 }
             });
-            
-            // Close modal on escape key
-            document.addEventListener('keydown', function(event) {
+
+            // Close modal event listeners
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', closeModalFunc);
+            }
+
+            // Close modal when clicking outside
+            applicationModal.addEventListener('click', function (e) {
+                if (e.target === applicationModal) {
+                    closeModalFunc();
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function (event) {
                 if (event.key === 'Escape' && !applicationModal.classList.contains('hidden')) {
-                    closeModal();
+                    closeModalFunc();
                 }
             });
 
             // Clear error when user starts typing
-            referenceIdInput.addEventListener('input', function() {
+            referenceIdInput.addEventListener('input', function () {
                 errorMessage.classList.add('hidden');
             });
         });
     </script>
+
+
 
     <!-- CFIDP Introduction -->
     <section class="container mx-auto px-10 py-20">
@@ -825,21 +829,24 @@
                         <p>Technical Education and Skills Development Authority</p>
                     </div>
                     <div class="logo-item">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                         <p>High-Value Crops Development Program</p>
                     </div>
                     <div class="logo-item">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                         <p>Bureau of Animal Industry</p>
                     </div>
                     <div class="logo-item">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <div
+                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
                             <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
                                 class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
