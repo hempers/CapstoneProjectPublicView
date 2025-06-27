@@ -276,15 +276,389 @@
             </p>
 
             <div class="flex max-w-md mx-auto text-sm">
-                <input type="text" placeholder="Ilagay ang iyong reference ID"
+                <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong reference ID"
                     class="flex-grow px-4 py-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-xs placeholder:text-xs">
-                <button type="submit" class="px-6 py-2 rounded-r text-white font-medium"
+                <button id="trackButton" type="button" class="px-6 py-2 rounded-r text-white font-medium"
                     style="background-color: #09CA16;">
                     Track
                 </button>
             </div>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="hidden mt-4">
+                <div class="inline-flex items-center">
+                    <svg class="animate-spin h-5 w-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <span class="text-green-600">Searching for application...</span>
+                </div>
+            </div>
+
+            <!-- Error Message -->
+            <div id="errorMessage" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-md">
+                <div class="flex">
+                    <svg class="w-5 h-5 text-red-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span id="errorText" class="text-red-700 text-sm"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Application Details Modal -->
+        <div id="applicationModal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+            <!-- Modal Backdrop -->
+            <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+            
+            <!-- Modal Content -->
+            <div class="flex items-center justify-center min-h-screen p-4">
+                <div class="relative bg-white rounded-lg shadow-xl max-w-5xl w-full mx-4 md:mx-auto max-h-screen overflow-y-auto">
+                    <!-- Modal Header -->
+                    <div class="bg-green-600 text-white p-4 rounded-t-lg">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-xl font-bold">Application Details</h2>
+                            <button id="closeModal" class="text-white hover:text-gray-200 focus:outline-none">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal Body -->
+                    <div class="p-6">
+                        <!-- Application Info Grid -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                            <!-- Left Column -->
+                            <div class="space-y-4">
+                                <!-- Reference ID -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Reference ID</label>
+                                    <div class="text-lg font-semibold text-green-600" id="modalReferenceId">-</div>
+                                </div>
+
+                                <!-- Application Title -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Application Title</label>
+                                    <div class="text-gray-900" id="modalApplicationTitle">-</div>
+                                </div>
+
+                                <!-- Proponent -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Proponent</label>
+                                    <div class="text-gray-900" id="modalProponent">-</div>
+                                </div>
+
+                                <!-- Date Submitted -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Date Submitted</label>
+                                    <div class="text-gray-900" id="modalDateSubmitted">-</div>
+                                </div>
+
+                                <!-- Current Status -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Current Status</label>
+                                    <div id="modalCurrentStatus" class="inline-block px-3 py-1 rounded-full text-sm font-medium">-</div>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="space-y-4">
+                                <!-- Amount Requested -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Amount Requested</label>
+                                    <div class="text-gray-900" id="modalAmountRequested">-</div>
+                                </div>
+
+                                <!-- Program Type -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Program Type</label>
+                                    <div class="text-gray-900" id="modalProgramType">-</div>
+                                </div>
+
+                                <!-- Province -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Province</label>
+                                    <div class="text-gray-900" id="modalProvince">-</div>
+                                </div>
+
+                                <!-- Municipality -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Municipality</label>
+                                    <div class="text-gray-900" id="modalMunicipality">-</div>
+                                </div>
+
+                                <!-- Contact Number -->
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Contact Number</label>
+                                    <div class="text-gray-900" id="modalContactNumber">-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Application History -->
+                        <div class="mb-6">
+                            <h3 class="text-lg font-medium text-gray-900 mb-4">Application History</h3>
+                            <div class="overflow-x-auto bg-gray-50 rounded-lg">
+                                <table class="min-w-full divide-y divide-gray-200">
+                                    <thead class="bg-green-50">
+                                        <tr>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Date</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Action</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Remarks</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Personnel</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Office</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="modalHistoryTable" class="bg-white divide-y divide-gray-200">
+                                        <!-- History items will be populated dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Requirements Status -->
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900 mb-4">Requirements Status</h3>
+                            <div id="modalRequirements" class="space-y-2">
+                                <!-- Requirements will be populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- JavaScript for Modal and API Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const trackButton = document.getElementById('trackButton');
+            const closeModalBtn = document.getElementById('closeModal');
+            const applicationModal = document.getElementById('applicationModal');
+            const referenceIdInput = document.getElementById('referenceIdInput');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const errorMessage = document.getElementById('errorMessage');
+            const errorText = document.getElementById('errorText');
+
+            // Function to fetch application data from external Laravel project
+            async function fetchApplicationData(referenceId) {
+                try {
+                    // Replace this URL with your actual external Laravel project API endpoint
+                    const response = await fetch(`YOUR_EXTERNAL_API_URL/api/applications/${referenceId}`, {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json',
+                            // Add any necessary authentication headers here
+                            // 'Authorization': 'Bearer your-token'
+                        }
+                    });
+
+                    if (!response.ok) {
+                        if (response.status === 404) {
+                            throw new Error('Application not found. Please check your reference ID.');
+                        } else {
+                            throw new Error('Failed to fetch application data. Please try again.');
+                        }
+                    }
+
+                    const data = await response.json();
+                    return data;
+                } catch (error) {
+                    throw error;
+                }
+            }
+
+            // Function to populate modal with application data
+            function populateModal(data) {
+                // Populate basic information
+                document.getElementById('modalReferenceId').textContent = data.reference_id || '-';
+                document.getElementById('modalApplicationTitle').textContent = data.title || '-';
+                document.getElementById('modalProponent').textContent = data.proponent_name || '-';
+                document.getElementById('modalDateSubmitted').textContent = data.date_submitted || '-';
+                document.getElementById('modalAmountRequested').textContent = data.amount_requested ? 
+                    `₱${parseFloat(data.amount_requested).toLocaleString()}` : '-';
+                document.getElementById('modalProgramType').textContent = data.program_type || '-';
+                document.getElementById('modalProvince').textContent = data.province || '-';
+                document.getElementById('modalMunicipality').textContent = data.municipality || '-';
+                document.getElementById('modalContactNumber').textContent = data.contact_number || '-';
+
+                // Set status with appropriate styling
+                const statusElement = document.getElementById('modalCurrentStatus');
+                const status = data.current_status || 'Unknown';
+                statusElement.textContent = status;
+                
+                // Apply status-specific styling
+                statusElement.className = 'inline-block px-3 py-1 rounded-full text-sm font-medium ';
+                if (status.toLowerCase().includes('approved')) {
+                    statusElement.className += 'bg-green-100 text-green-800';
+                } else if (status.toLowerCase().includes('pending')) {
+                    statusElement.className += 'bg-yellow-100 text-yellow-800';
+                } else if (status.toLowerCase().includes('rejected')) {
+                    statusElement.className += 'bg-red-100 text-red-800';
+                } else {
+                    statusElement.className += 'bg-gray-100 text-gray-800';
+                }
+
+                // Populate history table
+                const historyTable = document.getElementById('modalHistoryTable');
+                historyTable.innerHTML = '';
+                
+                if (data.history && data.history.length > 0) {
+                    data.history.forEach(item => {
+                        const row = document.createElement('tr');
+                        row.className = 'hover:bg-gray-50';
+                        row.innerHTML = `
+                            <td class="px-4 py-3 text-sm text-gray-900">${item.date || '-'}</td>
+                            <td class="px-4 py-3 text-sm text-gray-900">${item.action || '-'}</td>
+                            <td class="px-4 py-3 text-sm text-gray-900">${item.remarks || '-'}</td>
+                            <td class="px-4 py-3 text-sm text-gray-900">${item.personnel || '-'}</td>
+                            <td class="px-4 py-3 text-sm text-gray-900">${item.office || '-'}</td>
+                            <td class="px-4 py-3 text-sm">
+                                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full 
+                                    ${item.status && item.status.toLowerCase().includes('completed') ? 'bg-green-100 text-green-800' : 
+                                      item.status && item.status.toLowerCase().includes('pending') ? 'bg-yellow-100 text-yellow-800' : 
+                                      'bg-gray-100 text-gray-800'}">
+                                    ${item.status || '-'}
+                                </span>
+                            </td>
+                        `;
+                        historyTable.appendChild(row);
+                    });
+                } else {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td colspan="6" class="px-4 py-8 text-center text-gray-500">
+                            No history records found
+                        </td>
+                    `;
+                    historyTable.appendChild(row);
+                }
+
+                // Populate requirements
+                const requirementsContainer = document.getElementById('modalRequirements');
+                requirementsContainer.innerHTML = '';
+                
+                if (data.requirements && data.requirements.length > 0) {
+                    data.requirements.forEach(req => {
+                        const reqElement = document.createElement('div');
+                        reqElement.className = `p-3 rounded-md flex items-start ${
+                            req.status === 'completed' ? 'bg-green-50' : 
+                            req.status === 'missing' ? 'bg-red-50' : 'bg-yellow-50'
+                        }`;
+                        
+                        const iconClass = req.status === 'completed' ? 'text-green-600' : 
+                                         req.status === 'missing' ? 'text-red-600' : 'text-yellow-600';
+                        
+                        const icon = req.status === 'completed' ? '✓' : 
+                                    req.status === 'missing' ? '!' : '•';
+                        
+                        reqElement.innerHTML = `
+                            <span class="font-bold ${iconClass} mr-2">${icon}</span>
+                            <div>
+                                <p class="font-medium ${iconClass}">${req.name}</p>
+                                ${req.description ? `<p class="text-sm text-gray-600 mt-1">${req.description}</p>` : ''}
+                            </div>
+                        `;
+                        requirementsContainer.appendChild(reqElement);
+                    });
+                } else {
+                    requirementsContainer.innerHTML = `
+                        <div class="text-center text-gray-500 py-4">
+                            No requirements information available
+                        </div>
+                    `;
+                }
+            }
+
+            // Function to open modal
+            function openModal() {
+                applicationModal.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            }
+            
+            // Function to close modal
+            function closeModal() {
+                applicationModal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            // Function to show loading state
+            function showLoading() {
+                loadingSpinner.classList.remove('hidden');
+                errorMessage.classList.add('hidden');
+                trackButton.disabled = true;
+                trackButton.textContent = 'Searching...';
+            }
+
+            // Function to hide loading state
+            function hideLoading() {
+                loadingSpinner.classList.add('hidden');
+                trackButton.disabled = false;
+                trackButton.textContent = 'Track';
+            }
+
+            // Function to show error
+            function showError(message) {
+                errorText.textContent = message;
+                errorMessage.classList.remove('hidden');
+            }
+
+            // Event listener for track button
+            if (trackButton) {
+                trackButton.addEventListener('click', async function(e) {
+                    e.preventDefault();
+                    
+                    const referenceId = referenceIdInput.value.trim();
+                    
+                    if (!referenceId) {
+                        showError('Please enter a reference ID.');
+                        return;
+                    }
+
+                    showLoading();
+
+                    try {
+                        const applicationData = await fetchApplicationData(referenceId);
+                        populateModal(applicationData);
+                        hideLoading();
+                        openModal();
+                    } catch (error) {
+                        hideLoading();
+                        showError(error.message);
+                        console.error('Error fetching application data:', error);
+                    }
+                });
+            }
+            
+            // Event listener for close button
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', closeModal);
+            }
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(event) {
+                if (event.target === applicationModal) {
+                    closeModal();
+                }
+            });
+            
+            // Close modal on escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && !applicationModal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+
+            // Clear error when user starts typing
+            referenceIdInput.addEventListener('input', function() {
+                errorMessage.classList.add('hidden');
+            });
+        });
+    </script>
 
     <!-- CFIDP Introduction -->
     <section class="container mx-auto px-10 py-20">
@@ -450,20 +824,23 @@
                         <p>Technical Education and Skills Development Authority</p>
                     </div>
                     <div class="logo-item">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md">
-                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                         <p>High-Value Crops Development Program</p>
                     </div>
                     <div class="logo-item">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md">
-                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                         <p>Bureau of Animal Industry</p>
                     </div>
                     <div class="logo-item">
-                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md">
-                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo">
+                        <div class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
+                                class="max-h-20 max-w-20 object-contain m-auto">
                         </div>
                         <p>Department of Trade and Industry</p>
                     </div>
@@ -827,11 +1204,6 @@
                             img.style.top = '50%';
                             img.style.left = '50%';
                             img.style.transform = 'translate(-50%, -50%)';
-
-                            // Special case for TESDA logo which appears to be positioned differently
-                            if (img.alt === 'TESDA Logo') {
-                                img.style.maxHeight = '60%';
-                            }
                         }
                     });
 
@@ -908,11 +1280,6 @@
                     const allLogoImages = document.querySelectorAll('.logo-circle img');
 
                     allLogoImages.forEach(img => {
-                        // Set specific styles for TESDA logo (if needed)
-                        if (img.alt === "TESDA Logo") {
-                            img.style.maxHeight = '60%'; // Slightly smaller to match others
-                        }
-
                         // Ensure all logos are properly centered
                         setTimeout(() => {
                             img.style.position = 'absolute';
