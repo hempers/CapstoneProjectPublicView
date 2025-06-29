@@ -507,7 +507,12 @@
 
                         <!-- Requirements Status -->
                         <div class="mb-4">
-                            <h3 class="mb-3 text-base font-bold text-gray-900">Requirements Information</h3>
+                            <div class="flex items-center mb-4 space-x-2">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6m-6 4h6"></path>
+                                </svg>
+                                <h3 class="text-base font-bold text-gray-900">Requirements Information</h3>
+                            </div>
                             <div id="modalRequirements" class="bg-white rounded-lg border border-gray-200 overflow-hidden p-4">
                                 <p class="text-sm text-gray-500" id="noRequirementsMsg">No requirements submitted yet</p>
                                 <!-- Requirements will be populated dynamically -->
@@ -728,64 +733,96 @@
                 const noRequirementsMsg = document.getElementById('noRequirementsMsg');
                 
                 if (requirementsData && requirementsData.length > 0) {
-                    // Hide the no requirements message
-                    if (noRequirementsMsg) {
-                        noRequirementsMsg.style.display = 'none';
-                    }
-                    
-                    // Create a simple list for requirements
-                    const list = document.createElement('ul');
-                    list.className = 'space-y-2';
-                    requirementsContainer.appendChild(list);
-                    
-                    // Keep track of missing requirements
-                    const missingRequirements = [];
-                    
-                    requirementsData.forEach(req => {
-                        const reqName = req.requirement_name || 'Unknown Requirement';
-                        const reqStatus = req.status || 'pending';
-                        
-                        // Track missing requirements
-                        if (reqStatus.toLowerCase() === 'missing') {
-                            missingRequirements.push(reqName);
-                        }
-                        
-                        const listItem = document.createElement('li');
-                        listItem.className = 'flex items-center text-sm py-1 border-b border-gray-100';
-                        listItem.innerHTML = `
-                            <span class="text-gray-900 text-xs">${reqName}</span>
-                            <span class="ml-auto text-xs text-gray-500">${reqStatus}</span>
-                        `;
-                        list.appendChild(listItem);
+                    // Find missing requirements
+                    const missingRequirements = requirementsData.filter(req => {
+                        const reqStatus = (req.status || '').toLowerCase();
+                        return reqStatus === 'missing' || reqStatus === 'kulang' || reqStatus === 'hindi kumpleto';
                     });
                     
-                    // Add dynamic note about missing requirements at the bottom
-                    const noteElement = document.createElement('p');
-                    noteElement.className = 'mt-4 text-xs italic text-gray-500 pt-2 border-t border-gray-100';
-                    
                     if (missingRequirements.length > 0) {
-                        // Create a formatted list of missing requirements
-                        const missingList = missingRequirements
-                            .map(req => `<li class="my-1"><span class="font-medium mr-6">${req}</span></li>`)    
-                            .join(', ');
+                        // Hide the no requirements message
+                        if (noRequirementsMsg) {
+                            noRequirementsMsg.style.display = 'none';
+                        }
                         
-                        noteElement.innerHTML = `
-                            <span class="font-medium text-red-600">PALALA:</span> 
-                            Ang mga sumusunod na dokumento ang iyong pagkukulang at kailangang ipasa agad: 
-                            ${missingList}.
+                        // Add warning header
+                        const warningHeader = document.createElement('div');
+                        warningHeader.className = 'bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4';
+                        warningHeader.innerHTML = `
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-yellow-700 font-medium">
+                                        Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
+                                    </p>
+                                </div>
+                            </div>
                         `;
+                        requirementsContainer.appendChild(warningHeader);
+                        
+                        // Create a list for missing requirements
+                        const list = document.createElement('ul');
+                        list.className = 'space-y-2 mb-4';
+                        requirementsContainer.appendChild(list);
+                        
+                        // Add each missing requirement to the list
+                        missingRequirements.forEach(req => {
+                            const reqName = req.requirement_name || 'Unknown Requirement';
+                            
+                            const listItem = document.createElement('li');
+                            listItem.className = 'flex items-center text-sm py-2 px-1 border-b border-gray-100';
+                            listItem.innerHTML = `
+                                <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="text-gray-800">${reqName}</span>
+                            `;
+                            list.appendChild(listItem);
+                        });
+                        
+                        // Add note in Tagalog
+                        const noteElement = document.createElement('div');
+                        noteElement.className = 'mt-4 text-xs text-gray-600 pt-3 border-t border-gray-100';
+                        noteElement.innerHTML = `
+                            <p class="mb-2">
+                                <span class="font-medium">Mahalaga:</span> Kinakailangan pong maisubmit ang mga nawawalang dokumento para maiproseso nang mabilis ang inyong aplikasyon.
+                            </p>
+                            <p>
+                                Maaari po ninyong isubmit ang mga kulang na dokumento sa opisina ng PCA.                            </p>
+                        `;
+                        requirementsContainer.appendChild(noteElement);
                     } else {
-                        noteElement.innerHTML = `
-                            <span class="font-medium">Note:</span> All required documents appear to be in order. 
-                            Additional requirements may apply depending on your specific case and location.
+                        // All requirements are complete
+                        if (noRequirementsMsg) {
+                            noRequirementsMsg.style.display = 'none';
+                        }
+                        
+                        const completeMessage = document.createElement('div');
+                        completeMessage.className = 'bg-green-50 border-l-4 border-green-400 p-4';
+                        completeMessage.innerHTML = `
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-green-700">
+                                        Lahat ng kinakailangang dokumento ay kumpleto na.
+                                    </p>
+                                </div>
+                            </div>
                         `;
+                        requirementsContainer.appendChild(completeMessage);
                     }
-                    
-                    requirementsContainer.appendChild(noteElement);
                 } else {
-                    // Show the no requirements message which is already in the HTML
+                    // No requirements data available
                     if (noRequirementsMsg) {
-                        noRequirementsMsg.style.display = 'block';
+                        noRequirementsMsg.textContent = 'Hindi pa available ang listahan ng mga kinakailangang dokumento.';
                     }
                 }
             }
