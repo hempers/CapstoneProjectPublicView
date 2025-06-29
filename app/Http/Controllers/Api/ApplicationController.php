@@ -33,11 +33,6 @@ class ApplicationController extends Controller
                 'proponent_name' => $this->getApplicantName($application->ApplicantID),
                 'date_submitted' => $application->DateSubmitted,
                 'current_status' => $application->GeneralStatus,
-                'amount_requested' => $this->getAmountRequested($application->ApplicationID),
-                'program_type' => $application->CFIDPProgramCategory,
-                'province' => $this->getProvinceName($application->ProvincialOfficeID),
-                'municipality' => $this->getMunicipalityName($application->ApplicantID),
-                'contact_number' => $this->getContactNumber($application->ApplicantID),
                 'history' => $this->getApplicationHistory($application->ApplicationID),
                 'requirements' => $this->getApplicationRequirements($application->ApplicationID)
             ];

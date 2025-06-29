@@ -318,13 +318,14 @@
             <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
 
             <!-- Modal Content -->
-            <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="flex items-center justify-center min-h-screen p-2">
                 <div
                     class="relative bg-white rounded-lg shadow-xl max-w-5xl w-full mx-4 md:mx-auto max-h-screen overflow-y-auto">
                     <!-- Modal Header -->
-                    <div class="bg-green-600 text-white p-4 rounded-t-lg">
+                    <div class="text-gray-800 p-4 rounded-t-lg" style="background-color: #EFFFF0;">
                         <div class="flex justify-between items-center">
-                            <h2 class="text-xl font-bold">Application Details</h2>
+                            <h2 class="text-2xl font-black text-center flex-1 mt-4 pt-4" style="color: #09CA16;">
+                                Application Details</h2>
                             <button id="closeModal" class="text-white hover:text-gray-200 focus:outline-none">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -332,10 +333,33 @@
                                 </svg>
                             </button>
                         </div>
+
+                        <!-- Description Text -->
+                        <div class="mt-4 pt-4 text-xs text-gray-600 leading-relaxed text-center px-16">
+                            <p class="mb-5">
+                                Ang sumusunod na impormasyon ay tumutukoy sa kasalukuyang estado ng inyong isinumiteng
+                                aplikasyon para sa PCA-CFIDP Program.
+                                Maaari po ninyo itong gamitin bilang gabay upang malaman ang progreso, resulta, o
+                                anumang aksyon na isinasagawa kaugnay ng
+                                inyong aplikasyon.
+                            </p>
+                            <p>
+                                Mangyaring suriin ang mga detalye upang malaman kung ito ay tinanggap, may kulang na
+                                dokumento, nasa proseso ng beripikasyon,
+                                inendorso na, o may iba pang update.
+                            </p>
+                        </div>
                     </div>
 
                     <!-- Modal Body -->
                     <div class="p-6">
+
+                        <!-- Application Title -->
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <label class="block text-sm font-medium text-gray-700 mb-4">Application
+                                Title</label>
+                            <div class="text-gray-900" id="modalApplicationTitle">-</div>
+                        </div>
                         <!-- Application Info Grid -->
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
                             <!-- Left Column -->
@@ -344,25 +368,6 @@
                                 <div class="bg-gray-50 p-4 rounded-lg">
                                     <label class="block text-sm font-medium text-gray-700 mb-1">Reference ID</label>
                                     <div class="text-lg font-semibold text-green-600" id="modalReferenceId">-</div>
-                                </div>
-
-                                <!-- Application Title -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Application
-                                        Title</label>
-                                    <div class="text-gray-900" id="modalApplicationTitle">-</div>
-                                </div>
-
-                                <!-- Proponent -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Proponent</label>
-                                    <div class="text-gray-900" id="modalProponent">-</div>
-                                </div>
-
-                                <!-- Date Submitted -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Date Submitted</label>
-                                    <div class="text-gray-900" id="modalDateSubmitted">-</div>
                                 </div>
 
                                 <!-- Current Status -->
@@ -375,34 +380,15 @@
 
                             <!-- Right Column -->
                             <div class="space-y-4">
-                                <!-- Amount Requested -->
+                                <!-- Date Submitted -->
                                 <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Amount Requested</label>
-                                    <div class="text-gray-900" id="modalAmountRequested">-</div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Date Submitted</label>
+                                    <div class="text-gray-900" id="modalDateSubmitted">-</div>
                                 </div>
-
-                                <!-- Program Type -->
+                                <!-- Proponent -->
                                 <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Program Type</label>
-                                    <div class="text-gray-900" id="modalProgramType">-</div>
-                                </div>
-
-                                <!-- Province -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Province</label>
-                                    <div class="text-gray-900" id="modalProvince">-</div>
-                                </div>
-
-                                <!-- Municipality -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Municipality</label>
-                                    <div class="text-gray-900" id="modalMunicipality">-</div>
-                                </div>
-
-                                <!-- Contact Number -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Contact Number</label>
-                                    <div class="text-gray-900" id="modalContactNumber">-</div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Proponent</label>
+                                    <div class="text-gray-900" id="modalProponent">-</div>
                                 </div>
                             </div>
                         </div>
@@ -469,11 +455,37 @@
             // Get API URL from environment variable
             const API_BASE_URL = '{{ env("EXTERNAL_API_URL", "http://127.0.0.1:8001") }}';
 
+            // Helper function to print all top-level keys in an object
+            function debugObject(obj, label = 'Object keys') {
+                if (obj && typeof obj === 'object') {
+                    console.log(`${label}:`, Object.keys(obj));
+                    // Print a sample of each field's value
+                    Object.keys(obj).forEach(key => {
+                        const value = obj[key];
+                        if (value !== null && value !== undefined) {
+                            if (Array.isArray(value)) {
+                                console.log(`${key} (array):`, value.length > 0 ? value[0] : 'empty array');
+                            } else if (typeof value === 'object') {
+                                console.log(`${key} (object):`, Object.keys(value));
+                            } else {
+                                console.log(`${key} (${typeof value}):`, value);
+                            }
+                        } else {
+                            console.log(`${key}: null or undefined`);
+                        }
+                    });
+                } else {
+                    console.log(`${label}: Not an object or null`);
+                }
+            }
+            
             // Function to fetch application data from your other Laravel project
             async function fetchApplicationData(applicationId) {
                 try {
-                    // Replace with your other Laravel project's URL and port
-                    const API_BASE_URL = 'http://127.0.0.1:8001'; // Adjust port as needed
+                    // Get API URL from environment variable or use default
+                    const API_BASE_URL = '{{ env("EXTERNAL_API_URL", "http://127.0.0.1:8001") }}';
+                    
+                    console.log(`Fetching application data from: ${API_BASE_URL}/api/applications/${applicationId}`);
 
                     const response = await fetch(`${API_BASE_URL}/api/applications/${applicationId}`, {
                         method: 'GET',
@@ -493,8 +505,18 @@
                         }
                     }
 
-                    const data = await response.json();
-                    return data;
+                    const responseData = await response.json();
+                    console.log('Full API Response:', responseData);
+                    
+                    // Use our debug function to print detailed information about the response
+                    debugObject(responseData, 'API Response Keys');
+                    
+                    // If the data is nested in a 'data' property, debug that too
+                    if (responseData.data) {
+                        debugObject(responseData.data, 'Nested Data Keys');
+                    }
+                    
+                    return responseData;
                 } catch (error) {
                     console.error('API Error:', error);
                     throw error;
@@ -503,21 +525,44 @@
 
             // Function to populate modal with application data
             function populateModal(data) {
-                // Update the modal with the received data
-                document.getElementById('modalReferenceId').textContent = data.reference_id || '-';
-                document.getElementById('modalApplicationTitle').textContent = data.title || '-';
-                document.getElementById('modalProponent').textContent = data.proponent_name || '-';
-                document.getElementById('modalDateSubmitted').textContent = data.date_submitted || '-';
-                document.getElementById('modalAmountRequested').textContent = data.amount_requested ?
-                    `₱${parseFloat(data.amount_requested).toLocaleString()}` : '-';
-                document.getElementById('modalProgramType').textContent = data.program_type || '-';
-                document.getElementById('modalProvince').textContent = data.province || '-';
-                document.getElementById('modalMunicipality').textContent = data.municipality || '-';
-                document.getElementById('modalContactNumber').textContent = data.contact_number || '-';
+                // Log the received data to debug
+                console.log('Data for modal:', data);
+                
+                // Based on the API structure from ApplicationController.php
+                // logging the exact field names we're looking for
+                console.log('Title field check:', {
+                    application_title: data.application_title
+                });
+                console.log('ID field check:', {
+                    application_id: data.application_id
+                });
+                console.log('Contact person check:', data.contact_person);
+                
+                // Update the modal with the received data using the exact field names from the API
+                document.getElementById('modalApplicationTitle').textContent = data.application_title || '-';
+                document.getElementById('modalReferenceId').textContent = data.application_id || '-';
+                
+                // Get contact person name from the nested object
+                let contactPersonName = '-';
+                if (data.contact_person && data.contact_person.name) {
+                    contactPersonName = data.contact_person.name;
+                }
+                document.getElementById('modalProponent').textContent = contactPersonName;
+
+                // Format date if available
+                document.getElementById('modalDateSubmitted').textContent = 
+                    data.date_submitted ? new Date(data.date_submitted).toLocaleDateString() : '-';
 
                 // Update status with color coding
                 const statusElement = document.getElementById('modalCurrentStatus');
-                const status = data.current_status || 'Unknown';
+                
+                // Log the status field
+                console.log('Status field check:', {
+                    application_status: data.application_status
+                });
+                
+                // Use the exact field name from the API
+                const status = data.application_status || 'Unknown';
                 statusElement.textContent = status;
 
                 // Apply status-specific styling
@@ -532,6 +577,15 @@
                     case 'validated':
                         statusElement.className += 'bg-blue-100 text-blue-800';
                         break;
+                    case 'endorsed': // Common status
+                        statusElement.className += 'bg-purple-100 text-purple-800';
+                        break;
+                    case 'rejected': // Common status
+                        statusElement.className += 'bg-red-100 text-red-800';
+                        break;
+                    case 'completed': // Example
+                        statusElement.className += 'bg-teal-100 text-teal-800';
+                        break;
                     default:
                         statusElement.className += 'bg-gray-100 text-gray-800';
                 }
@@ -540,34 +594,43 @@
                 const historyTable = document.getElementById('modalHistoryTable');
                 historyTable.innerHTML = '';
 
-                if (data.history && data.history.length > 0) {
-                    data.history.forEach(item => {
+                // Log the stage history field from the API
+                console.log('History field check:', {
+                    stage_history: data.stage_history
+                });
+                
+                // Use the exact stage_history field from the API
+                const historyData = data.stage_history || [];
+                console.log('Using history data:', historyData);
+
+                if (historyData && historyData.length > 0) {
+                    historyData.forEach(item => {
                         const row = document.createElement('tr');
                         row.className = 'border-b border-gray-200';
                         row.innerHTML = `
-                    <td class="px-4 py-3 text-sm">${item.date || '-'}</td>
-                    <td class="px-4 py-3 text-sm">${item.remarks || '-'}</td>
-                    <td class="px-4 py-3 text-sm">${item.action || '-'}</td>
-                    <td class="px-4 py-3 text-sm">${item.personnel || '-'}</td>
-                    <td class="px-4 py-3 text-sm">${item.office || '-'}</td>
-                    <td class="px-4 py-3 text-sm">
-                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full 
-                            ${item.status && item.status.toLowerCase().includes('completed') ? 'bg-green-100 text-green-800' :
-                                item.status && item.status.toLowerCase().includes('pending') ? 'bg-yellow-100 text-yellow-800' :
+                        <td class="px-4 py-3 text-sm">${item.date || '-'}</td>
+                        <td class="px-4 py-3 text-sm">${item.action_taken || '-'}</td> 
+                        <td class="px-4 py-3 text-sm">${item.remarks || '-'}</td> 
+                        <td class="px-4 py-3 text-sm">${item.staff_name || '-'}</td>
+                        <td class="px-4 py-3 text-sm">-</td>
+                        <td class="px-4 py-3 text-sm">
+                            <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full 
+                                ${item.stage.toLowerCase().includes('completed') ? 'bg-green-100 text-green-800' :
+                                item.stage.toLowerCase().includes('pending') ? 'bg-yellow-100 text-yellow-800' :
                                     'bg-gray-100 text-gray-800'}">
-                            ${item.status || '-'}
-                        </span>
-                    </td>
-                `;
+                                ${item.stage || '-'}
+                            </span>
+                        </td>
+                    `;
                         historyTable.appendChild(row);
                     });
                 } else {
                     const row = document.createElement('tr');
                     row.innerHTML = `
-                <td colspan="6" class="px-4 py-8 text-center text-gray-500">
-                    No history records found
-                </td>
-            `;
+                    <td colspan="6" class="px-4 py-8 text-center text-gray-500">
+                        No history records found
+                    </td>
+                `;
                     historyTable.appendChild(row);
                 }
 
@@ -575,23 +638,36 @@
                 const requirementsContainer = document.getElementById('modalRequirements');
                 requirementsContainer.innerHTML = '';
 
-                if (data.requirements && data.requirements.length > 0) {
-                    data.requirements.forEach(req => {
+                // Log the requirements field from the API
+                console.log('Requirements check:', {
+                    requirements: data.requirements
+                });
+
+                const requirementsData = data.requirements || [];
+                console.log('Requirements data:', requirementsData);
+
+                if (requirementsData && requirementsData.length > 0) {
+                    requirementsData.forEach(req => {
                         const reqElement = document.createElement('div');
                         reqElement.className = 'flex items-center justify-between p-3 border border-gray-200 rounded-lg';
 
-                        const statusClass = req.status === 'completed' ? 'text-green-600' :
-                            req.status === 'missing' ? 'text-red-600' : 'text-yellow-600';
-                        const statusIcon = req.status === 'completed' ? '✓' :
-                            req.status === 'missing' ? '✗' : '⚠';
+                        // Use the exact field names from the API
+                        const reqName = req.requirement_name || 'Unknown Requirement';
+                        const reqStatus = req.status || 'pending';
+                        const reqDesc = req.requirement_description || '';
+
+                        const statusClass = reqStatus.toLowerCase() === 'completed' ? 'text-green-600' :
+                            reqStatus.toLowerCase() === 'missing' ? 'text-red-600' : 'text-yellow-600';
+                        const statusIcon = reqStatus.toLowerCase() === 'completed' ? '✓' :
+                            reqStatus.toLowerCase() === 'missing' ? '✗' : '⚠';
 
                         reqElement.innerHTML = `
-                    <div>
-                        <h4 class="font-medium text-gray-900">${req.name}</h4>
-                        ${req.description ? `<p class="text-sm text-gray-600">${req.description}</p>` : ''}
-                    </div>
-                    <span class="${statusClass} font-medium">${statusIcon} ${req.status}</span>
-                `;
+                        <div>
+                            <h4 class="font-medium text-gray-900">${reqName}</h4>
+                            ${reqDesc ? `<p class="text-sm text-gray-600">${reqDesc}</p>` : ''}
+                        </div>
+                        <span class="${statusClass} font-medium">${statusIcon} ${reqStatus}</span>
+                    `;
                         requirementsContainer.appendChild(reqElement);
                     });
                 } else {
@@ -624,10 +700,36 @@
                 trackButton.textContent = 'Searching...';
 
                 try {
-                    const data = await fetchApplicationData(applicationId);
-                    populateModal(data);
+                    console.log('Attempting to fetch application:', applicationId);
+                    const response = await fetchApplicationData(applicationId);
+                    
+                    if (!response) {
+                        throw new Error('No data received from API');
+                    }
+                    
+                    // Print the entire response structure to help with debugging
+                    console.log('Full API response structure:', response);
+                    
+                    // Based on the ApplicationController.php, the API response is:
+                    // { success: true, message: "...", data: { ... } }
+                    // So we need to extract the data property
+                    let applicationData;
+                    
+                    if (response.success === true && response.data) {
+                        // The API is returning the expected format with a nested data object
+                        applicationData = response.data;
+                        console.log('Using nested data from response.data as expected');
+                    } else {
+                        // Fallback - use the response itself
+                        applicationData = response;
+                        console.log('WARNING: Unexpected API response format, using direct response data');
+                    }
+                    
+                    console.log('Processing data for modal display:', applicationData);
+                    populateModal(applicationData);
                     applicationModal.classList.remove('hidden');
                 } catch (error) {
+                    console.error('Error in track button handler:', error);
                     errorText.textContent = error.message;
                     errorMessage.classList.remove('hidden');
                 } finally {
@@ -662,8 +764,6 @@
             });
         });
     </script>
-
-
 
     <!-- CFIDP Introduction -->
     <section class="container mx-auto px-10 py-20">
