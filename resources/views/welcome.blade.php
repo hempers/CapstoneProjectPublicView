@@ -10,17 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .nav-link.active {
-            color: #09CA16 !important;
+        body, html {
+            font-family: 'Montserrat', sans-serif !important;
         }
     </style>
 </head>
 
-<body class="bg-white text-gray-800">
+<style>
+    /* Custom Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animate-fadeIn {
+        animation: fadeIn 0.3s ease-out;
+    }
+    
+    /* Card hover effects */
+    .card-hover {
+        transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+</style>
+<body class="bg-white text-gray-800 font-montserrat">
     <!-- Header -->
     <header class="bg-white shadow sticky top-0 z-50">
         <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4 py-4">
@@ -286,8 +303,8 @@
 
             <!-- Loading Spinner -->
             <div id="loadingSpinner" class="hidden mt-4">
-                <div class="inline-flex items-center">
-                    <svg class="animate-spin h-5 w-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                <div class="flex items-center justify-center p-3 bg-green-50 border border-green-100 rounded-lg shadow-sm animate-pulse">
+                    <svg class="animate-spin h-5 w-5 text-green-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24">
                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
                         </circle>
@@ -295,142 +312,204 @@
                             d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
                         </path>
                     </svg>
-                    <span class="text-green-600">Searching for application...</span>
+                    <span class="font-medium text-green-700">Searching for application details...</span>
                 </div>
             </div>
 
             <!-- Error Message -->
-            <div id="errorMessage" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-md">
-                <div class="flex">
-                    <svg class="w-5 h-5 text-red-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span id="errorText" class="text-red-700 text-sm"></span>
+            <div id="errorMessage" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-lg shadow-sm animate-fadeIn">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="bg-red-100 rounded-full p-1">
+                            <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-sm font-medium text-red-800">Application Search Error</h3>
+                        <div id="errorText" class="mt-1 text-sm text-red-700"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Application Details Modal -->
-        <div id="applicationModal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+        <div id="applicationModal" class="fixed inset-0 z-50 hidden overflow-y-auto transition-opacity duration-300 ease-out">
             <!-- Modal Backdrop -->
-            <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+            <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 backdrop-blur-sm"></div>
 
             <!-- Modal Content -->
-            <div class="flex items-center justify-center min-h-screen p-2">
-                <div
-                    class="relative bg-white rounded-lg shadow-xl max-w-5xl w-full mx-4 md:mx-auto max-h-screen overflow-y-auto">
+            <div class="flex items-center justify-center min-h-screen p-4">
+                <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-2xl mx-auto max-h-[85vh] overflow-y-auto transform translate-y-[-1vh]">
                     <!-- Modal Header -->
-                    <div class="text-gray-800 p-4 rounded-t-lg" style="background-color: #EFFFF0;">
-                        <div class="flex justify-between items-center">
-                            <h2 class="text-2xl font-black text-center flex-1 mt-4 pt-4" style="color: #09CA16;">
-                                Application Details</h2>
-                            <button id="closeModal" class="text-white hover:text-gray-200 focus:outline-none">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12"></path>
-                                </svg>
-                            </button>
+                    <div class="bg-gradient-to-r from-green-500 to-green-400 p-6 rounded-t-xl relative overflow-hidden">
+                        <!-- Decorative elements -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mt-12 -mr-12"></div>
+                        <div class="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-10 rounded-full -mb-12 -ml-12"></div>
+                        <div class="absolute top-1/2 left-1/4 w-8 h-8 bg-white opacity-10 rounded-full transform -translate-y-1/2"></div>
+                        
+                        <div class="flex justify-between items-center relative z-10">
+                            <div class="flex-1"></div>
+                            <div class="text-center">
+                                <h2 class="text-lg sm:text-xl font-bold text-white mt-8 mb-1">
+                                    Application Tracking Details</h2>
+                                <div class="w-16 h-1 bg-white opacity-70 rounded mx-auto"></div>
+                            </div>
+                            <div class="flex-1 flex justify-end">
+                                <button id="closeModal" class="text-white hover:text-gray-100 focus:outline-none bg-green-600 hover:bg-green-700 rounded-full p-1 shadow-lg transition-all duration-200">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
 
                         <!-- Description Text -->
-                        <div class="mt-4 pt-4 text-xs text-gray-600 leading-relaxed text-center px-16">
-                            <p class="mb-5">
-                                Ang sumusunod na impormasyon ay tumutukoy sa kasalukuyang estado ng inyong isinumiteng
-                                aplikasyon para sa PCA-CFIDP Program.
-                                Maaari po ninyo itong gamitin bilang gabay upang malaman ang progreso, resulta, o
-                                anumang aksyon na isinasagawa kaugnay ng
-                                inyong aplikasyon.
-                            </p>
-                            <p>
-                                Mangyaring suriin ang mga detalye upang malaman kung ito ay tinanggap, may kulang na
-                                dokumento, nasa proseso ng beripikasyon,
-                                inendorso na, o may iba pang update.
+                        <div class="mt-4 text-xs text-white leading-relaxed px-4 relative z-10">
+                            <p class="mb-2 text-center text-white text-opacity-90">
+                                Ang sumusunod na impormasyon ay tumutukoy sa kasalukuyang estado ng inyong aplikasyon
+                                para sa PCA-CFIDP Program. Maaari itong gamitin bilang gabay upang malaman ang progreso
+                                o anumang aksyon na isinasagawa.
                             </p>
                         </div>
                     </div>
 
                     <!-- Modal Body -->
                     <div class="p-6">
-
-                        <!-- Application Title -->
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <label class="block text-sm font-medium text-gray-700 mb-4">Application
-                                Title</label>
-                            <div class="text-gray-900" id="modalApplicationTitle">-</div>
-                        </div>
-                        <!-- Application Info Grid -->
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-                            <!-- Left Column -->
-                            <div class="space-y-4">
-                                <!-- Reference ID -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Reference ID</label>
-                                    <div class="text-lg font-semibold text-green-600" id="modalReferenceId">-</div>
-                                </div>
-
-                                <!-- Current Status -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Current Status</label>
-                                    <div id="modalCurrentStatus"
-                                        class="inline-block px-3 py-1 rounded-full text-sm font-medium">-</div>
-                                </div>
+                        <!-- Application Information Section -->
+                        <div class="mb-8 mt-4 pt-4">
+                            <div class="flex items-center mb-4 space-x-2">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                                </svg>
+                                <h3 class="text-base font-bold text-gray-900">Application Information</h3>
+                            </div>
+                            
+                            <!-- Application Title with highlight -->
+                            <div class="mb-6 bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Application Title:</label>
+                                <div class="text-lg font-medium text-gray-900" id="modalApplicationTitle">-</div>
                             </div>
 
-                            <!-- Right Column -->
-                            <div class="space-y-4">
-                                <!-- Date Submitted -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Date Submitted</label>
-                                    <div class="text-gray-900" id="modalDateSubmitted">-</div>
+                            <!-- Cards Layout -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <!-- Reference ID Card -->
+                                <div class="card-hover bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
+                                    <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <svg class="w-4 h-4 text-green-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
+                                            </svg>
+                                            <span class="text-sm font-medium text-gray-700">Reference ID</span>
+                                        </div>
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <div class="font-bold text-green-600" id="modalReferenceId">-</div>
+                                    </div>
                                 </div>
-                                <!-- Proponent -->
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Proponent</label>
-                                    <div class="text-gray-900" id="modalProponent">-</div>
+                                
+                                <!-- Date Submitted Card -->
+                                <div class="card-hover bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
+                                    <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <svg class="w-4 h-4 text-green-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <span class="text-sm font-medium text-gray-700">Date Submitted</span>
+                                        </div>
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <div class="font-medium text-gray-900" id="modalDateSubmitted">-</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Proponent Card -->
+                                <div class="card-hover bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
+                                    <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <svg class="w-4 h-4 text-green-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                            </svg>
+                                            <span class="text-sm font-medium text-gray-700">Proponent</span>
+                                        </div>
+                                    </div>
+                                    <div class="px-4 py-3">
+                                        <div class="font-medium text-gray-900" id="modalProponent">-</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Application Status Card -->
+                                <div class="card-hover bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
+                                    <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <svg class="w-4 h-4 text-green-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span class="text-sm font-medium text-gray-700">Application Status</span>
+                                        </div>
+                                    </div>
+                                    <div class="px-4 py-3 flex items-center">
+                                        <span id="modalCurrentStatus" class="inline-block px-3 py-1 rounded-full text-sm font-medium">-</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Application History -->
-                        <div class="mb-6">
-                            <h3 class="text-lg font-medium text-gray-900 mb-4">Application History</h3>
-                            <div class="overflow-x-auto bg-gray-50 rounded-lg">
-                                <table class="min-w-full divide-y divide-gray-200">
-                                    <thead class="bg-green-50">
-                                        <tr>
-                                            <th
-                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
-                                                Date</th>
-                                            <th
-                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
-                                                Action</th>
-                                            <th
-                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
-                                                Remarks</th>
-                                            <th
-                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
-                                                Personnel</th>
-                                            <th
-                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
-                                                Office</th>
-                                            <th
-                                                class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
-                                                Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="modalHistoryTable" class="bg-white divide-y divide-gray-200">
-                                        <!-- History items will be populated dynamically -->
-                                    </tbody>
-                                </table>
+                        <div class="mb-8">
+                            <div class="flex items-center mb-4 space-x-2">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <h3 class="text-base font-bold text-gray-900">Application History</h3>
                             </div>
+                            
+                            <div class="overflow-hidden rounded-lg border border-gray-200 shadow-sm bg-white">
+                                <div class="overflow-x-auto">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead>
+                                            <tr class="bg-gradient-to-r from-gray-50 to-green-50">
+                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                    Date</th>
+                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                    Remarks</th>
+                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                    Actions</th>
+                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                    Personnel</th>
+                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                    Office</th>
+                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                    Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="modalHistoryTable" class="bg-white divide-y divide-gray-100">
+                                            <!-- History items will be populated dynamically -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline note for mobile -->
+                            <p class="text-xs text-gray-500 italic mt-2 md:hidden">
+                                <span class="inline-flex items-center">
+                                    <svg class="w-4 h-4 mr-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Scroll horizontally to see complete history
+                                </span>
+                            </p>
                         </div>
 
                         <!-- Requirements Status -->
-                        <div>
-                            <h3 class="text-lg font-medium text-gray-900 mb-4">Requirements Status</h3>
-                            <div id="modalRequirements" class="space-y-2">
+                        <div class="mb-4">
+                            <h3 class="mb-3 text-base font-bold text-gray-900">Requirements Information</h3>
+                            <div id="modalRequirements" class="bg-white rounded-lg border border-gray-200 overflow-hidden p-4">
+                                <p class="text-sm text-gray-500" id="noRequirementsMsg">No requirements submitted yet</p>
                                 <!-- Requirements will be populated dynamically -->
                             </div>
                         </div>
@@ -564,31 +643,9 @@
                 // Use the exact field name from the API
                 const status = data.application_status || 'Unknown';
                 statusElement.textContent = status;
-
-                // Apply status-specific styling
-                statusElement.className = 'inline-block px-3 py-1 rounded-full text-sm font-medium ';
-                switch (status.toLowerCase()) {
-                    case 'pending':
-                        statusElement.className += 'bg-yellow-100 text-yellow-800';
-                        break;
-                    case 'approved':
-                        statusElement.className += 'bg-green-100 text-green-800';
-                        break;
-                    case 'validated':
-                        statusElement.className += 'bg-blue-100 text-blue-800';
-                        break;
-                    case 'endorsed': // Common status
-                        statusElement.className += 'bg-purple-100 text-purple-800';
-                        break;
-                    case 'rejected': // Common status
-                        statusElement.className += 'bg-red-100 text-red-800';
-                        break;
-                    case 'completed': // Example
-                        statusElement.className += 'bg-teal-100 text-teal-800';
-                        break;
-                    default:
-                        statusElement.className += 'bg-gray-100 text-gray-800';
-                }
+                
+                // Use simple styling without color coding
+                statusElement.className = 'text-sm font-medium text-gray-900';
 
                 // Populate history table
                 const historyTable = document.getElementById('modalHistoryTable');
@@ -604,22 +661,26 @@
                 console.log('Using history data:', historyData);
 
                 if (historyData && historyData.length > 0) {
-                    historyData.forEach(item => {
+                    historyData.forEach((item, index) => {
                         const row = document.createElement('tr');
-                        row.className = 'border-b border-gray-200';
+                        // Alternate row colors for better readability
+                        row.className = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
+                        
+                        // Format the date if available
+                        const formattedDate = item.date ? new Date(item.date).toLocaleDateString('en-PH', {
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric'
+                        }) : '-';
+                        
                         row.innerHTML = `
-                        <td class="px-4 py-3 text-sm">${item.date || '-'}</td>
-                        <td class="px-4 py-3 text-sm">${item.action_taken || '-'}</td> 
-                        <td class="px-4 py-3 text-sm">${item.remarks || '-'}</td> 
-                        <td class="px-4 py-3 text-sm">${item.staff_name || '-'}</td>
-                        <td class="px-4 py-3 text-sm">-</td>
-                        <td class="px-4 py-3 text-sm">
-                            <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full 
-                                ${item.stage.toLowerCase().includes('completed') ? 'bg-green-100 text-green-800' :
-                                item.stage.toLowerCase().includes('pending') ? 'bg-yellow-100 text-yellow-800' :
-                                    'bg-gray-100 text-gray-800'}">
-                                ${item.stage || '-'}
-                            </span>
+                        <td class="px-3 py-2 text-xs whitespace-nowrap">${formattedDate}</td>
+                        <td class="px-3 py-2 text-xs ${item.remarks ? '' : 'italic'}">${item.remarks || 'No Remarks'}</td>
+                        <td class="px-3 py-2 text-xs ${item.action_taken ? '' : 'italic'}">${item.action_taken || 'N/A'}</td>
+                        <td class="px-3 py-2 text-xs ${item.staff_name ? '' : 'italic'}">${item.staff_name || 'N/A'}</td>
+                        <td class="px-3 py-2 text-xs ${item.office ? '' : 'italic'}">${item.office || 'N/A'}</td>
+                        <td class="px-3 py-2 text-xs font-medium">
+                            ${item.stage || 'N/A'}
                         </td>
                     `;
                         historyTable.appendChild(row);
@@ -627,11 +688,28 @@
                 } else {
                     const row = document.createElement('tr');
                     row.innerHTML = `
-                    <td colspan="6" class="px-4 py-8 text-center text-gray-500">
-                        No history records found
+                    <td colspan="6" class="px-4 py-8 text-center">
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="bg-gray-100 rounded-full p-3 mb-3">
+                                <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-500 font-medium">No history records found</span>
+                            <p class="text-gray-400 text-xs mt-1">Application history will appear here once available</p>
+                        </div>
                     </td>
                 `;
                     historyTable.appendChild(row);
+                }
+                
+                // Add responsive table notes for mobile users
+                const historyTableParent = historyTable.parentElement;
+                if (historyTableParent && window.innerWidth < 768) {
+                    const note = document.createElement('div');
+                    note.className = 'text-xs text-gray-500 italic mt-2 md:hidden';
+                    note.textContent = 'Scroll horizontally to view all history details';
+                    historyTableParent.parentNode.appendChild(note);
                 }
 
                 // Populate requirements
@@ -646,40 +724,83 @@
                 const requirementsData = data.requirements || [];
                 console.log('Requirements data:', requirementsData);
 
+                // Get the no requirements message element
+                const noRequirementsMsg = document.getElementById('noRequirementsMsg');
+                
                 if (requirementsData && requirementsData.length > 0) {
+                    // Hide the no requirements message
+                    if (noRequirementsMsg) {
+                        noRequirementsMsg.style.display = 'none';
+                    }
+                    
+                    // Create a simple list for requirements
+                    const list = document.createElement('ul');
+                    list.className = 'space-y-2';
+                    requirementsContainer.appendChild(list);
+                    
+                    // Keep track of missing requirements
+                    const missingRequirements = [];
+                    
                     requirementsData.forEach(req => {
-                        const reqElement = document.createElement('div');
-                        reqElement.className = 'flex items-center justify-between p-3 border border-gray-200 rounded-lg';
-
-                        // Use the exact field names from the API
                         const reqName = req.requirement_name || 'Unknown Requirement';
                         const reqStatus = req.status || 'pending';
-                        const reqDesc = req.requirement_description || '';
-
-                        const statusClass = reqStatus.toLowerCase() === 'completed' ? 'text-green-600' :
-                            reqStatus.toLowerCase() === 'missing' ? 'text-red-600' : 'text-yellow-600';
-                        const statusIcon = reqStatus.toLowerCase() === 'completed' ? '✓' :
-                            reqStatus.toLowerCase() === 'missing' ? '✗' : '⚠';
-
-                        reqElement.innerHTML = `
-                        <div>
-                            <h4 class="font-medium text-gray-900">${reqName}</h4>
-                            ${reqDesc ? `<p class="text-sm text-gray-600">${reqDesc}</p>` : ''}
-                        </div>
-                        <span class="${statusClass} font-medium">${statusIcon} ${reqStatus}</span>
-                    `;
-                        requirementsContainer.appendChild(reqElement);
+                        
+                        // Track missing requirements
+                        if (reqStatus.toLowerCase() === 'missing') {
+                            missingRequirements.push(reqName);
+                        }
+                        
+                        const listItem = document.createElement('li');
+                        listItem.className = 'flex items-center text-sm py-1 border-b border-gray-100';
+                        listItem.innerHTML = `
+                            <span class="text-gray-900 text-xs">${reqName}</span>
+                            <span class="ml-auto text-xs text-gray-500">${reqStatus}</span>
+                        `;
+                        list.appendChild(listItem);
                     });
+                    
+                    // Add dynamic note about missing requirements at the bottom
+                    const noteElement = document.createElement('p');
+                    noteElement.className = 'mt-4 text-xs italic text-gray-500 pt-2 border-t border-gray-100';
+                    
+                    if (missingRequirements.length > 0) {
+                        // Create a formatted list of missing requirements
+                        const missingList = missingRequirements
+                            .map(req => `<li class="my-1"><span class="font-medium mr-6">${req}</span></li>`)    
+                            .join(', ');
+                        
+                        noteElement.innerHTML = `
+                            <span class="font-medium text-red-600">PALALA:</span> 
+                            Ang mga sumusunod na dokumento ang iyong pagkukulang at kailangang ipasa agad: 
+                            ${missingList}.
+                        `;
+                    } else {
+                        noteElement.innerHTML = `
+                            <span class="font-medium">Note:</span> All required documents appear to be in order. 
+                            Additional requirements may apply depending on your specific case and location.
+                        `;
+                    }
+                    
+                    requirementsContainer.appendChild(noteElement);
                 } else {
-                    requirementsContainer.innerHTML = '<p class="text-gray-500 text-center py-4">No requirements information available</p>';
+                    // Show the no requirements message which is already in the HTML
+                    if (noRequirementsMsg) {
+                        noRequirementsMsg.style.display = 'block';
+                    }
                 }
             }
 
             // Close modal function
             function closeModalFunc() {
-                applicationModal.classList.add('hidden');
-                errorMessage.classList.add('hidden');
-                loadingSpinner.classList.add('hidden');
+                // First add the fadeout class
+                applicationModal.classList.add('opacity-0');
+                // Then after animation completes, hide it
+                setTimeout(() => {
+                    applicationModal.classList.add('hidden');
+                    applicationModal.classList.remove('opacity-0');
+                    errorMessage.classList.add('hidden');
+                    loadingSpinner.classList.add('hidden');
+                }, 300);
             }
 
             // Track button click handler
@@ -727,7 +848,13 @@
                     
                     console.log('Processing data for modal display:', applicationData);
                     populateModal(applicationData);
+                    
+                    // Show modal with animation
                     applicationModal.classList.remove('hidden');
+                    applicationModal.classList.add('opacity-0');
+                    setTimeout(() => {
+                        applicationModal.classList.remove('opacity-0');
+                    }, 10);
                 } catch (error) {
                     console.error('Error in track button handler:', error);
                     errorText.textContent = error.message;
@@ -742,6 +869,12 @@
             // Close modal event listeners
             if (closeModalBtn) {
                 closeModalBtn.addEventListener('click', closeModalFunc);
+            }
+            
+            // Add listener for the bottom close button
+            const closeModalBtnBottom = document.getElementById('closeModalBtn');
+            if (closeModalBtnBottom) {
+                closeModalBtnBottom.addEventListener('click', closeModalFunc);
             }
 
             // Close modal when clicking outside
@@ -848,7 +981,7 @@
                         <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2H5a2 2 0 00-2 2v2m0 0h14">
                             </path>
                         </svg>
                         Integrated Coconut Processing
