@@ -379,9 +379,9 @@
                     </div>
 
                     <!-- Modal Body -->
-                    <div class="p-6">
+                    <div class="py-6 px-8">
                         <!-- Application Information Section -->
-                        <div class="mb-8 mt-4 pt-4">
+                        <div class="mb-8 mt-1 pt-1">
                             <div class="flex items-center mb-4 space-x-2">
                                 <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
@@ -389,71 +389,33 @@
                                 <h3 class="text-base font-bold text-gray-900">Application Information</h3>
                             </div>
                             
-                            <!-- Application Title with highlight -->
-                            <div class="mb-6 bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                                <label class="block text-sm font-medium text-gray-700 mb-1">Application Title:</label>
-                                <div class="text-lg font-medium text-gray-900" id="modalApplicationTitle">-</div>
-                            </div>
-
-                            <!-- Cards Layout -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <!-- Reference ID Card -->
-                                <div class="card-hover bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
-                                    <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
-                                        <div class="flex items-center">
-                                            <svg class="w-4 h-4 text-green-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
-                                            </svg>
-                                            <span class="text-sm font-medium text-gray-700">Reference ID</span>
-                                        </div>
-                                    </div>
-                                    <div class="px-4 py-3">
-                                        <div class="font-bold text-green-600" id="modalReferenceId">-</div>
-                                    </div>
+                            <!-- Application Information Form -->
+                            <div class="mb-6 space-y-4">
+                                <div class="mb-3">
+                                    <label class="block text-xs font-semibold text-gray-700 mb-1">Application Title</label>
+                                    <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalApplicationTitle">-</div>
                                 </div>
                                 
-                                <!-- Date Submitted Card -->
-                                <div class="card-hover bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
-                                    <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
-                                        <div class="flex items-center">
-                                            <svg class="w-4 h-4 text-green-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                            </svg>
-                                            <span class="text-sm font-medium text-gray-700">Date Submitted</span>
-                                        </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Reference ID</label>
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalReferenceId">-</div>
                                     </div>
-                                    <div class="px-4 py-3">
-                                        <div class="font-medium text-gray-900" id="modalDateSubmitted">-</div>
+                                    
+                                    <div>
+                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Date Submitted:</label>
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalDateSubmitted">-</div>
                                     </div>
-                                </div>
-                                
-                                <!-- Proponent Card -->
-                                <div class="card-hover bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
-                                    <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
-                                        <div class="flex items-center">
-                                            <svg class="w-4 h-4 text-green-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                                            </svg>
-                                            <span class="text-sm font-medium text-gray-700">Proponent</span>
-                                        </div>
+                                    
+                                    <div>
+                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Contact Person</label>
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalProponent">-</div>
                                     </div>
-                                    <div class="px-4 py-3">
-                                        <div class="font-medium text-gray-900" id="modalProponent">-</div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Application Status Card -->
-                                <div class="card-hover bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
-                                    <div class="px-4 py-2 bg-gray-50 border-b border-gray-200">
-                                        <div class="flex items-center">
-                                            <svg class="w-4 h-4 text-green-600 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                            </svg>
-                                            <span class="text-sm font-medium text-gray-700">Application Status</span>
-                                        </div>
-                                    </div>
-                                    <div class="px-4 py-3 flex items-center">
-                                        <span id="modalCurrentStatus" class="inline-block px-3 py-1 rounded-full text-sm font-medium">-</span>
+                                    
+                                    
+                                    <div>
+                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Application Status:</label>
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalCurrentStatus">-</div>
                                     </div>
                                 </div>
                             </div>
@@ -468,46 +430,41 @@
                                 <h3 class="text-base font-bold text-gray-900">Application History</h3>
                             </div>
                             
-                            <div class="overflow-hidden rounded-lg border border-gray-200 shadow-sm bg-white">
-                                <div class="overflow-x-auto">
-                                    <table class="min-w-full divide-y divide-gray-200">
-                                        <thead>
-                                            <tr class="bg-gradient-to-r from-gray-50 to-green-50">
-                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                                    Date</th>
-                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                                    Remarks</th>
-                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                                    Actions</th>
-                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                                    Personnel</th>
-                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                                    Office</th>
-                                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                                    Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="modalHistoryTable" class="bg-white divide-y divide-gray-100">
-                                            <!-- History items will be populated dynamically -->
-                                        </tbody>
-                                    </table>
+                            <div class="overflow-hidden rounded-lg border border-gray-200 shadow-sm bg-white p-4">
+                                <!-- Timeline view for application history -->
+                                <div class="relative" id="historyTimelineContainer">
+                                    <!-- Timeline line -->
+                                    <div class="absolute top-0 bottom-0 left-6 w-0.5 bg-green-100" aria-hidden="true"></div>
+                                    
+                                    <!-- Timeline entries will be populated dynamically -->
+                                    <div id="modalHistoryTable" class="space-y-3 relative">
+                                        <!-- History items will be populated dynamically -->
+                                    </div>
+                                </div>
+
+                                <!-- Empty state message (initially hidden) -->
+                                <div id="emptyHistoryState" class="hidden text-center py-6">
+                                    <div class="inline-flex items-center justify-center bg-gray-100 rounded-full p-2 mb-2">
+                                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <span class="block text-gray-500 font-medium text-[11px]">No history records found</span>
+                                        <p class="text-gray-400 text-[9px] mt-0.5">Application history will appear here once available</p>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            <!-- Timeline note for mobile -->
-                            <p class="text-xs text-gray-500 italic mt-2 md:hidden">
-                                <span class="inline-flex items-center">
-                                    <svg class="w-4 h-4 mr-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
-                                    Scroll horizontally to see complete history
-                                </span>
-                            </p>
                         </div>
 
                         <!-- Requirements Status -->
                         <div class="mb-4">
-                            <h3 class="mb-3 text-base font-bold text-gray-900">Requirements Information</h3>
+                            <div class="flex items-center mb-4 space-x-2">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6m-6 4h6"></path>
+                                </svg>
+                                <h3 class="text-base font-bold text-gray-900">Requirements Information</h3>
+                            </div>
                             <div id="modalRequirements" class="bg-white rounded-lg border border-gray-200 overflow-hidden p-4">
                                 <p class="text-sm text-gray-500" id="noRequirementsMsg">No requirements submitted yet</p>
                                 <!-- Requirements will be populated dynamically -->
@@ -644,12 +601,13 @@
                 const status = data.application_status || 'Unknown';
                 statusElement.textContent = status;
                 
-                // Use simple styling without color coding
-                statusElement.className = 'text-sm font-medium text-gray-900';
+                // Keep the border styling but update the text style
+                statusElement.className = 'border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800';
 
-                // Populate history table
-                const historyTable = document.getElementById('modalHistoryTable');
-                historyTable.innerHTML = '';
+                // Populate history timeline
+                const historyTimeline = document.getElementById('modalHistoryTable');
+                const emptyHistoryState = document.getElementById('emptyHistoryState');
+                historyTimeline.innerHTML = '';
 
                 // Log the stage history field from the API
                 console.log('History field check:', {
@@ -661,55 +619,93 @@
                 console.log('Using history data:', historyData);
 
                 if (historyData && historyData.length > 0) {
-                    historyData.forEach((item, index) => {
-                        const row = document.createElement('tr');
-                        // Alternate row colors for better readability
-                        row.className = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
+                    // Hide the empty state
+                    if (emptyHistoryState) {
+                        emptyHistoryState.classList.add('hidden');
+                    }
+                    
+                    // Sort the history data by date if available
+                    const sortedHistoryData = [...historyData].sort((a, b) => {
+                        if (!a.date) return 1;
+                        if (!b.date) return -1;
+                        return new Date(b.date) - new Date(a.date);
+                    });
+                    
+                    sortedHistoryData.forEach((item, index) => {
+                        const timelineItem = document.createElement('div');
+                        timelineItem.className = 'pl-10 relative';
                         
-                        // Format the date if available
-                        const formattedDate = item.date ? new Date(item.date).toLocaleDateString('en-PH', {
-                            year: 'numeric',
-                            month: 'short',
-                            day: 'numeric'
-                        }) : '-';
+                        // Format the date and time if available
+                        let formattedDate = '-';
+                        let dateColor = 'text-gray-400';
+                        if (item.date) {
+                            const dateObj = new Date(item.date);
+                            const dateStr = dateObj.toLocaleDateString('en-PH', {
+                                year: 'numeric',
+                                month: 'short',
+                                day: 'numeric'
+                            });
+                            const timeStr = dateObj.toLocaleTimeString('en-PH', {
+                                hour: '2-digit',
+                                minute: '2-digit'
+                            });
+                            formattedDate = dateStr;
+                            timeFormatted = timeStr;
+                            dateColor = 'text-green-600';
+                        }
                         
-                        row.innerHTML = `
-                        <td class="px-3 py-2 text-xs whitespace-nowrap">${formattedDate}</td>
-                        <td class="px-3 py-2 text-xs ${item.remarks ? '' : 'italic'}">${item.remarks || 'No Remarks'}</td>
-                        <td class="px-3 py-2 text-xs ${item.action_taken ? '' : 'italic'}">${item.action_taken || 'N/A'}</td>
-                        <td class="px-3 py-2 text-xs ${item.staff_name ? '' : 'italic'}">${item.staff_name || 'N/A'}</td>
-                        <td class="px-3 py-2 text-xs ${item.office ? '' : 'italic'}">${item.office || 'N/A'}</td>
-                        <td class="px-3 py-2 text-xs font-medium">
-                            ${item.stage || 'N/A'}
-                        </td>
-                    `;
-                        historyTable.appendChild(row);
+                        // Determine the timeline dot color based on status
+                        let dotColor = 'bg-green-500';
+                        if (index !== 0) {
+                            dotColor = 'bg-gray-300';
+                        }
+                        
+                        timelineItem.innerHTML = `
+                            <!-- Timeline dot -->
+                            <div class="absolute left-0 top-1 mt-1">
+                                <div class="border-2 border-white h-2 w-2 rounded-full ${dotColor} shadow-sm"></div>
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="rounded-lg border border-gray-200 bg-white p-2 shadow-sm">
+                                <!-- Header with date and status -->
+                                <div class="flex justify-between items-center mb-1 flex-wrap">
+                                    <div class="flex items-center ${dateColor} text-xs">
+                                        <svg class="w-2.5 h-2.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <span>${formattedDate}</span>
+                                        <span class="mx-1 text-gray-300">•</span>
+                                        <span class="text-xs text-gray-400">${timeFormatted || ''}</span>
+                                    </div>
+                                    <div>
+                                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium bg-green-50 text-green-700">
+                                            ${item.stage || 'Unknown Stage'}
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Body content -->
+                                <div class="space-y-1">
+                                    ${item.remarks ? `<p class="text-xs text-gray-800 font-medium">${item.remarks}</p>` : ''}
+                                    ${item.action_taken ? `<p class="text-xs text-gray-600">Action: ${item.action_taken}</p>` : ''}
+                                    
+                                    <!-- Footer with personnel and office -->
+                                    <div class="flex justify-between items-center text-xs text-gray-500 pt-1 border-t border-gray-100 mt-1">
+                                        <span>${item.staff_name || 'Not specified'}</span>
+                                        <span>${item.office || 'N/A'}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        
+                        historyTimeline.appendChild(timelineItem);
                     });
                 } else {
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                    <td colspan="6" class="px-4 py-8 text-center">
-                        <div class="flex flex-col items-center justify-center">
-                            <div class="bg-gray-100 rounded-full p-3 mb-3">
-                                <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <span class="text-gray-500 font-medium">No history records found</span>
-                            <p class="text-gray-400 text-xs mt-1">Application history will appear here once available</p>
-                        </div>
-                    </td>
-                `;
-                    historyTable.appendChild(row);
-                }
-                
-                // Add responsive table notes for mobile users
-                const historyTableParent = historyTable.parentElement;
-                if (historyTableParent && window.innerWidth < 768) {
-                    const note = document.createElement('div');
-                    note.className = 'text-xs text-gray-500 italic mt-2 md:hidden';
-                    note.textContent = 'Scroll horizontally to view all history details';
-                    historyTableParent.parentNode.appendChild(note);
+                    // Show the empty state
+                    if (emptyHistoryState) {
+                        emptyHistoryState.classList.remove('hidden');
+                    }
                 }
 
                 // Populate requirements
