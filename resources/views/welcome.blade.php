@@ -507,12 +507,7 @@
 
                         <!-- Requirements Status -->
                         <div class="mb-4">
-                            <div class="flex items-center mb-4 space-x-2">
-                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6m-6 4h6"></path>
-                                </svg>
-                                <h3 class="text-base font-bold text-gray-900">Requirements Information</h3>
-                            </div>
+                            <h3 class="mb-3 text-base font-bold text-gray-900">Requirements Information</h3>
                             <div id="modalRequirements" class="bg-white rounded-lg border border-gray-200 overflow-hidden p-4">
                                 <p class="text-sm text-gray-500" id="noRequirementsMsg">No requirements submitted yet</p>
                                 <!-- Requirements will be populated dynamically -->
