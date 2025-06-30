@@ -1065,7 +1065,10 @@
 
     <section class="bg-white py-12">
         <div class="text-center w-full">
-            <h1 class="mb-0 text-3xl font-extrabold text-green-900 mb-12">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO</h1>
+            <div class="mb-12">
+                <h1 class="text-3xl font-extrabold text-green-900">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO</h1>
+                <div class="w-32 h-1 bg-green-600 mx-auto mt-3"></div>
+            </div>
 
 
             <!-- Truly seamless, infinite scroll carousel -->
@@ -1075,9 +1078,8 @@
                     <!-- Original set of logos -->
                     <div class="logo-item">
                         <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DA.svg" alt="DA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
+                            class="logo-circle rounded-full p-3 shadow-md flex items-center justify-center">
+                            <img src="/images/IA logos/DA.svg" alt="DA Logo">
                         </div>
                         <p>Department of Agriculture</p>
                     </div>
@@ -1341,12 +1343,12 @@
 
             /* Creating the seamless effect with two identical tracks */
             #logoTrack1 {
-                animation: scroll 80s linear infinite;
+                animation: scroll 65s linear infinite;
                 animation-play-state: running;
             }
 
             #logoTrack2 {
-                animation: scroll2 80s linear infinite;
+                animation: scroll2 65s linear infinite;
                 animation-play-state: running;
             }
 
@@ -1377,21 +1379,19 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 180px;
-                /* Give consistent width for all items */
-                margin: 0 20px;
+                width: 160px; /* Reduced width to bring logos closer */
+                margin: 0 12px; /* Reduced margin to bring logos closer */
             }
 
             /* Logo name styling */
             .logo-item p {
                 margin-top: 12px;
-                font-size: 0.7rem;
+                font-size: 0.75rem;
                 text-align: center;
                 color: rgb(2, 54, 1);
-                /* Gray-700 for good readability */
-                max-width: 15 0px;
+                max-width: 150px;
                 line-height: 1.2;
-                font-weight: 500;
+                font-weight: 600; /* Increased font weight for better visibility */
                 height: auto;
                 padding-bottom: 5px;
             }
@@ -1399,18 +1399,19 @@
             /* Hover effects and styling */
             .logo-circle {
                 transition: all 0.3s ease;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                border: 2px solid transparent;
-                width: 96px;
-                height: 96px;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+                border: 2px solid rgba(9, 202, 22, 0.2); /* Light green border */
+                width: 120px; /* Increased size */
+                height: 120px; /* Increased size */
                 position: relative;
                 overflow: hidden;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%); /* Gradient background */
             }
 
             /* Standardized logo image styling */
             .logo-circle img {
-                max-width: 70%;
-                max-height: 70%;
+                max-width: 75%; /* Increased image size proportionally */
+                max-height: 75%; /* Increased image size proportionally */
                 width: auto;
                 height: auto;
                 object-fit: contain;
@@ -1420,19 +1421,17 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                filter: drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1)); /* Subtle drop shadow on logos */
             }
 
             .logo-circle:hover {
-                transform: scale(1.1);
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-                background-color: rgb(195, 238, 181);
-                /* Brighter green on hover */
+                transform: scale(1.12);
+                box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+                background: linear-gradient(135deg, rgb(195, 238, 181) 0%, rgb(231, 255, 226) 100%);
+                border-color: rgba(9, 202, 22, 0.6); /* Darker green border on hover */
             }
 
-            /* Adjust spacing between logo items */
-            .logo-item {
-                margin: 0 20px;
-            }
+            /* Adjust spacing between logo items - already defined in the logo-item class */
 
             /* Pause animation on hover */
             .logo-scroll-container:hover #logoTrack1,
@@ -1451,14 +1450,17 @@
 
                     // For each logo circle
                     logoCircles.forEach(circle => {
-                        // Remove any extra classes
-                        circle.className = 'logo-circle rounded-full bg-green-100 p-3 shadow-md';
+                        // Remove any extra classes but keep rounded-full
+                        circle.className = 'logo-circle rounded-full p-3 shadow-md';
 
-                        // Ensure proper styling
-                        circle.style.width = '96px';
-                        circle.style.height = '96px';
+                        // Apply new enhanced styling
+                        circle.style.width = '120px'; // Increased size
+                        circle.style.height = '120px'; // Increased size
                         circle.style.position = 'relative';
                         circle.style.overflow = 'hidden';
+                        circle.style.boxShadow = '0 6px 10px rgba(0, 0, 0, 0.15)';
+                        circle.style.border = '2px solid rgba(9, 202, 22, 0.2)';
+                        circle.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%)';
 
                         // Get the image inside
                         const img = circle.querySelector('img');
@@ -1466,24 +1468,33 @@
                             // Remove any classes from the image
                             img.className = '';
 
-                            // Ensure proper styling
-                            img.style.maxWidth = '70%';
-                            img.style.maxHeight = '70%';
+                            // Apply enhanced styling
+                            img.style.maxWidth = '75%'; // Increased size
+                            img.style.maxHeight = '75%'; // Increased size 
                             img.style.position = 'absolute';
                             img.style.top = '50%';
                             img.style.left = '50%';
                             img.style.transform = 'translate(-50%, -50%)';
+                            img.style.filter = 'drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1))'; // Subtle drop shadow
                         }
                     });
 
                     // Get all logo items
                     const logoItems = document.querySelectorAll('.logo-item');
 
-                    // For each logo item
+                    // For each logo item - bringing them closer
                     logoItems.forEach(item => {
                         // Remove any extra classes
                         item.className = 'logo-item';
-                        item.style.margin = '0 20px';
+                        item.style.margin = '0 12px'; // Reduced margin to bring logos closer
+                        item.style.width = '160px'; // Narrower width to bring logos closer
+                    });
+                    
+                    // Ensure paragraph styling is consistent
+                    const logoTexts = document.querySelectorAll('.logo-item p');
+                    logoTexts.forEach(text => {
+                        text.style.fontWeight = '600';
+                        text.style.fontSize = '0.75rem';
                     });
                 }
 
@@ -1491,7 +1502,7 @@
                 standardizeLogoElements();
                 const logoTracks = document.querySelectorAll('.logo-track');
                 const logoContainer = document.querySelector('.logo-scroll-container');
-                let scrollSpeed = 80; // Base scroll speed in seconds - slowed down for better readability
+                let scrollSpeed = 65; // Base scroll speed in seconds - slightly faster for more dynamic appearance
 
                 // Add specific hover event handlers
                 if (logoContainer) {
@@ -1511,11 +1522,11 @@
                 // Function to adjust animation speed based on screen size
                 function adjustScrollSpeed() {
                     if (window.innerWidth < 640) { // Mobile
-                        scrollSpeed = 60;
+                        scrollSpeed = 50;  // Faster for mobile
                     } else if (window.innerWidth < 1024) { // Tablet
-                        scrollSpeed = 70;
+                        scrollSpeed = 55;  // Faster for tablet
                     } else { // Desktop
-                        scrollSpeed = 80;
+                        scrollSpeed = 65;  // Faster for desktop
                     }
 
                     // Apply to both tracks
