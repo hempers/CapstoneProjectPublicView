@@ -968,81 +968,110 @@
 
             <div class="max-w-4xl mx-auto">
                 <!-- Social Protection Section -->
-                <div class="flex items-center mb-6">
-                    <div class="flex-shrink-0 mr-4">
-                        <svg class="w-10 h-10 text-green-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
-                            </path>
-                        </svg>
+                <div class="border-b border-gray-300 py-3 mb-5">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 mr-3">
+                                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Social Protection</h3>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <img src="/images/ATI.svg" alt="ATI Logo" class="h-8">
+                            <img src="/images/TESDA.svg" alt="TESDA Logo" class="h-8">
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-green-900">Social Protection</h3>
                 </div>
 
                 <!-- CocoLSA Section -->
                 <div class="bg-white rounded-lg shadow-md p-6 mb-8">
                     <div class="border-b border-gray-200 pb-4 mb-4">
-                        <h4 class="text-lg font-semibold mb-2">I. Coco-based Learning Site for Agriculture (CocoLSA) Certification</h4>
-                        <p class="text-gray-700">A Coco-LSA is a farm that practices applicable coconut-based technologies, employs doable farming strategies, and operates successfully, thus, worthy of emulation. The program aims to:</p>
-                        <ul class="ml-6 mt-3 space-y-2">
-                            <li class="flex">
-                                <span class="text-green-600 mr-2">•</span>
-                                <span>Enhance the capabilities and capacities of the coconut-farming community members on coconut production, processing, and coconut-based business.</span>
+                        <h3 class="text-md font-medium text-gray-700 mb-3">Training and Farm Schools</h3>
+                        <h4 class="text-green-800 font-semibold mb-3 border-l-4 border-green-500 pl-3">
+                            I. Coco-based Learning Site for Agriculture (CocoLSA) Certification
+                        </h4>
+                        <div class="bg-gray-50 p-4 rounded-md mt-3">
+                            <p class="text-sm text-gray-700 text-justify">A Coco-LSA is a farm that practices applicable coconut-based technologies, employs doable farming strategies, and operates successfully, thus, worthy of emulation.</p>
+                        </div>
+                        
+                        <p class="font-medium mt-4 text-green-800 text-sm">The program aims to:</p>
+                        <ul class="mt-2 space-y-2">
+                            <li class="flex items-start">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-green-100 rounded-full mr-2 mt-0.5 flex-shrink-0">
+                                    <span class="text-green-700 text-xs">•</span>
+                                </span>
+                                <span class="text-sm text-justify">Enhance the capabilities and capacities of the coconut-farming community members on coconut production, processing, and coconut-based business.</span>
                             </li>
-                            <li class="flex">
-                                <span class="text-green-600 mr-2">•</span>
-                                <span>Increase participation of the coconut farmers and farmer-leaders to the coconut industry development by serving as agents of coconut-based capability-building in their respective communities.</span>
+                            <li class="flex items-start">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-green-100 rounded-full mr-2 mt-0.5 flex-shrink-0">
+                                    <span class="text-green-700 text-xs">•</span>
+                                </span>
+                                <span class="text-sm text-justify">Increase participation of the coconut farmers and farmer-leaders to the coconut industry development by serving as agents of coconut-based capability-building in their respective communities.</span>
                             </li>
                         </ul>
-                        <p class="mt-4">In coordination with ATI and TESDA, it shall have components consisting of Training, Demonstration Services, Information Support, Technical Assistance, Complementary Projects.</p>
+                        
+                        <div class="mt-4 p-3 bg-green-50 rounded-md border-l-4 border-green-200">
+                            <p class="text-xs text-gray-700 mb-2 text-justify">In coordination with <span class="font-semibold">ATI</span> and <span class="font-semibold">TESDA</span>, it shall have the following components:</p>
+                            <div class="grid grid-cols-2 md:grid-cols-5 gap-1 mt-2">
+                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Training</div>
+                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Demonstration</div>
+                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Information</div>
+                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Technical Aid</div>
+                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Projects</div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Selection and Prioritization Criteria -->
                     <div class="mb-6">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex items-center mb-3 border-b border-gray-200 pb-2">
+                            <svg class="w-4 h-4 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <h4 class="text-md font-semibold">Selection and Prioritization Criteria</h4>
+                            <h4 class="font-medium text-sm text-gray-800">Selection and Prioritization Criteria</h4>
                         </div>
 
                         <!-- Individual Farmer -->
-                        <div class="mb-4 ml-6">
-                            <div class="flex items-center mb-2">
+                        <div class="mb-4">
+                            <div class="flex items-center mb-2 bg-gray-50 p-1 rounded-md">
                                 <svg class="w-4 h-4 text-amber-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
                                 </svg>
-                                <h5 class="font-medium">Individual (The Farmer)</h5>
+                                <h5 class="font-medium text-xs text-gray-700">Individual (The Farmer)</h5>
                             </div>
 
-                            <ul class="ml-6 space-y-2 text-sm">
+                            <ul class="space-y-1 text-xs ml-1">
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Must be an individual Filipino coconut farmer (landowner, owner-tiller, or grower) with at least 1 ha. of coconut land;</span>
+                                    <span class="text-justify">Must be an individual Filipino coconut farmer (landowner, owner-tiller, or grower) with at least 1 ha. of coconut land;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Willing and able to demonstrate the coconut technologies in his/her farm to the clientele at the time needed;</span>
+                                    <span class="text-justify">Willing and able to demonstrate the coconut technologies in his/her farm to the clientele at the time needed;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Should be willing to be trained regularly;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Is physically fit to perform the responsibilities of a CocoLSA cooperator;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>NCFRS registered, preferably a member of a CFOCFC.</span>
                                 </li>
@@ -1060,44 +1089,44 @@
 
                             <ul class="ml-6 space-y-2 text-sm">
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Shall be at least 1 ha. of integrated and/or diversified farm (e.g. coconut-livestock);</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Must possess and manage coconut farmland with an area of at least 1 ha.;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Posseses appropriate valid registration from the Securities and Exchange Commission (SEC), the Cooperative Development Authority (CDA), the Department of Labor and Employment (DOLE), or existing PCA accreditation;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Is active in the past three years in farmer organization and development or community enterprise development;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Must contain Filipino farmer-leaders or members who are willing and able to demonstrate the coconut technologies in his/her farm to the clientele at the time needed;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Willing to be trained regularly;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Physically fit to perform the responsibilities of an LSA cooperator and LSA;</span>
                                 </li>
@@ -1118,26 +1147,26 @@
 
                             <ul class="ml-6 space-y-2 text-sm">
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Shall be at least 1 ha. of integrated and/or diversified farm (e.g. coconut-livestock, coconut-agro-forestry;coconut-crop);</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Contains a technology demonstration area for coconut production, with a holding area, wash area, and toilet;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Is accessible by land and other transportation facilities; and</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Is aesthetically landscaped.</span>
                                 </li>
@@ -1147,67 +1176,67 @@
 
                     <!-- Documentary Requirements -->
                     <div class="mb-6">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex items-center mb-3 border-b border-gray-200 pb-2">
+                            <svg class="w-4 h-4 text-gray-700 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                             </svg>
-                            <h4 class="text-md font-semibold">Documentary Requirements</h4>
+                            <h4 class="font-medium text-sm text-gray-800">Documentary Requirements</h4>
                         </div>
 
-                        <div class="bg-gray-50 p-4 rounded-md ml-6">
-                            <h5 class="font-medium mb-3">Applicant's Checklist of Requirements</h5>
-                            <ul class="space-y-2 text-sm">
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        <div class="mb-3">
+                            <h5 class="font-medium mb-3 text-green-800 text-xs">Applicant's Checklist of Requirements</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-1 text-xs">
+                                <div class="flex items-center bg-white p-1 rounded-md border border-gray-100">
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Signed Briefer;</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <span>Signed Briefer</span>
+                                </div>
+                                <div class="flex items-center bg-white p-1 rounded-md border border-gray-100">
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Self- Assessment;</span>
-                                </li>
+                                    <span>Self-Assessment</span>
+                                </div>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Letter of Intent to become a CocoLSA;</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Farming Learning Site for Agriculture Profile Form;</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>LSA Qualification Form;</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Field Validation Report (c/o PCA Agriculturists assigned in the proposed site);</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>LSA Acceptance Form;</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Endorsement of the RWGC; and</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>If endorsed with financial assistance, a Development Plan shall be required.</span>
                                 </li>
@@ -1217,21 +1246,83 @@
 
                     <!-- Operational Strategies -->
                     <div>
-                        <div class="flex items-center mb-3">
-                            <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex items-center mb-3 border-b border-gray-200 pb-2">
+                            <svg class="w-4 h-4 text-gray-700 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
                             </svg>
-                            <h4 class="text-md font-semibold">Operational Strategies</h4>
+                            <h4 class="font-medium text-sm text-gray-800">Operational Strategies</h4>
                         </div>
 
-                        <div class="ml-6 space-y-2 text-sm">
-                            <p><strong>Step 1:</strong> Briefing</p>
-                            <p><strong>Step 2:</strong> Self-Assessment</p>
-                            <p><strong>Step 3:</strong> Submission of duly accomplished documents (to PCA POs; in cases of requests being directed to the RO, the RO retransmits the documents to the concerned PO)</p>
-                            <p><strong>Step 4:</strong> Evaluation of Documentary Requirements (both provincial and regional levels)</p>
-                            <p><strong>Step 5:</strong> Field/Virtual Validation (PO Agriculturists)</p>
-                            <p><strong>Step 6:</strong> PCA Endorsement of LSA application to ATI RO, then ATI RO endorses such to ATI CO after their own evaluation</p>
-                            <p><strong>Step 7:</strong> Issuance of Certificate and MOA/MOU Signing</p>
+                        <div class="bg-white p-3 border border-gray-200 rounded-lg">
+                            <ol class="space-y-2 text-xs">
+                                <li class="flex items-start">
+                                    <div class="bg-green-100 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
+                                        <span class="text-green-800 font-bold text-xs">1</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">Briefing</span>
+                                    </div>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <div class="bg-green-100 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
+                                        <span class="text-green-800 font-bold text-xs">2</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">Self-Assessment</span>
+                                    </div>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <div class="bg-green-100 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                        <span class="text-green-800 font-bold text-xs">3</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">Submission of documents</span>
+                                        <p class="text-gray-600 mt-1">(to PCA POs; in cases of requests being directed to the RO, the RO retransmits the documents to the concerned PO)</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <div class="bg-green-100 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                        <span class="text-green-800 font-bold text-xs">4</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">Evaluation of Documentary Requirements</span>
+                                        <p class="text-gray-600 mt-1">(both provincial and regional levels)</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <div class="bg-green-100 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                        <span class="text-green-800 font-bold text-xs">5</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">Field/Virtual Validation</span>
+                                        <p class="text-gray-600 mt-1">(PO Agriculturists)</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <div class="bg-green-100 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                        <span class="text-green-800 font-bold text-xs">6</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">PCA Endorsement of LSA application</span>
+                                        <p class="text-gray-600 mt-1">to ATI RO, then ATI RO endorses such to ATI CO after their own evaluation</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <div class="bg-green-100 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                        <span class="text-green-800 font-bold text-xs">7</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">Issuance of Certificate and MOA/MOU Signing</span>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
                         </div>
                     </div>
                 </div>
