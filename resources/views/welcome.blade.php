@@ -604,7 +604,7 @@
                                     </svg>
                                 </div>
                                 <div class="ml-3">
-                                    <p class="text-sm text-yellow-700 font-medium">
+                                    <p class="text-xs text-yellow-700 font-medium">
                                         Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
                                     </p>
                                 </div>
