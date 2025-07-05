@@ -26,14 +26,14 @@ class ApplicationController extends Controller
                 ], 404)->header('Access-Control-Allow-Origin', '*');
             }
 
-            // Format the response data using your actual column names
+            // Format the response data to match frontend expectations
             $responseData = [
-                'reference_id' => $application->ApplicationID, // Using ApplicationID as reference
-                'title' => $application->ApplicationTitle,
-                'proponent_name' => $this->getApplicantName($application->ApplicantID),
+                'application_id' => $application->ApplicationID, // Using ApplicationID as reference
+                'application_title' => $application->ApplicationTitle,
+                'contact_person' => ['name' => $this->getApplicantName($application->ApplicantID)],
                 'date_submitted' => $application->DateSubmitted,
-                'current_status' => $application->GeneralStatus,
-                'history' => $this->getApplicationHistory($application->ApplicationID),
+                'application_status' => $application->GeneralStatus,
+                'stage_history' => $this->getApplicationHistory($application->ApplicationID),
                 'requirements' => $this->getApplicationRequirements($application->ApplicationID)
             ];
 
@@ -106,36 +106,63 @@ class ApplicationController extends Controller
     private function getApplicationHistory($applicationId)
     {
         try {
-            // If you have application history/tracking table, adjust the table name
-            // For now, creating a simple history from the application status
-            $application = \DB::table('applications')->where('ApplicationID', $applicationId)->first();
+            // Fetch actual history data from application_stage_history table based on seeder structure
+            $historyRecords = \DB::table('application_stage_history')
+                ->where('ApplicationID', $applicationId)
+                ->orderBy('Date', 'desc') // Most recent first based on the Date field from seeder
+                ->get();
             
-            if (!$application) {
-                return [];
-            }
+            if ($historyRecords->isEmpty()) {
+                // Fallback to creating a basic history if no records found
+                $application = \DB::table('applications')->where('ApplicationID', $applicationId)->first();
+                
+                if (!$application) {
+                    return [];
+                }
 
-            $history = [
-                [
-                    'date' => $application->DateSubmitted,
-                    'action' => 'Application Submitted',
-                    'remarks' => 'Application submitted to ' . $application->CFIDPProgramCategory,
-                    'personnel' => 'System',
-                    'office' => 'Provincial Office',
-                    'status' => 'Completed'
-                ]
-            ];
-
-            // Add current status as latest entry
-            if ($application->LastUpdated) {
-                $history[] = [
-                    'date' => date('Y-m-d', strtotime($application->LastUpdated)),
-                    'action' => 'Status Update',
-                    'remarks' => 'Current status: ' . $application->GeneralStatus,
-                    'personnel' => 'System',
-                    'office' => 'Processing Office',
-                    'status' => $application->GeneralStatus
+                $history = [
+                    [
+                        'date' => $application->DateSubmitted,
+                        'stage' => 'Application Submitted',
+                        'remarks' => 'Application submitted to ' . $application->CFIDPProgramCategory,
+                        'staff_name' => 'System',
+                        'office' => 'Provincial Office',
+                        'status' => 'Completed',
+                        'action_taken' => 'Submission recorded'
+                    ]
                 ];
+
+                // Add current status as latest entry
+                if ($application->LastUpdated) {
+                    $history[] = [
+                        'date' => $application->LastUpdated,
+                        'stage' => 'Status Update',
+                        'remarks' => 'Current status: ' . $application->GeneralStatus,
+                        'staff_name' => 'System',
+                        'office' => 'Processing Office',
+                        'status' => $application->GeneralStatus,
+                        'action_taken' => 'Status updated'
+                    ];
+                }
+
+                return $history;
             }
+
+            // Map the database records from the seeder structure to the format expected by the frontend
+            $history = $historyRecords->map(function($record) {
+                // Get staff info based on OwnerStaffID if needed
+                $staffInfo = $this->getStaffInfo($record->OwnerStaffID);
+                
+                return [
+                    'date' => $record->Date, // Using Date field from seeder
+                    'stage' => $record->Stage, // Using Stage field from seeder
+                    'remarks' => $record->Remarks ?? '', // Using Remarks field from seeder
+                    'staff_name' => $staffInfo['name'] ?? 'PCA Staff',
+                    'office' => $staffInfo['office'] ?? 'PCA Office',
+                    'status' => $this->deriveStatusFromStage($record->Stage),
+                    'action_taken' => $record->ActionTaken // Using ActionTaken field from seeder
+                ];
+            })->toArray();
 
             return $history;
         } catch (\Exception $e) {
@@ -157,13 +184,13 @@ class ApplicationController extends Controller
             
             // Basic requirements for all applications
             $requirements[] = [
-                'name' => 'Application Form',
+                'requirement_name' => 'Application Form',
                 'description' => 'Completed CFIDP application form',
                 'status' => 'completed'
             ];
 
             $requirements[] = [
-                'name' => 'Valid ID',
+                'requirement_name' => 'Valid ID',
                 'description' => 'Government-issued identification',
                 'status' => 'completed'
             ];
@@ -172,7 +199,7 @@ class ApplicationController extends Controller
             switch ($application->CFIDPProgramCategory) {
                 case 'Credit':
                     $requirements[] = [
-                        'name' => 'Income Statement',
+                        'requirement_name' => 'Income Statement',
                         'description' => 'Proof of income or financial capacity',
                         'status' => $application->ValidationStatus === 'Validated' ? 'completed' : 'pending'
                     ];
@@ -180,7 +207,7 @@ class ApplicationController extends Controller
                     
                 case 'Trainings and Farm Schools':
                     $requirements[] = [
-                        'name' => 'Farmer Certification',
+                        'requirement_name' => 'Farmer Certification',
                         'description' => 'Proof of being a coconut farmer',
                         'status' => $application->ValidationStatus === 'Validated' ? 'completed' : 'pending'
                     ];
@@ -188,7 +215,7 @@ class ApplicationController extends Controller
                     
                 case 'Shared Processing Facilities':
                     $requirements[] = [
-                        'name' => 'Project Proposal',
+                        'requirement_name' => 'Project Proposal',
                         'description' => 'Detailed project implementation plan',
                         'status' => $application->ValidationStatus === 'Validated' ? 'completed' : 'pending'
                     ];
@@ -196,7 +223,7 @@ class ApplicationController extends Controller
                     
                 case 'Infrastructure':
                     $requirements[] = [
-                        'name' => 'Site Plan',
+                        'requirement_name' => 'Site Plan',
                         'description' => 'Detailed site and construction plan',
                         'status' => $application->ValidationStatus === 'Validated' ? 'completed' : 'pending'
                     ];
@@ -207,5 +234,56 @@ class ApplicationController extends Controller
         } catch (\Exception $e) {
             return [];
         }
+    }
+
+    // Helper method to get staff information
+    private function getStaffInfo($staffId)
+    {
+        try {
+            // Try to get staff information from the staff table
+            $staff = \DB::table('staff')->where('StaffID', $staffId)->first();
+            
+            if ($staff) {
+                // If staff record exists, use actual data
+                $office = \DB::table('offices')->where('OfficeID', $staff->OfficeID ?? 0)->first();
+                
+                return [
+                    'name' => $staff->FirstName . ' ' . $staff->LastName,
+                    'office' => $office ? $office->OfficeName : 'PCA Office'
+                ];
+            }
+            
+            // Fallback data if staff record not found
+            return [
+                'name' => 'PCA Staff',
+                'office' => 'PCA Office'
+            ];
+        } catch (\Exception $e) {
+            // Default values if error occurs
+            return [
+                'name' => 'PCA Staff',
+                'office' => 'PCA Office'
+            ];
+        }
+    }
+    
+    // Helper method to derive status from stage name
+    private function deriveStatusFromStage($stageName)
+    {
+        // Map stage names to appropriate statuses
+        $stageStatusMap = [
+            'Registration' => 'Registered',
+            'Validation' => 'Under Validation',
+            'Technical Evaluation' => 'Under Evaluation',
+            'Review' => 'Under Review',
+            'Recommendation' => 'Awaiting Recommendation',
+            'Approval' => 'Awaiting Approval',
+            'Implementation' => 'In Implementation',
+            'Completed' => 'Completed',
+            'Rejected' => 'Rejected',
+            'On Hold' => 'On Hold'
+        ];
+        
+        return $stageStatusMap[$stageName] ?? 'Processing';
     }
 }
