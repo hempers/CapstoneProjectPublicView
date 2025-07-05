@@ -38,203 +38,52 @@
     }
 </style>
 <body class="bg-white text-gray-800 font-montserrat">
-    <!-- Header -->
-    <header class="bg-white shadow sticky top-0 z-50">
-        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4 py-4">
-            <div class="flex items-center justify-center sm:justify-start w-full sm:w-auto mb-4 sm:mb-0">
-                <img src="/images/PCAppTrack.png" alt="CFIDP Logo" class="h-10 sm:h-12">
+    <!-- Simplified Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto flex justify-center items-center px-4 py-3">
+            <!-- PCAppTrack Logo/Text -->
+            <div class="flex items-center">
+                <img src="/images/PCAppTrack.png" alt="PCAppTrack Logo" class="h-10">
+                <span class="ml-2 font-semibold text-green-800 text-lg">PCAppTrack</span>
             </div>
-
-            <!-- Mobile menu button (hidden on larger screens) -->
-            <div class="sm:hidden w-full flex justify-end mb-2">
-                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Navigation -->
-            <nav id="nav-links"
-                class="hidden sm:flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-3 sm:space-y-0">
-                <a href="{{ url('/') }}" id="nav-home"
-                    class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center{{ Request::is('/') ? ' active' : '' }}"
-                    style="transition: color 0.1s;">Home</a>
-                <a href="#track-section" id="nav-track"
-                    class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center"
-                    style="transition: color 0.1s;">Track
-                    Application</a>
-                <a href="{{ url('/about') }}" id="nav-about"
-                    class="nav-link text-sm px-3 sm:px-5 py-2 hover:underline w-full sm:w-auto text-center{{ Request::is('about') ? ' active' : '' }}"
-                    style="transition: color 0.1s;">About Us</a>
-            </nav>
         </div>
     </header>
 
-    <!-- Mobile menu toggle script and smooth scroll -->
+    <!-- Smooth scroll script -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Mobile menu toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const navLinks = document.getElementById('nav-links');
 
-            if (mobileMenuButton && navLinks) {
-                mobileMenuButton.addEventListener('click', function () {
-                    navLinks.classList.toggle('hidden');
-                });
-            }
-
-            // Handle navigation link active styles
-            const navItems = document.querySelectorAll('.nav-link');
-
-            // Apply initial active styling based on classes
-            navItems.forEach(link => {
-                if (link.classList.contains('active')) {
-                    link.style.color = '#09CA16';
-                } else {
-                    link.style.color = 'inherit';
-                }
-
-                // Add hover and mouseout events
-                link.addEventListener('mouseover', function () {
-                    this.style.color = '#09CA16';
-                });
-
-                link.addEventListener('mouseout', function () {
-                    if (this.classList.contains('active')) {
-                        this.style.color = '#09CA16';
-                    } else {
-                        this.style.color = 'inherit';
-                    }
-                });
-            });
-
-            // Special handling for anchor links (like Track Application)
+            // Handle anchor links for smooth scrolling
             const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
             anchorLinks.forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
 
-                    // Set all nav links to inactive
-                    navItems.forEach(link => {
-                        link.classList.remove('active');
-                        link.style.color = 'inherit';
-                    });
-
-                    // Set this link to active
-                    this.classList.add('active');
-                    this.style.color = '#09CA16';
-
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
 
                     if (targetElement) {
-                        // Close mobile menu if it's open
-                        if (navLinks && !navLinks.classList.contains('hidden') && window.innerWidth < 640) {
-                            navLinks.classList.add('hidden');
-                        }
-
                         // Scroll to the target with smooth behavior
                         window.scrollTo({
-                            top: targetElement.offsetTop - 70, // Offset for header height
+                            top: targetElement.offsetTop - 50, // Offset for the simplified header
                             behavior: 'smooth'
                         });
                     }
                 });
             });
 
-            // Make Track Application link active when scrolled to that section
-            const trackSection = document.getElementById('track-section');
-            const trackNavLink = document.getElementById('nav-track');
-
-            if (trackSection && trackNavLink) {
-                window.addEventListener('scroll', function () {
-                    const trackSectionTop = trackSection.getBoundingClientRect().top;
-                    const trackSectionBottom = trackSection.getBoundingClientRect().bottom;
-
-                    // Check if track section is in viewport
-                    if (trackSectionTop < window.innerHeight / 2 && trackSectionBottom > 0) {
-                        // Set all nav links to inactive
-                        navItems.forEach(link => {
-                            link.classList.remove('active');
-                            link.style.color = 'inherit';
-                        });
-
-                        // Set track link to active
-                        trackNavLink.classList.add('active');
-                        trackNavLink.style.color = '#09CA16';
-                    } else if (window.scrollY < 100) {
-                        // At the top of the page, activate the home link
-                        navItems.forEach(link => {
-                            link.classList.remove('active');
-                            link.style.color = 'inherit';
-                        });
-
-                        const homeLink = document.getElementById('nav-home');
-                        if (homeLink && window.location.pathname === '/' || window.location.pathname === '') {
-                            homeLink.classList.add('active');
-                            homeLink.style.color = '#09CA16';
-                        }
-                    }
-                });
-            }
-        });
-    </script>
-
-    <!-- Initialize active nav item on page load -->
-    <script>
-        // Run this after the page is fully loaded
-        window.addEventListener('load', function () {
-            // Set initial active state for navigation based on current URL
-            const currentPath = window.location.pathname;
-            const navItems = document.querySelectorAll('.nav-link');
-            let activeNavFound = false;
-
-            // Check if we have a hash in the URL (for anchor links)
-            const currentHash = window.location.hash;
-
-            navItems.forEach(link => {
-                // For regular route links
-                if (link.getAttribute('href') === currentPath) {
-                    link.classList.add('active');
-                    link.style.color = '#09CA16';
-                    activeNavFound = true;
-                }
-                // For anchor links
-                else if (currentHash && link.getAttribute('href') === currentHash) {
-                    link.classList.add('active');
-                    link.style.color = '#09CA16';
-                    activeNavFound = true;
-                }
-            });
-
-            // If no active link is found and we're on the home page, activate the home nav
-            if (!activeNavFound && (currentPath === '/' || currentPath === '')) {
-                const homeLink = document.getElementById('nav-home');
-                if (homeLink) {
-                    homeLink.classList.add('active');
-                    homeLink.style.color = '#09CA16';
-                }
-            }
-
-            // Set up click handler for hero Track Application button
+            // Set up click handler for track buttons
             const trackBtn = document.querySelector('.track-btn');
             if (trackBtn) {
                 trackBtn.addEventListener('click', function () {
-                    // Set all nav links to inactive
-                    navItems.forEach(link => {
-                        link.classList.remove('active');
-                        link.style.color = 'inherit';
-                    });
-
-                    // Set track link to active
-                    const trackNavLink = document.getElementById('nav-track');
-                    if (trackNavLink) {
-                        trackNavLink.classList.add('active');
-                        trackNavLink.style.color = '#09CA16';
+                    // Scroll to track section
+                    const trackSection = document.getElementById('track-section');
+                    if (trackSection) {
+                        window.scrollTo({
+                            top: trackSection.offsetTop - 50,
+                            behavior: 'smooth'
+                        });
                     }
                 });
             }
@@ -354,7 +203,7 @@
                         <div class="flex justify-between items-center relative z-10">
                             <div class="flex-1"></div>
                             <div class="text-center">
-                                <h2 class="text-lg sm:text-xl font-bold text-white mt-8 mb-1">
+                                <h2 class="text-lg sm:text-xl font-bold text-white mt-5 mb-1">
                                     Application Tracking Details</h2>
                                 <div class="w-16 h-1 bg-white opacity-70 rounded mx-auto"></div>
                             </div>
