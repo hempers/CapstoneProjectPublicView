@@ -473,12 +473,15 @@
                         emptyHistoryState.classList.add('hidden');
                     }
                     
-                    // Sort the history data by date if available
+                    // Sort the history data by date in reverse chronological order (newest first)
                     const sortedHistoryData = [...historyData].sort((a, b) => {
                         if (!a.date) return 1;
                         if (!b.date) return -1;
-                        return new Date(b.date) - new Date(a.date);
+                        return new Date(b.date) - new Date(a.date); // This sorts newest first
                     });
+                    
+                    // Add a visual label for the most recent activity
+                    let firstItem = true;
                     
                     sortedHistoryData.forEach((item, index) => {
                         const timelineItem = document.createElement('div');
@@ -503,10 +506,14 @@
                             dateColor = 'text-green-600';
                         }
                         
-                        // Determine the timeline dot color based on status
-                        let dotColor = 'bg-green-500';
-                        if (index !== 0) {
-                            dotColor = 'bg-gray-300';
+                        // Determine the timeline dot color based on status - highlight the most recent activity
+                        let dotColor = 'bg-gray-300';
+                        let itemClass = '';
+                        
+                        if (firstItem) {
+                            dotColor = 'bg-green-500';
+                            itemClass = 'border-green-100 bg-green-50';
+                            firstItem = false;
                         }
                         
                         timelineItem.innerHTML = `
@@ -516,7 +523,8 @@
                             </div>
                             
                             <!-- Content -->
-                            <div class="rounded-lg border border-gray-200 bg-white p-2 shadow-sm">
+                            <div class="rounded-lg border border-gray-200 ${itemClass} p-2 shadow-sm ${index === 0 ? 'relative' : ''}">
+                                ${index === 0 ? `<div class="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full shadow-sm">Latest Update</div>` : ''}
                                 <!-- Header with date and status -->
                                 <div class="flex justify-between items-center mb-1 flex-wrap">
                                     <div class="flex items-center ${dateColor} text-xs">
