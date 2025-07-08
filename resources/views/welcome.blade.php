@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFIDP Proposal Requirements</title>
+    <title>PCAppTrack Online Tracking</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -17,6 +17,9 @@
 </head>
 
 <style>
+    /* Import Google Fonts - Lemon font for the PCAppTrack logo */
+    @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+    
     /* Custom Animations */
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(10px); }
@@ -36,15 +39,44 @@
         transform: translateY(-2px);
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
+    
+    /* PCAppTrack logo styling with Lemon font */
+    .pcapptrack-text {
+        font-family: 'Lemon', cursive;
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+        color: #09CA16;
+        font-weight: bold;
+    }
+    
+    /* Only the letter A gets the gradient */
+    .pcapptrack-gradient-letter {
+        font-family: 'Lemon', cursive;
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+        background: linear-gradient(to right, #079510, #09CA16);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
 </style>
 <body class="bg-white text-gray-800 font-montserrat">
-    <!-- Simplified Header -->
+    <!-- Header with CFIDP and PCAppTrack logos -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto flex justify-center items-center px-4 py-3">
-            <!-- PCAppTrack Logo/Text -->
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <!-- CFIDP Logo on the left -->
             <div class="flex items-center">
-                <img src="/images/PCAppTrack.png" alt="PCAppTrack Logo" class="h-10">
-                <span class="ml-2 font-semibold text-green-800 text-lg">PCAppTrack</span>
+                <img src="/images/PCAppTrack.png" alt="CFIDP Logo" class="h-10" onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
+            </div>
+             
+            <!-- PCAppTrack Logo/Text with gradient on the right -->
+            <div class="flex items-center">
+                <div class="flex items-center" style="line-height: 1">
+                    <span class="pcapptrack-text" style="margin-right: -0.05em;">PC</span>
+                    <span class="pcapptrack-gradient-letter" style="margin-right: -0.05em;">A</span>
+                    <span class="pcapptrack-text">ppTrack</span>
+                </div>
             </div>
         </div>
     </header>
@@ -96,7 +128,7 @@
             <!-- Text Section (moved first for left-side position) -->
             <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0">
                 <h1 class="text-4xl md:text-5xl font-extrabold text-green-900 mb-5 ml-16 mt-0">
-                    Application <span style="color: #09CA16;">Tracking Monitoring</span> System
+                    Application <span style="color: #09CA16;">Tracking </span> System
                 </h1>
                 <p class="text-sm text-justify mb-6 ml-16 mr-9 mt-2 ">
                     <span class="font-light text-gray-800">Ang <span class="font-bold text-green-800">PCAppTrack</span>
@@ -994,6 +1026,7 @@
                         <div class="mb-4 ml-6">
                             <div class="flex items-center mb-2">
                                 <svg class="w-4 h-4 text-amber-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 9a
                                     <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
                                 </svg>
                                 <svg class="w-5 h-5 text-amber-600 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20">
