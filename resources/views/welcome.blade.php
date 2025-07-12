@@ -903,15 +903,15 @@
             <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg">
                 <!-- Header -->
                 <div class="flex items-center justify-between p-6 border-b border-gray-200">
-                    <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="flex items-center space-x-3 my-auto">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center shadow-sm">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
                                 </path>
                             </svg>
                         </div>
-                        <h1 class="text-2xl font-bold text-gray-800 -mb-4">Social Protection</h1>
+                        <h1 class="text-xl font-bold text-gray-800">Social Protection</h1>
                     </div>
                     <div class="flex items-center space-x-4">
                         <div class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
@@ -925,18 +925,16 @@
 
                 <!-- Content -->
                 <div class="p-6 space-y-8">
-                   x    
-
                     <!-- CocoLSA Certification Section -->
-                    <section>
-                        <h2 class="text-lg font-semibold text-gray-800 mb-4">1. Coco-based Learning Site for Agriculture
+                    <section class="px-8 ml-8 text-sm">
+                        <h2 class="text-base font-semibold text-gray-800 mb-4">1. Coco-based Learning Site for Agriculture
                             (CocoLSA) Certification</h2>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-600 mb-4 text-sm text-justify">
                             A Coco-LSA is a farm that practices applicable coconut-based technologies, employs doable
                             farming strategies, and operates successfully; thus, worthy of emulation. The program aims
                             to:
                         </p>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+                        <ul class="text-sm list-disc list-inside text-gray-600 space-y-2 ml-4 text-justify">
                             <li>Enhance the capabilities and capacities of the coconut-farming community members on
                                 coconut production, processing, and coconut-based business;</li>
                             <li>Increase participation of the coconut farmers and farmer-leaders to the coconut industry
@@ -950,14 +948,14 @@
                     </section>
 
                     <!-- Selection and Prioritization Criteria -->
-                    <section>
+                    <section class="px-8 ml-8 text-sm">
                         <div class="flex items-center space-x-2 mb-4">
                             <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
                                 </path>
                             </svg>
-                            <h2 class="text-lg font-semibold text-gray-800">Selection and Prioritization Criteria</h2>
+                            <h2 class="text-base font-semibold text-gray-800">Selection and Prioritization Criteria</h2>
                         </div>
 
                         <!-- Individual (The Farmer) -->
@@ -972,7 +970,7 @@
                                 </div>
                                 <h3 class="font-semibold text-gray-800">Individual (The Farmer)</h3>
                             </div>
-                            <ul class="space-y-2 ml-8">
+                            <ul class="space-y-2 ml-8 text-justify">
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -1038,7 +1036,7 @@
                                 </div>
                                 <h3 class="font-semibold text-gray-800">Group (The CFO/CFC)</h3>
                             </div>
-                            <ul class="space-y-2 ml-8">
+                            <ul class="space-y-2 ml-8 text-justify">
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -1133,7 +1131,7 @@
                                 </div>
                                 <h3 class="font-semibold text-gray-800">Individual and Group (The Farm)</h3>
                             </div>
-                            <ul class="space-y-2 ml-8">
+                            <ul class="space-y-2 ml-8 text-justify">
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -1179,7 +1177,7 @@
                     </section>
 
                     <!-- Documentary Requirements -->
-                    <section>
+                    <section class="px-8 ml-8 text-sm">
                         <div class="flex items-center space-x-2 mb-4">
                             <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
