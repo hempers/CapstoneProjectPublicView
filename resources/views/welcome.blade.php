@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
-        body, html {
+        body,
+        html {
             font-family: 'Montserrat', sans-serif !important;
         }
     </style>
@@ -19,27 +20,34 @@
 <style>
     /* Import Google Fonts - Lemon font for the PCAppTrack logo */
     @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-    
+
     /* Custom Animations */
     @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
-    
+
     .animate-fadeIn {
         animation: fadeIn 0.3s ease-out;
     }
-    
+
     /* Card hover effects */
     .card-hover {
         transition: all 0.3s ease;
     }
-    
+
     .card-hover:hover {
         transform: translateY(-2px);
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
-    
+
     /* PCAppTrack logo styling with Lemon font */
     .pcapptrack-text {
         font-family: 'Lemon', cursive;
@@ -48,7 +56,7 @@
         color: #09CA16;
         font-weight: bold;
     }
-    
+
     /* Only the letter A gets the gradient */
     .pcapptrack-gradient-letter {
         font-family: 'Lemon', cursive;
@@ -61,15 +69,17 @@
         font-weight: bold;
     }
 </style>
+
 <body class="bg-white text-gray-800 font-montserrat">
     <!-- Header with CFIDP and PCAppTrack logos -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center px-4 py-3">
             <!-- CFIDP Logo on the left -->
             <div class="flex items-center">
-                <img src="/images/PCAppTrack.png" alt="CFIDP Logo" class="h-10" onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
+                <img src="/images/PCAppTrack.png" alt="CFIDP Logo" class="h-10"
+                    onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
             </div>
-             
+
             <!-- PCAppTrack Logo/Text with gradient on the right -->
             <div class="flex items-center">
                 <div class="flex items-center" style="line-height: 1">
@@ -184,7 +194,8 @@
 
             <!-- Loading Spinner -->
             <div id="loadingSpinner" class="hidden mt-4">
-                <div class="flex items-center justify-center p-3 bg-green-50 border border-green-100 rounded-lg shadow-sm animate-pulse">
+                <div
+                    class="flex items-center justify-center p-3 bg-green-50 border border-green-100 rounded-lg shadow-sm animate-pulse">
                     <svg class="animate-spin h-5 w-5 text-green-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24">
                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
@@ -198,7 +209,8 @@
             </div>
 
             <!-- Error Message -->
-            <div id="errorMessage" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-lg shadow-sm animate-fadeIn">
+            <div id="errorMessage"
+                class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-lg shadow-sm animate-fadeIn">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
                         <div class="bg-red-100 rounded-full p-1">
@@ -218,20 +230,26 @@
         </div>
 
         <!-- Application Details Modal -->
-        <div id="applicationModal" class="fixed inset-0 z-50 hidden overflow-y-auto transition-opacity duration-300 ease-out">
+        <div id="applicationModal"
+            class="fixed inset-0 z-50 hidden overflow-y-auto transition-opacity duration-300 ease-out">
             <!-- Modal Backdrop -->
             <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 backdrop-blur-sm"></div>
 
             <!-- Modal Content -->
             <div class="flex items-center justify-center min-h-screen p-4">
-                <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-2xl mx-auto max-h-[85vh] overflow-y-auto transform translate-y-[-1vh]">
+                <div
+                    class="relative bg-white rounded-xl shadow-2xl w-full max-w-2xl mx-auto max-h-[85vh] overflow-y-auto transform translate-y-[-1vh]">
                     <!-- Modal Header -->
                     <div class="bg-gradient-to-r from-green-500 to-green-400 p-6 rounded-t-xl relative overflow-hidden">
                         <!-- Decorative elements -->
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mt-12 -mr-12"></div>
-                        <div class="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-10 rounded-full -mb-12 -ml-12"></div>
-                        <div class="absolute top-1/2 left-1/4 w-8 h-8 bg-white opacity-10 rounded-full transform -translate-y-1/2"></div>
-                        
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mt-12 -mr-12">
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-10 rounded-full -mb-12 -ml-12">
+                        </div>
+                        <div
+                            class="absolute top-1/2 left-1/4 w-8 h-8 bg-white opacity-10 rounded-full transform -translate-y-1/2">
+                        </div>
+
                         <div class="flex justify-between items-center relative z-10">
                             <div class="flex-1"></div>
                             <div class="text-center">
@@ -240,7 +258,8 @@
                                 <div class="w-16 h-1 bg-white opacity-70 rounded mx-auto"></div>
                             </div>
                             <div class="flex-1 flex justify-end">
-                                <button id="closeModal" class="text-white hover:text-gray-100 focus:outline-none bg-green-600 hover:bg-green-700 rounded-full p-1 shadow-lg transition-all duration-200">
+                                <button id="closeModal"
+                                    class="text-white hover:text-gray-100 focus:outline-none bg-green-600 hover:bg-green-700 rounded-full p-1 shadow-lg transition-all duration-200">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M6 18L18 6M6 6l12 12"></path>
@@ -264,39 +283,52 @@
                         <!-- Application Information Section -->
                         <div class="mb-8 mt-1 pt-1">
                             <div class="flex items-center mb-4 space-x-2">
-                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                                    </path>
                                 </svg>
                                 <h3 class="text-base font-bold text-gray-900">Application Information</h3>
                             </div>
-                            
+
                             <!-- Application Information Form -->
                             <div class="mb-6 space-y-4">
                                 <div class="mb-3">
-                                    <label class="block text-xs font-semibold text-gray-700 mb-1">Application Title</label>
-                                    <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalApplicationTitle">-</div>
+                                    <label class="block text-xs font-semibold text-gray-700 mb-1">Application
+                                        Title</label>
+                                    <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                        id="modalApplicationTitle">-</div>
                                 </div>
-                                
+
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Reference ID</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalReferenceId">-</div>
+                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Reference
+                                            ID</label>
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                            id="modalReferenceId">-</div>
                                     </div>
-                                    
+
                                     <div>
-                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Date Submitted:</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalDateSubmitted">-</div>
+                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Date
+                                            Submitted:</label>
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                            id="modalDateSubmitted">-</div>
                                     </div>
-                                    
+
                                     <div>
-                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Contact Person</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalProponent">-</div>
+                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Contact
+                                            Person</label>
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                            id="modalProponent">-</div>
                                     </div>
-                                    
-                                    
+
+
                                     <div>
-                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Application Status:</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800" id="modalCurrentStatus">-</div>
+                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Application
+                                            Status:</label>
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                            id="modalCurrentStatus">-</div>
                                     </div>
                                 </div>
                             </div>
@@ -305,18 +337,21 @@
                         <!-- Application History -->
                         <div class="mb-8">
                             <div class="flex items-center mb-4 space-x-2">
-                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                                 <h3 class="text-base font-bold text-gray-900">Application History</h3>
                             </div>
-                            
+
                             <div class="overflow-hidden rounded-lg border border-gray-200 shadow-sm bg-white p-4">
                                 <!-- Timeline view for application history -->
                                 <div class="relative" id="historyTimelineContainer">
                                     <!-- Timeline line -->
-                                    <div class="absolute top-0 bottom-0 left-6 w-0.5 bg-green-100" aria-hidden="true"></div>
-                                    
+                                    <div class="absolute top-0 bottom-0 left-6 w-0.5 bg-green-100" aria-hidden="true">
+                                    </div>
+
                                     <!-- Timeline entries will be populated dynamically -->
                                     <div id="modalHistoryTable" class="space-y-3 relative">
                                         <!-- History items will be populated dynamically -->
@@ -325,14 +360,19 @@
 
                                 <!-- Empty state message (initially hidden) -->
                                 <div id="emptyHistoryState" class="hidden text-center py-6">
-                                    <div class="inline-flex items-center justify-center bg-gray-100 rounded-full p-2 mb-2">
-                                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    <div
+                                        class="inline-flex items-center justify-center bg-gray-100 rounded-full p-2 mb-2">
+                                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                         </svg>
                                     </div>
                                     <div>
-                                        <span class="block text-gray-500 font-medium text-[11px]">No history records found</span>
-                                        <p class="text-gray-400 text-[9px] mt-0.5">Application history will appear here once available</p>
+                                        <span class="block text-gray-500 font-medium text-[11px]">No history records
+                                            found</span>
+                                        <p class="text-gray-400 text-[9px] mt-0.5">Application history will appear here
+                                            once available</p>
                                     </div>
                                 </div>
                             </div>
@@ -341,13 +381,18 @@
                         <!-- Requirements Status -->
                         <div class="mb-4">
                             <div class="flex items-center mb-4 space-x-2">
-                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6m-6 4h6"></path>
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6m-6 4h6">
+                                    </path>
                                 </svg>
                                 <h3 class="text-base font-bold text-gray-900">Requirements Information</h3>
                             </div>
-                            <div id="modalRequirements" class="bg-white rounded-lg border border-gray-200 overflow-hidden p-4">
-                                <p class="text-sm text-gray-500" id="noRequirementsMsg">No requirements submitted yet</p>
+                            <div id="modalRequirements"
+                                class="bg-white rounded-lg border border-gray-200 overflow-hidden p-4">
+                                <p class="text-sm text-gray-500" id="noRequirementsMsg">No requirements submitted yet
+                                </p>
                                 <!-- Requirements will be populated dynamically -->
                             </div>
                         </div>
@@ -395,13 +440,13 @@
                     console.log(`${label}: Not an object or null`);
                 }
             }
-            
+
             // Function to fetch application data from your other Laravel project
             async function fetchApplicationData(applicationId) {
                 try {
                     // Get API URL from environment variable or use default
                     const API_BASE_URL = '{{ env("EXTERNAL_API_URL", "http://127.0.0.1:8001") }}';
-                    
+
                     console.log(`Fetching application data from: ${API_BASE_URL}/api/applications/${applicationId}`);
 
                     const response = await fetch(`${API_BASE_URL}/api/applications/${applicationId}`, {
@@ -424,15 +469,15 @@
 
                     const responseData = await response.json();
                     console.log('Full API Response:', responseData);
-                    
+
                     // Use our debug function to print detailed information about the response
                     debugObject(responseData, 'API Response Keys');
-                    
+
                     // If the data is nested in a 'data' property, debug that too
                     if (responseData.data) {
                         debugObject(responseData.data, 'Nested Data Keys');
                     }
-                    
+
                     return responseData;
                 } catch (error) {
                     console.error('API Error:', error);
@@ -444,7 +489,7 @@
             function populateModal(data) {
                 // Log the received data to debug
                 console.log('Data for modal:', data);
-                
+
                 // Based on the API structure from ApplicationController.php
                 // logging the exact field names we're looking for
                 console.log('Title field check:', {
@@ -454,11 +499,11 @@
                     application_id: data.application_id
                 });
                 console.log('Contact person check:', data.contact_person);
-                
+
                 // Update the modal with the received data using the exact field names from the API
                 document.getElementById('modalApplicationTitle').textContent = data.application_title || '-';
                 document.getElementById('modalReferenceId').textContent = data.application_id || '-';
-                
+
                 // Get contact person name from the nested object
                 let contactPersonName = '-';
                 if (data.contact_person && data.contact_person.name) {
@@ -467,21 +512,21 @@
                 document.getElementById('modalProponent').textContent = contactPersonName;
 
                 // Format date if available
-                document.getElementById('modalDateSubmitted').textContent = 
+                document.getElementById('modalDateSubmitted').textContent =
                     data.date_submitted ? new Date(data.date_submitted).toLocaleDateString() : '-';
 
                 // Update status with color coding
                 const statusElement = document.getElementById('modalCurrentStatus');
-                
+
                 // Log the status field
                 console.log('Status field check:', {
                     application_status: data.application_status
                 });
-                
+
                 // Use the exact field name from the API
                 const status = data.application_status || 'Unknown';
                 statusElement.textContent = status;
-                
+
                 // Keep the border styling but update the text style
                 statusElement.className = 'border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800';
 
@@ -494,7 +539,7 @@
                 console.log('History field check:', {
                     stage_history: data.stage_history
                 });
-                
+
                 // Use the exact stage_history field from the API
                 const historyData = data.stage_history || [];
                 console.log('Using history data:', historyData);
@@ -504,21 +549,21 @@
                     if (emptyHistoryState) {
                         emptyHistoryState.classList.add('hidden');
                     }
-                    
+
                     // Sort the history data by date in reverse chronological order (newest first)
                     const sortedHistoryData = [...historyData].sort((a, b) => {
                         if (!a.date) return 1;
                         if (!b.date) return -1;
                         return new Date(b.date) - new Date(a.date); // This sorts newest first
                     });
-                    
+
                     // Add a visual label for the most recent activity
                     let firstItem = true;
-                    
+
                     sortedHistoryData.forEach((item, index) => {
                         const timelineItem = document.createElement('div');
                         timelineItem.className = 'pl-10 relative';
-                        
+
                         // Format the date and time if available
                         let formattedDate = '-';
                         let dateColor = 'text-gray-400';
@@ -537,17 +582,17 @@
                             timeFormatted = timeStr;
                             dateColor = 'text-green-600';
                         }
-                        
+
                         // Determine the timeline dot color based on status - highlight the most recent activity
                         let dotColor = 'bg-gray-300';
                         let itemClass = '';
-                        
+
                         if (firstItem) {
                             dotColor = 'bg-green-500';
                             itemClass = 'border-green-100 bg-green-50';
                             firstItem = false;
                         }
-                        
+
                         timelineItem.innerHTML = `
                             <!-- Timeline dot -->
                             <div class="absolute left-0 top-1 mt-1">
@@ -587,7 +632,7 @@
                                 </div>
                             </div>
                         `;
-                        
+
                         historyTimeline.appendChild(timelineItem);
                     });
                 } else {
@@ -611,20 +656,20 @@
 
                 // Get the no requirements message element
                 const noRequirementsMsg = document.getElementById('noRequirementsMsg');
-                
+
                 if (requirementsData && requirementsData.length > 0) {
                     // Find missing requirements
                     const missingRequirements = requirementsData.filter(req => {
                         const reqStatus = (req.status || '').toLowerCase();
                         return reqStatus === 'missing' || reqStatus === 'kulang' || reqStatus === 'hindi kumpleto';
                     });
-                    
+
                     if (missingRequirements.length > 0) {
                         // Hide the no requirements message
                         if (noRequirementsMsg) {
                             noRequirementsMsg.style.display = 'none';
                         }
-                        
+
                         // Add warning header
                         const warningHeader = document.createElement('div');
                         warningHeader.className = 'bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4';
@@ -643,16 +688,16 @@
                             </div>
                         `;
                         requirementsContainer.appendChild(warningHeader);
-                        
+
                         // Create a list for missing requirements
                         const list = document.createElement('ul');
                         list.className = 'space-y-2 mb-4';
                         requirementsContainer.appendChild(list);
-                        
+
                         // Add each missing requirement to the list
                         missingRequirements.forEach(req => {
                             const reqName = req.requirement_name || 'Unknown Requirement';
-                            
+
                             const listItem = document.createElement('li');
                             listItem.className = 'flex items-center text-sm py-2 px-1 border-b border-gray-100';
                             listItem.innerHTML = `
@@ -663,7 +708,7 @@
                             `;
                             list.appendChild(listItem);
                         });
-                        
+
                         // Add note in Tagalog
                         const noteElement = document.createElement('div');
                         noteElement.className = 'mt-4 text-xs text-gray-600 pt-3 border-t border-gray-100';
@@ -680,7 +725,7 @@
                         if (noRequirementsMsg) {
                             noRequirementsMsg.style.display = 'none';
                         }
-                        
+
                         const completeMessage = document.createElement('div');
                         completeMessage.className = 'bg-green-50 border-l-4 border-green-400 p-4';
                         completeMessage.innerHTML = `
@@ -740,19 +785,19 @@
                 try {
                     console.log('Attempting to fetch application:', applicationId);
                     const response = await fetchApplicationData(applicationId);
-                    
+
                     if (!response) {
                         throw new Error('No data received from API');
                     }
-                    
+
                     // Print the entire response structure to help with debugging
                     console.log('Full API response structure:', response);
-                    
+
                     // Based on the ApplicationController.php, the API response is:
                     // { success: true, message: "...", data: { ... } }
                     // So we need to extract the data property
                     let applicationData;
-                    
+
                     if (response.success === true && response.data) {
                         // The API is returning the expected format with a nested data object
                         applicationData = response.data;
@@ -762,10 +807,10 @@
                         applicationData = response;
                         console.log('WARNING: Unexpected API response format, using direct response data');
                     }
-                    
+
                     console.log('Processing data for modal display:', applicationData);
                     populateModal(applicationData);
-                    
+
                     // Show modal with animation
                     applicationModal.classList.remove('hidden');
                     applicationModal.classList.add('opacity-0');
@@ -787,7 +832,7 @@
             if (closeModalBtn) {
                 closeModalBtn.addEventListener('click', closeModalFunc);
             }
-            
+
             // Add listener for the bottom close button
             const closeModalBtnBottom = document.getElementById('closeModalBtn');
             if (closeModalBtnBottom) {
@@ -856,61 +901,82 @@
             </div>
 
             <div class="max-w-4xl mx-auto">
-                <!-- Social Protection Section -->
-                <div class="border-b border-gray-300 py-3 mb-5">
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center">
-                            <div class="flex-shrink-0 mr-3">
-                                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800">Social Protection</h3>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <img src="/images/ATI.svg" alt="ATI Logo" class="h-8">
-                            <img src="/images/TESDA.svg" alt="TESDA Logo" class="h-8">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CocoLSA Section -->
                 <div class="bg-white rounded-lg shadow-md p-6 mb-8">
                     <div class="border-b border-gray-200 pb-4 mb-4">
-                        <h3 class="text-md font-medium text-gray-700 mb-3">Training and Farm Schools</h3>
+                        <!-- Social Protection Section -->
+                        <div class="border-b border-gray-300 py-3 mb-5">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 mr-3">
+                                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-800">Social Protection</h3>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <img src="/images/ATI.svg" alt="ATI Logo" class="h-10">
+                                    <img src="/images/TESDA.svg" alt="TESDA Logo" class="h-11">
+                                </div>
+                            </div>
+                        </div>
+                         <!-- CocoLSA Section -->
+                        <h3 class="text-md font-medium text-gray-700 mb-3 pl-8">Training and Farm Schools</h3>
+                        <div class="w-32 h-1 bg-green-600 pl-8"></div>
                         <h4 class="text-green-800 font-semibold mb-3 border-l-4 border-green-500 pl-3">
                             I. Coco-based Learning Site for Agriculture (CocoLSA) Certification
                         </h4>
                         <div class="bg-gray-50 p-4 rounded-md mt-3">
-                            <p class="text-sm text-gray-700 text-justify">A Coco-LSA is a farm that practices applicable coconut-based technologies, employs doable farming strategies, and operates successfully, thus, worthy of emulation.</p>
+                            <p class="text-sm text-gray-700 text-justify">A Coco-LSA is a farm that practices applicable
+                                coconut-based technologies, employs doable farming strategies, and operates
+                                successfully, thus, worthy of emulation.</p>
                         </div>
-                        
+
                         <p class="font-medium mt-4 text-green-800 text-sm">The program aims to:</p>
                         <ul class="mt-2 space-y-2">
                             <li class="flex items-start">
-                                <span class="inline-flex items-center justify-center w-4 h-4 bg-green-100 rounded-full mr-2 mt-0.5 flex-shrink-0">
+                                <span
+                                    class="inline-flex items-center justify-center w-4 h-4 bg-green-100 rounded-full mr-2 mt-0.5 flex-shrink-0">
                                     <span class="text-green-700 text-xs">•</span>
                                 </span>
-                                <span class="text-sm text-justify">Enhance the capabilities and capacities of the coconut-farming community members on coconut production, processing, and coconut-based business.</span>
+                                <span class="text-sm text-justify">Enhance the capabilities and capacities of the
+                                    coconut-farming community members on coconut production, processing, and
+                                    coconut-based business.</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="inline-flex items-center justify-center w-4 h-4 bg-green-100 rounded-full mr-2 mt-0.5 flex-shrink-0">
+                                <span
+                                    class="inline-flex items-center justify-center w-4 h-4 bg-green-100 rounded-full mr-2 mt-0.5 flex-shrink-0">
                                     <span class="text-green-700 text-xs">•</span>
                                 </span>
-                                <span class="text-sm text-justify">Increase participation of the coconut farmers and farmer-leaders to the coconut industry development by serving as agents of coconut-based capability-building in their respective communities.</span>
+                                <span class="text-sm text-justify">Increase participation of the coconut farmers and
+                                    farmer-leaders to the coconut industry development by serving as agents of
+                                    coconut-based capability-building in their respective communities.</span>
                             </li>
                         </ul>
-                        
+
                         <div class="mt-4 p-3 bg-green-50 rounded-md border-l-4 border-green-200">
-                            <p class="text-xs text-gray-700 mb-2 text-justify">In coordination with <span class="font-semibold">ATI</span> and <span class="font-semibold">TESDA</span>, it shall have the following components:</p>
+                            <p class="text-xs text-gray-700 mb-2 text-justify">In coordination with <span
+                                    class="font-semibold">ATI</span> and <span class="font-semibold">TESDA</span>, it
+                                shall have the following components:</p>
                             <div class="grid grid-cols-2 md:grid-cols-5 gap-1 mt-2">
-                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Training</div>
-                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Demonstration</div>
-                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Information</div>
-                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Technical Aid</div>
-                                <div class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">Projects</div>
+                                <div
+                                    class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">
+                                    Training</div>
+                                <div
+                                    class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">
+                                    Demonstration</div>
+                                <div
+                                    class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">
+                                    Information</div>
+                                <div
+                                    class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">
+                                    Technical Aid</div>
+                                <div
+                                    class="bg-white rounded p-1 text-center text-xs font-medium text-green-800 border border-green-100 shadow-sm">
+                                    Projects</div>
                             </div>
                         </div>
                     </div>
@@ -918,8 +984,10 @@
                     <!-- Selection and Prioritization Criteria -->
                     <div class="mb-6">
                         <div class="flex items-center mb-3 border-b border-gray-200 pb-2">
-                            <svg class="w-4 h-4 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            <svg class="w-4 h-4 text-green-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
                             </svg>
                             <h4 class="font-medium text-sm text-gray-800">Selection and Prioritization Criteria</h4>
                         </div>
@@ -935,32 +1003,45 @@
 
                             <ul class="space-y-1 text-xs ml-1">
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span class="text-justify">Must be an individual Filipino coconut farmer (landowner, owner-tiller, or grower) with at least 1 ha. of coconut land;</span>
+                                    <span class="text-justify">Must be an individual Filipino coconut farmer (landowner,
+                                        owner-tiller, or grower) with at least 1 ha. of coconut land;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span class="text-justify">Willing and able to demonstrate the coconut technologies in his/her farm to the clientele at the time needed;</span>
+                                    <span class="text-justify">Willing and able to demonstrate the coconut technologies
+                                        in his/her farm to the clientele at the time needed;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Should be willing to be trained regularly;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Is physically fit to perform the responsibilities of a CocoLSA cooperator;</span>
+                                    <span>Is physically fit to perform the responsibilities of a CocoLSA
+                                        cooperator;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>NCFRS registered, preferably a member of a CFOCFC.</span>
                                 </li>
@@ -971,53 +1052,77 @@
                         <div class="mb-4 ml-6">
                             <div class="flex items-center mb-2">
                                 <svg class="w-5 h-5 text-amber-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                    <path
+                                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
+                                    </path>
                                 </svg>
                                 <h5 class="font-medium">Group (The CFOCFC)</h5>
                             </div>
 
                             <ul class="ml-6 space-y-2 text-sm">
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Shall be at least 1 ha. of integrated and/or diversified farm (e.g. coconut-livestock);</span>
+                                    <span>Shall be at least 1 ha. of integrated and/or diversified farm (e.g.
+                                        coconut-livestock);</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Must possess and manage coconut farmland with an area of at least 1 ha.;</span>
+                                    <span>Must possess and manage coconut farmland with an area of at least 1
+                                        ha.;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Posseses appropriate valid registration from the Securities and Exchange Commission (SEC), the Cooperative Development Authority (CDA), the Department of Labor and Employment (DOLE), or existing PCA accreditation;</span>
+                                    <span>Posseses appropriate valid registration from the Securities and Exchange
+                                        Commission (SEC), the Cooperative Development Authority (CDA), the Department of
+                                        Labor and Employment (DOLE), or existing PCA accreditation;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Is active in the past three years in farmer organization and development or community enterprise development;</span>
+                                    <span>Is active in the past three years in farmer organization and development or
+                                        community enterprise development;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Must contain Filipino farmer-leaders or members who are willing and able to demonstrate the coconut technologies in his/her farm to the clientele at the time needed;</span>
+                                    <span>Must contain Filipino farmer-leaders or members who are willing and able to
+                                        demonstrate the coconut technologies in his/her farm to the clientele at the
+                                        time needed;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Willing to be trained regularly;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Physically fit to perform the responsibilities of an LSA cooperator and LSA;</span>
+                                    <span>Physically fit to perform the responsibilities of an LSA cooperator and
+                                        LSA;</span>
                                 </li>
                             </ul>
                         </div>
@@ -1027,36 +1132,48 @@
                             <div class="flex items-center mb-2">
                                 <svg class="w-4 h-4 text-amber-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 9a
-                                    <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+                                    <path d=" M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
                                 </svg>
                                 <svg class="w-5 h-5 text-amber-600 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                    <path
+                                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
+                                    </path>
                                 </svg>
                                 <h5 class="font-medium">Individual and Group (The Farm)</h5>
                             </div>
 
                             <ul class="ml-6 space-y-2 text-sm">
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Shall be at least 1 ha. of integrated and/or diversified farm (e.g. coconut-livestock, coconut-agro-forestry;coconut-crop);</span>
+                                    <span>Shall be at least 1 ha. of integrated and/or diversified farm (e.g.
+                                        coconut-livestock, coconut-agro-forestry;coconut-crop);</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Contains a technology demonstration area for coconut production, with a holding area, wash area, and toilet;</span>
+                                    <span>Contains a technology demonstration area for coconut production, with a
+                                        holding area, wash area, and toilet;</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Is accessible by land and other transportation facilities; and</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Is aesthetically landscaped.</span>
                                 </li>
@@ -1067,75 +1184,99 @@
                     <!-- Documentary Requirements -->
                     <div class="mb-6">
                         <div class="flex items-center mb-3 border-b border-gray-200 pb-2">
-                            <svg class="w-4 h-4 text-gray-700 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            <svg class="w-4 h-4 text-gray-700 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
                             </svg>
                             <h4 class="font-medium text-sm text-gray-800">Documentary Requirements</h4>
                         </div>
 
                         <div class="mb-3">
-                            <h5 class="font-medium mb-3 text-green-800 text-xs">Applicant's Checklist of Requirements</h5>
+                            <h5 class="font-medium mb-3 text-green-800 text-xs">Applicant's Checklist of Requirements
+                            </h5>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-1 text-xs">
                                 <div class="flex items-center bg-white p-1 rounded-md border border-gray-100">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Signed Briefer</span>
                                 </div>
                                 <div class="flex items-center bg-white p-1 rounded-md border border-gray-100">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Self-Assessment</span>
                                 </div>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Letter of Intent to become a CocoLSA;</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Farming Learning Site for Agriculture Profile Form;</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>LSA Qualification Form;</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>Field Validation Report (c/o PCA Agriculturists assigned in the proposed site);</span>
+                                    <span>Field Validation Report (c/o PCA Agriculturists assigned in the proposed
+                                        site);</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>LSA Acceptance Form;</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
                                     <span>Endorsement of the RWGC; and</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    <svg class="w-4 h-4 text-green-500 mr-1 mt-0.5 flex-shrink-0" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span>If endorsed with financial assistance, a Development Plan shall be required.</span>
+                                    <span>If endorsed with financial assistance, a Development Plan shall be
+                                        required.</span>
                                 </li>
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="bg-white py-12">
@@ -1152,8 +1293,7 @@
                 <div class="logo-track flex items-center py-4" id="logoTrack1">
                     <!-- Original set of logos -->
                     <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full p-3 shadow-md flex items-center justify-center">
+                        <div class="logo-circle rounded-full p-3 shadow-md flex items-center justify-center">
                             <img src="/images/IA logos/DA.svg" alt="DA Logo">
                         </div>
                         <p>Department of Agriculture</p>
@@ -1454,8 +1594,10 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 160px; /* Reduced width to bring logos closer */
-                margin: 0 12px; /* Reduced margin to bring logos closer */
+                width: 160px;
+                /* Reduced width to bring logos closer */
+                margin: 0 12px;
+                /* Reduced margin to bring logos closer */
             }
 
             /* Logo name styling */
@@ -1466,7 +1608,8 @@
                 color: rgb(2, 54, 1);
                 max-width: 150px;
                 line-height: 1.2;
-                font-weight: 600; /* Increased font weight for better visibility */
+                font-weight: 600;
+                /* Increased font weight for better visibility */
                 height: auto;
                 padding-bottom: 5px;
             }
@@ -1474,19 +1617,26 @@
             /* Hover effects and styling */
             .logo-circle {
                 transition: all 0.3s ease;
-                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-                border: 2px solid rgba(9, 202, 22, 0.2); /* Light green border */
-                width: 120px; /* Increased size */
-                height: 120px; /* Increased size */
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+                /* Enhanced shadow */
+                border: 2px solid rgba(9, 202, 22, 0.2);
+                /* Light green border */
+                width: 120px;
+                /* Increased size */
+                height: 120px;
+                /* Increased size */
                 position: relative;
                 overflow: hidden;
-                background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%); /* Gradient background */
+                background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%);
+                /* Gradient background */
             }
 
             /* Standardized logo image styling */
             .logo-circle img {
-                max-width: 75%; /* Increased image size proportionally */
-                max-height: 75%; /* Increased image size proportionally */
+                max-width: 75%;
+                /* Increased image size proportionally */
+                max-height: 75%;
+                /* Increased image size proportionally */
                 width: auto;
                 height: auto;
                 object-fit: contain;
@@ -1496,14 +1646,16 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                filter: drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1)); /* Subtle drop shadow on logos */
+                filter: drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1));
+                /* Subtle drop shadow on logos */
             }
 
             .logo-circle:hover {
                 transform: scale(1.12);
                 box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
                 background: linear-gradient(135deg, rgb(195, 238, 181) 0%, rgb(231, 255, 226) 100%);
-                border-color: rgba(9, 202, 22, 0.6); /* Darker green border on hover */
+                border-color: rgba(9, 202, 22, 0.6);
+                /* Darker green border on hover */
             }
 
             /* Adjust spacing between logo items - already defined in the logo-item class */
@@ -1564,7 +1716,7 @@
                         item.style.margin = '0 12px'; // Reduced margin to bring logos closer
                         item.style.width = '160px'; // Narrower width to bring logos closer
                     });
-                    
+
                     // Ensure paragraph styling is consistent
                     const logoTexts = document.querySelectorAll('.logo-item p');
                     logoTexts.forEach(text => {
