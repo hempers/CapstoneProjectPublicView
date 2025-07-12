@@ -924,9 +924,12 @@
                             </div>
                         </div>
                          <!-- CocoLSA Section -->
-                        <h3 class="text-md font-medium text-gray-700 mb-3 pl-8">Training and Farm Schools</h3>
-                        <div class="w-32 h-1 bg-green-600 pl-8"></div>
-                        <h4 class="text-green-800 font-semibold mb-3 border-l-4 border-green-500 pl-3">
+                        <div class="mb-4">
+                            <h3 class="text-md font-bold text-gray-700 mb-1 pl-8">Training and Farm Schools</h3>
+                            <div class="h-1 bg-green-500 ml-8 mr-8"></div>
+                        </div>
+                        
+                        <h4 class="text-green-800 font-semibold mb-3 pl-10">
                             I. Coco-based Learning Site for Agriculture (CocoLSA) Certification
                         </h4>
                         <div class="bg-gray-50 p-4 rounded-md mt-3">
