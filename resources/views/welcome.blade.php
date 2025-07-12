@@ -914,11 +914,11 @@
                         <h1 class="text-2xl font-bold text-gray-800">Social Protection</h1>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/ATI.svg" alt="ATI Logo" class="h-8 w-8 object-contain">
+                        <div class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
+                            <img src="/images/ATI.svg" alt="ATI Logo" class="h-14 w-14 object-contain">
                         </div>
-                        <div class="w-12 h-12 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/TESDA.svg" alt="TESDA Logo" class="h-8 w-8 object-contain">
+                        <div class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
+                            <img src="/images/TESDA.svg" alt="TESDA Logo" class="h-14 w-14 object-contain">
                         </div>
                     </div>
                 </div>
