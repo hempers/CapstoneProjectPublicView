@@ -925,10 +925,7 @@
 
                 <!-- Content -->
                 <div class="p-6 space-y-8">
-                    <!-- Green progress bar -->
-                    <div class="w-full bg-gray-200 rounded-full h-2">
-                        <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
-                    </div>
+                   x    
 
                     <!-- CocoLSA Certification Section -->
                     <section>
