@@ -911,7 +911,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <h1 class="text-2xl font-bold text-gray-800">Social Protection</h1>
+                        <h1 class="text-2xl font-bold text-gray-800 -mb-4">Social Protection</h1>
                     </div>
                     <div class="flex items-center space-x-4">
                         <div class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
