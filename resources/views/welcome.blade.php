@@ -1502,9 +1502,390 @@
 
                 <!-- Content -->
                 <div class="p-6 space-y-8">
-                    <!-- CocoLSA Certification Section -->
+                    <!-- Credit -->
                     <section class="px-8 ml-8 text-sm">
                         <h2 class="text-base font-semibold text-gray-800">Credit</h2>
+                        <p class="text-gray-600 mb-4 text-sm text-justify">
+                            Cooperatives/individual farmers usually direct to either
+                            LBP/DBP to avail the CFID Credit Program. PCA acts as support implementing
+                            agency to these banks as far as NCFRS validation, PCA-accreditation, and other
+                            validation for coconut value chain are concerned.
+                        </p>
+                    </section>
+
+                    <!-- Base Reqs -->
+                    <section class="px-8 ml-8 text-sm">
+                        <!-- Requirements -->
+                        <div class="mb-6">
+                            <div class="flex items-center space-x-2 mb-3">
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Base Requirements</h3>
+                            </div>
+                            <ul class="space-y-2 ml-8 text-justify">
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Letter of Intent</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">NCFRS Registration and Certification</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">CSO Accreditation issued by PCA or DA</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">CDA Registration and COC</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Financial Statement for two (2) years (external
+                                        audit);
+                                    </span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Board Resolution (if requestee is a Cooperative;
+                                        not needed if
+                                        individual farmer)
+                                    </span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Articles of Cooperation and By-Laws (duly
+                                        notarized)
+                                    </span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Existing Organizational Structure
+                                    </span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Official list of members
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- Documentary Requirements -->
+                        <div class="mb-6">
+                            <div class="flex items-center space-x-2 mb-4">
+                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                                <h2 class="text-lg font-semibold text-gray-800">Documentary Requirements (of DBP/LBP)
+                                </h2>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-3">
+                                <div class="w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Coconut Farmer Enterprises</h3>
+                            </div>
+                            <ul class="space-y-2 ml-8 text-justify">
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">DBP Loan Application Forms</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Proof of NCFRS enlistment</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Photocopy of Certificate of Registration from
+                                        the DTI/SEC
+                                    </span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Certificate of Accreditation from PCA</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Audited Financial Statements for the last year;
+                                        or latest Interim</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Financial Statements for start-ups</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Business Plan, if applicable</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Current year Business Permit; and</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Training Certificate from an accredited provider
+                                        (e.g., TESDA,
+                                        DA-ATI) on financial literacy and on projects related to the
+                                        coconut value chain</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--Coconut Farmers Cooperatives and Organizations -->
+                        <div class="mb-6">
+                            <div class="flex items-center space-x-2 mb-3">
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Coconut Farmers Cooperatives and Organizations
+                                </h3>
+                            </div>
+                            <ul class="space-y-2 ml-8 text-justify">
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">DBP Loan Application Forms</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Photocopy of Certificate of Registration from
+                                        the CDA/SEC</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Certificate of Accreditation from PCA</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Certificate of Compliance from CDA, if
+                                        applicable</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Certificate of Tax Exemption, if
+                                        applicable</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Copies of Articles of Incorporation/Cooperation
+                                        and By-Laws</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Bio-data of incumbent Officers and Board of
+                                        Directors with
+                                        photocopy of valid government issued ID</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Board Resolution authorizing the Cooperative/
+                                        Organization to
+                                        borrow and designating the authorized signatories</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Audited Financial Statements for the last year;
+                                        or latest Interim
+                                        Financial Statements for start-ups</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Business Plan, if applicable</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Current year Business Permit; and</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Training Certificate of the cooperative and its
+                                        key officers from accredited provider (e.g., TESDA, DA-ATI) on financial
+                                        literacy
+                                        and on projects related to the coconut value chain</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Content -->
+                <div class="p-6 space-y-8">
+                    <!-- Infrastructure -->
+                    <section class="px-8 ml-8 text-sm">
+                        <h2 class="text-base font-semibold text-gray-800">Infrastructure</h2>
                         <p class="text-gray-600 mb-4 text-sm text-justify">
                             Cooperatives/individual farmers usually direct to either
                             LBP/DBP to avail the CFID Credit Program. PCA acts as support implementing
@@ -1525,9 +1906,18 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <h3 class="font-semibold text-gray-800">Letter of Intent</h3>
+                                <h3 class="font-semibold text-gray-800">Base Requirements</h3>
                             </div>
                             <ul class="space-y-2 ml-8 text-justify">
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Letter of Intent</span>
+                                </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -1615,6 +2005,16 @@
 
                         <!-- Group (The CFO/CFC) -->
                         <div class="mb-6">
+                            <div class="flex items-center space-x-2 mb-4">
+                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                                <h2 class="text-lg font-semibold text-gray-800">Documentary Requirements (of DBP/LBP)
+                                </h2>
+                            </div>
                             <div class="flex items-center space-x-2 mb-3">
                                 <div class="w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
                                     <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -1623,7 +2023,7 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <h3 class="font-semibold text-gray-800">Group (The CFO/CFC)</h3>
+                                <h3 class="font-semibold text-gray-800">Coconut Farmer Enterprises</h3>
                             </div>
                             <ul class="space-y-2 ml-8 text-justify">
                                 <li class="flex items-start space-x-2">
@@ -1633,8 +2033,7 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Shall be at least 1 ha. of integrated and/or
-                                        diversified farm (e.g. coconut-livestock);</span>
+                                    <span class="text-gray-600 text-sm">DBP Loan Application Forms</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1643,8 +2042,7 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Must possess and manage coconut farmland with an
-                                        area of at least 1 ha.;</span>
+                                    <span class="text-gray-600 text-sm">Proof of NCFRS enlistment</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1653,10 +2051,9 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Possesses appropriate valid registration from
-                                        the Securities and Exchange Commission (SEC), the Cooperative Development
-                                        Authority (CDA), the Department of Labor and Employment (DOLE), or existing PCA
-                                        accreditation;</span>
+                                    <span class="text-gray-600 text-sm">Photocopy of Certificate of Registration from
+                                        the DTI/SEC
+                                    </span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1665,8 +2062,7 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Is active in the past three years in farmer
-                                        organization and development or community enterprise development;</span>
+                                    <span class="text-gray-600 text-sm">Certificate of Accreditation from PCA</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1675,9 +2071,8 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Must contain Filipino farmer-leaders or members
-                                        who are willing and able to demonstrate the coconut technologies in his/her farm
-                                        to the clientele at the time needed;</span>
+                                    <span class="text-gray-600 text-sm">Audited Financial Statements for the last year;
+                                        or latest Interim</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1686,7 +2081,7 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Willing to be trained regularly;</span>
+                                    <span class="text-gray-600 text-sm">Financial Statements for start-ups</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1695,13 +2090,33 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Physically fit to perform the responsibilities
-                                        of an LSA cooperator and LSA.</span>
+                                    <span class="text-gray-600 text-sm">Business Plan, if applicable</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Current year Business Permit; and</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-600 text-sm">Training Certificate from an accredited provider
+                                        (e.g., TESDA,
+                                        DA-ATI) on financial literacy and on projects related to the
+                                        coconut value chain</span>
                                 </li>
                             </ul>
                         </div>
 
-                        <!-- Individual and Group (The Farm) -->
+                        <!--Coconut Farmers Cooperatives and Organizations -->
                         <div class="mb-6">
                             <div class="flex items-center space-x-2 mb-3">
                                 <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -1718,7 +2133,8 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <h3 class="font-semibold text-gray-800">Individual and Group (The Farm)</h3>
+                                <h3 class="font-semibold text-gray-800">Coconut Farmers Cooperatives and Organizations
+                                </h3>
                             </div>
                             <ul class="space-y-2 ml-8 text-justify">
                                 <li class="flex items-start space-x-2">
@@ -1728,9 +2144,7 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Shall be at least 1 ha. of integrated and/or
-                                        diversified farm (e.g. coconut-livestock,
-                                        coconut-agro-forestry/coconut-crop);</span>
+                                    <span class="text-gray-600 text-sm">DBP Loan Application Forms</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1739,8 +2153,8 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Contains a technology demonstration area for
-                                        coconut production, with a holding area, wash area, and toilet;</span>
+                                    <span class="text-gray-600 text-sm">Photocopy of Certificate of Registration from
+                                        the CDA/SEC</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1749,8 +2163,7 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Is accessible by land and other transportation
-                                        facilities; and</span>
+                                    <span class="text-gray-600 text-sm">Certificate of Accreditation from PCA</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1759,34 +2172,8 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Is aesthetically landscaped.</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <!-- Documentary Requirements -->
-                    <section class="px-8 ml-8 text-sm">
-                        <div class="flex items-center space-x-2 mb-4">
-                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                </path>
-                            </svg>
-                            <h2 class="text-lg font-semibold text-gray-800">Documentary Requirements</h2>
-                        </div>
-
-                        <div class="mb-4">
-                            <h3 class="font-semibold text-gray-700 mb-3">Applicant's Checklist of Requirements</h3>
-                            <ul class="space-y-2 ml-4">
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Signed Briefer;</span>
+                                    <span class="text-gray-600 text-sm">Certificate of Compliance from CDA, if
+                                        applicable</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1795,7 +2182,8 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Self- Assessment;</span>
+                                    <span class="text-gray-600 text-sm">Certificate of Tax Exemption, if
+                                        applicable</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1804,7 +2192,8 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Letter of Intent to become a CocoLSA;</span>
+                                    <span class="text-gray-600 text-sm">Copies of Articles of Incorporation/Cooperation
+                                        and By-Laws</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1813,8 +2202,9 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Farming Learning Site for Agriculture Profile
-                                        Form;</span>
+                                    <span class="text-gray-600 text-sm">Bio-data of incumbent Officers and Board of
+                                        Directors with
+                                        photocopy of valid government issued ID</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1823,7 +2213,9 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">LSA Qualification Form;</span>
+                                    <span class="text-gray-600 text-sm">Board Resolution authorizing the Cooperative/
+                                        Organization to
+                                        borrow and designating the authorized signatories</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1832,8 +2224,9 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Field Validation Report (c/o PCA Agriculturists
-                                        assigned in the proposed site);</span>
+                                    <span class="text-gray-600 text-sm">Audited Financial Statements for the last year;
+                                        or latest Interim
+                                        Financial Statements for start-ups</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1842,7 +2235,7 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">LSA Acceptance Form;</span>
+                                    <span class="text-gray-600 text-sm">Business Plan, if applicable</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1851,7 +2244,7 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">Endorsement of the RTWG; and</span>
+                                    <span class="text-gray-600 text-sm">Current year Business Permit; and</span>
                                 </li>
                                 <li class="flex items-start space-x-2">
                                     <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
@@ -1860,8 +2253,10 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600 text-sm">If endorsed with financial assistance, a
-                                        Development Plan shall be required.</span>
+                                    <span class="text-gray-600 text-sm">Training Certificate of the cooperative and its
+                                        key officers from accredited provider (e.g., TESDA, DA-ATI) on financial
+                                        literacy
+                                        and on projects related to the coconut value chain</span>
                                 </li>
                             </ul>
                         </div>
