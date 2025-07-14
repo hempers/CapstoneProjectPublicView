@@ -80,13 +80,9 @@
                     onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
             </div>
 
-            <!-- PCAppTrack Logo/Text with gradient on the right -->
+            <!-- PCAppTrack Logo image on the right -->
             <div class="flex items-center">
-                <div class="flex items-center" style="line-height: 1">
-                    <span class="pcapptrack-text" style="margin-right: -0.05em;">PC</span>
-                    <span class="pcapptrack-gradient-letter" style="margin-right: -0.05em;">A</span>
-                    <span class="pcapptrack-text">ppTrack</span>
-                </div>
+                <img src="/images/img/logo.svg" alt="PCAppTrack Logo" class="h-10">
             </div>
         </div>
     </header>
