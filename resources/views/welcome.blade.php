@@ -76,7 +76,7 @@
         <div class="container mx-auto flex justify-between items-center px-4 py-3">
             <!-- CFIDP Logo on the left -->
             <div class="flex items-center">
-                <img src="/images/PCAppTrack.png" alt="CFIDP Logo" class="h-10"
+                <img src="/images/img/PCAppTrack.png" alt="CFIDP Logo" class="h-10"
                     onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
             </div>
 
@@ -133,7 +133,7 @@
     </script>
 
     <!-- Hero Section -->
-    <section class="bg-green-50 py-8">
+    <section class="bg-green-50 py-16">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
             <!-- Text Section (moved first for left-side position) -->
             <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0">
@@ -161,8 +161,8 @@
             </div>
 
             <!-- Image Section (now second for right-side position) -->
-            <div class="w-3/4 md:w-1/2  md:mt-0">
-                <img src="/images/header.svg" alt="Application Tracking System" class="w-3/4 h-auto max-w-xl ml-20">
+            <div class="w-full md:w-1/2  md:mt-0">
+                <img src="/images/img/head2.svg" alt="Application Tracking System" class="w-3/4 h-auto max-w-xl ml-20">
             </div>
         </div>
     </section>
@@ -171,10 +171,10 @@
     <section id="track-section" class="py-16 relative overflow-hidden" style="background-color:rgb(230, 253, 212);">
         <!-- Decorative leaf images for background -->
         <div class="absolute left-0 top-0 opacity-20">
-            <img src="/images/leaf-left.svg" alt="" class="h-100 mr-20">
+            <img src="/images/img/leaf-left.svg" alt="" class="h-100 mr-20">
         </div>
         <div class="absolute right-0 bottom-0 opacity-20">
-            <img src="/images/leaf-right.svg" alt="" class="h-100">
+            <img src="/images/img/leaf-right.svg" alt="" class="h-100">
         </div>
 
         <div class="container mx-auto px-4 text-center relative z-10">
@@ -885,7 +885,7 @@
                     Read more <span class="ml-1">→</span>
                 </a>
             </div>
-            <img src="/images/cfidpgp.png" alt="CFIDP Group Photo" class="w-3/5 h-auto md:w-2/5">
+            <img src="/images/img/cfidpgp.png" alt="CFIDP Group Photo" class="w-3/5 h-auto md:w-2/5">
         </div>
     </section>
 
@@ -916,11 +916,11 @@
                     <div class="flex items-center space-x-4">
                         <div
                             class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/ATI.svg" alt="ATI Logo" class="h-14 w-14 object-contain">
+                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="h-14 w-14 object-contain">
                         </div>
                         <div
                             class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/TESDA.svg" alt="TESDA Logo" class="h-14 w-14 object-contain">
+                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo" class="h-14 w-14 object-contain">
                         </div>
                     </div>
                 </div>
@@ -2056,8 +2056,6 @@
                                         facility
                                     </h3>
                                 </div>
-
-
                                 <ul class="space-y-2 ml-8 text-justify">
                                     <li class="flex items-start space-x-2">
                                         <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
