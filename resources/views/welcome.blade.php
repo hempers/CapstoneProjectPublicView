@@ -48,42 +48,25 @@
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
 
-    /* PCAppTrack logo styling with Lemon font */
-    .pcapptrack-text {
-        font-family: 'Lemon', cursive;
-        font-size: 1.5rem;
-        letter-spacing: -0.02em;
-        color: #09CA16;
-        font-weight: bold;
-    }
-
-    /* Only the letter A gets the gradient */
-    .pcapptrack-gradient-letter {
-        font-family: 'Lemon', cursive;
-        font-size: 1.5rem;
-        letter-spacing: -0.02em;
-        background: linear-gradient(to right, #079510, #09CA16);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-weight: bold;
-    }
+    
 </style>
 
 <body class="bg-white text-gray-800 font-montserrat">
     <!-- Header with CFIDP and PCAppTrack logos -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-2 sm:py-3">
             <!-- CFIDP Logo on the left -->
-            <div class="flex items-center">
-                <img src="/images/img/PCAppTrack.png" alt="CFIDP Logo" class="h-10"
-                    onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
+            <div class="flex items-center flex-shrink-0">
+                <img src="/images/img/PCAppTrack.png" alt="CFIDP Logo" 
+                     class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto max-w-full"
+                     onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
             </div>
 
-            <!-- PCAppTrack Logo image on the right -->
-            <div class="flex items-center">
-                <img src="/images/img/logo.svg" alt="PCAppTrack Logo" class="h-10">
-            </div>
+            <!-- PCAppTrack Logo image on the right-->
+            <div class="flex items-center flex-shrink-0 ml-4">
+                <img src="/images/img/logo.png" alt="PCAppTrack Logo" 
+                     class="h-6 sm:h-8 md:h-9 lg:h-10 w-auto max-w-full">
+            </div> 
         </div>
     </header>
 
@@ -158,7 +141,7 @@
 
             <!-- Image Section (now second for right-side position) -->
             <div class="w-full md:w-1/2  md:mt-0">
-                <img src="/images/img/head2.svg" alt="Application Tracking System" class="w-3/4 h-auto max-w-xl ml-20">
+                <img src="/images/img/front.svg" alt="Application Tracking System" class="w-3/4 h-auto max-w-xl ml-20">
             </div>
         </div>
     </section>
