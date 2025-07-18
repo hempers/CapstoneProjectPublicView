@@ -2325,201 +2325,244 @@
                     <!-- Content -->
                     <div class="p-6 space-y-8">
                         <!-- Infrastructure -->
-                        <section class="px-8 ml-8 text-sm">
-                            <h2 class="text-base font-semibold text-gray-800">Infrastructure</h2>
-                        </section>
-
-                        <!-- Selection and Prioritization Criteria -->
-                        <section class="px-8 ml-8 text-sm">
-                            <!-- Requirements -->
-                            <div class="mb-6">
-                                <div class="flex items-center space-x-2 mb-4">
-                                    <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
+                        <section class="px-4 lg:px-8 text-sm">
+                            <!-- Section Header -->
+                            <div class="bg-teal-50 p-6 rounded-lg mb-6">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
                                         </path>
                                     </svg>
-                                    <h2 class="text-lg font-semibold text-gray-800">Criteria for Eligibility
-                                    </h2>
+                                    <h2 class="text-xl font-bold text-teal-800">Infrastructure Program</h2>
                                 </div>
-                                <div class="flex items-center space-x-2 mb-3">
-                                    <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                                clip-rule="evenodd">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <h3 class="font-semibold text-gray-800">Base Requirements</h3>
-                                </div>
-                                <ul class="space-y-2 ml-8 text-justify">
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Letter of Intent</span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Endorsement letter from PCA (if from the
-                                            provincial office; there
-                                            are instances of LOIs being directed to the regional office and
-                                            some endorsements coming from the central office);</span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">NCFRS Certification (verified and issued by
-                                            the RO);
-                                        </span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Financial Statement for two (2) years
-                                            (external audit);
-                                        </span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">CDA Registration;
-
-                                        </span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">CDA Certificate of Compliance (updated
-                                            annually);
-                                        </span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Official List of Members (minimum of 100
-                                            members and at least
-                                            50%+1 registered coconut farmers – shall be verified thru the
-                                            NCFRS Certification);
-
-                                        </span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Articles of Cooperation and By-Laws (duly
-                                            notarized);
-                                        </span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Existing Organizational Structure
-                                        </span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Board Resolution (duly notarized; must
-                                            indicate the request at
-                                            hand);
-
-                                        </span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Community/Site Profile.
-                                        </span>
-                                    </li>
-
-                                </ul>
+                                <p class="text-teal-700 text-base">Programa para sa mga Imprastraktura / Mga Pasilidad na kailangan ng mga magniniyog</p>
                             </div>
 
-                            <!-- additional reqs -->
-                            <div class="mb-6">
-                                <div class="flex items-center space-x-2 mb-3">
-                                    <div class="w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
-                                        <!-- Push pin icon -->
-                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                            <path
-                                                d="M16.3 2.3a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.4l-3.29 3.3A8.38 8.38 0 0 1 20 14v1a1 1 0 0 1-1 1h-5v5a1 1 0 0 1-2 0v-5H7a1 1 0 0 1-1-1v-1a8.38 8.38 0 0 1 1.59-5.01L4.3 7.7a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.4 0l2.3 2.29 2.3-2.3z" />
+                            <!-- Program Description -->
+                            <div class="bg-white border border-teal-200 rounded-lg p-4 mb-6">
+                                <p class="text-gray-600 text-sm text-justify">
+                                    Ang Infrastructure Program ay tumutulong sa mga cooperative na magkaroon ng mga pasilidad tulad ng processing plants, storage facilities, at iba pang infrastructure na makakatulong sa coconut value chain. Ginagawa ito sa pamamagitan ng DPWH.
+                                </p>
+                            </div>
+
+                            <!-- Base Requirements -->
+                            <div class="mb-8">
+                                <!-- Section Header -->
+                                <div class="bg-teal-50 p-6 rounded-lg mb-6">
+                                    <div class="flex items-center space-x-3 mb-2">
+                                        <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                            </path>
                                         </svg>
+                                        <h3 class="text-lg font-bold text-teal-800">Mga Pangunahing Kailangan</h3>
                                     </div>
-                                    <h3 class="font-semibold text-gray-800">
-                                        Additional requirements, upon approval of CO and pre-construction proper of the
-                                        facility
-                                    </h3>
+                                    <p class="text-teal-700 text-base">Base Requirements para sa Infrastructure</p>
                                 </div>
-                                <ul class="space-y-2 ml-8 text-justify">
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Proposal/Business Plan/Feasibility Study
-                                        </span>
-                                    </li>
-                                    <li class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="text-gray-600 text-sm">Deed of Donation of Lot if private property;
-                                            MOA/Usufruct
-                                            Agreement if Lot is government property</span>
-                                    </li>
-                                </ul>
+
+                                <!-- Requirements Cards -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    <!-- Card 1 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">1</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Letter of Intent</h4>
+                                                <p class="text-gray-600 text-xs">Liham ng intensyon para sa infrastructure project</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 2 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">2</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">PCA Endorsement</h4>
+                                                <p class="text-gray-600 text-xs">Endorsement letter from PCA / Endorsement mula sa PCA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">3</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">NCFRS Certification</h4>
+                                                <p class="text-gray-600 text-xs">NCFRS Certification verified by Regional Office</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 4 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">4</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Financial Statements</h4>
+                                                <p class="text-gray-600 text-xs">2 years external audit financial statement</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 5 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">5</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">CDA Registration</h4>
+                                                <p class="text-gray-600 text-xs">CDA Registration / Rehistro sa CDA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 6 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">6</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">CDA Compliance</h4>
+                                                <p class="text-gray-600 text-xs">CDA Certificate of Compliance (updated annually)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 7 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">7</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Members List</h4>
+                                                <p class="text-gray-600 text-xs">Official List of Members (minimum 100 members, 50%+1 coconut farmers)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 8 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">8</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Articles & By-Laws</h4>
+                                                <p class="text-gray-600 text-xs">Articles of Cooperation and By-Laws (duly notarized)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 9 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">9</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Organizational Structure</h4>
+                                                <p class="text-gray-600 text-xs">Existing Organizational Structure / Kasalukuyang estruktura</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 10 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">10</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Board Resolution</h4>
+                                                <p class="text-gray-600 text-xs">Board Resolution (duly notarized) / Resolusyon ng Board</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 11 -->
+                                    <div class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-teal-600 font-bold text-sm">11</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Community Profile</h4>
+                                                <p class="text-gray-600 text-xs">Community/Site Profile / Profile ng Komunidad</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Requirements -->
+                            <div class="mb-6">
+                                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg mb-4">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M16.3 2.3a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.4l-3.29 3.3A8.38 8.38 0 0 1 20 14v1a1 1 0 0 1-1 1h-5v5a1 1 0 0 1-2 0v-5H7a1 1 0 0 1-1-1v-1a8.38 8.38 0 0 1 1.59-5.01L4.3 7.7a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.4 0l2.3 2.29 2.3-2.3z" />
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-lg font-bold text-orange-800">Additional Requirements</h3>
+                                        <span class="text-sm text-orange-600">(Pagkatapos ma-approve ng CO)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Additional Requirements Cards -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <!-- Card 1 -->
+                                    <div class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-orange-600 font-bold text-sm">1</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Proposal/Business Plan</h4>
+                                                <p class="text-gray-600 text-xs">Proposal/Business Plan/Feasibility Study para sa infrastructure project</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 2 -->
+                                    <div class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                                <span class="text-orange-600 font-bold text-sm">2</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Land Documents</h4>
+                                                <p class="text-gray-600 text-xs">Deed of Donation (private property) o MOA/Usufruct Agreement (government property)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Important Note -->
+                            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                                <div class="flex items-start space-x-2">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-800 text-sm mb-1">Mahalagang Paalala</h4>
+                                        <p class="text-blue-700 text-xs">Ang Infrastructure Program ay ginagawa sa pamamagitan ng DPWH. Kailangan ng cooperative na may minimum na 100 members at 50%+1 ay registered coconut farmers. Ang mga additional requirements ay hihilingin pagkatapos ma-approve ng Central Office at bago magsimula ang construction.</p>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </div>
