@@ -115,12 +115,12 @@
     <section class="bg-green-50 py-16">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
             <!-- Text Section (moved first for left-side position) -->
-            <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0">
+            <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0 -mt-6">
                 <h1 class="text-4xl md:text-5xl font-extrabold text-green-900 mb-5 ml-16 mt-0">
                     Application <span style="color: #09CA16;">Tracking </span> System
                 </h1>
                 <p class="text-md text-justify mb-6 ml-16 mr-9 mt-2 ">
-                    <span class="font-light text-gray-800">Ang <span class="font-bold text-green-800">PCAppTrack</span>
+                    <span class="font-light text-gray-800">Ang PCAppTrack
                         ay isang online
                         na sistema ng programang CFIDP sa ilalim ng PCA Region V na tumutulong sa
                         pagsubaybay ng mga aplikasyon sa ilalim ng CFIDP. Gamit ang reference ID, mas madaling masilip
@@ -140,7 +140,7 @@
             </div>
 
             <!-- Image Section (now second for right-side position) -->
-            <div class="w-full md:w-1/2  md:mt-0">
+            <div class="w-full md:w-1/2  md:-mt-4">
                 <img src="/images/img/front.svg" alt="Application Tracking System" class="w-full h-auto max-h-xl ml-30">
             </div>
         </div>
@@ -1159,104 +1159,133 @@
                     </section>
 
                     <!-- Documentary Requirements -->
-                    <section class="px-8 ml-8 text-sm">
-                        <div class="flex items-center space-x-2 mb-4">
-                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                </path>
-                            </svg>
-                            <h2 class="text-lg font-semibold text-gray-800">Documentary Requirements</h2>
+                    <section class="px-4 lg:px-8 text-sm">
+                        <!-- Section Header -->
+                        <div class="bg-green-50 p-6 rounded-lg mb-6">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h2 class="text-xl font-bold text-green-800">Mga Kailangang Dokumento</h2>
+                            </div>
+                            <p class="text-green-700 text-base">Siguruhing kumpleto ang lahat ng documento bago mag-apply</p>
                         </div>
 
-                        <div class="mb-4">
-                            <h3 class="font-semibold text-gray-700 mb-3">Applicant's Checklist of Requirements</h3>
-                            <ul class="space-y-2 ml-4">
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Signed Briefer;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Self- Assessment;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Letter of Intent to become a CocoLSA;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Farming Learning Site for Agriculture Profile
-                                        Form;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">LSA Qualification Form;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Field Validation Report (c/o PCA Agriculturists
-                                        assigned in the proposed site);</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">LSA Acceptance Form;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Endorsement of the RTWG; and</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">If endorsed with financial assistance, a
-                                        Development Plan shall be required.</span>
-                                </li>
-                            </ul>
+                        <!-- Requirements Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <!-- Document Item -->
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                        <span class="text-green-600 text-sm font-bold">1</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">Signed Briefer</h4>
+                                        <p class="text-gray-600 text-sm">Nilagdaang briefer mula sa PCA</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                        <span class="text-green-600 text-sm font-bold">2</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">Self-Assessment</h4>
+                                        <p class="text-gray-600 text-sm">Sariling pag-evaluate sa inyong farm</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                        <span class="text-green-600 text-sm font-bold">3</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">Letter of Intent</h4>
+                                        <p class="text-gray-600 text-sm">Liham ng intensyon na maging CocoLSA</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                        <span class="text-green-600 text-sm font-bold">4</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">Farm Profile Form</h4>
+                                        <p class="text-gray-600 text-sm">Learning Site for Agriculture Profile Form</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                        <span class="text-green-600 text-sm font-bold">5</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">LSA Qualification Form</h4>
+                                        <p class="text-gray-600 text-sm">Form para sa pag-qualify bilang LSA</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                        <span class="text-green-600 text-sm font-bold">6</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">Field Validation Report</h4>
+                                        <p class="text-gray-600 text-sm">Mula sa PCA Agriculturists sa inyong lugar</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                        <span class="text-green-600 text-sm font-bold">7</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">LSA Acceptance Form</h4>
+                                        <p class="text-gray-600 text-sm">Form ng pagtanggap bilang LSA</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                        <span class="text-green-600 text-sm font-bold">8</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 mb-1">RTWG Endorsement</h4>
+                                        <p class="text-gray-600 text-sm">Endorsement mula sa Regional Technical Working Group</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Note -->
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                            <div class="flex items-start space-x-2">
+                                <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-blue-800 mb-1">Importante!</h4>
+                                    <p class="text-blue-700 text-sm">Kung may kasama na financial assistance, kailangan din ng <strong>Development Plan</strong>.</p>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -1293,157 +1322,187 @@
                     </section>
 
                     <!-- Selection and Prioritization Criteria -->
-                    <section class="px-8 ml-8 text-sm">
-                        <!-- base requirements -->
-                        <div class="mb-6">
-                            <div class="flex items-center space-x-2 mb-3">
-                                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
-                                        </path>
-                                    </svg>
+                    <section class="px-4 lg:px-8 text-sm">
+                        <!-- Base Requirements -->
+                        <div class="mb-8">
+                            <!-- Section Header -->
+                            <div class="bg-orange-50 p-6 rounded-lg mb-6">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-orange-800">Base Requirements</h3>
                                 </div>
-                                <h3 class="font-semibold text-gray-800">Base Requirements</h3>
+                                <p class="text-orange-700 text-base">Mga pangunahing requirement para sa kooperatiba</p>
                             </div>
-                            <ul class="space-y-2 ml-8 text-justify">
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Letter of Intent;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Endorsement letter from PCA (if from the
-                                        provincial office; there are instances of LOIs being
-                                        directed to the regional office and some endorsements coming from the central
-                                        office);</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">NCFRS Certification (verified and issued by the
-                                        RO);</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Financial Statement for two (2) years (external
-                                        audit);</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">CDA Certificate of Compliance (updated
-                                        annually);</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Official List of Members (minimum of 100 members
-                                        and at least 50%+1 registered coconut farmers – shall be verified thru the NCFRS
-                                        Certification);</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Articles of Cooperation and By-Laws (duly
-                                        notarized);</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Existing Organizational Structure;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Board Resolution (duly notarized; must indicate
-                                        the request at hand);</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Community/Site Profile.</span>
-                                </li>
-                            </ul>
+
+                            <!-- Requirements Cards -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">1</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Letter of Intent</h4>
+                                            <p class="text-gray-600 text-sm">Liham ng intensyon para sa processing facility</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">2</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">PCA Endorsement Letter</h4>
+                                            <p class="text-gray-600 text-sm">Endorsement mula sa Provincial/Regional/Central Office</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">3</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">NCFRS Certification</h4>
+                                            <p class="text-gray-600 text-sm">Verified at issued ng Regional Office</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">4</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Financial Statement</h4>
+                                            <p class="text-gray-600 text-sm">2 years external audit financial statement</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">5</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">CDA Certificate</h4>
+                                            <p class="text-gray-600 text-sm">Certificate of Compliance (updated annually)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">6</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Members List</h4>
+                                            <p class="text-gray-600 text-sm">Minimum 100 members, 50%+1 dapat coconut farmers</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">7</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Articles & By-Laws</h4>
+                                            <p class="text-gray-600 text-sm">Articles of Cooperation and By-Laws (notarized)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">8</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Organizational Structure</h4>
+                                            <p class="text-gray-600 text-sm">Kasalukuyang organizational structure</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">9</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Board Resolution</h4>
+                                            <p class="text-gray-600 text-sm">Notarized board resolution with specific request</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">10</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Community Profile</h4>
+                                            <p class="text-gray-600 text-sm">Community/Site Profile ng lugar</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- additional -->
+                        <!-- Additional Requirements -->
                         <div class="mb-6">
-                            <div class="flex items-center space-x-2 mb-3">
-                                <div class="w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
-                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z">
-                                        </path>
-                                    </svg>
+                            <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-blue-800">Additional Requirements</h3>
                                 </div>
-                                <h3 class="font-semibold text-gray-800">Additional requirements, upon approval of CO and
-                                    pre-construction proper of the facility:</h3>
+                                <p class="text-blue-700 text-base">Pagkatapos ng approval at bago magsimula ang construction</p>
                             </div>
-                            <ul class="space-y-2 ml-8 text-justify">
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Proposal/Business Plan/Feasibility Study</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Deed of Donation of Lot if private property;
-                                        MOA/Usufruct Agreement if Lot is a government property.</span>
-                                </li>
-                            </ul>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-blue-600 text-sm font-bold">A</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Business Plan</h4>
+                                            <p class="text-gray-600 text-sm">Proposal/Business Plan/Feasibility Study</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-blue-600 text-sm font-bold">B</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Land Documents</h4>
+                                            <p class="text-gray-600 text-sm">Deed of Donation (private) o MOA/Usufruct Agreement (government)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -1493,112 +1552,134 @@
                     </section>
 
                     <!-- Base Reqs -->
-                    <section class="px-8 ml-8 text-sm">
+                    <section class="px-4 lg:px-8 text-sm">
                         <!-- Requirements -->
-                        <div class="mb-6">
-                            <div class="flex items-center space-x-2 mb-3">
-                                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
-                                        </path>
-                                    </svg>
+                        <div class="mb-8">
+                            <!-- Section Header -->
+                            <div class="bg-purple-50 p-6 rounded-lg mb-6">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-purple-800">Credit Requirements</h3>
                                 </div>
-                                <h3 class="font-semibold text-gray-800">Base Requirements</h3>
+                                <p class="text-purple-700 text-base">Para sa CFID Credit Program sa LBP/DBP</p>
                             </div>
-                            <ul class="space-y-2 ml-8 text-justify">
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Letter of Intent</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">NCFRS Registration and Certification</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">CSO Accreditation issued by PCA or DA</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">CDA Registration and COC</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Financial Statement for two (2) years (external
-                                        audit);
-                                    </span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Board Resolution (if requestee is a Cooperative;
-                                        not needed if
-                                        individual farmer)
-                                    </span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Articles of Cooperation and By-Laws (duly
-                                        notarized)
-                                    </span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Existing Organizational Structure
-                                    </span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Official list of members
-                                    </span>
-                                </li>
 
-                            </ul>
+                            <!-- Requirements Cards -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-purple-600 text-sm font-bold">1</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Letter of Intent</h4>
+                                            <p class="text-gray-600 text-sm">Liham ng intensyon para sa credit</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-purple-600 text-sm font-bold">2</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">NCFRS Registration</h4>
+                                            <p class="text-gray-600 text-sm">NCFRS Registration and Certification</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-purple-600 text-sm font-bold">3</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">CSO Accreditation</h4>
+                                            <p class="text-gray-600 text-sm">CSO Accreditation mula sa PCA o DA</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-purple-600 text-sm font-bold">4</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">CDA Documents</h4>
+                                            <p class="text-gray-600 text-sm">CDA Registration and Certificate of Compliance</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-purple-600 text-sm font-bold">5</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Financial Statement</h4>
+                                            <p class="text-gray-600 text-sm">2 years external audit financial statement</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-purple-600 text-sm font-bold">6</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Board Resolution</h4>
+                                            <p class="text-gray-600 text-sm">Kung cooperative (hindi kailangan kung individual farmer)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-purple-600 text-sm font-bold">7</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Articles & By-Laws</h4>
+                                            <p class="text-gray-600 text-sm">Articles of Cooperation and By-Laws (notarized)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-purple-600 text-sm font-bold">8</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Organizational Structure</h4>
+                                            <p class="text-gray-600 text-sm">Kasalukuyang organizational structure</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-purple-600 text-sm font-bold">9</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Members List</h4>
+                                            <p class="text-gray-600 text-sm">Official list ng mga members</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Documentary Requirements -->
