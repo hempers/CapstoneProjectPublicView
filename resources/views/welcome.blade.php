@@ -867,14 +867,14 @@
     </section>
 
     <!-- Requirements Section -->
-    <section class="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-16">
+    <section class="bg-green-50 py-16" >
         <div class="container mx-auto px-4">
             <!-- Header styled like the image -->
             <div class="text-center mb-12">
-                <div class="inline-block text-white px-6 py-3 rounded-full mb-4" style="background-color: #09CA16;">
+                <div class="inline-block text-white px-4 py-2 rounded-full mb-4" style="background-color: #21e02dff;">
                     <span class="text-sm md:text-base font-bold">CFIDP APPLICATION</span>
                 </div>
-                <h1 class="text-2xl md:text-4xl font-extrabold text-green-900 mb-4 leading-tight">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-green-900 mb-4 leading-tight">
                     MGA KAILANGANG IHANDA
                 </h1>
                 <p class="text-xl md:text-2xl font-bold mb-6 text-green-800">
@@ -891,7 +891,7 @@
             </div>
             <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
                 <!-- Header -->
-                <div class="bg-gradient-to-r from-green-700 to-green-400 p-6 text-white">
+                <div class=" p-6 text-white"  style="background-color: #0acf17ff;">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-4">
                             <div
@@ -925,7 +925,7 @@
                         <!-- Single Comprehensive Card -->
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-6">
                             <!-- Card Header -->
-                            <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 border-b border-gray-200">
+                            <div class=" p-6 border-b border-gray-200"  style="background-color:rgb(230, 253, 212);">
                                 <div class="flex items-center space-x-4">
                                     <div
                                         class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
