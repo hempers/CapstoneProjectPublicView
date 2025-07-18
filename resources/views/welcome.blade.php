@@ -58,14 +58,14 @@
             <!-- CFIDP Logo on the left -->
             <div class="flex items-center flex-shrink-0">
                 <img src="/images/img/PCAppTrack.png" alt="CFIDP Logo" 
-                     class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto max-w-full"
+                     class="h-10 sm:h-12 md:h-14 lg:h-12 w-auto max-w-3/4"
                      onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
             </div>
 
             <!-- PCAppTrack Logo image on the right-->
             <div class="flex items-center flex-shrink-0 ml-4">
                 <img src="/images/img/logo.png" alt="PCAppTrack Logo" 
-                     class="h-6 sm:h-8 md:h-9 lg:h-10 w-auto max-w-full">
+                     class="h-6 sm:h-8 md:h-9 lg:h-8 w-auto max-w-full">
             </div> 
         </div>
     </header>
@@ -119,7 +119,7 @@
                 <h1 class="text-4xl md:text-5xl font-extrabold text-green-900 mb-5 ml-16 mt-0">
                     Application <span style="color: #09CA16;">Tracking </span> System
                 </h1>
-                <p class="text-sm text-justify mb-6 ml-16 mr-9 mt-2 ">
+                <p class="text-md text-justify mb-6 ml-16 mr-9 mt-2 ">
                     <span class="font-light text-gray-800">Ang <span class="font-bold text-green-800">PCAppTrack</span>
                         ay isang online
                         na sistema ng programang CFIDP sa ilalim ng PCA Region V na tumutulong sa
@@ -141,7 +141,7 @@
 
             <!-- Image Section (now second for right-side position) -->
             <div class="w-full md:w-1/2  md:mt-0">
-                <img src="/images/img/front.svg" alt="Application Tracking System" class="w-3/4 h-auto max-w-xl ml-20">
+                <img src="/images/img/front.svg" alt="Application Tracking System" class="w-full h-auto max-h-xl ml-30">
             </div>
         </div>
     </section>
