@@ -1126,168 +1126,202 @@
                     </section>
 
                     <!-- Selection and Prioritization Criteria -->
-                    <section class="px-8 ml-8 text-sm">
-                        <div class="flex items-center space-x-2 mb-4">
-                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
-                                </path>
-                            </svg>
-                            <h2 class="text-base font-semibold text-gray-800">Selection and Prioritization Criteria</h2>
-                        </div>
-
-                        <!-- Individual (The Farmer) -->
-                        <div class="mb-6">
-                            <div class="flex items-center space-x-2 mb-3">
-                                <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                    <section class="px-4 lg:px-8">
+                        <!-- Section Header -->
+                        <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
                                         </path>
                                     </svg>
                                 </div>
-                                <h3 class="font-semibold text-gray-800">Individual (The Farmer)</h3>
+                                <h2 class="text-xl font-bold text-blue-800">Mga Kriterya para sa Pagpili</h2>
                             </div>
-                            <ul class="space-y-2 ml-8 text-justify">
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Must be an individual Filipino coconut farmer
-                                        (landowner, owner-tiller, or grower) with at least 1 ha. of coconut land;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Willing and able to demonstrate the coconut
-                                        technologies in his/her farm to the clientele at the time needed;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Should be willing to be trained
-                                        regularly;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Is physically fit to perform the
-                                        responsibilities of a CocoLSA cooperator;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">NCFRS registered, preferably a member of a
-                                        CFO/CFC.</span>
-                                </li>
-                            </ul>
+                            <p class="text-blue-700 text-base">Ano ang mga kailangan para makakuha ng CocoLSA certification</p>
                         </div>
 
-                        <!-- Group (The CFO/CFC) -->
-                        <div class="mb-6">
-                            <div class="flex items-center space-x-2 mb-3">
-                                <div class="w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
-                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z">
-                                        </path>
-                                    </svg>
+                        <!-- Individual Farmer Requirements -->
+                        <div class="mb-8">
+                            <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-yellow-800">Para sa Individual na Farmer</h3>
+                                        <p class="text-yellow-700 text-sm">Mga requirement para sa mag-isang coconut farmer</p>
+                                    </div>
                                 </div>
-                                <h3 class="font-semibold text-gray-800">Group (The CFO/CFC)</h3>
                             </div>
-                            <ul class="space-y-2 ml-8 text-justify">
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Shall be at least 1 ha. of integrated and/or
-                                        diversified farm (e.g. coconut-livestock);</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Must possess and manage coconut farmland with an
-                                        area of at least 1 ha.;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Possesses appropriate valid registration from
-                                        the Securities and Exchange Commission (SEC), the Cooperative Development
-                                        Authority (CDA), the Department of Labor and Employment (DOLE), or existing PCA
-                                        accreditation;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Is active in the past three years in farmer
-                                        organization and development or community enterprise development;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Must contain Filipino farmer-leaders or members
-                                        who are willing and able to demonstrate the coconut technologies in his/her farm
-                                        to the clientele at the time needed;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Willing to be trained regularly;</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Physically fit to perform the responsibilities
-                                        of an LSA cooperator and LSA.</span>
-                                </li>
-                            </ul>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-yellow-600 text-sm font-bold">1</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Filipino Coconut Farmer</h4>
+                                            <p class="text-gray-600 text-sm">May-ari, nag-aalaga, o nagtatanim ng coconut na may hindi bababa sa 1 hectare ng lupa</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-yellow-600 text-sm font-bold">2</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Willing to Demonstrate</h4>
+                                            <p class="text-gray-600 text-sm">Handang magpakita ng coconut technologies sa farm sa ibang farmers</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-yellow-600 text-sm font-bold">3</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Open to Training</h4>
+                                            <p class="text-gray-600 text-sm">Handang mag-attend ng regular na training at seminar</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-yellow-600 text-sm font-bold">4</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Physically Fit</h4>
+                                            <p class="text-gray-600 text-sm">May kakayahang gampanan ang mga responsibilidad ng CocoLSA cooperator</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-yellow-600 text-sm font-bold">5</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">NCFRS Registered</h4>
+                                            <p class="text-gray-600 text-sm">Nakaregister sa NCFRS, mas maganda kung miyembro ng CFO/CFC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Group/Organization Requirements -->
+                        <div class="mb-8">
+                            <div class="bg-orange-50 p-4 rounded-lg mb-4">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-orange-800">Para sa Grupo/Organisasyon</h3>
+                                        <p class="text-orange-700 text-sm">Mga requirement para sa CFO/CFC organizations</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">1</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Integrated Farm</h4>
+                                            <p class="text-gray-600 text-sm">Hindi bababa sa 1 hectare ng integrated/diversified farm (halimbawa: coconut-livestock)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">2</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Coconut Farmland</h4>
+                                            <p class="text-gray-600 text-sm">May-ari at nag-mmanage ng coconut farmland na hindi bababa sa 1 hectare</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">3</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Valid Registration</h4>
+                                            <p class="text-gray-600 text-sm">May valid registration sa SEC, CDA, DOLE, o existing PCA accreditation</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">4</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Active Organization</h4>
+                                            <p class="text-gray-600 text-sm">Aktibo sa nakaraang 3 taon sa farmer organization o community enterprise development</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">5</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Filipino Leaders</h4>
+                                            <p class="text-gray-600 text-sm">May mga Filipino farmer-leaders na handang magdemonstrate ng coconut technologies</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">6</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Training Ready</h4>
+                                            <p class="text-gray-600 text-sm">Handang mag-attend ng regular training</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                            <span class="text-orange-600 text-sm font-bold">7</span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h4 class="font-semibold text-gray-800 mb-2">Physically Capable</h4>
+                                            <p class="text-gray-600 text-sm">May physical fitness para gampanan ang mga responsibilidad ng LSA cooperator</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Individual and Group (The Farm) -->
