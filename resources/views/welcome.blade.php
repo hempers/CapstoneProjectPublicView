@@ -47,8 +47,6 @@
         transform: translateY(-2px);
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
-
-    
 </style>
 
 <body class="bg-white text-gray-800 font-montserrat">
@@ -57,16 +55,16 @@
         <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-2 sm:py-3">
             <!-- CFIDP Logo on the left -->
             <div class="flex items-center flex-shrink-0">
-                <img src="/images/img/PCAppTrack.png" alt="CFIDP Logo" 
-                     class="h-10 sm:h-12 md:h-14 lg:h-12 w-auto max-w-3/4"
-                     onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
+                <img src="/images/img/PCAppTrack.png" alt="CFIDP Logo"
+                    class="h-10 sm:h-12 md:h-14 lg:h-12 w-auto max-w-3/4"
+                    onerror="this.onerror=null; this.src='/images/cfidpgp.png';">
             </div>
 
             <!-- PCAppTrack Logo image on the right-->
             <div class="flex items-center flex-shrink-0 ml-4">
-                <img src="/images/img/logo.png" alt="PCAppTrack Logo" 
-                     class="h-6 sm:h-8 md:h-9 lg:h-8 w-auto max-w-full">
-            </div> 
+                <img src="/images/img/logo.png" alt="PCAppTrack Logo"
+                    class="h-6 sm:h-8 md:h-9 lg:h-8 w-auto max-w-full">
+            </div>
         </div>
     </header>
 
@@ -869,37 +867,71 @@
     </section>
 
     <!-- Requirements Section -->
-    <section class="bg-green-50 py-16">
+    <section class="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-16">
         <div class="container mx-auto px-4">
             <!-- Header styled like the image -->
             <div class="text-center mb-12">
-                <h3 class="text-3xl md:text-4xl font-bold text-green-900 mb-1">MGA KAILANGANG IHANDA</h3>
-                <p class="text-lg md:text-xl font-bold mb-6 text-green-900">NA MGA DOKUMENTO PARA SA <span
-                        style="color: #09CA16; font-weight: bold;">CFIDP PROPOSAL</span></p>
-                <div class="w-32 h-1 bg-green-600 mx-auto"></div>
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg mb-4">
+                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                        </path>
+                    </svg>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-green-900 mb-3 leading-tight">
+                    MGA KAILANGANG IHANDA
+                </h1>
+                <p class="text-xl md:text-2xl font-bold mb-2 text-green-800">
+                    NA MGA DOKUMENTO PARA SA
+                </p>
+                <div
+                    class="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-2 rounded-full mb-6">
+                    <span class="text-xl md:text-2xl font-bold">CFIDP PROPOSAL</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <div class="w-12 h-1 bg-green-600 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div class="w-12 h-1 bg-green-600 rounded-full"></div>
+                </div>
+                <p class="text-green-700 text-lg max-w-2xl mx-auto">
+                    Gabay para sa mga coconut farmers na nais mag-apply sa iba't ibang CFIDP programs
+                </p>
             </div>
 
-            <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg">
+            <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
                 <!-- Header -->
-                <div class="flex items-center justify-between p-6 border-b border-gray-200">
-                    <div class="flex items-center space-x-3 my-auto">
-                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center shadow-sm">
-                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                </path>
-                            </svg>
+                <div class="bg-gradient-to-r from-green-600 to-emerald-600 p-6">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-bold text-white mb-1">Social Protection Program</h2>
+                                <p class="text-green-100 text-sm">Para sa mga coconut farmers at kanilang pamilya</p>
+                            </div>
                         </div>
-                        <h1 class="text-xl font-bold text-gray-800">Social Protection</h1>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <div
-                            class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="h-14 w-14 object-contain">
-                        </div>
-                        <div
-                            class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo" class="h-14 w-14 object-contain">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex items-center space-x-2">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center overflow-hidden">
+                                    <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="h-8 w-8 object-contain">
+                                </div>
+                                <span class="text-white text-xs font-medium hidden md:block">ATI</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center overflow-hidden">
+                                    <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
+                                        class="h-8 w-8 object-contain">
+                                </div>
+                                <span class="text-white text-xs font-medium hidden md:block">TESDA</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -911,10 +943,12 @@
                         <!-- Program Header -->
                         <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg mb-6">
                             <div class="flex items-start space-x-4">
-                                <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                <div
+                                    class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
                                         </path>
                                     </svg>
                                 </div>
@@ -936,17 +970,20 @@
                         <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
                             <div class="flex items-start space-x-3 mb-4">
                                 <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                                         </path>
                                     </svg>
                                 </div>
                                 <h3 class="text-lg font-bold text-gray-800">Ano ang CocoLSA?</h3>
                             </div>
                             <p class="text-gray-700 mb-4 leading-relaxed">
-                                Ang Coco-LSA ay isang farm na gumagamit ng modernong coconut technologies, may mga epektibong farming strategies, 
-                                at successful na nag-operate. Ginagawa itong modelo para sa ibang coconut farmers na gustong matuto.
+                                Ang Coco-LSA ay isang farm na gumagamit ng modernong coconut technologies, may mga
+                                epektibong farming strategies,
+                                at successful na nag-operate. Ginagawa itong modelo para sa ibang coconut farmers na
+                                gustong matuto.
                             </p>
                         </div>
 
@@ -954,25 +991,28 @@
                         <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
                             <div class="flex items-start space-x-3 mb-4">
                                 <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
                                         </path>
                                     </svg>
                                 </div>
                                 <h3 class="text-lg font-bold text-gray-800">Mga Layunin ng Program</h3>
                             </div>
-                            
+
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div class="bg-green-50 p-4 rounded-lg">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-white text-xs font-bold">1</span>
                                         </div>
                                         <div>
                                             <h4 class="font-semibold text-green-800 mb-2">Palakasin ang Kakayahan</h4>
                                             <p class="text-green-700 text-sm">
-                                                Pagandahin ang skills ng coconut farmers sa production, processing, at coconut business
+                                                Pagandahin ang skills ng coconut farmers sa production, processing, at
+                                                coconut business
                                             </p>
                                         </div>
                                     </div>
@@ -980,7 +1020,8 @@
 
                                 <div class="bg-blue-50 p-4 rounded-lg">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-white text-xs font-bold">2</span>
                                         </div>
                                         <div>
@@ -998,54 +1039,68 @@
                         <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
                             <div class="flex items-start space-x-3 mb-4">
                                 <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
-                                    <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
                                         </path>
                                     </svg>
                                 </div>
                                 <h3 class="text-lg font-bold text-gray-800">Mga Kasama sa Program</h3>
                             </div>
-                            
+
                             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                                 <div class="bg-gray-50 p-3 rounded-lg text-center">
-                                    <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-2">
                                         <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                                            <path
+                                                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                            </path>
                                         </svg>
                                     </div>
                                     <span class="text-xs font-semibold text-gray-700">Training</span>
                                 </div>
 
                                 <div class="bg-gray-50 p-3 rounded-lg text-center">
-                                    <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2">
                                         <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+                                            <path fill-rule="evenodd"
+                                                d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                                                clip-rule="evenodd"></path>
                                         </svg>
                                     </div>
                                     <span class="text-xs font-semibold text-gray-700">Demo Services</span>
                                 </div>
 
                                 <div class="bg-gray-50 p-3 rounded-lg text-center">
-                                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-2">
                                         <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                                            <path fill-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                                clip-rule="evenodd"></path>
                                         </svg>
                                     </div>
                                     <span class="text-xs font-semibold text-gray-700">Info Support</span>
                                 </div>
 
                                 <div class="bg-gray-50 p-3 rounded-lg text-center">
-                                    <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-2">
                                         <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+                                            <path fill-rule="evenodd"
+                                                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                                                clip-rule="evenodd"></path>
                                         </svg>
                                     </div>
                                     <span class="text-xs font-semibold text-gray-700">Tech Assistance</span>
                                 </div>
 
                                 <div class="bg-gray-50 p-3 rounded-lg text-center">
-                                    <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-2">
                                         <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                         </svg>
@@ -1053,14 +1108,17 @@
                                     <span class="text-xs font-semibold text-gray-700">Other Projects</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
                                 <div class="flex items-start space-x-2">
                                     <svg class="w-5 h-5 text-yellow-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                        <path fill-rule="evenodd"
+                                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                            clip-rule="evenodd"></path>
                                     </svg>
                                     <p class="text-yellow-800 text-sm">
-                                        <strong>Partnership:</strong> Makakasama ninyo ang ATI at TESDA sa program na ito para sa mas komprehensibong support.
+                                        <strong>Partnership:</strong> Makakasama ninyo ang ATI at TESDA sa program na
+                                        ito para sa mas komprehensibong support.
                                     </p>
                                 </div>
                             </div>
@@ -1302,7 +1360,8 @@
                         <div class="bg-green-50 p-6 rounded-lg mb-6">
                             <div class="flex items-center space-x-3 mb-2">
                                 <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
-                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
                                         </path>
@@ -1310,15 +1369,18 @@
                                 </div>
                                 <h2 class="text-xl font-bold text-green-800">Mga Kailangang Dokumento</h2>
                             </div>
-                            <p class="text-green-700 text-base">Siguruhing kumpleto ang lahat ng documento bago mag-apply</p>
+                            <p class="text-green-700 text-base">Siguruhing kumpleto ang lahat ng documento bago
+                                mag-apply</p>
                         </div>
 
                         <!-- Requirements Grid -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <!-- Document Item -->
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                    <div
+                                        class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                         <span class="text-green-600 text-sm font-bold">1</span>
                                     </div>
                                     <div>
@@ -1328,9 +1390,11 @@
                                 </div>
                             </div>
 
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                    <div
+                                        class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                         <span class="text-green-600 text-sm font-bold">2</span>
                                     </div>
                                     <div>
@@ -1340,9 +1404,11 @@
                                 </div>
                             </div>
 
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                    <div
+                                        class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                         <span class="text-green-600 text-sm font-bold">3</span>
                                     </div>
                                     <div>
@@ -1352,9 +1418,11 @@
                                 </div>
                             </div>
 
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                    <div
+                                        class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                         <span class="text-green-600 text-sm font-bold">4</span>
                                     </div>
                                     <div>
@@ -1364,9 +1432,11 @@
                                 </div>
                             </div>
 
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                    <div
+                                        class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                         <span class="text-green-600 text-sm font-bold">5</span>
                                     </div>
                                     <div>
@@ -1376,9 +1446,11 @@
                                 </div>
                             </div>
 
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                    <div
+                                        class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                         <span class="text-green-600 text-sm font-bold">6</span>
                                     </div>
                                     <div>
@@ -1388,9 +1460,11 @@
                                 </div>
                             </div>
 
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                    <div
+                                        class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                         <span class="text-green-600 text-sm font-bold">7</span>
                                     </div>
                                     <div>
@@ -1400,14 +1474,17 @@
                                 </div>
                             </div>
 
-                            <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                    <div
+                                        class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                         <span class="text-green-600 text-sm font-bold">8</span>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold text-gray-800 mb-1">RTWG Endorsement</h4>
-                                        <p class="text-gray-600 text-sm">Endorsement mula sa Regional Technical Working Group</p>
+                                        <p class="text-gray-600 text-sm">Endorsement mula sa Regional Technical Working
+                                            Group</p>
                                     </div>
                                 </div>
                             </div>
@@ -1416,12 +1493,16 @@
                         <!-- Additional Note -->
                         <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
                             <div class="flex items-start space-x-2">
-                                <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                                <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                                 <div>
                                     <h4 class="font-semibold text-blue-800 mb-1">Importante!</h4>
-                                    <p class="text-blue-700 text-sm">Kung may kasama na financial assistance, kailangan din ng <strong>Development Plan</strong>.</p>
+                                    <p class="text-blue-700 text-sm">Kung may kasama na financial assistance, kailangan
+                                        din ng <strong>Development Plan</strong>.</p>
                                 </div>
                             </div>
                         </div>
@@ -1432,22 +1513,26 @@
 
             <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg mt-8">
                 <!-- Header -->
-                <div class="flex items-center justify-between p-6 border-b border-gray-200">
-                    <div class="flex items-center space-x-3 my-auto">
-                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center shadow-sm">
-                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                </path>
-                            </svg>
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+                    <div class="flex items-center justify-between p-6">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
+                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h1 class="text-xl md:text-2xl font-bold">Integrated Coconut Processing</h1>
+                                <p class="text-blue-100 text-sm">and Downstream Products</p>
+                            </div>
                         </div>
-                        <h1 class="text-xl font-bold text-gray-800">Integrated Coconut Processing and Downstream
-                            Products</h1>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <div
-                            class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/IA logos/PM.svg" alt="TESDA Logo" class="h-11 w-11 object-contain">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
+                                <img src="/images/IA logos/PM.svg" alt="TESDA Logo" class="h-11 w-11 object-contain">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1469,7 +1554,8 @@
                                     <div class="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center">
                                         <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                             <path fill-rule="evenodd"
-                                                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                                clip-rule="evenodd">
                                             </path>
                                         </svg>
                                     </div>
@@ -1480,33 +1566,41 @@
 
                             <!-- Requirements Cards -->
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">1</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Letter of Intent</h4>
-                                            <p class="text-gray-600 text-sm">Liham ng intensyon para sa processing facility</p>
+                                            <p class="text-gray-600 text-sm">Liham ng intensyon para sa processing
+                                                facility</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">2</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">PCA Endorsement Letter</h4>
-                                            <p class="text-gray-600 text-sm">Endorsement mula sa Provincial/Regional/Central Office</p>
+                                            <p class="text-gray-600 text-sm">Endorsement mula sa
+                                                Provincial/Regional/Central Office</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">3</span>
                                         </div>
                                         <div class="flex-1">
@@ -1516,57 +1610,71 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">4</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Financial Statement</h4>
-                                            <p class="text-gray-600 text-sm">2 years external audit financial statement</p>
+                                            <p class="text-gray-600 text-sm">2 years external audit financial statement
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">5</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">CDA Certificate</h4>
-                                            <p class="text-gray-600 text-sm">Certificate of Compliance (updated annually)</p>
+                                            <p class="text-gray-600 text-sm">Certificate of Compliance (updated
+                                                annually)</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">6</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Members List</h4>
-                                            <p class="text-gray-600 text-sm">Minimum 100 members, 50%+1 dapat coconut farmers</p>
+                                            <p class="text-gray-600 text-sm">Minimum 100 members, 50%+1 dapat coconut
+                                                farmers</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">7</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Articles & By-Laws</h4>
-                                            <p class="text-gray-600 text-sm">Articles of Cooperation and By-Laws (notarized)</p>
+                                            <p class="text-gray-600 text-sm">Articles of Cooperation and By-Laws
+                                                (notarized)</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">8</span>
                                         </div>
                                         <div class="flex-1">
@@ -1576,21 +1684,26 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">9</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Board Resolution</h4>
-                                            <p class="text-gray-600 text-sm">Notarized board resolution with specific request</p>
+                                            <p class="text-gray-600 text-sm">Notarized board resolution with specific
+                                                request</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-orange-600 text-sm font-bold">10</span>
                                         </div>
                                         <div class="flex-1">
@@ -1608,35 +1721,44 @@
                                 <div class="flex items-center space-x-3 mb-2">
                                     <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                                         <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                                            <path
+                                                d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z">
+                                            </path>
                                         </svg>
                                     </div>
                                     <h3 class="text-xl font-bold text-blue-800">Additional Requirements</h3>
                                 </div>
-                                <p class="text-blue-700 text-base">Pagkatapos ng approval at bago magsimula ang construction</p>
+                                <p class="text-blue-700 text-base">Pagkatapos ng approval at bago magsimula ang
+                                    construction</p>
                             </div>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-blue-600 text-sm font-bold">A</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Business Plan</h4>
-                                            <p class="text-gray-600 text-sm">Proposal/Business Plan/Feasibility Study</p>
+                                            <p class="text-gray-600 text-sm">Proposal/Business Plan/Feasibility Study
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-blue-600 text-sm font-bold">B</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Land Documents</h4>
-                                            <p class="text-gray-600 text-sm">Deed of Donation (private) o MOA/Usufruct Agreement (government)</p>
+                                            <p class="text-gray-600 text-sm">Deed of Donation (private) o MOA/Usufruct
+                                                Agreement (government)</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1649,32 +1771,38 @@
 
             <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg mt-8">
                 <!-- Header -->
-                <div class="flex items-center justify-between p-6 border-b border-gray-200">
-                    <div class="flex items-center space-x-3 my-auto">
-                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center shadow-sm">
-                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                </path>
-                            </svg>
+                <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+                    <div class="flex items-center justify-between p-6">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
+                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h1 class="text-xl md:text-2xl font-bold">Support Services</h1>
+                                <p class="text-purple-100 text-sm">Mga Serbisyong Tulong</p>
+                            </div>
                         </div>
-                        <h1 class="text-xl font-bold text-gray-800">Support Services</h1>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <div
-                            class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/IA logos/DPWH.svg" alt="ATI Logo" class="h-14 w-14 object-contain">
-                        </div>
-                        <div
-                            class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/IA logos/DBP.svg" alt="TESDA Logo" class="h-10 w-10 object-contain">
-                        </div>
-                        <div
-                            class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                            <img src="/images/IA logos/LBP.svg" alt="TESDA Logo" class="h-10 w-10 object-contain">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
+                                <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo" class="h-14 w-14 object-contain">
+                            </div>
+                            <div class="w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
+                                <img src="/images/IA logos/DBP.svg" alt="DBP Logo" class="h-10 w-10 object-contain">
+                            </div>
+                            <div
+                                class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
+                                <img src="/images/IA logos/LBP.svg" alt="TESDA Logo" class="h-10 w-10 object-contain">
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
 
                 <!-- Content -->
                 <div class="p-6 space-y-8">
@@ -1699,7 +1827,8 @@
                                     <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
                                         <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                             <path fill-rule="evenodd"
-                                                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                                                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                                clip-rule="evenodd">
                                             </path>
                                         </svg>
                                     </div>
@@ -1710,9 +1839,11 @@
 
                             <!-- Requirements Cards -->
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-purple-600 text-sm font-bold">1</span>
                                         </div>
                                         <div class="flex-1">
@@ -1722,9 +1853,11 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-purple-600 text-sm font-bold">2</span>
                                         </div>
                                         <div class="flex-1">
@@ -1734,9 +1867,11 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-purple-600 text-sm font-bold">3</span>
                                         </div>
                                         <div class="flex-1">
@@ -1746,57 +1881,71 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-purple-600 text-sm font-bold">4</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">CDA Documents</h4>
-                                            <p class="text-gray-600 text-sm">CDA Registration and Certificate of Compliance</p>
+                                            <p class="text-gray-600 text-sm">CDA Registration and Certificate of
+                                                Compliance</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-purple-600 text-sm font-bold">5</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Financial Statement</h4>
-                                            <p class="text-gray-600 text-sm">2 years external audit financial statement</p>
+                                            <p class="text-gray-600 text-sm">2 years external audit financial statement
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-purple-600 text-sm font-bold">6</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Board Resolution</h4>
-                                            <p class="text-gray-600 text-sm">Kung cooperative (hindi kailangan kung individual farmer)</p>
+                                            <p class="text-gray-600 text-sm">Kung cooperative (hindi kailangan kung
+                                                individual farmer)</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-purple-600 text-sm font-bold">7</span>
                                         </div>
                                         <div class="flex-1">
                                             <h4 class="font-semibold text-gray-800 mb-2">Articles & By-Laws</h4>
-                                            <p class="text-gray-600 text-sm">Articles of Cooperation and By-Laws (notarized)</p>
+                                            <p class="text-gray-600 text-sm">Articles of Cooperation and By-Laws
+                                                (notarized)</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-purple-600 text-sm font-bold">8</span>
                                         </div>
                                         <div class="flex-1">
@@ -1806,9 +1955,11 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                <div
+                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                     <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                                        <div
+                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
                                             <span class="text-purple-600 text-sm font-bold">9</span>
                                         </div>
                                         <div class="flex-1">
