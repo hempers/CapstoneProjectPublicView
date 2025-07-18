@@ -862,7 +862,7 @@
                     Read more <span class="ml-1">→</span>
                 </a>
             </div>
-            <img src="/images/img/cfidpgp.png" alt="CFIDP Group Photo" class="w-3/5 h-auto md:w-2/5">
+            <img src="/images/img/cfidpgp.png" alt="CFIDP Group Photo" class="w-full h-auto sm:w-4/5 md:w-3/5 lg:w-2/5 xl:w-1/3 max-w-md mx-auto md:mx-0">
         </div>
     </section>
 
@@ -871,28 +871,27 @@
         <div class="container mx-auto px-4">
             <!-- Header styled like the image -->
             <div class="text-center mb-12">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-green-900 mb-3 leading-tight">
+                <div class="inline-block text-white px-6 py-3 rounded-full mb-4" style="background-color: #09CA16;">
+                    <span class="text-sm md:text-base font-bold">CFIDP APPLICATION</span>
+                </div>
+                <h1 class="text-2xl md:text-4xl font-extrabold text-green-900 mb-4 leading-tight">
                     MGA KAILANGANG IHANDA
                 </h1>
-                <p class="text-lg md:text-2xl font-bold mb-2 text-green-800">
-                    NA MGA DOKUMENTO PARA SA
+                <p class="text-xl md:text-2xl font-bold mb-6 text-green-800">
+                    NA MGA DOKUMENTO
                 </p>
-                <div class="inline-block bg-green-400 text-white px-6 py-2 rounded-full mb-6">
-                    <span class="text-xl md:text-2xl font-bold">CFIDP PROPOSAL</span>
-                </div>
                 <div class="flex items-center justify-center space-x-2 mb-4">
                     <div class="w-12 h-1 bg-green-600 rounded-full"></div>
                     <div class="w-3 h-3 bg-green-500 rounded-full"></div>
                     <div class="w-12 h-1 bg-green-600 rounded-full"></div>
                 </div>
-                <p class="text-green-700 text-md max-w-2xl mx-auto">
+                <p class="text-green-700 text-sm max-w-2xl mx-auto">
                     Gabay para sa mga coconut farmers na nais mag-apply sa iba't ibang CFIDP programs
                 </p>
             </div>
-
             <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
                 <!-- Header -->
-                <div class="bg-green-400 p-6">
+                <div class="bg-gradient-to-r from-green-700 to-green-400 p-6 text-white">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-4">
                             <div
@@ -1133,7 +1132,8 @@
                                 <!-- Individual Farmer Requirements -->
                                 <div class="border-l-4 border-yellow-400 pl-4">
                                     <div class="flex items-center space-x-3 mb-4">
-                                        <div class="w-7 h-7 bg-yellow-500 rounded-full flex items-center justify-center">
+                                        <div
+                                            class="w-7 h-7 bg-yellow-500 rounded-full flex items-center justify-center">
                                             <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                                                 <path fill-rule="evenodd"
                                                     d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
@@ -1577,7 +1577,8 @@
                                             <h4 class="font-semibold text-blue-800 mb-1">Importante!</h4>
                                             <p class="text-blue-700 text-sm">If endorsed with financial assistance, a
                                                 <strong>Development Plan</strong> shall be
-                                                required.</p>
+                                                required.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
