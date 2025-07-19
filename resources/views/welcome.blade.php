@@ -1347,26 +1347,26 @@
                                 </div>
 
                                 <!-- Farm Requirements -->
-                                <div class="border-l-4 border-green-400 pl-4">
+                                <div class="border-l-4 border-yellow-400 pl-4">
                                     <div class="flex items-center space-x-3 mb-4">
-                                        <div class="w-7 h-7 bg-green-500 rounded-full flex items-center justify-center">
+                                        <div class="w-7 h-7 bg-yellow-500 rounded-full flex items-center justify-center">
                                             <svg class="w-5 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                                                 <path
                                                     d="M10 2L3 7v11a1 1 0 001 1h3v-7a1 1 0 011-1h4a1 1 0 011 1v7h3a1 1 0 001-1V7l-7-5z" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <h3 class="text-md font-bold text-green-800">Para sa Farm (Individual at
+                                            <h3 class="text-md font-bold text-yellow-800">Para sa Farm (Individual at
                                                 Group)</h3>
                                         </div>
                                     </div>
 
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-14">
-                                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                                    <span class="text-green-600 text-sm font-bold">1</span>
+                                                    class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                    <span class="text-yellow-600 text-sm font-bold">1</span>
                                                 </div>
                                                 <div class="flex-1">
                                                     <h4 class="font-semibold text-gray-800 mb-2">Integrated Farm</h4>
@@ -1377,11 +1377,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                                    <span class="text-green-600 text-sm font-bold">2</span>
+                                                    class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                    <span class="text-yellow-600 text-sm font-bold">2</span>
                                                 </div>
                                                 <div class="flex-1">
                                                     <h4 class="font-semibold text-gray-800 mb-2">Demo Area</h4>
@@ -1392,11 +1392,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                                    <span class="text-green-600 text-sm font-bold">3</span>
+                                                    class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                    <span class="text-yellow-600 text-sm font-bold">3</span>
                                                 </div>
                                                 <div class="flex-1">
                                                     <h4 class="font-semibold text-gray-800 mb-2">Accessible Location
@@ -1407,11 +1407,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                                    <span class="text-green-600 text-sm font-bold">4</span>
+                                                    class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                    <span class="text-yellow-600 text-sm font-bold">4</span>
                                                 </div>
                                                 <div class="flex-1">
                                                     <h4 class="font-semibold text-gray-800 mb-2">Well-Landscaped</h4>
