@@ -156,8 +156,10 @@
 
         <div class="container mx-auto px-4 text-center relative z-10">
             <div class="flex flex-col items-center justify-center text-center">
-                <img src="/images/img/PCAPPTRACK.svg" alt="PCAppTrack Logo" class="w-full max-w-xs sm:max-w-lg md:max-w-md lg:max-w-lg xl:max-w-2xl h-auto mx-auto">
-                <p class="text-xs sm:text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-4 -mt-4 sm:-mt-3 md:-mt-3 lg:-mt-6">
+                <img src="/images/img/PCAPPTRACK.svg" alt="PCAppTrack Logo"
+                    class="w-full max-w-xs sm:max-w-lg md:max-w-md lg:max-w-lg xl:max-w-2xl h-auto mx-auto">
+                <p
+                    class="text-xs sm:text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-4 -mt-4 sm:-mt-3 md:-mt-3 lg:-mt-6">
                     Ilagay lamang ang iyong natatanging Reference ID sa itinakdang field.
                 </p>
             </div>
@@ -873,31 +875,843 @@
         <div class="container mx-auto px-4">
             <!-- Header styled like the image -->
             <div class="text-center mb-8 sm:mb-10 md:mb-12">
-                <img src="/images/img/APPLICATION.svg" alt="PCAppTrack Logo" class="w-full max-w-xs sm:max-w-lg md:max-w-md lg:max-w-lg xl:max-w-2xl h-auto mx-auto">
+                <img src="/images/img/APPLICATION.svg" alt="PCAppTrack Logo"
+                    class="w-full max-w-xs sm:max-w-lg md:max-w-md lg:max-w-lg xl:max-w-2xl h-auto mx-auto">
             </div>
             <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
+                <!-- Header -->
+                <div class="p-3 sm:p-4 md:p-5 text-white" style="background-color: #0acf17ff;">
+                    <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
+                        <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+                            <div class="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
+                                <svg class="w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="min-w-0">
+                                <h2 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white leading-tight">
+                                    Social Protection Program
+                                </h2>
+                                <p class="text-xs sm:text-sm text-green-100 hidden sm:block">Para sa mga magniniyog at kanilang pamilya</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-1 sm:space-x-2 md:space-x-3">
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
+                                <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 object-contain">
+                            </div>
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
+                                <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo" class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="p-6 space-y-8 pt-10 pb-16">
+                    <!-- CocoLSA Certification Section -->
+                    <section class="px-2 sm:px-4 lg:px-8">
+                        <!-- Single Comprehensive Card -->
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
+                            <!-- Card Header -->
+                            <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200"
+                                style="background-color:rgb(230, 253, 212);">
+                                <div class="flex items-center space-x-3 sm:space-x-4">
+                                    <div
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 ml-3">
+                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h2
+                                            class="text-md sm:text-base lg:text-base font-bold text-green-800 mb-1 sm:mb-2 mt-1 sm:mt-2 leading-tight">
+                                            CocoLSA Certification Program
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Content -->
+                            <div class="p-6 space-y-6">
+                                <!-- What is CocoLSA -->
+                                <div class="border-l-4 border-green-400 pl-4">
+                                    <div class="flex items-start space-x-3 mb-3">
+                                        <div
+                                            class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-md font-bold text-gray-800 mt-1">Ano ang CocoLSA?</h3>
+                                    </div>
+                                    <p class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm ">
+                                        Ang Coco-LSA o Coco-based Learning Site for Agriculture (CocoLSA) Certification
+                                        isang bukid na nagsasagawa ng angkop na mga teknolohiyang nakabatay sa niyog,
+                                        gumagamit ng mga magagawa estratehiya sa pagsasaka, at matagumpay na
+                                        nagpapatakbo, kung kaya't karapat-dapat itong tularan.
+                                    </p>
+                                </div>
+
+                                <!-- Program Goals -->
+                                <div class="border-l-4 border-green-400 pl-4">
+                                    <div class="flex items-start space-x-3 mb-4">
+                                        <div
+                                            class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-md font-bold text-gray-800 mt-1">Mga Layunin ng Programa</h3>
+                                    </div>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-11">
+                                        <div class="bg-green-50 p-4 rounded-lg">
+                                            <div class="flex items-start space-x-3">
+                                                <div
+                                                    class="w-20 h-5 bg-green-500 rounded-full flex items-center justify-center mt-2">
+                                                    <span class="text-white text-xs font-bold">1</span>
+                                                </div>
+                                                <div>
+                                                    <h4
+                                                        class="text-md md:text-md font-semibold text-green-800 mb-2 mt-1">
+                                                        Palakasin
+                                                        ang
+                                                        Kakayahan</h4>
+                                                    <p class="text-green-700 text-xs sm:text-sm text-justify pr-2">
+                                                        Pagandahin ang kakayahan at kapasidad ng mga miyembro ng
+                                                        pamayanang nagtatanim ng niyog sa produksyon, pagpoproseso, at
+                                                        pagnenegosyo na nakabatay sa niyog.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <div class="flex items-start space-x-3">
+                                                <div
+                                                    class="w-20 h-5 bg-green-500 rounded-full flex items-center justify-center mt-2">
+                                                    <span class="text-white text-xs font-bold">2</span>
+                                                </div>
+                                                <div>
+                                                    <h4
+                                                        class="font-semibold text-md md:text-md text-green-800 mb-2 mt-2">
+                                                        Dagdagan ang
+                                                        Partisipasyon</h4>
+                                                    <p class="text-green-700 text-xs sm:text-sm text-justify pr-2">
+                                                        Paramihin ang paglahok ng magniniyog at lider nila sa
+                                                        pagpapaunlad ng industriya sa pamamagitan ng pagsisilbing ahente
+                                                        ng coconut-based capacity-building.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Program Components -->
+                                <div class="border-l-4 border-green-400 pl-2 sm:pl-4">
+                                    <div class="flex items-start space-x-2 sm:space-x-3 mb-4 sm:mb-6">
+                                        <div
+                                            class="w-6 h-6 sm:w-7 sm:h-7 bg-green-100 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-600" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-md sm:text-md font-bold text-gray-800 mt-2 leading-tight">Mga
+                                            Kasama sa Programa</h3>
+                                    </div>
+
+                                    <div
+                                        class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 ml-8 sm:ml-10 lg:ml-11">
+                                        <div
+                                            class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
+                                            <div
+                                                class="w-8 h-8 sm:w-9 sm:h-9 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <span
+                                                class="text-xs sm:text-sm font-semibold text-gray-700 leading-tight block">Training</span>
+                                        </div>
+
+                                        <div
+                                            class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
+                                            <div
+                                                class="w-8 h-8 sm:w-9 sm:h-9 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </div>
+                                            <span
+                                                class="text-xs sm:text-sm font-semibold text-gray-700 leading-tight block">Demonstration<br
+                                                    class="hidden xs:block">
+                                                Services</span>
+                                        </div>
+
+                                        <div
+                                            class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
+                                            <div
+                                                class="w-8 h-8 sm:w-9 sm:h-9 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </div>
+                                            <span
+                                                class="text-xs sm:text-sm font-semibold text-gray-700 leading-tight block">Information<br
+                                                    class="hidden xs:block"> Support</span>
+                                        </div>
+
+                                        <div
+                                            class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
+                                            <div
+                                                class="w-8 h-8 sm:w-9 sm:h-9 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </div>
+                                            <span
+                                                class="text-xs sm:text-sm font-semibold text-gray-700 leading-tight block">Technical<br
+                                                    class="hidden xs:block">
+                                                Assistance</span>
+                                        </div>
+
+                                        <div
+                                            class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200 xs:col-span-2 sm:col-span-1">
+                                            <div
+                                                class="w-8 h-8 sm:w-9 sm:h-9 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                                    viewBox="0 0 20 20">
+                                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                </svg>
+                                            </div>
+                                            <span
+                                                class="text-xs sm:text-sm font-semibold text-gray-700 leading-tight block">Complementary<br
+                                                    class="hidden xs:block">
+                                                Projects</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Selection and Prioritization Criteria -->
+                    <section class="px-2 sm:px-4 lg:px-8">
+                        <!-- Single Comprehensive Card -->
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
+                            <!-- Card Header -->
+                            <div class="bg-yellow-50 p-4 sm:p-5 lg:p-6 border-b border-gray-200">
+                                <div class="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2">
+                                    <div
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h2
+                                            class="text-base sm:text-lg font-bold text-yellow-800 mt-1 sm:mt-2 leading-tight">
+                                            Mga Kriterya para sa Pagpili</h2>
+                                        <p class="text-yellow-700 text-xs sm:text-sm leading-tight">Ano ang mga
+                                            kailangan para makakuha ng
+                                            CocoLSA certification</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Content -->
+                            <div class="p-4 sm:p-5 lg:p-6 space-y-4 sm:space-y-6">
+                                <!-- Individual Farmer Requirements -->
+                                <div class="border-l-4 border-yellow-400 pl-3 sm:pl-4">
+                                    <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
+                                        <div
+                                            class="w-6 h-6 sm:w-7 sm:h-7 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="min-w-0">
+                                            <h3 class="text-sm md:text-md font-bold text-yellow-800 leading-tight">Para
+                                                sa Individual na Farmer
+                                            </h3>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-yellow-600 text-xs sm:text-sm font-bold">1</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Filipino
+                                                        Coconut Farmer
+                                                    </h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May-ari,
+                                                        nag-aalaga, o nagtatanim
+                                                        ng coconut na may hindi bababa sa 1 hectare ng lupa</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-yellow-600 text-xs sm:text-sm font-bold">2</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Willing to
+                                                        Demonstrate
+                                                    </h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Handang
+                                                        magpakita ng coconut
+                                                        technologies sa farm sa ibang farmers</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-yellow-600 text-xs sm:text-sm font-bold">3</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Open to
+                                                        Training</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Handang
+                                                        mag-attend ng regular na
+                                                        training at seminar</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-yellow-600 text-xs sm:text-sm font-bold">4</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Physically Fit
+                                                    </h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May
+                                                        kakayahang gampanan ang mga
+                                                        responsibilidad ng CocoLSA cooperator</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-yellow-600 text-xs sm:text-sm font-bold">5</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        NCFRS
+                                                        Registered</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                                        Nakaregister sa NCFRS, mas maganda
+                                                        kung miyembro ng CFO/CFC</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Group/Organization Requirements -->
+                                <div class="border-l-4 border-green-400 pl-3 sm:pl-4">
+                                    <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
+                                        <div
+                                            class="w-6 h-6 sm:w-7 sm:h-7 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="min-w-0">
+                                            <h3 class="text-sm md:text-md font-bold text-green-800 leading-tight">Para
+                                                sa Grupo/Organisasyon
+                                            </h3>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
+                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">1</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Integrated Farm</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Hindi
+                                                        bababa sa 1 hectare ng
+                                                        integrated/diversified farm (halimbawa: coconut-livestock)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">2</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Coconut Farmland</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May-ari
+                                                        at nag-mmanage ng coconut
+                                                        farmland na hindi bababa sa 1 hectare</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">3</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Valid Registration</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May
+                                                        valid registration sa SEC, CDA,
+                                                        DOLE, o existing PCA accreditation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">4</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Active Organization
+                                                    </h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Aktibo
+                                                        sa nakaraang 3 taon sa
+                                                        farmer organization o community enterprise development</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">5</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Filipino Leaders</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May mga
+                                                        Filipino farmer-leaders na
+                                                        handang magdemonstrate ng coconut technologies</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">6</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Training Ready</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Handang
+                                                        mag-attend ng regular
+                                                        training</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4 md:col-span-2">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">7</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Physically Capable</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May
+                                                        physical fitness para gampanan
+                                                        ang mga responsibilidad ng LSA cooperator</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Farm Requirements -->
+                                <div class="border-l-4 border-yellow-400 pl-4">
+                                    <div class="flex items-center space-x-3 mb-4">
+                                        <div
+                                            class="w-7 h-7 bg-yellow-500 rounded-full flex items-center justify-center">
+                                            <svg class="w-5 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10 2L3 7v11a1 1 0 001 1h3v-7a1 1 0 011-1h4a1 1 0 011 1v7h3a1 1 0 001-1V7l-7-5z" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-sm md:text-md font-bold text-yellow-800 leading-tight">Para
+                                                sa Farm (Individual at Group)
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-14">
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                                            <div class="flex items-start space-x-3">
+                                                <div
+                                                    class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0">
+                                                    <span class="text-yellow-600 text-xs font-bold">1</span>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
+                                                        Integrated
+                                                        Farm</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm">Hindi bababa sa 1
+                                                        hectare ng
+                                                        integrated/diversified farm (coconut-livestock,
+                                                        coconut-agro-forestry, coconut-crop)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                                            <div class="flex items-start space-x-3">
+                                                <div
+                                                    class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0">
+                                                    <span class="text-yellow-600 text-xs font-bold">2</span>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
+                                                        Demo Area
+                                                    </h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm">May technology
+                                                        demonstration area
+                                                        para sa coconut production, kasama ang holding area, wash area,
+                                                        at toilet</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                                            <div class="flex items-start space-x-3">
+                                                <div
+                                                    class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0">
+                                                    <span class="text-yellow-600 text-xs font-bold">3</span>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
+                                                        Accessible
+                                                        Location
+                                                    </h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm">Madaling puntahan thru
+                                                        land at iba
+                                                        pang transportation facilities</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                                            <div class="flex items-start space-x-3">
+                                                <div
+                                                    class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0">
+                                                    <span class="text-yellow-600 text-xs font-bold">4</span>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
+                                                        Well-Landscaped</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm">Maganda at organisadong
+                                                        farm layout
+                                                        na kaaya-ayang tingnan</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Documentary Requirements -->
+                    <section class="px-4 lg:px-8 text-sm ">
+                        <!-- Single Comprehensive Card -->
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden -mb-5">
+                            <!-- Card Header -->
+                            <div class="bg-green-50 p-6 border-b border-gray-200">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h2 class="text-base lg:text-lg font-bold text-green-800">Mga Kailangang
+                                            Dokumento</h2>
+                                        <p class="text-green-700 text-xs sm:text-sm">Siguruhing kumpleto ang lahat ng
+                                            documento
+                                            bago mag-apply</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Content -->
+                            <div class="p-6 space-y-4">
+                                <!-- Documents Grid -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="flex items-start space-x-3">
+                                            <div
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">1</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Signed
+                                                    Briefer</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Nilagdaang briefer mula sa
+                                                    PCA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="flex items-start space-x-3">
+                                            <div
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">2</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
+                                                    Self-Assessment</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Sariling pag-evaluate sa
+                                                    inyong farm
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="flex items-start space-x-3">
+                                            <div
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">3</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Letter
+                                                    of Intent</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Liham ng intensyon na maging
+                                                    CocoLSA
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="flex items-start space-x-3">
+                                            <div
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">4</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Farm
+                                                    Profile Form</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Learning Site for
+                                                    Agriculture Profile
+                                                    Form</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="flex items-start space-x-3">
+                                            <div
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">5</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA
+                                                    Qualification Form</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Form para sa pag-qualify
+                                                    bilang LSA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="flex items-start space-x-3">
+                                            <div
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">6</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Field
+                                                    Validation Report
+                                                </h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Mula sa PCA Agriculturists
+                                                    sa inyong
+                                                    lugar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="flex items-start space-x-3">
+                                            <div
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">7</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA
+                                                    Acceptance Form</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Form ng pagtanggap bilang
+                                                    LSA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="flex items-start space-x-3">
+                                            <div
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">8</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">RTWG
+                                                    Endorsement</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Endorsement mula sa Regional
+                                                    Technical
+                                                    Working Group</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Important Notice -->
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6 ">
+                                    <div class="flex items-start space-x-3">
+                                        <svg class="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <h4 class="font-semibold text-xs sm:text-sm text-yellow-800 mb-1">IMPORTANT!
+                                            </h4>
+                                            <p class="text-yellow-700 text-xs sm:text-sm">If endorsed with financial
+                                                assistance, a
+                                                <strong>Development Plan</strong> shall be
+                                                required.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden mt-8">
                 <!-- Header -->
                 <div class=" p-3 text-white" style="background-color: #0acf17ff;">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-4">
                             <div
-                                class="w-10 h-10 ml-5 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                class="w-10 h-10 ml-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30 ">
+                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
                                     </path>
                                 </svg>
                             </div>
                             <div>
-                                <h2 class="text-md xl:text-xl font-bold text-white mb-1 mt-1">Social Protection Program</h2>
+                                <h2 class="text-md xl:text-xl font-bold text-white mb-1 mt-1">Integrated Coconut
+                                    Processing
+                                    and Downstream Products</h2>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3 mr-5">
                             <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center">
-                                <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="h-14 w-14 object-contain">
-                            </div>
-                            <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center">
-                                <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo" class="h-14 w-14 object-contain">
+                                <img src="/images/IA logos/PM.svg" alt="PM Logo" class="h-10 w-10 object-contain">
                             </div>
                         </div>
                     </div>
@@ -1519,8 +2333,10 @@
                                         </svg>
                                     </div>
                                     <div class="flex-1">
-                                        <h2 class="text-base lg:text-lg font-bold text-green-800">Mga Kailangang Dokumento</h2>
-                                        <p class="text-green-700 text-xs sm:text-sm">Siguruhing kumpleto ang lahat ng documento
+                                        <h2 class="text-base lg:text-lg font-bold text-green-800">Mga Kailangang
+                                            Dokumento</h2>
+                                        <p class="text-green-700 text-xs sm:text-sm">Siguruhing kumpleto ang lahat ng
+                                            documento
                                             bago mag-apply</p>
                                     </div>
                                 </div>
@@ -1537,8 +2353,10 @@
                                                 <span class="text-green-600 text-sm font-bold">1</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Signed Briefer</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Nilagdaang briefer mula sa PCA</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Signed
+                                                    Briefer</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Nilagdaang briefer mula sa
+                                                    PCA</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1550,8 +2368,10 @@
                                                 <span class="text-green-600 text-sm font-bold">2</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Self-Assessment</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Sariling pag-evaluate sa inyong farm
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
+                                                    Self-Assessment</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Sariling pag-evaluate sa
+                                                    inyong farm
                                                 </p>
                                             </div>
                                         </div>
@@ -1564,8 +2384,10 @@
                                                 <span class="text-green-600 text-sm font-bold">3</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Letter of Intent</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Liham ng intensyon na maging CocoLSA
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Letter
+                                                    of Intent</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Liham ng intensyon na maging
+                                                    CocoLSA
                                                 </p>
                                             </div>
                                         </div>
@@ -1578,8 +2400,10 @@
                                                 <span class="text-green-600 text-sm font-bold">4</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Farm Profile Form</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Learning Site for Agriculture Profile
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Farm
+                                                    Profile Form</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Learning Site for
+                                                    Agriculture Profile
                                                     Form</p>
                                             </div>
                                         </div>
@@ -1592,8 +2416,10 @@
                                                 <span class="text-green-600 text-sm font-bold">5</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA Qualification Form</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Form para sa pag-qualify bilang LSA</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA
+                                                    Qualification Form</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Form para sa pag-qualify
+                                                    bilang LSA</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1605,9 +2431,11 @@
                                                 <span class="text-green-600 text-sm font-bold">6</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Field Validation Report
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Field
+                                                    Validation Report
                                                 </h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Mula sa PCA Agriculturists sa inyong
+                                                <p class="text-gray-600 text-xs sm:text-sm">Mula sa PCA Agriculturists
+                                                    sa inyong
                                                     lugar</p>
                                             </div>
                                         </div>
@@ -1620,8 +2448,10 @@
                                                 <span class="text-green-600 text-sm font-bold">7</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA Acceptance Form</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Form ng pagtanggap bilang LSA</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA
+                                                    Acceptance Form</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Form ng pagtanggap bilang
+                                                    LSA</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1633,8 +2463,10 @@
                                                 <span class="text-green-600 text-sm font-bold">8</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">RTWG Endorsement</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Endorsement mula sa Regional Technical
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">RTWG
+                                                    Endorsement</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Endorsement mula sa Regional
+                                                    Technical
                                                     Working Group</p>
                                             </div>
                                         </div>
@@ -1651,8 +2483,10 @@
                                                 clip-rule="evenodd"></path>
                                         </svg>
                                         <div>
-                                            <h4 class="font-semibold text-xs sm:text-sm text-yellow-800 mb-1">IMPORTANT!</h4>
-                                            <p class="text-yellow-700 text-xs sm:text-sm">If endorsed with financial assistance, a
+                                            <h4 class="font-semibold text-xs sm:text-sm text-yellow-800 mb-1">IMPORTANT!
+                                            </h4>
+                                            <p class="text-yellow-700 text-xs sm:text-sm">If endorsed with financial
+                                                assistance, a
                                                 <strong>Development Plan</strong> shall be
                                                 required.
                                             </p>
@@ -1664,7 +2498,6 @@
                     </section>
                 </div>
             </div>
-
 
             <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg mt-8">
                 <!-- Header -->
