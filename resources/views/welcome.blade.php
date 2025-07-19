@@ -117,7 +117,7 @@
                 <h1 class="text-4xl md:text-5xl font-extrabold text-green-900 mb-5 ml-16 mt-0">
                     Application <span style="color: #09CA16;">Tracking </span> System
                 </h1>
-                <p class="text-md text-justify mb-6 ml-16 mr-9 mt-2 ">
+                <p class="text-xs sm:text-sm  text-justify mb-6 ml-16 mr-9 mt-2 ">
                     <span class="font-light text-gray-800">Ang PCAppTrack
                         ay isang online
                         na sistema ng programang CFIDP sa ilalim ng PCA Region V na tumutulong sa
@@ -841,7 +841,7 @@
     <section class="container mx-auto px-10 py-20">
         <h2 class="text-xl md:text-3xl font-bold text-green-900 mb-1 ml-5">ANO ANG <span
                 style="color: #09CA16;">CFIDP?</span></h2>
-        <div class="flex flex-col md:flex-row items-center text-sm text-justify gap-9 ml-5 mr-4">
+        <div class="flex flex-col md:flex-row items-center text-xs sm:text-sm text-justify gap-9 ml-5 mr-4">
             <div class="flex-1">
                 <p>Ang Coconut Farmers and Industry Development Plan (CFIDP)
                     ay isang pangunahing programa ng pamahalaan sa ilalim ng
@@ -926,11 +926,11 @@
                         <!-- Single Comprehensive Card -->
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
                             <!-- Card Header -->
-                            <div class="p-4 sm:p-5 lg:p-6 border-b border-gray-200"
+                            <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200"
                                 style="background-color:rgb(230, 253, 212);">
                                 <div class="flex items-center space-x-3 sm:space-x-4">
                                     <div
-                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 ml-3">
                                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
                                             viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -940,7 +940,7 @@
                                     </div>
                                     <div class="flex-1 min-w-0">
                                         <h2
-                                            class="text-base sm:text-lg lg:text-xl font-bold text-green-800 mb-1 sm:mb-2 mt-1 sm:mt-2 leading-tight">
+                                            class="text-md sm:text-base lg:text-base font-bold text-green-800 mb-1 sm:mb-2 mt-1 sm:mt-2 leading-tight">
                                             CocoLSA Certification Program
                                         </h2>
                                     </div>
@@ -963,7 +963,7 @@
                                         </div>
                                         <h3 class="text-md font-bold text-gray-800 mt-1">Ano ang CocoLSA?</h3>
                                     </div>
-                                    <p class="text-gray-700 leading-relaxed ml-11 text-justify text-sm">
+                                    <p class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm ">
                                         Ang Coco-LSA o Coco-based Learning Site for Agriculture (CocoLSA) Certification
                                         isang bukid na nagsasagawa ng angkop na mga teknolohiyang nakabatay sa niyog,
                                         gumagamit ng mga magagawa estratehiya sa pagsasaka, at matagumpay na
@@ -994,10 +994,10 @@
                                                     <span class="text-white text-xs font-bold">1</span>
                                                 </div>
                                                 <div>
-                                                    <h4 class="text-md font-semibold text-green-800 mb-2 mt-1">Palakasin
+                                                    <h4 class="text-md md:text-md font-semibold text-green-800 mb-2 mt-1">Palakasin
                                                         ang
                                                         Kakayahan</h4>
-                                                    <p class="text-green-700 text-sm text-justify pr-2">
+                                                    <p class="text-green-700 text-xs sm:text-sm text-justify pr-2">
                                                         Pagandahin ang kakayahan at kapasidad ng mga miyembro ng
                                                         pamayanang nagtatanim ng niyog sa produksyon, pagpoproseso, at
                                                         pagnenegosyo na nakabatay sa niyog.
@@ -1008,15 +1008,13 @@
 
                                         <div class="bg-blue-50 p-4 rounded-lg">
                                             <div class="flex items-start space-x-3">
-                                                <div class="w-20 h-5 sm:w-24 sm:h-6 md:w-28 md:h-7 bg-green-500 rounded-full flex items-center justify-center mt-2">
-                                                    <span class="text-white text-xs sm:text-sm md:text-xs font-bold ">
-                                                        2
-                                                    </span>
+                                                <div class="w-20 h-5 bg-green-500 rounded-full flex items-center justify-center mt-2">
+                                                    <span class="text-white text-xs font-bold">2</span>
                                                 </div>
                                                 <div>
-                                                    <h4 class="font-semibold text-green-800 mb-2">Dagdagan ang
+                                                    <h4 class="font-semibold text-md md:text-md text-green-800 mb-2 mt-2">Dagdagan ang
                                                         Partisipasyon</h4>
-                                                    <p class="text-green-700 text-sm text-justify pr-2">
+                                                    <p class="text-green-700 text-xs sm:text-sm text-justify pr-2">
                                                         Paramihin ang paglahok ng magniniyog at lider nila sa
                                                         pagpapaunlad ng industriya sa pamamagitan ng pagsisilbing ahente
                                                         ng coconut-based capacity-building.
