@@ -157,7 +157,7 @@
         <div class="container mx-auto px-4 text-center relative z-10">
             <div class="flex flex-col items-center justify-center text-center">
                 <img src="/images/img/PCAPPTRACK.svg" alt="PCAppTrack Logo" class="w-1/2 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-4xl h-auto mb-2 sm:mb-1 md:mb-1 lg:mb-1 -mt-4 sm:-mt-6 md:-mt-6">
-                <p class="text-xs sm:text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-10">
+                <p class="text-xs sm:text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-10 -mt-4 sm:-mt-6 md:-mt-6 lg:-mt-6">
                     Ilagay lamang ang iyong natatanging Reference ID sa itinakdang field.
                 </p>
             </div>
@@ -887,7 +887,7 @@
                     <div class="w-3 h-3 bg-green-500 rounded-full"></div>
                     <div class="w-12 h-1 bg-green-600 rounded-full"></div>
                 </div>
-                <p class="text-green-700 text-sm max-w-2xl mx-auto">
+                <p class="text-green-700 text-xs sm:text-sm max-w-2xl mx-auto">
                     Gabay para sa mga coconut farmers na nais mag-apply sa iba't ibang CFIDP programs
                 </p>
             </div>
@@ -897,16 +897,16 @@
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-4">
                             <div
-                                class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                class="w-12 h-12 ml-5 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
                                     </path>
                                 </svg>
                             </div>
                             <div>
-                                <h2 class="text-xl font-bold text-white mb-1">Social Protection Program</h2>
-                                <p class="text-green-100 text-sm">Para sa mga magniniyog at kanilang pamilya</p>
+                                <h2 class="text-md xl:text-xl font-bold text-white mb-1">Social Protection Program</h2>
+                                <p class="text-green-100 text-xs sm:text-sm">Para sa mga magniniyog at kanilang pamilya</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3 mr-5">
@@ -1536,8 +1536,8 @@
                                         </svg>
                                     </div>
                                     <div class="flex-1">
-                                        <h2 class="text-lg font-bold text-green-800">Mga Kailangang Dokumento</h2>
-                                        <p class="text-green-700 text-sm">Siguruhing kumpleto ang lahat ng documento
+                                        <h2 class="text-base lg:text-lg font-bold text-green-800">Mga Kailangang Dokumento</h2>
+                                        <p class="text-green-700 text-xs sm:text-sm">Siguruhing kumpleto ang lahat ng documento
                                             bago mag-apply</p>
                                     </div>
                                 </div>
@@ -1554,8 +1554,8 @@
                                                 <span class="text-green-600 text-sm font-bold">1</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-gray-800 mb-1">Signed Briefer</h4>
-                                                <p class="text-gray-600 text-sm">Nilagdaang briefer mula sa PCA</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Signed Briefer</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Nilagdaang briefer mula sa PCA</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1567,8 +1567,8 @@
                                                 <span class="text-green-600 text-sm font-bold">2</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-gray-800 mb-1">Self-Assessment</h4>
-                                                <p class="text-gray-600 text-sm">Sariling pag-evaluate sa inyong farm
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Self-Assessment</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Sariling pag-evaluate sa inyong farm
                                                 </p>
                                             </div>
                                         </div>
@@ -1581,8 +1581,8 @@
                                                 <span class="text-green-600 text-sm font-bold">3</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-gray-800 mb-1">Letter of Intent</h4>
-                                                <p class="text-gray-600 text-sm">Liham ng intensyon na maging CocoLSA
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Letter of Intent</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Liham ng intensyon na maging CocoLSA
                                                 </p>
                                             </div>
                                         </div>
@@ -1595,8 +1595,8 @@
                                                 <span class="text-green-600 text-sm font-bold">4</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-gray-800 mb-1">Farm Profile Form</h4>
-                                                <p class="text-gray-600 text-sm">Learning Site for Agriculture Profile
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Farm Profile Form</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Learning Site for Agriculture Profile
                                                     Form</p>
                                             </div>
                                         </div>
@@ -1609,8 +1609,8 @@
                                                 <span class="text-green-600 text-sm font-bold">5</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-gray-800 mb-1">LSA Qualification Form</h4>
-                                                <p class="text-gray-600 text-sm">Form para sa pag-qualify bilang LSA</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA Qualification Form</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Form para sa pag-qualify bilang LSA</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1622,9 +1622,9 @@
                                                 <span class="text-green-600 text-sm font-bold">6</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-gray-800 mb-1">Field Validation Report
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Field Validation Report
                                                 </h4>
-                                                <p class="text-gray-600 text-sm">Mula sa PCA Agriculturists sa inyong
+                                                <p class="text-gray-600 text-xs sm:text-sm">Mula sa PCA Agriculturists sa inyong
                                                     lugar</p>
                                             </div>
                                         </div>
@@ -1637,8 +1637,8 @@
                                                 <span class="text-green-600 text-sm font-bold">7</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-gray-800 mb-1">LSA Acceptance Form</h4>
-                                                <p class="text-gray-600 text-sm">Form ng pagtanggap bilang LSA</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA Acceptance Form</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Form ng pagtanggap bilang LSA</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1650,8 +1650,8 @@
                                                 <span class="text-green-600 text-sm font-bold">8</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-gray-800 mb-1">RTWG Endorsement</h4>
-                                                <p class="text-gray-600 text-sm">Endorsement mula sa Regional Technical
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">RTWG Endorsement</h4>
+                                                <p class="text-gray-600 text-xs sm:text-sm">Endorsement mula sa Regional Technical
                                                     Working Group</p>
                                             </div>
                                         </div>
@@ -1668,8 +1668,8 @@
                                                 clip-rule="evenodd"></path>
                                         </svg>
                                         <div>
-                                            <h4 class="font-semibold text-yellow-800 mb-1">IMPORTANT!</h4>
-                                            <p class="text-yellow-700 text-sm">If endorsed with financial assistance, a
+                                            <h4 class="font-semibold text-xs sm:text-sm text-yellow-800 mb-1">IMPORTANT!</h4>
+                                            <p class="text-yellow-700 text-xs sm:text-sm">If endorsed with financial assistance, a
                                                 <strong>Development Plan</strong> shall be
                                                 required.
                                             </p>
