@@ -156,12 +156,12 @@
 
         <div class="container mx-auto px-4 text-center relative z-10">
             <div class="flex flex-col items-center justify-center text-center">
-                <img src="/images/img/PCAPPTRACK.svg" alt="PCAppTrack Logo" class="w-1/2 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-4xl h-auto mb-2 sm:mb-1 md:mb-1 lg:mb-1 -mt-4 sm:-mt-6 md:-mt-6">
-                <p class="text-xs sm:text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-10 -mt-4 sm:-mt-6 md:-mt-6 lg:-mt-6">
+                <img src="/images/img/PCAPPTRACK.svg" alt="PCAppTrack Logo" class="w-full max-w-xs sm:max-w-lg md:max-w-md lg:max-w-lg xl:max-w-2xl h-auto mx-auto">
+                <p class="text-xs sm:text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-4 -mt-4 sm:-mt-3 md:-mt-3 lg:-mt-6">
                     Ilagay lamang ang iyong natatanging Reference ID sa itinakdang field.
                 </p>
             </div>
-            <div class="flex max-w-md mx-auto text-sm xs:text-xs px-12 sm:px-14 md:px-8 lg:px-10">
+            <div class="flex max-w-md mx-auto text-sm xs:text-xs px-10 sm:px-14 md:px-8 lg:px-10">
                 <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong reference ID"
                     class="flex-grow px-4 py-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-xs placeholder:text-xs">
                 <button id="trackButton" type="button" class="px-6 py-2 rounded-r text-white font-medium"
@@ -872,32 +872,16 @@
     <section class="bg-green-50 py-16">
         <div class="container mx-auto px-4">
             <!-- Header styled like the image -->
-            <div class="text-center mb-12">
-                <div class="bg-green-600 inline-block text-white px-4 py-2 rounded-full mb-4">
-                    <span class="text-sm md:text-base font-bold">CFIDP APPLICATION</span>
-                </div>
-                <h1 class="text-3xl md:text-5xl font-extrabold text-green-900 mb-4 leading-tight">
-                    MGA KAILANGANG IHANDA
-                </h1>
-                <p class="text-xl md:text-2xl font-bold mb-6 text-green-800">
-                    NA MGA DOKUMENTO
-                </p>
-                <div class="flex items-center justify-center space-x-2 mb-4">
-                    <div class="w-12 h-1 bg-green-600 rounded-full"></div>
-                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <div class="w-12 h-1 bg-green-600 rounded-full"></div>
-                </div>
-                <p class="text-green-700 text-xs sm:text-sm max-w-2xl mx-auto">
-                    Gabay para sa mga coconut farmers na nais mag-apply sa iba't ibang CFIDP programs
-                </p>
+            <div class="text-center mb-8 sm:mb-10 md:mb-12">
+                <img src="/images/img/APPLICATION.svg" alt="PCAppTrack Logo" class="w-full max-w-xs sm:max-w-lg md:max-w-md lg:max-w-lg xl:max-w-2xl h-auto mx-auto">
             </div>
-            <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
+            <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
                 <!-- Header -->
-                <div class=" p-5 text-white" style="background-color: #0acf17ff;">
+                <div class=" p-3 text-white" style="background-color: #0acf17ff;">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-4">
                             <div
-                                class="w-12 h-12 ml-5 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                                class="w-10 h-10 ml-5 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
@@ -905,15 +889,14 @@
                                 </svg>
                             </div>
                             <div>
-                                <h2 class="text-md xl:text-xl font-bold text-white mb-1">Social Protection Program</h2>
-                                <p class="text-green-100 text-xs sm:text-sm">Para sa mga magniniyog at kanilang pamilya</p>
+                                <h2 class="text-md xl:text-xl font-bold text-white mb-1 mt-1">Social Protection Program</h2>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3 mr-5">
-                            <div class="w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
+                            <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center">
                                 <img src="/images/IA logos/ATI.svg" alt="ATI Logo" class="h-14 w-14 object-contain">
                             </div>
-                            <div class="w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
+                            <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center">
                                 <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo" class="h-14 w-14 object-contain">
                             </div>
                         </div>
