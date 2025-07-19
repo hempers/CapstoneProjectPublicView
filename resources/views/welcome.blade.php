@@ -1213,7 +1213,7 @@
                                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 md:col-span-2">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                    class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0">
                                                     <span class="text-yellow-600 text-sm font-bold">5</span>
                                                 </div>
                                                 <div class="flex-1">
@@ -1248,11 +1248,11 @@
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                                     <span class="text-green-600 text-sm font-bold">1</span>
                                                 </div>
                                                 <div class="flex-1">
-                                                    <h4 class="font-semibold text-gray-800 mb-2">Integrated Farm</h4>
+                                                    <h4 class="font-semibold text-sm text-gray-800 mb-2">Integrated Farm</h4>
                                                     <p class="text-gray-600 text-sm">Hindi bababa sa 1 hectare ng
                                                         integrated/diversified farm (halimbawa: coconut-livestock)</p>
                                                 </div>
@@ -1262,11 +1262,11 @@
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                                     <span class="text-green-600 text-sm font-bold">2</span>
                                                 </div>
                                                 <div class="flex-1">
-                                                    <h4 class="font-semibold text-gray-800 mb-2">Coconut Farmland</h4>
+                                                    <h4 class="font-semibold text-sm text-gray-800 mb-2">Coconut Farmland</h4>
                                                     <p class="text-gray-600 text-sm">May-ari at nag-mmanage ng coconut
                                                         farmland na hindi bababa sa 1 hectare</p>
                                                 </div>
@@ -1276,11 +1276,11 @@
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                                     <span class="text-green-600 text-sm font-bold">3</span>
                                                 </div>
                                                 <div class="flex-1">
-                                                    <h4 class="font-semibold text-gray-800 mb-2">Valid Registration</h4>
+                                                    <h4 class="font-semibold text-sm text-gray-800 mb-2">Valid Registration</h4>
                                                     <p class="text-gray-600 text-sm">May valid registration sa SEC, CDA,
                                                         DOLE, o existing PCA accreditation</p>
                                                 </div>
@@ -1290,11 +1290,11 @@
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                                     <span class="text-green-600 text-sm font-bold">4</span>
                                                 </div>
                                                 <div class="flex-1">
-                                                    <h4 class="font-semibold text-gray-800 mb-2">Active Organization
+                                                    <h4 class="font-semibold text-sm text-gray-800 mb-2">Active Organization
                                                     </h4>
                                                     <p class="text-gray-600 text-sm">Aktibo sa nakaraang 3 taon sa
                                                         farmer organization o community enterprise development</p>
@@ -1305,11 +1305,11 @@
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                                     <span class="text-green-600 text-sm font-bold">5</span>
                                                 </div>
                                                 <div class="flex-1">
-                                                    <h4 class="font-semibold text-gray-800 mb-2">Filipino Leaders</h4>
+                                                    <h4 class="font-semibold text-sm text-gray-800 mb-2">Filipino Leaders</h4>
                                                     <p class="text-gray-600 text-sm">May mga Filipino farmer-leaders na
                                                         handang magdemonstrate ng coconut technologies</p>
                                                 </div>
@@ -1319,11 +1319,11 @@
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                                     <span class="text-green-600 text-sm font-bold">6</span>
                                                 </div>
                                                 <div class="flex-1">
-                                                    <h4 class="font-semibold text-gray-800 mb-2">Training Ready</h4>
+                                                    <h4 class="font-semibold text-sm text-gray-800 mb-2">Training Ready</h4>
                                                     <p class="text-gray-600 text-sm">Handang mag-attend ng regular
                                                         training</p>
                                                 </div>
@@ -1333,11 +1333,11 @@
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-4 md:col-span-2">
                                             <div class="flex items-start space-x-3">
                                                 <div
-                                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
                                                     <span class="text-green-600 text-sm font-bold">7</span>
                                                 </div>
                                                 <div class="flex-1">
-                                                    <h4 class="font-semibold text-gray-800 mb-2">Physically Capable</h4>
+                                                    <h4 class="font-semibold text-sm text-gray-800 mb-2">Physically Capable</h4>
                                                     <p class="text-gray-600 text-sm">May physical fitness para gampanan
                                                         ang mga responsibilidad ng LSA cooperator</p>
                                                 </div>
