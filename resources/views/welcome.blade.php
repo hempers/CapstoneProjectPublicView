@@ -1986,7 +1986,7 @@
             </div>
 
             
-            <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
+            <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden mt-10">
                 <!-- Header -->
                 <div class="p-3 sm:p-4 md:p-5 text-white" style="background-color: #0acf17ff;">
                     <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
@@ -2805,6 +2805,9 @@
                     </section>
                 </div>
             </div>
+
+
+
             <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg mt-8">
                 <!-- Header -->
                 <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white">
