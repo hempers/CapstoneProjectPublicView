@@ -1650,9 +1650,9 @@
                                             </div>
                                             <div>
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Field
-                                                    Validation Report (c/o PCA Agriculturists assigned in the
-                                                    proposed site);
+                                                    Validation Report ;
                                                 </h4>
+                                                
                                             </div>
                                         </div>
                                     </div>
