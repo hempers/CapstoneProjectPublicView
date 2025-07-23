@@ -1160,7 +1160,7 @@
                             <!-- Card Content -->
                             <div class="p-4 sm:p-5 lg:p-6 space-y-4 sm:space-y-6">
                                 <!-- Individual Farmer Requirements -->
-                                <div class="border-l-4 border-yellow-400 pl-3 sm:pl-4">
+                                <div>
                                     <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
                                         <div
                                             class="w-6 h-6 sm:w-7 sm:h-7 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
@@ -1276,7 +1276,7 @@
                                 </div>
 
                                 <!-- Group/Organization Requirements -->
-                                <div class="border-l-4 border-green-400 pl-3 sm:pl-4">
+                                <div >
                                     <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
                                         <div
                                             class="w-6 h-6 sm:w-7 sm:h-7 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
@@ -1420,7 +1420,7 @@
                                 </div>
 
                                 <!-- Farm Requirements -->
-                                <div class="border-l-4 border-yellow-400 pl-4">
+                                <div>
                                     <div class="flex items-center space-x-3 mb-4">
                                         <div
                                             class="w-7 h-7 bg-yellow-500 rounded-full flex items-center justify-center">
@@ -1436,7 +1436,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-14">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-10">
                                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
