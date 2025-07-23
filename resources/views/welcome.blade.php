@@ -1566,11 +1566,11 @@
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 ml-2">
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
-                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-2">
+                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1 sm:mt-2">
                                                 <span class="text-green-600 text-sm font-bold">1</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mr-2 mt-1">
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mr-2 mt-0.5 sm:mt-1">
                                                     Applicant's Checklist of Requirements</h4>
                                             </div>
                                         </div>
@@ -1578,11 +1578,11 @@
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
-                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-2.5">
+                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1.5 sm:mt-2.5">
                                                 <span class="text-green-600 text-sm font-bold">2</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mt-3">Signed
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mt-2 sm:mt-3">Signed
                                                     Briefer</h4>
                                             </div>
                                         </div>
@@ -1590,11 +1590,11 @@
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
-                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-2.5">
+                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1.5 sm:mt-2.5">
                                                 <span class="text-green-600 text-sm font-bold">3</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mt-3">
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mt-2 sm:mt-3">
                                                     Self-Assessment</h4>
                                             </div>
                                         </div>
@@ -1602,11 +1602,11 @@
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
-                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-7">
+                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-4 sm:mt-7">
                                                 <span class="text-green-600 text-sm font-bold">4</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mt-4">Letter
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mt-3 sm:mt-4">Letter
                                                     of Intent to become a CocoLSA</h4>
                                             </div>
                                         </div>
@@ -1614,11 +1614,11 @@
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
-                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-7">
+                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-4 sm:mt-7">
                                                 <span class="text-green-600 text-sm font-bold">5</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-3 mt-3">Farming
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-3 mt-2 sm:mt-3">Farming
                                                     Learning Site for Agriculture Profile Form</h4>
                                             </div>
                                         </div>
@@ -1626,11 +1626,11 @@
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
-                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-2.5">
+                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1.5 sm:mt-2.5">
                                                 <span class="text-green-600 text-sm font-bold">6</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mt-3">LSA
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 mt-2 sm:mt-3">LSA
                                                     Qualification Form</h4>
                                             </div>
                                         </div>
@@ -1638,7 +1638,7 @@
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
-                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1">
                                                 <span class="text-green-600 text-sm font-bold">7</span>
                                             </div>
                                             <div>
@@ -1650,7 +1650,7 @@
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
-                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1">
                                                 <span class="text-green-600 text-sm font-bold">8</span>
                                             </div>
                                             <div>
@@ -1662,7 +1662,7 @@
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
-                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1">
                                                 <span class="text-green-600 text-sm font-bold">9</span>
                                             </div>
                                             <div>
