@@ -880,7 +880,8 @@
             </div>
             <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
                 <!-- Header -->
-                <div class="p-3 sm:p-4 md:p-5 text-white" style="background: linear-gradient(135deg, #07da15ff 0%, #0ac016ff 50%, #049911ff 100%);">
+                <div class="p-3 sm:p-4 md:p-5 text-white"
+                    style="background: linear-gradient(135deg, #07da15ff 0%, #0ac016ff 50%, #049911ff 100%);">
                     <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
                         <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
                             <div
@@ -1716,7 +1717,8 @@
 
             <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden mt-8">
                 <!-- Header -->
-                <div class=" p-6 text-white" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);">
+                <div class=" p-6 text-white"
+                    style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);">
                     <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
                         <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
                             <div
@@ -1791,7 +1793,8 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Letter
                                                     of Intent</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Liham ng intensyon para sa
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Liham ng intensyon
+                                                    para sa
                                                     processing
                                                     facility</p>
                                             </div>
@@ -1825,7 +1828,8 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
                                                     NCFRS
                                                     Certification</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kumpirmado at inisyu ng
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kumpirmado at inisyu
+                                                    ng
                                                     Regional Office
                                                 </p>
                                             </div>
@@ -1861,7 +1865,8 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     CDA
                                                     Registration</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Rehistradong kooperatiba sa
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Rehistradong
+                                                    kooperatiba sa
                                                     ilalim ng CDA</p>
                                             </div>
                                         </div>
@@ -1878,7 +1883,8 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     CDA
                                                     Certificate of Compliance</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Certificate of Compliance
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Certificate of
+                                                    Compliance
                                                     (updated
                                                     annually)</p>
                                             </div>
@@ -1896,7 +1902,8 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Articles
                                                     of Cooperation and By-Laws</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Mga Artikulo ng Kooperasyon
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Mga Artikulo ng
+                                                    Kooperasyon
                                                     at By-Laws (maayos na notaryo o notarizado)</p>
                                             </div>
                                         </div>
@@ -1913,7 +1920,8 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Existing Organizational Structure
                                                 </h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kasalukuyang Estruktura ng
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kasalukuyang
+                                                    Estruktura ng
                                                     Organisasyon
                                                 </p>
                                             </div>
@@ -1962,7 +1970,8 @@
                                             <div class="flex-1 min-w-0">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Official List of Members</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Hindi bababa sa 100 miyembro
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Hindi bababa sa 100
+                                                    miyembro
                                                     at hindi kukulangin sa 50%+1 ay rehistradong magsasaka ng niyog – na
                                                     beripikado sa pamamagitan ng NCFRS Certification</p>
                                             </div>
@@ -2035,9 +2044,10 @@
             </div>
 
 
-            <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden mt-10">
+            <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden  mt-10">
                 <!-- Header -->
-                <div class="p-3 sm:p-4 md:p-5 text-white" style="background-color: #0acf17ff;">
+                <div class="p-3 sm:p-4 md:p-5 text-white"
+                    style="background: linear-gradient(135deg, #ffff00 0%, #ffff00 50%, #ca8a04 100%);">
                     <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
                         <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
                             <div
@@ -2074,13 +2084,13 @@
                 </div>
 
                 <!-- Content -->
-                <div class="p-6 space-y-8 pt-10 pb-16">
+                <div class="p-6 space-y-8 pt-10 pb-16 ">
                     <!-- CocoLSA Certification Section -->
                     <section class="px-2 sm:px-4 lg:px-8">
                         <!-- Single Comprehensive Card -->
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
                             <!-- Card Header -->
-                            <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200"
+                            <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200 "
                                 style="background-color:rgb(230, 253, 212);">
                                 <div class="flex items-center space-x-3 sm:space-x-4">
                                     <div
@@ -2117,11 +2127,12 @@
                                         </div>
                                         <h3 class="text-md font-bold text-gray-800 mt-1">Ano ang CocoLSA?</h3>
                                     </div>
-                                    <p class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm ">
+                                    <p
+                                        class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm pr-4 ">
                                         Ang Coco-LSA o Coco-based Learning Site for Agriculture (CocoLSA) Certification
-                                        isang bukid na nagsasagawa ng angkop na mga teknolohiyang nakabatay sa niyog,
-                                        gumagamit ng mga magagawa estratehiya sa pagsasaka, at matagumpay na
-                                        nagpapatakbo, kung kaya't karapat-dapat itong tularan.
+                                        ay isang sakahan na gumagamit ng angkop na teknolohiya sa niyugan,
+                                        nagsasagawa ng mabisang estratehiya sa pagsasaka, at matagumpay na
+                                        nakakapagpatakbo ng operasyon — kaya’t nararapat tularan.
                                     </p>
                                 </div>
 
@@ -2317,10 +2328,10 @@
                             <!-- Card Content -->
                             <div class="p-4 sm:p-5 lg:p-6 space-y-4 sm:space-y-6">
                                 <!-- Individual Farmer Requirements -->
-                                <div class="border-l-4 border-yellow-400 pl-3 sm:pl-4">
+                                <div>
                                     <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
                                         <div
-                                            class="w-6 h-6 sm:w-7 sm:h-7 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                            class="w-6 h-6 sm:w-7 sm:h-7 ml-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
                                             <svg class="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="currentColor"
                                                 viewBox="0 0 20 20">
                                                 <path fill-rule="evenodd"
@@ -2349,9 +2360,9 @@
                                                         Filipino
                                                         Coconut Farmer
                                                     </h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May-ari,
-                                                        nag-aalaga, o nagtatanim
-                                                        ng coconut na may hindi bababa sa 1 hectare ng lupa</p>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Dapat ay
+                                                        isang Pilipinong magniniyog (may-ari, nagtatanim, o
+                                                        tagapag-alaga) na may hindi bababa sa 1 ektaryang niyugan.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2368,9 +2379,10 @@
                                                         Willing to
                                                         Demonstrate
                                                     </h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Handang
-                                                        magpakita ng coconut
-                                                        technologies sa farm sa ibang farmers</p>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Handa at
+                                                        may kakayahang magpakita ng mga teknolohiya sa niyog sa kanyang
+                                                        sakahan anumang oras na kailangan ng kliyente.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2386,9 +2398,9 @@
                                                         class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
                                                         Open to
                                                         Training</h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Handang
-                                                        mag-attend ng regular na
-                                                        training at seminar</p>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Dapat ay
+                                                        may kahandaang sumailalim sa mga regular na
+                                                        pagsasanay</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2405,8 +2417,8 @@
                                                         Physically Fit
                                                     </h4>
                                                     <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May
-                                                        kakayahang gampanan ang mga
-                                                        responsibilidad ng CocoLSA cooperator</p>
+                                                        pisikal na kakayahang gampanan ang mga tungkulin bilang CocoLSA
+                                                        cooperator; at</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2424,8 +2436,8 @@
                                                         NCFRS
                                                         Registered</h4>
                                                     <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                        Nakaregister sa NCFRS, mas maganda
-                                                        kung miyembro ng CFO/CFC</p>
+                                                        Rehistrado sa NCFRS, at mas mainam kung miyembro ng isang CFO o
+                                                        CFC.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2433,10 +2445,10 @@
                                 </div>
 
                                 <!-- Group/Organization Requirements -->
-                                <div class="border-l-4 border-green-400 pl-3 sm:pl-4">
+                                <div>
                                     <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
                                         <div
-                                            class="w-6 h-6 sm:w-7 sm:h-7 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                            class="w-6 h-6 sm:w-7 sm:h-7 ml-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
                                             <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
                                                 viewBox="0 0 20 20">
                                                 <path
@@ -2463,9 +2475,10 @@
                                                     <h4
                                                         class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
                                                         Integrated Farm</h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Hindi
-                                                        bababa sa 1 hectare ng
-                                                        integrated/diversified farm (halimbawa: coconut-livestock)</p>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Dapat ay
+                                                        may sukat na hindi bababa sa 1 ektarya, at isang integrated at/o
+                                                        diversified na sakahan (halimbawa: niyog at pag-aalaga ng
+                                                        hayop).</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2480,9 +2493,10 @@
                                                     <h4
                                                         class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
                                                         Coconut Farmland</h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May-ari
-                                                        at nag-mmanage ng coconut
-                                                        farmland na hindi bababa sa 1 hectare</p>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Dapat
+                                                        ay nagmamay-ari at namamahala ng sakahang niyugan na may sukat
+                                                        na hindi bababa sa 1 ektarya.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2498,8 +2512,8 @@
                                                         class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
                                                         Valid Registration</h4>
                                                     <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May
-                                                        valid registration sa SEC, CDA,
-                                                        DOLE, o existing PCA accreditation</p>
+                                                        valid na rehistrasyon mula sa SEC, CDA, DOLE, o kasalukuyang
+                                                        akreditasyon mula sa PCA.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2516,42 +2530,9 @@
                                                         Active Organization
                                                     </h4>
                                                     <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Aktibo
-                                                        sa nakaraang 3 taon sa
-                                                        farmer organization o community enterprise development</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                            <div class="flex items-start space-x-2 sm:space-x-3">
-                                                <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">5</span>
-                                                </div>
-                                                <div class="flex-1 min-w-0">
-                                                    <h4
-                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                        Filipino Leaders</h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May mga
-                                                        Filipino farmer-leaders na
-                                                        handang magdemonstrate ng coconut technologies</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                            <div class="flex items-start space-x-2 sm:space-x-3">
-                                                <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">6</span>
-                                                </div>
-                                                <div class="flex-1 min-w-0">
-                                                    <h4
-                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                        Training Ready</h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Handang
-                                                        mag-attend ng regular
-                                                        training</p>
+                                                        sa nakalipas na 3 taon sa organisasyon ng mga magsasaka o
+                                                        community enterprise development.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2561,15 +2542,66 @@
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
                                                     class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">7</span>
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">5</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Filipino Leaders</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Dapat ay
+                                                        binubuo ng mga Pilipinong lider-magsasaka o kasapi na:</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs font-bold">5.1</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Demo of Coconut Technologies</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Handa at
+                                                        may kakayahang
+                                                        magpakita ng mga teknolohiya sa niyog sa kanyang
+                                                        sakahan kapag kinakailangan.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs font-bold">5.2</span>
+                                                </div>
+                                                <div class="flex-1 min-w-0">
+                                                    <h4
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        Training Ready</h4>
+                                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May
+                                                        kahandaang sumailalim at aktibong lumahok sa mga regular na
+                                                        pagsasanay upang mapalawak ang kaalaman at kasanayan; at</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4 md:col-span-2">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                                <div
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    <span class="text-green-600 text-xs font-bold">5.3</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
                                                     <h4
                                                         class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
                                                         Physically Capable</h4>
                                                     <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">May
-                                                        physical fitness para gampanan
-                                                        ang mga responsibilidad ng LSA cooperator</p>
+                                                        pisikal na kakayahan upang magampanan ang mga responsibilidad
+                                                        bilang isang LSA cooperator at LSA.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2577,10 +2609,10 @@
                                 </div>
 
                                 <!-- Farm Requirements -->
-                                <div class="border-l-4 border-yellow-400 pl-4">
+                                <div>
                                     <div class="flex items-center space-x-3 mb-4">
                                         <div
-                                            class="w-7 h-7 bg-yellow-500 rounded-full flex items-center justify-center">
+                                            class="w-7 h-7 bg-yellow-500 ml-5 rounded-full flex items-center justify-center">
                                             <svg class="w-5 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                                                 <path
                                                     d="M10 2L3 7v11a1 1 0 001 1h3v-7a1 1 0 011-1h4a1 1 0 011 1v7h3a1 1 0 001-1V7l-7-5z" />
@@ -2593,7 +2625,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-14">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
                                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                                             <div class="flex items-start space-x-3">
                                                 <div
@@ -2624,10 +2656,9 @@
                                                         class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
                                                         Demo Area
                                                     </h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm">May technology
-                                                        demonstration area
-                                                        para sa coconut production, kasama ang holding area, wash area,
-                                                        at toilet</p>
+                                                    <p class="text-gray-600 text-xs sm:text-sm">Naglalaman ng
+                                                        demonstration area para sa teknolohiya ng produksiyon ng niyog,
+                                                        na may kasamang holding area, hugasan, at palikuran.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2644,9 +2675,9 @@
                                                         Accessible
                                                         Location
                                                     </h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm">Madaling puntahan thru
-                                                        land at iba
-                                                        pang transportation facilities</p>
+                                                    <p class="text-gray-600 text-xs sm:text-sm">Madaling puntahan sa
+                                                        pamamagitan ng land travel at iba pang uri ng transportasyon.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2661,9 +2692,8 @@
                                                     <h4
                                                         class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
                                                         Well-Landscaped</h4>
-                                                    <p class="text-gray-600 text-xs sm:text-sm">Maganda at organisadong
-                                                        farm layout
-                                                        na kaaya-ayang tingnan</p>
+                                                    <p class="text-gray-600 text-xs sm:text-sm">May kaaya-ayang disenyo
+                                                        ng kapaligiran at maayos na landscaping.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2701,129 +2731,125 @@
                             <!-- Card Content -->
                             <div class="p-6 space-y-4">
                                 <!-- Documents Grid -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-2">
+                                    <div
+                                        class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4 md:col-span-2">
+                                        <div class="flex items-center space-x-2 sm:space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                                                 <span class="text-green-600 text-sm font-bold">1</span>
                                             </div>
-                                            <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Signed
-                                                    Briefer</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Nilagdaang briefer mula sa
-                                                    PCA</p>
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
+                                                    Applicant's Checklist of Requirements</h4>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                        <div class="flex items-center space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                                                 <span class="text-green-600 text-sm font-bold">2</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
-                                                    Self-Assessment</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Sariling pag-evaluate sa
-                                                    inyong farm
-                                                </p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
+                                                    Signed
+                                                    Briefer</h4>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                        <div class="flex items-center space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                                                 <span class="text-green-600 text-sm font-bold">3</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Letter
-                                                    of Intent</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Liham ng intensyon na maging
-                                                    CocoLSA
-                                                </p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
+                                                    Self-Assessment</h4>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                        <div class="flex items-center space-x-3 mt-0 lg:mt-2">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                                                 <span class="text-green-600 text-sm font-bold">4</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Farm
-                                                    Profile Form</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Learning Site for
-                                                    Agriculture Profile
-                                                    Form</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
+                                                    Letter
+                                                    of Intent to become a CocoLSA</h4>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4 pt-4">
+                                        <div class="flex items-center space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                                                 <span class="text-green-600 text-sm font-bold">5</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA
-                                                    Qualification Form</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Form para sa pag-qualify
-                                                    bilang LSA</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
+                                                    Farming
+                                                    Learning Site for Agriculture Profile Form</h4>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                        <div class="flex items-center space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                                                 <span class="text-green-600 text-sm font-bold">6</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">Field
-                                                    Validation Report
-                                                </h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Mula sa PCA Agriculturists
-                                                    sa inyong
-                                                    lugar</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
+                                                    LSA
+                                                    Qualification Form</h4>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                        <div class="flex items-center space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                                                 <span class="text-green-600 text-sm font-bold">7</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">LSA
-                                                    Acceptance Form</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Form ng pagtanggap bilang
-                                                    LSA</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800">Field
+                                                    Validation Report</h4>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                        <div class="flex items-center space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                                                 <span class="text-green-600 text-sm font-bold">8</span>
                                             </div>
                                             <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">RTWG
-                                                    Endorsement</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Endorsement mula sa Regional
-                                                    Technical
-                                                    Working Group</p>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800">LSA
+                                                    Acceptance Form</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                        <div class="flex items-center space-x-3">
+                                            <div
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                                <span class="text-green-600 text-sm font-bold">9</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
+                                                    Endorsement of the RTWG</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -2854,8 +2880,6 @@
                     </section>
                 </div>
             </div>
-
-
 
             <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg mt-8">
                 <!-- Header -->
