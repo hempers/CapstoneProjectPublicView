@@ -1138,7 +1138,7 @@
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
                             <!-- Card Header -->
                             <div class="bg-yellow-50 p-5 sm:p-4 lg:p-3 border-b border-gray-200">
-                                <div class="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2 ml-5">
+                                <div class="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2 ml-1 lg:ml-5">
                                     <div
                                         class="w-7 h-7 sm:w-8 sm:h-8 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
                                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
@@ -1150,7 +1150,7 @@
                                     </div>
                                     <div class="flex-1 min-w-0">
                                         <h2
-                                            class="text-base sm:text-lg font-bold text-yellow-800 mt-1 sm:mt-2 leading-tight">
+                                            class="text-base sm:text-lg font-bold text-yellow-800 mt-0 sm:mt-2 leading-tight">
                                             Mga Kriterya para sa Pagpili</h2>
                                         <p class="text-yellow-700 text-xs sm:text-sm leading-tight">Ano ang mga
                                             kailangan para makakuha ng
@@ -1690,7 +1690,7 @@
                                 </div>
 
                                 <!-- Important Notice -->
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6 ">
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6 ml-2 ">
                                     <div class="flex items-start space-x-3">
                                         <svg class="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" fill="currentColor"
                                             viewBox="0 0 20 20">
@@ -2041,7 +2041,7 @@
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden -mb-5">
                             <!-- Card Header -->
                             <div class="bg-blue-50 p-4 border-b border-gray-200">
-                                <div class="flex items-center space-x-3 mb-2">
+                                <div class="flex items-center space-x-3 mb-2 ml-3">
                                     <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                                         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
                                             viewBox="0 0 24 24">
@@ -2063,28 +2063,28 @@
                             <div class="p-6 space-y-4">
                                 <!-- Documents Grid -->
                                 <div class="grid grid-cols-1  gap-4">
-                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                                        <div class="flex items-center space-x-3">
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4">
+                                        <div class="flex items-center space-x-2 sm:space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                                                <span class="text-blue-600 text-sm font-bold">1</span>
+                                                class="w-5 h-5 sm:w-6 sm:h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                                <span class="text-blue-600 text-xs sm:text-sm font-bold">1</span>
                                             </div>
-                                            <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-0 sm:mb-1">
                                                     Proposal/Business Plan/Feasibility Study
                                                 </h4>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">2</span>
+                                                class="w-5 h-5 sm:w-6 sm:h-6 bg-blue-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
+                                                <span class="text-blue-600 text-xs sm:text-sm font-bold">2</span>
                                             </div>
-                                            <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-0 sm:mb-1 leading-tight">
                                                     Deed of Donation of Lot if private property; MOA/Usufruct
                                                     Agreement if Lot is a government property.</h4>
                                             </div>
@@ -3043,7 +3043,7 @@
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden -mb-5">
                             <!-- Card Header -->
                             <div class="bg-green-50 p-4 border-b border-gray-200">
-                                <div class="flex items-center space-x-3 mb-2">
+                                <div class="flex items-center space-x-3 mb-2 ml-1 lg:ml-5">
                                     <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
                                         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
                                             viewBox="0 0 24 24">
@@ -3065,29 +3065,29 @@
                             <!-- Card Content -->
                             <div class="p-6 space-y-4">
                                 <!-- Documents Grid -->
-                                <div class="grid grid-cols-1  gap-4">
-                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-center space-x-3">
+                                <div class="grid grid-cols-1 gap-3 sm:gap-4">
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                        <div class="flex items-center space-x-2 sm:space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                                <span class="text-green-600 text-sm font-bold">1</span>
+                                                class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                                <span class="text-green-600 text-xs sm:text-sm font-bold">1</span>
                                             </div>
-                                            <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-0 sm:mb-1">
                                                     Proposal/Business Plan/Feasibility Study
                                                 </h4>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-green-600 text-sm font-bold">2</span>
+                                                class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
+                                                <span class="text-green-600 text-xs sm:text-sm font-bold">2</span>
                                             </div>
-                                            <div>
-                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-0 sm:mb-1 leading-tight">
                                                     Deed of Donation of Lot if private property; MOA/Usufruct
                                                     Agreement if Lot is a government property.</h4>
                                             </div>
