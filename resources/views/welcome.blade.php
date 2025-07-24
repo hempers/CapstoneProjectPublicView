@@ -2196,14 +2196,14 @@
 
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
                                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex items-center space-x-2 sm:space-x-3 mt-0 md:mt-2 lg:mt-2">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">1</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
                                                     <h4
-                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 leading-tight">
                                                         Letter of Intent
                                                     </h4>
                                                 </div>
@@ -2213,12 +2213,12 @@
                                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0 md:mt-2 lg:mt-2">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">2</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
                                                     <h4
-                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                         class="font-semibold text-xs sm:text-sm text-gray-800 leading-tight">
                                                         NCFRS Registration and Certification
                                                     </h4>
                                                 </div>
@@ -2228,7 +2228,7 @@
                                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0 md:mt-2 lg:mt-2">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">3</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
@@ -2240,7 +2240,7 @@
                                         </div>
 
                                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                            <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex items-start space-x-2 sm:space-x-3 mt-0 md:mt-2 lg:mt-3">
                                                 <div
                                                     class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">4</span>
@@ -2257,7 +2257,7 @@
                                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center  flex-shrink-0 mt-1.5 md:mt-2 lg:mt-2">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">5</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
@@ -2272,7 +2272,7 @@
                                         <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1.5 md:mt-2 lg:mt-2">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">6</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
@@ -2319,7 +2319,7 @@
                                             class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-4 md:mt-2 lg:mt-0.5">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">9</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
