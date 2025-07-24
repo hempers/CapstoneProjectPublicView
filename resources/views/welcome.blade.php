@@ -880,7 +880,7 @@
             </div>
             <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
                 <!-- Header -->
-                <div class="p-3 sm:p-4 md:p-5 text-white" style="background-color: #0acf17ff;">
+                <div class="p-3 sm:p-4 md:p-5 text-white" style="background: linear-gradient(135deg, #07da15ff 0%, #0ac016ff 50%, #049911ff 100%);">
                     <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
                         <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
                             <div
@@ -1716,7 +1716,7 @@
 
             <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden mt-8">
                 <!-- Header -->
-                <div class=" p-6 text-white bg-blue-500">
+                <div class=" p-6 text-white" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);">
                     <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
                         <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
                             <div
@@ -1791,7 +1791,7 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Letter
                                                     of Intent</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Liham ng intensyon para sa
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Liham ng intensyon para sa
                                                     processing
                                                     facility</p>
                                             </div>
@@ -1808,7 +1808,7 @@
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
                                                     Endorsement letter from PCA</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Endorsement mula sa
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Endorsement mula sa
                                                     Provincial/Regional/Central Office</p>
                                             </div>
                                         </div>
@@ -1825,7 +1825,7 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
                                                     NCFRS
                                                     Certification</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Kumpirmado at inisyu ng
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kumpirmado at inisyu ng
                                                     Regional Office
                                                 </p>
                                             </div>
@@ -1842,7 +1842,7 @@
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
                                                     Financial Statement for two (2) years</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">2 years external audit
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">2 years external audit
                                                     financial
                                                     statement
                                                 </p>
@@ -1861,7 +1861,7 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     CDA
                                                     Registration</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Rehistradong kooperatiba sa
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Rehistradong kooperatiba sa
                                                     ilalim ng CDA</p>
                                             </div>
                                         </div>
@@ -1878,7 +1878,7 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     CDA
                                                     Certificate of Compliance</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Certificate of Compliance
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Certificate of Compliance
                                                     (updated
                                                     annually)</p>
                                             </div>
@@ -1896,7 +1896,7 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Articles
                                                     of Cooperation and By-Laws</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Mga Artikulo ng Kooperasyon
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Mga Artikulo ng Kooperasyon
                                                     at By-Laws (maayos na notaryo o notarizado)</p>
                                             </div>
                                         </div>
@@ -1913,7 +1913,7 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Existing Organizational Structure
                                                 </h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Kasalukuyang Estruktura ng
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kasalukuyang Estruktura ng
                                                     Organisasyon
                                                 </p>
                                             </div>
@@ -1931,7 +1931,7 @@
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Board
                                                     Resolution</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Maayos
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Maayos
                                                     na notarizado; dapat nakasaad ang kaukulang kahilingan</p>
                                             </div>
                                         </div>
@@ -1947,7 +1947,7 @@
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Community/Site Profile</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Detalyadong profile ng
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Detalyadong profile ng
                                                     komunidad/lokasyon</p>
                                             </div>
                                         </div>
@@ -1962,7 +1962,7 @@
                                             <div class="flex-1 min-w-0">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
                                                     Official List of Members</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Hindi bababa sa 100 miyembro
+                                                <p class="text-gray-600 text-xs sm:text-sm -mt-1">Hindi bababa sa 100 miyembro
                                                     at hindi kukulangin sa 50%+1 ay rehistradong magsasaka ng niyog – na
                                                     beripikado sa pamamagitan ng NCFRS Certification</p>
                                             </div>
