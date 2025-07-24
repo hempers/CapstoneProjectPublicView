@@ -1718,7 +1718,7 @@
             <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden mt-8">
                 <!-- Header -->
                 <div class=" p-6 text-white"
-                    style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);">
+                    style="background: linear-gradient(135deg, #3b82f6 0%, #2b68ebff 50%, #0735b3ff 100%);">
                     <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
                         <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
                             <div
@@ -2047,7 +2047,7 @@
             <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden  mt-10">
                 <!-- Header -->
                 <div class="p-3 sm:p-4 md:p-5 text-white"
-                    style="background: linear-gradient(135deg, #ffff00 0%, #ffff00 50%, #ca8a04 100%);">
+                    style="background: linear-gradient(135deg, #91d64fff 0%, #6a9e3a 50%, #5b8a31 100%);">
                     <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
                         <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
                             <div
@@ -2062,22 +2062,26 @@
                             <div class="min-w-0">
                                 <h2
                                     class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white leading-tight">
-                                    Social Protection Program
+                                    Support Services
                                 </h2>
-                                <p class="text-xs sm:text-sm text-green-100 hidden sm:block">Para sa mga magniniyog at
-                                    kanilang pamilya</p>
+                                <p class="text-xs sm:text-sm text-green-100 hidden sm:block">Mga Serbisyong Tulong</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-1 sm:space-x-2 md:space-x-3">
                             <div
                                 class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
-                                <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
+                                <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
                                     class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 object-contain">
                             </div>
                             <div
                                 class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
-                                <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
-                                    class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 object-contain">
+                                <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
+                                    class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-11 lg:w-11 object-contain">
+                            </div>
+                            <div
+                                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
+                                <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
+                                    class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-11 lg:w-11 object-contain">
                             </div>
                         </div>
                     </div>
