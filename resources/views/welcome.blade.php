@@ -985,20 +985,20 @@
                                         <h3 class="text-md font-bold text-gray-800 mt-1">Mga Layunin ng Programa</h3>
                                     </div>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-11">
-                                        <div class="bg-green-50 p-4 rounded-lg">
-                                            <div class="flex items-start space-x-3">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-8 sm:ml-10 lg:ml-11">
+                                        <div class="bg-green-50 p-3 sm:p-4 rounded-lg">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-20 h-5 bg-green-500 rounded-full flex items-center justify-center mt-2">
-                                                    <span class="text-white text-xs font-bold">1</span>
+                                                    class="w-5 h-5 lg:w-6 lg:h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 sm:mt-2 flex-shrink-0">
+                                                    <span class="text-white text-xs sm:text-sm font-bold">1</span>
                                                 </div>
-                                                <div>
+                                                <div class="flex-1 min-w-0">
                                                     <h4
-                                                        class="text-md md:text-md font-semibold text-green-800 mb-2 mt-1">
+                                                        class="text-sm sm:text-md md:text-md font-semibold text-green-800 mb-1 sm:mb-2 mt-1 lg:mt-2.5 leading-tight">
                                                         Palakasin
                                                         ang
                                                         Kakayahan</h4>
-                                                    <p class="text-green-700 text-xs sm:text-sm text-justify pr-2">
+                                                    <p class="text-green-700 text-xs sm:text-sm text-justify pr-1 sm:pr-2 leading-relaxed">
                                                         Pagandahin ang kakayahan at kapasidad ng mga miyembro ng
                                                         pamayanang nagtatanim ng niyog sa produksyon, pagpoproseso, at
                                                         pagnenegosyo na nakabatay sa niyog.
@@ -1007,18 +1007,18 @@
                                             </div>
                                         </div>
 
-                                        <div class="bg-blue-50 p-4 rounded-lg">
-                                            <div class="flex items-start space-x-3">
+                                        <div class="bg-blue-50 p-3 sm:p-4 rounded-lg">
+                                            <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-20 h-5 bg-green-500 rounded-full flex items-center justify-center mt-2">
-                                                    <span class="text-white text-xs font-bold">2</span>
+                                                    class="w-5 h-5 lg:w-6 lg:h-6 md:w-8 md:h-8 bg-green-500 rounded-full flex items-center justify-center mt-1 sm:mt-2 flex-shrink-0">
+                                                    <span class="text-white text-xs sm:text-sm font-bold">2</span>
                                                 </div>
-                                                <div>
+                                                <div class="flex-1 min-w-0">
                                                     <h4
-                                                        class="font-semibold text-md md:text-md text-green-800 mb-2 mt-2">
+                                                        class="text-sm sm:text-md md:text-md font-semibold text-green-800 mb-1 sm:mb-2 mt-1 lg:mt-2.5 leading-tight">
                                                         Dagdagan ang
                                                         Partisipasyon</h4>
-                                                    <p class="text-green-700 text-xs sm:text-sm text-justify pr-2">
+                                                    <p class="text-green-700 text-xs sm:text-sm text-justify pr-1 sm:pr-2 leading-relaxed">
                                                         Paramihin ang paglahok ng magniniyog at lider nila sa
                                                         pagpapaunlad ng industriya sa pamamagitan ng pagsisilbing ahente
                                                         ng coconut-based capacity-building.
