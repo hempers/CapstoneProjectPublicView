@@ -1749,6 +1749,7 @@
                     </div>
                 </div>
 
+
                 <!-- Content -->
                 <div class="p-6 space-y-8 pt-10 pb-16">
                     <!-- Selection and Prioritization Criteria -->
@@ -2089,7 +2090,7 @@
 
                 <!-- Content -->
                 <div class="p-6 space-y-8 pt-10 pb-16 ">
-                    <!-- CocoLSA Certification Section -->
+                    <!-- Credit Certification Section -->
                     <section class="px-2 sm:px-4 lg:px-8">
                         <!-- Single Comprehensive Card -->
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
@@ -2117,7 +2118,7 @@
 
                             <!-- Card Content -->
                             <div class="p-6 space-y-6">
-                                <!-- What is CocoLSA -->
+                                <!-- What is Credit -->
                                 <div class="border-l-4 border-green-400 pl-4">
                                     <div class="flex items-start space-x-3 mb-3">
                                         <div
@@ -2218,7 +2219,7 @@
                                                 </div>
                                                 <div class="flex-1 min-w-0">
                                                     <h4
-                                                         class="font-semibold text-xs sm:text-sm text-gray-800 leading-tight">
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 leading-tight">
                                                         NCFRS Registration and Certification
                                                     </h4>
                                                 </div>
@@ -2692,6 +2693,60 @@
                         </div>
                     </section>
 
+                    <section class="px-2 sm:px-4 lg:px-8">
+                        <!-- Single Comprehensive Card -->
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
+                            <!-- Card Header -->
+                            <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200 "
+                                style="background-color:rgb(230, 253, 212);">
+                                <div class="flex items-center space-x-3 sm:space-x-4">
+                                    <div
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 ml-3">
+                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h2
+                                            class="text-md sm:text-base lg:text-base font-bold text-green-800 mb-1 sm:mb-2 mt-1 sm:mt-2 leading-tight">
+                                            Infrastructure
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Content -->
+                            <div class="p-6 space-y-6">
+                                <!-- What is Credit -->
+                                <div class="border-l-4 border-green-400 pl-4">
+                                    <div class="flex items-start space-x-3 mb-3">
+                                        <div
+                                            class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-md font-bold text-gray-800 mt-1">Same requirements for Shared
+                                            Processing Facilities</h3>
+                                    </div>
+                                    <p
+                                        class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm pr-4 ">
+                                        Tumutukoy ito sa mga pasilidad na suportado ng DPWH para sa coconut industry.
+                                        Ang mga dokumento ay katulad lamang ng sa Shared Processing Facilities (SPF) na layong
+                                        mapabuti ang pagproseso at kita ng mga produktong niyog.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
                     <!-- Documentary Requirements -->
                     <section class="px-4 lg:px-8 text-sm ">
                         <!-- Single Comprehensive Card -->
@@ -2902,8 +2957,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <!-- Content -->
                 <div class="p-6 space-y-8">
