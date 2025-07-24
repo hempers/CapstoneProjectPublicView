@@ -1978,7 +1978,7 @@
                         <!-- Single Comprehensive Card -->
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden -mb-5">
                             <!-- Card Header -->
-                            <div class="bg-green-50 p-6 border-b border-gray-200">
+                            <div class="bg-green-50 p-4 border-b border-gray-200">
                                 <div class="flex items-center space-x-3 mb-2">
                                     <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
                                         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
@@ -1991,8 +1991,8 @@
                                     <div class="flex-1">
                                         <h2 class="text-base lg:text-lg font-bold text-green-800">Additional
                                             Requirements</h2>
-                                        <p class="text-green-700 text-xs sm:text-sm">Pagkatapos ng approval at bago
-                                            magsimula ang construction</p>
+                                        <p class="text-green-700 text-xs sm:text-sm">Pagkatapos ng pag-apruba ng Central
+                                            Office (CO) at bago ang aktwal na konstruksyon ng pasilidad</p>
                                     </div>
                                 </div>
                             </div>
@@ -2000,19 +2000,17 @@
                             <!-- Card Content -->
                             <div class="p-6 space-y-4">
                                 <!-- Documents Grid -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="grid grid-cols-1  gap-4">
                                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                        <div class="flex items-start space-x-3">
+                                        <div class="flex items-center space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                                                 <span class="text-green-600 text-sm font-bold">1</span>
                                             </div>
                                             <div>
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
-                                                    Business Plan
+                                                    Proposal/Business Plan/Feasibility Study
                                                 </h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Proposal/Business
-                                                    Plan/Feasibility Study</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2025,10 +2023,8 @@
                                             </div>
                                             <div>
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
-                                                    Land Documents</h4>
-                                                <p class="text-gray-600 text-xs sm:text-sm">Deed of Donation of Lot if
-                                                    private property o MOA/Usufruct Agreement (government)
-                                                </p>
+                                                    Deed of Donation of Lot if private property; MOA/Usufruct
+                                                    Agreement if Lot is a government property.</h4>
                                             </div>
                                         </div>
                                     </div>
