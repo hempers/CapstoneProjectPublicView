@@ -2445,12 +2445,12 @@
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-3 md:mt-2 lg:mt-3 flex-shrink-0">
                                                     <span class="text-green-600 text-xs sm:text-sm font-bold">7</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
                                                     <h4
-                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
+                                                        class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0 md:mt-2 lg:mt-1 leading-tight">
                                                         Audited Financial Statements for the last year; or latest
                                                         Interim
                                                         Financial Statements for start-ups
@@ -2462,7 +2462,7 @@
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-5 md:mt-2 lg:mt-3 flex-shrink-0">
                                                     <span class="text-green-600 text-xs sm:text-sm font-bold">8</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
@@ -2594,7 +2594,7 @@
                                             class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-3 md:mt-2 lg:mt-3 flex-shrink-0">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">7</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
@@ -2610,7 +2610,7 @@
                                             class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-4 md:mt-2 lg:mt-3 flex-shrink-0">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">8</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
@@ -2626,7 +2626,7 @@
                                             class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-4 md:mt-2 lg:mt-3 flex-shrink-0">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">9</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
@@ -2673,7 +2673,7 @@
                                             class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
-                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
+                                                    class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-7 md:mt-2 lg:mt-5 flex-shrink-0">
                                                     <span class="text-yellow-600 text-xs sm:text-sm font-bold">12</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
