@@ -2355,7 +2355,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
+                                    <div class="grid grid-cols-1 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
                                         <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
@@ -2417,7 +2417,7 @@
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
                                                     class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                                    <span class="text-green-600 text-xs font-bold">5.1</span>
+                                                    <span class="text-green-600 text-xs font-bold">5</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
                                                     <h4
@@ -2432,7 +2432,7 @@
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
                                                     class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                                    <span class="text-green-600 text-xs font-bold">5.2</span>
+                                                    <span class="text-green-600 text-xs font-bold">6</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
                                                     <h4
@@ -2446,7 +2446,7 @@
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
                                                     class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">4</span>
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">7</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
                                                     <h4
@@ -2463,7 +2463,7 @@
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div
                                                     class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">4</span>
+                                                    <span class="text-green-600 text-xs sm:text-sm font-bold">8</span>
                                                 </div>
                                                 <div class="flex-1 min-w-0">
                                                     <h4
