@@ -963,9 +963,9 @@
                                     <p
                                         class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm pr-4 ">
                                         Ang Coco-LSA o Coco-based Learning Site for Agriculture (CocoLSA) Certification
-                                        isang bukid na nagsasagawa ng angkop na mga teknolohiyang nakabatay sa niyog,
-                                        gumagamit ng mga magagawa estratehiya sa pagsasaka, at matagumpay na
-                                        nagpapatakbo, kung kaya't karapat-dapat itong tularan.
+                                        ay isang sakahan na gumagamit ng angkop na teknolohiya sa niyugan,
+                                        nagsasagawa ng mabisang estratehiya sa pagsasaka, at matagumpay na
+                                        nakakapagpatakbo ng operasyon — kaya’t nararapat tularan.
                                     </p>
                                 </div>
 
