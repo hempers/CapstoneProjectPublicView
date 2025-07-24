@@ -1752,15 +1752,66 @@
 
                 <!-- Content -->
                 <div class="p-6 space-y-8 pt-10 pb-16">
+                    <section class="px-2 sm:px-4 lg:px-8">
+                        <!-- Single Comprehensive Card -->
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
+                            <!-- Card Header -->
+                            <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200 bg-blue-50 ">
+                                <div class="flex items-center space-x-3 sm:space-x-4">
+                                    <div
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 ml-3">
+                                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h2
+                                            class="text-md sm:text-base lg:text-base font-bold text-blue-800 mb-1 sm:mb-2 mt-1 sm:mt-2 leading-tight">
+                                            Shared Processing Facilities
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Content -->
+                            <div class="p-6 space-y-6">
+                                <!-- What is Credit -->
+                                <div class="border-l-4 border-blue-400 pl-4">
+                                    <div class="flex items-start space-x-3 mb-3">
+                                        <div
+                                            class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-md font-bold text-gray-800 mt-1">Ano ang Shared Processing
+                                            Facilities?</h3>
+                                    </div>
+                                    <p
+                                        class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm pr-4 ">
+                                        Ang Shared Processing Facilities (SPF) ay mga pasilidad na ginagamit nang
+                                        sama-sama ng mga kooperatiba o indibidwal na magsasaka para sa mas episyente at
+                                        de-kalidad na pagproseso ng produktong niyog.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <!-- Selection and Prioritization Criteria -->
                     <section class="px-4 sm:px-6 lg:px-8">
                         <!-- Single Comprehensive Card -->
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
                             <!-- Card Header -->
-                            <div class="bg-blue-50 p-2 sm:p-4 lg:p-3 border-b border-gray-200">
+                            <div class="bg-green-50 p-2 sm:p-4 lg:p-3 border-b border-gray-200">
                                 <div class="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2 ml-5">
                                     <div
-                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
                                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
                                             viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1770,9 +1821,9 @@
                                     </div>
                                     <div class="flex-1 min-w-0">
                                         <h2
-                                            class="text-base sm:text-lg font-bold text-blue-800 mt-1 sm:mt-2 leading-tight">
+                                            class="text-base sm:text-lg font-bold text-green-800 mt-1 sm:mt-2 leading-tight">
                                             Mga Kriterya para sa Pagpili</h2>
-                                        <p class="text-blue-700 text-xs sm:text-sm leading-tight">Pangunahing
+                                        <p class="text-green-700 text-xs sm:text-sm leading-tight">Pangunahing
                                             kakailanganin
                                         </p>
                                     </div>
@@ -1784,11 +1835,11 @@
                                 <!-- base Requirements -->
                                 <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4">
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">1</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">1</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -1803,11 +1854,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">2</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">2</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
@@ -1819,11 +1870,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">3</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">3</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
@@ -1838,11 +1889,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">4</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">4</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
@@ -1856,11 +1907,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">5</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">5</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -1874,11 +1925,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">6</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">6</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -1893,11 +1944,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">7</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">7</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -1911,11 +1962,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">8</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">8</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -1930,11 +1981,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50  border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50  border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">9</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">9</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -1947,11 +1998,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">10</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">10</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -1962,11 +2013,12 @@
                                         </div>
                                     </div>
 
-                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4 md:col-span-2">
+                                    <div
+                                        class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4 md:col-span-2">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">11</span>
+                                                class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-green-600 text-sm font-bold">11</span>
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -1988,9 +2040,9 @@
                         <!-- Single Comprehensive Card -->
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden -mb-5">
                             <!-- Card Header -->
-                            <div class="bg-green-50 p-4 border-b border-gray-200">
+                            <div class="bg-blue-50 p-4 border-b border-gray-200">
                                 <div class="flex items-center space-x-3 mb-2">
-                                    <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                                         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
                                             viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1999,9 +2051,9 @@
                                         </svg>
                                     </div>
                                     <div class="flex-1">
-                                        <h2 class="text-base lg:text-lg font-bold text-green-800">Additional
+                                        <h2 class="text-base lg:text-lg font-bold text-blue-800">Additional
                                             Requirements</h2>
-                                        <p class="text-green-700 text-xs sm:text-sm">Pagkatapos ng pag-apruba ng Central
+                                        <p class="text-blue-700 text-xs sm:text-sm">Pagkatapos ng pag-apruba ng Central
                                             Office (CO) at bago ang aktwal na konstruksyon ng pasilidad</p>
                                     </div>
                                 </div>
@@ -2011,11 +2063,11 @@
                             <div class="p-6 space-y-4">
                                 <!-- Documents Grid -->
                                 <div class="grid grid-cols-1  gap-4">
-                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
                                         <div class="flex items-center space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                                <span class="text-green-600 text-sm font-bold">1</span>
+                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                                                <span class="text-blue-600 text-sm font-bold">1</span>
                                             </div>
                                             <div>
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
@@ -2025,11 +2077,11 @@
                                         </div>
                                     </div>
 
-                                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-green-600 text-sm font-bold">2</span>
+                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-blue-600 text-sm font-bold">2</span>
                                             </div>
                                             <div>
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-1">
@@ -2752,10 +2804,10 @@
                         <!-- Single Comprehensive Card -->
                         <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
                             <!-- Card Header -->
-                            <div class="bg-blue-50 p-2 sm:p-4 lg:p-3 border-b border-gray-200">
+                            <div class="bg-yellow-50 p-2 sm:p-4 lg:p-3 border-b border-yellow-200">
                                 <div class="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2 ml-5">
                                     <div
-                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
                                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
                                             viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -2765,9 +2817,9 @@
                                     </div>
                                     <div class="flex-1 min-w-0">
                                         <h2
-                                            class="text-base sm:text-lg font-bold text-blue-800 mt-1 sm:mt-2 leading-tight">
+                                            class="text-base sm:text-lg font-bold text-yellow-800 mt-1 sm:mt-2 leading-tight">
                                             Mga Kriterya para sa Pagpili</h2>
-                                        <p class="text-blue-700 text-xs sm:text-sm leading-tight">Pangunahing
+                                        <p class="text-yellow-700 text-xs sm:text-sm leading-tight">Pangunahing
                                             kakailanganin
                                         </p>
                                     </div>
@@ -2779,11 +2831,11 @@
                                 <!-- base Requirements -->
                                 <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4">
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">1</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">1</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -2798,11 +2850,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">2</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">2</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
@@ -2815,11 +2867,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">3</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">3</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
@@ -2835,11 +2887,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">4</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">4</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
@@ -2854,11 +2906,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">5</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">5</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -2872,11 +2924,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">6</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">6</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -2891,11 +2943,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">7</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">7</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -2909,11 +2961,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">8</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">8</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -2928,11 +2980,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50  border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">9</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">9</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -2945,11 +2997,11 @@
                                     </div>
 
                                     <div
-                                        class="bg-blue-50 border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">10</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">10</span>
                                             </div>
                                             <div class="flex-1">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -2961,11 +3013,12 @@
                                         </div>
                                     </div>
 
-                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4 md:col-span-2">
+                                    <div
+                                        class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
                                         <div class="flex items-start space-x-3">
                                             <div
-                                                class="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                                <span class="text-blue-600 text-sm font-bold">11</span>
+                                                class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
+                                                <span class="text-yellow-600 text-sm font-bold">11</span>
                                             </div>
                                             <div class="flex-1 min-w-0">
                                                 <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
@@ -3044,914 +3097,6 @@
                             </div>
                         </div>
                     </section>
-
-                </div>
-            </div>
-
-            <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg mt-8">
-                <!-- Header -->
-                <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white">
-                    <div class="flex items-center justify-between p-6">
-                        <div class="flex items-center space-x-4">
-                            <div
-                                class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
-                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h1 class="text-xl md:text-2xl font-bold">Support Services</h1>
-                                <p class="text-purple-100 text-sm">Mga Serbisyong Tulong</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
-                                <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo" class="h-14 w-14 object-contain">
-                            </div>
-                            <div class="w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
-                                <img src="/images/IA logos/DBP.svg" alt="DBP Logo" class="h-10 w-10 object-contain">
-                            </div>
-                            <div
-                                class="w-14 h-14 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
-                                <img src="/images/IA logos/LBP.svg" alt="TESDA Logo" class="h-10 w-10 object-contain">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Content -->
-                <div class="p-6 space-y-8">
-                    <!-- Credit -->
-                    <section class="px-8 ml-8 text-sm">
-                        <h2 class="text-base font-semibold text-gray-800">Credit</h2>
-                        <p class="text-gray-600 mb-4 text-sm text-justify">
-                            Cooperatives/individual farmers usually direct to either
-                            LBP/DBP to avail the CFID Credit Program. PCA acts as support implementing
-                            agency to these banks as far as NCFRS validation, PCA-accreditation, and other
-                            validation for coconut value chain are concerned.
-                        </p>
-                    </section>
-
-                    <!-- Base Reqs -->
-                    <section class="px-4 lg:px-8 text-sm">
-                        <!-- Requirements -->
-                        <div class="mb-8">
-                            <!-- Section Header -->
-                            <div class="bg-purple-50 p-6 rounded-lg mb-6">
-                                <div class="flex items-center space-x-3 mb-2">
-                                    <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-                                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                                clip-rule="evenodd">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <h3 class="text-xl font-bold text-purple-800">Credit Requirements</h3>
-                                </div>
-                                <p class="text-purple-700 text-base">Para sa CFID Credit Program sa LBP/DBP</p>
-                            </div>
-
-                            <!-- Requirements Cards -->
-                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                                <div
-                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                                            <span class="text-purple-600 text-sm font-bold">1</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-gray-800 mb-2">Letter of Intent</h4>
-                                            <p class="text-gray-600 text-sm">Liham ng intensyon para sa credit</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                                            <span class="text-purple-600 text-sm font-bold">2</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-gray-800 mb-2">NCFRS Registration</h4>
-                                            <p class="text-gray-600 text-sm">NCFRS Registration and Certification</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                                            <span class="text-purple-600 text-sm font-bold">3</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-gray-800 mb-2">CSO Accreditation</h4>
-                                            <p class="text-gray-600 text-sm">CSO Accreditation mula sa PCA o DA</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                                            <span class="text-purple-600 text-sm font-bold">4</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-gray-800 mb-2">CDA Documents</h4>
-                                            <p class="text-gray-600 text-sm">CDA Registration and Certificate of
-                                                Compliance</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                                            <span class="text-purple-600 text-sm font-bold">5</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-gray-800 mb-2">Financial Statement</h4>
-                                            <p class="text-gray-600 text-sm">2 years external audit financial statement
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                                            <span class="text-purple-600 text-sm font-bold">6</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-gray-800 mb-2">Board Resolution</h4>
-                                            <p class="text-gray-600 text-sm">Kung cooperative (hindi kailangan kung
-                                                individual farmer)</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                                            <span class="text-purple-600 text-sm font-bold">7</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-gray-800 mb-2">Articles & By-Laws</h4>
-                                            <p class="text-gray-600 text-sm">Articles of Cooperation and By-Laws
-                                                (notarized)</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                                            <span class="text-purple-600 text-sm font-bold">8</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-gray-800 mb-2">Organizational Structure</h4>
-                                            <p class="text-gray-600 text-sm">Kasalukuyang organizational structure</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                                            <span class="text-purple-600 text-sm font-bold">9</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-gray-800 mb-2">Members List</h4>
-                                            <p class="text-gray-600 text-sm">Official list ng mga members</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Documentary Requirements -->
-                        <div class="mb-8">
-                            <!-- Section Header -->
-                            <div class="bg-purple-50 p-6 rounded-lg mb-6">
-                                <div class="flex items-center space-x-3 mb-2">
-                                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                        </path>
-                                    </svg>
-                                    <h2 class="text-xl font-bold text-purple-800">Mga Kinakailangang Dokumento</h2>
-                                </div>
-                                <p class="text-purple-700 text-base">Para sa CFID Credit Program sa DBP/LBP</p>
-                            </div>
-
-                            <!-- Coconut Farmer Enterprises -->
-                            <div class="mb-6">
-                                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg mb-4">
-                                    <div class="flex items-center space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center">
-                                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                                <path
-                                                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <h3 class="text-lg font-bold text-orange-800">Coconut Farmer Enterprises</h3>
-                                        <span class="text-sm text-orange-600">(Mga Negosyong Magniniyog)</span>
-                                    </div>
-                                </div>
-
-                                <!-- Requirements Cards for Enterprises -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    <!-- Card 1 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">1</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Application Forms
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">DBP Loan Application Forms / Mga Form
-                                                    para sa Utang sa DBP</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 2 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">2</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">NCFRS Registration
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Proof of NCFRS enlistment / Patunay na
-                                                    nakalista sa NCFRS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 3 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">3</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Business
-                                                    Registration</h4>
-                                                <p class="text-gray-600 text-xs">Certificate of Registration from
-                                                    DTI/SEC / Rehistro ng Negosyo</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 4 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">4</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">PCA Accreditation
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Certificate of Accreditation from PCA /
-                                                    Sertipiko ng Akreditasyon</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 5 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">5</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Financial
-                                                    Statements</h4>
-                                                <p class="text-gray-600 text-xs">Audited Financial Statements /
-                                                    Pinanigarang Ulat sa Kita</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 6 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">6</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Business Plan</h4>
-                                                <p class="text-gray-600 text-xs">Business Plan (if applicable) / Plano
-                                                    ng Negosyo kung kinakailangan</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 7 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">7</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Business Permit
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Current year Business Permit /
-                                                    Pahintulot sa Negosyo (kasalukuyan)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 8 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">8</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Training
-                                                    Certificate</h4>
-                                                <p class="text-gray-600 text-xs">Training Certificate from TESDA/DA-ATI
-                                                    / Sertipiko ng Pagsasanay</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Coconut Farmers Cooperatives and Organizations -->
-                            <div class="mb-6">
-                                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg mb-4">
-                                    <div class="flex items-center space-x-3">
-                                        <div class="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center">
-                                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd"
-                                                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg>
-                                        </div>
-                                        <h3 class="text-lg font-bold text-blue-800">Coconut Farmers Cooperatives &
-                                            Organizations</h3>
-                                        <span class="text-sm text-blue-600">(Mga Kooperatiba at Organisasyon)</span>
-                                    </div>
-                                </div>
-
-                                <!-- Requirements Cards for Cooperatives -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    <!-- Card 1 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">1</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Application Forms
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">DBP Loan Application Forms / Mga Form
-                                                    para sa Utang</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 2 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">2</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">CDA Registration
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Certificate of Registration from
-                                                    CDA/SEC / Rehistro sa CDA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 3 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">3</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">PCA Accreditation
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Certificate of Accreditation from PCA /
-                                                    Sertipiko ng Akreditasyon</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 4 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">4</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">CDA Compliance</h4>
-                                                <p class="text-gray-600 text-xs">Certificate of Compliance from CDA /
-                                                    Sertipiko ng Pagsunod</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 5 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">5</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Tax Exemption</h4>
-                                                <p class="text-gray-600 text-xs">Certificate of Tax Exemption /
-                                                    Sertipiko ng Pagkakaalis sa Buwis</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 6 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">6</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Articles & By-Laws
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Articles of Incorporation/Cooperation
-                                                    and By-Laws</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 7 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">7</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Officers Bio-data
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Bio-data of Officers and Board of
-                                                    Directors / Talambuhay ng mga Opisyal</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 8 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">8</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Board Resolution
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Board Resolution authorizing to borrow
-                                                    / Resolusyon ng Board</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 9 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">9</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Financial
-                                                    Statements</h4>
-                                                <p class="text-gray-600 text-xs">Audited Financial Statements /
-                                                    Pinanigarang Ulat sa Kita</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 10 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">10</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Business Permit
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Current year Business Permit /
-                                                    Pahintulot sa Negosyo</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 11 -->
-                                    <div
-                                        class="bg-white border border-blue-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-blue-600 font-bold text-sm">11</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Training
-                                                    Certificate</h4>
-                                                <p class="text-gray-600 text-xs">Training Certificate from TESDA/DA-ATI
-                                                    / Sertipiko ng Pagsasanay</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Important Note -->
-                            <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
-                                <div class="flex items-start space-x-2">
-                                    <svg class="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <div>
-                                        <h4 class="font-semibold text-amber-800 text-sm mb-1">Mahalagang Paalala</h4>
-                                        <p class="text-amber-700 text-xs">Lahat ng mga dokumentong ito ay kailangan para
-                                            sa Credit Program. Siguruhing kumpleto ang mga papeles bago mag-apply sa DBP
-                                            o LBP.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Content -->
-                    <div class="p-6 space-y-8">
-                        <!-- Infrastructure -->
-                        <section class="px-4 lg:px-8 text-sm">
-                            <!-- Section Header -->
-                            <div class="bg-teal-50 p-6 rounded-lg mb-6">
-                                <div class="flex items-center space-x-3 mb-2">
-                                    <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                                        </path>
-                                    </svg>
-                                    <h2 class="text-xl font-bold text-teal-800">Infrastructure Program</h2>
-                                </div>
-                                <p class="text-teal-700 text-base">Programa para sa mga Imprastraktura / Mga Pasilidad
-                                    na kailangan ng mga magniniyog</p>
-                            </div>
-
-                            <!-- Program Description -->
-                            <div class="bg-white border border-teal-200 rounded-lg p-4 mb-6">
-                                <p class="text-gray-600 text-sm text-justify">
-                                    Ang Infrastructure Program ay tumutulong sa mga cooperative na magkaroon ng mga
-                                    pasilidad tulad ng processing plants, storage facilities, at iba pang infrastructure
-                                    na makakatulong sa coconut value chain. Ginagawa ito sa pamamagitan ng DPWH.
-                                </p>
-                            </div>
-
-                            <!-- Base Requirements -->
-                            <div class="mb-8">
-                                <!-- Section Header -->
-                                <div class="bg-teal-50 p-6 rounded-lg mb-6">
-                                    <div class="flex items-center space-x-3 mb-2">
-                                        <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                            </path>
-                                        </svg>
-                                        <h3 class="text-lg font-bold text-teal-800">Mga Pangunahing Kailangan</h3>
-                                    </div>
-                                    <p class="text-teal-700 text-base">Base Requirements para sa Infrastructure</p>
-                                </div>
-
-                                <!-- Requirements Cards -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    <!-- Card 1 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">1</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Letter of Intent
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Liham ng intensyon para sa
-                                                    infrastructure project</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 2 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">2</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">PCA Endorsement
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Endorsement letter from PCA /
-                                                    Endorsement mula sa PCA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 3 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">3</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">NCFRS Certification
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">NCFRS Certification verified by
-                                                    Regional Office</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 4 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">4</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Financial
-                                                    Statements</h4>
-                                                <p class="text-gray-600 text-xs">2 years external audit financial
-                                                    statement</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 5 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">5</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">CDA Registration
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">CDA Registration / Rehistro sa CDA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 6 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">6</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">CDA Compliance</h4>
-                                                <p class="text-gray-600 text-xs">CDA Certificate of Compliance (updated
-                                                    annually)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 7 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">7</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Members List</h4>
-                                                <p class="text-gray-600 text-xs">Official List of Members (minimum 100
-                                                    members, 50%+1 coconut farmers)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 8 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">8</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Articles & By-Laws
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Articles of Cooperation and By-Laws
-                                                    (duly notarized)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 9 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">9</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Organizational
-                                                    Structure</h4>
-                                                <p class="text-gray-600 text-xs">Existing Organizational Structure /
-                                                    Kasalukuyang estruktura</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 10 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">10</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Board Resolution
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Board Resolution (duly notarized) /
-                                                    Resolusyon ng Board</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 11 -->
-                                    <div
-                                        class="bg-white border border-teal-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-teal-600 font-bold text-sm">11</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Community Profile
-                                                </h4>
-                                                <p class="text-gray-600 text-xs">Community/Site Profile / Profile ng
-                                                    Komunidad</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Additional Requirements -->
-                            <div class="mb-6">
-                                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-lg mb-4">
-                                    <div class="flex items-center space-x-3">
-                                        <div
-                                            class="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center">
-                                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M16.3 2.3a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.4l-3.29 3.3A8.38 8.38 0 0 1 20 14v1a1 1 0 0 1-1 1h-5v5a1 1 0 0 1-2 0v-5H7a1 1 0 0 1-1-1v-1a8.38 8.38 0 0 1 1.59-5.01L4.3 7.7a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.4 0l2.3 2.29 2.3-2.3z" />
-                                            </svg>
-                                        </div>
-                                        <h3 class="text-lg font-bold text-orange-800">Additional Requirements</h3>
-                                        <span class="text-sm text-orange-600">(Pagkatapos ma-approve ng CO)</span>
-                                    </div>
-                                </div>
-
-                                <!-- Additional Requirements Cards -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <!-- Card 1 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">1</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Proposal/Business
-                                                    Plan</h4>
-                                                <p class="text-gray-600 text-xs">Proposal/Business Plan/Feasibility
-                                                    Study para sa infrastructure project</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Card 2 -->
-                                    <div
-                                        class="bg-white border border-orange-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                        <div class="flex items-start space-x-3">
-                                            <div
-                                                class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                                <span class="text-orange-600 font-bold text-sm">2</span>
-                                            </div>
-                                            <div>
-                                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Land Documents</h4>
-                                                <p class="text-gray-600 text-xs">Deed of Donation (private property) o
-                                                    MOA/Usufruct Agreement (government property)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Important Note -->
-                            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
-                                <div class="flex items-start space-x-2">
-                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <div>
-                                        <h4 class="font-semibold text-blue-800 text-sm mb-1">Mahalagang Paalala</h4>
-                                        <p class="text-blue-700 text-xs">Ang Infrastructure Program ay ginagawa sa
-                                            pamamagitan ng DPWH. Kailangan ng cooperative na may minimum na 100 members
-                                            at 50%+1 ay registered coconut farmers. Ang mga additional requirements ay
-                                            hihilingin pagkatapos ma-approve ng Central Office at bago magsimula ang
-                                            construction.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
                 </div>
             </div>
         </div>
