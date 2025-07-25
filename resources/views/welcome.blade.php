@@ -858,7 +858,7 @@
                     (hal. pagtatanim ng kape o cacao kasama ng niyog). Pinopondohan ang programang ito mula sa Coconut
                     Levy
                     Trust Fund.</p>
-                <a href="https://ati2.da.gov.ph/ati-4b/content/sites/default/files/2022-12/faqs_coconut_farmers_and_industry_development_plan.pdf"
+                <a href="/coconut-farmers-faq"
                     target="_blank" class="inline-block mt-3 text-sm font-medium"
                     style="color: #09CA16; transition: color 0.2s;" onmouseover="this.style.color='#079510'"
                     onmouseout="this.style.color='#09CA16'">
@@ -866,7 +866,7 @@
                 </a>
             </div>
             <img src="/images/img/cfidpgp.png" alt="CFIDP Group Photo"
-                class="w-full h-auto sm:w-4/5 md:w-3/5 lg:w-2/5 xl:w-1/3 max-w-md mx-auto md:mx-0">
+                class="w-full h-auto sm:w-4/5 md:w-3/5 lg:w-full xl:w-1/2 2xl:w-3/5 max-w-lg mx-auto md:mx-0">
         </div>
     </section>
 
