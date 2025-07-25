@@ -842,11 +842,11 @@
 
     <!-- CFIDP Introduction -->
     <section class="container mx-auto px-10 py-20">
-        <h2 class="text-xl md:text-3xl font-bold text-green-900 mb-1 ml-5">ANO ANG <span
+        <h2 class="text-xl md:text-3xl font-black text-green-900 mb-1 ml-5">ANO ANG <span
                 style="color: #09CA16;">CFIDP?</span></h2>
         <div class="flex flex-col md:flex-row items-center text-xs sm:text-sm text-justify gap-9 ml-5 mr-4">
             <div class="flex-1">
-                <p>Ang Coconut Farmers and Industry Development Plan (CFIDP)
+                <p class="text-gray-700 leading-relaxed mt-0 lg:-mt-5 mr-5">Ang Coconut Farmers and Industry Development Plan (CFIDP)
                     ay isang pangunahing programa ng pamahalaan sa ilalim ng
                     Republic Act No. 11524, na idinisenyo upang tugunan ang pangangailangan ng mga magniniyog at
                     palaguin
@@ -866,7 +866,7 @@
                 </a>
             </div>
             <img src="/images/img/cfidpgp.png" alt="CFIDP Group Photo"
-                class="w-full h-auto sm:w-4/5 md:w-3/5 lg:w-full xl:w-1/2 2xl:w-3/5 max-w-lg mx-auto md:mx-0">
+                class="w-full h-auto sm:w-4/5 md:w-3/5 lg:w-full xl:w-1/2 2xl:w-3/5 max-w-lg mx-auto md:mx-0 mt-0 lg:-mt-10 sm:mt-0">
         </div>
     </section>
 
