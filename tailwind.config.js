@@ -12,8 +12,13 @@ export default {
       fontFamily: {
         sans: ['Montserrat', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
-        },
+      },
       colors: {
+
+        'pca-green': '#16a34a',
+        'pca-yellow': '#eab308',
+        'pca-blue': '#2563eb',
+                    
         'primary': {
           '50': '#effff0',
           '100': '#d8ffd9',
