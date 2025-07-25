@@ -882,128 +882,162 @@
     </section>
 
     <!-- Requirements Section -->
-    <section class="bg-green-50 py-16">
-        <div class="container mx-auto px-4">
-
-            <section class="py-16 px-4 sm:px-6 lg:px-8">
-                <div class="max-w-7xl mx-auto text-center">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                        MGA KAILANGANG IHANDA
-                    </h2>
-                    <h4 class="text-4xl md:text-3xl font-bold text-gray-800 mb-6">
-                        NA MGA DOKUMENTO
-                    </h4>
-                    <p class="text-md text-gray-600 mb-8 max-w-3xl mx-auto">
-                        Komprehensibong mga programang suporta para sa mga magniniyog at kooperatiba. May access sa
-                        pagsasanay, pasilidad sa pagpoproseso, pautang, at mga oportunidad sa pagpapaunlad ng
-                        imprastruktura
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button onclick="scrollToPrograms()"
-                            class="bg-green-600 hover:bg-green-400 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center">
-                            <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg>
-                            Explore Programs
-                        </button>
-                        <button
-                            class="border-2 border-pca-green text-pca-green hover:bg-green-50 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center">
-                            <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                </path>
-                            </svg>
-                            Download Forms
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <section id="programs" class="py-16 px-4 sm:px-6 lg:px-8">
+            <section id="programs" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-50 via-white to-green-50">
                 <div class="max-w-7xl mx-auto">
-                    <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">
-                        CFIDP Programs
-                    </h3>
-
-                    <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-3xl font-black text-gray-900 mb-4">
+                            MGA PROGRAMA NG <span style="color: #09CA16;">CFIDP</span>
+                        </h2>
+                        
+                        <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto mt-6 rounded-full"></div>
+                    </div>
+                    
+                    <!-- Programs Grid -->
+                    <div class="grid lg:grid-cols-3 gap-8 mb-16">
                         <!-- Social Protection Programs -->
-                        <div class="bg-white rounded-lg shadow-lg border-2 border-gray-200 hover:border-pca-green cursor-pointer transition-all duration-300 hover:shadow-xl h-80 flex flex-col"
-                            onclick="showProgramDetails('social')">
-                            <div class="p-6 text-center flex flex-col flex-1">
-                                <div
-                                    class="bg-green-400 bg-opacity-10 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                                    <svg class="h-8 w-8 text-green-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
-                                        </path>
-                                    </svg>
+                        <div class="group bg-white rounded-2xl shadow-xl border border-gray-100 hover:border-green-400 cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 overflow-hidden" onclick="showProgramDetails('social')">
+                            <!-- Card Header with Gradient -->
+                            <div class="bg-gradient-to-br from-green-500 to-green-600 p-6 text-white relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mt-16 -mr-16"></div>
+                                <div class="absolute bottom-0 left-0 w-20 h-20 bg-white opacity-10 rounded-full -mb-10 -ml-10"></div>
+                                <div class="relative z-10">
+                                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                        <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-center text-white mb-2">Social Protection Program</h3>
+                                    <p class="text-green-100 text-sm text-center">Para sa mga magniniyog at kanilang pamilya</p>
                                 </div>
-                                <h4 class="text-xl font-bold mb-2 flex-shrink-0">Social Protection <br> Program</h4>
-                                <p class="text-gray-600 mb-4 flex-grow mt-7">Training and Farm Schools</p>
-                                <button
-                                    class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center mt-auto">
-                                    Learn More
-                                    <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7"></path>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="space-y-4 mb-6">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                        <span class="text-gray-700 text-sm">Training at Farm Schools</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                        <span class="text-gray-700 text-sm">CocoLSA Certification</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                        <span class="text-gray-700 text-sm">Capacity Building Programs</span>
+                                    </div>
+                                </div>
+                                <button class="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center group-hover:bg-green-700">
+                                    Alamin Pa
+                                    <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </button>
                             </div>
                         </div>
 
                         <!-- Processing & Infrastructure -->
-                        <div class="bg-white rounded-lg shadow-lg border-2 border-gray-200 hover:border-pca-yellow cursor-pointer transition-all duration-300 hover:shadow-xl h-80 flex flex-col"
-                            onclick="showProgramDetails('processing')">
-                            <div class="p-6 text-center flex flex-col flex-1">
-                                <div
-                                    class="bg-yellow-400 bg-opacity-10 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                                    <svg class="h-8 w-8 text-yellow-500" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                                        </path>
-                                    </svg>
+                        <div class="group bg-white rounded-2xl shadow-xl border border-gray-100 hover:border-yellow-400 cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 overflow-hidden" onclick="showProgramDetails('processing')">
+                            <!-- Card Header with Gradient -->
+                            <div class="bg-gradient-to-br from-yellow-500 to-orange-500 p-6 text-white relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mt-16 -mr-16"></div>
+                                <div class="absolute bottom-0 left-0 w-20 h-20 bg-white opacity-10 rounded-full -mb-10 -ml-10"></div>
+                                <div class="relative z-10">
+                                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                        <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-center text-white mb-2">Processing & Infrastructure</h3>
+                                    <p class="text-yellow-100 text-sm text-center">Coconut Processing at Downstream Products</p>
                                 </div>
-                                <h4 class="text-xl font-bold mb-2 flex-shrink-0">Integrated Coconut Processing and
-                                    Downstream Products Program</h4>
-                                <p class="text-gray-600 mb-4 flex-grow">Shared Processing Facilities</p>
-                                <button
-                                    class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center mt-auto">
-                                    Learn More
-                                    <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7"></path>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="space-y-4 mb-6">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                        <span class="text-gray-700 text-sm">Shared Processing Facilities</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                        <span class="text-gray-700 text-sm">Equipment at Machinery</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                        <span class="text-gray-700 text-sm">Value-Added Products</span>
+                                    </div>
+                                </div>
+                                <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center group-hover:bg-yellow-600">
+                                    Alamin Pa
+                                    <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </button>
                             </div>
                         </div>
 
                         <!-- Support Services -->
-                        <div class="bg-white rounded-lg shadow-lg border-2 border-gray-200 hover:border-pca-blue cursor-pointer transition-all duration-300 hover:shadow-xl h-80 flex flex-col"
-                            onclick="showProgramDetails('support')">
-                            <div class="p-6 text-center flex flex-col flex-1">
-                                <div
-                                    class="bg-blue-100 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                                    <svg class="h-8 w-8 text-blue-800" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z">
-                                        </path>
-                                    </svg>
+                        <div class="group bg-white rounded-2xl shadow-xl border border-gray-100 hover:border-blue-400 cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 overflow-hidden" onclick="showProgramDetails('support')">
+                            <!-- Card Header with Gradient -->
+                            <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-6 text-white relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mt-16 -mr-16"></div>
+                                <div class="absolute bottom-0 left-0 w-20 h-20 bg-white opacity-10 rounded-full -mb-10 -ml-10"></div>
+                                <div class="relative z-10">
+                                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                        <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-center text-white mb-2">Support Services</h3>
+                                    <p class="text-blue-100 text-sm text-center">Credit, Insurance at Infrastructure</p>
                                 </div>
-                                <h4 class="text-xl font-bold mb-2 flex-shrink-0">Support Services <br> Program</h4>
-                                <p class="text-gray-600 mb-4 flex-grow mt-7">Credit and Infrastructure</p>
-                                <button
-                                    class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center mt-auto">
-                                    Learn More
-                                    <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7"></path>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6">
+                                <div class="space-y-4 mb-6">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                        <span class="text-gray-700 text-sm">Agricultural Credit</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                        <span class="text-gray-700 text-sm">Insurance Coverage</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                        <span class="text-gray-700 text-sm">Infrastructure Development</span>
+                                    </div>
+                                </div>
+                                <button class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center group-hover:bg-blue-600">
+                                    Alamin Pa
+                                    <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </button>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action Section -->
+                    <div class="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-8 text-center text-white shadow-2xl">
+                        <h3 class="text-2xl font-bold mb-4">Handa nang sumali sa CFIDP?</h3>
+                        <p class="text-green-100 mb-6 max-w-2xl mx-auto">
+                            Samahan mo kami sa pagpapaunlad ng industriya ng niyog. Makakuha ng comprehensive support para sa inyong farm at negosyo.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button class="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center">
+                                <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                                Download Application Forms
+                            </button>
+                            <a href="/coconut-farmers-faq" class="border-2 border-white text-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center">
+                                <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Mga FAQ
+                            </a>
                         </div>
                     </div>
 
