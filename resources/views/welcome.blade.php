@@ -7,47 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCAppTrack Online Tracking</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         body,
         html {
-            font-family: 'Montserrat', sans-serif !important;
+            font-family: 'Poppins', sans-serif !important;
         }
     </style>
 </head>
 
-<style>
-    /* Import Google Fonts - Lemon font for the PCAppTrack logo */
-    @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
-    /* Custom Animations */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .animate-fadeIn {
-        animation: fadeIn 0.3s ease-out;
-    }
-
-    /* Card hover effects */
-    .card-hover {
-        transition: all 0.3s ease;
-    }
-
-    .card-hover:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    }
-</style>
 
 <body class="bg-white text-gray-800 font-montserrat">
     <!-- Header with CFIDP and PCAppTrack logos -->
@@ -881,2811 +851,586 @@
         </div>
     </section>
 
-
-    <!-- Header styled like the image -->
-    <div class="text-center mb-8 sm:mb-10 md:mb-12">
-        <img src="/images/img/APPLICATION.svg" alt="PCAppTrack Logo"
-            class="w-full max-w-xs sm:max-w-lg md:max-w-md lg:max-w-lg xl:max-w-2xl h-auto mx-auto">
-    </div>
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
-        <!-- Header -->
-        <div class="p-3 sm:p-4 md:p-5 text-white"
-            style="background: linear-gradient(135deg, #07da15ff 0%, #0ac016ff 50%, #049911ff 100%);">
-            <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
-                <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
-                    <div
-                        class="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
-                        <svg class="w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6 text-white" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="min-w-0">
-                        <h2 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white leading-tight">
-                            Social Protection Program
-                        </h2>
-                        <p class="text-xs sm:text-sm text-green-100 hidden sm:block">Para sa mga
-                            magniniyog at
-                            kanilang pamilya</p>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-1 sm:space-x-2 md:space-x-3">
-                    <div
-                        class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
-                        <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
-                            class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 object-contain">
-                    </div>
-                    <div
-                        class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
-                        <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
-                            class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 object-contain">
-                    </div>
-                </div>
+    <div class="bg-green-50 min-h-screen">
+        <div class="container mx-auto px-4 py-8">
+            <!-- Title Section -->
+            <div class="text-center mb-8">
+                <h1 class="text-2xl md:text-4xl font-bold text-green-800 mb-2 mt-10">APPLICATION BASED</h1>
+                <h2 class="text-2xl md:text-4xl font-bold text-green-800 mb-4">PROGRAMS OF PCA-CFIDP</h2>
+                <p class="text-sm text-gray-600">MGA PROGRAMANG NAKABATAY SA APLIKASYON NG PCA-CFIDP</p>
             </div>
-        </div>
 
-        <!-- Content -->
-        <div class="p-6 space-y-8 pt-10 pb-16">
-            <!-- CocoLSA Certification Section -->
-            <section class="px-2 sm:px-4 lg:px-8">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
-                    <!-- Card Header -->
-                    <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200"
-                        style="background-color:rgb(230, 253, 212);">
-                        <div class="flex items-center space-x-3 sm:space-x-4">
-                            <div
-                                class="w-7 h-7 sm:w-8 sm:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 ml-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h2
-                                    class="text-md sm:text-base lg:text-base font-bold text-green-800 mb-1 sm:mb-2 mt-1 sm:mt-2 leading-tight">
-                                    CocoLSA Certification Program
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card Content -->
-                    <div class="p-6 space-y-6">
-                        <!-- What is CocoLSA -->
-                        <div class="border-l-4 border-green-400 pl-4">
-                            <div class="flex items-start space-x-3 mb-3">
-                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h3 class="text-md font-bold text-gray-800 mt-1">Ano ang CocoLSA?</h3>
-                            </div>
-                            <p class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm pr-4 ">
-                                Ang Coco-LSA o Coco-based Learning Site for Agriculture (CocoLSA)
-                                Certification
-                                ay isang sakahan na gumagamit ng angkop na teknolohiya sa niyugan,
-                                nagsasagawa ng mabisang estratehiya sa pagsasaka, at matagumpay na
-                                nakakapagpatakbo ng operasyon — kaya’t nararapat tularan.
-                            </p>
-                        </div>
-
-                        <!-- Program Goals -->
-                        <div class="border-l-4 border-green-400 pl-4">
-                            <div class="flex items-start space-x-3 mb-4">
-                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h3 class="text-md font-bold text-gray-800 mt-1">Mga Layunin ng Programa
-                                </h3>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-8 sm:ml-10 lg:ml-11">
-                                <div class="bg-green-50 p-3 sm:p-4 rounded-lg">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 lg:w-6 lg:h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 sm:mt-2 flex-shrink-0">
-                                            <span class="text-white text-xs sm:text-sm font-bold">1</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="text-sm sm:text-md md:text-md font-semibold text-green-800 mb-1 sm:mb-2 mt-1 lg:mt-2.5 leading-tight">
-                                                Palakasin
-                                                ang
-                                                Kakayahan</h4>
-                                            <p
-                                                class="text-green-700 text-xs sm:text-sm text-justify pr-1 sm:pr-2 leading-relaxed">
-                                                Pagandahin ang kakayahan at kapasidad ng mga miyembro ng
-                                                pamayanang nagtatanim ng niyog sa produksyon,
-                                                pagpoproseso, at
-                                                pagnenegosyo na nakabatay sa niyog.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-blue-50 p-3 sm:p-4 rounded-lg">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 lg:w-6 lg:h-6 md:w-8 md:h-8 bg-green-500 rounded-full flex items-center justify-center mt-1 sm:mt-2 flex-shrink-0">
-                                            <span class="text-white text-xs sm:text-sm font-bold">2</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="text-sm sm:text-md md:text-md font-semibold text-green-800 mb-1 sm:mb-2 mt-1 lg:mt-2.5 leading-tight">
-                                                Dagdagan ang
-                                                Partisipasyon</h4>
-                                            <p
-                                                class="text-green-700 text-xs sm:text-sm text-justify pr-1 sm:pr-2 leading-relaxed">
-                                                Paramihin ang paglahok ng magniniyog at lider nila sa
-                                                pagpapaunlad ng industriya sa pamamagitan ng
-                                                pagsisilbing ahente
-                                                ng coconut-based capacity-building.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Program Components -->
-                        <div class="border-l-4 border-green-400 pl-2 sm:pl-4">
-                            <div class="flex items-start space-x-2 sm:space-x-3 mb-4 sm:mb-6">
-                                <div
-                                    class="w-6 h-6 sm:w-7 sm:h-7 bg-green-100 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h3 class="text-md sm:text-md font-bold text-gray-800 mt-2 leading-tight">
-                                    Mga
-                                    Kasama sa Programa</h3>
-                            </div>
-
-                            <div
-                                class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 ml-8 sm:ml-10 lg:ml-11">
-                                <div
-                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
-                                    <div
-                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path
-                                                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Training</span>
-                                </div>
-
-                                <div
-                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
-                                    <div
-                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Demonstration<br
-                                            class="hidden xs:block">
-                                        Services</span>
-                                </div>
-
-                                <div
-                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
-                                    <div
-                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Information<br
-                                            class="hidden xs:block"> Support</span>
-                                </div>
-
-                                <div
-                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
-                                    <div
-                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Technical<br
-                                            class="hidden xs:block">
-                                        Assistance</span>
-                                </div>
-
-                                <div
-                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200 xs:col-span-2 sm:col-span-1">
-                                    <div
-                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Complementary<br
-                                            class="hidden xs:block">
-                                        Projects</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Program Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- Social Protection Program -->
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Social Protection Program</h3>
+                    <button
+                        class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                        Learn More
+                    </button>
                 </div>
-            </section>
 
-            <!-- Selection and Prioritization Criteria -->
-            <section class="px-2 sm:px-4 lg:px-8">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
-                    <!-- Card Header -->
-                    <div class="bg-yellow-50 p-5 sm:p-4 lg:p-3 border-b border-gray-200">
-                        <div class="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2 ml-1 lg:ml-5">
-                            <div
-                                class="w-7 h-7 sm:w-8 sm:h-8 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h2 class="text-base sm:text-lg font-bold text-yellow-800 mt-0 sm:mt-2 leading-tight">
-                                    Mga Kriterya para sa Pagpili</h2>
-                                <p class="text-yellow-700 text-xs sm:text-sm leading-tight">Ano ang mga
-                                    kailangan para makakuha ng
-                                    CocoLSA certification</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card Content -->
-                    <div class="p-4 sm:p-5 lg:p-6 space-y-4 sm:space-y-6">
-                        <!-- Individual Farmer Requirements -->
-                        <div>
-                            <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
-                                <div
-                                    class="w-6 h-6 sm:w-7 sm:h-7 ml-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="min-w-0">
-                                    <h3 class="text-sm md:text-md font-bold text-yellow-800 leading-tight">
-                                        Para
-                                        sa Individual na Farmer
-                                    </h3>
-
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">1</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Filipino
-                                                Coconut Farmer
-                                            </h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                Dapat ay
-                                                isang Pilipinong magniniyog (may-ari, nagtatanim, o
-                                                tagapag-alaga) na may hindi bababa sa 1 ektaryang
-                                                niyugan.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">2</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Willing to
-                                                Demonstrate
-                                            </h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                Handa at
-                                                may kakayahang magpakita ng mga teknolohiya sa niyog sa
-                                                kanyang
-                                                sakahan anumang oras na kailangan ng kliyente.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">3</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Open to
-                                                Training</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                Dapat ay
-                                                may kahandaang sumailalim sa mga regular na
-                                                pagsasanay</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">4</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Physically Fit
-                                            </h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                May
-                                                pisikal na kakayahang gampanan ang mga tungkulin bilang
-                                                CocoLSA
-                                                cooperator; at</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">5</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                NCFRS
-                                                Registered</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                Rehistrado sa NCFRS, at mas mainam kung miyembro ng
-                                                isang CFO o
-                                                CFC.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Group/Organization Requirements -->
-                        <div>
-                            <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
-                                <div
-                                    class="w-6 h-6 sm:w-7 sm:h-7 ml-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path
-                                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="min-w-0">
-                                    <h3 class="text-sm md:text-md font-bold text-green-800 leading-tight">
-                                        Para
-                                        sa Grupo/Organisasyon
-                                    </h3>
-
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">1</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Integrated Farm</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                Dapat ay
-                                                may sukat na hindi bababa sa 1 ektarya, at isang
-                                                integrated at/o
-                                                diversified na sakahan (halimbawa: niyog at pag-aalaga
-                                                ng
-                                                hayop).</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">2</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Coconut Farmland</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                Dapat
-                                                ay nagmamay-ari at namamahala ng sakahang niyugan na may
-                                                sukat
-                                                na hindi bababa sa 1 ektarya.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">3</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Valid Registration</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                May
-                                                valid na rehistrasyon mula sa SEC, CDA, DOLE, o
-                                                kasalukuyang
-                                                akreditasyon mula sa PCA.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">4</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Active Organization
-                                            </h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                Aktibo
-                                                sa nakalipas na 3 taon sa organisasyon ng mga magsasaka
-                                                o
-                                                community enterprise development.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">5</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Filipino Leaders</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                Dapat ay
-                                                binubuo ng mga Pilipinong lider-magsasaka o kasapi na:
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs font-bold">5.1</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Demo of Coconut Technologies</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                Handa at
-                                                may kakayahang
-                                                magpakita ng mga teknolohiya sa niyog sa kanyang
-                                                sakahan kapag kinakailangan.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs font-bold">5.2</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Training Ready</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                May
-                                                kahandaang sumailalim at aktibong lumahok sa mga regular
-                                                na
-                                                pagsasanay upang mapalawak ang kaalaman at kasanayan; at
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs font-bold">5.3</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Physically Capable</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                                May
-                                                pisikal na kakayahan upang magampanan ang mga
-                                                responsibilidad
-                                                bilang isang LSA cooperator at LSA.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Farm Requirements -->
-                        <div>
-                            <div class="flex items-center space-x-3 mb-4">
-                                <div class="w-7 h-7 bg-yellow-500 ml-5 rounded-full flex items-center justify-center">
-                                    <svg class="w-5 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M10 2L3 7v11a1 1 0 001 1h3v-7a1 1 0 011-1h4a1 1 0 011 1v7h3a1 1 0 001-1V7l-7-5z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="text-sm md:text-md font-bold text-yellow-800 leading-tight">
-                                        Para
-                                        sa Farm (Individual at Group)
-                                    </h3>
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0">
-                                            <span class="text-yellow-600 text-xs font-bold">1</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
-                                                Integrated
-                                                Farm</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm">Hindi bababa sa
-                                                1
-                                                hectare ng
-                                                integrated/diversified farm (coconut-livestock,
-                                                coconut-agro-forestry, coconut-crop)</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0">
-                                            <span class="text-yellow-600 text-xs font-bold">2</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
-                                                Demo Area
-                                            </h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm">Naglalaman ng
-                                                demonstration area para sa teknolohiya ng produksiyon ng
-                                                niyog,
-                                                na may kasamang holding area, hugasan, at palikuran.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0">
-                                            <span class="text-yellow-600 text-xs font-bold">3</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
-                                                Accessible
-                                                Location
-                                            </h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm">Madaling
-                                                puntahan sa
-                                                pamamagitan ng land travel at iba pang uri ng
-                                                transportasyon.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                                    <div class="flex items-start space-x-3">
-                                        <div
-                                            class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0">
-                                            <span class="text-yellow-600 text-xs font-bold">4</span>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-0.5">
-                                                Well-Landscaped</h4>
-                                            <p class="text-gray-600 text-xs sm:text-sm">May kaaya-ayang
-                                                disenyo
-                                                ng kapaligiran at maayos na landscaping.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Integrated Coconut Processing Program -->
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Integrated Coconut Processing Program</h3>
+                    <button
+                        class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                        Learn More
+                    </button>
                 </div>
-            </section>
 
-            <!-- Documentary Requirements -->
-            <section class="px-4 lg:px-8 text-sm ">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden -mb-5">
-                    <!-- Card Header -->
-                    <div class="bg-green-50 p-3 border-b border-gray-200">
-                        <div class="flex items-center space-x-3 mb-2 ml-5">
-                            <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1">
-                                <h2 class="text-base lg:text-lg font-bold text-green-800 mt-2">Mga
-                                    Kailangang
-                                    Dokumento</h2>
-                                <p class="text-green-700 text-xs sm:text-sm">Siguruhing kumpleto ang
-                                    lahat ng
-                                    documento
-                                    bago mag-apply</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card Content -->
-                    <div class="p-6 space-y-4">
-                        <!-- Documents Grid -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-2">
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                <div class="flex items-center space-x-2 sm:space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                        <span class="text-green-600 text-sm font-bold">1</span>
-                                    </div>
-                                    <div class="flex-1 min-w-0">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
-                                            Applicant's Checklist of Requirements</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                        <span class="text-green-600 text-sm font-bold">2</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
-                                            Signed
-                                            Briefer</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                        <span class="text-green-600 text-sm font-bold">3</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
-                                            Self-Assessment</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                <div class="flex items-center space-x-3 mt-0 lg:mt-2">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                        <span class="text-green-600 text-sm font-bold">4</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
-                                            Letter
-                                            of Intent to become a CocoLSA</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-4 pt-4">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                        <span class="text-green-600 text-sm font-bold">5</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
-                                            Farming
-                                            Learning Site for Agriculture Profile Form</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                        <span class="text-green-600 text-sm font-bold">6</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
-                                            LSA
-                                            Qualification Form</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                        <span class="text-green-600 text-sm font-bold">7</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800">Field
-                                            Validation Report</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                        <span class="text-green-600 text-sm font-bold">8</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800">LSA
-                                            Acceptance Form</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                                        <span class="text-green-600 text-sm font-bold">9</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800">
-                                            Endorsement of the RTWG</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Important Notice -->
-                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6 ml-2 ">
-                            <div class="flex items-start space-x-3">
-                                <svg class="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" fill="currentColor"
-                                    viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                                <div>
-                                    <h4 class="font-semibold text-xs sm:text-sm text-yellow-800 mb-1">
-                                        IMPORTANT!
-                                    </h4>
-                                    <p class="text-yellow-700 text-xs sm:text-sm">If endorsed with
-                                        financial
-                                        assistance, a
-                                        <strong>Development Plan</strong> shall be
-                                        required.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden mt-8">
-        <!-- Header -->
-        <div class=" p-6 text-white"
-            style="background: linear-gradient(135deg, #3b82f6 0%, #2b68ebff 50%, #0735b3ff 100%);">
-            <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
-                <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
-                    <div
-                        class="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
-                        <svg class="w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6 text-white" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="min-w-0">
-                        <h2 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white leading-tight">
-                            Integrated Coconut Processing
-
-                        </h2>
-                        <p class="text-xs sm:text-sm text-green-100 hidden sm:block">and Downstream
-                            Products</p>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-1 sm:space-x-2 md:space-x-3">
-                    <div
-                        class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full bg-white shadow-lg flex items-center justify-center">
-                        <img src="/images/IA logos/PM.svg" alt="PM Logo"
-                            class="h-5 w-5 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-10 lg:w-10 object-contain">
-                    </div>
+                <!-- Support Services Program -->
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Support Services Program</h3>
+                    <button
+                        class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                        Learn More
+                    </button>
                 </div>
             </div>
         </div>
 
 
-        <!-- Content -->
-        <div class="p-6 space-y-8 pt-10 pb-16">
-            <section class="px-2 sm:px-4 lg:px-8">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
-                    <!-- Card Header -->
-                    <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200 bg-blue-50 ">
-                        <div class="flex items-center space-x-3 sm:space-x-4">
-                            <div
-                                class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 ml-3">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h2
-                                    class="text-md sm:text-base lg:text-base font-bold text-blue-800 mb-1 sm:mb-2 mt-1 sm:mt-2 leading-tight">
-                                    Shared Processing Facilities
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Card Content -->
-                    <div class="p-6 space-y-6">
-                        <!-- What is Credit -->
-                        <div class="border-l-4 border-blue-400 pl-4">
-                            <div class="flex items-start space-x-3 mb-3">
-                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h3 class="text-md font-bold text-gray-800 mt-1">Ano ang Shared
-                                    Processing
-                                    Facilities?</h3>
-                            </div>
-                            <p class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm pr-4 ">
-                                Ang Shared Processing Facilities (SPF) ay mga pasilidad na ginagamit
-                                nang
-                                sama-sama ng mga kooperatiba o indibidwal na magsasaka para sa mas
-                                episyente at
-                                de-kalidad na pagproseso ng produktong niyog.
-                            </p>
-                        </div>
-                    </div>
+
+        <section class="bg-white py-12">
+            <div class="text-center w-full">
+                <div class="mb-12">
+                    <h1 class="text-3xl font-extrabold text-green-900">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO
+                    </h1>
+                    <div class="w-32 h-1 bg-green-600 mx-auto mt-3"></div>
                 </div>
-            </section>
-            <!-- Selection and Prioritization Criteria -->
-            <section class="px-4 sm:px-6 lg:px-8">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
-                    <!-- Card Header -->
-                    <div class="bg-green-50 p-2 sm:p-4 lg:p-3 border-b border-gray-200">
-                        <div class="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2 ml-5">
+
+
+                <!-- Truly seamless, infinite scroll carousel -->
+                <div class="logo-scroll-container overflow-hidden w-full relative">
+                    <!-- First logo track -->
+                    <div class="logo-track flex items-center py-4" id="logoTrack1">
+                        <!-- Original set of logos -->
+                        <div class="logo-item">
+                            <div class="logo-circle rounded-full p-3 shadow-md flex items-center justify-center">
+                                <img src="/images/IA logos/DA.svg" alt="DA Logo">
+                            </div>
+                            <p>Department of Agriculture</p>
+                        </div>
+                        <div class="logo-item">
                             <div
-                                class="w-7 h-7 sm:w-8 sm:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
-                                    </path>
-                                </svg>
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
                             </div>
-                            <div class="flex-1 min-w-0">
-                                <h2 class="text-base sm:text-lg font-bold text-green-800 mt-1 sm:mt-2 leading-tight">
-                                    Mga Kriterya para sa Pagpili</h2>
-                                <p class="text-green-700 text-xs sm:text-sm leading-tight">Pangunahing
-                                    kakailanganin
-                                </p>
+                            <p>Technical Education and Skills Development Authority</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
                             </div>
+                            <p>High-Value Crops Development Program</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Bureau of Animal Industry</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Department of Trade and Industry</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Department of Science and Technology</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Commission on Higher Education</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Cooperative Development Authority</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Philippine Crop Insurance Corporation</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Agricultural Training Institute</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Land Bank of the Philippines</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>National Dairy Authority</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Development Bank of the Philippines</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Department of Public Works and Highways</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>PhilMech</p>
                         </div>
                     </div>
 
-                    <!-- Card Content -->
-                    <div class="p-4 sm:p-5 lg:p-6 space-y-4 sm:space-y-6">
-                        <!-- base Requirements -->
-                        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4">
+                    <!-- Second logo track (duplicate for seamless effect) -->
+                    <div class="logo-track flex items-center py-4" id="logoTrack2">
+                        <!-- Duplicate set of logos -->
+                        <div class="logo-item">
                             <div
-                                class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">1</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Letter
-                                            of Intent</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Liham ng
-                                            intensyon
-                                            para sa
-                                            processing
-                                            facility</p>
-                                    </div>
-                                </div>
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/DA.svg" alt="DA Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
                             </div>
-
-                            <div
-                                class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">2</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
-                                            Endorsement letter from PCA</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Endorsement
-                                            mula sa
-                                            Provincial/Regional/Central Office</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">3</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
-                                            NCFRS
-                                            Certification</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kumpirmado at
-                                            inisyu
-                                            ng
-                                            Regional Office
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">4</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
-                                            Financial Statement for two (2) years</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">2 years
-                                            external audit
-                                            financial
-                                            statement
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">5</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            CDA
-                                            Registration</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Rehistradong
-                                            kooperatiba sa
-                                            ilalim ng CDA</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">6</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            CDA
-                                            Certificate of Compliance</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Certificate of
-                                            Compliance
-                                            (updated
-                                            annually)</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">7</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Articles
-                                            of Cooperation and By-Laws</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Mga Artikulo
-                                            ng
-                                            Kooperasyon
-                                            at By-Laws (maayos na notaryo o notarizado)</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">8</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Existing Organizational Structure
-                                        </h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kasalukuyang
-                                            Estruktura ng
-                                            Organisasyon
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-green-50  border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">9</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Board
-                                            Resolution</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Maayos
-                                            na notarizado; dapat nakasaad ang kaukulang kahilingan</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-green-50 border border-green-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">10</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Community/Site Profile</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Detalyadong
-                                            profile ng
-                                            komunidad/lokasyon</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-green-600 text-sm font-bold">11</span>
-                                    </div>
-                                    <div class="flex-1 min-w-0">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Official List of Members</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Hindi bababa
-                                            sa 100
-                                            miyembro
-                                            at hindi kukulangin sa 50%+1 ay rehistradong magsasaka ng
-                                            niyog – na
-                                            beripikado sa pamamagitan ng NCFRS Certification</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>Department of Agriculture</p>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Additional Requirements -->
-            <section class="px-4 lg:px-8 text-sm">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden -mb-5">
-                    <!-- Card Header -->
-                    <div class="bg-blue-50 p-4 border-b border-gray-200">
-                        <div class="flex items-center space-x-3 mb-2 ml-3">
-                            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                    </path>
-                                </svg>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
                             </div>
-                            <div class="flex-1">
-                                <h2 class="text-base lg:text-lg font-bold text-blue-800">Additional
-                                    Requirements</h2>
-                                <p class="text-blue-700 text-xs sm:text-sm">Pagkatapos ng pag-apruba ng
-                                    Central
-                                    Office (CO) at bago ang aktwal na konstruksyon ng pasilidad</p>
-                            </div>
+                            <p>Technical Education and Skills Development Authority</p>
                         </div>
-                    </div>
-
-                    <!-- Card Content -->
-                    <div class="p-6 space-y-4">
-                        <!-- Documents Grid -->
-                        <div class="grid grid-cols-1  gap-4">
-                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4">
-                                <div class="flex items-center space-x-2 sm:space-x-3">
-                                    <div
-                                        class="w-5 h-5 sm:w-6 sm:h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                        <span class="text-blue-600 text-xs sm:text-sm font-bold">1</span>
-                                    </div>
-                                    <div class="flex-1 min-w-0">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-0 sm:mb-1">
-                                            Proposal/Business Plan/Feasibility Study
-                                        </h4>
-                                    </div>
-                                </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
                             </div>
-
-                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4">
-                                <div class="flex items-start space-x-2 sm:space-x-3">
-                                    <div
-                                        class="w-5 h-5 sm:w-6 sm:h-6 bg-blue-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
-                                        <span class="text-blue-600 text-xs sm:text-sm font-bold">2</span>
-                                    </div>
-                                    <div class="flex-1 min-w-0">
-                                        <h4
-                                            class="font-semibold text-xs sm:text-sm text-gray-800 mb-0 sm:mb-1 leading-tight">
-                                            Deed of Donation of Lot if private property; MOA/Usufruct
-                                            Agreement if Lot is a government property.</h4>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>High-Value Crops Development Program</p>
                         </div>
-                    </div>
-            </section>
-        </div>
-    </div>
-
-
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden  mt-10">
-        <!-- Header -->
-        <div class="p-3 sm:p-4 md:p-5 text-white"
-            style="background: linear-gradient(135deg, #91d64fff 0%, #6a9e3a 50%, #5b8a31 100%);">
-            <div class="flex items-center justify-between px-3 sm:px-6 md:px-8">
-                <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
-                    <div
-                        class="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
-                        <svg class="w-4 sm:w-5 md:w-6 h-4 sm:h-5 md:h-6 text-white" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="min-w-0">
-                        <h2 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white leading-tight">
-                            Support Services
-                        </h2>
-                        <p class="text-xs sm:text-sm text-green-100 hidden sm:block">Mga Serbisyong
-                            Tulong</p>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-1 sm:space-x-2 md:space-x-3">
-                    <div
-                        class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
-                        <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
-                            class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 object-contain">
-                    </div>
-                    <div
-                        class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
-                        <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
-                            class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-10 lg:w-10 object-contain">
-                    </div>
-                    <div
-                        class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center">
-                        <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
-                            class="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-11 lg:w-11 object-contain">
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Bureau of Animal Industry</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Department of Trade and Industry</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Department of Science and Technology</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Commission on Higher Education</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Cooperative Development Authority</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Philippine Crop Insurance Corporation</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Agricultural Training Institute</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Land Bank of the Philippines</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>National Dairy Authority</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Development Bank of the Philippines</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>Department of Public Works and Highways</p>
+                        </div>
+                        <div class="logo-item">
+                            <div
+                                class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
+                                <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
+                                    class="max-h-20 max-w-20 object-contain m-auto">
+                            </div>
+                            <p>PhilMech</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Content -->
-        <div class="p-6 space-y-8 pt-10 pb-16 ">
-            <!-- Credit Certification Section -->
-            <section class="px-2 sm:px-4 lg:px-8">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
-                    <!-- Card Header -->
-                    <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200 "
-                        style="background-color:rgb(230, 253, 212);">
-                        <div class="flex items-center space-x-3 sm:space-x-4">
-                            <div
-                                class="w-7 h-7 sm:w-8 sm:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 ml-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h2
-                                    class="text-md sm:text-base lg:text-base font-bold text-green-800 mb-1 sm:mb-2 mt-1 sm:mt-2 leading-tight">
-                                    Credit
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card Content -->
-                    <div class="p-6 space-y-6">
-                        <!-- What is Credit -->
-                        <div class="border-l-4 border-green-400 pl-4">
-                            <div class="flex items-start space-x-3 mb-3">
-                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h3 class="text-md font-bold text-gray-800 mt-1">Ano ang tungkulin ng
-                                    PCA sa
-                                    CFID Credit Program?</h3>
-                            </div>
-                            <p class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm pr-4 ">
-                                Karaniwan, ang mga kooperatiba o indibidwal na magsasaka ay direktang
-                                tumutungo
-                                sa LBP o DBP upang makinabang sa CFID Credit Program. Ang PCA ay
-                                nagsisilbing
-                                katuwang na ahensyang tagapagpatupad ng mga bangkong ito pagdating sa
-                                beripikasyon ng NCFRS, akreditasyon ng PCA, at iba pang mga beripikasyon
-                                na may
-                                kaugnayan sa coconut value chain.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Base Requirements -->
-            <section class="px-2 sm:px-4 lg:px-8">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
-                    <!-- Card Header -->
-                    <div class="bg-yellow-50 p-5 sm:p-4 lg:p-3 border-b border-gray-200">
-                        <div class="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2 ml-5">
-                            <div
-                                class="w-7 h-7 sm:w-8 sm:h-8 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h2 class="text-base sm:text-lg font-bold text-yellow-800 mt-1 sm:mt-2 leading-tight">
-                                    Mga Kailangang Dokumento</h2>
-                                <p class="text-yellow-700 text-xs sm:text-sm leading-tight">Mga
-                                    kailangang
-                                    dokumento para makapag-apply ng credit</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card Content -->
-                    <div class="p-4 sm:p-5 lg:p-6 space-y-4 sm:space-y-6">
-                        <!-- Base Requirements (of PCA) -->
-                        <div>
-                            <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
-                                <div
-                                    class="w-6 h-6 sm:w-7 sm:h-7 ml-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2v8h12V6H4z"
-                                            clip-rule="evenodd"></path>
-                                        <path d="M6 8h8v2H6V8zM6 11h4v2H6v-2z"></path>
-                                    </svg>
-                                </div>
-                                <div class="min-w-0">
-                                    <h3 class="text-sm md:text-md font-bold text-yellow-800 leading-tight">
-                                        Base
-                                        Requirements (of PCA)
-                                    </h3>
-
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-center space-x-2 sm:space-x-3 mt-0 md:mt-2 lg:mt-2">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">1</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="font-semibold text-xs sm:text-sm text-gray-800 leading-tight">
-                                                Letter of Intent
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0 md:mt-2 lg:mt-2">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">2</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4 class="font-semibold text-xs sm:text-sm text-gray-800 leading-tight">
-                                                NCFRS Registration and Certification
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0 md:mt-2 lg:mt-2">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">3</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                CSO Accreditation issued by PCA or DA</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3 mt-0 md:mt-2 lg:mt-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">4</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                CDA Registration and COC
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center  flex-shrink-0 mt-1.5 md:mt-2 lg:mt-2">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">5</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Financial Statement for two (2) years (external audit);
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1.5 md:mt-2 lg:mt-2">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">6</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Articles of Cooperation and By-Laws (duly notarized)
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">7</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Existing Organizational Structure
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">8</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Official list of members
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-4 md:mt-2 lg:mt-0.5">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">9</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Board Resolution (if requestee is a Cooperative; not
-                                                needed if
-                                                individual farmer)</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Documentary Requirements (of DBP/LBP) -->
-                        <div>
-                            <div class="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
-                                <div
-                                    class="w-6 h-6 sm:w-7 sm:h-7 ml-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="min-w-0">
-                                    <h3 class="text-sm md:text-md font-bold text-green-800 leading-tight">
-                                        Documentary Requirements (of DBP/LBP)
-                                    </h3>
-                                    <p class="text-xs text-gray-600 text-green-800 italic">Coconut
-                                        Farmer
-                                        Enterprise</p>
-
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">1</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                DBP Loan Application Forms</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">2</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Proof of NCFRS enlistment</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">3</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Photocopy of Certificate of Registration from the
-                                                DTI/SEC</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">4</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Certificate of Accreditation from PCA
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs font-bold">5</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Business Plan, if applicable</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-green-600 text-xs font-bold">6</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Current year Business Permit</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-3 md:mt-2 lg:mt-3 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">7</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0 md:mt-2 lg:mt-1 leading-tight">
-                                                Audited Financial Statements for the last year; or
-                                                latest
-                                                Interim
-                                                Financial Statements for start-ups
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-5 md:mt-2 lg:mt-3 flex-shrink-0">
-                                            <span class="text-green-600 text-xs sm:text-sm font-bold">8</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Training Certificate from an accredited provider (e.g.,
-                                                TESDA,
-                                                DA-ATI) on financial literacy and on projects related to
-                                                the
-                                                coconut value chain
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Cooperatives and Organizations -->
-                        <div>
-                            <div class="flex items-center space-x-3 mb-4">
-                                <div
-                                    class="w-6 h-6 sm:w-7 sm:h-7 ml-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="min-w-0">
-                                    <h3 class="text-sm md:text-md font-bold text-yellow-800 leading-tight">
-                                        Documentary Requirements (of DBP/LBP)
-                                    </h3>
-                                    <p class="text-xs text-gray-600 text-yellow-800 italic">Coconut
-                                        Farmers
-                                        Cooperatives and Organizations</p>
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 ml-10 sm:ml-12 lg:ml-14">
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">1</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                DBP Loan Application Forms</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">2</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Photocopy of Certificate of Registration from the
-                                                CDA/SEC</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">3</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Certificate of Accreditation from PCA</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">4</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Certificate of Compliance from CDA, if applicable</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">5</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Certificate of Tax Exemption, if applicable</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">6</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Copies of Articles of Incorporation/Cooperation and
-                                                By-Laws</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-3 md:mt-2 lg:mt-3 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">7</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Bio-data of incumbent Officers and Board of Directors
-                                                with
-                                                photocopy of valid government issued ID</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-4 md:mt-2 lg:mt-3 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">8</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Board Resolution authorizing the Cooperative/
-                                                Organization to
-                                                borrow and designating the authorized signatories</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-4 md:mt-2 lg:mt-3 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">9</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Audited Financial Statements for the last year; or
-                                                latest
-                                                Interim
-                                                Financial Statements for start-ups</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">10</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Business Plan, if applicable</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-0 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">11</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Current year Business Permit</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div
-                                            class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-100 rounded-full flex items-center justify-center mt-7 md:mt-2 lg:mt-5 flex-shrink-0">
-                                            <span class="text-yellow-600 text-xs sm:text-sm font-bold">12</span>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <h4
-                                                class="font-semibold text-xs sm:text-sm text-gray-800 mb-1 sm:mb-2 mt-0.5 leading-tight">
-                                                Training Certificate of the cooperative and its key
-                                                officers
-                                                from an
-                                                accredited provider (e.g., TESDA, DA-ATI) on financial
-                                                literacy
-                                                and on projects related to the coconut value chain</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="px-2 sm:px-4 lg:px-8">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
-                    <!-- Card Header -->
-                    <div class="p-3 sm:p-3 lg:p-3 border-b border-gray-200 "
-                        style="background-color:rgb(230, 253, 212);">
-                        <div class="flex items-center space-x-3 sm:space-x-4">
-                            <div
-                                class="w-7 h-7 sm:w-8 sm:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 ml-3">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h2
-                                    class="text-md sm:text-base lg:text-base font-bold text-green-800 mb-1 sm:mb-2 mt-1 sm:mt-2 leading-tight">
-                                    Infrastructure
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card Content -->
-                    <div class="p-6 space-y-6">
-                        <!-- What is Credit -->
-                        <div class="border-l-4 border-green-400 pl-4">
-                            <div class="flex items-start space-x-3 mb-3">
-                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h3 class="text-md font-bold text-gray-800 mt-1">Same requirements for
-                                    Shared
-                                    Processing Facilities</h3>
-                            </div>
-                            <p class="text-gray-700 leading-relaxed ml-11 text-justify text-xs sm:text-sm pr-4 ">
-                                Tumutukoy ito sa mga pasilidad na suportado ng DPWH para sa coconut
-                                industry.
-                                Ang mga dokumento ay katulad lamang ng sa Shared Processing Facilities
-                                (SPF) na
-                                layong
-                                mapabuti ang pagproseso at kita ng mga produktong niyog.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Selection and Prioritization Criteria -->
-            <section class="px-4 sm:px-6 lg:px-8">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden mb-4 sm:mb-6">
-                    <!-- Card Header -->
-                    <div class="bg-yellow-50 p-2 sm:p-4 lg:p-3 border-b border-yellow-200">
-                        <div class="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2 ml-5">
-                            <div
-                                class="w-7 h-7 sm:w-8 sm:h-8 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h2 class="text-base sm:text-lg font-bold text-yellow-800 mt-1 sm:mt-2 leading-tight">
-                                    Mga Kriterya para sa Pagpili</h2>
-                                <p class="text-yellow-700 text-xs sm:text-sm leading-tight">Pangunahing
-                                    kakailanganin
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card Content -->
-                    <div class="p-4 sm:p-5 lg:p-6 space-y-4 sm:space-y-6">
-                        <!-- base Requirements -->
-                        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4">
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">1</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Letter
-                                            of Intent</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Liham ng
-                                            intensyon
-                                            para sa
-                                            processing
-                                            facility</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">2</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
-                                            Endorsement letter from PCA</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Endorsement
-                                            mula
-                                            sa
-                                            Provincial/Regional/Central Office</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">3</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
-                                            NCFRS
-                                            Certification</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kumpirmado at
-                                            inisyu
-                                            ng
-                                            Regional Office
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">4</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2  mt-1.5">
-                                            Financial Statement for two (2) years</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">2 years
-                                            external
-                                            audit
-                                            financial
-                                            statement
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">5</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            CDA
-                                            Registration</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Rehistradong
-                                            kooperatiba sa
-                                            ilalim ng CDA</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">6</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            CDA
-                                            Certificate of Compliance</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Certificate of
-                                            Compliance
-                                            (updated
-                                            annually)</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">7</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Articles
-                                            of Cooperation and By-Laws</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Mga Artikulo
-                                            ng
-                                            Kooperasyon
-                                            at By-Laws (maayos na notaryo o notarizado)</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">8</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Existing Organizational Structure
-                                        </h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Kasalukuyang
-                                            Estruktura ng
-                                            Organisasyon
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">9</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Board
-                                            Resolution</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Maayos
-                                            na notarizado; dapat nakasaad ang kaukulang kahilingan</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">10</span>
-                                    </div>
-                                    <div class="flex-1">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Community/Site Profile</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Detalyadong
-                                            profile ng
-                                            komunidad/lokasyon</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 md:col-span-2">
-                                <div class="flex items-start space-x-3">
-                                    <div
-                                        class="w-7 h-7 bg-yellow-100 rounded-full flex items-center justify-center mt-1">
-                                        <span class="text-yellow-600 text-sm font-bold">11</span>
-                                    </div>
-                                    <div class="flex-1 min-w-0">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-2 mt-1.5">
-                                            Official List of Members</h4>
-                                        <p class="text-gray-600 text-xs sm:text-sm -mt-1">Hindi bababa
-                                            sa
-                                            100
-                                            miyembro
-                                            at hindi kukulangin sa 50%+1 ay rehistradong magsasaka ng
-                                            niyog
-                                            – na
-                                            beripikado sa pamamagitan ng NCFRS Certification</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Additional Requirements -->
-            <section class="px-4 lg:px-8 text-sm">
-                <!-- Single Comprehensive Card -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden -mb-5">
-                    <!-- Card Header -->
-                    <div class="bg-green-50 p-4 border-b border-gray-200">
-                        <div class="flex items-center space-x-3 mb-2 ml-1 lg:ml-5">
-                            <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="flex-1">
-                                <h2 class="text-base lg:text-lg font-bold text-green-800">Additional
-                                    Requirements</h2>
-                                <p class="text-green-700 text-xs sm:text-sm">Pagkatapos ng pag-apruba ng
-                                    Central
-                                    Office (CO) at bago ang aktwal na konstruksyon ng pasilidad</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card Content -->
-                    <div class="p-6 space-y-4">
-                        <!-- Documents Grid -->
-                        <div class="grid grid-cols-1 gap-3 sm:gap-4">
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                <div class="flex items-center space-x-2 sm:space-x-3">
-                                    <div
-                                        class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                        <span class="text-green-600 text-xs sm:text-sm font-bold">1</span>
-                                    </div>
-                                    <div class="flex-1 min-w-0">
-                                        <h4 class="font-semibold text-xs sm:text-sm text-gray-800 mb-0 sm:mb-1">
-                                            Proposal/Business Plan/Feasibility Study
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-                                <div class="flex items-start space-x-2 sm:space-x-3">
-                                    <div
-                                        class="w-5 h-5 sm:w-6 sm:h-6 bg-green-100 rounded-full flex items-center justify-center mt-0.5 sm:mt-1 flex-shrink-0">
-                                        <span class="text-green-600 text-xs sm:text-sm font-bold">2</span>
-                                    </div>
-                                    <div class="flex-1 min-w-0">
-                                        <h4
-                                            class="font-semibold text-xs sm:text-sm text-gray-800 mb-0 sm:mb-1 leading-tight">
-                                            Deed of Donation of Lot if private property; MOA/Usufruct
-                                            Agreement if Lot is a government property.</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    </div>
-    </section>
-
-
-
-
-    <section class="bg-white py-12">
-        <div class="text-center w-full">
-            <div class="mb-12">
-                <h1 class="text-3xl font-extrabold text-green-900">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO
-                </h1>
-                <div class="w-32 h-1 bg-green-600 mx-auto mt-3"></div>
-            </div>
-
-
-            <!-- Truly seamless, infinite scroll carousel -->
-            <div class="logo-scroll-container overflow-hidden w-full relative">
-                <!-- First logo track -->
-                <div class="logo-track flex items-center py-4" id="logoTrack1">
-                    <!-- Original set of logos -->
-                    <div class="logo-item">
-                        <div class="logo-circle rounded-full p-3 shadow-md flex items-center justify-center">
-                            <img src="/images/IA logos/DA.svg" alt="DA Logo">
-                        </div>
-                        <p>Department of Agriculture</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Technical Education and Skills Development Authority</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>High-Value Crops Development Program</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Bureau of Animal Industry</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Trade and Industry</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Science and Technology</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Commission on Higher Education</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Cooperative Development Authority</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Philippine Crop Insurance Corporation</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Agricultural Training Institute</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Land Bank of the Philippines</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>National Dairy Authority</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Development Bank of the Philippines</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Public Works and Highways</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>PhilMech</p>
-                    </div>
-                </div>
-
-                <!-- Second logo track (duplicate for seamless effect) -->
-                <div class="logo-track flex items-center py-4" id="logoTrack2">
-                    <!-- Duplicate set of logos -->
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DA.svg" alt="DA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Agriculture</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Technical Education and Skills Development Authority</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>High-Value Crops Development Program</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Bureau of Animal Industry</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Trade and Industry</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Science and Technology</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Commission on Higher Education</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Cooperative Development Authority</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Philippine Crop Insurance Corporation</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Agricultural Training Institute</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Land Bank of the Philippines</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>National Dairy Authority</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Development Bank of the Philippines</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>Department of Public Works and Highways</p>
-                    </div>
-                    <div class="logo-item">
-                        <div
-                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                            <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
-                                class="max-h-20 max-w-20 object-contain m-auto">
-                        </div>
-                        <p>PhilMech</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <style>
-            /* Seamless carousel container */
-            .logo-scroll-container {
-                position: relative;
-                width: 100%;
-                overflow: hidden;
-                display: flex;
-            }
-
-            /* Logo tracks */
-            .logo-track {
-                display: flex;
-                flex-shrink: 0;
-                min-width: 100%;
-                will-change: transform;
-            }
-
-            /* Creating the seamless effect with two identical tracks */
-            #logoTrack1 {
-                animation: scroll 65s linear infinite;
-                animation-play-state: running;
-            }
-
-            #logoTrack2 {
-                animation: scroll2 65s linear infinite;
-                animation-play-state: running;
-            }
-
-            /* Animations for the two tracks */
-            @keyframes scroll {
-                0% {
-                    transform: translateX(0);
+            <style>
+                /* Seamless carousel container */
+                .logo-scroll-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    display: flex;
                 }
 
-                100% {
-                    transform: translateX(-100%);
-                }
-            }
-
-            @keyframes scroll2 {
-                0% {
-                    transform: translateX(0);
+                /* Logo tracks */
+                .logo-track {
+                    display: flex;
+                    flex-shrink: 0;
+                    min-width: 100%;
+                    will-change: transform;
                 }
 
-                100% {
-                    transform: translateX(-100%);
-                }
-            }
-
-            /* Logo item styling */
-            .logo-item {
-                flex-shrink: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 160px;
-                /* Reduced width to bring logos closer */
-                margin: 0 12px;
-                /* Reduced margin to bring logos closer */
-            }
-
-            /* Logo name styling */
-            .logo-item p {
-                margin-top: 12px;
-                font-size: 0.75rem;
-                text-align: center;
-                color: rgb(2, 54, 1);
-                max-width: 150px;
-                line-height: 1.2;
-                font-weight: 600;
-                /* Increased font weight for better visibility */
-                height: auto;
-                padding-bottom: 5px;
-            }
-
-            /* Hover effects and styling */
-            .logo-circle {
-                transition: all 0.3s ease;
-                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-                /* Enhanced shadow */
-                border: 2px solid rgba(9, 202, 22, 0.2);
-                /* Light green border */
-                width: 120px;
-                /* Increased size */
-                height: 120px;
-                /* Increased size */
-                position: relative;
-                overflow: hidden;
-                background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%);
-                /* Gradient background */
-            }
-
-            /* Standardized logo image styling */
-            .logo-circle img {
-                max-width: 75%;
-                /* Increased image size proportionally */
-                max-height: 75%;
-                /* Increased image size proportionally */
-                width: auto;
-                height: auto;
-                object-fit: contain;
-                object-position: center;
-                vertical-align: middle;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                filter: drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1));
-                /* Subtle drop shadow on logos */
-            }
-
-            .logo-circle:hover {
-                transform: scale(1.12);
-                box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-                background: linear-gradient(135deg, rgb(195, 238, 181) 0%, rgb(231, 255, 226) 100%);
-                border-color: rgba(9, 202, 22, 0.6);
-                /* Darker green border on hover */
-            }
-
-            /* Adjust spacing between logo items - already defined in the logo-item class */
-
-            /* Pause animation on hover */
-            .logo-scroll-container:hover #logoTrack1,
-            .logo-scroll-container:hover #logoTrack2 {
-                animation-play-state: paused !important;
-            }
-        </style>
-
-        <!-- Script for responsive behavior -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Standardize all logo elements structure and styling
-                function standardizeLogoElements() {
-                    // Get all logo circles
-                    const logoCircles = document.querySelectorAll('.logo-circle');
-
-                    // For each logo circle
-                    logoCircles.forEach(circle => {
-                        // Remove any extra classes but keep rounded-full
-                        circle.className = 'logo-circle rounded-full p-3 shadow-md';
-
-                        // Apply new enhanced styling
-                        circle.style.width = '120px'; // Increased size
-                        circle.style.height = '120px'; // Increased size
-                        circle.style.position = 'relative';
-                        circle.style.overflow = 'hidden';
-                        circle.style.boxShadow = '0 6px 10px rgba(0, 0, 0, 0.15)';
-                        circle.style.border = '2px solid rgba(9, 202, 22, 0.2)';
-                        circle.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%)';
-
-                        // Get the image inside
-                        const img = circle.querySelector('img');
-                        if (img) {
-                            // Remove any classes from the image
-                            img.className = '';
-
-                            // Apply enhanced styling
-                            img.style.maxWidth = '75%'; // Increased size
-                            img.style.maxHeight = '75%'; // Increased size 
-                            img.style.position = 'absolute';
-                            img.style.top = '50%';
-                            img.style.left = '50%';
-                            img.style.transform = 'translate(-50%, -50%)';
-                            img.style.filter = 'drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1))'; // Subtle drop shadow
-                        }
-                    });
-
-                    // Get all logo items
-                    const logoItems = document.querySelectorAll('.logo-item');
-
-                    // For each logo item - bringing them closer
-                    logoItems.forEach(item => {
-                        // Remove any extra classes
-                        item.className = 'logo-item';
-                        item.style.margin = '0 12px'; // Reduced margin to bring logos closer
-                        item.style.width = '160px'; // Narrower width to bring logos closer
-                    });
-
-                    // Ensure paragraph styling is consistent
-                    const logoTexts = document.querySelectorAll('.logo-item p');
-                    logoTexts.forEach(text => {
-                        text.style.fontWeight = '600';
-                        text.style.fontSize = '0.75rem';
-                    });
+                /* Creating the seamless effect with two identical tracks */
+                #logoTrack1 {
+                    animation: scroll 65s linear infinite;
+                    animation-play-state: running;
                 }
 
-                // Run the standardization on page load
-                standardizeLogoElements();
-                const logoTracks = document.querySelectorAll('.logo-track');
-                const logoContainer = document.querySelector('.logo-scroll-container');
-                let scrollSpeed = 65; // Base scroll speed in seconds - slightly faster for more dynamic appearance
-
-                // Add specific hover event handlers
-                if (logoContainer) {
-                    logoContainer.addEventListener('mouseenter', function () {
-                        logoTracks.forEach(track => {
-                            track.style.animationPlayState = 'paused';
-                        });
-                    });
-
-                    logoContainer.addEventListener('mouseleave', function () {
-                        logoTracks.forEach(track => {
-                            track.style.animationPlayState = 'running';
-                        });
-                    });
+                #logoTrack2 {
+                    animation: scroll2 65s linear infinite;
+                    animation-play-state: running;
                 }
 
-                // Function to adjust animation speed based on screen size
-                function adjustScrollSpeed() {
-                    if (window.innerWidth < 640) { // Mobile
-                        scrollSpeed = 50;  // Faster for mobile
-                    } else if (window.innerWidth < 1024) { // Tablet
-                        scrollSpeed = 55;  // Faster for tablet
-                    } else { // Desktop
-                        scrollSpeed = 65;  // Faster for desktop
+                /* Animations for the two tracks */
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
                     }
 
-                    // Apply to both tracks
-                    logoTracks.forEach(track => {
-                        track.style.animationDuration = `${scrollSpeed}s`;
-                    });
+                    100% {
+                        transform: translateX(-100%);
+                    }
                 }
 
-                // Setup truly seamless scrolling
-                function setupSeamlessScrolling() {
-                    // Calculate total width needed
-                    const track1 = document.getElementById('logoTrack1');
-                    const track2 = document.getElementById('logoTrack2');
+                @keyframes scroll2 {
+                    0% {
+                        transform: translateX(0);
+                    }
 
-                    // Make sure the second track starts exactly where the first one ends
-                    const observer = new ResizeObserver(entries => {
-                        for (let entry of entries) {
-                            if (entry.target === track1) {
-                                // Ensure track2 positioning is correct
-                                track2.style.left = '100%';
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+
+                /* Logo item styling */
+                .logo-item {
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 160px;
+                    /* Reduced width to bring logos closer */
+                    margin: 0 12px;
+                    /* Reduced margin to bring logos closer */
+                }
+
+                /* Logo name styling */
+                .logo-item p {
+                    margin-top: 12px;
+                    font-size: 0.75rem;
+                    text-align: center;
+                    color: rgb(2, 54, 1);
+                    max-width: 150px;
+                    line-height: 1.2;
+                    font-weight: 600;
+                    /* Increased font weight for better visibility */
+                    height: auto;
+                    padding-bottom: 5px;
+                }
+
+                /* Hover effects and styling */
+                .logo-circle {
+                    transition: all 0.3s ease;
+                    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+                    /* Enhanced shadow */
+                    border: 2px solid rgba(9, 202, 22, 0.2);
+                    /* Light green border */
+                    width: 120px;
+                    /* Increased size */
+                    height: 120px;
+                    /* Increased size */
+                    position: relative;
+                    overflow: hidden;
+                    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%);
+                    /* Gradient background */
+                }
+
+                /* Standardized logo image styling */
+                .logo-circle img {
+                    max-width: 75%;
+                    /* Increased image size proportionally */
+                    max-height: 75%;
+                    /* Increased image size proportionally */
+                    width: auto;
+                    height: auto;
+                    object-fit: contain;
+                    object-position: center;
+                    vertical-align: middle;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    filter: drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1));
+                    /* Subtle drop shadow on logos */
+                }
+
+                .logo-circle:hover {
+                    transform: scale(1.12);
+                    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+                    background: linear-gradient(135deg, rgb(195, 238, 181) 0%, rgb(231, 255, 226) 100%);
+                    border-color: rgba(9, 202, 22, 0.6);
+                    /* Darker green border on hover */
+                }
+
+                /* Adjust spacing between logo items - already defined in the logo-item class */
+
+                /* Pause animation on hover */
+                .logo-scroll-container:hover #logoTrack1,
+                .logo-scroll-container:hover #logoTrack2 {
+                    animation-play-state: paused !important;
+                }
+            </style>
+
+            <!-- Script for responsive behavior -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    // Standardize all logo elements structure and styling
+                    function standardizeLogoElements() {
+                        // Get all logo circles
+                        const logoCircles = document.querySelectorAll('.logo-circle');
+
+                        // For each logo circle
+                        logoCircles.forEach(circle => {
+                            // Remove any extra classes but keep rounded-full
+                            circle.className = 'logo-circle rounded-full p-3 shadow-md';
+
+                            // Apply new enhanced styling
+                            circle.style.width = '120px'; // Increased size
+                            circle.style.height = '120px'; // Increased size
+                            circle.style.position = 'relative';
+                            circle.style.overflow = 'hidden';
+                            circle.style.boxShadow = '0 6px 10px rgba(0, 0, 0, 0.15)';
+                            circle.style.border = '2px solid rgba(9, 202, 22, 0.2)';
+                            circle.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%)';
+
+                            // Get the image inside
+                            const img = circle.querySelector('img');
+                            if (img) {
+                                // Remove any classes from the image
+                                img.className = '';
+
+                                // Apply enhanced styling
+                                img.style.maxWidth = '75%'; // Increased size
+                                img.style.maxHeight = '75%'; // Increased size 
+                                img.style.position = 'absolute';
+                                img.style.top = '50%';
+                                img.style.left = '50%';
+                                img.style.transform = 'translate(-50%, -50%)';
+                                img.style.filter = 'drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1))'; // Subtle drop shadow
                             }
+                        });
+
+                        // Get all logo items
+                        const logoItems = document.querySelectorAll('.logo-item');
+
+                        // For each logo item - bringing them closer
+                        logoItems.forEach(item => {
+                            // Remove any extra classes
+                            item.className = 'logo-item';
+                            item.style.margin = '0 12px'; // Reduced margin to bring logos closer
+                            item.style.width = '160px'; // Narrower width to bring logos closer
+                        });
+
+                        // Ensure paragraph styling is consistent
+                        const logoTexts = document.querySelectorAll('.logo-item p');
+                        logoTexts.forEach(text => {
+                            text.style.fontWeight = '600';
+                            text.style.fontSize = '0.75rem';
+                        });
+                    }
+
+                    // Run the standardization on page load
+                    standardizeLogoElements();
+                    const logoTracks = document.querySelectorAll('.logo-track');
+                    const logoContainer = document.querySelector('.logo-scroll-container');
+                    let scrollSpeed = 65; // Base scroll speed in seconds - slightly faster for more dynamic appearance
+
+                    // Add specific hover event handlers
+                    if (logoContainer) {
+                        logoContainer.addEventListener('mouseenter', function () {
+                            logoTracks.forEach(track => {
+                                track.style.animationPlayState = 'paused';
+                            });
+                        });
+
+                        logoContainer.addEventListener('mouseleave', function () {
+                            logoTracks.forEach(track => {
+                                track.style.animationPlayState = 'running';
+                            });
+                        });
+                    }
+
+                    // Function to adjust animation speed based on screen size
+                    function adjustScrollSpeed() {
+                        if (window.innerWidth < 640) { // Mobile
+                            scrollSpeed = 50;  // Faster for mobile
+                        } else if (window.innerWidth < 1024) { // Tablet
+                            scrollSpeed = 55;  // Faster for tablet
+                        } else { // Desktop
+                            scrollSpeed = 65;  // Faster for desktop
                         }
-                    });
 
-                    // Start observing for changes
-                    observer.observe(track1);
-                }
+                        // Apply to both tracks
+                        logoTracks.forEach(track => {
+                            track.style.animationDuration = `${scrollSpeed}s`;
+                        });
+                    }
 
-                // Function to ensure consistent vertical alignment of all logos
-                function enforceLogoAlignment() {
-                    const allLogoImages = document.querySelectorAll('.logo-circle img');
+                    // Setup truly seamless scrolling
+                    function setupSeamlessScrolling() {
+                        // Calculate total width needed
+                        const track1 = document.getElementById('logoTrack1');
+                        const track2 = document.getElementById('logoTrack2');
 
-                    allLogoImages.forEach(img => {
-                        // Ensure all logos are properly centered
-                        setTimeout(() => {
-                            img.style.position = 'absolute';
-                            img.style.top = '50%';
-                            img.style.left = '50%';
-                            img.style.transform = 'translate(-50%, -50%)';
-                        }, 100);
-                    });
-                }
+                        // Make sure the second track starts exactly where the first one ends
+                        const observer = new ResizeObserver(entries => {
+                            for (let entry of entries) {
+                                if (entry.target === track1) {
+                                    // Ensure track2 positioning is correct
+                                    track2.style.left = '100%';
+                                }
+                            }
+                        });
 
-                // Initial adjustments
-                adjustScrollSpeed();
-                setupSeamlessScrolling();
-                enforceLogoAlignment();
+                        // Start observing for changes
+                        observer.observe(track1);
+                    }
 
-                // Adjust on window resize
-                window.addEventListener('resize', () => {
+                    // Function to ensure consistent vertical alignment of all logos
+                    function enforceLogoAlignment() {
+                        const allLogoImages = document.querySelectorAll('.logo-circle img');
+
+                        allLogoImages.forEach(img => {
+                            // Ensure all logos are properly centered
+                            setTimeout(() => {
+                                img.style.position = 'absolute';
+                                img.style.top = '50%';
+                                img.style.left = '50%';
+                                img.style.transform = 'translate(-50%, -50%)';
+                            }, 100);
+                        });
+                    }
+
+                    // Initial adjustments
                     adjustScrollSpeed();
+                    setupSeamlessScrolling();
                     enforceLogoAlignment();
+
+                    // Adjust on window resize
+                    window.addEventListener('resize', () => {
+                        adjustScrollSpeed();
+                        enforceLogoAlignment();
+                    });
                 });
-            });
-        </script>
-    </section>
-    <!-- Implementing Agencies -->
-    <footer class="bg-green-600 text-white py-3 mt-12 flex justify-center items-center">
-        <p class="text-sm">&copy; 2025 PCAppTrack All Rights Reserved</p>
-    </footer>
+            </script>
+        </section>
+        <!-- Implementing Agencies -->
+        <footer class="bg-green-600 text-white py-3 mt-12 flex justify-center items-center">
+            <p class="text-sm">&copy; 2025 PCAppTrack All Rights Reserved</p>
+        </footer>
 </body>
 
-</html></body>
+</html>
+</body>
