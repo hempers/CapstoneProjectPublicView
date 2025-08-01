@@ -971,7 +971,7 @@
 
             <!-- Social Protection Section -->
             <div id="social-protection" class="mb-12">
-                <div class="border border-green-900 rounded-lg p-6 md:p-8 bg-white">
+                <div class="border border-green-50 rounded-lg p-6 md:p-8 bg-green-50">
                     <div class="flex items-center justify-between mb-3 gap-2">
                         <div class="flex items-center flex-1 min-w-0">
                             <div class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
@@ -982,8 +982,8 @@
                                 </svg>
                             </div>
                             <div class="flex flex-col">
-                                <h3 class="text-lg lg:text-2xl font-bold text-gray-800 leading-tight">Social Protection</h3>
-                                <p class="text-xs lg:text-sm font-medium text-gray-600 leading-tight">Training and Farm Schools</p>
+                                <h3 class="text-xl lg:text-2xl font-bold text-gray-800 leading-tight">Social Protection</h3>
+                                <p class="text-xs lg:text-sm font-sm text-gray-600 leading-tight">Training and Farm Schools</p>
                             </div>
                         </div>
                         <div class="flex space-x-1 sm:space-x-3 flex-shrink-0">
@@ -998,30 +998,19 @@
                         </div>
                     </div>
 
-                    <div class="bg-green-50 rounded-lg p-6 mb-8 shadow-sm">
-                        <h4 class="font-bold text-base lg:text-lg text-gray-800 mb-4">Coco-based Learning Site for Agriculture
+                    <div class="bg-white rounded-lg p-6 mb-8 shadow-sm">
+                        <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4">Coco-based Learning Site for Agriculture
                             (CocoLSA) Certification</h4>
-                        <p class="text-xs lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-10">Ang Coco-LSA o Coco-based Learning Site
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-10">Ang Coco-LSA o Coco-based Learning Site
                             for Agriculture (CocoLSA) Certification ay isang sakahan na gumagamit ng angkop na
                             teknolohiya sa niyugan, nagsasagawa ng mabisang estratehiya sa pagsasaka, at matagumpay na
                             nakakapagpatakbo ng operasyon — kaya’t nararapat tularan.</p>
 
                         <div class="mb-6">
-                            <h5 class="font-semibold text-gray-800 mb-3">Mga Layunin ng Programa:</h5>
-                            <ul class="text-sm text-gray-600 space-y-2 pl-4">
-                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagsusulong ng
-                                    Kabuhayan</li>
-                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagpapahusay ng
-                                    Kasanayan sa Pagsasaka na nagbibigay ng permanenteng
-                                    pagkakakitaan sa pang-araw-araw na pangangailangan ng pamilyang magsasaka sa
-                                    kanilang lugar</li>
-                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagpapahusay ng
-                                    Pamamaraan</li>
-                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagpapabuti ng
-                                    uri ng pagkakapagsasaka sa mga lugar na matatagpuan ng
-                                    organisasyon na nagpapatakbo sa programa upang makamit ang mas mataas na kita at mas
-                                    mataas na
-                                    kalidad ng produkto</li>
+                            <h5 class="font-semibold text-md lg:text-lg text-gray-800 mb-3">Mga Layunin ng Programa:</h5>
+                            <ul class="text-sm lg:text-base text-gray-600 space-y-2 pl-4">
+                                <li class="flex items-start"><span class="text-green-600 mr-2">1.</span>Palakasin ang Kakayahan</li>
+                                <li class="flex items-start"><span class="text-green-600 mr-2">2.</span>Dagdagan ang Partisipasyon</li>
                             </ul>
                         </div>
 
