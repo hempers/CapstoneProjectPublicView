@@ -110,7 +110,7 @@
 
 
                 </p>
-                <a href="#track-section" class="track-btn inline-block text-white font-bold px-6 py-2 rounded ml-16"
+                <a href="#track-section" class="track-btn inline-block text-white font-bold px-6 py-2 rounded ml-16 letter-spacing-wider"
                     style="background-color: #09CA16; transition: background-color 0.2s;"
                     onmouseover="this.style.backgroundColor='#079510'"
                     onmouseout="this.style.backgroundColor='#09CA16'">
@@ -129,10 +129,10 @@
     <section id="track-section" class="py-16 relative overflow-hidden" style="background-color:rgb(230, 253, 212);">
         <!-- Decorative leaf images for background -->
         <div class="absolute left-0 top-0 opacity-20">
-            <img src="/images/img/leaf-left.svg" alt="" class="h-100 mr-20">
+            <img src="/images/img/leaf-left.svg" alt="left leaf" class="h-100 mr-20">
         </div>
         <div class="absolute right-0 bottom-0 opacity-20">
-            <img src="/images/img/leaf-right.svg" alt="" class="h-100">
+            <img src="/images/img/leaf-right.svg" alt="right leaf" class="h-100">
         </div>
 
         <div class="container mx-auto px-4 text-center relative z-10">
