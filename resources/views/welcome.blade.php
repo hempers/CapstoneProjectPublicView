@@ -854,39 +854,75 @@
     <div class="bg-green-50 min-h-screen">
         <div class="container mx-auto px-4 py-8">
             <!-- Title Section -->
-            <div class="text-center mb-8">
-                <h1 class="text-2xl md:text-4xl font-bold text-green-800 mb-2 mt-10">APPLICATION BASED</h1>
-                <h2 class="text-2xl md:text-4xl font-bold text-green-800 mb-4">PROGRAMS OF PCA-CFIDP</h2>
-                <p class="text-sm text-gray-600">MGA PROGRAMANG NAKABATAY SA APLIKASYON NG PCA-CFIDP</p>
+            <div class="text-center mb-8 scroll-animate opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+                <h1 class="text-2xl md:text-4xl font-bold text-green-800 mb-2 mt-10 transform transition-all duration-700">APPLICATION BASED</h1>
+                <h2 class="text-2xl md:text-4xl font-bold text-green-800 mb-4 transform transition-all duration-700">PROGRAMS OF PCA-CFIDP</h2>
+                <p class="text-sm text-gray-600 transform transition-all duration-700">MGA PROGRAMANG NAKABATAY SA APLIKASYON NG PCA-CFIDP</p>
             </div>
 
             <!-- Program Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 max-w-7xl mx-auto">
                 <!-- Social Protection Program -->
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Social Protection Program</h3>
-                    <button
-                        class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
-                        Learn More
-                    </button>
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden group">
+                    <div class="p-6 sm:p-8 flex flex-col h-full text-center">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Social Protection <br> Program</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-6 line-clamp-3 flex-grow">Nagbibigay ng benepisyo sa kalusugan, scholarship, at insurance para sa mga magsasaka ng niyog.</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-200 mt-auto">
+                            Learn More
+                            <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Integrated Coconut Processing Program -->
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Integrated Coconut Processing Program</h3>
-                    <button
-                        class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
-                        Learn More
-                    </button>
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden group">
+                    <div class="p-6 sm:p-8 flex flex-col h-full text-center">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Integrated Coconut Processing Program</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-6 line-clamp-3 flex-grow">Nagpapahintulot sa mga magsasaka na iproseso ang niyog upang madagdagan ang kanilang kita.</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-200 mt-auto">
+                            Learn More
+                            <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Support Services Program -->
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Support Services Program</h3>
-                    <button
-                        class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
-                        Learn More
-                    </button>
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden group sm:col-span-2 lg:col-span-1">
+                    <div class="p-6 sm:p-8 flex flex-col h-full text-center">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Support Services <br> Program</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-6 line-clamp-3 flex-grow">Nagbibigay ng tulong pinansyal, kalsada, at serbisyo sa marketing upang suportahan ang mga magsasaka.</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-200 mt-auto">
+                            Learn More
+                            <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1430,7 +1466,84 @@
         <footer class="bg-green-600 text-white py-3 mt-12 flex justify-center items-center">
             <p class="text-sm">&copy; 2025 PCAppTrack All Rights Reserved</p>
         </footer>
+
+        <!-- Scroll Animation Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Intersection Observer for scroll animations
+                const observerOptions = {
+                    threshold: 0.2,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                const observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Add the animation classes when element comes into view
+                            entry.target.classList.add('animate-in');
+                            entry.target.classList.remove('opacity-0', 'translate-y-8');
+                            entry.target.classList.add('opacity-100', 'translate-y-0');
+                            
+                            // Animate all child elements simultaneously
+                            const children = entry.target.querySelectorAll('h1, h2, p');
+                            children.forEach((child) => {
+                                child.classList.add('opacity-100', 'translate-y-0');
+                                child.classList.remove('opacity-0', 'translate-y-4');
+                            });
+                        }
+                    });
+                }, observerOptions);
+
+                // Observe all elements with scroll-animate class
+                const animateElements = document.querySelectorAll('.scroll-animate');
+                animateElements.forEach(element => {
+                    observer.observe(element);
+                });
+
+                // Add initial styles to child elements
+                const titleElements = document.querySelectorAll('.scroll-animate h1, .scroll-animate h2, .scroll-animate p');
+                titleElements.forEach(element => {
+                    element.classList.add('opacity-0', 'translate-y-4');
+                });
+            });
+        </script>
+
+        <!-- Additional CSS for enhanced animations -->
+        <style>
+            .scroll-animate {
+                transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            }
+            
+            .scroll-animate.animate-in {
+                animation: floatUp 1s ease-out forwards;
+            }
+            
+            @keyframes floatUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                50% {
+                    opacity: 0.7;
+                    transform: translateY(-5px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .scroll-animate h1,
+            .scroll-animate h2,
+            .scroll-animate p {
+                transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            }
+            
+            /* Hover effect enhancement */
+            .scroll-animate:hover {
+                transform: translateY(-2px);
+            }
+        </style>
 </body>
 
 </html>
-</body>
