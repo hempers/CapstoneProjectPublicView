@@ -100,7 +100,7 @@
                 <h1 class="text-3xl md:text-6xl font-extrabold text-green-900 mb-5 ml-16 mt-0">
                     Application <span style="color: #09CA16;">Tracking </span> System
                 </h1>
-                <p class="text-xs sm:text-sm  text-justify mb-6 ml-16 mr-9 mt-2 ">
+                <p class="text-sm lg:text-base text-justify mb-6 ml-16 mr-9 mt-2 ">
                     <span class="font-light text-gray-800">Ang PCAppTrack
                         ay isang online
                         na sistema ng programang CFIDP sa ilalim ng PCA Region V na tumutulong sa
@@ -143,7 +143,7 @@
                 <img src="/images/img/PCAPPTRACK.svg" alt="PCAppTrack Logo"
                     class="w-full max-w-xs sm:max-w-lg md:max-w-md lg:max-w-lg xl:max-w-2xl h-auto mx-auto">
                 <p
-                    class="text-xs sm:text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-4 -mt-4 sm:-mt-3 md:-mt-3 lg:-mt-6">
+                    class="text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-4 -mt-2 md:-mt-6 lg:-mt-6">
                     Ilagay lamang ang iyong natatanging Reference ID sa itinakdang field.
                 </p>
             </div>
@@ -828,9 +828,9 @@
     <section class="container mx-auto px-10 py-20">
         <h2 class="text-xl md:text-4xl font-bold text-green-900 mb-1 ml-5">ANO ANG <span
                 style="color: #09CA16;">CFIDP?</span></h2>
-        <div class="flex flex-col md:flex-row items-center text-xs sm:text-sm text-justify gap-9 ml-5 mr-4">
+        <div class="flex flex-col md:flex-row items-center text-sm text-justify gap-9 ml-5 mr-4">
             <div class="flex-1">
-                <p class="text-gray-700 leading-relaxed mt-0 lg:-mt-5 mr-5">Ang Coconut Farmers and Industry Development
+                <p class="text-gray-700 text-sm lg:text-base leading-relaxed mt-0 lg:mt-3 mr-5">Ang Coconut Farmers and Industry Development
                     Plan (CFIDP)
                     ay isang pangunahing programa ng pamahalaan sa ilalim ng
                     Republic Act No. 11524, na idinisenyo upang tugunan ang pangangailangan ng mga magniniyog at
@@ -884,7 +884,7 @@
                             </div>
                         </div>
                         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Social Protection</h3>
-                        <p class="text-gray-600 text-xs sm:text-sm mb-6 line-clamp-3 flex-grow">Nagbibigay ng benepisyo
+                        <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">Nagbibigay ng benepisyo
                             sa kalusugan, scholarship, at insurance para sa mga magsasaka ng niyog.</p>
                         <button
                             onclick="document.getElementById('social-protection').scrollIntoView({behavior: 'smooth'})"
@@ -915,7 +915,7 @@
                         </div>
                         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Integrated Coconut
                             Processing</h3>
-                        <p class="text-gray-600 text-xs sm:text-sm mb-6 line-clamp-3 flex-grow">Nagpapahintulot sa mga
+                        <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">Nagpapahintulot sa mga
                             magsasaka na iproseso ang niyog upang madagdagan ang kanilang kita.</p>
                         <button
                             class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto">
@@ -944,7 +944,7 @@
                             </div>
                         </div>
                         <h2 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Support Services</h2>
-                        <p class="text-gray-600 text-xs sm:text-sm mb-6 line-clamp-3 flex-grow">Nagbibigay ng tulong
+                        <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">Nagbibigay ng tulong
                             pinansyal, kalsada, at serbisyo sa marketing upang suportahan ang mga magsasaka.</p>
                         <button
                             class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105  mt-auto">
@@ -962,55 +962,65 @@
 
         <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
             <div class="text-center mb-8 mt-10">
-                <h2 class="text-xl md:text-5xl font-bold text-green-800 mb-2">MGA KAILANGANG IHANDA:</h2>
+                <h2 class="text-2xl md:text-5xl font-bold text-green-800 mb-2">MGA KAILANGANG IHANDA:</h2>
                 <h3 class="text-lg md:text-3xl font-extrabold text-green-800 mb-4">MGA DOKUMENTO PARA SA <span
                         style="color: #09CA16">CFIDP PROPOSAL</span> </h3>
-                <p class="text-sm text-gray-600">GABAY PARA SA MGA MAGNINIYOG NA PILIPINO NA NAIS MAG-APPLY SA
+                <p class="text-xs lg:text-sm text-gray-600">GABAY PARA SA MGA MAGNINIYOG NA PILIPINO NA NAIS MAG-APPLY SA
                     IBA'T-IBANG CFIDP PROGRAMS</p>
             </div>
 
             <!-- Social Protection Section -->
             <div id="social-protection" class="mb-12">
                 <div class="border border-green-900 rounded-lg p-6 md:p-8 bg-white">
-                    <div class="flex items-center mb-3">
-                        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mr-4">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl lg:text-3xl font-bold text-gray-800">Social Protection</h3>
-                        <div class="ml-auto flex space-x-3">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
-                                <img src="/images/IA logos/ATI.svg" class="w-12 h-12 object-contain" alt="ATI Logo">
+                    <div class="flex items-center justify-between mb-3 gap-2">
+                        <div class="flex items-center flex-1 min-w-0">
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
+                                <svg class="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
                             </div>
-                            <div class="w-14 h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
-                                <img src="/images/IA logos/TESDA.svg" class="w-12 h-12 object-contain" alt="TESDA Logo">
+                            <div class="flex flex-col">
+                                <h3 class="text-lg lg:text-2xl font-bold text-gray-800 leading-tight">Social Protection</h3>
+                                <p class="text-xs lg:text-sm font-medium text-gray-600 leading-tight">Training and Farm Schools</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-1 sm:space-x-3 flex-shrink-0">
+                            <div
+                                class="w-8 h-8 sm:w-14 sm:h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
+                                <img src="/images/IA logos/ATI.svg" class="w-8 h-8 sm:w-12 sm:h-12 object-contain" alt="ATI Logo">
+                            </div>
+                            <div
+                                class="w-8 h-8 sm:w-14 sm:h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
+                                <img src="/images/IA logos/TESDA.svg" class="w-8 h-8 sm:w-12 sm:h-12 object-contain" alt="TESDA Logo">
                             </div>
                         </div>
                     </div>
 
                     <div class="bg-green-50 rounded-lg p-6 mb-8 shadow-sm">
-                        <h4 class="font-bold text-lg text-gray-800 mb-4">Crop-based Livelihood Site for Agriculture
-                            (Crop-SA)
-                            Certification</h4>
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">Ang Crop-based Livelihood Site for Agriculture (Crop-SA)
-                            Certification ay isang sertipikasyon na ginagamit ng organisasyon na naghahandog ng mga
-                            serbisyo
-                            sa agrikultura upang mapatunayan na ang kanilang mga programa at serbisyo ay sumusunod sa
-                            mga
-                            pamantayan at kalidad na itinakda ng mga kinauukulang ahensya.</p>
+                        <h4 class="font-bold text-base lg:text-lg text-gray-800 mb-4">Coco-based Learning Site for Agriculture
+                            (CocoLSA) Certification</h4>
+                        <p class="text-xs lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-10">Ang Coco-LSA o Coco-based Learning Site
+                            for Agriculture (CocoLSA) Certification ay isang sakahan na gumagamit ng angkop na
+                            teknolohiya sa niyugan, nagsasagawa ng mabisang estratehiya sa pagsasaka, at matagumpay na
+                            nakakapagpatakbo ng operasyon — kaya’t nararapat tularan.</p>
 
                         <div class="mb-6">
                             <h5 class="font-semibold text-gray-800 mb-3">Mga Layunin ng Programa:</h5>
                             <ul class="text-sm text-gray-600 space-y-2 pl-4">
-                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagsusulong ng Kabuhayan</li>
-                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagpapahusay ng Kasanayan sa Pagsasaka na nagbibigay ng permanenteng
-                                    pagkakakitaan sa pang-araw-araw na pangangailangan ng pamilyang magsasaka sa kanilang lugar</li>
-                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagpapahusay ng Pamamaraan</li>
-                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagpapabuti ng uri ng pagkakapagsasaka sa mga lugar na matatagpuan ng
-                                    organisasyon na nagpapatakbo sa programa upang makamit ang mas mataas na kita at mas mataas na
+                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagsusulong ng
+                                    Kabuhayan</li>
+                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagpapahusay ng
+                                    Kasanayan sa Pagsasaka na nagbibigay ng permanenteng
+                                    pagkakakitaan sa pang-araw-araw na pangangailangan ng pamilyang magsasaka sa
+                                    kanilang lugar</li>
+                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagpapahusay ng
+                                    Pamamaraan</li>
+                                <li class="flex items-start"><span class="text-green-600 mr-2">•</span>Pagpapabuti ng
+                                    uri ng pagkakapagsasaka sa mga lugar na matatagpuan ng
+                                    organisasyon na nagpapatakbo sa programa upang makamit ang mas mataas na kita at mas
+                                    mataas na
                                     kalidad ng produkto</li>
                             </ul>
                         </div>
@@ -1058,7 +1068,8 @@
 
                         <div class="bg-green-50 rounded-lg p-5 border-l-4 border-green-500">
                             <h5 class="font-semibold text-gray-800 mb-2">Mga Kailangan Para Sa Pag-apply</h5>
-                            <p class="text-sm text-gray-600">Mga dokumento na kailangan upang makapag-apply sa programa</p>
+                            <p class="text-sm text-gray-600">Mga dokumento na kailangan upang makapag-apply sa programa
+                            </p>
                         </div>
                     </div>
 
@@ -1066,22 +1077,28 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                         <!-- Para sa Individual Farmers -->
                         <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-                            <h5 class="font-semibold text-gray-800 mb-4 text-center bg-green-100 py-2 rounded-md">Para sa Individual Farmers</h5>
+                            <h5 class="font-semibold text-gray-800 mb-4 text-center bg-green-100 py-2 rounded-md">Para
+                                sa Individual Farmers</h5>
                             <div class="space-y-4">
                                 <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                    <h6 class="font-semibold text-sm text-gray-800 mb-2">1. Aplikasyon/Sulat ng Kahilingan</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Dapat nakalagay ang mga sumusunod na impormasyon:
+                                    <h6 class="font-semibold text-sm text-gray-800 mb-2">1. Aplikasyon/Sulat ng
+                                        Kahilingan</h6>
+                                    <p class="text-xs text-gray-600 leading-relaxed">Dapat nakalagay ang mga sumusunod
+                                        na impormasyon:
                                         pangalan, address, contact number, uri ng pananim na nais pagtutukan, laki ng
                                         lupang gagamitin</p>
                                 </div>
                                 <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
                                     <h6 class="font-semibold text-sm text-gray-800 mb-2">3. Kopya ng Resibo</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Mga resibo na nagpapatunay sa mga gastos na ginawa
-                                        para sa pagsasaka tulad ng pagbili ng binhi, pataba, at iba pang pangangailangan</p>
+                                    <p class="text-xs text-gray-600 leading-relaxed">Mga resibo na nagpapatunay sa mga
+                                        gastos na ginawa
+                                        para sa pagsasaka tulad ng pagbili ng binhi, pataba, at iba pang pangangailangan
+                                    </p>
                                 </div>
                                 <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
                                     <h6 class="font-semibold text-sm text-gray-800 mb-2">5. Sketch/Mapa</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Sketch o mapa ng farm area na nagpapakita ng mga
+                                    <p class="text-xs text-gray-600 leading-relaxed">Sketch o mapa ng farm area na
+                                        nagpapakita ng mga
                                         detalye tulad ng sukat, lokasyon, at mga pananim na kasalukuyang naroroon</p>
                                 </div>
                             </div>
@@ -1089,16 +1106,21 @@
 
                         <!-- Para sa Organization -->
                         <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-                            <h5 class="font-semibold text-gray-800 mb-4 text-center bg-green-100 py-2 rounded-md">Para sa Organization</h5>
+                            <h5 class="font-semibold text-gray-800 mb-4 text-center bg-green-100 py-2 rounded-md">Para
+                                sa Organization</h5>
                             <div class="space-y-4">
                                 <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                    <h6 class="font-semibold text-sm text-gray-800 mb-2">2. SEC/CDA/DTI Rehistrasyon</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Mga dokumento na nagpapatunay sa legal na
-                                        pagkakakilala ng organisasyon tulad ng certificate of registration mula sa SEC, CDA, o DTI</p>
+                                    <h6 class="font-semibold text-sm text-gray-800 mb-2">2. SEC/CDA/DTI Rehistrasyon
+                                    </h6>
+                                    <p class="text-xs text-gray-600 leading-relaxed">Mga dokumento na nagpapatunay sa
+                                        legal na
+                                        pagkakakilala ng organisasyon tulad ng certificate of registration mula sa SEC,
+                                        CDA, o DTI</p>
                                 </div>
                                 <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
                                     <h6 class="font-semibold text-sm text-gray-800 mb-2">4. Barangay Certificate</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Certificate mula sa barangay na nagpapatunay sa
+                                    <p class="text-xs text-gray-600 leading-relaxed">Certificate mula sa barangay na
+                                        nagpapatunay sa
                                         good standing ng organisasyon at mga miyembro nito sa komunidad</p>
                                 </div>
                             </div>
@@ -1108,58 +1130,75 @@
                     <!-- Additional Requirements Grid -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="bg-white rounded-lg p-5 shadow-sm border border-gray-200">
-                            <h5 class="font-semibold text-gray-800 mb-4 text-center bg-blue-100 py-2 rounded-md text-sm">Para sa Grupo/Kooperatiba</h5>
+                            <h5
+                                class="font-semibold text-gray-800 mb-4 text-center bg-blue-100 py-2 rounded-md text-sm">
+                                Para sa Grupo/Kooperatiba</h5>
                             <div class="space-y-3">
                                 <div class="bg-gray-50 rounded-md p-3 border-l-3 border-blue-400">
                                     <h6 class="font-semibold text-xs text-gray-800 mb-1">1. Rehistrasyon/Lisensya</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Mga legal na dokumento na nagpapatunay sa
+                                    <p class="text-xs text-gray-600 leading-relaxed">Mga legal na dokumento na
+                                        nagpapatunay sa
                                         pagkakakilala ng grupo o kooperatiba</p>
                                 </div>
                                 <div class="bg-gray-50 rounded-md p-3 border-l-3 border-blue-400">
-                                    <h6 class="font-semibold text-xs text-gray-800 mb-1">3. Audit Report/Financial Statement</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Mga financial documents na nagpapakita ng financial
+                                    <h6 class="font-semibold text-xs text-gray-800 mb-1">3. Audit Report/Financial
+                                        Statement</h6>
+                                    <p class="text-xs text-gray-600 leading-relaxed">Mga financial documents na
+                                        nagpapakita ng financial
                                         status ng organisasyon</p>
                                 </div>
                                 <div class="bg-gray-50 rounded-md p-3 border-l-3 border-blue-400">
-                                    <h6 class="font-semibold text-xs text-gray-800 mb-1">5. Listahan ng mga Miyembro</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Kompletong listahan ng mga miyembro kasama ang
+                                    <h6 class="font-semibold text-xs text-gray-800 mb-1">5. Listahan ng mga Miyembro
+                                    </h6>
+                                    <p class="text-xs text-gray-600 leading-relaxed">Kompletong listahan ng mga miyembro
+                                        kasama ang
                                         kanilang mga personal na impormasyon</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="bg-white rounded-lg p-5 shadow-sm border border-gray-200">
-                            <h5 class="font-semibold text-gray-800 mb-4 text-center bg-yellow-100 py-2 rounded-md text-sm">Para sa Farming Group</h5>
+                            <h5
+                                class="font-semibold text-gray-800 mb-4 text-center bg-yellow-100 py-2 rounded-md text-sm">
+                                Para sa Farming Group</h5>
                             <div class="space-y-3">
                                 <div class="bg-gray-50 rounded-md p-3 border-l-3 border-yellow-400">
                                     <h6 class="font-semibold text-xs text-gray-800 mb-1">2. Certified Statement</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Statement na nagsasabing ang grupo ay aktibong
+                                    <p class="text-xs text-gray-600 leading-relaxed">Statement na nagsasabing ang grupo
+                                        ay aktibong
                                         nakikibahagi sa mga agricultural activities</p>
                                 </div>
                                 <div class="bg-gray-50 rounded-md p-3 border-l-3 border-yellow-400">
                                     <h6 class="font-semibold text-xs text-gray-800 mb-1">4. Activity Proposal</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Detalyadong proposal ng mga activities na plano ng
+                                    <p class="text-xs text-gray-600 leading-relaxed">Detalyadong proposal ng mga
+                                        activities na plano ng
                                         grupo na gawin</p>
                                 </div>
                                 <div class="bg-gray-50 rounded-md p-3 border-l-3 border-yellow-400">
                                     <h6 class="font-semibold text-xs text-gray-800 mb-1">6.1 Farming Calendar</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Schedule ng mga farming activities na gagawin sa
+                                    <p class="text-xs text-gray-600 leading-relaxed">Schedule ng mga farming activities
+                                        na gagawin sa
                                         buong taon</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="bg-white rounded-lg p-5 shadow-sm border border-gray-200">
-                            <h5 class="font-semibold text-gray-800 mb-4 text-center bg-purple-100 py-2 rounded-md text-sm">Para sa Planning Committee</h5>
+                            <h5
+                                class="font-semibold text-gray-800 mb-4 text-center bg-purple-100 py-2 rounded-md text-sm">
+                                Para sa Planning Committee</h5>
                             <div class="space-y-3">
                                 <div class="bg-gray-50 rounded-md p-3 border-l-3 border-purple-400">
-                                    <h6 class="font-semibold text-xs text-gray-800 mb-1">6.2 Listahan ng Coconut Stakeholders</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Kompletong listahan ng mga stakeholders na involved
+                                    <h6 class="font-semibold text-xs text-gray-800 mb-1">6.2 Listahan ng Coconut
+                                        Stakeholders</h6>
+                                    <p class="text-xs text-gray-600 leading-relaxed">Kompletong listahan ng mga
+                                        stakeholders na involved
                                         sa coconut industry</p>
                                 </div>
                                 <div class="bg-gray-50 rounded-md p-3 border-l-3 border-purple-400">
                                     <h6 class="font-semibold text-xs text-gray-800 mb-1">6.3 Planning Study</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Comprehensive study na nagbibigay ng mga
+                                    <p class="text-xs text-gray-600 leading-relaxed">Comprehensive study na nagbibigay
+                                        ng mga
                                         rekomendasyon para sa planning</p>
                                 </div>
                             </div>
