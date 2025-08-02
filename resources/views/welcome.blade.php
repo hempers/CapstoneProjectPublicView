@@ -1037,7 +1037,7 @@
                         </div>
 
                         <div class="mb-6">
-                            <h5 class="font-semibold text-gray-800 mb-4">Mga Benepisyo ng Programa:</h5>
+                            <h5 class="font-semibold text-sm lg:text-base text-gray-800 mb-4">Mga Benepisyo ng Programa:</h5>
                             <div
                                 class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-3 ml-8 sm:ml-10 lg:ml-0 px-10">
                                 <div
@@ -1121,13 +1121,6 @@
                                         Projects</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="bg-green-50 rounded-lg p-5 border-l-4 border-green-500">
-                            <h5 class="font-semibold text-gray-800 mb-2">Mga Kailangan Para Sa Pag-apply</h5>
-                            <p class="text-sm text-gray-600">Mga dokumento na kailangan upang makapag-apply sa
-                                programa
-                            </p>
                         </div>
                     </div>
 
