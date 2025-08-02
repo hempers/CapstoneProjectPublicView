@@ -1121,7 +1121,7 @@
                                         Projects</span>
                                 </div>
                             </div>
-                        </div >
+                        </div>
 
                         <div class="bg-green-50 rounded-lg p-5 border-l-4 border-green-500">
                             <h5 class="font-semibold text-gray-800 mb-2">Mga Kailangan Para Sa Pag-apply</h5>
@@ -1131,72 +1131,102 @@
                         </div>
                     </div>
 
-                     <div class="bg-gray-50 rounded-lg p-4 mb-6">
-                        
-                     </div>
-                    <!-- Requirements Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        <!-- Para sa Individual Farmers -->
-                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-                            <h5 class="font-semibold text-gray-800 mb-4 text-center bg-green-100 py-2 rounded-md">
-                                Para
-                                sa Individual Farmers</h5>
-                            <div class="space-y-4">
-                                <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                    <h6 class="font-semibold text-sm text-gray-800 mb-2">1. Aplikasyon/Sulat ng
-                                        Kahilingan</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Dapat nakalagay ang mga
-                                        sumusunod
-                                        na impormasyon:
-                                        pangalan, address, contact number, uri ng pananim na nais pagtutukan, laki
-                                        ng
-                                        lupang gagamitin</p>
-                                </div>
-                                <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                    <h6 class="font-semibold text-sm text-gray-800 mb-2">3. Kopya ng Resibo</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Mga resibo na nagpapatunay sa
-                                        mga
-                                        gastos na ginawa
-                                        para sa pagsasaka tulad ng pagbili ng binhi, pataba, at iba pang
-                                        pangangailangan
-                                    </p>
-                                </div>
-                                <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                    <h6 class="font-semibold text-sm text-gray-800 mb-2">5. Sketch/Mapa</h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Sketch o mapa ng farm area na
-                                        nagpapakita ng mga
-                                        detalye tulad ng sukat, lokasyon, at mga pananim na kasalukuyang naroroon
-                                    </p>
+                    <div class="bg-white rounded-md p-4 mb-6 px-10">
+                        <div class="bg-white rounded-lg p-4 mb-4">
+                            <h5 class="font-medium text-gray-800 mb-2 text-center">Mga Kailangan Para Sa Pag-apply</h5>
+                            <p class="text-sm text-gray-600 text-center">Mga dokumento na kailangan upang makapag-apply
+                                sa programa</p>
+                        </div>
+                        <!-- Requirements Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <!-- Para sa Individual Farmers -->
+                            <div class="bg-green-50 rounded-md p-6 shadow-sm border border-gray-200">
+                                <h5 class="font-semibold text-gray-800 mb-4 text-center bg-white py-2 rounded-md">
+                                    Para
+                                    sa Individual Farmers</h5>
+                                <div class="space-y-4">
+                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
+                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">1. Aplikasyon/Sulat ng
+                                            Kahilingan</h6>
+                                        <p class="text-xs text-gray-600 leading-relaxed">Dapat nakalagay ang mga
+                                            sumusunod
+                                            na impormasyon:
+                                            pangalan, address, contact number, uri ng pananim na nais pagtutukan, laki
+                                            ng
+                                            lupang gagamitin</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
+                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">3. Kopya ng Resibo</h6>
+                                        <p class="text-xs text-gray-600 leading-relaxed">Mga resibo na nagpapatunay sa
+                                            mga
+                                            gastos na ginawa
+                                            para sa pagsasaka tulad ng pagbili ng binhi, pataba, at iba pang
+                                            pangangailangan
+                                        </p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
+                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">5. Sketch/Mapa</h6>
+                                        <p class="text-xs text-gray-600 leading-relaxed">Sketch o mapa ng farm area na
+                                            nagpapakita ng mga
+                                            detalye tulad ng sukat, lokasyon, at mga pananim na kasalukuyang naroroon
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Para sa Organization -->
-                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-                            <h5 class="font-semibold text-gray-800 mb-4 text-center bg-green-100 py-2 rounded-md">
-                                Para
-                                sa Organization</h5>
-                            <div class="space-y-4">
-                                <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                    <h6 class="font-semibold text-sm text-gray-800 mb-2">2. SEC/CDA/DTI Rehistrasyon
-                                    </h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Mga dokumento na nagpapatunay
-                                        sa
-                                        legal na
-                                        pagkakakilala ng organisasyon tulad ng certificate of registration mula sa
-                                        SEC,
-                                        CDA, o DTI</p>
+                            <!-- Para sa Organization -->
+                            <div class="bg-white rounded-md p-6 shadow-sm border border-gray-200">
+                                <h5 class="font-semibold text-gray-800 mb-4 text-center bg-white py-2 rounded-md">
+                                    Para
+                                    sa Organization</h5>
+                                <div class="space-y-4">
+                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
+                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">2. SEC/CDA/DTI Rehistrasyon
+                                        </h6>
+                                        <p class="text-xs text-gray-600 leading-relaxed">Mga dokumento na nagpapatunay
+                                            sa
+                                            legal na
+                                            pagkakakilala ng organisasyon tulad ng certificate of registration mula sa
+                                            SEC,
+                                            CDA, o DTI</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
+                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">4. Barangay Certificate
+                                        </h6>
+                                        <p class="text-xs text-gray-600 leading-relaxed">Certificate mula sa barangay na
+                                            nagpapatunay sa
+                                            good standing ng organisasyon at mga miyembro nito sa komunidad</p>
+                                    </div>
                                 </div>
-                                <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                    <h6 class="font-semibold text-sm text-gray-800 mb-2">4. Barangay Certificate
-                                    </h6>
-                                    <p class="text-xs text-gray-600 leading-relaxed">Certificate mula sa barangay na
-                                        nagpapatunay sa
-                                        good standing ng organisasyon at mga miyembro nito sa komunidad</p>
+                            </div>
+
+                            <div class="bg-white rounded-md p-6 shadow-sm border border-gray-200">
+                                <h5 class="font-semibold text-gray-800 mb-4 text-center bg-white py-2 rounded-md">
+                                    Para
+                                    sa Organization</h5>
+                                <div class="space-y-4">
+                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
+                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">2. SEC/CDA/DTI Rehistrasyon
+                                        </h6>
+                                        <p class="text-xs text-gray-600 leading-relaxed">Mga dokumento na nagpapatunay
+                                            sa
+                                            legal na
+                                            pagkakakilala ng organisasyon tulad ng certificate of registration mula sa
+                                            SEC,
+                                            CDA, o DTI</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
+                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">4. Barangay Certificate
+                                        </h6>
+                                        <p class="text-xs text-gray-600 leading-relaxed">Certificate mula sa barangay na
+                                            nagpapatunay sa
+                                            good standing ng organisasyon at mga miyembro nito sa komunidad</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                     <!-- Additional Requirements Grid -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
