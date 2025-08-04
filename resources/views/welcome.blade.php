@@ -1581,11 +1581,7 @@
                     <div class="bg-white rounded-lg p-6 mb-8 shadow-sm px-10">
                         <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Shared Processing Facilities
                         </h4>
-                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-10">Ang
-                            Coco-LSA o Coco-based Learning Site
-                            for Agriculture (CocoLSA) Certification ay isang sakahan na gumagamit ng angkop na
-                            teknolohiya sa niyugan, nagsasagawa ng mabisang estratehiya sa pagsasaka, at matagumpay na
-                            nakakapagpatakbo ng operasyon — kaya’t nararapat tularan.</p>
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-10">Ang Shared Processing Facilities (SPF) ay mga pasilidad na ginagamit nang sama-sama ng mga kooperatiba o indibidwal na magsasaka para sa mas episyente at de-kalidad na pagproseso ng produktong niyog.</p>
 
                         <div class="mb-6">
                             <h5 class="font-semibold text-md lg:text-lg text-gray-800 mb-3">Mga Layunin ng Programa:
