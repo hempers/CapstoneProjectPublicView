@@ -1052,7 +1052,7 @@
                                         </svg>
                                     </div>
                                     <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Training</span>
+                                        class="text-sm font-medium text-gray-700 leading-tight block">Training</span>
                                 </div>
 
                                 <div
@@ -1067,7 +1067,7 @@
                                         </svg>
                                     </div>
                                     <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Demonstration<br
+                                        class="text-sm font-medium text-gray-700 leading-tight block">Demonstration<br
                                             class="hidden xs:block">
                                         Services</span>
                                 </div>
@@ -1084,7 +1084,7 @@
                                         </svg>
                                     </div>
                                     <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Information<br
+                                        class="text-sm font-medium text-gray-700 leading-tight block">Information<br
                                             class="hidden xs:block"> Support</span>
                                 </div>
 
@@ -1100,7 +1100,7 @@
                                         </svg>
                                     </div>
                                     <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Technical<br
+                                        class="text-sm font-medium text-gray-700 leading-tight block">Technical<br
                                             class="hidden xs:block">
                                         Assistance</span>
                                 </div>
@@ -1116,7 +1116,7 @@
                                         </svg>
                                     </div>
                                     <span
-                                        class="text-xs xs:text-xs font-semibold text-gray-700 leading-tight block">Complementary<br
+                                        class="text-sm font-medium text-gray-700 leading-tight block">Complementary<br
                                             class="hidden xs:block">
                                         Projects</span>
                                 </div>
@@ -1131,38 +1131,62 @@
                                 sa programa</p>
                         </div>
                         <!-- Requirements Grid -->
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8">
                             <!-- Para sa Individual Farmers -->
-                            <div class="bg-green-50 rounded-md p-6 shadow-sm border border-gray-200">
-                                <h5 class="font-semibold text-gray-800 mb-4 text-center bg-white py-2 rounded-md">
-                                    Para
-                                    sa Individual Farmers</h5>
+                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <h5 class="font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md text-sm sm:text-base">
+                                    Para sa Individual Farmer</h5>
+                                
+                                <!-- Requirements List -->
                                 <div class="space-y-4">
-                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">1. Aplikasyon/Sulat ng
-                                            Kahilingan</h6>
-                                        <p class="text-xs text-gray-600 leading-relaxed">Dapat nakalagay ang mga
-                                            sumusunod
-                                            na impormasyon:
-                                            pangalan, address, contact number, uri ng pananim na nais pagtutukan, laki
-                                            ng
-                                            lupang gagamitin</p>
+                                    <!-- Requirement 1: Filipino Coconut Farmer -->
+                                    <div class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6 class="font-semibold text-sm text-gray-800 mb-1 sm:mb-2">1. Filipino Coconut Farmer</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay isang Pilipinong nagtatanging (may-ari, nagtatanim, nagtitipong-alaga) na may hindi bababa sa 1 ektaryong niyugan.</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">3. Kopya ng Resibo</h6>
-                                        <p class="text-xs text-gray-600 leading-relaxed">Mga resibo na nagpapatunay sa
-                                            mga
-                                            gastos na ginawa
-                                            para sa pagsasaka tulad ng pagbili ng binhi, pataba, at iba pang
-                                            pangangailangan
-                                        </p>
+
+                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <div class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6 class="font-semibold text-sm text-gray-800 mb-1 sm:mb-2">2. Willing to Demonstrate</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Handa at may kakayahang magpakita ng mga teknolohiya sa niyog sa kanyang sakahan anumang oras na kailangan ng kliyente.</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-green-400">
-                                        <h6 class="font-semibold text-sm text-gray-800 mb-2">5. Sketch/Mapa</h6>
-                                        <p class="text-xs text-gray-600 leading-relaxed">Sketch o mapa ng farm area na
-                                            nagpapakita ng mga
-                                            detalye tulad ng sukat, lokasyon, at mga pananim na kasalukuyang naroroon
-                                        </p>
+
+                                    <!-- Requirement 3: Open to Training -->
+                                    <div class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6 class="font-semibold text-sm text-gray-800 mb-1 sm:mb-2">3. Open to Training</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay may kahandaang sumailalim sa mga regular na pagsasanay</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 4: Physically Fit -->
+                                    <div class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6 class="font-semibold text-sm text-gray-800 mb-1 sm:mb-2">4. Physically Fit</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">May pisikal na kakayahang gampanan ang mga tungkulin bilang CocoLSA cooperator; at</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 5: NCFRS Registered -->
+                                    <div class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6 class="font-semibold text-sm text-gray-800 mb-1 sm:mb-2">5. NCFRS Registered</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Rehistrado sa NCFRS, at mas mainam kung miyembro ng isang CFO o CFC.</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
