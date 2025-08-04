@@ -1504,7 +1504,7 @@
                             <!-- Para sa Individual Farmers -->
                             <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
                                 <!-- Requirements List -->
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
                                     <!-- Requirement 1: Filipino Coconut Farmer -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
@@ -1524,10 +1524,7 @@
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    2. Willing to Demonstrate</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Handa at
-                                                    may kakayahang magpakita ng mga teknolohiya sa niyog sa kanyang
-                                                    sakahan anumang oras na kailangan ng kliyente.</p>
+                                                    2. Signed Briefer</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1539,10 +1536,8 @@
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    3. Open to Training</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay
-                                                    may kahandaang sumailalim sa mga regular na pagsasanay</p>
-                                            </div>
+                                                    3. Self-Assessment</h6>
+                                           </div>
                                         </div>
                                     </div>
 
@@ -1553,10 +1548,7 @@
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    4. Physically Fit</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">May
-                                                    pisikal na kakayahang gampanan ang mga tungkulin bilang CocoLSA
-                                                    cooperator; at</p>
+                                                    4. Letter of Intent to become a CocoLSA</h6>
                                             </div>
                                         </div>
                                     </div>
