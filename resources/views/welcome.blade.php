@@ -1493,19 +1493,16 @@
 
                     <div class="bg-white rounded-md p-4 mb-6 px-10">
                         <div class="bg-white rounded-lg p-4 mb-4">
-                            <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangan Para Sa
-                                Pag-Apply</h5>
-                            <p class="text-sm lg:text-base text-gray-600 text-center">Mga dokumento na kailangan upang
-                                makapag-apply
-                                sa programa</p>
+                            <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangang
+                                Dokumento</h5>
+                            <p class="text-sm lg:text-base text-gray-600 text-center">MSiguruhing kumpleto ang lahat ng
+                                dokumento bago mag-apply
+                            </p>
                         </div>
+
                         <div class="grid grid-cols-1 gap-6 mb-8">
                             <!-- Para sa Individual Farmers -->
                             <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
-                                <h5
-                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
-                                    Para sa Individual na mga Magsasaka</h5>
-
                                 <!-- Requirements List -->
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
                                     <!-- Requirement 1: Filipino Coconut Farmer -->
@@ -1515,10 +1512,7 @@
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    1. Filipino Coconut Farmer</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay
-                                                    isang Pilipinong nagtatanging (may-ari, nagtatanim,
-                                                    nagtitipong-alaga) na may hindi bababa sa 1 ektaryong niyugan.</p>
+                                                    1. Applicant's Checklist of Requirements</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1671,7 +1665,8 @@
 
     <section class="bg-green-50 py-12">
         <div class="mb-12 scroll-animate opacity-0 translate-y-8 transition-all duration-1000 ease-out">
-            <h1 class="text-3xl lg:text-5xl text-center font-bold text-green-900 transform transition-all duration-700 mt-10">
+            <h1
+                class="text-3xl lg:text-5xl text-center font-bold text-green-900 transform transition-all duration-700 mt-10">
                 MGA TAGAPAGPATUPAD NA<br>
                 AHENSYA NG GOBYERNO
             </h1>
