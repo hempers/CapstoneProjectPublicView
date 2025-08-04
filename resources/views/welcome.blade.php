@@ -21,7 +21,7 @@
 </head>
 
 
-<body class="bg-white text-gray-800 font-montserrat">
+<body class="bg-white text-gray-800 font-sans">
     <!-- Header with CFIDP and PCAppTrack logos -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-2 sm:py-3">
