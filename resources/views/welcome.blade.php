@@ -557,44 +557,44 @@
                         }
 
                         timelineItem.innerHTML = `
-                            <!-- Timeline dot -->
-                            <div class="absolute left-0 top-1 mt-1">
-                                <div class="border-2 border-white h-2 w-2 rounded-full ${dotColor} shadow-sm"></div>
-                            </div>
-                            
-                            <!-- Content -->
-                            <div class="rounded-lg border border-gray-200 ${itemClass} p-2 shadow-sm ${index === 0 ? 'relative' : ''}">
-                                ${index === 0 ? `<div class="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full shadow-sm">Latest Update</div>` : ''}
-                                <!-- Header with date and status -->
-                                <div class="flex justify-between items-center mb-1 flex-wrap">
-                                    <div class="flex items-center ${dateColor} text-xs">
-                                        <svg class="w-2.5 h-2.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                        </svg>
-                                        <span>${formattedDate}</span>
-                                        <span class="mx-1 text-gray-300">•</span>
-                                        <span class="text-xs text-gray-400">${timeFormatted || ''}</span>
-                                    </div>
-                                    <div>
-                                        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium bg-green-50 text-green-700">
-                                            ${item.stage || 'Unknown Stage'}
-                                        </span>
-                                    </div>
+                                <!-- Timeline dot -->
+                                <div class="absolute left-0 top-1 mt-1">
+                                    <div class="border-2 border-white h-2 w-2 rounded-full ${dotColor} shadow-sm"></div>
                                 </div>
                                 
-                                <!-- Body content -->
-                                <div class="space-y-1">
-                                    ${item.remarks ? `<p class="text-xs text-gray-800 font-medium">${item.remarks}</p>` : ''}
-                                    ${item.action_taken ? `<p class="text-xs text-gray-600">Action: ${item.action_taken}</p>` : ''}
+                                <!-- Content -->
+                                <div class="rounded-lg border border-gray-200 ${itemClass} p-2 shadow-sm ${index === 0 ? 'relative' : ''}">
+                                    ${index === 0 ? `<div class="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full shadow-sm">Latest Update</div>` : ''}
+                                    <!-- Header with date and status -->
+                                    <div class="flex justify-between items-center mb-1 flex-wrap">
+                                        <div class="flex items-center ${dateColor} text-xs">
+                                            <svg class="w-2.5 h-2.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <span>${formattedDate}</span>
+                                            <span class="mx-1 text-gray-300">•</span>
+                                            <span class="text-xs text-gray-400">${timeFormatted || ''}</span>
+                                        </div>
+                                        <div>
+                                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium bg-green-50 text-green-700">
+                                                ${item.stage || 'Unknown Stage'}
+                                            </span>
+                                        </div>
+                                    </div>
                                     
-                                    <!-- Footer with personnel and office -->
-                                    <div class="flex justify-between items-center text-xs text-gray-500 pt-1 border-t border-gray-100 mt-1">
-                                        <span>${item.staff_name || 'Not specified'}</span>
-                                        <span>${item.office || 'N/A'}</span>
+                                    <!-- Body content -->
+                                    <div class="space-y-1">
+                                        ${item.remarks ? `<p class="text-xs text-gray-800 font-medium">${item.remarks}</p>` : ''}
+                                        ${item.action_taken ? `<p class="text-xs text-gray-600">Action: ${item.action_taken}</p>` : ''}
+                                        
+                                        <!-- Footer with personnel and office -->
+                                        <div class="flex justify-between items-center text-xs text-gray-500 pt-1 border-t border-gray-100 mt-1">
+                                            <span>${item.staff_name || 'Not specified'}</span>
+                                            <span>${item.office || 'N/A'}</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        `;
+                            `;
 
                         historyTimeline.appendChild(timelineItem);
                     });
@@ -637,19 +637,19 @@
                         const warningHeader = document.createElement('div');
                         warningHeader.className = 'bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4';
                         warningHeader.innerHTML = `
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0">
-                                    <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                    </svg>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-xs text-yellow-700 font-medium">
+                                            Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="ml-3">
-                                    <p class="text-xs text-yellow-700 font-medium">
-                                        Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
-                                    </p>
-                                </div>
-                            </div>
-                        `;
+                            `;
                         requirementsContainer.appendChild(warningHeader);
 
                         // Create a list for missing requirements
@@ -664,11 +664,11 @@
                             const listItem = document.createElement('li');
                             listItem.className = 'flex items-center text-sm py-2 px-1 border-b border-gray-100';
                             listItem.innerHTML = `
-                                <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span class="text-gray-800">${reqName}</span>
-                            `;
+                                    <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span class="text-gray-800">${reqName}</span>
+                                `;
                             list.appendChild(listItem);
                         });
 
@@ -676,12 +676,12 @@
                         const noteElement = document.createElement('div');
                         noteElement.className = 'mt-4 text-xs text-gray-600 pt-3 border-t border-gray-100';
                         noteElement.innerHTML = `
-                            <p class="mb-2">
-                                <span class="font-medium">Mahalaga:</span> Kinakailangan pong maisubmit ang mga nawawalang dokumento para maiproseso nang mabilis ang inyong aplikasyon.
-                            </p>
-                            <p>
-                                Maaari po ninyong isubmit ang mga kulang na dokumento sa opisina ng PCA.                            </p>
-                        `;
+                                <p class="mb-2">
+                                    <span class="font-medium">Mahalaga:</span> Kinakailangan pong maisubmit ang mga nawawalang dokumento para maiproseso nang mabilis ang inyong aplikasyon.
+                                </p>
+                                <p>
+                                    Maaari po ninyong isubmit ang mga kulang na dokumento sa opisina ng PCA.                            </p>
+                            `;
                         requirementsContainer.appendChild(noteElement);
                     } else {
                         // All requirements are complete
@@ -692,19 +692,19 @@
                         const completeMessage = document.createElement('div');
                         completeMessage.className = 'bg-green-50 border-l-4 border-green-400 p-4';
                         completeMessage.innerHTML = `
-                            <div class="flex">
-                                <div class="flex-shrink-0">
-                                    <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-green-700">
+                                            Lahat ng kinakailangang dokumento ay kumpleto na.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="ml-3">
-                                    <p class="text-sm text-green-700">
-                                        Lahat ng kinakailangang dokumento ay kumpleto na.
-                                    </p>
-                                </div>
-                            </div>
-                        `;
+                            `;
                         requirementsContainer.appendChild(completeMessage);
                     }
                 } else {
@@ -1491,548 +1491,6 @@
                         </div>
                     </div>
 
-                    <section class="bg-white py-12">
-                        <div class="text-center w-full">
-                            <div
-                                class="mb-12 scroll-animate opacity-0 translate-y-8 transition-all duration-1000 ease-out">
-                                <h1
-                                    class="text-3xl lg:text-5xl font-bold text-green-900 transform transition-all duration-700">
-                                    MGA TAGAPAGPATUPAD NA<br>
-                                    AHENSYA NG GOBYERNO
-                                </h1>
-                                <div class="w-32 h-1 bg-green-600 mx-auto mt-3"></div>
-                            </div>
-
-
-                            <!-- Truly seamless, infinite scroll carousel -->
-                            <div class="logo-scroll-container overflow-hidden w-full relative">
-                                <!-- First logo track -->
-                                <div class="logo-track flex items-center py-4" id="logoTrack1">
-                                    <!-- Original set of logos -->
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full p-3 shadow-md flex items-center justify-center">
-                                            <img src="/images/IA logos/DA.svg" alt="DA Logo">
-                                        </div>
-                                        <p>Department of Agriculture</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Technical Education and Skills Development Authority</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>High-Value Crops Development Program</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Bureau of Animal Industry</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Department of Trade and Industry</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Department of Science and Technology</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Commission on Higher Education</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Cooperative Development Authority</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Philippine Crop Insurance Corporation</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Agricultural Training Institute</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Land Bank of the Philippines</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>National Dairy Authority</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Development Bank of the Philippines</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Department of Public Works and Highways</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>PhilMech</p>
-                                    </div>
-                                </div>
-
-                                <!-- Second logo track (duplicate for seamless effect) -->
-                                <div class="logo-track flex items-center py-4" id="logoTrack2">
-                                    <!-- Duplicate set of logos -->
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/DA.svg" alt="DA Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Department of Agriculture</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Technical Education and Skills Development Authority</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>High-Value Crops Development Program</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Bureau of Animal Industry</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Department of Trade and Industry</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Department of Science and Technology</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Commission on Higher Education</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Cooperative Development Authority</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Philippine Crop Insurance Corporation</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Agricultural Training Institute</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Land Bank of the Philippines</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>National Dairy Authority</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Development Bank of the Philippines</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>Department of Public Works and Highways</p>
-                                    </div>
-                                    <div class="logo-item">
-                                        <div
-                                            class="logo-circle rounded-full bg-green-100 p-3 shadow-md flex items-center justify-center h-30 w-30">
-                                            <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
-                                                class="max-h-20 max-w-20 object-contain m-auto">
-                                        </div>
-                                        <p>PhilMech</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <style>
-                            /* Seamless carousel container */
-                            .logo-scroll-container {
-                                position: relative;
-                                width: 100%;
-                                overflow: hidden;
-                                display: flex;
-                            }
-
-                            /* Logo tracks */
-                            .logo-track {
-                                display: flex;
-                                flex-shrink: 0;
-                                min-width: 100%;
-                                will-change: transform;
-                            }
-
-                            /* Creating the seamless effect with two identical tracks */
-                            #logoTrack1 {
-                                animation: scroll 65s linear infinite;
-                                animation-play-state: running;
-                            }
-
-                            #logoTrack2 {
-                                animation: scroll2 65s linear infinite;
-                                animation-play-state: running;
-                            }
-
-                            /* Animations for the two tracks */
-                            @keyframes scroll {
-                                0% {
-                                    transform: translateX(0);
-                                }
-
-                                100% {
-                                    transform: translateX(-100%);
-                                }
-                            }
-
-                            @keyframes scroll2 {
-                                0% {
-                                    transform: translateX(0);
-                                }
-
-                                100% {
-                                    transform: translateX(-100%);
-                                }
-                            }
-
-                            /* Logo item styling */
-                            .logo-item {
-                                flex-shrink: 0;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                width: 160px;
-                                /* Reduced width to bring logos closer */
-                                margin: 0 12px;
-                                /* Reduced margin to bring logos closer */
-                            }
-
-                            /* Logo name styling */
-                            .logo-item p {
-                                margin-top: 12px;
-                                font-size: 0.75rem;
-                                text-align: center;
-                                color: rgb(2, 54, 1);
-                                max-width: 150px;
-                                line-height: 1.2;
-                                font-weight: 600;
-                                /* Increased font weight for better visibility */
-                                height: auto;
-                                padding-bottom: 5px;
-                            }
-
-                            /* Hover effects and styling */
-                            .logo-circle {
-                                transition: all 0.3s ease;
-                                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-                                /* Enhanced shadow */
-                                border: 2px solid rgba(9, 202, 22, 0.2);
-                                /* Light green border */
-                                width: 120px;
-                                /* Increased size */
-                                height: 120px;
-                                /* Increased size */
-                                position: relative;
-                                overflow: hidden;
-                                background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%);
-                                /* Gradient background */
-                            }
-
-                            /* Standardized logo image styling */
-                            .logo-circle img {
-                                max-width: 75%;
-                                /* Increased image size proportionally */
-                                max-height: 75%;
-                                /* Increased image size proportionally */
-                                width: auto;
-                                height: auto;
-                                object-fit: contain;
-                                object-position: center;
-                                vertical-align: middle;
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                                filter: drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1));
-                                /* Subtle drop shadow on logos */
-                            }
-
-                            .logo-circle:hover {
-                                transform: scale(1.12);
-                                box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-                                background: linear-gradient(135deg, rgb(195, 238, 181) 0%, rgb(231, 255, 226) 100%);
-                                border-color: rgba(9, 202, 22, 0.6);
-                                /* Darker green border on hover */
-                            }
-
-                            /* Adjust spacing between logo items - already defined in the logo-item class */
-
-                            /* Pause animation on hover */
-                            .logo-scroll-container:hover #logoTrack1,
-                            .logo-scroll-container:hover #logoTrack2 {
-                                animation-play-state: paused !important;
-                            }
-                        </style>
-
-                        <!-- Script for responsive behavior -->
-                        <script>
-                            document.addEventListener('DOMContentLoaded', function () {
-                                // Standardize all logo elements structure and styling
-                                function standardizeLogoElements() {
-                                    // Get all logo circles
-                                    const logoCircles = document.querySelectorAll('.logo-circle');
-
-                                    // For each logo circle
-                                    logoCircles.forEach(circle => {
-                                        // Remove any extra classes but keep rounded-full
-                                        circle.className = 'logo-circle rounded-full p-3 shadow-md';
-
-                                        // Apply new enhanced styling
-                                        circle.style.width = '120px'; // Increased size
-                                        circle.style.height = '120px'; // Increased size
-                                        circle.style.position = 'relative';
-                                        circle.style.overflow = 'hidden';
-                                        circle.style.boxShadow = '0 6px 10px rgba(0, 0, 0, 0.15)';
-                                        circle.style.border = '2px solid rgba(9, 202, 22, 0.2)';
-                                        circle.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%)';
-
-                                        // Get the image inside
-                                        const img = circle.querySelector('img');
-                                        if (img) {
-                                            // Remove any classes from the image
-                                            img.className = '';
-
-                                            // Apply enhanced styling
-                                            img.style.maxWidth = '75%'; // Increased size
-                                            img.style.maxHeight = '75%'; // Increased size 
-                                            img.style.position = 'absolute';
-                                            img.style.top = '50%';
-                                            img.style.left = '50%';
-                                            img.style.transform = 'translate(-50%, -50%)';
-                                            img.style.filter = 'drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1))'; // Subtle drop shadow
-                                        }
-                                    });
-
-                                    // Get all logo items
-                                    const logoItems = document.querySelectorAll('.logo-item');
-
-                                    // For each logo item - bringing them closer
-                                    logoItems.forEach(item => {
-                                        // Remove any extra classes
-                                        item.className = 'logo-item';
-                                        item.style.margin = '0 12px'; // Reduced margin to bring logos closer
-                                        item.style.width = '160px'; // Narrower width to bring logos closer
-                                    });
-
-                                    // Ensure paragraph styling is consistent
-                                    const logoTexts = document.querySelectorAll('.logo-item p');
-                                    logoTexts.forEach(text => {
-                                        text.style.fontWeight = '600';
-                                        text.style.fontSize = '0.75rem';
-                                    });
-                                }
-
-                                // Run the standardization on page load
-                                standardizeLogoElements();
-                                const logoTracks = document.querySelectorAll('.logo-track');
-                                const logoContainer = document.querySelector('.logo-scroll-container');
-                                let scrollSpeed = 65; // Base scroll speed in seconds - slightly faster for more dynamic appearance
-
-                                // Add specific hover event handlers
-                                if (logoContainer) {
-                                    logoContainer.addEventListener('mouseenter', function () {
-                                        logoTracks.forEach(track => {
-                                            track.style.animationPlayState = 'paused';
-                                        });
-                                    });
-
-                                    logoContainer.addEventListener('mouseleave', function () {
-                                        logoTracks.forEach(track => {
-                                            track.style.animationPlayState = 'running';
-                                        });
-                                    });
-                                }
-
-                                // Function to adjust animation speed based on screen size
-                                function adjustScrollSpeed() {
-                                    if (window.innerWidth < 640) { // Mobile
-                                        scrollSpeed = 50;  // Faster for mobile
-                                    } else if (window.innerWidth < 1024) { // Tablet
-                                        scrollSpeed = 55;  // Faster for tablet
-                                    } else { // Desktop
-                                        scrollSpeed = 65;  // Faster for desktop
-                                    }
-
-                                    // Apply to both tracks
-                                    logoTracks.forEach(track => {
-                                        track.style.animationDuration = `${scrollSpeed}s`;
-                                    });
-                                }
-
-                                // Setup truly seamless scrolling
-                                function setupSeamlessScrolling() {
-                                    // Calculate total width needed
-                                    const track1 = document.getElementById('logoTrack1');
-                                    const track2 = document.getElementById('logoTrack2');
-
-                                    // Make sure the second track starts exactly where the first one ends
-                                    const observer = new ResizeObserver(entries => {
-                                        for (let entry of entries) {
-                                            if (entry.target === track1) {
-                                                // Ensure track2 positioning is correct
-                                                track2.style.left = '100%';
-                                            }
-                                        }
-                                    });
-
-                                    // Start observing for changes
-                                    observer.observe(track1);
-                                }
-
-                                // Function to ensure consistent vertical alignment of all logos
-                                function enforceLogoAlignment() {
-                                    const allLogoImages = document.querySelectorAll('.logo-circle img');
-
-                                    allLogoImages.forEach(img => {
-                                        // Ensure all logos are properly centered
-                                        setTimeout(() => {
-                                            img.style.position = 'absolute';
-                                            img.style.top = '50%';
-                                            img.style.left = '50%';
-                                            img.style.transform = 'translate(-50%, -50%)';
-                                        }, 100);
-                                    });
-                                }
-
-                                // Initial adjustments
-                                adjustScrollSpeed();
-                                setupSeamlessScrolling();
-                                enforceLogoAlignment();
-
-                                // Adjust on window resize
-                                window.addEventListener('resize', () => {
-                                    adjustScrollSpeed();
-                                    enforceLogoAlignment();
-                                });
-                            });
-                        </script>
-                    </section>
-                    <!-- Implementing Agencies -->
-                    <footer class="bg-green-600 text-white py-3 mt-12 flex justify-center items-center">
-                        <p class="text-sm">&copy; 2025 PCAppTrack All Rights Reserved</p>
-                    </footer>
-
                     <!-- Scroll Animation Script -->
                     <script>
                         document.addEventListener('DOMContentLoaded', function () {
@@ -2112,6 +1570,549 @@
                             transform: translateY(-2px);
                         }
                     </style>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-green-50 py-12">
+        <div class="mb-12 scroll-animate opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+            <h1 class="text-3xl lg:text-5xl text-center font-bold text-green-900 transform transition-all duration-700 mt-10">
+                MGA TAGAPAGPATUPAD NA<br>
+                AHENSYA NG GOBYERNO
+            </h1>
+            <div class="w-40 h-2 bg-green-800 mx-auto mt-3"></div>
+        </div>
+
+
+        <!-- Truly seamless, infinite scroll carousel -->
+        <div class="logo-scroll-container overflow-hidden w-full relative">
+            <!-- First logo track -->
+            <div class="logo-track flex items-center py-4" id="logoTrack1">
+                <!-- Original set of logos -->
+                <div class="logo-item">
+                    <div class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center">
+                        <img src="/images/IA logos/DA.svg" alt="DA Logo">
+                    </div>
+                    <p>Department of Agriculture</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Technical Education and Skills Development Authority</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>High-Value Crops Development Program</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Bureau of Animal Industry</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Department of Trade and Industry</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Department of Science and Technology</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Commission on Higher Education</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Cooperative Development Authority</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Philippine Crop Insurance Corporation</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Agricultural Training Institute</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Land Bank of the Philippines</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>National Dairy Authority</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Development Bank of the Philippines</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Department of Public Works and Highways</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>PhilMech</p>
+                </div>
+            </div>
+
+            <!-- Second logo track (duplicate for seamless effect) -->
+            <div class="logo-track flex items-center py-4" id="logoTrack2">
+                <!-- Duplicate set of logos -->
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/DA.svg" alt="DA Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Department of Agriculture</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/TESDA.svg" alt="TESDA Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Technical Education and Skills Development Authority</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/HVCDP.svg" alt="HVCDP Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>High-Value Crops Development Program</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/BAI.svg" alt="BAI Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Bureau of Animal Industry</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/DTI.svg" alt="DTI Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Department of Trade and Industry</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/DOST.svg" alt="DOST Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Department of Science and Technology</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/CHED.svg" alt="CHED Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Commission on Higher Education</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/CDA.svg" alt="CDA Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Cooperative Development Authority</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/PCIC.svg" alt="PCIC Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Philippine Crop Insurance Corporation</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/ATI.svg" alt="ATI Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Agricultural Training Institute</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/LBP.svg" alt="LBP Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Land Bank of the Philippines</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/NDA.svg" alt="NDA Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>National Dairy Authority</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/DBP.svg" alt="DBP Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Development Bank of the Philippines</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/DPWH.svg" alt="DPWH Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>Department of Public Works and Highways</p>
+                </div>
+                <div class="logo-item">
+                    <div
+                        class="logo-circle rounded-full bg-white p-3 shadow-md flex items-center justify-center h-30 w-30">
+                        <img src="/images/IA logos/PM.svg" alt="PhilMech Logo"
+                            class="max-h-20 max-w-20 object-contain m-auto">
+                    </div>
+                    <p>PhilMech</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <style>
+            /* Seamless carousel container */
+            .logo-scroll-container {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+            }
+
+            /* Logo tracks */
+            .logo-track {
+                display: flex;
+                flex-shrink: 0;
+                min-width: 100%;
+                will-change: transform;
+            }
+
+            /* Creating the seamless effect with two identical tracks */
+            #logoTrack1 {
+                animation: scroll 65s linear infinite;
+                animation-play-state: running;
+            }
+
+            #logoTrack2 {
+                animation: scroll2 65s linear infinite;
+                animation-play-state: running;
+            }
+
+            /* Animations for the two tracks */
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            @keyframes scroll2 {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            /* Logo item styling */
+            .logo-item {
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 160px;
+                /* Reduced width to bring logos closer */
+                margin: 0 12px;
+                /* Reduced margin to bring logos closer */
+            }
+
+            /* Logo name styling */
+            .logo-item p {
+                margin-top: 12px;
+                font-size: 0.75rem;
+                text-align: center;
+                color: rgb(2, 54, 1);
+                max-width: 150px;
+                line-height: 1.2;
+                font-weight: 600;
+                /* Increased font weight for better visibility */
+                height: auto;
+                padding-bottom: 5px;
+            }
+
+            /* Hover effects and styling */
+            .logo-circle {
+                transition: all 0.3s ease;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+                /* Enhanced shadow */
+                border: 2px solid rgba(9, 202, 22, 0.2);
+                /* Light green border */
+                width: 120px;
+                /* Increased size */
+                height: 120px;
+                /* Increased size */
+                position: relative;
+                overflow: hidden;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%);
+                /* Gradient background */
+            }
+
+            /* Standardized logo image styling */
+            .logo-circle img {
+                max-width: 75%;
+                /* Increased image size proportionally */
+                max-height: 75%;
+                /* Increased image size proportionally */
+                width: auto;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+                vertical-align: middle;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                filter: drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1));
+                /* Subtle drop shadow on logos */
+            }
+
+            .logo-circle:hover {
+                transform: scale(1.12);
+                box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+                background: linear-gradient(135deg, rgb(195, 238, 181) 0%, rgb(231, 255, 226) 100%);
+                border-color: rgba(9, 202, 22, 0.6);
+                /* Darker green border on hover */
+            }
+
+            /* Adjust spacing between logo items - already defined in the logo-item class */
+
+            /* Pause animation on hover */
+            .logo-scroll-container:hover #logoTrack1,
+            .logo-scroll-container:hover #logoTrack2 {
+                animation-play-state: paused !important;
+            }
+        </style>
+
+        <!-- Script for responsive behavior -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Standardize all logo elements structure and styling
+                function standardizeLogoElements() {
+                    // Get all logo circles
+                    const logoCircles = document.querySelectorAll('.logo-circle');
+
+                    // For each logo circle
+                    logoCircles.forEach(circle => {
+                        // Remove any extra classes but keep rounded-full
+                        circle.className = 'logo-circle rounded-full p-3 shadow-md';
+
+                        // Apply new enhanced styling
+                        circle.style.width = '120px'; // Increased size
+                        circle.style.height = '120px'; // Increased size
+                        circle.style.position = 'relative';
+                        circle.style.overflow = 'hidden';
+                        circle.style.boxShadow = '0 6px 10px rgba(0, 0, 0, 0.15)';
+                        circle.style.border = '2px solid rgba(9, 202, 22, 0.2)';
+                        circle.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%)';
+
+                        // Get the image inside
+                        const img = circle.querySelector('img');
+                        if (img) {
+                            // Remove any classes from the image
+                            img.className = '';
+
+                            // Apply enhanced styling
+                            img.style.maxWidth = '75%'; // Increased size
+                            img.style.maxHeight = '75%'; // Increased size 
+                            img.style.position = 'absolute';
+                            img.style.top = '50%';
+                            img.style.left = '50%';
+                            img.style.transform = 'translate(-50%, -50%)';
+                            img.style.filter = 'drop-shadow(0 2px 3px rgba(0, 100, 0, 0.1))'; // Subtle drop shadow
+                        }
+                    });
+
+                    // Get all logo items
+                    const logoItems = document.querySelectorAll('.logo-item');
+
+                    // For each logo item - bringing them closer
+                    logoItems.forEach(item => {
+                        // Remove any extra classes
+                        item.className = 'logo-item';
+                        item.style.margin = '0 12px'; // Reduced margin to bring logos closer
+                        item.style.width = '160px'; // Narrower width to bring logos closer
+                    });
+
+                    // Ensure paragraph styling is consistent
+                    const logoTexts = document.querySelectorAll('.logo-item p');
+                    logoTexts.forEach(text => {
+                        text.style.fontWeight = '600';
+                        text.style.fontSize = '0.75rem';
+                    });
+                }
+
+                // Run the standardization on page load
+                standardizeLogoElements();
+                const logoTracks = document.querySelectorAll('.logo-track');
+                const logoContainer = document.querySelector('.logo-scroll-container');
+                let scrollSpeed = 65; // Base scroll speed in seconds - slightly faster for more dynamic appearance
+
+                // Add specific hover event handlers
+                if (logoContainer) {
+                    logoContainer.addEventListener('mouseenter', function () {
+                        logoTracks.forEach(track => {
+                            track.style.animationPlayState = 'paused';
+                        });
+                    });
+
+                    logoContainer.addEventListener('mouseleave', function () {
+                        logoTracks.forEach(track => {
+                            track.style.animationPlayState = 'running';
+                        });
+                    });
+                }
+
+                // Function to adjust animation speed based on screen size
+                function adjustScrollSpeed() {
+                    if (window.innerWidth < 640) { // Mobile
+                        scrollSpeed = 50;  // Faster for mobile
+                    } else if (window.innerWidth < 1024) { // Tablet
+                        scrollSpeed = 55;  // Faster for tablet
+                    } else { // Desktop
+                        scrollSpeed = 65;  // Faster for desktop
+                    }
+
+                    // Apply to both tracks
+                    logoTracks.forEach(track => {
+                        track.style.animationDuration = `${scrollSpeed}s`;
+                    });
+                }
+
+                // Setup truly seamless scrolling
+                function setupSeamlessScrolling() {
+                    // Calculate total width needed
+                    const track1 = document.getElementById('logoTrack1');
+                    const track2 = document.getElementById('logoTrack2');
+
+                    // Make sure the second track starts exactly where the first one ends
+                    const observer = new ResizeObserver(entries => {
+                        for (let entry of entries) {
+                            if (entry.target === track1) {
+                                // Ensure track2 positioning is correct
+                                track2.style.left = '100%';
+                            }
+                        }
+                    });
+
+                    // Start observing for changes
+                    observer.observe(track1);
+                }
+
+                // Function to ensure consistent vertical alignment of all logos
+                function enforceLogoAlignment() {
+                    const allLogoImages = document.querySelectorAll('.logo-circle img');
+
+                    allLogoImages.forEach(img => {
+                        // Ensure all logos are properly centered
+                        setTimeout(() => {
+                            img.style.position = 'absolute';
+                            img.style.top = '50%';
+                            img.style.left = '50%';
+                            img.style.transform = 'translate(-50%, -50%)';
+                        }, 100);
+                    });
+                }
+
+                // Initial adjustments
+                adjustScrollSpeed();
+                setupSeamlessScrolling();
+                enforceLogoAlignment();
+
+                // Adjust on window resize
+                window.addEventListener('resize', () => {
+                    adjustScrollSpeed();
+                    enforceLogoAlignment();
+                });
+            });
+        </script>
+    </section>
+
+    <!-- Implementing Agencies -->
+    <footer class="bg-green-600 text-white py-3 flex justify-center items-center">
+        <p class="text-sm">&copy; 2025 PCAppTrack All Rights Reserved</p>
+    </footer>
 </body>
 
 </html>
