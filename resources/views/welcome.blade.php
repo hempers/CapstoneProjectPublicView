@@ -3144,13 +3144,8 @@
             </section>
         </div>
     </div>
-    </div>
-    </section>
 
-
-
-
-    <section class="bg-white py-12">
+    <section class="bg-white py-12 mt-10">
         <div class="text-center w-full">
             <div class="mb-12">
                 <h1 class="text-3xl font-extrabold text-green-900">MGA TAGAPAGPATUPAD NA AHENSYA NG GOBYERNO
@@ -3688,4 +3683,5 @@
     </footer>
 </body>
 
-</html></body>
+</html>
+</body>
