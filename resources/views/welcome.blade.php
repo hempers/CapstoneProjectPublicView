@@ -1138,7 +1138,7 @@
                                     Para sa Individual Farmer</h5>
                                 
                                 <!-- Requirements List -->
-                                <div class="space-y-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                                     <!-- Requirement 1: Filipino Coconut Farmer -->
                                     <div class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1180,7 +1180,7 @@
                                     </div>
 
                                     <!-- Requirement 5: NCFRS Registered -->
-                                    <div class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                   <div class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm text-gray-800 mb-1 sm:mb-2">5. NCFRS Registered</h6>
