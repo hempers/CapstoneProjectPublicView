@@ -1399,80 +1399,130 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="bg-white rounded-md p-4 mb-6 px-10">
+                        <div class="bg-white rounded-lg p-4 mb-4">
+                            <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangang
+                                Dokumento</h5>
+                            <p class="text-sm lg:text-base text-gray-600 text-center">Siguruhing kumpleto ang lahat ng
+                                dokumento bago mag-apply
+                            </p>
+                        </div>
 
-                <div class="bg-white rounded-md p-4 mb-6 px-10">
-                    <div class="bg-white rounded-lg p-4 mb-4">
-                        <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangang
-                            Dokumento</h5>
-                        <p class="text-sm lg:text-base text-gray-600 text-center">Siguruhing kumpleto ang lahat ng
-                            dokumento bago mag-apply
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 gap-6 mb-8">
-                        <!-- Para sa Individual Farmers -->
-                        <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
-                            <!-- Requirements List -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                <!-- Requirement 1: Filipino Coconut Farmer -->
-                                <div
-                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div class="flex-1 min-w-0 px-3">
-                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                1. Applicant's Checklist of Requirements</h6>
+                        <div class="grid grid-cols-1 gap-6 mb-8">
+                            <!-- Para sa Individual Farmers -->
+                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <!-- Requirements List -->
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                    <!-- Requirement 1: Filipino Coconut Farmer -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-center space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    1. Applicant's Checklist of Requirements</h6>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- Requirement 2: Willing to Demonstrate -->
-                                <div
-                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div class="flex-1 min-w-0 px-3">
-                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                2. Signed Briefer</h6>
+                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    2. Signed Briefer</h6>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- Requirement 3: Open to Training -->
-                                <div
-                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div class="flex-1 min-w-0 px-3">
-                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                3. Self-Assessment</h6>
+                                    <!-- Requirement 3: Open to Training -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    3. Self-Assessment</h6>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- Requirement 4: Physically Fit -->
-                                <div
-                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div class="flex-1 min-w-0 px-3">
-                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                4. Letter of Intent to become a CocoLSA</h6>
+                                    <!-- Requirement 4: Physically Fit -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    4. Letter of Intent to become a CocoLSA</h6>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- Requirement 5: NCFRS Registered -->
-                                <div
-                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div class="flex-1 min-w-0 px-3">
-                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                5. Farming Learning Site for Agriculture Profile Form</h6>
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    5. Farming Learning Site for Agriculture Profile Form</h6>
+                                            </div>
                                         </div>
                                     </div>
+
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-5">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    6. LSA Qualification Form</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    7. Field Validation Report</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    8. LSA Acceptance Form</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    9. Endorsement of the RTWG</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Scroll Animation Script -->
                 <script>
@@ -1555,7 +1605,6 @@
                 </style>
             </div>
         </div>
-    </div>
     </div>
 
     <section class="bg-green-50 py-12">
