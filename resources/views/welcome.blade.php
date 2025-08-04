@@ -918,6 +918,7 @@
                         <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">Nagpapahintulot sa mga
                             magsasaka na iproseso ang niyog upang madagdagan ang kanilang kita.</p>
                         <button
+                            onclick="document.getElementById('integrated-coconut').scrollIntoView({behavior: 'smooth'})"
                             class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto">
                             Alamin Pa
                             <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor"
@@ -1516,95 +1517,690 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
+                                <!-- Warning box as full-width single column -->
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
+                                    <div class="flex items-start space-x-3">
+                                        <svg class="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <h4 class="font-semibold text-xs sm:text-sm text-yellow-800 mb-1">
+                                                IMPORTANT!
+                                            </h4>
+                                            <p class="text-yellow-700 text-xs sm:text-sm">If endorsed with
+                                                financial
+                                                assistance, a
+                                                <strong>Development Plan</strong> shall be
+                                                required.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <!-- Scroll Animation Script -->
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        // Intersection Observer for scroll animations
-                        const observerOptions = {
-                            threshold: 0.2,
-                            rootMargin: '0px 0px -50px 0px'
-                        };
-
-                        const observer = new IntersectionObserver(function (entries) {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
-                                    // Add the animation classes when element comes into view
-                                    entry.target.classList.add('animate-in');
-                                    entry.target.classList.remove('opacity-0', 'translate-y-8');
-                                    entry.target.classList.add('opacity-100', 'translate-y-0');
-
-                                    // Animate all child elements simultaneously
-                                    const children = entry.target.querySelectorAll('h1, h2, p');
-                                    children.forEach((child) => {
-                                        child.classList.add('opacity-100', 'translate-y-0');
-                                        child.classList.remove('opacity-0', 'translate-y-4');
-                                    });
-                                }
-                            });
-                        }, observerOptions);
-
-                        // Observe all elements with scroll-animate class
-                        const animateElements = document.querySelectorAll('.scroll-animate');
-                        animateElements.forEach(element => {
-                            observer.observe(element);
-                        });
-
-                        // Add initial styles to child elements
-                        const titleElements = document.querySelectorAll('.scroll-animate h1, .scroll-animate h2, .scroll-animate p');
-                        titleElements.forEach(element => {
-                            element.classList.add('opacity-0', 'translate-y-4');
-                        });
-                    });
-                </script>
-
-                <!-- Additional CSS for enhanced animations -->
-                <style>
-                    .scroll-animate {
-                        transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                    }
-
-                    .scroll-animate.animate-in {
-                        animation: floatUp 1s ease-out forwards;
-                    }
-
-                    @keyframes floatUp {
-                        0% {
-                            opacity: 0;
-                            transform: translateY(30px);
-                        }
-
-                        50% {
-                            opacity: 0.7;
-                            transform: translateY(-5px);
-                        }
-
-                        100% {
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
-                    }
-
-                    .scroll-animate h1,
-                    .scroll-animate h2,
-                    .scroll-animate p {
-                        transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                    }
-
-                    /* Hover effect enhancement */
-                    .scroll-animate:hover {
-                        transform: translateY(-2px);
-                    }
-                </style>
             </div>
+
+
+            <div id="integrated-coconut" class="mb-12">
+                <div class="border border-green-50 rounded-lg p-6 md:p-8 bg-green-50">
+                    <div class="flex items-center justify-between mb-3 gap-2">
+                        <div class="flex items-center flex-1 min-w-0">
+                            <div
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
+                                <svg class="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-xl lg:text-2xl font-bold text-gray-800 leading-tight">Integrated Coconut
+                                    Processing
+                                </h3>
+                                <p class="text-xs lg:text-sm font-sm text-gray-600 leading-tight">and Downstream
+                                    Products</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-1 sm:space-x-3 flex-shrink-0">
+                            <div
+                                class="w-8 h-8 sm:w-14 sm:h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
+                                <img src="/images/IA logos/PM.svg" class="w-8 h-8 sm:w-12 sm:h-12 object-contain"
+                                    alt="PM Logo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 mb-8 shadow-sm px-10">
+                        <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Shared Processing Facilities
+                        </h4>
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-10">Ang
+                            Coco-LSA o Coco-based Learning Site
+                            for Agriculture (CocoLSA) Certification ay isang sakahan na gumagamit ng angkop na
+                            teknolohiya sa niyugan, nagsasagawa ng mabisang estratehiya sa pagsasaka, at matagumpay na
+                            nakakapagpatakbo ng operasyon — kaya’t nararapat tularan.</p>
+
+                        <div class="mb-6">
+                            <h5 class="font-semibold text-md lg:text-lg text-gray-800 mb-3">Mga Layunin ng Programa:
+                            </h5>
+                            <ul class="text-sm lg:text-base text-gray-800 space-y-2 pl-4 text-justify px-10">
+                                <li class="flex items-start font-semibold"><span
+                                        class="text-green-800 mr-2 font-semibold">1.</span>Palakasin ang
+                                    Kakayahan</li>
+                                <li class="flex items-start pr-1.5 ml-5"><span
+                                        class="text-green-600 mr-2">•</span>Pagandahin
+                                    ang kakayahan at kapasidad ng mga miyembro ng pamayanang nagtatanim ng niyog sa
+                                    produksyon, pagpoproseso, at pagnenegosyo na nakabatay sa niyog.</li>
+                                <li class="flex items-start font-semibold"><span
+                                        class="text-green-800 mr-2 font-semibold">2.</span>Dagdagan ang
+                                    Partisipasyon</li>
+                                <li class="flex items-start pr-1.5 ml-5"><span
+                                        class="text-green-600 mr-2">•</span>Paramihin ang paglahok ng magniniyog at
+                                    lider nila sa pagpapaunlad ng industriya sa pamamagitan ng pagsisilbing ahente ng
+                                    coconut-based capacity-building.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-semibold text-sm lg:text-base text-gray-800 mb-4">Mga Benepisyo ng Programa:
+                            </h5>
+                            <div
+                                class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-3 ml-8 sm:ml-10 lg:ml-10 px-10">
+                                <div
+                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
+                                    <div
+                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Training</span>
+                                </div>
+
+                                <div
+                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
+                                    <div
+                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Demonstration<br
+                                            class="hidden xs:block">
+                                        Services</span>
+                                </div>
+
+                                <div
+                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
+                                    <div
+                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Information<br
+                                            class="hidden xs:block"> Support</span>
+                                </div>
+
+                                <div
+                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
+                                    <div
+                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Technical<br
+                                            class="hidden xs:block">
+                                        Assistance</span>
+                                </div>
+
+                                <div
+                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200 xs:col-span-2 sm:col-span-1">
+                                    <div
+                                        class="w-8 h-8 sm:w-9 sm:h-9 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Complementary<br
+                                            class="hidden xs:block">
+                                        Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-md p-4 mb-6 px-10">
+                        <div class="bg-white rounded-lg p-4 mb-4">
+                            <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangan Para Sa
+                                Pag-Apply</h5>
+                            <p class="text-sm lg:text-base text-gray-600 text-center">Mga dokumento na kailangan upang
+                                makapag-apply
+                                sa programa</p>
+                        </div>
+                        <!-- Requirements Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8">
+                            <!-- Para sa Individual Farmers -->
+                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <h5
+                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
+                                    Para sa Individual na mga Magsasaka</h5>
+
+                                <!-- Requirements List -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                    <!-- Requirement 1: Filipino Coconut Farmer -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    1. Filipino Coconut Farmer</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay
+                                                    isang Pilipinong nagtatanging (may-ari, nagtatanim,
+                                                    nagtitipong-alaga) na may hindi bababa sa 1 ektaryong niyugan.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    2. Willing to Demonstrate</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Handa at
+                                                    may kakayahang magpakita ng mga teknolohiya sa niyog sa kanyang
+                                                    sakahan anumang oras na kailangan ng kliyente.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 3: Open to Training -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    3. Open to Training</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay
+                                                    may kahandaang sumailalim sa mga regular na pagsasanay</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 4: Physically Fit -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    4. Physically Fit</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">May
+                                                    pisikal na kakayahang gampanan ang mga tungkulin bilang CocoLSA
+                                                    cooperator; at</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 5: NCFRS Registered -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    5. NCFRS Registered</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Rehistrado
+                                                    sa NCFRS, at mas mainam kung miyembro ng isang CFO o CFC.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Para sa Organization -->
+                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <h5
+                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
+                                    Para sa Grupo/Organisasyon ng mga Magsasaka</h5>
+
+                                <!-- Requirements List -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                    <!-- Requirement 1: Integrated Farm -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    1. Integrated Farm</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay
+                                                    may sukat na hindi bababa sa 1 ektarya, at isang integrated at/o
+                                                    diversified na sakahan (halimbawa: niyog at pag-aalaga ng hayop).
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 2:Coconut Farmland -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    2. Coconut Farmland</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay
+                                                    nagmamay-ari at namamahala ng sakahang niyugan na may sukat na hindi
+                                                    bababa sa 1 ektarya.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 3: Valid Registration -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    3. Valid Registration</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">May valid
+                                                    na rehistrasyon mula sa SEC, CDA, DOLE, o kasalukuyang akreditasyon
+                                                    mula sa PCA.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 4:  Active Organization-->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    4. Active Organization</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Aktibo sa
+                                                    nakalipas na 3 taon sa organisasyon ng mga magsasaka o community
+                                                    enterprise development.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 5: Filipino Leaders -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    5. Filipino Leaders</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay
+                                                    binubuo ng mga Pilipinong lider-magsasaka o kasapi na:</p>
+
+                                                <!-- Sub-requirements -->
+                                                <div class="mt-4 space-y-3">
+                                                    <!-- 5.1 Demo of Coconut Technologies -->
+                                                    <div class="bg-gray-50 rounded-lg p-3 border-l-2 border-green-300">
+                                                        <h6 class="font-medium text-sm text-green-800 mb-2">5.1 Demo of
+                                                            Coconut Technologies</h6>
+                                                        <p class="text-sm text-gray-600 leading-relaxed">Handa at may
+                                                            kakayahang magpakita ng mga teknolohiya sa niyog sa kanyang
+                                                            sakahan kapag kinakailangan.</p>
+                                                    </div>
+
+                                                    <!-- 5.2 Training Ready -->
+                                                    <div class="bg-gray-50 rounded-lg p-3 border-l-2 border-green-300">
+                                                        <h6 class="font-medium text-sm text-green-800 mb-2">5.2 Training
+                                                            Ready</h6>
+                                                        <p class="text-sm text-gray-600 leading-relaxed">May kahandaang
+                                                            sumailalim at aktibong lumahok sa mga regular na pagsasanay
+                                                            upang mapalawak ang kaalaman at kasanayan; at</p>
+                                                    </div>
+
+                                                    <!-- 5.3 Physically Capable -->
+                                                    <div class="bg-gray-50 rounded-lg p-3 border-l-2 border-green-300">
+                                                        <h6 class="font-medium text-sm text-green-800 mb-2">5.3
+                                                            Physically Capable</h6>
+                                                        <p class="text-sm text-gray-600 leading-relaxed">May pisikal na
+                                                            kakayahan upang magampanan ang mga responsibilidad bilang
+                                                            isang LSA cooperator at LSA.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <h5
+                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
+                                    Para sa Individual at Grupo ng mga Magsasaka</h5>
+
+                                <!-- Requirements List -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                    <!-- Requirement 1: Filipino Coconut Farmer -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    1. Filipino Coconut Farmer</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay
+                                                    isang Pilipinong nagtatanging (may-ari, nagtatanim,
+                                                    nagtitipong-alaga) na may hindi bababa sa 1 ektaryong niyugan.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    2. Willing to Demonstrate</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Handa at
+                                                    may kakayahang magpakita ng mga teknolohiya sa niyog sa kanyang
+                                                    sakahan anumang oras na kailangan ng kliyente.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 3: Open to Training -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    3. Open to Training</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat ay
+                                                    may kahandaang sumailalim sa mga regular na pagsasanay</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 4: Physically Fit -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    4. Physically Fit</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">May
+                                                    pisikal na kakayahang gampanan ang mga tungkulin bilang CocoLSA
+                                                    cooperator; at</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md p-4 mb-6 px-10">
+                        <div class="bg-white rounded-lg p-4 mb-4">
+                            <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangang
+                                Dokumento</h5>
+                            <p class="text-sm lg:text-base text-gray-600 text-center">Siguruhing kumpleto ang lahat ng
+                                dokumento bago mag-apply
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-6 mb-8">
+                            <!-- Para sa Individual Farmers -->
+                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <!-- Requirements List -->
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                    <!-- Requirement 1: Filipino Coconut Farmer -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-center space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    1. Applicant's Checklist of Requirements</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    2. Signed Briefer</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 3: Open to Training -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    3. Self-Assessment</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 4: Physically Fit -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    4. Letter of Intent to become a CocoLSA</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    5. Farming Learning Site for Agriculture Profile Form</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-5">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    6. LSA Qualification Form</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    7. Field Validation Report</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    8. LSA Acceptance Form</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
+                                            <div class="flex-1 min-w-0">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    9. Endorsement of the RTWG</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Warning box as full-width single column -->
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
+                                    <div class="flex items-start space-x-3">
+                                        <svg class="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" fill="currentColor"
+                                            viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <h4 class="font-semibold text-xs sm:text-sm text-yellow-800 mb-1">
+                                                IMPORTANT!
+                                            </h4>
+                                            <p class="text-yellow-700 text-xs sm:text-sm">If endorsed with
+                                                financial
+                                                assistance, a
+                                                <strong>Development Plan</strong> shall be
+                                                required.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Scroll Animation Script -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    // Intersection Observer for scroll animations
+                    const observerOptions = {
+                        threshold: 0.2,
+                        rootMargin: '0px 0px -50px 0px'
+                    };
+
+                    const observer = new IntersectionObserver(function (entries) {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                // Add the animation classes when element comes into view
+                                entry.target.classList.add('animate-in');
+                                entry.target.classList.remove('opacity-0', 'translate-y-8');
+                                entry.target.classList.add('opacity-100', 'translate-y-0');
+
+                                // Animate all child elements simultaneously
+                                const children = entry.target.querySelectorAll('h1, h2, p');
+                                children.forEach((child) => {
+                                    child.classList.add('opacity-100', 'translate-y-0');
+                                    child.classList.remove('opacity-0', 'translate-y-4');
+                                });
+                            }
+                        });
+                    }, observerOptions);
+
+                    // Observe all elements with scroll-animate class
+                    const animateElements = document.querySelectorAll('.scroll-animate');
+                    animateElements.forEach(element => {
+                        observer.observe(element);
+                    });
+
+                    // Add initial styles to child elements
+                    const titleElements = document.querySelectorAll('.scroll-animate h1, .scroll-animate h2, .scroll-animate p');
+                    titleElements.forEach(element => {
+                        element.classList.add('opacity-0', 'translate-y-4');
+                    });
+                });
+            </script>
+
+            <!-- Additional CSS for enhanced animations -->
+            <style>
+                .scroll-animate {
+                    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                }
+
+                .scroll-animate.animate-in {
+                    animation: floatUp 1s ease-out forwards;
+                }
+
+                @keyframes floatUp {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+
+                    50% {
+                        opacity: 0.7;
+                        transform: translateY(-5px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                .scroll-animate h1,
+                .scroll-animate h2,
+                .scroll-animate p {
+                    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                }
+
+                /* Hover effect enhancement */
+                .scroll-animate:hover {
+                    transform: translateY(-2px);
+                }
+            </style>
         </div>
+    </div>
     </div>
 
     <section class="bg-green-50 py-12">
