@@ -1903,7 +1903,7 @@
                 margin-top: 12px;
                 font-size: 0.75rem;
                 text-align: center;
-                color: rgb(2, 54, 1);
+                color: rgb(75, 85, 99);
                 max-width: 150px;
                 line-height: 1.2;
                 font-weight: 600;
@@ -1925,8 +1925,8 @@
                 /* Increased size */
                 position: relative;
                 overflow: hidden;
-                background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%);
-                /* Gradient background */
+                background: white;
+                /* White background */
             }
 
             /* Standardized logo image styling */
@@ -1951,7 +1951,7 @@
             .logo-circle:hover {
                 transform: scale(1.12);
                 box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-                background: linear-gradient(135deg, rgb(195, 238, 181) 0%, rgb(231, 255, 226) 100%);
+                background: white;
                 border-color: rgba(9, 202, 22, 0.6);
                 /* Darker green border on hover */
             }
@@ -1985,7 +1985,7 @@
                         circle.style.overflow = 'hidden';
                         circle.style.boxShadow = '0 6px 10px rgba(0, 0, 0, 0.15)';
                         circle.style.border = '2px solid rgba(9, 202, 22, 0.2)';
-                        circle.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 250, 202, 1) 100%)';
+                        circle.style.background = 'white';
 
                         // Get the image inside
                         const img = circle.querySelector('img');
@@ -2020,6 +2020,7 @@
                     logoTexts.forEach(text => {
                         text.style.fontWeight = '600';
                         text.style.fontSize = '0.75rem';
+                        text.style.color = 'rgb(75, 85, 99)';
                     });
                 }
 
