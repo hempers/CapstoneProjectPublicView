@@ -953,7 +953,8 @@
                         <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">Nagbibigay ng tulong
                             pinansyal, kalsada, at serbisyo sa marketing upang suportahan ang mga magsasaka.</p>
                         <button
-                            class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto  hover:opacity-90"
+                            onclick="document.getElementById('support-services').scrollIntoView({behavior: 'smooth'})"
+                            class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto hover:opacity-90"
                             style="background-color: #09CA16;">
                             Alamin Pa
                             <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor"
@@ -1016,7 +1017,8 @@
                         <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Coco-based Learning Site for
                             Agriculture
                             (CocoLSA) Certification</h4>
-                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed  px-5 lg:px-10">Ang
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed  px-5 lg:px-10">
+                            Ang
                             Coco-LSA o Coco-based Learning Site
                             for Agriculture (CocoLSA) Certification ay isang sakahan na gumagamit ng angkop na
                             teknolohiya sa niyugan, nagsasagawa ng mabisang estratehiya sa pagsasaka, at matagumpay na
@@ -1557,8 +1559,9 @@
                         <div class="flex items-center flex-1 min-w-0">
                             <div
                                 class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
-                                <svg class="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
                                     </path>
                                 </svg>
@@ -1583,7 +1586,8 @@
                     <div class="bg-white rounded-lg p-6 mb-8 shadow-sm px-10">
                         <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Shared Processing Facilities
                         </h4>
-                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-5 lg:px-10">Ang Shared
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-5 lg:px-10">
+                            Ang Shared
                             Processing Facilities (SPF) ay mga pasilidad na ginagamit nang sama-sama ng mga kooperatiba
                             o indibidwal na magsasaka para sa mas episyente at de-kalidad na pagproseso ng produktong
                             niyog.</p>
@@ -1709,7 +1713,7 @@
                                         </div>
                                     </div>
 
-                                        <!-- Requirement 8: Existing Organizational Structure -->
+                                    <!-- Requirement 8: Existing Organizational Structure -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1737,7 +1741,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 4: Physically Fit -->
+                                    <!-- Requirement 10: Site Profile -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1751,9 +1755,7 @@
                                         </div>
                                     </div>
 
-
-
-                                    <!-- Requirement 5: NCFRS Registered -->
+                                    <!-- Requirement 11:List of Members -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1773,6 +1775,7 @@
                             </div>
                         </div>
                     </div>
+
 
                     <div class="bg-white rounded-md p-4 mb-6 px-10">
                         <div class="bg-white rounded-lg p-4 mb-4">
@@ -1818,6 +1821,38 @@
                     </div>
                 </div>
             </div>
+
+            <div id="support-services" class="mb-12">
+                <div class="border border-green-50 rounded-lg p-6 md:p-8 bg-green-50">
+                    <div class="flex items-center justify-between mb-3 gap-2">
+                        <div class="flex items-center flex-1 min-w-0">
+                            <div
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
+                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-xl lg:text-2xl font-bold text-gray-800 leading-tight">Support Services
+                                </h3>
+                                <p class="text-xs lg:text-sm font-sm text-gray-600 leading-tight">Mga Serbisyong Tulong
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-1 sm:space-x-3 flex-shrink-0">
+                            <div
+                                class="w-8 h-8 sm:w-14 sm:h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
+                                <img src="/images/IA logos/PM.svg" class="w-8 h-8 sm:w-12 sm:h-12 object-contain"
+                                    alt="PM Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
 
