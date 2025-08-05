@@ -973,7 +973,7 @@
 
             <!-- Social Protection Section -->
             <div id="social-protection" class="mb-12">
-                <div class="border border-gray-200 rounded-sm p-6 md:p-8"  style="background-color:rgb(230, 253, 212);" >
+                <div class="bg-green-50 border border-gray-200 rounded-md p-6 md:p-8">
                     <div class="flex items-center justify-between mb-3 gap-2">
                         <div class="flex items-center flex-1 min-w-0">
                             <div
