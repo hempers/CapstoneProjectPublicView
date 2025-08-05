@@ -1559,8 +1559,7 @@
                         <div class="flex items-center flex-1 min-w-0">
                             <div
                                 class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
                                     </path>
@@ -1828,8 +1827,7 @@
                         <div class="flex items-center flex-1 min-w-0">
                             <div
                                 class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
-                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
                                     </path>
@@ -1850,6 +1848,17 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8 shadow-sm px-8">
+                        <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Credit
+                        </h4>
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed  px-5 lg:px-10">
+                            Karaniwan, ang mga kooperatiba o indibidwal na magsasaka ay direktang tumutungo sa LBP o DBP
+                            upang makinabang sa CFID Credit Program. Ang PCA ay nagsisilbing katuwang na ahensyang
+                            tagapagpatupad ng mga bangkong ito pagdating sa beripikasyon ng NCFRS, akreditasyon ng PCA,
+                            at iba pang mga beripikasyon na may kaugnayan sa coconut value chain.</p>
+                    </div>
+
                 </div>
             </div>
 
