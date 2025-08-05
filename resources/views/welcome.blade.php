@@ -1,4 +1,4 @@
-<!-- resources/views/cfidp-proposal.blade.php -->
+<!-- resources/views/welcome.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1242,7 +1242,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 2:Coconut Farmland -->
+                                    <!-- Requirement 2: Coconut Farmland -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1272,7 +1272,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 4:  Active Organization-->
+                                    <!-- Requirement 4: Active Organization -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1413,11 +1413,11 @@
                         </div>
 
                         <div class="grid grid-cols-1 gap-6 mb-8">
-                            <!-- Para sa Individual Farmers -->
+                            <!-- Required Documents List -->
                             <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
                                 <!-- Requirements List -->
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                                    <!-- Requirement 1: Filipino Coconut Farmer -->
+                                    <!-- Document 1: Applicant's Checklist of Requirements -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-center space-x-2 sm:space-x-3 mt-0 lg:mt-2">
@@ -1429,7 +1429,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <!-- Document 2: Signed Briefer -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-5">
@@ -1441,7 +1441,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 3: Open to Training -->
+                                    <!-- Document 3: Self-Assessment -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-5">
@@ -1453,7 +1453,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 4: Physically Fit -->
+                                    <!-- Document 4: Letter of Intent to become a CocoLSA -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-5">
@@ -1600,12 +1600,12 @@
                         </div>
                         <!-- Requirements Grid -->
                         <div class="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8">
-                            <!-- Para sa Individual Farmers -->
+                            <!-- Shared Processing Facilities Requirements -->
                             <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
 
                                 <!-- Requirements List -->
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                    <!-- Requirement 1: Filipino Coconut Farmer -->
+                                    <!-- Requirement 1: Letter of Intent -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1621,7 +1621,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <!-- Requirement 2: Endorsement letter from PCA -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1637,7 +1637,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 3: Open to Training -->
+                                    <!-- Requirement 3: NCFRS Certification -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1651,7 +1651,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 4: Physically Fit -->
+                                    <!-- Requirement 4: Financial Statement for two (2) years -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1680,7 +1680,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <!-- Requirement 6: CDA Certificate of Compliance -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1695,7 +1695,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 3: Open to Training -->
+                                    <!-- Requirement 7: Articles of Cooperation and By-Laws -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1709,7 +1709,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 4: Physically Fit -->
+                                        <!-- Requirement 8: Existing Organizational Structure -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
@@ -1784,11 +1784,11 @@
                         </div>
 
                         <div class="grid grid-cols-1 gap-6 mb-8">
-                            <!-- Para sa Individual Farmers -->
+                            <!-- Additional Requirements After Approval -->
                             <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
                                 <!-- Requirements List -->
                                 <div class="grid grid-cols-1 gap-3">
-                                    <!-- Requirement 1: Filipino Coconut Farmer -->
+                                    <!-- Requirement 1: Proposal/Business Plan/Feasibility Study -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-center space-x-2 sm:space-x-3 mt-0 lg:mt-2">
@@ -1800,7 +1800,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <!-- Requirement 2: Deed of Donation/MOA/Usufruct Agreement -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
