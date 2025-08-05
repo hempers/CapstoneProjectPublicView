@@ -2121,7 +2121,7 @@
         </div>
     </div>
 
-    <section class="bg-green-50 py-12">
+    <section class="py-12" style="background-color:rgb(230, 253, 212);">
         <div class="mb-12 scroll-animate opacity-0 translate-y-8 transition-all duration-1000 ease-out">
             <h1
                 class="text-3xl lg:text-5xl text-center font-bold text-green-900 transform transition-all duration-700 mt-10">
@@ -2658,7 +2658,7 @@
     </section>
 
     <!-- Implementing Agencies -->
-    <footer class="bg-green-600 text-white py-3 flex justify-center items-center">
+    <footer class="text-white py-3 flex justify-center items-center" style="background-color: #09CA16;">
         <p class="text-sm">&copy; 2025 PCAppTrack All Rights Reserved</p>
     </footer>
 </body>
