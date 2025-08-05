@@ -973,7 +973,7 @@
 
             <!-- Social Protection Section -->
             <div id="social-protection" class="mb-12">
-                <div class="border border-green-50 rounded-lg p-6 md:p-8"  style="background-color:rgb(230, 253, 212);">
+                <div class="border border-gray-200 rounded-sm p-6 md:p-8"  style="background-color:rgb(230, 253, 212);" >
                     <div class="flex items-center justify-between mb-3 gap-2">
                         <div class="flex items-center flex-1 min-w-0">
                             <div
@@ -1006,7 +1006,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg p-6 mb-8 shadow-sm px-10">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8 shadow-sm px-10">
                         <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Coco-based Learning Site for
                             Agriculture
                             (CocoLSA) Certification</h4>
@@ -1422,7 +1422,7 @@
                                     <!-- Requirement 2: Willing to Demonstrate -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-5">
                                             <div class="flex-1 min-w-0">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1434,7 +1434,7 @@
                                     <!-- Requirement 3: Open to Training -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-5">
                                             <div class="flex-1 min-w-0">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1446,7 +1446,7 @@
                                     <!-- Requirement 4: Physically Fit -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
+                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-5">
                                             <div class="flex-1 min-w-0">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
