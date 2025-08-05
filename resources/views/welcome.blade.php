@@ -1016,7 +1016,7 @@
                         <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Coco-based Learning Site for
                             Agriculture
                             (CocoLSA) Certification</h4>
-                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-10">Ang
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed  px-5 lg:px-10">Ang
                             Coco-LSA o Coco-based Learning Site
                             for Agriculture (CocoLSA) Certification ay isang sakahan na gumagamit ng angkop na
                             teknolohiya sa niyugan, nagsasagawa ng mabisang estratehiya sa pagsasaka, at matagumpay na
@@ -1025,7 +1025,7 @@
                         <div class="mb-6">
                             <h5 class="font-semibold text-md lg:text-lg text-gray-800 mb-3">Mga Layunin ng Programa:
                             </h5>
-                            <ul class="text-sm lg:text-base text-gray-800 space-y-2 pl-4 text-justify px-10">
+                            <ul class="text-sm lg:text-base text-gray-800 space-y-2 pl-4 text-justify  px-5 lg:px-10">
                                 <li class="flex items-start font-semibold"><span
                                         class="text-green-800 mr-2 font-semibold">1.</span>Palakasin ang
                                     Kakayahan</li>
@@ -1047,7 +1047,7 @@
                             <h5 class="font-semibold text-sm lg:text-base text-gray-800 mb-4">Mga Benepisyo ng Programa:
                             </h5>
                             <div
-                                class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-3 px-8">
+                                class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-3  px-5 lg:px-10">
                                 <div
                                     class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
                                     <div
@@ -1221,7 +1221,7 @@
                             <!-- Para sa Organization -->
                             <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
                                 <h5
-                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
+                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md px-3 lg:px-0">
                                     Para sa Grupo/Organisasyon ng mga Magsasaka</h5>
 
                                 <!-- Requirements List -->
@@ -1336,7 +1336,7 @@
 
                             <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
                                 <h5
-                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
+                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md px-5 lg:px-0">
                                     Para sa Individual at Grupo ng mga Magsasaka</h5>
 
                                 <!-- Requirements List -->
@@ -1583,7 +1583,7 @@
                     <div class="bg-white rounded-lg p-6 mb-8 shadow-sm px-10">
                         <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Shared Processing Facilities
                         </h4>
-                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-10">Ang Shared
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-5 lg:px-10">Ang Shared
                             Processing Facilities (SPF) ay mga pasilidad na ginagamit nang sama-sama ng mga kooperatiba
                             o indibidwal na magsasaka para sa mas episyente at de-kalidad na pagproseso ng produktong
                             niyog.</p>
@@ -1631,7 +1631,8 @@
                                                     2.
                                                     Endorsement letter from PCA</h6>
                                                 <p class="text-sm text-gray-600 leading-relaxed text-justify">
-                                                    Endorsement mula sa Provincial/Regional/Central Office</p>
+                                                    Opisyal na endorsement mula sa Provincial/Regional/Central Office
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -1643,10 +1644,9 @@
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    3. Open to Training</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat
-                                                    ay
-                                                    may kahandaang sumailalim sa mga regular na pagsasanay</p>
+                                                    3. NCFRS Certification</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Kumpirmado
+                                                    at opisyal na inisyu ng Regional Office</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1658,13 +1658,100 @@
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    4. Physically Fit</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">May
-                                                    pisikal na kakayahang gampanan ang mga tungkulin bilang CocoLSA
-                                                    cooperator; at</p>
+                                                    4. Financial Statement for two (2) years</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">2 years
+                                                    external audit financial statement</p>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    5. CDA Registration
+                                                </h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                                                    Rehistradong kooperatiba sa ilalim ng CDA
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 2: Willing to Demonstrate -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    6. CDA Certificate of Compliance</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                                                    Certificate of Compliance (updated annually)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 3: Open to Training -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    7. Articles of Cooperation and By-Laws</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Mga
+                                                    Artikulo ng Kooperasyon at By-Laws (notarizado)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 4: Physically Fit -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    8. Existing Organizational Structure</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                                                    Kasalukuyang Estruktura ng Organisasyon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    9.
+                                                    Board Resolution</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Maayos na
+                                                    notarizado; dapat nakasaad ang kaukulang kahilingan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Requirement 4: Physically Fit -->
+                                    <div
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        <div class="flex items-start space-x-2 sm:space-x-3">
+                                            <div class="flex-1 min-w-0 px-3">
+                                                <h6
+                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
+                                                    10. Community/Site Profile</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                                                    Detalyadong profile ng komunidad/lokasyon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
 
                                     <!-- Requirement 5: NCFRS Registered -->
                                     <div
@@ -1673,215 +1760,12 @@
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    5. NCFRS Registered</h6>
+                                                    11.
+                                                    Official List of Members</h6>
                                                 <p class="text-sm text-gray-600 leading-relaxed text-justify">
-                                                    Rehistrado
-                                                    sa NCFRS, at mas mainam kung miyembro ng isang CFO o CFC.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Para sa Organization -->
-                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
-                                <h5
-                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
-                                    Para sa Grupo/Organisasyon ng mga Magsasaka</h5>
-
-                                <!-- Requirements List -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                    <!-- Requirement 1: Integrated Farm -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3">
-                                            <div class="flex-1 min-w-0 px-3">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    1. Integrated Farm</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat
-                                                    ay
-                                                    may sukat na hindi bababa sa 1 ektarya, at isang integrated at/o
-                                                    diversified na sakahan (halimbawa: niyog at pag-aalaga ng
-                                                    hayop).
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Requirement 2:Coconut Farmland -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3">
-                                            <div class="flex-1 min-w-0 px-3">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    2. Coconut Farmland</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat
-                                                    ay
-                                                    nagmamay-ari at namamahala ng sakahang niyugan na may sukat na
-                                                    hindi
-                                                    bababa sa 1 ektarya.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Requirement 3: Valid Registration -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3">
-                                            <div class="flex-1 min-w-0 px-3">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    3. Valid Registration</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">May
-                                                    valid
-                                                    na rehistrasyon mula sa SEC, CDA, DOLE, o kasalukuyang
-                                                    akreditasyon
-                                                    mula sa PCA.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Requirement 4:  Active Organization-->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3">
-                                            <div class="flex-1 min-w-0 px-3">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    4. Active Organization</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Aktibo
-                                                    sa
-                                                    nakalipas na 3 taon sa organisasyon ng mga magsasaka o community
-                                                    enterprise development.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Requirement 5: Filipino Leaders -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
-                                        <div class="flex items-start space-x-2 sm:space-x-3">
-                                            <div class="flex-1 min-w-0 px-3">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    5. Filipino Leaders</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat
-                                                    ay
-                                                    binubuo ng mga Pilipinong lider-magsasaka o kasapi na:</p>
-
-                                                <!-- Sub-requirements -->
-                                                <div class="mt-4 space-y-3">
-                                                    <!-- 5.1 Demo of Coconut Technologies -->
-                                                    <div class="bg-gray-50 rounded-lg p-3 border-l-2 border-green-300">
-                                                        <h6 class="font-medium text-sm text-green-800 mb-2">5.1 Demo
-                                                            of
-                                                            Coconut Technologies</h6>
-                                                        <p class="text-sm text-gray-600 leading-relaxed">Handa at
-                                                            may
-                                                            kakayahang magpakita ng mga teknolohiya sa niyog sa
-                                                            kanyang
-                                                            sakahan kapag kinakailangan.</p>
-                                                    </div>
-
-                                                    <!-- 5.2 Training Ready -->
-                                                    <div class="bg-gray-50 rounded-lg p-3 border-l-2 border-green-300">
-                                                        <h6 class="font-medium text-sm text-green-800 mb-2">5.2
-                                                            Training
-                                                            Ready</h6>
-                                                        <p class="text-sm text-gray-600 leading-relaxed">May
-                                                            kahandaang
-                                                            sumailalim at aktibong lumahok sa mga regular na
-                                                            pagsasanay
-                                                            upang mapalawak ang kaalaman at kasanayan; at</p>
-                                                    </div>
-
-                                                    <!-- 5.3 Physically Capable -->
-                                                    <div class="bg-gray-50 rounded-lg p-3 border-l-2 border-green-300">
-                                                        <h6 class="font-medium text-sm text-green-800 mb-2">5.3
-                                                            Physically Capable</h6>
-                                                        <p class="text-sm text-gray-600 leading-relaxed">May pisikal
-                                                            na
-                                                            kakayahan upang magampanan ang mga responsibilidad
-                                                            bilang
-                                                            isang LSA cooperator at LSA.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
-                                <h5
-                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
-                                    Para sa Individual at Grupo ng mga Magsasaka</h5>
-
-                                <!-- Requirements List -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                    <!-- Requirement 1: Filipino Coconut Farmer -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3">
-                                            <div class="flex-1 min-w-0 px-3">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    1. Filipino Coconut Farmer</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat
-                                                    ay
-                                                    isang Pilipinong nagtatanging (may-ari, nagtatanim,
-                                                    nagtitipong-alaga) na may hindi bababa sa 1 ektaryong niyugan.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Requirement 2: Willing to Demonstrate -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3">
-                                            <div class="flex-1 min-w-0 px-3">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    2. Willing to Demonstrate</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Handa
-                                                    at
-                                                    may kakayahang magpakita ng mga teknolohiya sa niyog sa kanyang
-                                                    sakahan anumang oras na kailangan ng kliyente.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Requirement 3: Open to Training -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3">
-                                            <div class="flex-1 min-w-0 px-3">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    3. Open to Training</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat
-                                                    ay
-                                                    may kahandaang sumailalim sa mga regular na pagsasanay</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Requirement 4: Physically Fit -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3">
-                                            <div class="flex-1 min-w-0 px-3">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    4. Physically Fit</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">May
-                                                    pisikal na kakayahang gampanan ang mga tungkulin bilang CocoLSA
-                                                    cooperator; at</p>
+                                                    Hindi bababa sa 100 miyembro at hindi kukulangin sa 50%+1 ay
+                                                    rehistradong magsasaka ng niyog – na beripikado sa pamamagitan ng
+                                                    NCFRS Certification</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1889,13 +1773,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="bg-white rounded-md p-4 mb-6 px-10">
                         <div class="bg-white rounded-lg p-4 mb-4">
-                            <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangang
-                                Dokumento</h5>
-                            <p class="text-sm lg:text-base text-gray-600 text-center">Siguruhing kumpleto ang lahat
-                                ng
-                                dokumento bago mag-apply
+                            <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Karagdagang
+                                Kailanganin</h5>
+                            <p class="text-sm lg:text-base text-gray-600 text-center">Pagkatapos ng pag-apruba
+                                ng Central Office (CO) at bago ang aktwal na konstruksyon ng pasilidad
                             </p>
                         </div>
 
@@ -1903,7 +1787,7 @@
                             <!-- Para sa Individual Farmers -->
                             <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
                                 <!-- Requirements List -->
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                <div class="grid grid-cols-1 gap-3">
                                     <!-- Requirement 1: Filipino Coconut Farmer -->
                                     <div
                                         class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
@@ -1911,7 +1795,7 @@
                                             <div class="flex-1 min-w-0">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    1. Applicant's Checklist of Requirements</h6>
+                                                    1. Proposal/Business Plan/Feasibility Study</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1923,111 +1807,9 @@
                                             <div class="flex-1 min-w-0">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    2. Signed Briefer</h6>
+                                                    2. Deed of Donation of Lot if private property; MOA/Usufruct
+                                                    Agreement if Lot is a government property.</h6>
                                             </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Requirement 3: Open to Training -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
-                                            <div class="flex-1 min-w-0">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    3. Self-Assessment</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Requirement 4: Physically Fit -->
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
-                                            <div class="flex-1 min-w-0">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    4. Letter of Intent to become a CocoLSA</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
-                                            <div class="flex-1 min-w-0">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    5. Farming Learning Site for Agriculture Profile Form</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-5">
-                                            <div class="flex-1 min-w-0">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    6. LSA Qualification Form</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
-                                            <div class="flex-1 min-w-0">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    7. Field Validation Report</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
-                                            <div class="flex-1 min-w-0">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    8. LSA Acceptance Form</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                        <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-2">
-                                            <div class="flex-1 min-w-0">
-                                                <h6
-                                                    class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    9. Endorsement of the RTWG</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Warning box as full-width single column -->
-                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
-                                    <div class="flex items-start space-x-3">
-                                        <svg class="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <div>
-                                            <h4 class="font-semibold text-xs sm:text-sm text-yellow-800 mb-1">
-                                                IMPORTANT!
-                                            </h4>
-                                            <p class="text-yellow-700 text-xs sm:text-sm">If endorsed with
-                                                financial
-                                                assistance, a
-                                                <strong>Development Plan</strong> shall be
-                                                required.
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
