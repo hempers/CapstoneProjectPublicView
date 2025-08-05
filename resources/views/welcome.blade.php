@@ -973,7 +973,7 @@
 
             <!-- Social Protection Section -->
             <div id="social-protection" class="mb-12">
-                <div class="border border-green-50 rounded-lg p-6 md:p-8 bg-green-50">
+                <div class="border border-green-50 rounded-lg p-6 md:p-8"  style="background-color:rgb(230, 253, 212);">
                     <div class="flex items-center justify-between mb-3 gap-2">
                         <div class="flex items-center flex-1 min-w-0">
                             <div
@@ -1041,7 +1041,7 @@
                             <h5 class="font-semibold text-sm lg:text-base text-gray-800 mb-4">Mga Benepisyo ng Programa:
                             </h5>
                             <div
-                                class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-3 ml-8 sm:ml-10 lg:ml-10 px-10">
+                                class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-3 px-8">
                                 <div
                                     class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
                                     <div
@@ -1067,9 +1067,7 @@
                                                 clip-rule="evenodd"></path>
                                         </svg>
                                     </div>
-                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Demonstration<br
-                                            class="hidden xs:block">
-                                        Services</span>
+                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Demonstration Services</span>
                                 </div>
 
                                 <div
@@ -1083,8 +1081,7 @@
                                                 clip-rule="evenodd"></path>
                                         </svg>
                                     </div>
-                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Information<br
-                                            class="hidden xs:block"> Support</span>
+                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Information Support</span>
                                 </div>
 
                                 <div
@@ -1098,13 +1095,11 @@
                                                 clip-rule="evenodd"></path>
                                         </svg>
                                     </div>
-                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Technical<br
-                                            class="hidden xs:block">
-                                        Assistance</span>
+                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Technical Assistance</span>
                                 </div>
 
                                 <div
-                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200 xs:col-span-2 sm:col-span-1">
+                                    class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
                                     <div
                                         class="w-8 h-8 sm:w-9 sm:h-9 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
                                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor"
@@ -1113,9 +1108,7 @@
                                             </path>
                                         </svg>
                                     </div>
-                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Complementary<br
-                                            class="hidden xs:block">
-                                        Projects</span>
+                                    <span class="text-sm font-medium text-gray-700 leading-tight block">Complementary Projects</span>
                                 </div>
                             </div>
                         </div>
