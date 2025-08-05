@@ -888,7 +888,7 @@
                             sa kalusugan, scholarship, at insurance para sa mga magsasaka ng niyog.</p>
                         <button
                             onclick="document.getElementById('social-protection').scrollIntoView({behavior: 'smooth'})"
-                            class="w-full hover:bg-green-600 text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto" style="background-color: #09CA16; hover: color: #07B812;">
+                            class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto hover:opacity-90" style="background-color: #09CA16;">
                             Alamin Pa
                             <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -919,7 +919,7 @@
                             magsasaka na iproseso ang niyog upang madagdagan ang kanilang kita.</p>
                         <button
                             onclick="document.getElementById('integrated-coconut').scrollIntoView({behavior: 'smooth'})"
-                            class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto">
+                            class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto hover:opacity-90" style="background-color: #09CA16;">
                             Alamin Pa
                             <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -935,7 +935,7 @@
                     class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden group sm:col-span-2 lg:col-span-1">
                     <div class="p-6 sm:p-8 flex flex-col h-full text-center">
                         <div class="flex items-center justify-center mb-4">
-                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center"  style="background-color:rgba(216, 247, 191, 1);">
                                 <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -948,7 +948,7 @@
                         <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">Nagbibigay ng tulong
                             pinansyal, kalsada, at serbisyo sa marketing upang suportahan ang mga magsasaka.</p>
                         <button
-                            class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105  mt-auto">
+                            class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto  hover:opacity-90" style="background-color: #09CA16;">
                             Alamin Pa
                             <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
