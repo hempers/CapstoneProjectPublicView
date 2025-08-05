@@ -1559,7 +1559,7 @@
                                 class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
                                 <svg class="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
-                                         d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
                                     </path>
                                 </svg>
                             </div>
@@ -1602,9 +1602,6 @@
                         <div class="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8">
                             <!-- Para sa Individual Farmers -->
                             <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
-                                <h5
-                                    class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
-                                    Para sa Individual na mga Magsasaka</h5>
 
                                 <!-- Requirements List -->
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -1615,11 +1612,10 @@
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    1. Filipino Coconut Farmer</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Dapat
-                                                    ay
-                                                    isang Pilipinong nagtatanging (may-ari, nagtatanim,
-                                                    nagtitipong-alaga) na may hindi bababa sa 1 ektaryong niyugan.
+                                                    1. Letter of Intent
+                                                </h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Liham ng
+                                                    intensyon para sa processing facility
                                                 </p>
                                             </div>
                                         </div>
@@ -1632,11 +1628,10 @@
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6
                                                     class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
-                                                    2. Willing to Demonstrate</h6>
-                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">Handa
-                                                    at
-                                                    may kakayahang magpakita ng mga teknolohiya sa niyog sa kanyang
-                                                    sakahan anumang oras na kailangan ng kliyente.</p>
+                                                    2.
+                                                    Endorsement letter from PCA</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                                                    Endorsement mula sa Provincial/Regional/Central Office</p>
                                             </div>
                                         </div>
                                     </div>
