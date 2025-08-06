@@ -1859,6 +1859,125 @@
                             at iba pang mga beripikasyon na may kaugnayan sa coconut value chain.</p>
                     </div>
 
+                    <div class="bg-white rounded-md p-4 mb-6 px-10">
+                        <div class="bg-white rounded-lg p-4 mb-4">
+                            <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangang
+                                Dokumento</h5>
+                            <p class="text-sm lg:text-base text-gray-600 text-center">Mga kailangang dokumento para
+                                makapag-apply ng credit
+                            </p>
+                        </div>
+
+                        <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                            <h5
+                                class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
+                                Base Requirements (of PCA)</h5>
+
+                            <!-- Requirements List -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <!-- Requirement 1: Letter of Intent -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                1. Letter of Intent
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 2: NCFRS Registration -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                2. NCFRS Registration and Certification</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 3: CSO Accreditation -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                3. CSO Accreditation issued by PCA or DA</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 4: CDA Registration -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                4. CDA Registration and COC</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 5: Financial Statement -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                5. Financial Statement for two (2) years (external audit);</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 6: Articles of Cooperation and By-Laws -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                6. Articles of Cooperation and By-Laws (duly notarized)</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 7: Existing Organizational Structure -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                7. Existing Organizational Structure</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 8: Official list of members -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                8. Official list of members</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 9: Board Resolution (if requestee is a Cooperative; not needed if individual farmer) -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                9. Board Resolution (if requestee is a Cooperative; not needed if
+                                                individual farmer)</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
