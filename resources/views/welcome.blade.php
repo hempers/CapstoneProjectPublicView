@@ -2096,7 +2096,7 @@
                             </div>
 
                             <!-- Requirements List -->
-                            <div class="grid grid-cols-1 md:grid-cols-1 gap-3">
+                            <div class="grid grid-cols-1 gap-3">
                                 <!-- Requirement 1: Letter of Intent -->
                                 <div
                                     class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
@@ -2164,6 +2164,7 @@
                                     </div>
                                 </div>
 
+                                
                                 <!-- Requirement 7: Audited Financial Statements -->
                                 <div
                                     class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
@@ -2184,6 +2185,38 @@
                                             <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
                                                 8. Board Resolution authorizing the Cooperative/ Organization to borrow
                                                 and designating the authorized signatories</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                9. Audited Financial Statements for the last year; or latest Interim Financial Statements for start-ups</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- Requirement 5: Financial Statement -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                10. Business Plan, if applicable</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 6: Articles of Cooperation and By-Laws -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                11. Current Year Business Permit</h6>
                                         </div>
                                     </div>
                                 </div>
