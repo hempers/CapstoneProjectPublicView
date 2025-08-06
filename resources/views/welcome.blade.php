@@ -2076,9 +2076,8 @@
                                         <div class="flex-1 min-w-0 px-3">
                                             <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
                                                 8. Training Certificate from an accredited provider (e.g., TESDA,
-                                                DA-ATI) on financial literacy and on projects related to the <span
-                                                    class="ml-4">coconut
-                                                    value chain</span></h6>
+                                                DA-ATI) on financial literacy and on projects related to the coconut
+                                                value chain</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -2229,9 +2228,8 @@
                                             <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
                                                 12.
                                                 Training Certificate of the cooperative and its key officers from an
-                                                accredited provider (e.g., TESDA, DA-ATI) on financial <span
-                                                    class="ml-7">literacy and on
-                                                    projects related to the coconut value chain</span> </h6>
+                                                accredited provider (e.g., TESDA, DA-ATI) on financial literacy and on
+                                                projects related to the coconut value chain</span> </h6>
                                         </div>
                                     </div>
                                 </div>
