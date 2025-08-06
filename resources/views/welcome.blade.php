@@ -2164,14 +2164,36 @@
                                     </div>
                                 </div>
 
-                                
+                                <!-- Requirement 5: Financial Statement -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                7. Business Plan, if applicable</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 6: Articles of Cooperation and By-Laws -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                8. Current Year Business Permit</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                                 <!-- Requirement 7: Audited Financial Statements -->
                                 <div
                                     class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                     <div class="flex items-start space-x-2 sm:space-x-3">
                                         <div class="flex-1 min-w-0 px-3">
                                             <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
-                                                7. Bio-data of incumbent Officers and Board of Directors with photocopy
+                                                9. Bio-data of incumbent Officers and Board of Directors with photocopy
                                                 of valid government issued ID</h6>
                                         </div>
                                     </div>
@@ -2183,7 +2205,7 @@
                                     <div class="flex items-start space-x-2 sm:space-x-3">
                                         <div class="flex-1 min-w-0 px-3">
                                             <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
-                                                8. Board Resolution authorizing the Cooperative/ Organization to borrow
+                                                10. Board Resolution authorizing the Cooperative/ Organization to borrow
                                                 and designating the authorized signatories</h6>
                                         </div>
                                     </div>
@@ -2194,32 +2216,49 @@
                                     <div class="flex items-start space-x-2 sm:space-x-3">
                                         <div class="flex-1 min-w-0 px-3">
                                             <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
-                                                9. Audited Financial Statements for the last year; or latest Interim Financial Statements for start-ups</h6>
+                                                11. Audited Financial Statements for the last year; or latest Interim
+                                                Financial Statements for start-ups</h6>
                                         </div>
                                     </div>
                                 </div>
 
-                                 <!-- Requirement 5: Financial Statement -->
                                 <div
-                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                     <div class="flex items-start space-x-2 sm:space-x-3">
                                         <div class="flex-1 min-w-0 px-3">
                                             <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
-                                                10. Business Plan, if applicable</h6>
+                                                12.
+                                                Training Certificate of the cooperative and its key officers from an
+                                                accredited provider (e.g., TESDA, DA-ATI) on financial <span
+                                                    class="ml-7">literacy and on
+                                                    projects related to the coconut value chain</span> </h6>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <!-- Requirement 6: Articles of Cooperation and By-Laws -->
-                                <div
-                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                    <div class="flex items-start space-x-2 sm:space-x-3">
-                                        <div class="flex-1 min-w-0 px-3">
-                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
-                                                11. Current Year Business Permit</h6>
-                                        </div>
-                                    </div>
-                                </div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8 shadow-sm px-8 mt-8">
+                            <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Credit
+                            </h4>
+                            <p
+                                class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed  px-5 lg:px-10">
+                                Karaniwan, ang mga kooperatiba o indibidwal na magsasaka ay direktang tumutungo sa LBP o
+                                DBP
+                                upang makinabang sa CFID Credit Program. Ang PCA ay nagsisilbing katuwang na ahensyang
+                                tagapagpatupad ng mga bangkong ito pagdating sa beripikasyon ng NCFRS, akreditasyon ng
+                                PCA,
+                                at iba pang mga beripikasyon na may kaugnayan sa coconut value chain.</p>
+                        </div>
+
+                        <div class="bg-white rounded-md p-4 mb-6 px-10">
+                            <div class="bg-white rounded-lg p-4 mb-4">
+                                <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangang
+                                    Dokumento</h5>
+                                <p class="text-sm lg:text-base text-gray-600 text-center">Mga kailangang dokumento para
+                                    makapag-apply ng credit
+                                </p>
                             </div>
                         </div>
                     </div>
