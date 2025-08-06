@@ -1977,6 +1977,218 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 mt-7">
+                            <div class="bg-white rounded-lg p-4 mb-4">
+                                <h5
+                                    class="text-md lg:text-lg font-semibold text-gray-800 text-center py-2 sm:py-3 rounded-md mb-0">
+                                    Documentary Requirements (of DBP/LBP)</h5>
+                                <p class="text-xs lg:text-sm text-gray-600 text-center -mt-2 mb-1">Coconut Farmer
+                                    Enterprise
+                                </p>
+                            </div>
+
+                            <!-- Requirements List -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <!-- Requirement 1: Letter of Intent -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                1. DBP Loan Application Forms
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 2: NCFRS Registration -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                2. Proof of NCFRS Enlistment</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 3: CSO Accreditation -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                3. Photocopy of Certificate of Registration from the DTI/SEC</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 4: CDA Registration -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                4. Certificate of Accreditation from PCA</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 5: Financial Statement -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                5. Business Plan, if applicable</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 6: Articles of Cooperation and By-Laws -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                6. Current Year Business Permit</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 7: Audited Financial Statements -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                7. Audited Financial Statements for the last year; or latest Interim
+                                                Financial Statements for start-ups</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 8: Training Certificate -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                8. Training Certificate from an accredited provider (e.g., TESDA,
+                                                DA-ATI) on financial literacy and on projects related to the <span
+                                                    class="ml-4">coconut
+                                                    value chain</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 mt-7">
+                            <div class="bg-white rounded-lg p-4 mb-4">
+                                <h5
+                                    class="text-md lg:text-lg font-semibold text-gray-800 text-center py-2 sm:py-3 rounded-md mb-0">
+                                    Documentary Requirements (of DBP/LBP)</h5>
+                                <p class="text-xs lg:text-sm text-gray-600 text-center -mt-2 mb-1">Coconut Farmers
+                                    Cooperatives and Organizations
+                                </p>
+                            </div>
+
+                            <!-- Requirements List -->
+                            <div class="grid grid-cols-1 md:grid-cols-1 gap-3">
+                                <!-- Requirement 1: Letter of Intent -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                1. DBP Loan Application Forms
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 2: NCFRS Registration -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                2. Photocopy of Certificate of Registration from the CDA/SEC</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 3: CSO Accreditation -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                3. Certificate of Accreditation from PCA</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 4: CDA Registration -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                4. Certificate of Compliance from CDA, if applicable</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 5: Financial Statement -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                5. Certificate of Tax Exemption, if applicable</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 6: Articles of Cooperation and By-Laws -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                6. Copies of Articles of Incorporation/Cooperation and By-Laws</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 7: Audited Financial Statements -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                7. Bio-data of incumbent Officers and Board of Directors with photocopy
+                                                of valid government issued ID</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirement 8: Training Certificate -->
+                                <div
+                                    class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                    <div class="flex items-start space-x-2 sm:space-x-3">
+                                        <div class="flex-1 min-w-0 px-3">
+                                            <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
+                                                8. Board Resolution authorizing the Cooperative/ Organization to borrow
+                                                and designating the authorized signatories</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
