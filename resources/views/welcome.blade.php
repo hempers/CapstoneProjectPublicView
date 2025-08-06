@@ -97,10 +97,10 @@
         <div class="container mx-auto flex flex-col md:flex-row items-center">
             <!-- Text Section (moved first for left-side position) -->
             <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0 -mt-6">
-                <h1 class="text-3xl md:text-6xl font-extrabold text-green-900 mb-5 ml-16 mt-0">
+                <h1 class="text-3xl md:text-6xl font-extrabold text-green-900 mb-5 ml-10 lg:ml-16 px-6 mt-0">
                     Application <span style="color: #09CA16;">Tracking </span> System
                 </h1>
-                <p class="text-sm lg:text-base text-justify mb-6 ml-16 mr-9 mt-2 ">
+                <p class="text-sm lg:text-base text-justify mb-6 ml-10 lg:ml-16 mr-9 mt-2 px-6 ">
                     <span class="font-light text-gray-800">Ang PCAppTrack
                         ay isang online
                         na sistema ng programang CFIDP sa ilalim ng PCA Region V na tumutulong sa
@@ -113,7 +113,7 @@
 
                 </p>
                 <a href="#track-section"
-                    class="track-btn inline-block text-white font-bold px-6 py-2 rounded ml-16 letter-spacing-wider"
+                    class="track-btn inline-block text-white font-bold px-6 py-2 rounded ml-16 lg:ml-16 letter-spacing-wider"
                     style="background-color: #09CA16; transition: background-color 0.2s;"
                     onmouseover="this.style.backgroundColor='#079510'"
                     onmouseout="this.style.backgroundColor='#09CA16'">
