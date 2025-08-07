@@ -28,11 +28,11 @@
     <section class="bg-green-50 py-16">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
             <!-- Text Section (moved first for left-side position) -->
-            <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0 -mt-6">
-                <h1 class="text-3xl md:text-6xl font-extrabold text-green-900 mb-5 ml-10 lg:ml-16 px-6 mt-0">
+            <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0 -mt-6 px-10 lg:px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-green-900 mb-5 mt-0">
                     Application <span style="color: #09CA16;">Tracking </span> System
                 </h1>
-                <p class="text-sm lg:text-base text-justify mb-6 ml-10 lg:ml-16 mr-9 mt-2 px-6 ">
+                <p class="text-sm lg:text-base text-justify mb-6 mt-2">
                     <span class="font-light text-gray-800">Ang PCAppTrack
                         ay isang online
                         na sistema ng programang CFIDP sa ilalim ng PCA Region V na tumutulong sa
@@ -45,7 +45,7 @@
 
                 </p>
                 <a href="#track-section"
-                    class="track-btn inline-block text-white font-bold px-6 py-2 rounded ml-16 lg:ml-16 letter-spacing-wider"
+                    class="track-btn inline-block text-white font-bold px-6 py-2 rounded letter-spacing-wider"
                     style="background-color: #09CA16; transition: background-color 0.2s;"
                     onmouseover="this.style.backgroundColor='#079510'"
                     onmouseout="this.style.backgroundColor='#09CA16'">
@@ -78,7 +78,7 @@
                     Ilagay lamang ang iyong natatanging Reference ID sa itinakdang field.
                 </p>
             </div>
-            <div class="flex max-w-md mx-auto text-sm xs:text-xs px-10 sm:px-14 md:px-8 lg:px-10">
+            <div class="flex max-w-md mx-auto text-sm lg:text-base px-4 sm:px-8 md:px-6 lg:px-8">
                 <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong reference ID"
                     class="flex-grow px-4 py-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-xs placeholder:text-xs">
                 <button id="trackButton" type="button" class="px-6 py-2 rounded-r text-white font-medium"
@@ -87,38 +87,94 @@
                 </button>
             </div>
 
-            <!-- Loading Spinner -->
-            <div id="loadingSpinner" class="hidden mt-4">
-                <div
-                    class="flex items-center justify-center p-3 bg-green-50 border border-green-100 rounded-lg shadow-sm animate-pulse">
-                    <svg class="animate-spin h-5 w-5 text-green-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24">
-                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
-                        </circle>
-                        <path class="opacity-75" fill="currentColor"
-                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
-                        </path>
-                    </svg>
-                    <span class="font-medium text-green-700">Searching for application details...</span>
+            <!-- Loading Modal -->
+            <div id="loadingSpinner" class="fixed inset-0 z-50 hidden overflow-y-auto transition-opacity duration-300 ease-out">
+                <!-- Modal Backdrop -->
+                <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 backdrop-blur-sm"></div>
+                
+                <!-- Modal Content -->
+                <div class="flex items-center justify-center min-h-screen p-4">
+                    <div class="relative bg-white rounded-xl shadow-2xl max-w-md mx-auto transform translate-y-0">
+                        <!-- Loading Content -->
+                        <div class="p-8 text-center">
+                            <div class="flex flex-col items-center justify-center space-y-4">
+                                <!-- Animated Spinner -->
+                                <div class="relative">
+                                    <svg class="animate-spin h-12 w-12 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                                        </circle>
+                                        <path class="opacity-75" fill="currentColor"
+                                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                        </path>
+                                    </svg>
+                                    <!-- Pulsing ring around spinner -->
+                                    <div class="absolute inset-0 rounded-full border-2 border-green-200 animate-ping opacity-20"></div>
+                                </div>
+                                
+                                <!-- Loading Text -->
+                                <div class="space-y-2">
+                                    <h3 class="text-lg font-semibold text-gray-800">Searching Application</h3>
+                                    <p class="text-sm text-green-700 font-medium">Please wait while we search for your application details...</p>
+                                    <div class="flex justify-center space-x-1 mt-3">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full animate-bounce"></div>
+                                        <div class="w-2 h-2 bg-green-500 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                                        <div class="w-2 h-2 bg-green-500 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Error Message -->
-            <div id="errorMessage"
-                class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-lg shadow-sm animate-fadeIn">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <div class="bg-red-100 rounded-full p-1">
-                            <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
+            <!-- Error Modal -->
+            <div id="errorMessage" class="fixed inset-0 z-50 hidden overflow-y-auto transition-opacity duration-300 ease-out">
+                <!-- Modal Backdrop -->
+                <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 backdrop-blur-sm"></div>
+                
+                <!-- Modal Content -->
+                <div class="flex items-center justify-center min-h-screen p-4">
+                    <div class="relative bg-white rounded-xl shadow-2xl max-w-md mx-auto transform translate-y-0">
+                        <!-- Error Content -->
+                        <div class="p-8 text-center">
+                            <div class="flex flex-col items-center justify-center space-y-4">
+                                <!-- Error Icon -->
+                                <div class="relative">
+                                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-8 h-8 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <!-- Pulsing ring around error icon -->
+                                    <div class="absolute inset-0 rounded-full border-2 border-red-200 animate-ping opacity-20"></div>
+                                </div>
+                                
+                                <!-- Error Text -->
+                                <div class="space-y-3">
+                                    <h3 class="text-lg font-semibold text-gray-800">Application Search Error</h3>
+                                    <div id="errorText" class="text-sm text-red-700 font-medium px-2"></div>
+                                    
+                                    <!-- Suggestions -->
+                                    <div class="text-base text-gray-600 mt-3 space-y-1">
+                                        <p>Mangyaring icheck muli:</p>
+                                        <ul class="text-left text-sm list-disc list-inside space-y-1 text-gray-500">
+                                            <li>Ang iyong Reference ID ay tama</li>
+                                            <li>Ang iyong koneksyon sa internet ay matatag</li>
+                                            <li>Subukan muli sa ilang sandali</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- Close Button -->
+                                <button id="closeErrorModal" 
+                                    class="mt-4 px-6 py-2 bg-red-500 hover:bg-red-600 text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-red-300">
+                                    Subukan Muli
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="ml-3">
-                        <h3 class="text-sm font-medium text-red-800">Application Search Error</h3>
-                        <div id="errorText" class="mt-1 text-sm text-red-700"></div>
                     </div>
                 </div>
             </div>
@@ -174,7 +230,7 @@
                     </div>
 
                     <!-- Modal Body -->
-                    <div class="py-6 px-8">
+                    <div class="py-4 sm:py-6 px-4 sm:px-6 lg:px-8">
                         <!-- Application Information Section -->
                         <div class="mb-8 mt-1 pt-1">
                             <div class="flex items-center mb-4 space-x-2">
@@ -748,6 +804,14 @@
                 }
             });
 
+            // Error modal close button event listener
+            const closeErrorModalBtn = document.getElementById('closeErrorModal');
+            if (closeErrorModalBtn) {
+                closeErrorModalBtn.addEventListener('click', function() {
+                    errorMessage.classList.add('hidden');
+                });
+            }
+
             // Clear error when user starts typing
             referenceIdInput.addEventListener('input', function () {
                 errorMessage.classList.add('hidden');
@@ -756,7 +820,7 @@
     </script>
 
     <!-- CFIDP Introduction -->
-    <section class="container mx-auto px-10 py-20">
+    <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <h2 class="text-xl md:text-4xl font-bold text-green-900 mb-1 ml-5">ANO ANG <span
                 style="color: #09CA16;">CFIDP?</span></h2>
         <div class="flex flex-col md:flex-row items-center text-sm text-justify gap-9 ml-5 mr-4">
@@ -775,7 +839,7 @@
                     (hal. pagtatanim ng kape o cacao kasama ng niyog). Pinopondohan ang programang ito mula sa Coconut
                     Levy
                     Trust Fund.</p>
-                <a href="/coconut-farmers-faq" target="_blank" class="inline-block mt-3 text-sm font-medium"
+                <a href="/coconut-farmers-faq" target="_blank" class="inline-block mt-3 text-base font-medium"
                     style="color: #09CA16; transition: color 0.2s;" onmouseover="this.style.color='#079510'"
                     onmouseout="this.style.color='#09CA16'">
                     Read more <span class="ml-1">→</span>
@@ -945,11 +1009,11 @@
                         </div>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8 shadow-sm px-10">
+                    <div class="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 mb-8 shadow-sm px-3 sm:px-6 lg:px-8">
                         <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Coco-based Learning Site for
                             Agriculture
                             (CocoLSA) Certification</h4>
-                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed  px-5 lg:px-10">
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-2 sm:px-4 lg:px-6">
                             Ang
                             Coco-LSA o Coco-based Learning Site
                             for Agriculture (CocoLSA) Certification ay isang sakahan na gumagamit ng angkop na
@@ -959,7 +1023,7 @@
                         <div class="mb-6">
                             <h5 class="font-semibold text-md lg:text-lg text-gray-800 mb-3">Mga Layunin ng Programa:
                             </h5>
-                            <ul class="text-sm lg:text-base text-gray-800 space-y-2 pl-4 text-justify  px-5 lg:px-10">
+                            <ul class="text-sm lg:text-base text-gray-800 space-y-2 pl-4 text-justify px-2 sm:px-4 lg:px-6">
                                 <li class="flex items-start font-semibold"><span
                                         class="text-green-800 mr-2 font-semibold">1.</span>Palakasin ang
                                     Kakayahan</li>
@@ -981,7 +1045,7 @@
                             <h5 class="font-semibold text-sm lg:text-base text-gray-800 mb-4">Mga Benepisyo ng Programa:
                             </h5>
                             <div
-                                class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-3  px-5 lg:px-10">
+                                class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-3 px-2 sm:px-4 lg:px-6">
                                 <div
                                     class="bg-gray-50 p-2 sm:p-3 rounded-lg text-center hover:shadow-md transition-shadow duration-200">
                                     <div
@@ -1058,7 +1122,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-md p-4 mb-6 px-10">
+                    <div class="bg-white rounded-md p-3 sm:p-4 mb-6 px-3 sm:px-6 lg:px-8">
                         <div class="bg-white rounded-lg p-4 mb-4">
                             <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangan Para Sa
                                 Pag-Apply</h5>
@@ -1514,17 +1578,17 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg p-6 mb-8 shadow-sm px-10">
+                    <div class="bg-white rounded-lg p-4 sm:p-6 mb-8 shadow-sm px-3 sm:px-6 lg:px-8">
                         <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Shared Processing Facilities
                         </h4>
-                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-5 lg:px-10">
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-2 sm:px-4 lg:px-6">
                             Ang Shared
                             Processing Facilities (SPF) ay mga pasilidad na ginagamit nang sama-sama ng mga kooperatiba
                             o indibidwal na magsasaka para sa mas episyente at de-kalidad na pagproseso ng produktong
                             niyog.</p>
                     </div>
 
-                    <div class="bg-white rounded-md p-4 mb-6 px-10">
+                    <div class="bg-white rounded-md p-3 sm:p-4 mb-6 px-3 sm:px-6 lg:px-8">
                         <div class="bg-white rounded-lg p-4 mb-4">
                             <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-3 text-center">Mga Kriterya para sa
                                 Pagpili</h5>
@@ -1781,17 +1845,17 @@
                         </div>
                     </div>
 
-                    <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8 shadow-sm px-8">
+                    <div class="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 mb-8 shadow-sm px-3 sm:px-6 lg:px-8">
                         <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Credit
                         </h4>
-                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed  px-5 lg:px-10">
+                        <p class="text-sm lg:text-base text-justify text-gray-600 mb-6 leading-relaxed px-2 sm:px-4 lg:px-6">
                             Karaniwan, ang mga kooperatiba o indibidwal na magsasaka ay direktang tumutungo sa LBP o DBP
                             upang makinabang sa CFID Credit Program. Ang PCA ay nagsisilbing katuwang na ahensyang
                             tagapagpatupad ng mga bangkong ito pagdating sa beripikasyon ng NCFRS, akreditasyon ng PCA,
                             at iba pang mga beripikasyon na may kaugnayan sa coconut value chain.</p>
                     </div>
 
-                    <div class="bg-white rounded-md p-4 mb-6 px-10">
+                    <div class="bg-white rounded-md p-3 sm:p-4 mb-6 px-3 sm:px-6 lg:px-8">
                         <div class="bg-white rounded-lg p-4 mb-4">
                             <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangang
                                 Dokumento</h5>
