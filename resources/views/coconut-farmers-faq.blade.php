@@ -493,7 +493,7 @@
         <!-- Eligibility Section -->
         <section id="eligibility" class="py-16 bg-slate-50">
             <div class="container mx-auto px-4">
-                <div class="max-w-5xl mx-auto">
+                <div class="max-w-8xl mx-auto">
                     <div class="text-center mb-12">
                         <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-4">
                             Sino ang <span style="color: #09ca59ff;">Makikinabang</span> sa CFIDP?
@@ -660,7 +660,7 @@
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-4">
-                        Paano <span style="color: #09ca59ff;">Mag-register</span> sa NCFRS?
+                        Paano <span style="color: #09ca59ff;">Mag-Register</span> sa NCFRS?
                     </h2>
                     <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                         Sundin ang mga hakbang na ito para maging registered coconut farmer at mapakinabangan ang mga
@@ -668,7 +668,7 @@
                     </p>
                 </div>
 
-                <div class="max-w-5xl mx-auto">
+                <div class="max-w-8xl mx-auto">
                     <div class="bg-white rounded-xl shadow-md p-8 mb-12">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <!-- Step 1 -->
@@ -679,12 +679,12 @@
                                         <span class="text-xl font-bold text-white">1</span>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-green-900 mb-4 mt-6">Ihanda ang mga Dokumento</h3>
+                                <h3 class="text-xl font-bold text-green-900 mb-4 mt-6">Mga Kailangang Dokumento</h3>
                                 <div class="text-gray-700 text-left">
                                     <ul class="space-y-2 list-disc list-inside">
-                                        <li>Valid ID (Voter's ID, Passport, atbp.)</li>
-                                        <li>Patunay ng pag-aari ng lupa o kasunduan (para sa nangungupahan)</li>
-                                        <li>Certification mula sa Barangay</li>
+                                        <li>2x2 Picture (kinuhanan sa loob ng anim (6) na buwan)</li>
+                                        <li>Patunay ng Pagkakakilanlan ID o sertipikasyon mula sa Kapitan ng Barangay o Lider ng Tribo</li>
+                                        <li>Patunay ng Papel sa Niyugan:</li>
                                         <li>2x2 ID Picture (2 kopya)</li>
                                     </ul>
                                     <div class="mt-4 text-center">
@@ -751,11 +751,12 @@
                                     </svg>
                                 </div>
                                 <div class="ml-3">
-                                    <h4 class="text-md font-semibold text-gray-800">Mahahalagang Impormasyon:</h4>
-                                    <p class="text-sm text-gray-700 mt-1">Ang registration sa NCFRS ay libre at walang
-                                        bayad. Ang NCFRS ID ay kinakailangan bago maka-apply sa mga programa ng CFIDP.
-                                        Siguraduhin na dalhin ang lahat ng kinakailangang dokumento para maiwasan ang
-                                        pagkaantala.</p>
+                                    <h4 class="text-sm lg:text-base font-semibold text-gray-800 mt-1.5 mb-2">Mahalagang Impormasyon:</h4>
+                                    <ul class="space-y-2 list-disc list-inside">
+                                        <li>Libre ang pagpaparehistro sa NCFRS</li>
+                                        <li>Ang pag-update ng listahan ay ginagawa kada taon</li>
+                                        <li>Maaaring magtungo sa alinmang PCA Offices sa inyong lugar</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
