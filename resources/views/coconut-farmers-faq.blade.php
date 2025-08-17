@@ -190,7 +190,7 @@
                     <p class="text-base lg:text-lg text-white/90 mb-8 leading-relaxed text-center">
                         Ang <span class="font-bold">RA 11524</span> o <span class="font-bold">"Coconut Farmers and Industry
                             Trust Fund (CFITF) Act"</span>
-                        ay isang batas na nilagdaan ni Pangulong Rodrigo Roa Duterte noong Pebrero 26, 2021. 
+                        ay isang batas na nilagdaan ni Pangulong Rodrigo Roa Duterte noong Pebrero 26, 2021.
                         <br><br>
                         Layunin nito na
                         mapabuti ang pamumuhay ng mga magsasaka ng niyog sa pamamagitan ng pagbibigay ng iba't ibang
@@ -243,7 +243,8 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Social Protection Program</h3>
-                            <p class="text-gray-600 mb-3">Mga nakarehistrong magsasaka ng niyog sa NCFRS na may benepisyo tulad ng libreng pagpapagamot, insurance, scholarship, at training.</p>
+                            <p class="text-gray-600 mb-3">Mga nakarehistrong magsasaka ng niyog sa NCFRS na may benepisyo
+                                tulad ng libreng pagpapagamot, insurance, scholarship, at training.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
                                 <p class="text-xs font-medium text-gray-700 mb-1">Implementing Agencies:</p>
                                 <ul class="text-xs space-y-1 pl-1">
@@ -280,9 +281,11 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Farmers Organization and Development</h3>
-                            <p class="text-gray-600 mb-3">Hybridization o pagpaparami at pamamahagi ng mga hybrid na binhi ng niyog.</p>
+                            <p class="text-gray-600 mb-3">Hybridization o pagpaparami at pamamahagi ng mga hybrid na binhi
+                                ng niyog.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agency: <span class="text-green-700">CDA</span></p>
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agency: <span
+                                        class="text-green-700">CDA</span></p>
                             </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
@@ -319,9 +322,11 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Shared Facilities Program</h3>
-                            <p class="text-gray-600 mb-3">Community-based enterprises kasama ang intercropping, at pag-aalaga ng manok, livestock at dairy animals sa mga niyugan.</p>
+                            <p class="text-gray-600 mb-3">Community-based enterprises kasama ang intercropping, at
+                                pag-aalaga ng manok, livestock at dairy animals sa mga niyugan.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span class="text-green-700">PCA, DA</span></p>
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
+                                        class="text-green-700">PCA, DA</span></p>
                             </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
@@ -361,9 +366,11 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Scholarship Program</h3>
-                            <p class="text-gray-600 mb-3">Programa ng Scholarship para sa mga Magsasaka at kanilang pamilya para sa mas magandang kinabukasan.</p>
+                            <p class="text-gray-600 mb-3">Programa ng Scholarship para sa mga Magsasaka at kanilang pamilya
+                                para sa mas magandang kinabukasan.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agency: <span class="text-green-700">CHED</span></p>
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agency: <span
+                                        class="text-green-700">CHED</span></p>
                             </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
@@ -400,9 +407,11 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Processing Program</h3>
-                            <p class="text-gray-600 mb-3">Integrated processing ng mga produkto at downstream products na naglalayong patasin ang kita ng mga magniniyog.</p>
+                            <p class="text-gray-600 mb-3">Integrated processing ng mga produkto at downstream products na
+                                naglalayong patasin ang kita ng mga magniniyog.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span class="text-green-700">PCA, DTI</span></p>
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
+                                        class="text-green-700">PCA, DTI</span></p>
                             </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
@@ -439,9 +448,12 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Research & Development Program</h3>
-                            <p class="text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.</p>
+                            <p class="text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
+                                pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
+                            </p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span class="text-green-700">PCA, DOST</span></p>
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
+                                        class="text-green-700">PCA, DOST</span></p>
                             </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
@@ -620,7 +632,8 @@
                                     <p class="text-gray-700">Lahat ng benepisyaryo ay kailangang nakalista sa
                                         <strong>National Coconut Farmers Registry System (NCFRS)</strong> ng Philippine
                                         Coconut Authority. Ang NCFRS ay isang database ng mga kuwalipikadong magniniyog sa
-                                        buong bansa.</p>
+                                        buong bansa.
+                                    </p>
                                     <p class="text-gray-700 mt-2">Kung hindi pa kayo nakarehistro, mangyaring bumisita sa
                                         pinakamalapit na PCA Office sa inyong lugar upang magparehistro.</p>
                                     <div class="mt-4">
@@ -779,149 +792,183 @@
                     </p>
                 </div>
 
-                <div class="space-y-4 text-left bg-white p-8 rounded-xl shadow-md">
+                <div class="space-y-4 text-left bg-white p-8 rounded-xl shadow-md text-justify">
                     <!-- FAQ 1 -->
                     <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
-                        <button
-                            class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
-                            <span class="font-semibold text-slate-800">1. Ano ang CFIDP?</span>
+                        <button id="faq-button-1"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800">1. Ano ang Coconut Farmers and Industry Development
+                                Plan (CFIDP)?</span>
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7">
                                 </path>
                             </svg>
                         </button>
-                        <div class="px-6 py-4 text-gray-600 bg-green-50/50">
-                            <p>Ang CFIDP o Coconut Farmers and Industry Development Plan ay isang komprehensibong limang (5)
-                                taong plano na binuo ng Philippine Coconut Authority (PCA) para sa pag-unlad ng industriya
-                                ng niyog at pagsasaayos ng pamumuhay ng mga magniniyog sa ilalim ng RA 11524 o "Coconut
-                                Farmers and Industry Trust Fund Act".</p>
+                        <div class="px-10 py-4 text-gray-600 text-sm lg:text-base bg-green-50/50">
+                            <p>Isa sa nakasaad sa RA 11524 ay ang tungkulin ng PCA na magpanukala at bumuo ng Coconut
+                                Farmers and Industry Development Plan (CFIDP) na aaprubahan ng Pangulo ng Pilipinas. Ang
+                                CFIDP ang magiging batayan at gabay sa mga programa na gagamit ng “Trust Fund” para
+                                mapaunlad ng industriya ng niyog sa loob ng limampung taon (50 years).</p>
                         </div>
                     </div>
 
                     <!-- FAQ 2 -->
                     <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
-                        <button
-                            class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
-                            <span class="font-semibold text-slate-800">2. Ano ang nilalaman ng RA 11524?</span>
+                        <button id="faq-button-2"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800">2. Sino-sino ang tinutukoy na "Coconut Farmer" o
+                                magniniyog ayon sa batas?</span>
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                                 </path>
                             </svg>
                         </button>
-                        <div class="px-6 py-4 text-gray-600 hidden bg-green-50/50">
-                            <p>Ang RA 11524 o "Coconut Farmers and Industry Trust Fund (CFITF) Act" ay nagtatatag ng Coconut
-                                Farmers and Industry Trust Fund (CFITF) mula sa coco levy funds. Inaatasan nito ang PCA na
-                                bumuo ng CFIDP para mapakinabangan ng mga magniniyog ang pondo at mapaunlad ang industriya
-                                ng niyog sa Pilipinas.</p>
+                        <div class="px-10 py-4 text-gray-600 hidden bg-green-50/50">
+                            <p>Ang "Coconut Farmer" o magniniyog ay ang mga sumusunod:</p>
+                            <ol class="list-decimal list-outside ml-6 mt-3 space-y-3">
+                                <li>
+                                    <p>Nagmamay-ari ng lupain/niyugan na hindi hihigit sa limang (5) ektarya na:</p>
+                                    <ul class="list-disc list-outside ml-6 mt-1 space-y-1">
+                                        <li>Siya ay nag-lilinang ng kanyang lupa o tinuturing na "owner-cultivator"; o</li>
+                                        <li>Hindi siya ang naglilinang ng lupa, nguni't siya ang may kontrol o namamahala
+                                            nito;</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>Nangungupahan ng hindi hihigit sa limang (5) ektaryang niyugan o nangungupahan upang
+                                        mag-linang o mangasigwa sa pag-lilinan ng niyugan; o</p>
+                                </li>
+                                <li>
+                                    <p>Manggagawa sa niyugan, maaaring pamanahon na mga manggagawa (seasonal worker) o
+                                        itinerant, na nag-sasaka ng niyog at nag-proproseso ng kopra bilang kanilang
+                                        pangunahing kabuhayan.</p>
+                                </li>
+                            </ol>
                         </div>
                     </div>
 
                     <!-- FAQ 3 -->
                     <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
-                        <button
-                            class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
-                            <span class="font-semibold text-slate-800">3. Sino ang makikinabang sa CFIDP?</span>
+                        <button id="faq-button-3"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800">3. Anu-ano ang mga benepisyong maaaring matanggap ng
+                                coconut farmers sa ilalim ng RA 11524?</span>
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                                 </path>
                             </svg>
                         </button>
-                        <div class="px-6 py-4 text-gray-600 hidden bg-green-50/50">
-                            <p>Ang mga makikinabang sa programa ay ang mga coconut farmers, farm workers, at owners ng mga
-                                lupang sakahan ng niyog na:</p>
-                            <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
-                                <li>Nakalista sa National Coconut Farmers Registry System (NCFRS)</li>
-                                <li>May sakahang hindi lalampas sa 5 ektarya</li>
-                                <li>Naninirahan o nagsasaka sa barangay na sakop ng programa</li>
-                            </ul>
+                        <div class="px-10 py-4 text-gray-600 bg-green-50/50">
+                            <p>Ilan sa mga benepisyong matatanggap mula sa RA 11524 ay ang mga programang pangkalusugan at
+                                medikal, pangkabuhayan, pang-edukasyon, "crop insurance", programa sa pagpapahiram ng
+                                kapital, pag-organisa o pagpapabuti sa mga organisasyon ng mga magniniyog, at pagsasanay sa
+                                mga magniniyog at mga manggagawa sa niyugan upang mas mapalawak ang kanilang kaalaman at
+                                kasanayan sa larangan ng pagniniyugan.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 4 -->
                     <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
-                        <button
-                            class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
-                            <span class="font-semibold text-slate-800">4. Anu-ano ang mga programa sa ilalim ng
-                                CFIDP?</span>
+                        <button id="faq-button-4"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800">4. Saan ba kami lalapit kung gusto namin maging
+                                benepisyaryo ng mga proyektong ito?</span>
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                                 </path>
                             </svg>
                         </button>
-                        <div class="px-6 py-4 text-gray-600 hidden bg-green-50/50">
-                            <p>Ang mga pangunahing programa sa ilalim ng CFIDP ay ang mga sumusunod:</p>
-                            <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
-                                <li>Social Protection Program para sa mga magniniyog at kanilang pamilya</li>
-                                <li>Farm Improvement through Farm Inputs Program</li>
-                                <li>Shared Facilities Program</li>
-                                <li>Scholarship Program para sa mga magniniyog at kanilang anak</li>
-                                <li>Health and Medical Program</li>
-                                <li>Credit and Insurance Support Program</li>
-                                <li>Infrastructure Development Program</li>
-                                <li>Research and Development Programs</li>
-                            </ul>
+                        <div class="px-10 py-4 text-gray-600 hidden bg-green-50/50">
+                            <p>Bilang panimula at paghahanda sa mga ilulunsad na mga proyekto, ang PCA ay gumawa ng sistema
+                                ng pagpapalista para sa mga magiging benepisyaryo. Ito ay tinatawag ding National Coconut
+                                Farmers Registry System o NCFRS. Maaaring lumapit sa mga PCA Regional and Provincial Offices
+                                upang magparehistro.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 5 -->
                     <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
-                        <button
-                            class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
-                            <span class="font-semibold text-slate-800">5. Paano ako makakapag-apply para sa mga
-                                benepisyo?</span>
+                        <button id="faq-button-5"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800">5. Paano masisiguro ng PCA na maipapamahagi o
+                                maisasagawa ang mga program/proyekto para sa <span class="ml-0 lg:ml-5">kapakanan ng bawat
+                                    magniniyog sa bansa?</span></span>
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                                 </path>
                             </svg>
                         </button>
-                        <div class="px-6 py-4 text-gray-600 hidden bg-green-50/50">
-                            <p>Sundin ang mga hakbang na ito:</p>
+                        <div class="px-10 py-4 text-gray-600 hidden bg-green-50/50">
+                            <p>Mayroon apat (4) na paraan upang masiguro na maayos ang implementasyon ng mga proyekto tulad
+                                ng:</p>
                             <ol class="list-decimal list-inside mt-2 ml-4 space-y-1">
-                                <li>Magparehistro sa NCFRS sa pinakamalapit na PCA Office</li>
-                                <li>Ihanda ang mga kinakailangang dokumento:
-                                    <ul class="list-disc list-inside ml-4 mt-1">
-                                        <li>Valid ID</li>
-                                        <li>Proof of land ownership o kasunduan sa pag-upa (para sa tenant)</li>
-                                        <li>Certification mula sa Barangay</li>
-                                    </ul>
+                                <li>Qualification criteria per project component;</li>
+                                <li>Inter-agency coordination mechanism upang masubaybayan ang wastong pagbabahagi ng
+                                    benepisyo at pagpapatupad ng mga programa/proyekto;
                                 </li>
-                                <li>Makipag-ugnayan sa PCA Office para sa tamang aplikasyon process batay sa programa.</li>
+                                <li>National Coconut Farmers Registry System (NCFRS) na magiging opisyal na batayan ng
+                                    impormasyon ng mga miyembro; at</li>
+                                <li>Monitoring ng mga programa kada quarter at taunang ebalwasyon.</li>
                             </ol>
                         </div>
                     </div>
 
                     <!-- FAQ 6 -->
                     <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
-                        <button
-                            class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
-                            <span class="font-semibold text-slate-800">6. Magkano ang pondo para sa CFIDP?</span>
+                        <button id="faq-button-6"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800 mr-3">6. Ano ang dapat gawin kung mayroong lupa at
+                                gusto
+                                mapasama sa Hybridization Project mula sa <span class="ml-0 lg:ml-5"> CFIDP pero hindi
+                                    rehistrado sa NCFRS?</span> </span>
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                                 </path>
                             </svg>
                         </button>
-                        <div class="px-6 py-4 text-gray-600 hidden bg-green-50/50">
-                            <p>Ang CFIDP ay pinondohan ng Coconut Farmers and Industry Trust Fund (CFITF) na
-                                humigit-kumulang P75 bilyon. Ito ay gagamitin sa loob ng 50 taon para sa mga programa at
-                                proyektong nakakapagpabuti sa kabuhayan ng mga magniniyog at pag-unlad ng industriya ng
-                                niyog.</p>
+                        <div class="px-10 py-4 text-gray-600 hidden bg-green-50/50">
+                            <p>Kailangan magparehistro sa NCFRS upang maisama sa listahan ng mga benepisyaryo ng anumang
+                                proyekto o programa ng CFIDP.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 7 -->
                     <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
-                        <button
-                            class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
-                            <span class="font-semibold text-slate-800">7. Sino ang namamahala sa CFIDP?</span>
+                        <button id="faq-button-6"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800">8. Kung buong pamilya, (nanay, tatay at magkakapatid
+                                o mga anak) ay coconut farmers, maaari bang <span class="ml-0 lg:ml-5">lahat ay maging kabahagi ng proyektong
+                                nakapaloob sa RA 11524 at CFIDP?</span>
+                            </span>
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                                 </path>
                             </svg>
                         </button>
-                        <div class="px-6 py-4 text-gray-600 hidden bg-green-50/50">
-                            <p>Ang Philippine Coconut Authority (PCA) ang pangunahing ahensya na namamahala sa pagpapatupad
-                                ng CFIDP. Subalit, ang Trust Fund Management Committee (TFMC) ang responsible para sa
-                                pangangasiwa ng Coconut Farmers and Industry Trust Fund (CFITF).</p>
+                        <div class="px-10 py-4 text-gray-600 hidden bg-green-50/50">
+                            <p>Kung ang bawat miyembro ng pamilya ay rehistrado sa NCFRS, maaaring makasama ang lahat sa mga
+                                proyekto o programang saklaw ng RA 11524 at CFIDP.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
+                        <button id="faq-button-6"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800">8. Kung buong pamilya, (nanay, tatay at magkakapatid
+                                o mga anak) ay coconut farmers, maaari bang <span class="ml-0 lg:ml-5">lahat ay maging kabahagi ng proyektong
+                                nakapaloob sa RA 11524 at CFIDP?</span>
+                            </span>
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="px-10 py-4 text-gray-600 hidden bg-green-50/50">
+                            <p>Kung ang bawat miyembro ng pamilya ay rehistrado sa NCFRS, maaaring makasama ang lahat sa mga
+                                proyekto o programang saklaw ng RA 11524 at CFIDP.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1087,6 +1134,57 @@
         @push('scripts')
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
+                    // FAQ accordion functionality
+                    const faqButtons = document.querySelectorAll('#faq-section .faq-toggle');
+
+                    // Function to close all FAQs
+                    function closeAllFaqs() {
+                        document.querySelectorAll('#faq-section .faq-toggle').forEach(btn => {
+                            btn.classList.add('collapsed');
+                        });
+                        document.querySelectorAll('#faq-section .faq-toggle + div').forEach(content => {
+                            content.classList.add('hidden');
+                        });
+                        document.querySelectorAll('#faq-section .faq-toggle svg').forEach(svg => {
+                            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>';
+                        });
+                    }
+
+                    // Function to open specific FAQ
+                    function openFaq(button) {
+                        button.classList.remove('collapsed');
+                        const content = button.nextElementSibling;
+                        content.classList.remove('hidden');
+                        const svg = button.querySelector('svg');
+                        svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>';
+                    }
+
+                    faqButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            // Get the content div that follows this button
+                            const content = button.nextElementSibling;
+
+                            // If it's already visible, just close it
+                            if (!content.classList.contains('hidden')) {
+                                content.classList.add('hidden');
+                                const svg = button.querySelector('svg');
+                                svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>';
+                                return;
+                            }
+
+                            // Close all FAQs
+                            closeAllFaqs();
+
+                            // Open this FAQ
+                            openFaq(button);
+                        });
+                    });
+
+                    // Make the first FAQ item visible by default
+                    if (faqButtons.length > 0) {
+                        closeAllFaqs();
+                        openFaq(faqButtons[0]);
+                    }
                     // Smooth scrolling for navigation links
                     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                         anchor.addEventListener('click', function (e) {
@@ -1292,6 +1390,36 @@
                 .active-nav {
                     color: #22C55E !important;
                     font-weight: bold;
+                }
+
+                /* FAQ Accordion Styles */
+                #faq-section .faq-toggle {
+                    transition: background-color 0.3s ease;
+                }
+
+                #faq-section .faq-toggle:hover {
+                    background-color: rgba(34, 197, 94, 0.1);
+                }
+
+                #faq-section .faq-toggle+div {
+                    max-height: 0;
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in, padding 0.3s ease;
+                }
+
+                #faq-section .faq-toggle+div:not(.hidden) {
+                    max-height: 800px;
+                    /* Adjust based on your content's maximum height */
+                    opacity: 1;
+                }
+
+                #faq-section .faq-toggle svg {
+                    transition: transform 0.3s ease;
+                }
+
+                #faq-section .faq-toggle:not(.collapsed) svg {
+                    transform: rotate(180deg);
                 }
             </style>
         @endpush
