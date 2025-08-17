@@ -3090,17 +3090,18 @@
     <!-- Floating Back to Programs Button -->
     <button id="back-to-top" 
             class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 
-                   bg-green-500 hover:bg-green-700 text-white 
+                   text-white 
                    w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 
                    rounded-full shadow-lg hover:shadow-xl 
                    flex items-center justify-center 
                    transition-all duration-300 ease-in-out 
                    transform hover:scale-110 
                    opacity-0 pointer-events-none z-50"
+            style="background-color: #09ca59ff; hover:background-color: #078e3f;"
             onclick="scrollToPrograms()">
         <!-- Arrow Up Icon -->
         <svg class="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
         </svg>
         <!-- Tooltip for larger screens -->
         <span class="hidden xl:block absolute -left-24 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
