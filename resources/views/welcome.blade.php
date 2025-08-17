@@ -23,7 +23,7 @@
             <!-- Text Section (moved first for left-side position) -->
             <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0 -mt-6 px-10 lg:px-6">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-green-900 mb-5 mt-0">
-                    Application <span style="color: #09CA16;">Tracking </span> System
+                    Application <span style="color: #09ca59ff;">Tracking </span> System
                 </h1>
                 <p class="text-sm lg:text-base text-justify mb-6 mt-2">
                     <span class="font-light text-gray-800">Ang PCAppTrack
@@ -39,9 +39,9 @@
                 </p>
                 <a href="#track-section"
                     class="track-btn inline-block text-white font-bold px-6 py-2 rounded letter-spacing-wider"
-                    style="background-color: #09CA16; transition: background-color 0.2s;"
+                    style="background-color: #09ca59ff; transition: background-color 0.2s;"
                     onmouseover="this.style.backgroundColor='#079510'"
-                    onmouseout="this.style.backgroundColor='#09CA16'">
+                    onmouseout="this.style.backgroundColor='#09ca59ff'">
                     Track Application
                 </a>
             </div>
@@ -75,7 +75,7 @@
                 <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong reference ID"
                     class="flex-grow px-4 py-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-xs placeholder:text-xs">
                 <button id="trackButton" type="button" class="px-6 py-2 rounded-r text-white font-medium"
-                    style="background-color: #09CA16;">
+                    style="background-color: #09ca59ff;">
                     Track
                 </button>
             </div>
@@ -814,7 +814,7 @@
     <!-- CFIDP Introduction -->
     <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <h2 class="text-xl md:text-4xl font-bold text-green-900 mb-1 ml-5">ANO ANG <span
-                style="color: #09CA16;">CFIDP?</span></h2>
+                style="color: #09ca59ff;">CFIDP?</span></h2>
         <div class="flex flex-col md:flex-row items-center text-sm text-justify gap-9 ml-5 mr-4">
             <div class="flex-1">
                 <p class="text-gray-700 text-sm lg:text-base leading-relaxed mt-0 lg:mt-3 mr-5">Ang Coconut Farmers and
@@ -832,8 +832,8 @@
                     Levy
                     Trust Fund.</p>
                 <a href="/coconut-farmers-faq" target="_blank" class="inline-block mt-3 text-base font-medium"
-                    style="color: #09CA16; transition: color 0.2s;" onmouseover="this.style.color='#079510'"
-                    onmouseout="this.style.color='#09CA16'">
+                    style="color: #09ca59ff; transition: color 0.2s;" onmouseover="this.style.color='#079510'"
+                    onmouseout="this.style.color='#09ca59ff'">
                     Read more <span class="ml-1">→</span>
                 </a>
             </div>
@@ -879,7 +879,7 @@
                         <button
                             onclick="document.getElementById('social-protection').scrollIntoView({behavior: 'smooth'})"
                             class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto hover:opacity-90"
-                            style="background-color: #09CA16;">
+                            style="background-color: #09ca59ff;">
                             Alamin Pa
                             <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -912,7 +912,7 @@
                         <button
                             onclick="document.getElementById('integrated-coconut').scrollIntoView({behavior: 'smooth'})"
                             class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto hover:opacity-90"
-                            style="background-color: #09CA16;">
+                            style="background-color: #09ca59ff;">
                             Alamin Pa
                             <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -944,7 +944,7 @@
                         <button
                             onclick="document.getElementById('support-services').scrollIntoView({behavior: 'smooth'})"
                             class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto hover:opacity-90"
-                            style="background-color: #09CA16;">
+                            style="background-color: #09ca59ff;">
                             Alamin Pa
                             <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -961,7 +961,7 @@
             <div class="text-center mb-8 mt-10">
                 <h2 class="text-2xl md:text-5xl font-bold text-green-800 mb-2">MGA KAILANGANG IHANDA:</h2>
                 <h3 class="text-lg md:text-3xl font-extrabold text-green-800 mb-4">MGA DOKUMENTO PARA SA <span
-                        style="color: #09CA16">CFIDP PROPOSAL</span> </h3>
+                        style="color: #09ca59ff">CFIDP PROPOSAL</span> </h3>
                 <p class="text-xs lg:text-sm text-gray-600">GABAY PARA SA MGA MAGNINIYOG NA PILIPINO NA NAIS MAG-APPLY
                     SA
                     IBA'T-IBANG CFIDP PROGRAMS</p>
