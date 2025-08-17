@@ -761,17 +761,21 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="text-center">
-                        <a href="#faq-section"
-                            class="inline-block text-white font-bold px-6 py-3 rounded-md shadow-md transition-all"
-                            style="background-color: #09ca59ff;">
-                            Makipag-ugnayan Para sa Tulong sa Registration
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Scroll to Programs Button -->
+        <div id="scroll-to-programs-btn" class="fixed bottom-6 right-6 z-50 opacity-0 transform translate-y-4 transition-all duration-300 ease-in-out pointer-events-none">
+            <button class="text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 group"  style="background-color: #09ca59ff; hover:background-color: #078e3f;">
+                <svg class="w-6 h-6 transform group-hover:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
+                </svg>
+                <span class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                    Tingnan ang mga Programa
+                </span>
+            </button>
+        </div>
 
         <!-- FAQs Section -->
         <section id="faq-section" class="py-16 relative overflow-hidden"
@@ -1467,7 +1471,90 @@
                 #faq-section .faq-toggle:not(.collapsed) svg {
                     transform: rotate(180deg);
                 }
+
+                /* Scroll to Programs Button Styles */
+                #scroll-to-programs-btn.show {
+                    opacity: 1;
+                    transform: translateY(0);
+                    pointer-events: auto;
+                }
+
+                #scroll-to-programs-btn button {
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                #scroll-to-programs-btn button::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 0;
+                    height: 0;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: width 0.3s ease, height 0.3s ease;
+                }
+
+                #scroll-to-programs-btn button:hover::before {
+                    width: 100px;
+                    height: 100px;
+                }
             </style>
+        @endpush
+
+        @push('scripts')
+            <script>
+                // FAQ Toggle functionality
+                document.addEventListener('DOMContentLoaded', function() {
+                    const faqToggles = document.querySelectorAll('.faq-toggle');
+                    
+                    faqToggles.forEach(toggle => {
+                        toggle.addEventListener('click', function() {
+                            const content = this.nextElementSibling;
+                            const icon = this.querySelector('svg');
+                            
+                            if (content.classList.contains('hidden')) {
+                                content.classList.remove('hidden');
+                                icon.style.transform = 'rotate(180deg)';
+                            } else {
+                                content.classList.add('hidden');
+                                icon.style.transform = 'rotate(0deg)';
+                            }
+                        });
+                    });
+
+                    // Scroll to Programs Button functionality
+                    const scrollButton = document.getElementById('scroll-to-programs-btn');
+                    const eligibilitySection = document.getElementById('eligibility');
+                    
+                    if (scrollButton && eligibilitySection) {
+                        // Show/hide button based on scroll position
+                        window.addEventListener('scroll', function() {
+                            const eligibilityTop = eligibilitySection.offsetTop;
+                            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                            if (scrollTop >= eligibilityTop - 100) {
+                                scrollButton.classList.add('show');
+                            } else {
+                                scrollButton.classList.remove('show');
+                            }
+                        });
+                        
+                        // Scroll to programs when button is clicked
+                        scrollButton.addEventListener('click', function() {
+                            const programsSection = document.getElementById('programs');
+                            if (programsSection) {
+                                programsSection.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start'
+                                });
+                            }
+                        });
+                    }
+                });
+            </script>
         @endpush
 
 @endsection
