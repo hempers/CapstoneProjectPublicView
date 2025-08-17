@@ -222,10 +222,10 @@
         <section id="programs" class="py-16 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-4">
+                    <h2 class="text-3xl md:text-5xl font-bold text-green-900 mb-4">
                         MGA <span style="color: #09ca59ff;">PROGRAMA SA ILALIM</span> NG CFIDP
                     </h2>
-                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto ">
                         Alamin ang mga suportang mapapakinabangan ng mga magniniyog sa ilalim ng Republic Act 11524
                     </p>
                 </div>
@@ -243,28 +243,28 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Social Protection Program</h3>
-                            <p class="text-gray-600 mb-3">Tulong-pinansyal para sa mga kuwalipikadong magniniyog, kasama ang
-                                life at accident insurance, cash grants, at social benefits.</p>
-                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
-                                <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Pension program para sa matatanda
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Cash grants at tulong medikal
-                                </li>
-                            </ul>
+                            <p class="text-gray-600 mb-3">Mga nakarehistrong magsasaka ng niyog sa NCFRS na may benepisyo tulad ng libreng pagpapagamot, insurance, scholarship, at training.</p>
+                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
+                                <p class="text-xs font-medium text-gray-700 mb-1">Implementing Agencies:</p>
+                                <ul class="text-xs space-y-1 pl-1">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-12 font-semibold text-green-700">PCA</span>
+                                        <span class="text-gray-600 pl-16">Health and Medical Program (10%)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-12 font-semibold text-green-700">PCIC</span>
+                                        <span class="text-gray-600 pl-15">Crop Insurance (4%)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-12 font-semibold text-green-700">CHED</span>
+                                        <span class="text-gray-600 pl-15">Scholarships (8%)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-12 font-semibold text-green-700">ATI/TESDA</span>
+                                        <span class="text-gray-600 pl-15">Trainings/Farm Schools (8%)</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -279,9 +279,11 @@
                                         d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Farm Improvement Program</h3>
-                            <p class="text-gray-600 mb-3">Tulong para sa mga magniniyog upang mapahusay ang kanilang mga
-                                sakahan at mapataas ang kanilang ani.</p>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Farmers Organization and Development</h3>
+                            <p class="text-gray-600 mb-3">Hybridization o pagpaparami at pamamahagi ng mga hybrid na binhi ng niyog.</p>
+                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agency: <span class="text-green-700">CDA</span></p>
+                            </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -290,7 +292,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Fertilizers at agricultural inputs
+                                    Pagpapaunlad ng hybrid coconut seed farms at nursery
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -299,7 +301,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Intercropping at livestock support
+                                    Pangangalaga at pagtatanim ng mga high-yielding varieties
                                 </li>
                             </ul>
                         </div>
@@ -317,8 +319,10 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Shared Facilities Program</h3>
-                            <p class="text-gray-600 mb-3">Pagtatayo ng mga pasilidad na makakatulong sa mga magniniyog sa
-                                processing at pagdaragdag ng halaga sa kanilang produkto.</p>
+                            <p class="text-gray-600 mb-3">Community-based enterprises kasama ang intercropping, at pag-aalaga ng manok, livestock at dairy animals sa mga niyugan.</p>
+                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span class="text-green-700">PCA, DA</span></p>
+                            </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -327,7 +331,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Processing centers at makinang pangproseso
+                                    Pagsasagawa ng intercropping projects at livestock raising
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -336,7 +340,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Seed farms at nurseries para sa high-yielding varieties
+                                    Pagpapabuti ng sakahan sa pamamagitan ng native animal integration
                                 </li>
                             </ul>
                         </div>
@@ -357,8 +361,10 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Scholarship Program</h3>
-                            <p class="text-gray-600 mb-3">Educational support para sa mga magniniyog at kanilang mga anak
-                                para sa kanilang pag-aaral at teknikal na pagsasanay.</p>
+                            <p class="text-gray-600 mb-3">Programa ng Scholarship para sa mga Magsasaka at kanilang pamilya para sa mas magandang kinabukasan.</p>
+                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agency: <span class="text-green-700">CHED</span></p>
+                            </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -367,7 +373,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Scholarships sa kolehiyo at graduate studies
+                                    Pagsuporta sa edukasyon ng mga anak ng magniniyog
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -376,7 +382,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Technical at vocational training programs
+                                    Programang pang-edukasyon para sa magagaling na estudyante
                                 </li>
                             </ul>
                         </div>
@@ -393,9 +399,11 @@
                                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Health and Medical Program</h3>
-                            <p class="text-gray-600 mb-3">Tulong medikal at health services para sa mga magniniyog at
-                                kanilang pamilya.</p>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Processing Program</h3>
+                            <p class="text-gray-600 mb-3">Integrated processing ng mga produkto at downstream products na naglalayong patasin ang kita ng mga magniniyog.</p>
+                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span class="text-green-700">PCA, DTI</span></p>
+                            </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -404,7 +412,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Medical assistance at health insurance
+                                    Pasilidad para sa pag-proseso gamit ang modernong makinarya
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -413,7 +421,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Mobile clinics at health missions
+                                    Pagdaragdag ng halaga sa mga produkto ng niyog
                                 </li>
                             </ul>
                         </div>
@@ -430,9 +438,11 @@
                                         d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Credit and Insurance Program</h3>
-                            <p class="text-gray-600 mb-3">Pagkakaloob ng credit facilities at crop insurance para sa mga
-                                magniniyog.</p>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Research & Development Program</h3>
+                            <p class="text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.</p>
+                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span class="text-green-700">PCA, DOST</span></p>
+                            </div>
                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -441,7 +451,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Low-interest loans para sa farm development
+                                    Pagtatag at pagpapatibay ng mga kooperatiba at samahan
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -450,7 +460,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Crop insurance at proteksyon sa mga kalamidad
+                                    Pananaliksik, marketing at pagsulong sa industriya
                                 </li>
                             </ul>
                         </div>
