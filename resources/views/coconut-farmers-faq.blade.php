@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="fil" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFIDP - Coconut Farmers and Industry Development Plan</title>
+@extends('layouts.public', ['title' => 'Ano Ang CFIDP?'])
+
+@push('head')
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -56,47 +53,11 @@
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
-</head>
-<body class="bg-slate-50 text-slate-800">
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center space-x-4">
-                    <div class="w-12 h-12 bg-coconut-green rounded-full flex items-center justify-center">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-coconut-green-dark">CFIDP Portal</h1>
-                        <p class="text-sm text-slate-600">Department of Agriculture</p>
-                    </div>
-                </div>
-                
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-slate-700 hover:text-coconut-green font-medium transition-colors">Home</a>
-                    <a href="#benefits" class="text-slate-700 hover:text-coconut-green font-medium transition-colors">Mga Benepisyo</a>
-                    <a href="#eligibility" class="text-slate-700 hover:text-coconut-green font-medium transition-colors">Eligibility</a>
-                    <a href="#registration" class="text-slate-700 hover:text-coconut-green font-medium transition-colors">Mag-register</a>
-                    <a href="#faqs" class="text-slate-700 hover:text-coconut-green font-medium transition-colors">FAQs</a>
-                    <a href="#contact" class="text-slate-700 hover:text-coconut-green font-medium transition-colors">Contact</a>
-                </nav>
-                
-                <div class="flex items-center space-x-4">
-                    <div class="hidden sm:block text-right">
-                        <p class="text-sm font-semibold text-coconut-blue">Hotline: 8888</p>
-                        <p class="text-xs text-slate-600">24/7 Support</p>
-                    </div>
-                    <button class="md:hidden p-2 rounded-md text-slate-700 hover:bg-slate-100">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
+@endpush
+
+@section('content')
+<!-- Main Content Begin -->
+<div class="bg-slate-50 text-slate-800">
 
     <!-- Hero Section -->
     <section id="home" class="hero-bg py-20 lg:py-32">
@@ -421,50 +382,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-800 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">CFIDP Portal</h3>
-                    <p class="text-slate-400">Coconut Farmers and Industry Development Plan - Tulong para sa mga magniniyog</p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-slate-400">
-                        <li><a href="#benefits" class="hover:text-white transition-colors">Mga Benepisyo</a></li>
-                        <li><a href="#eligibility" class="hover:text-white transition-colors">Eligibility</a></li>
-                        <li><a href="#registration" class="hover:text-white transition-colors">Registration</a></li>
-                        <li><a href="#faqs" class="hover:text-white transition-colors">FAQs</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Government Links</h4>
-                    <ul class="space-y-2 text-slate-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Department of Agriculture</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Philippine Coconut Authority</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Gov.ph</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
-                    <ul class="space-y-2 text-slate-400">
-                        <li>Hotline: 8888</li>
-                        <li>Email: cfidp@da.gov.ph</li>
-                        <li>24/7 Support Available</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-                <p>&copy; 2024 Department of Agriculture - Philippine Coconut Authority. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
+@push('scripts')
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -514,6 +432,7 @@
             observer.observe(section);
         });
     </script>
-</body>
-</html>
+@endpush
+
+@endsection
 
