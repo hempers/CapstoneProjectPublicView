@@ -3098,7 +3098,7 @@
     <!-- Floating Back to Programs Button -->
     <button id="back-to-top" 
             class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 
-                   bg-green-600 hover:bg-green-500 text-white 
+                   bg-green-500 hover:bg-green-700 text-white 
                    w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 
                    rounded-full shadow-lg hover:shadow-xl 
                    flex items-center justify-center 
