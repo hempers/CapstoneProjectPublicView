@@ -850,6 +850,7 @@
         </div>
     </section>
 
+    <!-- Application Programs Section -->
     <div class="min-h-screen" style="background-color:rgb(230, 253, 212);">
         <div class="container mx-auto px-4 py-8">
             <!-- Title Section -->
@@ -1401,7 +1402,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-md p-4 mb-6 px-10">
+
+                    <!--Documents Needed-->
+                    <div id="documents-needed" class="bg-white rounded-md p-4 mb-6 px-10">
                         <div class="bg-white rounded-lg p-4 mb-4">
                             <h5 class="text-2xl font-semibold text-gray-800 mb-2 mt-5 text-center">Mga Kailangang
                                 Dokumento</h5>
@@ -3091,6 +3094,79 @@
             });
         </script>
     </section>
+
+    <!-- Floating Back to Programs Button -->
+    <button id="back-to-top" 
+            class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 
+                   bg-green-600 hover:bg-green-500 text-white 
+                   w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 
+                   rounded-full shadow-lg hover:shadow-xl 
+                   flex items-center justify-center 
+                   transition-all duration-300 ease-in-out 
+                   transform hover:scale-110 
+                   opacity-0 pointer-events-none z-50"
+            onclick="scrollToPrograms()">
+        <!-- Arrow Up Icon -->
+        <svg class="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+        <!-- Tooltip for larger screens -->
+        <span class="hidden xl:block absolute -left-24 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+            Bumalik sa Programs
+        </span>
+    </button>
+
+    <script>
+        // Back to programs functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        const documentsSection = document.getElementById('documents-needed');
+        
+        // Function to scroll to Application Programs Section
+        function scrollToPrograms() {
+            // Find the Application Programs Section
+            const programsSection = document.querySelector('div[style*="background-color:rgb(230, 253, 212)"]');
+            if (programsSection) {
+                programsSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            } else {
+                // Fallback: scroll to top if section not found
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // Show/hide button based on scroll position
+        function toggleBackToTopButton() {
+            if (documentsSection) {
+                const rect = documentsSection.getBoundingClientRect();
+                const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+                
+                if (isVisible || window.pageYOffset > documentsSection.offsetTop) {
+                    backToTopButton.classList.remove('opacity-0', 'pointer-events-none');
+                    backToTopButton.classList.add('opacity-100', 'pointer-events-auto');
+                } else {
+                    backToTopButton.classList.add('opacity-0', 'pointer-events-none');
+                    backToTopButton.classList.remove('opacity-100', 'pointer-events-auto');
+                }
+            }
+        }
+        
+        // Listen for scroll events with throttling for better performance
+        let scrollTimeout;
+        window.addEventListener('scroll', function() {
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            scrollTimeout = setTimeout(toggleBackToTopButton, 10);
+        });
+        
+        // Initial check
+        document.addEventListener('DOMContentLoaded', toggleBackToTopButton);
+    </script>
 
     <!-- Implementing Agencies -->
     <x-footer />
