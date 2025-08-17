@@ -1,6 +1,6 @@
 <!-- Header with CFIDP and PCAppTrack logos -->
 <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-2 sm:py-3">
+    <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-0     py-2 sm:py-3">
         <!-- CFIDP Logo on the left -->
         <div class="flex items-center flex-shrink-0">
             <img src="/images/img/PCAppTrack.png" alt="CFIDP Logo"
