@@ -39,6 +39,46 @@
             transition: all 0.3s ease;
         }
         
+        .float-element {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        .float-element-slow {
+            animation: floating 4s ease-in-out infinite;
+        }
+        
+        .float-element-slower {
+            animation: floating 5s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .pulse-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .pulse-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .pulse-btn:hover:before {
+            transform: translateX(0);
+        }
+        
         .card-hover:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -105,37 +145,6 @@
             }
         }
         
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: #22C55E;
-            border-radius: 5px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: #16A34A;
-        }
-        
-        .btn-primary:hover {
-            background: linear-gradient(135deg, #16A34A 0%, #15803D 100%);
-            transform: translateY(-1px);
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.6s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 @endpush
 
@@ -144,32 +153,36 @@
 <div class="bg-slate-50 text-slate-800 font-sans">
 
     <!-- Hero Section -->
-    <section class="hero-bg py-24 relative overflow-hidden">
+    <section class="hero-bg py-20 pl-10 relative overflow-hidden">
         <!-- Animated background elements -->
         <div class="absolute inset-0 z-0">
-            <div class="absolute top-20 left-10 w-20 h-20 rounded-full bg-white/10 animate-pulse"></div>
-            <div class="absolute top-40 right-20 w-32 h-32 rounded-full bg-white/5 animate-pulse" style="animation-delay: 1s;"></div>
-            <div class="absolute bottom-20 left-1/4 w-16 h-16 rounded-full bg-white/10 animate-pulse" style="animation-delay: 1.5s;"></div>
+            <div class="absolute top-20 left-10 w-20 h-20 rounded-full bg-white/10 float-element"></div>
+            <div class="absolute top-40 right-20 w-32 h-32 rounded-full bg-white/5 float-element-slow"></div>
+            <div class="absolute bottom-20 left-1/4 w-16 h-16 rounded-full bg-white/10 float-element-slower"></div>
+            <div class="absolute top-32 left-1/3 w-24 h-24 rounded-full bg-white/5 float-element"></div>
+            <div class="absolute bottom-40 right-1/4 w-28 h-28 rounded-full bg-white/10 float-element-slow"></div>
+            <div class="absolute top-3/4 right-10 w-12 h-12 rounded-full bg-white/10 float-element-slower"></div>
         </div>
         
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
-            <!-- Text Section (left-side position) -->
-            <div class="w-full md:w-1/2 text-left px-6 md:pr-12 mb-12 md:mb-0">
+        <div class="container mx-auto flex flex-col items-center justify-center text-center relative z-10">
+            <!-- Content Section (centered) -->
+            <div class="w-full max-w-3xl px-6 mb-12">
                 <div class="inline-block py-1 px-3 rounded-full bg-white/20 text-white text-sm font-medium mb-4">
                     Republic Act 11524
                 </div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
-                    Coconut Farmers and <span class="text-coconut-yellow">Industry</span> Development Plan
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight text-center">
+                    Coconut Farmers and<br> 
+                    <span class="text-coconut-yellow">Industry Development</span> Plan
                 </h1>
-                <div class="w-20 h-1.5 bg-coconut-yellow mb-6"></div>
-                <p class="text-base lg:text-lg text-white/90 mb-8 leading-relaxed">
+                <div class="w-20 h-1.5 bg-coconut-yellow mx-auto mb-6"></div>
+                <p class="text-base lg:text-lg text-white/90 mb-8 leading-relaxed text-center">
                     Ang CFIDP o Coconut Farmers and Industry Development Plan
                     ay isang komprehensibong <span class="font-bold">limang (5) taong plano</span> na binuo ng PCA para sa pag-unlad ng coconut industry 
                     at kabutihan ng mga magniniyog sa Pilipinas sa ilalim ng RA 11524 o "<span class="italic">Coconut Farmers and Industry Trust Fund Act</span>".
                     <br><br>
                     Nagbibigay ito ng suporta sa modernisasyon ng industriya at pagpapahusay ng pamumuhay ng mga magniniyog.
                 </p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
                     <a href="#programs" class="pulse-btn inline-flex items-center justify-center text-white font-bold px-8 py-3 rounded-lg shadow-lg bg-coconut-yellow hover:bg-yellow-400 transition-colors">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -184,23 +197,6 @@
                     </a>
                 </div>
             </div>
-
-            <!-- Image Section (right-side position) -->
-            <div class="w-full md:w-1/2 flex justify-center">
-                <div class="relative">
-                    <div class="absolute -inset-4 bg-white/20 rounded-full blur-xl"></div>
-                    <img src="/images/img/coconut-farmers.svg" alt="Coconut Farmers" class="w-full h-auto max-w-lg relative z-10">
-                </div>
-            </div>
-        </div>
-        
-        <!-- Wave SVG at bottom -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16">
-                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#ffffff" opacity=".25"></path>
-                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="#ffffff" opacity=".5"></path>
-                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#ffffff"></path>
-            </svg>
         </div>
     </section>
 
