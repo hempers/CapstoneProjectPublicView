@@ -31,12 +31,7 @@
             scroll-behavior: smooth;
         }
 
-        .hero-bg {
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.9) 0%, rgba(22, 163, 74, 0.9) 100%),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="coconut" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="50" cy="50" r="30" fill="rgba(252,211,77,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23coconut)"/></svg>');
-            background-size: cover;
-            background-position: center;
-        }
+       
 
         .card-hover {
             transition: all 0.3s ease;
@@ -165,7 +160,7 @@
     <div class="bg-slate-50 text-slate-800 font-sans">
 
         <!-- Hero Section -->
-        <section class="hero-bg py-12 relative overflow-hidden">
+        <section class="bg-green-50 py-12 relative overflow-hidden">
             <!-- Animated background elements -->
             <div class="absolute inset-0 z-0">
                 <div class="absolute top-20 left-10 w-20 h-20 rounded-full bg-white/10 float-element"></div>
@@ -179,15 +174,15 @@
             <div class="container mx-auto flex flex-col items-center justify-center text-center relative z-10">
                 <!-- Content Section (centered) -->
                 <div class="w-full max-w-3xl mb-12">
-                    <div class="inline-block py-1 px-3 rounded-full bg-white/20 text-white text-sm font-medium mb-4">
+                    <div class="inline-block py-1 px-3 rounded-full bg-green-500 text-white text-sm font-medium mb-4">
                         Republic Act 11524
                     </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-green-900 mb-6 leading-tight text-center">
                         Coconut Farmers and<br>
-                        <span class="text-coconut-yellow">Industry Trust</span> Fund
+                        <span style="color: #09ca59ff;">Industry Trust</span> Fund
                     </h1>
-                    <div class="w-20 h-1.5 bg-coconut-yellow mx-auto mb-6"></div>
-                    <p class="text-base lg:text-lg text-white/90 mb-8 leading-relaxed text-center">
+                    <div class="w-20 h-1.5 bg-green-900 mx-auto mb-6"></div>
+                    <p class="text-base lg:text-lg text-green-900 mb-8 leading-relaxed text-center">
                         Ang <span class="font-bold">RA 11524</span> o <span class="font-bold">"Coconut Farmers and Industry
                             Trust Fund (CFITF) Act"</span>
                         ay isang batas na nilagdaan ni Pangulong Rodrigo Roa Duterte noong Pebrero 26, 2021.
@@ -198,7 +193,7 @@
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
                         <a href="#programs"
-                            class="pulse-btn inline-flex items-center justify-center text-white font-bold px-8 py-3 rounded-lg shadow-lg bg-coconut-yellow hover:bg-yellow-400 transition-colors">
+                            class="pulse-btn inline-flex items-center justify-center text-white font-bold px-8 py-3 rounded-lg shadow-lg bg-green-500 hover:bg-green-600 transition-colors">
                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
@@ -206,7 +201,7 @@
                             Mga Programa
                         </a>
                         <a href="#faq-section"
-                            class="inline-flex items-center justify-center text-white font-bold px-8 py-3 rounded-lg border-2 border-white/30 hover:bg-white/10 transition-colors">
+                            class="inline-flex items-center justify-center text-green-900 font-bold px-8 py-3 rounded-lg border-2 border-green-700 hover:bg-white/10 transition-colors">
                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
