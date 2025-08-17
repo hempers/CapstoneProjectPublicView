@@ -773,13 +773,11 @@
         </section>
 
         <!-- FAQs Section -->
-        <section id="faq-section" class="py-16 relative overflow-hidden" style="background-color:rgb(230, 253, 212);">
-            <!-- Decorative leaf images for background -->
-            <div class="absolute left-0 top-0 opacity-20">
-                <img src="/images/img/leaf-left.svg" alt="left leaf" class="h-100 mr-20">
-            </div>
-            <div class="absolute right-0 bottom-0 opacity-20">
-                <img src="/images/img/leaf-right.svg" alt="right leaf" class="h-100">
+        <section id="faq-section" class="py-16 relative overflow-hidden"
+            style="background: linear-gradient(to bottom right, rgb(230, 253, 212), rgb(200, 245, 180));">
+            <!-- Background pattern -->
+            <div class="absolute inset-0 opacity-5 pattern-dots-sm"
+                style="background-image: radial-gradient(rgb(16, 128, 67) 2px, transparent 2px); background-size: 30px 30px;">
             </div>
 
             <div class="container mx-auto px-4 text-center relative z-10 max-w-5xl">
@@ -787,7 +785,7 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-6">
                         Mga Madalas na Tanong <span style="color: #09ca59ff;">Tungkol sa </span> CFIDP
                     </h2>
-                    <p class="text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-4">
+                    <p class="text-base text-gray-600 mb-8 max-w-2xl mx-auto px-4">
                         Narito ang mga madalas na tanong tungkol sa Coconut Farmers and Industry Development Plan.
                     </p>
                 </div>
@@ -937,8 +935,9 @@
                         <button id="faq-button-6"
                             class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
                             <span class="font-semibold text-slate-800">8. Kung buong pamilya, (nanay, tatay at magkakapatid
-                                o mga anak) ay coconut farmers, maaari bang <span class="ml-0 lg:ml-5">lahat ay maging kabahagi ng proyektong
-                                nakapaloob sa RA 11524 at CFIDP?</span>
+                                o mga anak) ay coconut farmers, maaari bang <span class="ml-0 lg:ml-5">lahat ay maging
+                                    kabahagi ng proyektong
+                                    nakapaloob sa RA 11524 at CFIDP?</span>
                             </span>
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -957,8 +956,9 @@
                         <button id="faq-button-6"
                             class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
                             <span class="font-semibold text-slate-800">8. Kung buong pamilya, (nanay, tatay at magkakapatid
-                                o mga anak) ay coconut farmers, maaari bang <span class="ml-0 lg:ml-5">lahat ay maging kabahagi ng proyektong
-                                nakapaloob sa RA 11524 at CFIDP?</span>
+                                o mga anak) ay coconut farmers, maaari bang <span class="ml-0 lg:ml-5">lahat ay maging
+                                    kabahagi ng proyektong
+                                    nakapaloob sa RA 11524 at CFIDP?</span>
                             </span>
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -968,6 +968,51 @@
                         <div class="px-10 py-4 text-gray-600 hidden bg-green-50/50">
                             <p>Kung ang bawat miyembro ng pamilya ay rehistrado sa NCFRS, maaaring makasama ang lahat sa mga
                                 proyekto o programang saklaw ng RA 11524 at CFIDP.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 9 -->
+                    <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
+                        <button id="faq-button-6"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800">9. May limitasyon ba ang pagtanggap ng benepisyo sa
+                                mga programa?</span>
+                            </span>
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="px-10 py-4 text-gray-600 hidden bg-green-50/50">
+                            <p>Walang nakasaad na polisiya ng batas na nagbabawal na maging benepisyaryo ang Coconut farmer
+                                ng higit sa isang proyekto. Gayunpaman, ayon ng PCA na ang kapakanan ng bawat miyembro sa
+                                talaan ay mabibigyan ng pansin kaya't mas bibigyang ng prioridad ang mga magniniyog na hindi
+                                pa nakakatanggap ng kahit isang programa. Bukod dito, isinasaalang-alang din ang
+                                kwalipikasyon sa pagpili ng mga benepisyaryo sa iba’t ibang programa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 10 -->
+                    <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
+                        <button id="faq-button-6"
+                            class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
+                            <span class="font-semibold text-slate-800">10. Kung miyembro na ng mga asosasyon at kooperatiba,
+                                kailangan ba muling magpa-miyembro sa <span class="ml-0 lg:ml-5"> panibagong organisasyon
+                                    upang makasali sa mga
+                                    proyekto?</span>
+                            </span>
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="px-10 py-4 text-gray-600 hidden bg-green-50/50">
+                            <p>Hindi na kailangan. Bagamat bahagi ng pagpapatupad ng mga programa ang pakikipag-ugnayan sa
+                                iba’t ibang asosasyon at kooperatiba para sa mga magniniyog sa implementasyon, kinakailangan
+                                pa rin na magpalista o magparehistro sa opisyal na talaan ng PCA na tinatawag na National
+                                Coconut Farmers Registry System o NCFRS.
                             </p>
                         </div>
                     </div>
