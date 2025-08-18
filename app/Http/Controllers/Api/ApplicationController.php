@@ -28,9 +28,9 @@ class ApplicationController extends Controller
 
             // Format the response data to match frontend expectations
             $responseData = [
-                'application_id' => $application->ApplicationID, // Using ApplicationID as reference
+                'application_id' => $application->ApplicationID, // Reference ID (ApplicationID in DB)
                 'application_title' => $application->ApplicationTitle,
-                'contact_person' => ['name' => $this->getApplicantName($application->ApplicantID)],
+                'contact_person' => $this->getContactPersonName($application->ApplicantID),
                 'date_submitted' => $application->DateSubmitted,
                 'application_status' => $application->GeneralStatus,
                 'stage_history' => $this->getApplicationHistory($application->ApplicationID),
@@ -47,15 +47,31 @@ class ApplicationController extends Controller
         }
     }
 
-    // Helper method to get applicant name
-    private function getApplicantName($applicantId)
+    // Helper method to get contact person name (ContactPersonName)
+    private function getContactPersonName($applicantId)
     {
         try {
             $applicant = \DB::table('applicant')->where('ApplicantID', $applicantId)->first();
-            return $applicant ? ($applicant->FirstName . ' ' . $applicant->LastName) : 'Unknown';
+            
+            // Try to get ContactPersonName field first, fallback to FirstName + LastName
+            if ($applicant) {
+                if (isset($applicant->ContactPersonName) && !empty($applicant->ContactPersonName)) {
+                    return $applicant->ContactPersonName;
+                } else {
+                    return ($applicant->FirstName ?? '') . ' ' . ($applicant->LastName ?? '');
+                }
+            }
+            
+            return 'Unknown';
         } catch (\Exception $e) {
             return 'Unknown';
         }
+    }
+
+    // Helper method to get applicant name (kept for backwards compatibility)
+    private function getApplicantName($applicantId)
+    {
+        return $this->getContactPersonName($applicantId);
     }
 
     // Helper method to get amount requested (you might have this in a separate table)
@@ -106,10 +122,12 @@ class ApplicationController extends Controller
     private function getApplicationHistory($applicationId)
     {
         try {
-            // Fetch actual history data from application_stage_history table based on seeder structure
+            // Fetch actual history data from application_stage_history table 
+            // Only include records where IsVisibleToApplicant = 1
             $historyRecords = \DB::table('application_stage_history')
                 ->where('ApplicationID', $applicationId)
-                ->orderBy('Date', 'desc') // Most recent first based on the Date field from seeder
+                ->where('IsVisibleToApplicant', 1) // Filter for applicant-visible records only
+                ->orderBy('Date', 'desc') // Most recent first based on the Date field
                 ->get();
             
             if ($historyRecords->isEmpty()) {
@@ -148,19 +166,20 @@ class ApplicationController extends Controller
                 return $history;
             }
 
-            // Map the database records from the seeder structure to the format expected by the frontend
+            // Map the database records to the format expected by the frontend
+            // Only records with IsVisibleToApplicant = 1 will be included
             $history = $historyRecords->map(function($record) {
                 // Get staff info based on OwnerStaffID if needed
                 $staffInfo = $this->getStaffInfo($record->OwnerStaffID);
                 
                 return [
-                    'date' => $record->Date, // Using Date field from seeder
-                    'stage' => $record->Stage, // Using Stage field from seeder
-                    'remarks' => $record->Remarks ?? '', // Using Remarks field from seeder
+                    'date' => $record->Date, // Using Date field from database
+                    'stage' => $record->Stage, // Using Stage field from database
+                    'remarks' => $record->Remarks ?? '', // Using Remarks field from database
                     'staff_name' => $staffInfo['name'] ?? 'PCA Staff',
                     'office' => $staffInfo['office'] ?? 'PCA Office',
                     'status' => $this->deriveStatusFromStage($record->Stage),
-                    'action_taken' => $record->ActionTaken // Using ActionTaken field from seeder
+                    'action_taken' => $record->ActionTaken // Using ActionTaken field from database
                 ];
             })->toArray();
 
