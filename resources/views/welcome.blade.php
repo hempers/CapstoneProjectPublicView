@@ -454,10 +454,7 @@
                     document.getElementById('modalReferenceId').textContent = data.application_id || '-';
 
                     // Get contact person name from the nested object
-                    let contactPersonName = '-';
-                    if (data.contact_person && data.contact_person.name) {
-                        contactPersonName = data.contact_person.name;
-                    }
+                    let contactPersonName = data.contact_person || '-';
                     document.getElementById('modalProponent').textContent = contactPersonName;
 
                     // Format date if available
@@ -543,44 +540,44 @@
                             }
 
                             timelineItem.innerHTML = `
-                                        <!-- Timeline dot -->
-                                        <div class="absolute left-0 top-1 mt-1">
-                                            <div class="border-2 border-white h-2 w-2 rounded-full ${dotColor} shadow-sm"></div>
-                                        </div>
-
-                                        <!-- Content -->
-                                        <div class="rounded-lg border border-gray-200 ${itemClass} p-2 shadow-sm ${index === 0 ? 'relative' : ''}">
-                                            ${index === 0 ? `<div class="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full shadow-sm">Latest Update</div>` : ''}
-                                            <!-- Header with date and status -->
-                                            <div class="flex justify-between items-center mb-1 flex-wrap">
-                                                <div class="flex items-center ${dateColor} text-xs">
-                                                    <svg class="w-2.5 h-2.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                                    </svg>
-                                                    <span>${formattedDate}</span>
-                                                    <span class="mx-1 text-gray-300">•</span>
-                                                    <span class="text-xs text-gray-400">${timeFormatted || ''}</span>
+                                                <!-- Timeline dot -->
+                                                <div class="absolute left-0 top-1 mt-1">
+                                                    <div class="border-2 border-white h-2 w-2 rounded-full ${dotColor} shadow-sm"></div>
                                                 </div>
-                                                <div>
-                                                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium bg-green-50 text-green-700">
-                                                        ${item.stage || 'Unknown Stage'}
-                                                    </span>
-                                                </div>
-                                            </div>
 
-                                            <!-- Body content -->
-                                            <div class="space-y-1">
-                                                ${item.remarks ? `<p class="text-xs text-gray-800 font-medium">${item.remarks}</p>` : ''}
-                                                ${item.action_taken ? `<p class="text-xs text-gray-600">Action: ${item.action_taken}</p>` : ''}
+                                                <!-- Content -->
+                                                <div class="rounded-lg border border-gray-200 ${itemClass} p-2 shadow-sm ${index === 0 ? 'relative' : ''}">
+                                                    ${index === 0 ? `<div class="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full shadow-sm">Latest Update</div>` : ''}
+                                                    <!-- Header with date and status -->
+                                                    <div class="flex justify-between items-center mb-1 flex-wrap">
+                                                        <div class="flex items-center ${dateColor} text-xs">
+                                                            <svg class="w-2.5 h-2.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                                            </svg>
+                                                            <span>${formattedDate}</span>
+                                                            <span class="mx-1 text-gray-300">•</span>
+                                                            <span class="text-xs text-gray-400">${timeFormatted || ''}</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium bg-green-50 text-green-700">
+                                                                ${item.stage || 'Unknown Stage'}
+                                                            </span>
+                                                        </div>
+                                                    </div>
 
-                                                <!-- Footer with personnel and office -->
-                                                <div class="flex justify-between items-center text-xs text-gray-500 pt-1 border-t border-gray-100 mt-1">
-                                                    <span>${item.staff_name || 'Not specified'}</span>
-                                                    <span>${item.office || 'N/A'}</span>
+                                                    <!-- Body content -->
+                                                    <div class="space-y-1">
+                                                        ${item.remarks ? `<p class="text-xs text-gray-800 font-medium">${item.remarks}</p>` : ''}
+                                                        ${item.action_taken ? `<p class="text-xs text-gray-600">Action: ${item.action_taken}</p>` : ''}
+
+                                                        <!-- Footer with personnel and office -->
+                                                        <div class="flex justify-between items-center text-xs text-gray-500 pt-1 border-t border-gray-100 mt-1">
+                                                            <span>${item.staff_name || 'Not specified'}</span>
+                                                            <span>${item.office || 'N/A'}</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    `;
+                                            `;
 
                             historyTimeline.appendChild(timelineItem);
                         });
@@ -623,19 +620,19 @@
                             const warningHeader = document.createElement('div');
                             warningHeader.className = 'bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4';
                             warningHeader.innerHTML = `
-                                        <div class="flex items-center">
-                                            <div class="flex-shrink-0">
-                                                <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3">
-                                                <p class="text-xs text-yellow-700 font-medium">
-                                                    Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    `;
+                                                <div class="flex items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="ml-3">
+                                                        <p class="text-xs text-yellow-700 font-medium">
+                                                            Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            `;
                             requirementsContainer.appendChild(warningHeader);
 
                             // Create a list for missing requirements
@@ -650,11 +647,11 @@
                                 const listItem = document.createElement('li');
                                 listItem.className = 'flex items-center text-sm py-2 px-1 border-b border-gray-100';
                                 listItem.innerHTML = `
-                                            <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                            <span class="text-gray-800">${reqName}</span>
-                                        `;
+                                                    <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg>
+                                                    <span class="text-gray-800">${reqName}</span>
+                                                `;
                                 list.appendChild(listItem);
                             });
 
@@ -662,12 +659,12 @@
                             const noteElement = document.createElement('div');
                             noteElement.className = 'mt-4 text-xs text-gray-600 pt-3 border-t border-gray-100';
                             noteElement.innerHTML = `
-                                        <p class="mb-2">
-                                            <span class="font-medium">Mahalaga:</span> Kinakailangan pong maisubmit ang mga nawawalang dokumento para maiproseso nang mabilis ang inyong aplikasyon.
-                                        </p>
-                                        <p>
-                                            Maaari po ninyong isubmit ang mga kulang na dokumento sa opisina ng PCA.                            </p>
-                                    `;
+                                                <p class="mb-2">
+                                                    <span class="font-medium">Mahalaga:</span> Kinakailangan pong maisubmit ang mga nawawalang dokumento para maiproseso nang mabilis ang inyong aplikasyon.
+                                                </p>
+                                                <p>
+                                                    Maaari po ninyong isubmit ang mga kulang na dokumento sa opisina ng PCA.                            </p>
+                                            `;
                             requirementsContainer.appendChild(noteElement);
                         } else {
                             // All requirements are complete
@@ -678,19 +675,19 @@
                             const completeMessage = document.createElement('div');
                             completeMessage.className = 'bg-green-50 border-l-4 border-green-400 p-4';
                             completeMessage.innerHTML = `
-                                        <div class="flex">
-                                            <div class="flex-shrink-0">
-                                                <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3">
-                                                <p class="text-sm text-green-700">
-                                                    Lahat ng kinakailangang dokumento ay kumpleto na.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    `;
+                                                <div class="flex">
+                                                    <div class="flex-shrink-0">
+                                                        <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="ml-3">
+                                                        <p class="text-sm text-green-700">
+                                                            Lahat ng kinakailangang dokumento ay kumpleto na.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            `;
                             requirementsContainer.appendChild(completeMessage);
                         }
                     } else {
@@ -2995,13 +2992,13 @@
 
         <!-- Floating Back to Programs Button -->
         <button id="back-to-top" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 
-                           text-white 
-                           w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 
-                           rounded-full shadow-lg hover:shadow-xl 
-                           flex items-center justify-center 
-                           transition-all duration-300 ease-in-out 
-                           transform hover:scale-110 
-                           opacity-0 pointer-events-none z-50"
+                                   text-white 
+                                   w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 
+                                   rounded-full shadow-lg hover:shadow-xl 
+                                   flex items-center justify-center 
+                                   transition-all duration-300 ease-in-out 
+                                   transform hover:scale-110 
+                                   opacity-0 pointer-events-none z-50"
             style="background-color: #09ca59ff; hover:background-color: #078e3f;" onclick="scrollToPrograms()">
             <!-- Arrow Up Icon -->
             <svg class="w-6 h-6 transform group-hover:-translate-y-1 transition-transform duration-300" fill="none"
