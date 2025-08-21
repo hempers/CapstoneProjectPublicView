@@ -11,11 +11,6 @@ class ApplicationController extends Controller
 {
     public function show(string $applicationId): JsonResponse
     {
-        // Add CORS headers for API access
-        header('Access-Control-Allow-Origin: *');
-        header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
-        header('Access-Control-Allow-Headers: Content-Type, Authorization');
-
         try {
             // Find the application by ApplicationID (your primary key)
             $application = applications::where('ApplicationID', $applicationId)->first();
@@ -123,10 +118,10 @@ class ApplicationController extends Controller
     {
         try {
             // Fetch actual history data from application_stage_history table 
-            // Only include records where IsVisibleToApplicant = 1
+            // Only include records where IsVisibleToApplicant = 1 (explicitly check for integer 1)
             $historyRecords = \DB::table('application_stage_history')
                 ->where('ApplicationID', $applicationId)
-                ->where('IsVisibleToApplicant', 1) // Filter for applicant-visible records only
+                ->where('IsVisibleToApplicant', '=', 1) // Explicitly filter for records with IsVisibleToApplicant = 1 only
                 ->orderBy('Date', 'desc') // Most recent first based on the Date field
                 ->get();
             
@@ -167,7 +162,7 @@ class ApplicationController extends Controller
             }
 
             // Map the database records to the format expected by the frontend
-            // Only records with IsVisibleToApplicant = 1 will be included
+            // Note: Only records with IsVisibleToApplicant = 1 are included in the query above
             $history = $historyRecords->map(function($record) {
                 // Get staff info based on OwnerStaffID if needed
                 $staffInfo = $this->getStaffInfo($record->OwnerStaffID);

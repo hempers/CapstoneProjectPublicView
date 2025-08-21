@@ -14,5 +14,4 @@ Route::get('/coconut-farmers-faq', function () {
     return view('coconut-farmers-faq');
 });
 
-// Add this route for getting application by reference ID
-Route::get('/applications/{referenceId}', [ApplicationController::class, 'getByReferenceId']);
+Route::get('/applications/{applicationId}', [ApplicationController::class, 'show']);

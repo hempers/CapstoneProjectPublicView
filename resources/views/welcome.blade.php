@@ -396,9 +396,9 @@
                         // Get API URL from environment variable or use default
                         const API_BASE_URL = '{{ env("EXTERNAL_API_URL", "http://127.0.0.1:8001") }}';
 
-                        console.log(`Fetching application data from: ${API_BASE_URL}/api/applications/${applicationId}`);
+                        console.log(`Fetching application data from: ${API_BASE_URL}/api/v1/applications/${applicationId}`);
 
-                        const response = await fetch(`${API_BASE_URL}/api/applications/${applicationId}`, {
+                        const response = await fetch(`${API_BASE_URL}/api/v1/applications/${applicationId}`, {
                             method: 'GET',
                             headers: {
                                 'Content-Type': 'application/json',
