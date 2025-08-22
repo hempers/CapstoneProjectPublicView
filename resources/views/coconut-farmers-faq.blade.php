@@ -158,13 +158,19 @@
 @section('content')
     <!-- Main Content Begin -->
     <div class="bg-slate-50 text-slate-800 font-sans">
-    
+
         <!-- Back to Programs Floating Button -->
-        <div id="back-to-programs-btn" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-50 opacity-0 transition-all duration-300 pointer-events-none">
-            <a href="#programs" class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-110 group" style="background-color: #09ca59ff;">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 4L12 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <div id="back-to-programs-btn"
+            class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-50 opacity-0 transition-all duration-300 pointer-events-none">
+            <a href="#programs"
+                class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-110 group"
+                style="background-color: #09ca59ff;">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 transform group-hover:-translate-y-1 transition-transform duration-300"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M12 4L12 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
                 </svg>
             </a>
         </div>
@@ -237,7 +243,7 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Social Protection -->
                     <div
                         class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-green-100">
@@ -302,7 +308,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pagpapaunlad ng hybrid coconut seed farms at nursery
+                                    Farmers Cooperatives Development
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -311,7 +317,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pangangalaga at pagtatanim ng mga high-yielding varieties
+                                    Farmers Association Development
                                 </li>
                             </ul>
                         </div>
@@ -328,7 +334,7 @@
                                         d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Shared Facilities Program</h3>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Hybridization</h3>
                             <p class="text-gray-600 mb-3">Community-based enterprises kasama ang intercropping, at
                                 pag-aalaga ng manok, livestock at dairy animals sa mga niyugan.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
@@ -343,7 +349,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pagsasagawa ng intercropping projects at livestock raising
+                                   Hybridization <span class="text-xs ">(DA)</span> 
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -352,7 +358,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pagpapabuti ng sakahan sa pamamagitan ng native animal integration
+                                   Hybridization Research (PCAARRD-DOST)
                                 </li>
                             </ul>
                         </div>
@@ -372,7 +378,7 @@
                                         d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Scholarship Program</h3>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Community-Based Farm Enterprise and Development</h3>
                             <p class="text-gray-600 mb-3">Programa ng Scholarship para sa mga Magsasaka at kanilang pamilya
                                 para sa mas magandang kinabukasan.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
@@ -413,7 +419,7 @@
                                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Processing Program</h3>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Integrated Coconut Processing and Downstream Products</h3>
                             <p class="text-gray-600 mb-3">Integrated processing ng mga produkto at downstream products na
                                 naglalayong patasin ang kita ng mga magniniyog.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
@@ -454,7 +460,91 @@
                                         d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Research & Development Program</h3>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Support Services</h3>
+                            <p class="text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
+                                pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
+                            </p>
+                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
+                                        class="text-green-700">PCA, DOST</span></p>
+                            </div>
+                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                                <li class="flex items-start">
+                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Pagtatag at pagpapatibay ng mga kooperatiba at samahan
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Pananaliksik, marketing at pagsulong sa industriya
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Credit and Insurance -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-green-100">
+                        <div class="h-2 bg-green-500"></div>
+                        <div class="p-6">
+                            <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                                <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Innovative Researches & Its Practical Application on Production & Distribution</h3>
+                            <p class="text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
+                                pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
+                            </p>
+                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
+                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
+                                        class="text-green-700">PCA, DOST</span></p>
+                            </div>
+                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                                <li class="flex items-start">
+                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Pagtatag at pagpapatibay ng mga kooperatiba at samahan
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Pananaliksik, marketing at pagsulong sa industriya
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Credit and Insurance -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-green-100">
+                        <div class="h-2 bg-green-500"></div>
+                        <div class="p-6">
+                            <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                                <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Program Management, Coordination and M&E</h3>
                             <p class="text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
                                 pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
                             </p>
@@ -509,18 +599,23 @@
                             Alamin kung kayo ay kwalipikado sa mga programa ng Coconut Farmers and Industry Development Plan
                         </p>
                     </div>
-                    
+
                     <!-- Eligibility Banner from RA 11524 -->
                     <div class="bg-green-600 text-white p-4 rounded-lg mb-8 shadow-md">
                         <div class="flex items-center">
-                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4 flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4 flex-shrink-0">
                                 <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9a1 1 0 00-1-1z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                             </div>
                             <div>
                                 <h4 class="font-bold text-xl mb-1">Ayon sa Republic Act 11524:</h4>
-                                <p class="text-white/90">Ang mga makikinabang sa batas na ito ay mga "coconut farmers" o magniniyog na may lupa na hindi hihigit sa limang ektarya alinsunod sa depinisyon ng RA 11524.</p>
+                                <p class="text-white/90">Ang mga makikinabang sa batas na ito ay mga "coconut farmers" o
+                                    magniniyog na may lupa na hindi hihigit sa limang ektarya alinsunod sa depinisyon ng RA
+                                    11524.</p>
                             </div>
                         </div>
                     </div>
@@ -533,52 +628,64 @@
                                         d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold text-green-900">Ang "Coconut Farmer" o Magniniyog ay ang mga Sumusunod:</h3>
+                            <h3 class="text-2xl font-bold text-green-900">Ang "Coconut Farmer" o Magniniyog ay ang mga
+                                Sumusunod:</h3>
                         </div>
 
                         <div class="space-y-6 mb-10">
                             <!-- First Category -->
                             <div class="bg-green-50 rounded-lg p-6 border border-green-100">
                                 <div class="flex items-start">
-                                    <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 mt-1">
                                         <span class="text-white font-bold">1</span>
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-semibold text-green-800 mb-3">Nagmamay-ari ng lupain/niyugan na hindi hihigit sa limang (5) ektarya na:</h4>
+                                        <h4 class="text-lg font-semibold text-green-800 mb-3">Nagmamay-ari ng lupain/niyugan
+                                            na hindi hihigit sa limang (5) ektarya na:</h4>
                                         <div class="ml-6 space-y-4">
                                             <div class="flex items-start">
                                                 <div class="min-w-[20px] mt-1 mr-2">a.</div>
-                                                <p class="text-gray-700">Siya ay nag-lilinang ng kanyang lupa o tinuturing na "owner-cultivator"; o</p>
+                                                <p class="text-gray-700">Siya ay nag-lilinang ng kanyang lupa o tinuturing
+                                                    na "owner-cultivator"; o</p>
                                             </div>
                                             <div class="flex items-start">
                                                 <div class="min-w-[20px] mt-1 mr-2">b.</div>
-                                                <p class="text-gray-700">Hindi siya ang naglilinang ng lupa, nguni't siya ang may kontrol o namamahala nito;</p>
+                                                <p class="text-gray-700">Hindi siya ang naglilinang ng lupa, nguni't siya
+                                                    ang may kontrol o namamahala nito;</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Second Category -->
                             <div class="bg-green-50 rounded-lg p-6 border border-green-100">
                                 <div class="flex items-start">
-                                    <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 mt-1">
                                         <span class="text-white font-bold">2</span>
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-semibold text-green-800 mb-3">Nangungupahan ng hindi hihigit sa limang (5) ektaryang niyugan o nangungupahan upang mag-linang o mangasigwa sa pag-lilinan ng niyugan; o</h4>
+                                        <h4 class="text-lg font-semibold text-green-800 mb-3">Nangungupahan ng hindi hihigit
+                                            sa limang (5) ektaryang niyugan o nangungupahan upang mag-linang o mangasigwa sa
+                                            pag-lilinan ng niyugan; o</h4>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Third Category -->
                             <div class="bg-green-50 rounded-lg p-6 border border-green-100">
                                 <div class="flex items-start">
-                                    <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 mt-1">
                                         <span class="text-white font-bold">3</span>
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-semibold text-green-800 mb-3">Manggagawa sa niyugan, maaaring pamanahon na mga manggagawa (seasonal worker) o itinerant, na nag-sasaka ng niyog at nag-proproseso ng kopra bilang kanilang pangunahing kabuhayan.</h4>
+                                        <h4 class="text-lg font-semibold text-green-800 mb-3">Manggagawa sa niyugan,
+                                            maaaring pamanahon na mga manggagawa (seasonal worker) o itinerant, na
+                                            nag-sasaka ng niyog at nag-proproseso ng kopra bilang kanilang pangunahing
+                                            kabuhayan.</h4>
                                     </div>
                                 </div>
                             </div>
@@ -596,7 +703,10 @@
                                 </div>
                                 <div>
                                     <h4 class="text-lg font-semibold text-gray-800 mb-2">Mahalagang Paalala:</h4>
-                                    <p class="text-gray-700"><span class="font-bold text-green-700">Tandaan:</span> Ang lahat ng uri ng coconut farmers na ito ay dapat may lupang <span class="font-bold">hindi hihigit sa limang (5) ektarya</span> alinsunod sa depinisyon ng RA 11524.</p>
+                                    <p class="text-gray-700"><span class="font-bold text-green-700">Tandaan:</span> Ang
+                                        lahat ng uri ng coconut farmers na ito ay dapat may lupang <span
+                                            class="font-bold">hindi hihigit sa limang (5) ektarya</span> alinsunod sa
+                                        depinisyon ng RA 11524.</p>
                                     <p class="text-gray-700 mt-2">Lahat ng benepisyaryo ay kailangang nakalista sa
                                         <strong>National Coconut Farmers Registry System (NCFRS)</strong> ng Philippine
                                         Coconut Authority. Ang NCFRS ay isang database ng mga kuwalipikadong magniniyog sa
@@ -945,9 +1055,11 @@
         <button
             class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 group"
             style="background-color: #09ca59ff;">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none">
-                <path d="M12 4L12 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transform group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24"
+                fill="none">
+                <path d="M12 4L12 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             <span
                 class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
@@ -964,10 +1076,10 @@
             style="background-image: radial-gradient(rgb(16, 128, 67) 2px, transparent 2px); background-size: 30px 30px;">
         </div>
 
-        <div class="container mx-auto px-4 text-center relative z-10 max-w-5xl">
+        <div class="container mx-auto px-4 text-center relative z-10 max-w-8xl">
             <div class="flex flex-col items-center justify-center text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-6">
-                    Mga Madalas na Tanong <span style="color: #09ca59ff;">Tungkol sa </span> CFIDP
+                    Mga Madalas na Katanungan <span style="color: #09ca59ff;">Tungkol sa </span> CFIDP
                 </h2>
                 <p class="text-base text-gray-600 mb-8 max-w-2xl mx-auto px-4">
                     Narito ang mga madalas na tanong tungkol sa Coconut Farmers and Industry Development Plan.
@@ -1073,8 +1185,8 @@
                     <button id="faq-button-5"
                         class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
                         <span class="font-semibold text-slate-800">5. Paano masisiguro ng PCA na maipapamahagi o
-                            maisasagawa ang mga program/proyekto para sa <span class="ml-0 lg:ml-5">kapakanan ng bawat
-                                magniniyog sa bansa?</span></span>
+                            maisasagawa ang mga program/proyekto para sa kapakanan ng bawat
+                            <span class="ml-0 lg:ml-5">magniniyog sa bansa?</span></span>
                         <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
@@ -1101,8 +1213,8 @@
                         class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
                         <span class="font-semibold text-slate-800 mr-3">6. Ano ang dapat gawin kung mayroong lupa at
                             gusto
-                            mapasama sa Hybridization Project mula sa <span class="ml-0 lg:ml-5"> CFIDP pero hindi
-                                rehistrado sa NCFRS?</span> </span>
+                            mapasama sa Hybridization Project mula sa CFIDP pero hindi
+                            rehistrado sa <span class="ml-0 lg:ml-5"> NCFRS?</span> </span>
                         <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
@@ -1119,8 +1231,8 @@
                     <button id="faq-button-6"
                         class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
                         <span class="font-semibold text-slate-800">8. Kung buong pamilya, (nanay, tatay at magkakapatid
-                            o mga anak) ay coconut farmers, maaari bang <span class="ml-0 lg:ml-5">lahat ay maging
-                                kabahagi ng proyektong
+                            o mga anak) ay coconut farmers, maaari bang lahat ay maging
+                            kabahagi ng <span class="ml-0 lg:ml-5">proyektong
                                 nakapaloob sa RA 11524 at CFIDP?</span>
                         </span>
                         <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1140,8 +1252,8 @@
                     <button id="faq-button-6"
                         class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
                         <span class="font-semibold text-slate-800">8. Kung buong pamilya, (nanay, tatay at magkakapatid
-                            o mga anak) ay coconut farmers, maaari bang <span class="ml-0 lg:ml-5">lahat ay maging
-                                kabahagi ng proyektong
+                            o mga anak) ay coconut farmers, maaari bang lahat ay maging
+                            kabahagi ng <span class="ml-0 lg:ml-5"> proyektong
                                 nakapaloob sa RA 11524 at CFIDP?</span>
                         </span>
                         <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1183,8 +1295,8 @@
                     <button id="faq-button-6"
                         class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-50 transition-colors">
                         <span class="font-semibold text-slate-800">10. Kung miyembro na ng mga asosasyon at kooperatiba,
-                            kailangan ba muling magpa-miyembro sa <span class="ml-0 lg:ml-5"> panibagong organisasyon
-                                upang makasali sa mga
+                            kailangan ba muling magpa-miyembro sa panibagong organisasyon
+                            <span class="ml-0 lg:ml-5"> upang makasali sa mga
                                 proyekto?</span>
                         </span>
                         <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1205,7 +1317,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-8" >
+    <section id="contact" class="py-8">
         <div class="container mx-auto px-4">
             <div class="text-center text-green-700">
                 <h2 class="text-lg md:text-2xl font-bold mb-4">
@@ -1219,7 +1331,7 @@
         </div>
     </section>
 
-    
+
     @push('scripts')
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -1452,16 +1564,16 @@
                             link.classList.add('active-nav');
                         }
                     });
-                    
+
                     // Back to Programs floating button control
                     const registrationSection = document.getElementById('registration');
                     const backToProgramsBtn = document.getElementById('back-to-programs-btn');
-                    
+
                     if (registrationSection) {
                         const registrationTop = registrationSection.offsetTop;
                         const programsSection = document.getElementById('programs');
                         const programsTop = programsSection ? programsSection.offsetTop : 0;
-                        
+
                         // Show button when scrolled past registration section
                         if (scrollPosition >= registrationTop) {
                             backToProgramsBtn.classList.add('show-floating-button');
@@ -1535,20 +1647,22 @@
                 opacity: 1 !important;
                 pointer-events: auto !important;
             }
-            
+
             /* Pulse animation for both buttons */
             @keyframes pulse-shadow {
                 0% {
                     box-shadow: 0 0 0 0 rgba(9, 202, 89, 0.7);
                 }
+
                 70% {
                     box-shadow: 0 0 0 10px rgba(9, 202, 89, 0);
                 }
+
                 100% {
                     box-shadow: 0 0 0 0 rgba(9, 202, 89, 0);
                 }
             }
-            
+
             /* Scroll to Programs Button Styles */
             #scroll-to-programs-btn.show {
                 opacity: 1;
@@ -1561,20 +1675,20 @@
                 animation: pulse-shadow 2s infinite;
                 border: 2px solid white;
             }
-            
+
             /* Back to Programs Floating Button Styles */
             #back-to-programs-btn.show {
                 opacity: 1;
                 pointer-events: auto;
             }
-            
+
             #back-to-programs-btn a {
                 position: relative;
                 overflow: hidden;
                 animation: pulse-shadow 2s infinite;
                 border: 2px solid white;
             }
-            
+
             /* Hover effect for tooltip */
             #back-to-programs-btn .group:hover span,
             #scroll-to-programs-btn .group:hover span {
