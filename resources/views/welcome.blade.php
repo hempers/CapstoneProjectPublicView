@@ -71,10 +71,10 @@
                     Ilagay lamang ang iyong natatanging Reference ID sa itinakdang field.
                 </p>
             </div>
-            <div class="flex max-w-md mx-auto text-sm lg:text-base px-4 sm:px-8 md:px-6 lg:px-8">
+            <div class="flex max-w-md mx-auto text-sm lg:text-base px-4 sm:px-8 md:px-2 lg:px-4">
                 <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong reference ID"
-                    class="flex-grow px-4 py-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-xs placeholder:text-xs">
-                <button id="trackButton" type="button" class="px-6 py-2 rounded-r text-white font-medium"
+                    class="flex-grow px-4 py-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm placeholder:text-xs">
+                <button id="trackButton" type="button" class="px-6 py-2 rounded-r text-white font-semibold"
                     style="background-color: #09ca59ff;">
                     Track
                 </button>
@@ -190,31 +190,36 @@
             <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 backdrop-blur-sm"></div>
 
             <!-- Modal Content -->
-            <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="flex items-center justify-center min-h-screen p-2 sm:p-4">
                 <div
-                    class="relative bg-white rounded-xl shadow-2xl w-full max-w-2xl mx-auto max-h-[85vh] overflow-y-auto transform translate-y-[-1vh]">
+                    class="relative bg-white rounded-xl shadow-2xl w-full max-w-2xl mx-auto max-h-[90vh] overflow-y-auto transform translate-y-[-1vh]">
                     <!-- Modal Header -->
-                    <div class="bg-gradient-to-r from-green-500 to-green-400 p-6 rounded-t-xl relative overflow-hidden">
+                    <div class="bg-gradient-to-r from-green-500 to-green-400 p-4 sm:p-6 rounded-t-xl relative overflow-hidden">
                         <!-- Decorative elements -->
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mt-12 -mr-12">
+                        <div class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-white opacity-10 rounded-full -mt-8 sm:-mt-12 -mr-8 sm:-mr-12">
                         </div>
-                        <div class="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-10 rounded-full -mb-12 -ml-12">
+                        <div class="absolute bottom-0 left-0 w-16 sm:w-24 h-16 sm:h-24 bg-white opacity-10 rounded-full -mb-8 sm:-mb-12 -ml-8 sm:-ml-12">
                         </div>
                         <div
-                            class="absolute top-1/2 left-1/4 w-8 h-8 bg-white opacity-10 rounded-full transform -translate-y-1/2">
+                            class="absolute top-1/2 left-1/4 w-6 sm:w-8 h-6 sm:h-8 bg-white opacity-10 rounded-full transform -translate-y-1/2">
                         </div>
 
-                        <div class="flex justify-between items-center relative z-10">
-                            <div class="flex-1"></div>
-                            <div class="text-center">
-                                <h2 class="text-lg lg:text-2xl font-bold text-white mt-5 mb-1">
+                        <div class="flex items-center justify-between relative z-10">
+                            <!-- Left spacer - smaller on mobile -->
+                            <div class="w-6 sm:w-10"></div>
+                            
+                            <!-- Center content - better responsive sizing -->
+                            <div class="flex-1 text-center px-1 sm:px-4">
+                                <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white mt-2 sm:mt-4">
                                     Application Tracking Details</h2>
-                                <div class="w-16 h-1 bg-white opacity-70 rounded mx-auto"></div>
+                                <div class="w-12 sm:w-16 h-0.5 sm:h-1 bg-white opacity-70 rounded mx-auto"></div>
                             </div>
-                            <div class="flex-1 flex justify-end">
+                            
+                            <!-- Close button - better positioning and sizing -->
+                            <div class="flex justify-end">
                                 <button id="closeModal"
-                                    class="text-white hover:text-gray-100 focus:outline-none bg-green-600 hover:bg-green-700 rounded-full p-1 shadow-lg transition-all duration-200">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    class="text-white hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 bg-green-600 hover:bg-green-700 rounded-full p-1.5 shadow-lg transition-all duration-200">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M6 18L18 6M6 6l12 12"></path>
                                     </svg>
@@ -222,8 +227,8 @@
                             </div>
                         </div>
 
-                        <!-- Description Text -->
-                        <div class="mt-4 text-sm text-white leading-relaxed px-4 relative z-10">
+                        <!-- Description Text - improved responsive padding -->
+                        <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-white leading-relaxed px-2 sm:px-6 relative z-10">
                             <p class="mb-2 text-center text-white text-opacity-90">
                                 Ang sumusunod na impormasyon ay tumutukoy sa kasalukuyang estado ng inyong aplikasyon
                                 para sa PCA-CFIDP Program. Maaari itong gamitin bilang gabay upang malaman ang progreso
@@ -250,7 +255,7 @@
                                 <div class="mb-3">
                                     <label class="block text-xs font-semibold text-gray-700 mb-1">Application
                                         Title</label>
-                                    <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                    <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
                                         id="modalApplicationTitle">-</div>
                                 </div>
 
@@ -258,21 +263,21 @@
                                     <div>
                                         <label class="block text-xs font-semibold text-gray-700 mb-1">Reference
                                             ID</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
                                             id="modalReferenceId">-</div>
                                     </div>
 
                                     <div>
                                         <label class="block text-xs font-semibold text-gray-700 mb-1">Date
                                             Submitted:</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
                                             id="modalDateSubmitted">-</div>
                                     </div>
 
                                     <div>
                                         <label class="block text-xs font-semibold text-gray-700 mb-1">Contact
                                             Person</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
                                             id="modalProponent">-</div>
                                     </div>
 
@@ -280,7 +285,7 @@
                                     <div>
                                         <label class="block text-xs font-semibold text-gray-700 mb-1">Application
                                             Status:</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800"
+                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
                                             id="modalCurrentStatus">-</div>
                                     </div>
                                 </div>
@@ -474,7 +479,7 @@
                     statusElement.textContent = status;
 
                     // Keep the border styling but update the text style
-                    statusElement.className = 'border border-gray-300 rounded-md p-2 bg-white text-xs text-gray-800';
+                    statusElement.className = 'border border-gray-300 rounded-md p-2 bg-white text-sm font-semibold text-green-700';
 
                     // Populate history timeline
                     const historyTimeline = document.getElementById('modalHistoryTable');
@@ -559,7 +564,7 @@
                                                             <span class="text-xs text-gray-400">${timeFormatted || ''}</span>
                                                         </div>
                                                         <div>
-                                                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium bg-green-50 text-green-700">
+                                                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-sm font-medium bg-green-50 text-green-700">
                                                                 ${item.stage || 'Unknown Stage'}
                                                             </span>
                                                         </div>
@@ -567,14 +572,8 @@
 
                                                     <!-- Body content -->
                                                     <div class="space-y-1">
-                                                        ${item.remarks ? `<p class="text-xs text-gray-800 font-medium">${item.remarks}</p>` : ''}
-                                                        ${item.action_taken ? `<p class="text-xs text-gray-600">Action: ${item.action_taken}</p>` : ''}
-
-                                                        <!-- Footer with personnel and office -->
-                                                        <div class="flex justify-between items-center text-xs text-gray-500 pt-1 border-t border-gray-100 mt-1">
-                                                            <span>${item.staff_name || 'Not specified'}</span>
-                                                            <span>${item.office || 'N/A'}</span>
-                                                        </div>
+                                                        ${item.remarks ? `<p class="text-sm text-gray-800 font-medium px-6">${item.remarks}</p>` : ''}
+                                                        ${item.action_taken ? `<p class="text-xs text-gray-600 px-6">Action: ${item.action_taken}</p>` : ''}
                                                     </div>
                                                 </div>
                                             `;
@@ -627,7 +626,7 @@
                                                         </svg>
                                                     </div>
                                                     <div class="ml-3">
-                                                        <p class="text-xs text-yellow-700 font-medium">
+                                                        <p class="text-sm text-yellow-700 font-medium">
                                                             Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
                                                         </p>
                                                     </div>
@@ -655,15 +654,31 @@
                                 list.appendChild(listItem);
                             });
 
-                            // Add note in Tagalog
+                            // Add note in Tagalog with icon
                             const noteElement = document.createElement('div');
-                            noteElement.className = 'mt-4 text-xs text-gray-600 pt-3 border-t border-gray-100';
+                            noteElement.className = 'mt-4 text-sm text-gray-600 pt-3 border-t border-gray-100 bg-gray-50 rounded-lg p-4';
                             noteElement.innerHTML = `
-                                                <p class="mb-2">
-                                                    <span class="font-medium">Mahalaga:</span> Kinakailangan pong maisubmit ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
-                                                </p>
-                                                <p>
-                                                    Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.                            </p>
+                                                <div class="flex items-start">
+                                                    <div class="flex-shrink-0 mt-1">
+                                                        <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="ml-3">
+                                                        <p class="mb-2 font-medium">
+                                                            <span class="font-bold text-green-700">Mahalaga:</span>
+                                                        </p>
+                                                        <p class="mb-3">
+                                                            Kinakailangan pong maipasa ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
+                                                        </p>
+                                                        <p class="flex items-center">
+                                                            <svg class="h-4 w-4 text-green-600 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                                            </svg>
+                                                            Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             `;
                             requirementsContainer.appendChild(noteElement);
                         } else {
