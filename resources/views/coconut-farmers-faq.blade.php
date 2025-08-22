@@ -31,7 +31,7 @@
             scroll-behavior: smooth;
         }
 
-       
+
 
         .card-hover {
             transition: all 0.3s ease;
@@ -171,26 +171,28 @@
                 <div class="absolute top-3/4 right-10 w-12 h-12 rounded-full bg-white/10 float-element-slower"></div>
             </div>
 
-            <div class="container mx-auto flex flex-col items-center justify-center text-center relative z-10">
+            <div class="container mx-auto px-8 flex flex-col items-center justify-center text-center relative z-10">
                 <!-- Content Section (centered) -->
-                <div class="w-full max-w-3xl mb-12">
+                <div class="w-full max-w-4xl mb-12">
                     <div class="inline-block py-1 px-3 rounded-full bg-green-500 text-white text-sm font-medium mb-4">
                         Republic Act 11524
                     </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-green-900 mb-6 leading-tight text-center">
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-green-900 mb-6 leading-tight text-center">
                         Coconut Farmers and<br>
-                        <span style="color: #09ca59ff;">Industry Trust</span> Fund
+                        <span style="color: #09ca59ff;">Industry Development</span> Plan
                     </h1>
                     <div class="w-20 h-1.5 bg-green-900 mx-auto mb-6"></div>
-                    <p class="text-base lg:text-lg text-green-900 mb-8 leading-relaxed text-center">
-                        Ang <span class="font-bold">RA 11524</span> o <span class="font-bold">"Coconut Farmers and Industry
-                            Trust Fund (CFITF) Act"</span>
-                        ay isang batas na nilagdaan ni Pangulong Rodrigo Roa Duterte noong Pebrero 26, 2021.
+                    <p class="text-base lg:text-lg text-green-900 mb-8 leading-relaxed text-center px-2">
+                        Itinakda ng <span class="font-bold"> Batas Republika Blg. 11524</span> o <span
+                            class="font-bold">"Coconut Farmers and Industry
+                            Trust Fund (CFITF) Act"</span>ang pagkakaroon ng Coconut Farmers and Industry Development Plan
+                        (CFIDP), na pinirmahan ni dating
+                        Pangulong Rodrigo Duterte.
                         <br><br>
-                        Layunin nito na
-                        mapabuti ang pamumuhay ng mga magsasaka ng niyog sa pamamagitan ng pagbibigay ng iba't ibang
-                        programa, proyekto, at serbisyo na magpapataas ng kanilang ani at kita.
-                    </p>
+                        Layunin nitong gawing mas competitive ang mga magniniyog at mapaunlad ang industriya sa pamamagitan
+                        ng rehabilitasyon at modernisasyon. Binibigyang-diin ng plano ang pagpapalakas sa kakayahan ng mga
+                        magniniyog para sa katarungang panlipunan.
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
                         <a href="#programs"
                             class="pulse-btn inline-flex items-center justify-center text-white font-bold px-8 py-3 rounded-lg shadow-lg bg-green-500 hover:bg-green-600 transition-colors">
@@ -664,109 +666,275 @@
                 </div>
 
                 <div class="max-w-8xl mx-auto">
+                    <!-- Introduction to Registration Methods -->
+                    <div class="bg-white rounded-xl shadow-md p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-green-900 mb-6 text-center">Iba't ibang paraan ng pagrehistrong NCFRS</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                            <!-- Option A -->
+                            <div class="bg-green-50 rounded-lg p-5 border border-green-200">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-xl font-bold text-white">A</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-green-800">Mass Registration</h4>
+                                </div>
+                                <p class="text-gray-700 text-sm">Sa nakatakdang iskedyul sa inyong mga barangay o munisipalidad</p>
+                            </div>
+                            
+                            <!-- Option B -->
+                            <div class="bg-green-50 rounded-lg p-5 border border-green-200">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-xl font-bold text-white">B</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-green-800">Walk-in Registration</h4>
+                                </div>
+                                <p class="text-gray-700 text-sm">Sa PCA regional/provincial office at sa mga authorized partners (i.e. LGUs)</p>
+                            </div>
+                            
+                            <!-- Option C -->
+                            <div class="bg-green-50 rounded-lg p-5 border border-green-200">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-xl font-bold text-white">C</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-green-800">Form Download</h4>
+                                </div>
+                                <p class="text-gray-700 text-sm">I-download ang form sa: <a href="https://bit.ly/ncrscocolevyy" class="text-green-600 hover:underline" target="_blank">bit.ly/ncrscocolevyy</a></p>
+                            </div>
+                            
+                            <!-- Option D -->
+                            <div class="bg-green-50 rounded-lg p-5 border border-green-200">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-xl font-bold text-white">D</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-green-800">Online Registration</h4>
+                                </div>
+                                <p class="text-gray-700 text-sm">Sa link na ito: <a href="https://bit.ly/ncrscocolevyy" class="text-green-600 hover:underline" target="_blank">bit.ly/ncrscocolevyy</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-green-900 mb-4">Ano ang NCFRS?</h3>
+                            <p class="text-gray-700 mb-4">Ang National Coconut Farmers Registry System o NCFRS ay opisyal na talaan ng pamahalaan upang mabigyaan ng pagkakakilanlan ang mga magniniyog na Pilipino. Ito ang magiging batayan para sa pagtanggap ng mga benepisyo mula sa CFIDP.</p>
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-green-900 mb-4">Mga Kailangang Dokumento</h3>
+                            <div class="bg-green-50 p-5 rounded-lg">
+                                <ol class="space-y-3">
+                                    <li class="flex items-center">
+                                        <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                            <span class="text-sm font-bold text-white">1</span>
+                                        </div>
+                                        <span class="text-gray-700">Latest 2x2 ID picture</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                            <span class="text-sm font-bold text-white">2</span>
+                                        </div>
+                                        <span class="text-gray-700">Kopya ng government-issued ID</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                                            <span class="text-sm font-bold text-white">3</span>
+                                        </div>
+                                        <span class="text-gray-700">Kopya ng titulo ng lupa o kasunduan ng renta sa may-ari ng lupa - o anumang legal na dokumentong patunay sa pagmamay-ari ng lupa</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Registration Methods -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                        <!-- Online/Download Registration -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                            <div class="bg-green-600 py-3 px-6">
+                                <h3 class="text-xl font-bold text-white">Online Registration/Form Download</h3>
+                            </div>
+                            <div class="p-6">
+                                <ol class="space-y-6">
+                                    <li class="flex">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-lg font-bold text-green-800">01</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-800 font-medium">I-download ang NCFRS form: <a href="https://bit.ly/ncrscocolevyy" class="text-green-600 hover:underline" target="_blank">bit.ly/ncrscocolevyy</a></p>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-lg font-bold text-green-800">02</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-800 font-medium">Sagutan ang NCFRS Form at ihanda ang iba pang dokumento</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-lg font-bold text-green-800">03</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-800 font-medium">I-scan o kuhaan ng picture ang mga dokumento at i-send sa email: <a href="mailto:ncfrs@pca.gov.ph" class="text-green-600 hover:underline">ncfrs@pca.gov.ph</a> (para sa form download) o i-attach sa online form</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-lg font-bold text-green-800">04</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-800 font-medium">Maari ring dalhin o ipasa sa pinakamalapit na PCA Office (para sa form download) o pindutin ang Submit Button (para sa online)</p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Walk-in Registration -->
+                        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                            <div class="bg-green-600 py-3 px-6">
+                                <h3 class="text-xl font-bold text-white">Walk-in Registration</h3>
+                            </div>
+                            <div class="p-6">
+                                <ol class="space-y-6">
+                                    <li class="flex">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-lg font-bold text-green-800">01</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-800 font-medium">Kumuha ng NCFRS Form (kung pen & paper) o umupo sa available na computer (kung computer-aided)</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-lg font-bold text-green-800">02</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-800 font-medium">Sagutan ang NCFRS Form.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-lg font-bold text-green-800">03</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-800 font-medium">Kung computer aided, kuhaan ng picture ang mga dokumento na dala at i-attach sa online form</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-lg font-bold text-green-800">04</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-800 font-medium">Kung pen & paper, ibigay ang nasagutang form kasama ang mga dokumentong kailangan sa PCA Authorized representative</p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Registration Information -->
                     <div class="bg-white rounded-xl shadow-md p-8 mb-12">
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <!-- Step 1 -->
-                            <div class="bg-green-50 rounded-xl p-6 text-center relative">
-                                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                                    <div
-                                        class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto border-4 border-white shadow-md">
-                                        <span class="text-xl font-bold text-white">1</span>
-                                    </div>
-                                </div>
-                                <h3 class="text-xl font-bold text-green-900 mb-4 mt-6">Mga Kailangang Dokumento</h3>
-                                <div class="text-gray-700 text-left">
-                                    <ul class="space-y-2 list-disc list-inside">
-                                        <li>2x2 Picture (kinuhanan sa loob ng anim (6) na buwan)</li>
-                                        <li>Patunay ng Pagkakakilanlan ID o sertipikasyon mula sa Kapitan ng Barangay o Lider ng Tribo</li>
-                                        <li>Patunay ng Papel sa Niyugan:</li>
-                                        <li>2x2 ID Picture (2 kopya)</li>
-                                    </ul>
-                                    <div class="mt-4 text-center">
-                                        <a href="#" class="text-sm text-green-600 hover:underline">Download ng Form</a>
-                                    </div>
-                                </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                            <!-- Who can register -->
+                            <div>
+                                <h3 class="text-xl font-bold text-green-900 mb-4">Sino ang pwedeng magparehistrong NCFRS?</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-center">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <span>Farmowner</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <span>Owner-Tiller</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <span>Grower</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <span>Tenant/Tenant-worker</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <span>Farm worker/Laborer</span>
+                                    </li>
+                                </ul>
                             </div>
-
-                            <!-- Step 2 -->
-                            <div class="bg-green-50 rounded-xl p-6 text-center relative">
-                                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                                    <div
-                                        class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto border-4 border-white shadow-md">
-                                        <span class="text-xl font-bold text-white">2</span>
-                                    </div>
-                                </div>
-                                <h3 class="text-xl font-bold text-green-900 mb-4 mt-6">Bumisita sa PCA Office</h3>
-                                <div class="text-gray-700 text-left">
-                                    <p class="mb-4">Pumunta sa pinakamalapit na Philippine Coconut Authority (PCA) office sa
-                                        inyong lugar:</p>
-                                    <ol class="list-decimal list-inside space-y-2">
-                                        <li>Isumite ang mga kinakailangang dokumento</li>
-                                        <li>Punan ang NCFRS Registration Form</li>
-                                        <li>Sasailalim sa interview ng PCA officer</li>
+                            
+                            <!-- Benefits -->
+                            <div>
+                                <h3 class="text-xl font-bold text-green-900 mb-4">Ano ang benepisyo ng pagrehistrong NCFRS?</h3>
+                                <div class="mb-4">
+                                    <p class="text-gray-700 font-medium mb-2">A. Para sa nagmamay-ari ng hindi lalampas sa 5 ektarya na lupa, tenant, tiller, grower, tenant, o farm worker:</p>
+                                    <ol class="ml-6 list-decimal text-gray-700 space-y-2">
+                                        <li>Makakuha ng mga benepisyo na nakasaad sa RA 11524, o Coconut Farmers and Industry Trust Fund Act</li>
+                                        <li>Makalahok sa pagpili ng magiging farmer-representatives sa PCA Board</li>
                                     </ol>
-                                    <div class="mt-4 text-center">
-                                        <a href="#" class="text-sm text-green-600 hover:underline">Hanapin ang PCA
-                                            Office</a>
-                                    </div>
                                 </div>
-                            </div>
-
-                            <!-- Step 3 -->
-                            <div class="bg-green-50 rounded-xl p-6 text-center relative">
-                                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                                    <div
-                                        class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto border-4 border-white shadow-md">
-                                        <span class="text-xl font-bold text-white">3</span>
-                                    </div>
-                                </div>
-                                <h3 class="text-xl font-bold text-green-900 mb-4 mt-6">Makakuha ng NCFRS ID</h3>
-                                <div class="text-gray-700 text-left">
-                                    <p class="mb-4">Pagkatapos ng verification process:</p>
-                                    <ul class="space-y-2 list-disc list-inside">
-                                        <li>Makakakuha ng NCFRS ID Card</li>
-                                        <li>Makakatanggap ng impormasyon tungkol sa mga available na programa</li>
-                                        <li>Magagamit ang ID sa pag-apply para sa mga benepisyo sa ilalim ng CFIDP</li>
-                                    </ul>
-                                    <div class="mt-4 text-center">
-                                        <a href="#faq-section" class="text-sm text-green-600 hover:underline">Mga Tanong sa
-                                            Registration</a>
-                                    </div>
+                                <div>
+                                    <p class="text-gray-700 font-medium mb-2">B. Para sa nagmamay-ari ng lupa na higit sa 5 ektarya:</p>
+                                    <p class="text-gray-700 ml-6">Upang makasali sa iba pang programa ng pamahalaan</p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="mt-10 p-6 bg-amber-50 rounded-lg border border-amber-200">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-6 h-6 text-amber-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </div>
-                                <div class="ml-3">
-                                    <h4 class="text-sm lg:text-base font-semibold text-gray-800 mt-1.5 mb-2">Mahalagang Impormasyon:</h4>
-                                    <ul class="space-y-2 list-disc list-inside">
-                                        <li>Libre ang pagpaparehistro sa NCFRS</li>
-                                        <li>Ang pag-update ng listahan ay ginagawa kada taon</li>
-                                        <li>Maaaring magtungo sa alinmang PCA Offices sa inyong lugar</li>
-                                    </ul>
-                                </div>
+                        
+                        <!-- How to check registration -->
+                        <div class="mt-8">
+                            <h3 class="text-xl font-bold text-green-900 mb-4">Kumpirmasyon ng rehistrong NCFRS</h3>
+                            <div class="bg-green-50 p-5 rounded-lg">
+                                <ul class="space-y-3 text-gray-700">
+                                    <li><strong>Para sa pen-and-paper registration:</strong> Makakatatanggap ka ng text message na naglalaman ng iyong reference number.</li>
+                                    <li><strong>Para sa online registration:</strong> Makakatatanggap ka ng email notification na naglalaman ng iyong reference number sa email address na iyong inilagay sa form.</li>
+                                    <li><strong class="text-green-800">PAALALA:</strong> Itago ang reference/control number upang magamit sa anumang transaksyon sa PCA o sa pag-update ng iyong impormasyon sa NCFRS.</li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
+                    
+                    <!-- Important Notes -->
+                    <div class="mt-10 p-6 bg-amber-50 rounded-lg border border-amber-200">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="w-6 h-6 text-amber-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="text-sm lg:text-base font-semibold text-gray-800 mt-1.5 mb-2">Mahalagang Impormasyon:</h4>
+                                <ul class="space-y-2 list-disc list-inside">
+                                    <li>Libre ang pagpaparehistro sa NCFRS</li>
+                                    <li>Ang pag-update ng listahan ay ginagawa kada taon</li>
+                                    <li>Maaaring magtungo sa alinmang PCA Offices sa inyong lugar</li>
+                                    <li>Para sa iba pang impormasyon, makipag-ugnayan sa PCA regional o provincial office sa inyong lugar, o i-message ang kanilang Facebook page</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Scroll to Programs Button -->
-        <div id="scroll-to-programs-btn" class="fixed bottom-6 right-6 z-50 opacity-0 transform translate-y-4 transition-all duration-300 ease-in-out pointer-events-none">
-            <button class="text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 group"  style="background-color: #09ca59ff; hover:background-color: #078e3f;">
-                <svg class="w-6 h-6 transform group-hover:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+        <div id="scroll-to-programs-btn"
+            class="fixed bottom-6 right-6 z-50 opacity-0 transform translate-y-4 transition-all duration-300 ease-in-out pointer-events-none">
+            <button
+                class="text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 group"
+                style="background-color: #09ca59ff; hover:background-color: #078e3f;">
+                <svg class="w-6 h-6 transform group-hover:-translate-y-1 transition-transform duration-300" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
                 </svg>
-                <span class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                <span
+                    class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                     Tingnan ang mga Programa
                 </span>
             </button>
@@ -1502,14 +1670,14 @@
         @push('scripts')
             <script>
                 // FAQ Toggle functionality
-                document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('DOMContentLoaded', function () {
                     const faqToggles = document.querySelectorAll('.faq-toggle');
-                    
+
                     faqToggles.forEach(toggle => {
-                        toggle.addEventListener('click', function() {
+                        toggle.addEventListener('click', function () {
                             const content = this.nextElementSibling;
                             const icon = this.querySelector('svg');
-                            
+
                             if (content.classList.contains('hidden')) {
                                 content.classList.remove('hidden');
                                 icon.style.transform = 'rotate(180deg)';
@@ -1523,10 +1691,10 @@
                     // Scroll to Programs Button functionality
                     const scrollButton = document.getElementById('scroll-to-programs-btn');
                     const eligibilitySection = document.getElementById('eligibility');
-                    
+
                     if (scrollButton && eligibilitySection) {
                         // Show/hide button based on scroll position
-                        window.addEventListener('scroll', function() {
+                        window.addEventListener('scroll', function () {
                             const eligibilityTop = eligibilitySection.offsetTop;
                             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -1536,9 +1704,9 @@
                                 scrollButton.classList.remove('show');
                             }
                         });
-                        
+
                         // Scroll to programs when button is clicked
-                        scrollButton.addEventListener('click', function() {
+                        scrollButton.addEventListener('click', function () {
                             const programsSection = document.getElementById('programs');
                             if (programsSection) {
                                 programsSection.scrollIntoView({
