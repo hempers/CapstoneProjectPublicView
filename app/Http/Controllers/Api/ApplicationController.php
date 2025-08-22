@@ -166,7 +166,8 @@ class ApplicationController extends Controller
     }
 
     /**
-     * Helper method to get application requirements with a "Missing" status.
+     * Helper method to get application requirements with their status.
+     * The frontend will filter requirements with status "missing", "kulang", or "hindi kumpleto".
      *
      * @param string $applicationId The ID of the application.
      * @return array
@@ -174,36 +175,91 @@ class ApplicationController extends Controller
     private function getApplicationRequirements($applicationId)
     {
         try {
-            $missingRequirements = DB::table('application_requirements')
+            // First, check if we even have requirements for this application
+            $hasRequirements = DB::table('application_requirements')
+                ->where('ApplicationID', $applicationId)
+                ->exists();
+                
+            if (!$hasRequirements) {
+                // If no requirements found, return dummy test data to verify frontend rendering works
+                Log::info('No requirements found for application. Returning dummy test data.', [
+                    'applicationId' => $applicationId
+                ]);
+                
+                return [
+                    [
+                        'requirement_name' => 'Application Form',
+                        'description' => 'Completed application form with all fields filled out',
+                        'status' => 'complete'
+                    ],
+                    [
+                        'requirement_name' => 'Valid ID',
+                        'description' => 'Government-issued identification card',
+                        'status' => 'missing'
+                    ],
+                    [
+                        'requirement_name' => 'Proof of Land Ownership',
+                        'description' => 'Land title, tax declaration, or other proof of ownership',
+                        'status' => 'kulang'
+                    ]
+                ];
+            }
+
+            // Log the query we're about to execute to help with debugging
+            Log::info('Executing requirements query', [
+                'applicationId' => $applicationId,
+                'tables' => ['application_requirements', 'base_requirements']
+            ]);
+
+            $requirements = DB::table('application_requirements')
                 ->where('application_requirements.ApplicationID', $applicationId)
-                ->where('application_requirements.RequirementStatus', 'Missing')
-                ->join('base_requirements', 'application_requirements.RequirementID', '=', 'base_requirements.RequirementID')
+                ->leftJoin('base_requirements', 'application_requirements.RequirementID', '=', 'base_requirements.RequirementID')
                 ->select(
                     'base_requirements.RequirementName as requirement_name',
-                    'base_requirements.Description as description',
+                    'base_requirements.Details as description', // Using the correct column name
                     'application_requirements.RequirementStatus as status'
                 )
                 ->get();
+                
+            // Log the raw query results
+            Log::info('Requirements query results', [
+                'count' => $requirements->count(),
+                'sample' => $requirements->first()
+            ]);
 
-            // Always return an array of requirements
-            return $missingRequirements->map(function ($req) {
+            // Always return an array of requirements with consistent field names
+            // that match what the frontend expects
+            $result = $requirements->map(function ($req) {
                 return [
-                    'requirement_name' => $req->requirement_name,
-                    'description' => $req->description,
-                    'status' => $req->status
+                    'requirement_name' => $req->requirement_name ?? 'Unnamed Requirement',
+                    'description' => $req->description ?? 'No description available',
+                    'status' => $req->status ?? 'unknown'
                 ];
             })->toArray();
-
+            
+            Log::info('Returning requirements data', [
+                'count' => count($result)
+            ]);
+            
+            return $result;
 
         } catch (\Exception $e) {
-            Log::warning('Error fetching missing application requirements', [
+            Log::warning('Error fetching application requirements', [
                 'application_id' => $applicationId,
-                'error' => $e->getMessage()
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString()
             ]);
-            return [];
+            
+            // Return test data even on error to help debug the frontend
+            return [
+                [
+                    'requirement_name' => '[ERROR] Test Requirement',
+                    'description' => 'Error occurred: ' . $e->getMessage(),
+                    'status' => 'missing'
+                ]
+            ];
         }
     }
-
     /**
      * Helper method to get staff information based on StaffID.
      *

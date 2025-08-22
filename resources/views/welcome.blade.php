@@ -207,7 +207,7 @@
                         <div class="flex justify-between items-center relative z-10">
                             <div class="flex-1"></div>
                             <div class="text-center">
-                                <h2 class="text-lg sm:text-xl font-bold text-white mt-5 mb-1">
+                                <h2 class="text-lg lg:text-2xl font-bold text-white mt-5 mb-1">
                                     Application Tracking Details</h2>
                                 <div class="w-16 h-1 bg-white opacity-70 rounded mx-auto"></div>
                             </div>
@@ -223,7 +223,7 @@
                         </div>
 
                         <!-- Description Text -->
-                        <div class="mt-4 text-xs text-white leading-relaxed px-4 relative z-10">
+                        <div class="mt-4 text-sm text-white leading-relaxed px-4 relative z-10">
                             <p class="mb-2 text-center text-white text-opacity-90">
                                 Ang sumusunod na impormasyon ay tumutukoy sa kasalukuyang estado ng inyong aplikasyon
                                 para sa PCA-CFIDP Program. Maaari itong gamitin bilang gabay upang malaman ang progreso
@@ -660,10 +660,10 @@
                             noteElement.className = 'mt-4 text-xs text-gray-600 pt-3 border-t border-gray-100';
                             noteElement.innerHTML = `
                                                 <p class="mb-2">
-                                                    <span class="font-medium">Mahalaga:</span> Kinakailangan pong maisubmit ang mga nawawalang dokumento para maiproseso nang mabilis ang inyong aplikasyon.
+                                                    <span class="font-medium">Mahalaga:</span> Kinakailangan pong maisubmit ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
                                                 </p>
                                                 <p>
-                                                    Maaari po ninyong isubmit ang mga kulang na dokumento sa opisina ng PCA.                            </p>
+                                                    Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.                            </p>
                                             `;
                             requirementsContainer.appendChild(noteElement);
                         } else {
