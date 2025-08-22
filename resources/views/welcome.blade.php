@@ -3006,26 +3006,14 @@
         </section>
 
         <!-- Floating Back to Programs Button -->
-        <button id="back-to-top" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 
-                                   text-white 
-                                   w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 
-                                   rounded-full shadow-lg hover:shadow-xl 
-                                   flex items-center justify-center 
-                                   transition-all duration-300 ease-in-out 
-                                   transform hover:scale-110 
-                                   opacity-0 pointer-events-none z-50"
-            style="background-color: #09ca59ff; hover:background-color: #078e3f;" onclick="scrollToPrograms()">
-            <!-- Arrow Up Icon -->
-            <svg class="w-6 h-6 transform group-hover:-translate-y-1 transition-transform duration-300" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
-            </svg>
-            <!-- Tooltip for larger screens -->
-            <span
-                class="hidden xl:block absolute -left-24 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
-                Bumalik sa Programs
-            </span>
-        </button>
+        <div id="back-to-top" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-50 opacity-0 transition-all duration-300 pointer-events-none">
+            <button onclick="scrollToPrograms()" class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-110 group" style="background-color: #09ca59ff; border: 2px solid white;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 4L12 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
 
         <script>
             // Back to programs functionality
@@ -3057,11 +3045,11 @@
                     const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
 
                     if (isVisible || window.pageYOffset > documentsSection.offsetTop) {
+                        backToTopButton.classList.add('show-floating-button');
                         backToTopButton.classList.remove('opacity-0', 'pointer-events-none');
-                        backToTopButton.classList.add('opacity-100', 'pointer-events-auto');
                     } else {
+                        backToTopButton.classList.remove('show-floating-button');
                         backToTopButton.classList.add('opacity-0', 'pointer-events-none');
-                        backToTopButton.classList.remove('opacity-100', 'pointer-events-auto');
                     }
                 }
             }
@@ -3078,6 +3066,30 @@
             // Initial check
             document.addEventListener('DOMContentLoaded', toggleBackToTopButton);
         </script>
+        
+        <style>
+            /* Floating button styles */
+            .show-floating-button {
+                opacity: 1 !important;
+                pointer-events: auto !important;
+            }
+            
+            @keyframes pulse-shadow {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(9, 202, 89, 0.7);
+                }
+                70% {
+                    box-shadow: 0 0 0 10px rgba(9, 202, 89, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(9, 202, 89, 0);
+                }
+            }
+            
+            #back-to-top button {
+                animation: pulse-shadow 2s infinite;
+            }
+        </style>
     @endpush
 
 @endsection
