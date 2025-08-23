@@ -249,35 +249,38 @@
                         class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-green-100">
                         <div class="h-2 bg-green-500"></div>
                         <div class="p-6">
-                            <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                            <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-4 mx-auto">
                                 <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                         d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Social Protection Program</h3>
-                            <p class="text-gray-600 mb-3">Mga nakarehistrong magsasaka ng niyog sa NCFRS na may benepisyo
-                                tulad ng libreng pagpapagamot, insurance, scholarship, at training.</p>
-                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs font-medium text-gray-700 mb-1">Implementing Agencies:</p>
-                                <ul class="text-xs space-y-1 pl-1">
-                                    <li class="flex items-start">
-                                        <span class="inline-block w-12 font-semibold text-green-700">PCA</span>
-                                        <span class="text-gray-600 pl-16">Health and Medical Program (10%)</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="inline-block w-12 font-semibold text-green-700">PCIC</span>
-                                        <span class="text-gray-600 pl-15">Crop Insurance (4%)</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="inline-block w-12 font-semibold text-green-700">CHED</span>
-                                        <span class="text-gray-600 pl-15">Scholarships (8%)</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="inline-block w-12 font-semibold text-green-700">ATI/TESDA</span>
-                                        <span class="text-gray-600 pl-15">Trainings/Farm Schools (8%)</span>
-                                    </li>
-                                </ul>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Social Protection Program</h3>
+                            <div class="bg-green-50 rounded-lg px-4 py-4 mb-3">
+                                <div class="grid grid-cols-3 font-medium text-green-800 border-b border-green-200 pb-2 mb-2">
+                                    <div class="col-span-2">Program Component</div>
+                                    <div class="text-right pr-4">IA</div>
+                                </div>
+                                
+                                <div class="grid grid-cols-3 py-1.5 border-b border-green-100">
+                                    <div class="col-span-2 text-gray-700">Health and Medical Program</div>
+                                    <div class="text-right pr-4 text-green-700 font-medium">PCA</div>
+                                </div>
+                                
+                                <div class="grid grid-cols-3 py-1.5 border-b border-green-100">
+                                    <div class="col-span-2 text-gray-700">Crop Insurance</div>
+                                    <div class="text-right pr-4 text-green-700 font-medium">PCIC</div>
+                                </div>
+                                
+                                <div class="grid grid-cols-3 py-1.5 border-b border-green-100">
+                                    <div class="col-span-2 text-gray-700">Scholarships</div>
+                                    <div class="text-right pr-4 text-green-700 font-medium">CHED</div>
+                                </div>
+                                
+                                <div class="grid grid-cols-3 py-1.5">
+                                    <div class="col-span-2 text-gray-700">Trainings/<br>Farm Schools</div>
+                                    <div class="text-right pr-4 text-green-700 font-medium">ATI and<br>TESDA</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1323,10 +1326,54 @@
                 <h2 class="text-lg md:text-2xl font-bold mb-4">
                     Kailangan pa ng Karagdagang Impormasyon?
                 </h2>
-                <p class="text-sm lg:text-base text-green-700 max-w-2xl mx-auto">
+                <p class="text-sm lg:text-base text-green-700 max-w-2xl mx-auto mb-10">
                     Makipag-ugnayan sa Philippine Coconut Authority (PCA) para sa mga tanong tungkol sa CFIDP at paano
                     mapakinabangan ang mga programa nito
                 </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8">
+                <!-- Office Address Container -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
+                    <div class="bg-green-100 rounded-full p-3 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Office Address</h3>
+                    <p class="text-gray-600 text-sm lg:text-base">
+                        2nd Floor, PCA Bldg <br> Rizal St., Old Albay District, Sagpon,<br>
+                        Legazpi City
+                    </p>
+                </div>
+                
+                <!-- Email Address Container -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
+                    <div class="bg-green-100 rounded-full p-3 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Email Address</h3>
+                    <p class="text-gray-600 text-sm lg:text-base">
+                        <a href="mailto:regionv@pca.gov.ph" class="text-gray-600 hover:underline">regionv@pca.gov.ph</a><br>
+                        <a href="mailto:pca5@yahoo.com" class="text-gray-600 hover:underline">pca5@yahoo.com</a>
+                    </p>
+                </div>
+                
+                <!-- Telephone Number Container -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
+                    <div class="bg-green-100 rounded-full p-3 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Telephone No.</h3>
+                    <p class="text-gray-600 text-sm lg:text-base">
+                        (052) 481-0589 <br> (052) 742-2100
+                    </p>
+                </div>
             </div>
         </div>
     </section>
