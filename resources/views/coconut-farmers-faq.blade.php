@@ -243,45 +243,66 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <!-- Social Protection -->
                     <div
                         class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-green-100">
                         <div class="h-2 bg-green-500"></div>
                         <div class="p-6">
-                            <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-4 mx-auto">
+                            <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-4">
                                 <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                         d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Social Protection Program</h3>
-                            <div class="bg-green-50 rounded-lg px-4 py-4 mb-3">
-                                <div class="grid grid-cols-3 font-medium text-green-800 border-b border-green-200 pb-2 mb-2">
-                                    <div class="col-span-2">Program Component</div>
-                                    <div class="text-right pr-4">IA</div>
-                                </div>
-                                
-                                <div class="grid grid-cols-3 py-1.5 border-b border-green-100">
-                                    <div class="col-span-2 text-gray-700">Health and Medical Program</div>
-                                    <div class="text-right pr-4 text-green-700 font-medium">PCA</div>
-                                </div>
-                                
-                                <div class="grid grid-cols-3 py-1.5 border-b border-green-100">
-                                    <div class="col-span-2 text-gray-700">Crop Insurance</div>
-                                    <div class="text-right pr-4 text-green-700 font-medium">PCIC</div>
-                                </div>
-                                
-                                <div class="grid grid-cols-3 py-1.5 border-b border-green-100">
-                                    <div class="col-span-2 text-gray-700">Scholarships</div>
-                                    <div class="text-right pr-4 text-green-700 font-medium">CHED</div>
-                                </div>
-                                
-                                <div class="grid grid-cols-3 py-1.5">
-                                    <div class="col-span-2 text-gray-700">Trainings/<br>Farm Schools</div>
-                                    <div class="text-right pr-4 text-green-700 font-medium">ATI and<br>TESDA</div>
-                                </div>
+                            <h3 class="text-lg lg:text-xl font-bold text-gray-800 mb-4">Social Protection Program</h3>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Mga rehistradong magniniyog sa NCFRS na may access sa serbisyong
+                                medikal, insurance, scholarship at pagsasanay.</p>
+                            <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
+                                <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
+                                        class="text-green-700">PCA, PCIC, CHED, ATI and TESDA</span></p>
                             </div>
+                            <ul class="text-sm lg:text-base text-gray-600 space-y-1 mb-4">
+                                <li class="flex items-start">
+                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Health and Medical Program
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Crop Insurance
+                                </li>
+
+                                <li class="flex items-start">
+                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Scholarships
+                                </li>
+
+                                <li class="flex items-start">
+                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Trainings/Farm Schools
+                                </li>
+                            </ul>
+                            
                         </div>
                     </div>
 
@@ -297,13 +318,12 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Farmers Organization and Development</h3>
-                            <p class="text-gray-600 mb-3">Hybridization o pagpaparami at pamamahagi ng mga hybrid na binhi
-                                ng niyog.</p>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Organized, registered and capacitated farmer's cooperatives</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agency: <span
+                                <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agency: <span
                                         class="text-green-700">CDA</span></p>
                             </div>
-                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <ul class="text-sm lg:text-base text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -338,13 +358,13 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Hybridization</h3>
-                            <p class="text-gray-600 mb-3">Community-based enterprises kasama ang intercropping, at
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Community-based enterprises kasama ang intercropping, at
                                 pag-aalaga ng manok, livestock at dairy animals sa mga niyugan.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
-                                        class="text-green-700">PCA, DA</span></p>
+                                <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
+                                        class="text-green-700">PCA, PCAARRD-DOST</span></p>
                             </div>
-                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <ul class="text-sm lg:text-base text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -352,7 +372,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                   Hybridization <span class="text-xs ">(DA)</span> 
+                                    Hybridization 
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -361,7 +381,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                   Hybridization Research (PCAARRD-DOST)
+                                    Hybridization Research
                                 </li>
                             </ul>
                         </div>
@@ -381,14 +401,15 @@
                                         d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Community-Based Farm Enterprise and Development</h3>
-                            <p class="text-gray-600 mb-3">Programa ng Scholarship para sa mga Magsasaka at kanilang pamilya
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Community-Based Farm Enterprise and Development <span class="text-xs lg:text-sm font-medium">(Farm Rehabilitation and Improvement)</span>
+                            </h3>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Programa ng Scholarship para sa mga Magsasaka at kanilang pamilya
                                 para sa mas magandang kinabukasan.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agency: <span
-                                        class="text-green-700">CHED</span></p>
+                                <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agency: <span
+                                        class="text-green-700">HCVDP, NDA, BAI</span></p>
                             </div>
-                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <ul class="text-sm lg:text-base text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -396,17 +417,9 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pagsuporta sa edukasyon ng mga anak ng magniniyog
+                                    Coconut-based Farming System/Diversification
                                 </li>
-                                <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Programang pang-edukasyon para sa magagaling na estudyante
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -422,14 +435,15 @@
                                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Integrated Coconut Processing and Downstream Products</h3>
-                            <p class="text-gray-600 mb-3">Integrated processing ng mga produkto at downstream products na
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Integrated Coconut Processing and Downstream
+                                Products</h3>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Integrated processing ng mga produkto at downstream products na
                                 naglalayong patasin ang kita ng mga magniniyog.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
-                                        class="text-green-700">PCA, DTI</span></p>
+                                <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
+                                        class="text-green-700">PhilMech</span></p>
                             </div>
-                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <ul class="text-sm lg:text-base text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -437,16 +451,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pasilidad para sa pag-proseso gamit ang modernong makinarya
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Pagdaragdag ng halaga sa mga produkto ng niyog
+                                   Shared Processing Facilities
                                 </li>
                             </ul>
                         </div>
@@ -464,14 +469,14 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Support Services</h3>
-                            <p class="text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
                                 pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
                             </p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
-                                        class="text-green-700">PCA, DOST</span></p>
+                                <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
+                                        class="text-green-700">DBP/LBP, DPWH</span></p>
                             </div>
-                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <ul class="text-sm lg:text-base text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -479,7 +484,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pagtatag at pagpapatibay ng mga kooperatiba at samahan
+                                   Credit Programs
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -488,7 +493,16 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pananaliksik, marketing at pagsulong sa industriya
+                                    Marketing and Assistance, Research and Market Promotion
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Infrastructure
                                 </li>
                             </ul>
                         </div>
@@ -505,15 +519,16 @@
                                         d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Innovative Researches & Its Practical Application on Production & Distribution</h3>
-                            <p class="text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Innovative Researches & Its Practical
+                                Application on Production & Distribution</h3>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
                                 pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
                             </p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
+                                <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
                                         class="text-green-700">PCA, DOST</span></p>
                             </div>
-                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <ul class="text-sm lg:text-base text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -521,7 +536,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pagtatag at pagpapatibay ng mga kooperatiba at samahan
+                                    Policies and Regulations
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -530,7 +545,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pananaliksik, marketing at pagsulong sa industriya
+                                    Research Coordination, Collaboration, Integration and Utilization thru GAA funding of PCA, SCUs and DOST
                                 </li>
                             </ul>
                         </div>
@@ -548,14 +563,14 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Program Management, Coordination and M&E</h3>
-                            <p class="text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
                                 pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
                             </p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
-                                <p class="text-xs text-gray-600 font-medium">Implementing Agencies: <span
+                                <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
                                         class="text-green-700">PCA, DOST</span></p>
                             </div>
-                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <ul class="text-sm lg:text-base text-gray-600 space-y-1 mb-4">
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
                                         viewBox="0 0 20 20">
@@ -563,16 +578,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Pagtatag at pagpapatibay ng mga kooperatiba at samahan
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Pananaliksik, marketing at pagsulong sa industriya
+                                    Creation of Office
                                 </li>
                             </ul>
                         </div>
@@ -1331,14 +1337,18 @@
                     mapakinabangan ang mga programa nito
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8">
                 <!-- Office Address Container -->
-                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
+                <div
+                    class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
                     <div class="bg-green-100 rounded-full p-3 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold text-green-700 mb-2">Office Address</h3>
@@ -1347,12 +1357,15 @@
                         Legazpi City
                     </p>
                 </div>
-                
+
                 <!-- Email Address Container -->
-                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
+                <div
+                    class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
                     <div class="bg-green-100 rounded-full p-3 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold text-green-700 mb-2">Email Address</h3>
@@ -1361,12 +1374,15 @@
                         <a href="mailto:pca5@yahoo.com" class="text-gray-600 hover:underline">pca5@yahoo.com</a>
                     </p>
                 </div>
-                
+
                 <!-- Telephone Number Container -->
-                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
+                <div
+                    class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
                     <div class="bg-green-100 rounded-full p-3 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold text-green-700 mb-2">Telephone No.</h3>
