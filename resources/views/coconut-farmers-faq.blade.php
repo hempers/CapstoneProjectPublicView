@@ -236,7 +236,7 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-5xl font-bold text-green-900 mb-4">
-                        MGA <span style="color: #09ca59ff;">PROGRAMA SA ILALIM</span> NG CFIDP
+                        MGA <span style="color: #09ca59ff;">PROGRAMA SA ILALIM</span> NG PCA-CFIDP
                     </h2>
                     <p class="text-lg text-gray-600 max-w-3xl mx-auto ">
                         Alamin ang mga suportang mapapakinabangan ng mga magniniyog sa ilalim ng Republic Act 11524
@@ -256,8 +256,9 @@
                                 </svg>
                             </div>
                             <h3 class="text-lg lg:text-xl font-bold text-gray-800 mb-4">Social Protection Program</h3>
-                            <p class="text-sm lg:text-base text-gray-600 mb-3">Mga rehistradong magniniyog sa NCFRS na may access sa serbisyong
-                                medikal, insurance, scholarship at pagsasanay.</p>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Isang programa na nagsusulong ng seguridad at
+                                tulong para sa mga magsasaka at kanilang pamilya laban sa mga panganib tulad ng kalamidad,
+                                kahirapan, at iba pang suliraning panlipunan.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
                                 <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
                                         class="text-green-700">PCA, PCIC, CHED, ATI and TESDA</span></p>
@@ -302,7 +303,7 @@
                                     Trainings/Farm Schools
                                 </li>
                             </ul>
-                            
+
                         </div>
                     </div>
 
@@ -318,7 +319,9 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Farmers Organization and Development</h3>
-                            <p class="text-sm lg:text-base text-gray-600 mb-3">Organized, registered and capacitated farmer's cooperatives</p>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagbuo at pagpapalakas ng mga samahan ng mga
+                                magsasaka upang mapahusay ang kanilang kakayahan, kooperasyon, at pag-unlad sa sektor ng
+                                agrikultura.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
                                 <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agency: <span
                                         class="text-green-700">CDA</span></p>
@@ -358,8 +361,9 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Hybridization</h3>
-                            <p class="text-sm lg:text-base text-gray-600 mb-3">Community-based enterprises kasama ang intercropping, at
-                                pag-aalaga ng manok, livestock at dairy animals sa mga niyugan.</p>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Proseso ng pagpapalitan ng pollen mula sa
+                                iba't ibang uri ng halaman upang makabuo ng mga hybrid na puno ng niyog na may mas mataas na
+                                ani at kalidad.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
                                 <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
                                         class="text-green-700">PCA, PCAARRD-DOST</span></p>
@@ -372,7 +376,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Hybridization 
+                                    Hybridization
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -401,10 +405,12 @@
                                         d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Community-Based Farm Enterprise and Development <span class="text-xs lg:text-sm font-medium">(Farm Rehabilitation and Improvement)</span>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Community-Based Farm Enterprise and Development
+                                <span class="text-xs lg:text-sm font-medium">(Farm Rehabilitation and Improvement)</span>
                             </h3>
-                            <p class="text-sm lg:text-base text-gray-600 mb-3">Programa ng Scholarship para sa mga Magsasaka at kanilang pamilya
-                                para sa mas magandang kinabukasan.</p>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagsasaayos at pagpapaunlad ng mga sakahan sa
+                                pamamagitan ng pagkilos ng komunidad upang mapataas ang produksiyon at mapagaan ang pasanin
+                                ng mga magsasaka.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
                                 <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agency: <span
                                         class="text-green-700">HCVDP, NDA, BAI</span></p>
@@ -437,8 +443,9 @@
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Integrated Coconut Processing and Downstream
                                 Products</h3>
-                            <p class="text-sm lg:text-base text-gray-600 mb-3">Integrated processing ng mga produkto at downstream products na
-                                naglalayong patasin ang kita ng mga magniniyog.</p>
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagsasama-sama ng iba't ibang proseso ng
+                                pagpoproseso ng niyog para makagawa ng mga produktong may mataas na halaga at dagdag na kita
+                                para sa mga magsasaka.</p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
                                 <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
                                         class="text-green-700">PhilMech</span></p>
@@ -451,7 +458,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                   Shared Processing Facilities
+                                    Shared Processing Facilities
                                 </li>
                             </ul>
                         </div>
@@ -469,8 +476,11 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Support Services</h3>
-                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
-                                pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagbibigay ng teknikal, pinansyal, at iba
+                                pang tulong upang masuportahan ang mga gawain at proyekto ng mga magsasaka sa produksyon at
+                                pamamahagi.
+
+
                             </p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
                                 <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
@@ -484,7 +494,7 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                   Credit Programs
+                                    Credit Programs
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor"
@@ -521,8 +531,9 @@
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Innovative Researches & Its Practical
                                 Application on Production & Distribution</h3>
-                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
-                                pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagsasagawa ng makabagong pananaliksik at
+                                paggamit nito sa aktwal na produksyon at pamamahagi upang mapabuti ang sektoral na kahusayan
+                                at kita.
                             </p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
                                 <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
@@ -545,7 +556,8 @@
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    Research Coordination, Collaboration, Integration and Utilization thru GAA funding of PCA, SCUs and DOST
+                                    Research Coordination, Collaboration, Integration and Utilization thru GAA funding of
+                                    PCA, SCUs and DOST
                                 </li>
                             </ul>
                         </div>
@@ -563,8 +575,9 @@
                                 </svg>
                             </div>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Program Management, Coordination and M&E</h3>
-                            <p class="text-sm lg:text-base text-gray-600 mb-3">Pagsasagawa ng mga makabagong pananaliksik at aplikasyon nito sa
-                                pagpoproseso, produksyon, at distribusyon ng niyog upang mapalago ang lokal na industriya.
+                            <p class="text-sm lg:text-base text-gray-600 mb-3">Organisadong pamamahala, koordinasyon, at
+                                pagsusuri upang matiyak ang epektibo at maayos na pagpapatupad ng mga programa at proyekto
+                                ng PCA-CFIDP.
                             </p>
                             <div class="bg-green-50 rounded-lg px-3 py-2 mb-3">
                                 <p class="text-sm lg:text-base text-gray-600 font-medium">Implementing Agencies: <span
@@ -654,12 +667,12 @@
                                             na hindi hihigit sa limang (5) ektarya na:</h4>
                                         <div class="ml-6 space-y-4">
                                             <div class="flex items-start">
-                                                <div class="min-w-[20px] mt-1 mr-2">a.</div>
+                                                <div class="min-w-[20px] mr-2">a.</div>
                                                 <p class="text-gray-700">Siya ay nag-lilinang ng kanyang lupa o tinuturing
                                                     na "owner-cultivator"; o</p>
                                             </div>
                                             <div class="flex items-start">
-                                                <div class="min-w-[20px] mt-1 mr-2">b.</div>
+                                                <div class="min-w-[20px] mr-2">b.</div>
                                                 <p class="text-gray-700">Hindi siya ang naglilinang ng lupa, nguni't siya
                                                     ang may kontrol o namamahala nito;</p>
                                             </div>
@@ -672,7 +685,7 @@
                             <div class="bg-green-50 rounded-lg p-6 border border-green-100">
                                 <div class="flex items-start">
                                     <div
-                                        class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                        class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 mt-1 py-2">
                                         <span class="text-white font-bold">2</span>
                                     </div>
                                     <div>
@@ -1326,7 +1339,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-8">
+    <section id="contact" class="py-10">
         <div class="container mx-auto px-4">
             <div class="text-center text-green-700">
                 <h2 class="text-lg md:text-2xl font-bold mb-4">
