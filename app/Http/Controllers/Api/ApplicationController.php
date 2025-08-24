@@ -108,6 +108,7 @@ class ApplicationController extends Controller
     /**
      * Helper method to get the application's stage history.
      * It only returns records where IsVisibleToApplicant is set to 1.
+     * Also includes the full name of the staff who conducted the action.
      *
      * @param string $applicationId The unique ID of the application.
      * @return array
@@ -117,9 +118,11 @@ class ApplicationController extends Controller
         try {
             // Fetch history records visible to the applicant.
             $historyRecords = DB::table('application_stage_history')
-                ->where('ApplicationID', $applicationId)
-                ->where('IsVisibleToApplicant', '=', 1)
-                ->orderBy('Date', 'desc')
+                ->leftJoin('staff', 'application_stage_history.EnterbyStaffID', '=', 'staff.StaffID')
+                ->select('application_stage_history.*', 'staff.FullName as ConductedBy')
+                ->where('application_stage_history.ApplicationID', $applicationId)
+                ->where('application_stage_history.IsVisibleToApplicant', '=', 1)
+                ->orderBy('application_stage_history.Date', 'desc')
                 ->get();
 
             // If no history records are found, return an empty array
@@ -132,7 +135,8 @@ class ApplicationController extends Controller
             $history = $historyRecords->map(function ($record) {
                 return [
                     'date' => $record->Date,
-                    'remarks' => $record->Remarks ?? ''
+                    'remarks' => $record->Remarks ?? '',
+                    'conducted_by' => $record->ConductedBy ?? 'Unknown Staff'
                 ];
             })->toArray();
 

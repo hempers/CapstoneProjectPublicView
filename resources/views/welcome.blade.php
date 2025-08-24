@@ -568,6 +568,7 @@
                                                     <!-- Body content -->
                                                     <div class="space-y-1">
                                                         ${item.remarks ? `<p class="text-sm text-gray-800 font-medium px-6">${item.remarks}</p>` : ''}
+                                                        ${item.conducted_by ? `<p class="text-xs text-gray-600 italic px-6 mt-1">Conducted by: ${item.conducted_by}</p>` : ''}
                                                     </div>
                                                 </div>
                                             `;
