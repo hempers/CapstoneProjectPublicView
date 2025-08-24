@@ -286,7 +286,9 @@
                                         <label class="block text-xs font-semibold text-gray-700 mb-1">Application
                                             Status:</label>
                                         <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
-                                            id="modalCurrentStatus">-</div>
+                                            id="modalCurrentStatus">
+                                            <span class="inline-block bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">-</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -468,18 +470,28 @@
 
                     // Update status with color coding
                     const statusElement = document.getElementById('modalCurrentStatus');
-
+                    
                     // Log the status field
                     console.log('Status field check:', {
                         application_status: data.application_status
                     });
-
+                    
                     // Use the exact field name from the API
                     const status = data.application_status || 'Unknown';
-                    statusElement.textContent = status;
-
-                    // Keep the border styling but update the text style
-                    statusElement.className = 'border border-gray-300 rounded-md p-2 bg-white text-sm font-semibold text-green-700';
+                    
+                    // Find or create the status span
+                    let statusSpan = statusElement.querySelector('span');
+                    if (!statusSpan) {
+                        statusSpan = document.createElement('span');
+                        statusSpan.className = 'inline-block bg-green-50 text-green-800 text-xs font-medium px-2 py-1 rounded-lg';
+                        statusElement.appendChild(statusSpan);
+                    }
+                    
+                    // Update the span text
+                    statusSpan.textContent = status;
+                    
+                    // Keep the container styling
+                    statusElement.className = 'border border-gray-300 rounded-md p-2 bg-white text-sm';
 
                     // Populate history timeline
                     const historyTimeline = document.getElementById('modalHistoryTable');
@@ -663,16 +675,13 @@
                                                         </svg>
                                                     </div>
                                                     <div class="ml-3">
-                                                        <p class="mb-2 font-medium">
-                                                            <span class="font-bold text-green-700">Mahalaga:</span>
+                                                        <p class="mb-2 mt-1 font-medium">
+                                                            <span class="text-green-700">Mahalagang Paalala:</span>
                                                         </p>
                                                         <p class="mb-3">
                                                             Kinakailangan pong maipasa ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
                                                         </p>
-                                                        <p class="flex items-center">
-                                                            <svg class="h-4 w-4 text-green-600 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-                                                            </svg>
+                                                        <p class="flex items-center italic">
                                                             Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.
                                                         </p>
                                                     </div>
