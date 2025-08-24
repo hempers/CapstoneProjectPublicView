@@ -118,7 +118,7 @@ class ApplicationController extends Controller
         try {
             // Fetch history records visible to the applicant.
             $historyRecords = DB::table('application_stage_history')
-                ->leftJoin('staff', 'application_stage_history.EnterbyStaffID', '=', 'staff.StaffID')
+                ->leftJoin('staff', 'application_stage_history.OwnerStaffID', '=', 'staff.StaffID')
                 ->select('application_stage_history.*', 'staff.FullName as ConductedBy')
                 ->where('application_stage_history.ApplicationID', $applicationId)
                 ->where('application_stage_history.IsVisibleToApplicant', '=', 1)

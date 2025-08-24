@@ -512,6 +512,9 @@
                         let firstItem = true;
 
                         sortedHistoryData.forEach((item, index) => {
+                            // Debug each history item to check for conducted_by field
+                            console.log(`History item ${index}:`, item, 'Has conducted_by:', item.hasOwnProperty('conducted_by'));
+                            
                             const timelineItem = document.createElement('div');
                             timelineItem.className = 'pl-10 relative';
 
@@ -568,7 +571,7 @@
                                                     <!-- Body content -->
                                                     <div class="space-y-1">
                                                         ${item.remarks ? `<p class="text-sm text-gray-800 font-medium px-6">${item.remarks}</p>` : ''}
-                                                        ${item.conducted_by ? `<p class="text-xs text-gray-600 italic px-6 mt-1">Conducted by: ${item.conducted_by}</p>` : ''}
+                                                        <p class="text-xs text-gray-600 px-6 mt-1">Conducted by: ${item.conducted_by || 'Unknown Staff'}</p>
                                                     </div>
                                                 </div>
                                             `;
