@@ -132,10 +132,7 @@ class ApplicationController extends Controller
             $history = $historyRecords->map(function ($record) {
                 return [
                     'date' => $record->Date,
-                    'stage' => $record->StageName,
-                    'remarks' => $record->Remarks ?? '',
-                   
-                    'action_taken' => $record->ActionTaken
+                    'remarks' => $record->Remarks ?? ''
                 ];
             })->toArray();
 
