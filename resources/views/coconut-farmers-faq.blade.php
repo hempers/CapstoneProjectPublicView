@@ -1346,7 +1346,7 @@
                     Kailangan pa ng Karagdagang Impormasyon?
                 </h2>
                 <p class="text-sm lg:text-base text-green-700 max-w-2xl mx-auto mb-10">
-                    Makipag-ugnayan sa Philippine Coconut Authority (PCA) para sa mga tanong tungkol sa CFIDP at paano
+                    Makipag-ugnayan sa Philippine Coconut Authority (PCA)-Region V para sa mga tanong tungkol sa CFIDP at paano
                     mapakinabangan ang mga programa nito
                 </p>
             </div>
