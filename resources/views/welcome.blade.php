@@ -563,17 +563,11 @@
                                                             <span class="mx-1 text-gray-300">•</span>
                                                             <span class="text-xs text-gray-400">${timeFormatted || ''}</span>
                                                         </div>
-                                                        <div>
-                                                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-sm font-medium bg-green-50 text-green-700">
-                                                                ${item.stage || 'Unknown Stage'}
-                                                            </span>
-                                                        </div>
                                                     </div>
 
                                                     <!-- Body content -->
                                                     <div class="space-y-1">
                                                         ${item.remarks ? `<p class="text-sm text-gray-800 font-medium px-6">${item.remarks}</p>` : ''}
-                                                        ${item.action_taken ? `<p class="text-xs text-gray-600 px-6">Action: ${item.action_taken}</p>` : ''}
                                                     </div>
                                                 </div>
                                             `;

@@ -122,37 +122,19 @@ class ApplicationController extends Controller
                 ->orderBy('Date', 'desc')
                 ->get();
 
-            // If no history records are found, create a fallback record.
+            // If no history records are found, return an empty array
+            // The frontend will handle displaying "No History Found!"
             if ($historyRecords->isEmpty()) {
-                $application = DB::table('applications')->where('ApplicationID', $applicationId)->first();
-                if (!$application) {
-                    return [];
-                }
-
-                return [
-                    [
-                        'date' => $application->DateSubmitted,
-                        'stage' => 'Application Submitted',
-                        'remarks' => 'Application submitted to ' . ($application->CFIDPProgramCategory ?? 'PCA'),
-                        'staff_name' => 'System',
-                        'office' => 'Provincial Office',
-                        'status' => 'Completed',
-                        'action_taken' => 'Submission recorded'
-                    ]
-                ];
+                return [];
             }
 
             // Map the database records to the expected output format.
             $history = $historyRecords->map(function ($record) {
-                $staffInfo = $this->getStaffInfo($record->OwnerStaffID);
-
                 return [
                     'date' => $record->Date,
-                    'stage' => $record->Stage,
+                    'stage' => $record->StageName,
                     'remarks' => $record->Remarks ?? '',
-                    'staff_name' => $staffInfo['name'],
-                    'office' => $staffInfo['office'],
-                    'status' => $this->deriveStatusFromStage($record->Stage),
+                   
                     'action_taken' => $record->ActionTaken
                 ];
             })->toArray();
@@ -179,30 +161,14 @@ class ApplicationController extends Controller
             $hasRequirements = DB::table('application_requirements')
                 ->where('ApplicationID', $applicationId)
                 ->exists();
-                
+
             if (!$hasRequirements) {
-                // If no requirements found, return dummy test data to verify frontend rendering works
-                Log::info('No requirements found for application. Returning dummy test data.', [
+                // If no requirements found, return an empty array
+                Log::info('No requirements found for application.', [
                     'applicationId' => $applicationId
                 ]);
-                
-                return [
-                    [
-                        'requirement_name' => 'Application Form',
-                        'description' => 'Completed application form with all fields filled out',
-                        'status' => 'complete'
-                    ],
-                    [
-                        'requirement_name' => 'Valid ID',
-                        'description' => 'Government-issued identification card',
-                        'status' => 'missing'
-                    ],
-                    [
-                        'requirement_name' => 'Proof of Land Ownership',
-                        'description' => 'Land title, tax declaration, or other proof of ownership',
-                        'status' => 'kulang'
-                    ]
-                ];
+
+                return [];
             }
 
             // Log the query we're about to execute to help with debugging
@@ -220,7 +186,7 @@ class ApplicationController extends Controller
                     'application_requirements.RequirementStatus as status'
                 )
                 ->get();
-                
+
             // Log the raw query results
             Log::info('Requirements query results', [
                 'count' => $requirements->count(),
@@ -236,11 +202,11 @@ class ApplicationController extends Controller
                     'status' => $req->status ?? 'unknown'
                 ];
             })->toArray();
-            
+
             Log::info('Returning requirements data', [
                 'count' => count($result)
             ]);
-            
+
             return $result;
 
         } catch (\Exception $e) {
@@ -249,72 +215,10 @@ class ApplicationController extends Controller
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString()
             ]);
-            
-            // Return test data even on error to help debug the frontend
-            return [
-                [
-                    'requirement_name' => '[ERROR] Test Requirement',
-                    'description' => 'Error occurred: ' . $e->getMessage(),
-                    'status' => 'missing'
-                ]
-            ];
+
+            // Return an empty array on error
+            return [];
         }
     }
-    /**
-     * Helper method to get staff information based on StaffID.
-     *
-     * @param string|int $staffId The ID of the staff member.
-     * @return array
-     */
-    private function getStaffInfo($staffId)
-    {
-        try {
-            $staff = DB::table('staff')->where('StaffID', $staffId)->first();
-
-            if ($staff) {
-                $office = DB::table('offices')->where('OfficeID', $staff->OfficeID ?? 0)->first();
-
-                return [
-                    'name' => trim(($staff->FirstName ?? '') . ' ' . ($staff->LastName ?? '')),
-                    'office' => $office ? $office->OfficeName : 'PCA Office'
-                ];
-            }
-
-            // Fallback data if staff record not found.
-            return [
-                'name' => 'PCA Staff',
-                'office' => 'PCA Office'
-            ];
-        } catch (\Exception $e) {
-            Log::error('Error fetching staff info.', ['staffId' => $staffId, 'error' => $e->getMessage()]);
-            return [
-                'name' => 'PCA Staff',
-                'office' => 'PCA Office'
-            ];
-        }
-    }
-
-    /**
-     * Helper method to map stage names to a more user-friendly status.
-     *
-     * @param string $stageName The name of the stage from the database.
-     * @return string
-     */
-    private function deriveStatusFromStage($stageName)
-    {
-        $stageStatusMap = [
-            'Registration' => 'Registered',
-            'Validation' => 'Under Validation',
-            'Technical Evaluation' => 'Under Evaluation',
-            'Review' => 'Under Review',
-            'Recommendation' => 'Awaiting Recommendation',
-            'Approval' => 'Awaiting Approval',
-            'Implementation' => 'In Implementation',
-            'Completed' => 'Completed',
-            'Rejected' => 'Rejected',
-            'On Hold' => 'On Hold'
-        ];
-
-        return $stageStatusMap[$stageName] ?? 'Processing';
-    }
+   
 }
