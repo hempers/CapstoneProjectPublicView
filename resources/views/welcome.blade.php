@@ -290,7 +290,7 @@
                                             <label class="block text-xs font-semibold text-gray-700 mb-1">Application Status:</label>
                                             <div class="border border-gray-200 rounded-md p-2 bg-gray-50 text-sm"
                                                 id="modalCurrentStatus">
-                                                <span class="inline-block bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-lg">-</span>
+                                                <span class="inline-block text-green-800 text-sm font-semibold ">-</span>
                                             </div>
                                         </div>
                                     </div>
