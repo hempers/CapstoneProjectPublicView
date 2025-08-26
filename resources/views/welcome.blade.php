@@ -75,10 +75,13 @@
                 <div class="relative flex w-full">
                     <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong reference ID"
                         class="w-full flex-grow px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm placeholder:text-xs">
-                    <button id="trackButton" type="button" class="px-3 sm:px-4 md:px-5 py-3 rounded-r-lg text-white font-semibold flex items-center justify-center transition-colors duration-200 hover:bg-green-600"
+                    <button id="trackButton" type="button"
+                        class="px-3 sm:px-4 md:px-5 py-3 rounded-r-lg text-white font-semibold flex items-center justify-center transition-colors duration-200 hover:bg-green-600"
                         style="background-color: #09ca59ff; min-width: 48px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
                 </div>
@@ -198,11 +201,14 @@
                 <div
                     class="relative bg-white rounded-xl shadow-2xl w-full max-w-2xl mx-auto max-h-[90vh] overflow-y-auto transform translate-y-[-1vh]">
                     <!-- Modal Header -->
-                    <div class="bg-gradient-to-r from-green-500 to-green-400 p-4 sm:p-6 rounded-t-xl relative overflow-hidden">
+                    <div
+                        class="bg-gradient-to-r from-green-500 to-green-400 p-4 sm:p-6 rounded-t-xl relative overflow-hidden">
                         <!-- Decorative elements -->
-                        <div class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-white opacity-10 rounded-full -mt-8 sm:-mt-12 -mr-8 sm:-mr-12">
+                        <div
+                            class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-white opacity-10 rounded-full -mt-8 sm:-mt-12 -mr-8 sm:-mr-12">
                         </div>
-                        <div class="absolute bottom-0 left-0 w-16 sm:w-24 h-16 sm:h-24 bg-white opacity-10 rounded-full -mb-8 sm:-mb-12 -ml-8 sm:-ml-12">
+                        <div
+                            class="absolute bottom-0 left-0 w-16 sm:w-24 h-16 sm:h-24 bg-white opacity-10 rounded-full -mb-8 sm:-mb-12 -ml-8 sm:-ml-12">
                         </div>
                         <div
                             class="absolute top-1/2 left-1/4 w-6 sm:w-8 h-6 sm:h-8 bg-white opacity-10 rounded-full transform -translate-y-1/2">
@@ -211,19 +217,20 @@
                         <div class="flex items-center justify-between relative z-10">
                             <!-- Left spacer - smaller on mobile -->
                             <div class="w-6 sm:w-10"></div>
-                            
+
                             <!-- Center content - better responsive sizing -->
                             <div class="flex-1 text-center px-1 sm:px-4">
                                 <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white mt-2 sm:mt-4">
                                     Application Tracking Details</h2>
                                 <div class="w-12 sm:w-16 h-0.5 sm:h-1 bg-white opacity-70 rounded mx-auto"></div>
                             </div>
-                            
+
                             <!-- Close button - better positioning and sizing -->
                             <div class="flex justify-end">
                                 <button id="closeModal"
                                     class="text-white hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 bg-green-600 hover:bg-green-700 rounded-full p-1.5 shadow-lg transition-all duration-200">
-                                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M6 18L18 6M6 6l12 12"></path>
                                     </svg>
@@ -246,62 +253,67 @@
                         <!-- Application Information Section -->
                         <div class="mb-8 mt-1 pt-1">
                             <div class="flex items-center mb-4 space-x-2">
-                                <div class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                        </svg>
-                                    </div>
+                                <div
+                                    class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
                                 <h3 class="text-base font-bold text-gray-900">Application Information</h3>
                             </div>
 
-                            <div class="mb-6">   <!-- Clean card container -->
+                            <div class="mb-6"> <!-- Clean card container -->
                                 <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
-                                    <!-- Application Title -->
-                                    <div class="mb-4">
-                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Application Title</label>
-                                        <div class="rounded-md p-2 bg-gray-50 text-sm text-gray-800 font-medium"
-                                            id="modalApplicationTitle">-</div>
+                                    <!-- Current Status - Centered green pill at top -->
+                                    <div class="flex justify-center mb-2">
+                                        <div class="bg-green-400 text-white px-6 py-2 rounded-full text-sm font-medium">
+                                            Current Status: <span id="modalCurrentStatusText">-</span>
+                                        </div>  
                                     </div>
 
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                        <!-- Reference ID with special styling -->
-                                        <div>
-                                            <label class="block text-xs font-semibold text-gray-700 mb-1">Reference ID</label>
-                                            <div class="border border-gray-200 rounded-md p-3 bg-green-50 text-sm font-mono font-medium text-green-800 flex items-center"
-                                                id="modalReferenceId">-</div>
+                                    <!-- Reference ID - Centered below status -->
+                                    <div class="flex justify-center mb-6">
+                                        <div class="border border-green-200 rounded-full px-4 py-2">
+                                            <span class="text-xs text-green-600">Reference ID: </span>
+                                            <span id="modalReferenceId" class="text-xs font-medium text-green-600">-</span>
                                         </div>
+                                    </div>
 
-                                        <!-- Date Submitted -->
-                                        <div>
-                                            <label class="block text-xs font-semibold text-gray-700 mb-1">Date Submitted:</label>
-                                            <div class="border border-gray-200 rounded-md p-2 bg-gray-50 text-sm text-gray-800"
-                                                id="modalDateSubmitted">-</div>
+                                    <!-- Two column layout for details -->
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <!-- Application Title -->
+                                        <div class="sm:col-span-2">
+                                            <p class="text-gray-600 text-xs font-medium mb-1">Application Title</p>
+                                            <div id="modalApplicationTitle" class="bg-green-50 rounded-md p-3 text-sm">-
+                                            </div>
                                         </div>
 
                                         <!-- Contact Person -->
                                         <div>
-                                            <label class="block text-xs font-semibold text-gray-700 mb-1">Contact Person</label>
-                                            <div class="border border-gray-200 rounded-md p-2 bg-gray-50 text-sm text-gray-800"
-                                                id="modalProponent">-</div>
+                                            <p class="text-gray-600 text-xs font-medium mb-1">Contact Person</p>
+                                            <div id="modalProponent" class="bg-green-50 rounded-md p-3 text-sm ">
+                                                -</div>
                                         </div>
 
-                                        <!-- Application Status with badge -->
+                                        <!-- Date Submitted -->
                                         <div>
-                                            <label class="block text-xs font-semibold text-gray-700 mb-1">Application Status:</label>
-                                            <div class="border border-gray-200 rounded-md p-2 bg-gray-50 text-sm"
-                                                id="modalCurrentStatus">
-                                                <span class="inline-block text-green-500 text-sm font-medium ">-</span>
-                                            </div>
+                                            <p class="text-gray-600 text-xs font-medium mb-1">Date Submitted</p>
+                                            <div id="modalDateSubmitted"
+                                                class="bg-green-50 rounded-md p-3 text-sm">-</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+
                         <!-- Application History -->
                         <div class="mb-8">
                             <div class="flex items-center mb-4 space-x-2">
-                                <div class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
+                                <div
+                                    class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -345,7 +357,8 @@
                         <!-- Requirements Status -->
                         <div class="mb-4">
                             <div class="flex items-center mb-4 space-x-2">
-                                <div class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
+                                <div
+                                    class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6m-6 4h6">
@@ -380,7 +393,7 @@
                 const errorText = document.getElementById('errorText');
                 // Get API URL from environment variable
                 const API_BASE_URL = '{{ env("EXTERNAL_API_URL", "http://127.0.0.1:8001") }}';
-                
+
                 // Stage mapping for display purposes
                 const stageDisplayNames = {
                     'Registration': 'Application Received',
@@ -400,7 +413,7 @@
                     'Certification': 'Application Certification',
                     'Assigned_for_Review': 'Assigned for Review'
                 };
-                
+
                 // Stage color mapping for visual distinction
                 const stageColorMapping = {
                     'Registration': 'bg-blue-50 text-blue-600',
@@ -521,29 +534,23 @@
                         }) : '-';
 
                     // Update status with color coding
-                    const statusElement = document.getElementById('modalCurrentStatus');
-                    
+                    const statusTextElement = document.getElementById('modalCurrentStatusText');
+
                     // Log the status field
                     console.log('Status field check:', {
                         application_status: data.application_status
                     });
-                    
+
                     // Use the exact field name from the API
-                    const status = data.application_status || 'Unknown';
+                    const statusCode = data.application_status || 'Unknown';
                     
-                    // Find or create the status span
-                    let statusSpan = statusElement.querySelector('span');
-                    if (!statusSpan) {
-                        statusSpan = document.createElement('span');
-                        statusSpan.className = 'inline-block bg-green-50 text-green-800 text-xs font-medium px-2 py-1 rounded-lg';
-                        statusElement.appendChild(statusSpan);
+                    // Use the more readable display name if available, or fall back to the status code
+                    const displayStatus = stageDisplayNames[statusCode] || statusCode;
+
+                    // Update the status text directly
+                    if (statusTextElement) {
+                        statusTextElement.textContent = displayStatus;
                     }
-                    
-                    // Update the span text
-                    statusSpan.textContent = status;
-                    
-                    // Keep the container styling
-                    statusElement.className = 'border border-gray-300 rounded-md p-2 bg-white text-sm';
 
                     // Populate history timeline
                     const historyTimeline = document.getElementById('modalHistoryTable');
@@ -578,7 +585,7 @@
                         sortedHistoryData.forEach((item, index) => {
                             // Debug each history item to check for conducted_by field
                             console.log(`History item ${index}:`, item, 'Has conducted_by:', item.hasOwnProperty('conducted_by'));
-                            
+
                             const timelineItem = document.createElement('div');
                             timelineItem.className = 'flex gap-4 relative mb-6';
 
@@ -608,7 +615,7 @@
                             // Default stage class if no mapping exists
                             let stageClass = 'bg-yellow-50 text-yellow-600';
                             let lineColor = 'bg-gray-300';
-                            
+
                             // Get stage-specific color if available
                             if (item.stage && stageColorMapping[item.stage]) {
                                 stageClass = stageColorMapping[item.stage];
@@ -624,32 +631,32 @@
                             }
 
                             timelineItem.innerHTML = `
-                                <!-- Date box on the left -->
-                                <div class="min-w-[80px] bg-white rounded-lg shadow-sm border border-gray-100 p-2 flex flex-col items-center justify-center">
-                                    <div class="font-bold text-gray-900">${formattedDay} ${formattedDate}</div>
-                                    <div class="text-xs text-gray-500">${formattedTime}</div>
-                                </div>
-                                
-                                <!-- Timeline line and dot -->
-                                <div class="relative flex flex-col items-center">
-                                    <div class="h-full w-0.5 ${lineColor} absolute"></div>
-                                    <div class="border-2 ${dotBorder} z-10 h-3 w-3 rounded-full ${dotColor} shadow-sm"></div>
-                                </div>
-                                
-                                <!-- Content on the right -->
-                                <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
-                                    <!-- Status badge at top -->
-                                    <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
-                                        ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
-                                    </div>
-                                    
-                                    <!-- Main content -->
-                                    <div>
-                                        ${item.remarks ? `<p class="text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
-                                        <p class="text-xs text-gray-600">Conducted by: ${item.conducted_by || 'Unknown Staff'}</p>
-                                    </div>
-                                </div>
-                            `;
+                                        <!-- Date box on the left -->
+                                        <div class="min-w-[80px] bg-white rounded-lg shadow-sm border border-gray-100 p-2 flex flex-col items-center justify-center">
+                                            <div class="font-semibold text-sm text-gray-900">${formattedDay} ${formattedDate}</div>
+                                            <div class="text-xs text-gray-500">${formattedTime}</div>
+                                        </div>
+
+                                        <!-- Timeline line and dot -->
+                                        <div class="relative flex flex-col items-center">
+                                            <div class="h-full w-0.5 ${lineColor} absolute"></div>
+                                            <div class="border-2 ${dotBorder} z-10 h-3 w-3 rounded-full ${dotColor} shadow-sm"></div>
+                                        </div>
+
+                                        <!-- Content on the right -->
+                                        <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                                            <!-- Status badge at top -->
+                                            <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
+                                                ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
+                                            </div>
+
+                                            <!-- Main content -->
+                                            <div>
+                                                ${item.remarks ? `<p class="text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
+                                                <p class="text-xs text-gray-600">Conducted by: ${item.conducted_by || 'Unknown Staff'}</p>
+                                            </div>
+                                        </div>
+                                    `;
 
                             historyTimeline.appendChild(timelineItem);
                         });
@@ -692,19 +699,19 @@
                             const warningHeader = document.createElement('div');
                             warningHeader.className = 'bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4';
                             warningHeader.innerHTML = `
-                                                <div class="flex items-center">
-                                                    <div class="flex-shrink-0">
-                                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                                        </svg>
-                                                    </div>
-                                                    <div class="ml-3">
-                                                        <p class="text-sm text-yellow-700 font-medium">
-                                                            Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            `;
+                                                        <div class="flex items-center">
+                                                            <div class="flex-shrink-0">
+                                                                <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="ml-3">
+                                                                <p class="text-sm text-yellow-700 font-medium">
+                                                                    Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    `;
                             requirementsContainer.appendChild(warningHeader);
 
                             // Create a list for missing requirements
@@ -719,11 +726,11 @@
                                 const listItem = document.createElement('li');
                                 listItem.className = 'flex items-center text-sm py-2 px-1 border-b border-gray-100';
                                 listItem.innerHTML = `
-                                                    <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                    </svg>
-                                                    <span class="text-gray-800">${reqName}</span>
-                                                `;
+                                                            <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                            </svg>
+                                                            <span class="text-gray-800">${reqName}</span>
+                                                        `;
                                 list.appendChild(listItem);
                             });
 
@@ -731,25 +738,25 @@
                             const noteElement = document.createElement('div');
                             noteElement.className = 'mt-4 text-sm text-gray-600 pt-3 border-t border-gray-100 bg-gray-50 rounded-lg p-4';
                             noteElement.innerHTML = `
-                                                <div class="flex items-start">
-                                                    <div class="flex-shrink-0 mt-1">
-                                                        <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-                                                        </svg>
-                                                    </div>
-                                                    <div class="ml-3">
-                                                        <p class="mb-2 mt-1 font-medium">
-                                                            <span class="text-green-700">Mahalagang Paalala:</span>
-                                                        </p>
-                                                        <p class="mb-3">
-                                                            Kinakailangan pong maipasa ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
-                                                        </p>
-                                                        <p class="flex items-center italic">
-                                                            Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            `;
+                                                        <div class="flex items-start">
+                                                            <div class="flex-shrink-0 mt-1">
+                                                                <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="ml-3">
+                                                                <p class="mb-2 mt-1 font-medium">
+                                                                    <span class="text-green-700">Mahalagang Paalala:</span>
+                                                                </p>
+                                                                <p class="mb-3">
+                                                                    Kinakailangan pong maipasa ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
+                                                                </p>
+                                                                <p class="flex items-center italic">
+                                                                    Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    `;
                             requirementsContainer.appendChild(noteElement);
                         } else {
                             // All requirements are complete
@@ -760,19 +767,19 @@
                             const completeMessage = document.createElement('div');
                             completeMessage.className = 'bg-green-50 border-l-4 border-green-400 p-4';
                             completeMessage.innerHTML = `
-                                                <div class="flex">
-                                                    <div class="flex-shrink-0">
-                                                        <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                                        </svg>
-                                                    </div>
-                                                    <div class="ml-3">
-                                                        <p class="text-sm text-green-700">
-                                                            Lahat ng kinakailangang dokumento ay kumpleto na.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            `;
+                                                        <div class="flex">
+                                                            <div class="flex-shrink-0">
+                                                                <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="ml-3">
+                                                                <p class="text-sm text-green-700">
+                                                                    Lahat ng kinakailangang dokumento ay kumpleto na.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    `;
                             requirementsContainer.appendChild(completeMessage);
                         }
                     } else {
@@ -859,9 +866,9 @@
                         trackButton.disabled = false;
                         // Restore the original SVG icon
                         trackButton.innerHTML = `
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>`;
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>`;
                     }
                 });
 
@@ -2597,7 +2604,7 @@
                 </h1>
                 <h1
                     class="text-3xl lg:text-5xl text-center font-bold text-green-900 transform transition-all duration-700 mt-5">
-                   
+
                     Ahensya Ng Gobyerno
                 </h1>
                 <div class="w-40 h-2 bg-green-800 mx-auto mt-3"></div>
@@ -3086,11 +3093,16 @@
         </section>
 
         <!-- Floating Back to Programs Button -->
-        <div id="back-to-top" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-50 opacity-0 transition-all duration-300 pointer-events-none">
-            <button onclick="scrollToPrograms()" class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-110 group" style="background-color: #09ca59ff; border: 2px solid white;">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 4L12 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <div id="back-to-top"
+            class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-50 opacity-0 transition-all duration-300 pointer-events-none">
+            <button onclick="scrollToPrograms()"
+                class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-110 group"
+                style="background-color: #09ca59ff; border: 2px solid white;">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 transform group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24"
+                    fill="none">
+                    <path d="M12 4L12 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </button>
         </div>
@@ -3146,26 +3158,28 @@
             // Initial check
             document.addEventListener('DOMContentLoaded', toggleBackToTopButton);
         </script>
-        
+
         <style>
             /* Floating button styles */
             .show-floating-button {
                 opacity: 1 !important;
                 pointer-events: auto !important;
             }
-            
+
             @keyframes pulse-shadow {
                 0% {
                     box-shadow: 0 0 0 0 rgba(9, 202, 89, 0.7);
                 }
+
                 70% {
                     box-shadow: 0 0 0 10px rgba(9, 202, 89, 0);
                 }
+
                 100% {
                     box-shadow: 0 0 0 0 rgba(9, 202, 89, 0);
                 }
             }
-            
+
             #back-to-top button {
                 animation: pulse-shadow 2s infinite;
             }
