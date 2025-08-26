@@ -255,43 +255,55 @@
                             </div>
 
                             <!-- Application Information Form -->
-                            <div class="mb-6 space-y-4">
-                                <div class="mb-3">
-                                    <label class="block text-xs font-semibold text-gray-700 mb-1">Application
-                                        Title</label>
-                                    <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
-                                        id="modalApplicationTitle">-</div>
+                            <div class="mb-6">
+                                <!-- Header with icon -->
+                                <div class="flex items-center mb-4">
+                                    <div class="w-7 h-7 rounded-full flex items-center justify-center bg-green-50 text-green-600 mr-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-sm font-medium text-gray-900">Application Information</h4>
                                 </div>
 
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    <div>
-                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Reference
-                                            ID</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
-                                            id="modalReferenceId">-</div>
+                                <!-- Clean card container -->
+                                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                                    <!-- Application Title -->
+                                    <div class="mb-4">
+                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Application Title</label>
+                                        <div class="rounded-md p-2 bg-gray-50 text-sm text-gray-800 font-medium"
+                                            id="modalApplicationTitle">-</div>
                                     </div>
 
-                                    <div>
-                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Date
-                                            Submitted:</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
-                                            id="modalDateSubmitted">-</div>
-                                    </div>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <!-- Reference ID with special styling -->
+                                        <div>
+                                            <label class="block text-xs font-semibold text-gray-700 mb-1">Reference ID</label>
+                                            <div class="border border-gray-200 rounded-md p-3 bg-green-50 text-sm font-mono font-medium text-green-800 flex items-center"
+                                                id="modalReferenceId">-</div>
+                                        </div>
 
-                                    <div>
-                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Contact
-                                            Person</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
-                                            id="modalProponent">-</div>
-                                    </div>
+                                        <!-- Date Submitted -->
+                                        <div>
+                                            <label class="block text-xs font-semibold text-gray-700 mb-1">Date Submitted:</label>
+                                            <div class="border border-gray-200 rounded-md p-2 bg-gray-50 text-sm text-gray-800"
+                                                id="modalDateSubmitted">-</div>
+                                        </div>
 
+                                        <!-- Contact Person -->
+                                        <div>
+                                            <label class="block text-xs font-semibold text-gray-700 mb-1">Contact Person</label>
+                                            <div class="border border-gray-200 rounded-md p-2 bg-gray-50 text-sm text-gray-800"
+                                                id="modalProponent">-</div>
+                                        </div>
 
-                                    <div>
-                                        <label class="block text-xs font-semibold text-gray-700 mb-1">Application
-                                            Status:</label>
-                                        <div class="border border-gray-300 rounded-md p-2 bg-white text-sm text-gray-800"
-                                            id="modalCurrentStatus">
-                                            <span class="inline-block bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">-</span>
+                                        <!-- Application Status with badge -->
+                                        <div>
+                                            <label class="block text-xs font-semibold text-gray-700 mb-1">Application Status:</label>
+                                            <div class="border border-gray-200 rounded-md p-2 bg-gray-50 text-sm"
+                                                id="modalCurrentStatus">
+                                                <span class="inline-block bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-lg">-</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -301,10 +313,12 @@
                         <!-- Application History -->
                         <div class="mb-8">
                             <div class="flex items-center mb-4 space-x-2">
-                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
                                 <h3 class="text-base font-bold text-gray-900">Application History</h3>
                             </div>
 
@@ -343,11 +357,13 @@
                         <!-- Requirements Status -->
                         <div class="mb-4">
                             <div class="flex items-center mb-4 space-x-2">
-                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6m-6 4h6">
-                                    </path>
-                                </svg>
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6m-6 4h6">
+                                        </path>
+                                    </svg>
+                                </div>
                                 <h3 class="text-base font-bold text-gray-900">Requirements Information</h3>
                             </div>
                             <div id="modalRequirements"
@@ -541,8 +557,6 @@
                             let dateColor = 'text-gray-400';
                             if (item.date) {
                                 const dateObj = new Date(item.date);
-                                const dateStr = dateObj.toLocaleDateString('en-PH', {
-                                    year: 'numeric',
                                 formattedDay = dateObj.getDate();
                                 const monthStr = dateObj.toLocaleDateString('en-PH', {
                                     month: 'short'
@@ -557,14 +571,16 @@
                             }
 
                             // Determine the timeline dot color based on status - highlight the most recent activity
-                            let dotColor = 'bg-yellow-300';
+                            let dotColor = 'bg-gray-300';
                             let dotBorder = 'border-white';
-                            let stageClass = 'bg-yellow-100 text-yellow-600';
+                            let stageClass = 'bg-yellow-50 text-yellow-600';
+                            let lineColor = 'bg-gray-300';
 
                             if (firstItem) {
                                 dotColor = 'bg-green-500';
                                 dotBorder = 'border-green-100';
                                 stageClass = 'bg-green-50 text-green-700';
+                                lineColor =  'bg-green-200';
                                 firstItem = false;
                             }
 
@@ -577,14 +593,14 @@
                                 
                                 <!-- Timeline line and dot -->
                                 <div class="relative flex flex-col items-center">
-                                    <div class="h-full w-0.5 bg-gray-200 absolute"></div>
+                                    <div class="h-full w-0.5 ${lineColor} absolute"></div>
                                     <div class="border-2 ${dotBorder} z-10 h-3 w-3 rounded-full ${dotColor} shadow-sm"></div>
                                 </div>
                                 
                                 <!-- Content on the right -->
-                                <div class="flex-1 bg-white rounded-lg shadow-sm border border-gray-100 p-4">
+                                <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
                                     <!-- Status badge at top -->
-                                    <div class="${stageClass} inline-block text-xs font-medium px-2 py-0.5 rounded-md mb-2">
+                                    <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
                                         ${item.stage || 'Unknown Stage'}
                                     </div>
                                     
