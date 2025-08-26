@@ -267,15 +267,17 @@
                             <div class="mb-6"> <!-- Clean card container -->
                                 <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
                                     <!-- Current Status - Centered green pill at top -->
-                                    <div class="flex justify-center mb-2">
-                                        <div class="bg-green-400 text-white px-6 py-2 rounded-full text-sm font-medium">
-                                            Current Status: <span id="modalCurrentStatusText">-</span>
-                                        </div>  
+                                    <div class="flex justify-center mb-2 mt-2">
+                                        <div
+                                            class="border border-green-100 bg-green-100 text-green-600 px-4 py-2 rounded-full text-xs">
+                                            Current Status: <span id="modalCurrentStatusText"
+                                                class="text-sm font-semibold">-</span>
+                                        </div>
                                     </div>
 
                                     <!-- Reference ID - Centered below status -->
                                     <div class="flex justify-center mb-6">
-                                        <div class="border border-green-200 rounded-full px-4 py-2">
+                                        <div class="border border-green-200 rounded-full px-4 py-1">
                                             <span class="text-xs text-green-600">Reference ID: </span>
                                             <span id="modalReferenceId" class="text-xs font-medium text-green-600">-</span>
                                         </div>
@@ -300,8 +302,7 @@
                                         <!-- Date Submitted -->
                                         <div>
                                             <p class="text-gray-600 text-xs font-medium mb-1">Date Submitted</p>
-                                            <div id="modalDateSubmitted"
-                                                class="bg-green-50 rounded-md p-3 text-sm">-</div>
+                                            <div id="modalDateSubmitted" class="bg-green-50 rounded-md p-3 text-sm">-</div>
                                         </div>
                                     </div>
                                 </div>
@@ -543,7 +544,7 @@
 
                     // Use the exact field name from the API
                     const statusCode = data.application_status || 'Unknown';
-                    
+
                     // Use the more readable display name if available, or fall back to the status code
                     const displayStatus = stageDisplayNames[statusCode] || statusCode;
 
@@ -631,32 +632,32 @@
                             }
 
                             timelineItem.innerHTML = `
-                                        <!-- Date box on the left -->
-                                        <div class="min-w-[80px] bg-white rounded-lg shadow-sm border border-gray-100 p-2 flex flex-col items-center justify-center">
-                                            <div class="font-semibold text-sm text-gray-900">${formattedDay} ${formattedDate}</div>
-                                            <div class="text-xs text-gray-500">${formattedTime}</div>
-                                        </div>
+                                                <!-- Date box on the left -->
+                                                <div class="min-w-[80px] bg-white rounded-lg shadow-sm border border-gray-100 p-2 flex flex-col items-center justify-center">
+                                                    <div class="font-semibold text-sm text-gray-900">${formattedDay} ${formattedDate}</div>
+                                                    <div class="text-xs text-gray-500">${formattedTime}</div>
+                                                </div>
 
-                                        <!-- Timeline line and dot -->
-                                        <div class="relative flex flex-col items-center">
-                                            <div class="h-full w-0.5 ${lineColor} absolute"></div>
-                                            <div class="border-2 ${dotBorder} z-10 h-3 w-3 rounded-full ${dotColor} shadow-sm"></div>
-                                        </div>
+                                                <!-- Timeline line and dot -->
+                                                <div class="relative flex flex-col items-center">
+                                                    <div class="h-full w-0.5 ${lineColor} absolute"></div>
+                                                    <div class="border-2 ${dotBorder} z-10 h-3 w-3 rounded-full ${dotColor} shadow-sm"></div>
+                                                </div>
 
-                                        <!-- Content on the right -->
-                                        <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
-                                            <!-- Status badge at top -->
-                                            <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
-                                                ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
-                                            </div>
+                                                <!-- Content on the right -->
+                                                <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                                                    <!-- Status badge at top -->
+                                                    <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
+                                                        ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
+                                                    </div>
 
-                                            <!-- Main content -->
-                                            <div>
-                                                ${item.remarks ? `<p class="text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
-                                                <p class="text-xs text-gray-600">Conducted by: ${item.conducted_by || 'Unknown Staff'}</p>
-                                            </div>
-                                        </div>
-                                    `;
+                                                    <!-- Main content -->
+                                                    <div>
+                                                        ${item.remarks ? `<p class="text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
+                                                        <p class="text-xs text-gray-600">Conducted by: ${item.conducted_by || 'Unknown Staff'}</p>
+                                                    </div>
+                                                </div>
+                                            `;
 
                             historyTimeline.appendChild(timelineItem);
                         });
@@ -699,19 +700,19 @@
                             const warningHeader = document.createElement('div');
                             warningHeader.className = 'bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4';
                             warningHeader.innerHTML = `
-                                                        <div class="flex items-center">
-                                                            <div class="flex-shrink-0">
-                                                                <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                                                </svg>
-                                                            </div>
-                                                            <div class="ml-3">
-                                                                <p class="text-sm text-yellow-700 font-medium">
-                                                                    Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    `;
+                                                                <div class="flex items-center">
+                                                                    <div class="flex-shrink-0">
+                                                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                                                        </svg>
+                                                                    </div>
+                                                                    <div class="ml-3">
+                                                                        <p class="text-sm text-yellow-700 font-medium">
+                                                                            Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            `;
                             requirementsContainer.appendChild(warningHeader);
 
                             // Create a list for missing requirements
@@ -726,11 +727,11 @@
                                 const listItem = document.createElement('li');
                                 listItem.className = 'flex items-center text-sm py-2 px-1 border-b border-gray-100';
                                 listItem.innerHTML = `
-                                                            <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                            </svg>
-                                                            <span class="text-gray-800">${reqName}</span>
-                                                        `;
+                                                                    <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                    </svg>
+                                                                    <span class="text-gray-800">${reqName}</span>
+                                                                `;
                                 list.appendChild(listItem);
                             });
 
@@ -738,25 +739,25 @@
                             const noteElement = document.createElement('div');
                             noteElement.className = 'mt-4 text-sm text-gray-600 pt-3 border-t border-gray-100 bg-gray-50 rounded-lg p-4';
                             noteElement.innerHTML = `
-                                                        <div class="flex items-start">
-                                                            <div class="flex-shrink-0 mt-1">
-                                                                <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-                                                                </svg>
-                                                            </div>
-                                                            <div class="ml-3">
-                                                                <p class="mb-2 mt-1 font-medium">
-                                                                    <span class="text-green-700">Mahalagang Paalala:</span>
-                                                                </p>
-                                                                <p class="mb-3">
-                                                                    Kinakailangan pong maipasa ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
-                                                                </p>
-                                                                <p class="flex items-center italic">
-                                                                    Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    `;
+                                                                <div class="flex items-start">
+                                                                    <div class="flex-shrink-0 mt-1">
+                                                                        <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                                                        </svg>
+                                                                    </div>
+                                                                    <div class="ml-3">
+                                                                        <p class="mb-2 mt-1 font-medium">
+                                                                            <span class="text-green-700">Mahalagang Paalala:</span>
+                                                                        </p>
+                                                                        <p class="mb-3">
+                                                                            Kinakailangan pong maipasa ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
+                                                                        </p>
+                                                                        <p class="flex items-center italic">
+                                                                            Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            `;
                             requirementsContainer.appendChild(noteElement);
                         } else {
                             // All requirements are complete
@@ -767,19 +768,19 @@
                             const completeMessage = document.createElement('div');
                             completeMessage.className = 'bg-green-50 border-l-4 border-green-400 p-4';
                             completeMessage.innerHTML = `
-                                                        <div class="flex">
-                                                            <div class="flex-shrink-0">
-                                                                <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                                                </svg>
-                                                            </div>
-                                                            <div class="ml-3">
-                                                                <p class="text-sm text-green-700">
-                                                                    Lahat ng kinakailangang dokumento ay kumpleto na.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    `;
+                                                                <div class="flex">
+                                                                    <div class="flex-shrink-0">
+                                                                        <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                                                        </svg>
+                                                                    </div>
+                                                                    <div class="ml-3">
+                                                                        <p class="text-sm text-green-700">
+                                                                            Lahat ng kinakailangang dokumento ay kumpleto na.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            `;
                             requirementsContainer.appendChild(completeMessage);
                         }
                     } else {
@@ -866,9 +867,9 @@
                         trackButton.disabled = false;
                         // Restore the original SVG icon
                         trackButton.innerHTML = `
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                    </svg>`;
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            </svg>`;
                     }
                 });
 
@@ -993,8 +994,8 @@
                         <div class="p-6 sm:p-8 flex flex-col h-full text-center">
                             <div class="flex items-center justify-center mb-4">
                                 <div class="w-12 h-12 rounded-lg flex items-center justify-center"
-                                    style="background-color:rgba(216, 247, 191, 1);">
-                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    style="background-color:rgba(246, 247, 191, 1);">
+                                    <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
                                         </path>
@@ -1023,8 +1024,8 @@
                         <div class="p-6 sm:p-8 flex flex-col h-full text-center">
                             <div class="flex items-center justify-center mb-4">
                                 <div class="w-12 h-12 rounded-lg flex items-center justify-center"
-                                    style="background-color:rgba(216, 247, 191, 1);">
-                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    style="background-color:rgba(251, 204, 255, 1);">
+                                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
                                         </path>
@@ -1614,11 +1615,11 @@
 
 
                 <div id="integrated-coconut" class="mb-12">
-                    <div class="border border-green-50 rounded-lg p-6 md:p-8 bg-green-50">
+                    <div class="border border-gray-200 rounded-lg p-6 md:p-8 bg-yellow-100">
                         <div class="flex items-center justify-between mb-3 gap-2">
                             <div class="flex items-center flex-1 min-w-0">
                                 <div
-                                    class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
+                                    class="w-8 h-8 sm:w-10 sm:h-10 bg-yellow-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
                                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
@@ -1636,13 +1637,13 @@
                             <div class="flex space-x-1 sm:space-x-3 flex-shrink-0">
                                 <div
                                     class="w-8 h-8 sm:w-14 sm:h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
-                                    <img src="/images/IA logos/PM.svg" class="w-8 h-8 sm:w-12 sm:h-12 object-contain"
+                                    <img src="/images/IA logos/PM.svg" class="w-7 h-7 sm:w-12 sm:h-12 object-contain"
                                         alt="PM Logo">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-lg p-4 sm:p-6 mb-8 shadow-sm px-3 sm:px-6 lg:px-8">
+                        <div class="bg-white rounded-lg p-4 sm:p-6 mb-6 shadow-sm px-3 sm:px-6 lg:px-8">
                             <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Shared Processing Facilities
                             </h4>
                             <p
@@ -1665,13 +1666,13 @@
                             <!-- Requirements Grid -->
                             <div class="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8">
                                 <!-- Shared Processing Facilities Requirements -->
-                                <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
 
                                     <!-- Requirements List -->
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                                         <!-- Requirement 1: Letter of Intent -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1686,7 +1687,7 @@
 
                                         <!-- Requirement 2: Endorsement letter from PCA -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1701,7 +1702,7 @@
 
                                         <!-- Requirement 3: NCFRS Certification -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1714,7 +1715,7 @@
 
                                         <!-- Requirement 4: Financial Statement for two (2) years -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1726,7 +1727,7 @@
                                         </div>
 
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1741,7 +1742,7 @@
 
                                         <!-- Requirement 6: CDA Certificate of Compliance -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1755,7 +1756,7 @@
 
                                         <!-- Requirement 7: Articles of Cooperation and By-Laws -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1768,7 +1769,7 @@
 
                                         <!-- Requirement 8: Existing Organizational Structure -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1780,7 +1781,7 @@
                                         </div>
 
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1794,7 +1795,7 @@
 
                                         <!-- Requirement 10: Site Profile -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1807,7 +1808,7 @@
 
                                         <!-- Requirement 11:List of Members -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1837,12 +1838,12 @@
 
                             <div class="grid grid-cols-1 gap-6 mb-8">
                                 <!-- Additional Requirements After Approval -->
-                                <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
                                     <!-- Requirements List -->
                                     <div class="grid grid-cols-1 gap-3">
                                         <!-- Requirement 1: Proposal/Business Plan/Feasibility Study -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-center space-x-2 sm:space-x-3 mt-0 lg:mt-2">
                                                 <div class="flex-1 min-w-0">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1853,7 +1854,7 @@
 
                                         <!-- Requirement 2: Deed of Donation/MOA/Usufruct Agreement -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
                                                 <div class="flex-1 min-w-0">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -1870,11 +1871,11 @@
                 </div>
 
                 <div id="support-services" class="mb-12">
-                    <div class="border border-green-50 rounded-lg p-6 md:p-8 bg-green-50">
+                    <div class="border border-blue-50 rounded-lg p-6 md:p-8 bg-purple-100">
                         <div class="flex items-center justify-between mb-3 gap-2">
                             <div class="flex items-center flex-1 min-w-0">
                                 <div
-                                    class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
+                                    class="w-8 h-8 sm:w-10 sm:h-10 bg-purple-500 rounded-full flex items-center justify-center mr-2 sm:mr-4 flex-shrink-0">
                                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
@@ -1891,13 +1892,23 @@
                             <div class="flex space-x-1 sm:space-x-3 flex-shrink-0">
                                 <div
                                     class="w-8 h-8 sm:w-14 sm:h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
-                                    <img src="/images/IA logos/PM.svg" class="w-8 h-8 sm:w-12 sm:h-12 object-contain"
+                                    <img src="/images/IA logos/DPWH.svg" class="w-8 h-8 sm:w-12 sm:h-12 object-contain"
+                                        alt="PM Logo">
+                                </div>
+                                <div
+                                    class="w-8 h-8 sm:w-14 sm:h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
+                                    <img src="/images/IA logos/LBP.svg" class="w-6 h-6 lg:w-11 lg:h-11 object-contain"
+                                        alt="PM Logo">
+                                </div>
+                                 <div
+                                    class="w-8 h-8 sm:w-14 sm:h-14 flex items-center justify-center bg-white rounded-full border border-white shadow-md">
+                                    <img src="/images/IA logos/DBP.svg" class="w-6 h-6 lg:w-10 lg:h-10 object-contain"
                                         alt="PM Logo">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 mb-8 shadow-sm px-3 sm:px-6 lg:px-8">
+                        <div class="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 mb-6 shadow-sm px-3 sm:px-6 lg:px-8">
                             <h4 class="font-bold text-md lg:text-lg text-gray-800 mb-4 mt-3">Credit
                             </h4>
                             <p
@@ -1917,7 +1928,7 @@
                                 </p>
                             </div>
 
-                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                            <div class="bg-purple-100 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
                                 <h5
                                     class="text-md lg:text-lg font-semibold text-gray-800 mb-4 sm:mb-6 text-center bg-white py-2 sm:py-3 rounded-md">
                                     Base Requirements (of PCA)</h5>
@@ -1926,7 +1937,7 @@
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                                     <!-- Requirement 1: Letter of Intent -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -1938,7 +1949,7 @@
 
                                     <!-- Requirement 2: NCFRS Registration -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -1949,7 +1960,7 @@
 
                                     <!-- Requirement 3: CSO Accreditation -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -1960,7 +1971,7 @@
 
                                     <!-- Requirement 4: CDA Registration -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -1971,7 +1982,7 @@
 
                                     <!-- Requirement 5: Financial Statement -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -1982,7 +1993,7 @@
 
                                     <!-- Requirement 6: Articles of Cooperation and By-Laws -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -1993,7 +2004,7 @@
 
                                     <!-- Requirement 7: Existing Organizational Structure -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2004,7 +2015,7 @@
 
                                     <!-- Requirement 8: Official list of members -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2015,7 +2026,7 @@
 
                                     <!-- Requirement 9: Board Resolution (if requestee is a Cooperative; not needed if individual farmer) -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2027,7 +2038,7 @@
                                 </div>
                             </div>
 
-                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 mt-7">
+                            <div class="bg-purple-100 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 mt-7">
                                 <div class="bg-white rounded-lg p-4 mb-4">
                                     <h5
                                         class="text-md lg:text-lg font-semibold text-gray-800 text-center py-2 sm:py-3 rounded-md mb-0">
@@ -2041,7 +2052,7 @@
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                                     <!-- Requirement 1: Letter of Intent -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2053,7 +2064,7 @@
 
                                     <!-- Requirement 2: NCFRS Registration -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2064,7 +2075,7 @@
 
                                     <!-- Requirement 3: CSO Accreditation -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2075,7 +2086,7 @@
 
                                     <!-- Requirement 4: CDA Registration -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2086,7 +2097,7 @@
 
                                     <!-- Requirement 5: Financial Statement -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2097,7 +2108,7 @@
 
                                     <!-- Requirement 6: Articles of Cooperation and By-Laws -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2108,7 +2119,7 @@
 
                                     <!-- Requirement 7: Audited Financial Statements -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2120,7 +2131,7 @@
 
                                     <!-- Requirement 8: Training Certificate -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2133,7 +2144,7 @@
                                 </div>
                             </div>
 
-                            <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 mt-7">
+                            <div class="bg-purple-100 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 mt-7">
                                 <div class="bg-white rounded-lg p-4 mb-4">
                                     <h5
                                         class="text-md lg:text-lg font-semibold text-gray-800 text-center py-2 sm:py-3 rounded-md mb-0">
@@ -2147,7 +2158,7 @@
                                 <div class="grid grid-cols-1 gap-3">
                                     <!-- Requirement 1: Letter of Intent -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2159,7 +2170,7 @@
 
                                     <!-- Requirement 2: NCFRS Registration -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2170,7 +2181,7 @@
 
                                     <!-- Requirement 3: CSO Accreditation -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2181,7 +2192,7 @@
 
                                     <!-- Requirement 4: CDA Registration -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2192,7 +2203,7 @@
 
                                     <!-- Requirement 5: Financial Statement -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2203,7 +2214,7 @@
 
                                     <!-- Requirement 6: Articles of Cooperation and By-Laws -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2214,7 +2225,7 @@
 
                                     <!-- Requirement 5: Financial Statement -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2225,7 +2236,7 @@
 
                                     <!-- Requirement 6: Articles of Cooperation and By-Laws -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2237,7 +2248,7 @@
 
                                     <!-- Requirement 7: Audited Financial Statements -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2249,7 +2260,7 @@
 
                                     <!-- Requirement 8: Training Certificate -->
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2260,7 +2271,7 @@
                                     </div>
 
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2271,7 +2282,7 @@
                                     </div>
 
                                     <div
-                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                        class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                         <div class="flex items-start space-x-2 sm:space-x-3">
                                             <div class="flex-1 min-w-0 px-3">
                                                 <h6 class="font-semibold text-sm lg:text-base text-gray-800 mt-0 lg:mt-0.5">
@@ -2306,13 +2317,13 @@
 
                             <div class="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8">
                                 <!-- Shared Processing Facilities Requirements -->
-                                <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <div class="bg-purple-100 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
 
                                     <!-- Requirements List -->
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                                         <!-- Requirement 1: Letter of Intent -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2327,7 +2338,7 @@
 
                                         <!-- Requirement 2: Endorsement letter from PCA -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2342,7 +2353,7 @@
 
                                         <!-- Requirement 3: NCFRS Certification -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2355,7 +2366,7 @@
 
                                         <!-- Requirement 4: Financial Statement for two (2) years -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2367,7 +2378,7 @@
                                         </div>
 
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2382,7 +2393,7 @@
 
                                         <!-- Requirement 6: CDA Certificate of Compliance -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2396,7 +2407,7 @@
 
                                         <!-- Requirement 7: Articles of Cooperation and By-Laws -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2409,7 +2420,7 @@
 
                                         <!-- Requirement 8: Existing Organizational Structure -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2421,7 +2432,7 @@
                                         </div>
 
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2435,7 +2446,7 @@
 
                                         <!-- Requirement 10: Site Profile -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2448,7 +2459,7 @@
 
                                         <!-- Requirement 11:List of Members -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200 sm:col-span-2">
                                             <div class="flex items-start space-x-2 sm:space-x-3">
                                                 <div class="flex-1 min-w-0 px-3">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2478,12 +2489,12 @@
 
                             <div class="grid grid-cols-1 gap-6 mb-8">
                                 <!-- Additional Requirements After Approval -->
-                                <div class="bg-green-50 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
+                                <div class="bg-purple-100 rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200">
                                     <!-- Requirements List -->
                                     <div class="grid grid-cols-1 gap-3">
                                         <!-- Requirement 1: Proposal/Business Plan/Feasibility Study -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-center space-x-2 sm:space-x-3 mt-0 lg:mt-2">
                                                 <div class="flex-1 min-w-0">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
@@ -2494,7 +2505,7 @@
 
                                         <!-- Requirement 2: Deed of Donation/MOA/Usufruct Agreement -->
                                         <div
-                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+                                            class="bg-white rounded-lg p-3 sm:p-4 border-l-4 border-purple-400 shadow-sm hover:shadow-md transition-shadow duration-200">
                                             <div class="flex items-start space-x-2 sm:space-x-3 mt-0 lg:mt-4">
                                                 <div class="flex-1 min-w-0">
                                                     <h6 class="font-semibold text-sm lg:text-base text-gray-800 mb-1 sm:mb-2">
