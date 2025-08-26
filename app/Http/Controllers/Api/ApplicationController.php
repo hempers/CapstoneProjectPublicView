@@ -135,6 +135,7 @@ class ApplicationController extends Controller
             $history = $historyRecords->map(function ($record) {
                 return [
                     'date' => $record->Date,
+                    'stage' => $record->Stage ?? 'Unknown Stage',
                     'remarks' => $record->Remarks ?? '',
                     'conducted_by' => $record->ConductedBy ?? 'Unknown Staff'
                 ];

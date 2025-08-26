@@ -71,13 +71,17 @@
                     Ilagay lamang ang iyong natatanging Reference ID sa itinakdang field.
                 </p>
             </div>
-            <div class="flex max-w-md mx-auto text-sm lg:text-base px-4 sm:px-8 md:px-2 lg:px-4">
-                <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong reference ID"
-                    class="flex-grow px-4 py-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm placeholder:text-xs">
-                <button id="trackButton" type="button" class="px-6 py-2 rounded-r text-white font-semibold"
-                    style="background-color: #09ca59ff;">
-                    Track
-                </button>
+            <div class="flex max-w-md w-full mx-auto text-sm lg:text-base px-4 sm:px-8 md:px-2 lg:px-4">
+                <div class="relative flex w-full">
+                    <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong reference ID"
+                        class="w-full flex-grow px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm placeholder:text-xs">
+                    <button id="trackButton" type="button" class="px-3 sm:px-4 md:px-5 py-3 rounded-r-lg text-white font-semibold flex items-center justify-center transition-colors duration-200 hover:bg-green-600"
+                        style="background-color: #09ca59ff; min-width: 48px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Loading Modal -->
@@ -528,65 +532,69 @@
                             console.log(`History item ${index}:`, item, 'Has conducted_by:', item.hasOwnProperty('conducted_by'));
                             
                             const timelineItem = document.createElement('div');
-                            timelineItem.className = 'pl-10 relative';
+                            timelineItem.className = 'flex gap-4 relative mb-6';
 
                             // Format the date and time if available
                             let formattedDate = '-';
+                            let formattedDay = '-';
+                            let formattedTime = '-';
                             let dateColor = 'text-gray-400';
                             if (item.date) {
                                 const dateObj = new Date(item.date);
                                 const dateStr = dateObj.toLocaleDateString('en-PH', {
                                     year: 'numeric',
-                                    month: 'short',
-                                    day: 'numeric'
+                                formattedDay = dateObj.getDate();
+                                const monthStr = dateObj.toLocaleDateString('en-PH', {
+                                    month: 'short'
                                 });
                                 const timeStr = dateObj.toLocaleTimeString('en-PH', {
                                     hour: '2-digit',
                                     minute: '2-digit'
                                 });
-                                formattedDate = dateStr;
-                                timeFormatted = timeStr;
-                                dateColor = 'text-green-600';
+                                formattedDate = monthStr;
+                                formattedTime = timeStr;
+                                dateColor = 'text-gray-700';
                             }
 
                             // Determine the timeline dot color based on status - highlight the most recent activity
-                            let dotColor = 'bg-gray-300';
-                            let itemClass = '';
+                            let dotColor = 'bg-yellow-300';
+                            let dotBorder = 'border-white';
+                            let stageClass = 'bg-yellow-100 text-yellow-600';
 
                             if (firstItem) {
                                 dotColor = 'bg-green-500';
-                                itemClass = 'border-green-100 bg-green-50';
+                                dotBorder = 'border-green-100';
+                                stageClass = 'bg-green-50 text-green-700';
                                 firstItem = false;
                             }
 
                             timelineItem.innerHTML = `
-                                                <!-- Timeline dot -->
-                                                <div class="absolute left-0 top-1 mt-1">
-                                                    <div class="border-2 border-white h-2 w-2 rounded-full ${dotColor} shadow-sm"></div>
-                                                </div>
-
-                                                <!-- Content -->
-                                                <div class="rounded-lg border border-gray-200 ${itemClass} p-2 shadow-sm ${index === 0 ? 'relative' : ''}">
-                                                    ${index === 0 ? `<div class="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full shadow-sm">Latest Update</div>` : ''}
-                                                    <!-- Header with date and status -->
-                                                    <div class="flex justify-between items-center mb-1 flex-wrap">
-                                                        <div class="flex items-center ${dateColor} text-xs">
-                                                            <svg class="w-2.5 h-2.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                                            </svg>
-                                                            <span>${formattedDate}</span>
-                                                            <span class="mx-1 text-gray-300">•</span>
-                                                            <span class="text-xs text-gray-400">${timeFormatted || ''}</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Body content -->
-                                                    <div class="space-y-1">
-                                                        ${item.remarks ? `<p class="text-sm text-gray-800 font-medium px-6">${item.remarks}</p>` : ''}
-                                                        <p class="text-xs text-gray-600 px-6 mt-1">Conducted by: ${item.conducted_by || 'Unknown Staff'}</p>
-                                                    </div>
-                                                </div>
-                                            `;
+                                <!-- Date box on the left -->
+                                <div class="min-w-[80px] bg-white rounded-lg shadow-sm border border-gray-100 p-2 flex flex-col items-center justify-center">
+                                    <div class="font-bold text-gray-900">${formattedDay} ${formattedDate}</div>
+                                    <div class="text-xs text-gray-500">${formattedTime}</div>
+                                </div>
+                                
+                                <!-- Timeline line and dot -->
+                                <div class="relative flex flex-col items-center">
+                                    <div class="h-full w-0.5 bg-gray-200 absolute"></div>
+                                    <div class="border-2 ${dotBorder} z-10 h-3 w-3 rounded-full ${dotColor} shadow-sm"></div>
+                                </div>
+                                
+                                <!-- Content on the right -->
+                                <div class="flex-1 bg-white rounded-lg shadow-sm border border-gray-100 p-4">
+                                    <!-- Status badge at top -->
+                                    <div class="${stageClass} inline-block text-xs font-medium px-2 py-0.5 rounded-md mb-2">
+                                        ${item.stage || 'Unknown Stage'}
+                                    </div>
+                                    
+                                    <!-- Main content -->
+                                    <div>
+                                        ${item.remarks ? `<p class="text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
+                                        <p class="text-xs text-gray-600">Conducted by: ${item.conducted_by || 'Unknown Staff'}</p>
+                                    </div>
+                                </div>
+                            `;
 
                             historyTimeline.appendChild(timelineItem);
                         });
@@ -748,7 +756,9 @@
                     loadingSpinner.classList.remove('hidden');
                     errorMessage.classList.add('hidden');
                     trackButton.disabled = true;
-                    trackButton.textContent = 'Searching...';
+                    // Save the original content
+                    const originalButtonContent = trackButton.innerHTML;
+                    trackButton.innerHTML = '<div class="animate-pulse">Searching...</div>';
 
                     try {
                         console.log('Attempting to fetch application:', applicationId);
@@ -792,7 +802,11 @@
                     } finally {
                         loadingSpinner.classList.add('hidden');
                         trackButton.disabled = false;
-                        trackButton.textContent = 'Track';
+                        // Restore the original SVG icon
+                        trackButton.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>`;
                     }
                 });
 
@@ -2524,8 +2538,12 @@
             <div class="mb-12 scroll-animate opacity-0 translate-y-8 transition-all duration-1000 ease-out">
                 <h1
                     class="text-3xl lg:text-5xl text-center font-bold text-green-900 transform transition-all duration-700 mt-10">
-                    MGA TAGAPAGPATUPAD NA<br>
-                    AHENSYA NG GOBYERNO
+                    Mga Tagapagpatupad Na
+                </h1>
+                <h1
+                    class="text-3xl lg:text-5xl text-center font-bold text-green-900 transform transition-all duration-700 mt-5">
+                   
+                    Ahensya Ng Gobyerno
                 </h1>
                 <div class="w-40 h-2 bg-green-800 mx-auto mt-3"></div>
             </div>
