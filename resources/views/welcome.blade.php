@@ -290,7 +290,7 @@
                                             <label class="block text-xs font-semibold text-gray-700 mb-1">Application Status:</label>
                                             <div class="border border-gray-200 rounded-md p-2 bg-gray-50 text-sm"
                                                 id="modalCurrentStatus">
-                                                <span class="inline-block text-green-800 text-sm font-semibold ">-</span>
+                                                <span class="inline-block text-green-500 text-sm font-medium ">-</span>
                                             </div>
                                         </div>
                                     </div>
@@ -380,6 +380,46 @@
                 const errorText = document.getElementById('errorText');
                 // Get API URL from environment variable
                 const API_BASE_URL = '{{ env("EXTERNAL_API_URL", "http://127.0.0.1:8001") }}';
+                
+                // Stage mapping for display purposes
+                const stageDisplayNames = {
+                    'Registration': 'Application Received',
+                    'Validation': 'Validation',
+                    'Visitation': 'Site Visitation',
+                    'Inspection': 'Compliance Inspection',
+                    'Generation': 'Endorsement Generation',
+                    'Compliance': 'Compliant',
+                    'Mark_Received': 'Received by Regional',
+                    'Member_Listing': 'Listing of Members',
+                    'Compliance_Check': 'Compliance Check',
+                    'Additional_Requirement': 'Additional Documents',
+                    'Visitation_Regional': 'Regional Level Visitation',
+                    'Qualification': 'Qualification Verification',
+                    'Monitoring': 'Under Monitoring',
+                    'Verification': 'Verification',
+                    'Certification': 'Application Certification',
+                    'Assigned_for_Review': 'Assigned for Review'
+                };
+                
+                // Stage color mapping for visual distinction
+                const stageColorMapping = {
+                    'Registration': 'bg-blue-50 text-blue-600',
+                    'Validation': 'bg-indigo-50 text-indigo-600',
+                    'Visitation': 'bg-purple-50 text-purple-600',
+                    'Inspection': 'bg-yellow-50 text-yellow-600',
+                    'Generation': 'bg-red-50 text-red-600',
+                    'Compliance': 'bg-purple-50 text-purple-600',
+                    'Mark_Received': 'bg-blue-50 text-blue-600',
+                    'Member_Listing': 'bg-yellow-50 text-yellow-600',
+                    'Compliance_Check': 'bg-red-50 text-red-600',
+                    'Additional_Requirement': 'bg-orange-50 text-orange-600',
+                    'Visitation_Regional': 'bg-yellow-50 text-yellow-600',
+                    'Qualification': 'bg-red-50 text-red-600',
+                    'Monitoring': 'bg-blue-50 text-blue-600',
+                    'Verification': 'bg-violet-50 text-violet-600',
+                    'Certification': 'bg-yellow-50 text-yellow-600',
+                    'Assigned_for_Review': 'bg-yellow-50 text-yellow-600'
+                };
 
                 // Helper function to print all top-level keys in an object
                 function debugObject(obj, label = 'Object keys') {
@@ -565,14 +605,21 @@
                             // Determine the timeline dot color based on status - highlight the most recent activity
                             let dotColor = 'bg-gray-300';
                             let dotBorder = 'border-white';
+                            // Default stage class if no mapping exists
                             let stageClass = 'bg-yellow-50 text-yellow-600';
                             let lineColor = 'bg-gray-300';
+                            
+                            // Get stage-specific color if available
+                            if (item.stage && stageColorMapping[item.stage]) {
+                                stageClass = stageColorMapping[item.stage];
+                            }
 
+                            // Override colors for the most recent activity (first item)
                             if (firstItem) {
                                 dotColor = 'bg-green-500';
                                 dotBorder = 'border-green-100';
-                                stageClass = 'bg-green-50 text-green-700';
-                                lineColor =  'bg-green-200';
+                                stageClass = 'bg-green-100 text-green-700'; // Always green for most recent
+                                lineColor = 'bg-green-200';
                                 firstItem = false;
                             }
 
@@ -593,7 +640,7 @@
                                 <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
                                     <!-- Status badge at top -->
                                     <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
-                                        ${item.stage || 'Unknown Stage'}
+                                        ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
                                     </div>
                                     
                                     <!-- Main content -->
