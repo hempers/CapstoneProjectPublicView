@@ -29,7 +29,7 @@
                     <span class="font-light text-gray-800">Ang PCAppTrack
                         ay isang online
                         na sistema ng programang CFIDP sa ilalim ng PCA Region V na tumutulong sa
-                        pagsubaybay ng mga aplikasyon sa ilalim ng CFIDP. Gamit ang reference ID, mas madaling masilip
+                        pagsubaybay ng mga aplikasyon sa ilalim ng CFIDP. Gamit ang application ID, mas madaling masilip
                         ang status
                         ng aplikasyon — walang login na kailangan
 
@@ -68,12 +68,12 @@
                 <img src="/images/img/PCAPPTRACK.svg" alt="PCAppTrack Logo"
                     class="w-full max-w-xs sm:max-w-lg md:max-w-md lg:max-w-lg xl:max-w-2xl h-auto mx-auto">
                 <p class="text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-4 -mt-2 md:-mt-6 lg:-mt-6">
-                    Ilagay lamang ang iyong natatanging Reference ID sa itinakdang field.
+                    Ilagay lamang ang iyong natatanging Application ID sa itinakdang field.
                 </p>
             </div>
             <div class="flex max-w-md w-full mx-auto text-sm lg:text-base px-4 sm:px-8 md:px-2 lg:px-4">
                 <div class="relative flex w-full">
-                    <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong reference ID"
+                    <input type="text" id="referenceIdInput" placeholder="Ilagay ang iyong application ID"
                         class="w-full flex-grow px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm placeholder:text-xs">
                     <button id="trackButton" type="button"
                         class="px-3 sm:px-4 md:px-5 py-3 rounded-r-lg text-white font-semibold flex items-center justify-center transition-colors duration-200 hover:bg-green-600"
@@ -171,7 +171,7 @@
                                     <div class="text-base text-gray-600 mt-3 space-y-1">
                                         <p>Mangyaring icheck muli:</p>
                                         <ul class="text-left text-sm list-disc list-inside space-y-1 text-gray-500">
-                                            <li>Ang iyong Reference ID ay tama</li>
+                                            <li>Ang iyong Application ID ay tama</li>
                                             <li>Ang iyong koneksyon sa internet ay matatag</li>
                                             <li>Subukan muli sa ilang sandali</li>
                                         </ul>
@@ -278,7 +278,7 @@
                                     <!-- Reference ID - Centered below status -->
                                     <div class="flex justify-center mb-6">
                                         <div class="border border-green-200 rounded-full px-4 py-1">
-                                            <span class="text-xs text-green-600">Reference ID: </span>
+                                            <span class="text-xs text-green-600">Application ID: </span>
                                             <span id="modalReferenceId" class="text-xs font-medium text-green-600">-</span>
                                         </div>
                                     </div>
