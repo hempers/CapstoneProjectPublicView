@@ -23,7 +23,7 @@
             scroll-behavior: smooth;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
+            overflow-x: hidden; 
         }
 
         /* Custom scrollbar - subtle and thin */
