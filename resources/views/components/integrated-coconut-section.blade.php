@@ -1,6 +1,6 @@
 <!-- Integrated Coconut Processing Section Component -->
-<div id="integrated-coconut" class="mb-12">
-    <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
+<div id="integrated-coconut" class="mb-12 h-full">
+    <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm h-full flex flex-col">
         <!-- Header -->
         <div
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 pb-4 border-b border-gray-200">
