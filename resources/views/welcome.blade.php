@@ -19,9 +19,9 @@
 
     <!-- Hero Section -->
     <section class="bg-green-50 py-16">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8">
             <!-- Text Section (moved first for left-side position) -->
-            <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0 -mt-6 px-10 lg:px-6">
+            <div class="text-sm w-full md:w-1/2 text-left md:pr-8 mb-6 md:mb-0 -mt-6">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-green-900 mb-5 mt-0">
                     Application <span style="color: #09ca59ff;">Tracking </span> System
                 </h1>
