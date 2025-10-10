@@ -1,60 +1,55 @@
-<!-- Integrated Coconut Processing Section Component -->
-<div id="integrated-coconut" class="mb-12">
+<!-- Infrastructure Section Component -->
+<div id="infrastructure-services" class="mb-12">
     <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
         <!-- Header -->
         <div
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 pb-4 border-b border-gray-200">
             <div class="flex items-center gap-3">
                 <div
-                    class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    class="w-10 h-10 sm:w-12 sm:h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
                         </path>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="text-lg sm:text-xl font-bold text-gray-700">Integrated Coconut Processing</h3>
-                    <p class="text-xs sm:text-sm text-gray-600">Shared Processing Facilities • Downstream Products</p>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-700">Support Services: Infrastructure</h3>
+                    <p class="text-xs sm:text-sm text-gray-600">Farm-to-Market Roads and Facilities</p>
                 </div>
             </div>
             <div class="text-left sm:text-right">
                 <p class="text-xs text-gray-500">
-                    <span class="font-medium text-gray-600">Involved Agency:</span> PCA
+                    <span class="font-medium text-gray-600">Involved Agency:</span> DPWH, PCA
                 </p>
             </div>
         </div>
 
         <!-- Program Overview -->
         <div class="rounded-lg mb-6">
-            <p class="text-sm text-gray-600 leading-relaxed mb-4">
-                Ang <strong class="text-gray-700">Shared Processing Facilities (SPF)</strong> ay mga pasilidad na
-                ginagamit nang sama-sama ng mga kooperatiba o indibidwal na magsasaka para sa mas episyente at
-                de-kalidad na pagproseso ng produktong niyog.
-            </p>
-
             <p class="text-sm text-gray-600 leading-relaxed">
-                Layunin ng programang ito na mapabuti ang pagproseso at kalidad ng mga produktong niyog, palakasin ang
-                kapasidad ng mga kooperatiba at magsasaka, at mapataas ang kanilang kita sa pamamagitan ng modernong
-                pasilidad at teknolohiya.
+                Ang CFID Infrastructure Program ay naglalayong magpatayo ng mga kalsada (farm-to-market roads) at
+                iba pang imprastraktura upang mas mabilis at mas madaling makarating ang mga produkto ng niyog
+                sa mga pamilihan. Responsable ang PCA sa pagsusuri at pagbibigay ng rekomendasyon para sa mga
+                proyektong ito, habang ang DPWH naman ang nangangasiwa sa aktuwal na pagtatayo.
             </p>
         </div>
 
         <!-- Tabs Navigation -->
         <div>
             <div class="flex flex-col sm:flex-row gap-2" role="tablist">
-                <button onclick="toggleTab('selection-criteria-tab')"
+                <button onclick="toggleTab('infrastructure-main-requirements-tab')"
                     class="tab-button flex-1 px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-medium rounded-lg bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 transition-all duration-200 flex items-center justify-between">
-                    <span class="text-left">Mga Dokumento</span>
+                    <span class="text-left">Main Requirements</span>
                     <svg class="tab-icon w-4 h-4 flex-shrink-0 transition-transform duration-200"
                         style="transform: rotate(180deg);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
-                <button onclick="toggleTab('additional-requirements-tab')"
+                <button onclick="toggleTab('infrastructure-post-approval-tab')"
                     class="tab-button flex-1 px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-medium rounded-lg bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 transition-all duration-200 flex items-center justify-between">
-                    <span class="text-left">Karagdagang Kailanganin</span>
+                    <span class="text-left">Post-Approval Requirements</span>
                     <svg class="tab-icon w-4 h-4 flex-shrink-0 transition-transform duration-200"
                         style="transform: rotate(180deg);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -64,113 +59,103 @@
 
             <!-- Tab Content -->
 
-            <!-- Selection Criteria Tab -->
-            <div id="selection-criteria-tab" class="tab-content hidden mt-6">
+            <!-- Main Requirements Tab -->
+            <div id="infrastructure-main-requirements-tab" class="tab-content hidden mt-6">
                 <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
                     <h5 class="text-sm font-bold text-gray-600 mb-4">
-                        Mga Kailangang Dokumento
+                        Main Requirements
                     </h5>
-                    <p class="text-sm text-gray-600 mb-4 leading-relaxed">Siguruhing kumpleto ang lahat ng dokumento
-                        bago
-                        mag-apply</p>
-
                     <ul class="space-y-2.5">
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">1</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Letter of Intent</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Letter of Request/Intent</p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">2</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Endorsement letter from PCA
-                                (Provincial/Regional/Central Office)</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Project Proposal with Project
+                                Location Map</p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">3</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">NCFRS Certification (kumpirmado at
-                                opisyal na inisyu ng Regional Office)</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Endorsement by the Local Government
+                                Unit (LGU)</p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">4</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Financial Statement for two (2)
-                                years
-                                (external audit)</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Certification from PCA
+                                Regional/Provincial Officer on the coconut area coverage and production</p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">5</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">CDA Registration (rehistradong
-                                kooperatiba sa ilalim ng CDA)</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">List of coconut farmers
+                                beneficiaries (with NCFRS registration)</p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">6</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">CDA Certificate of Compliance
-                                (updated
-                                annually)</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Certified true copy of Certificate
+                                of Registration from CDA or SEC (if proponent is cooperative or organization)</p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">7</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Articles of Cooperation and By-Laws
-                                (notarizado)</p>
-                        </li>
-                        <li class="flex items-start gap-2.5">
-                            <span
-                                class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">8</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Existing Organizational Structure
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Board Resolution authorizing
+                                designated officers to transact with PCA (if proponent is cooperative or organization)
                             </p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
+                                class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">8</span>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Deed of Donation (if land where the
+                                project is to be constructed is privately owned)</p>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">9</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Board Resolution (notarizado; dapat
-                                nakasaad ang kaukulang kahilingan)</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Certificate of Ownership/Land Title
+                                (if land where the project is to be constructed is privately owned)</p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">10</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Community/Site Profile (detalyadong
-                                profile ng komunidad/lokasyon)</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Certificate of Availability of
+                                Counterpart (from LGU/Proponent)</p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">11</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Official List of Members (hindi
-                                bababa
-                                sa 100 miyembro at hindi kukulangin sa 50%+1 ay rehistradong magsasaka ng niyog – na
-                                beripikado sa pamamagitan ng NCFRS Certification)</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Certificate of Availability of Funds
+                                for Operation and Maintenance (from LGU/Proponent)</p>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <!-- Additional Requirements Tab -->
-            <div id="additional-requirements-tab" class="tab-content hidden mt-6">
+            <div id="infrastructure-post-approval-tab" class="tab-content hidden mt-6">
                 <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
                     <h5 class="text-sm font-bold text-gray-600 mb-4">
-                        Karagdagang Kailanganin
+                        Post-Approval Requirements
                     </h5>
-                    <p class="text-sm text-gray-600 mb-4 leading-relaxed">Pagkatapos ng pag-apruba ng Central Office
-                        (CO) at
-                        bago ang aktwal na konstruksyon ng pasilidad</p>
-
+                    <p class="text-xs text-gray-500 mb-3">Additional requirements after project approval:</p>
                     <ul class="space-y-2.5">
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">1</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Proposal/Business Plan/Feasibility
-                                Study
-                            </p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Memorandum of Agreement (MOA)
+                                between PCA and the Proponent/LGU for the operation and maintenance of the project</p>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <span
                                 class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-medium">2</span>
-                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Deed of Donation of Lot (if private
-                                property); MOA/Usufruct Agreement (if lot is government property)</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-0.5">Sworn certification from authorized
+                                LGU official that the project is not a duplication of any previously funded
+                                infrastructure project</p>
                         </li>
                     </ul>
                 </div>

@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const captions = [
         "CFIDP: Empowering Coconut Farmers",
-        "Health and Wellness Programs",
-        "Sustainable Farming Practices",
-        "Community Development Initiatives",
-        "Building Prosperous Livelihoods",
+        "Health and Medical Programs",
+        "Health and Medical Programs",
+        "Health and Medical Programs",
+        "Health and Medical Programs",
     ];
 
     let currentIndex = 0;

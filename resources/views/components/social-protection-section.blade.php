@@ -2,21 +2,24 @@
 <div id="social-protection" class="mb-12">
     <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm">
         <!-- Header -->
-        <div class="flex items-center justify-between mb-6 pb-4 border-b border-gray-200">
+        <div
+            class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 pb-4 border-b border-gray-200">
             <div class="flex items-center gap-3">
-                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div
+                    class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
                         </path>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold text-gray-700">Social Protection</h3>
-                    <p class="text-sm text-gray-600">CocoLSA Certification • Training and Farm Schools</p>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-700">Social Protection</h3>
+                    <p class="text-xs sm:text-sm text-gray-600">CocoLSA Certification • Training and Farm Schools</p>
                 </div>
             </div>
-            <div class="text-right">
+            <div class="text-left sm:text-right">
                 <p class="text-xs text-gray-500">
                     <span class="font-medium text-gray-600">Involved Agency:</span> ATI, TESDA
                 </p>
@@ -24,7 +27,7 @@
         </div>
 
         <!-- Program Overview -->
-        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
+        <div class="rounded-lg mb-6">
             <p class="text-sm text-gray-600 leading-relaxed mb-4">
                 Ang <strong class="text-gray-700">Coco-based Learning Site for Agriculture (CocoLSA)</strong> ay isang
                 sakahan na gumagamit ng
@@ -63,20 +66,20 @@
 
         <!-- Tabs Navigation -->
         <div>
-            <div class="flex gap-2" role="tablist">
+            <div class="flex flex-col sm:flex-row gap-2" role="tablist">
                 <button onclick="toggleTab('requirements-tab')"
-                    class="tab-button flex-1 px-4 py-2.5 text-sm font-medium rounded-lg bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 transition-all duration-200 flex items-center justify-between">
-                    <span>Sino ang qualified?</span>
-                    <svg class="tab-icon w-4 h-4 transition-transform duration-200" style="transform: rotate(180deg);"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="tab-button flex-1 px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-medium rounded-lg bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 transition-all duration-200 flex items-center justify-between">
+                    <span class="text-left">Sino ang qualified?</span>
+                    <svg class="tab-icon w-4 h-4 flex-shrink-0 transition-transform duration-200"
+                        style="transform: rotate(180deg);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <button onclick="toggleTab('documents-tab')"
-                    class="tab-button flex-1 px-4 py-2.5 text-sm font-medium rounded-lg bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 transition-all duration-200 flex items-center justify-between">
-                    <span>Mga Dokumento</span>
-                    <svg class="tab-icon w-4 h-4 transition-transform duration-200" style="transform: rotate(180deg);"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="tab-button flex-1 px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-medium rounded-lg bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 transition-all duration-200 flex items-center justify-between">
+                    <span class="text-left">Mga Dokumento</span>
+                    <svg class="tab-icon w-4 h-4 flex-shrink-0 transition-transform duration-200"
+                        style="transform: rotate(180deg);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>

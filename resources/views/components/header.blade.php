@@ -12,7 +12,7 @@
         <div class="flex items-center gap-3 sm:gap-4">
             <!-- Phone -->
             <a href="tel:(052)7422100"
-                class="flex items-center gap-1.5 text-green-600 hover:text-green-700 transition-colors duration-200"
+                class="flex items-center gap-1.5 text-gray-600 hover:text-gray-700 transition-colors duration-200"
                 aria-label="Call us">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path
