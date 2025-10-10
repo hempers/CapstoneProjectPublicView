@@ -23,7 +23,7 @@
             scroll-behavior: smooth;
             margin: 0;
             padding: 0;
-            overflow-x: hidden; 
+            overflow-x: hidden;
         }
 
         /* Custom scrollbar - subtle and thin */
@@ -56,6 +56,32 @@
 
     <!-- Additional head content -->
     @stack('head')
+
+    <style>
+        /* Add padding to account for fixed header */
+        main {
+            padding-top: 60px;
+            /* Adjust based on header height */
+        }
+
+        @media (min-width: 640px) {
+            main {
+                padding-top: 68px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            main {
+                padding-top: 76px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            main {
+                padding-top: 84px;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-white text-gray-800 font-sans">

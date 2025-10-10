@@ -1,5 +1,5 @@
 <!-- Header with Bagong Pilipinas Logo -->
-<header class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100 w-full">
+<header class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-100 w-full">
     <div class="w-full max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5">
         <!-- Bagong Pilipinas Logo -->
         <div class="flex items-center flex-shrink-0">
