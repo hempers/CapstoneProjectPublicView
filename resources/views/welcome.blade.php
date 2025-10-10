@@ -1092,7 +1092,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Social Protection Program -->
                     <div
-                        class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                         <!-- Image -->
                         <div class="relative h-48 overflow-hidden">
                             <img src="/images/img/pc-1.jpg" alt="Social Protection"
@@ -1123,7 +1123,7 @@
 
                     <!-- Integrated Coconut Processing Program -->
                     <div
-                        class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                         <!-- Image -->
                         <div class="relative h-48 overflow-hidden">
                             <img src="/images/img/pc-2.jpg" alt="Integrated Coconut Processing"
@@ -1154,7 +1154,7 @@
 
                     <!-- Support Services Program -->
                     <div
-                        class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 sm:col-span-2 lg:col-span-1">
+                        class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 sm:col-span-2 lg:col-span-1">
                         <!-- Image -->
                         <div class="relative h-48 overflow-hidden">
                             <img src="/images/img/pc-3.jpg" alt="Support Services"
