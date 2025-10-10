@@ -1,5 +1,6 @@
 <!-- Header with Bagong Pilipinas Logo -->
-<header class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-100 w-full">
+<header id="main-header"
+    class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-100 w-full transition-all duration-300">
     <div class="w-full max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5">
         <!-- Bagong Pilipinas Logo -->
         <div class="flex items-center flex-shrink-0">
@@ -49,6 +50,25 @@
 <!-- Smooth scroll script -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        // Header transparency on scroll
+        const header = document.getElementById('main-header');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > 50) {
+                // When scrolled down, add slight transparency
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.87)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                // At top, fully opaque
+                header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+                header.style.backdropFilter = 'none';
+            }
+
+            lastScrollTop = scrollTop;
+        });
 
         // Handle anchor links for smooth scrolling
         const anchorLinks = document.querySelectorAll('a[href^="#"]');
