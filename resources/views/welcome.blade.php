@@ -83,7 +83,7 @@
                 </h2>
                 <p class="text-sm md:text-base text-gray-600 leading-relaxed">
                     Ilagay lamang ang iyong natatanging <span class="font-semibold text-gray-800">Application ID</span> sa
-                    itinakdang field upang makita ang status ng iyong aplikasyon.
+                    input field upang makita ang status ng iyong application.
                 </p>
             </div>
 
@@ -666,44 +666,44 @@
                             }
 
                             timelineItem.innerHTML = `
-                                                                                                                        <!-- Timeline line and dot -->
-                                                                                                                        <div class="relative flex flex-col items-center mr-4">
-                                                                                                                            <div class="h-full w-0.5 ${lineColor} absolute"></div>
-                                                                                                                            <div class="border-2 ${dotBorder} z-10 h-3 w-3 rounded-full ${dotColor} shadow-sm"></div>
-                                                                                                                        </div>
+                                                                                                                                                        <!-- Timeline line and dot -->
+                                                                                                                                                        <div class="relative flex flex-col items-center mr-4">
+                                                                                                                                                            <div class="h-full w-0.5 ${lineColor} absolute"></div>
+                                                                                                                                                            <div class="border-2 ${dotBorder} z-10 h-3 w-3 rounded-full ${dotColor} shadow-sm"></div>
+                                                                                                                                                        </div>
 
-                                                                                                                        <!-- Content on the right -->
-                                                                                                                        <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
-                                                                                                                            <!-- Status badge at top -->
-                                                                                                                            <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
-                                                                                                                                ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
-                                                                                                                            </div>
+                                                                                                                                                        <!-- Content on the right -->
+                                                                                                                                                        <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                                                                                                                                                            <!-- Status badge at top -->
+                                                                                                                                                            <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
+                                                                                                                                                                ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
+                                                                                                                                                            </div>
 
-                                                                                                                            <!-- Main content -->
-                                                                                                                            <div>
-                                                                                                                                ${item.remarks ? `<p class="text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
+                                                                                                                                                            <!-- Main content -->
+                                                                                                                                                            <div>
+                                                                                                                                                                ${item.remarks ? `<p class="text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
 
-                                                                                                                                <!-- Person and date/time with icons -->
-                                                                                                                                <div class="flex items-center mt-2">
-                                                                                                                                    <!-- Person icon and name -->
-                                                                                                                                    <div class="flex items-center text-xs text-gray-600 mr-4">
-                                                                                                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                                                                                                        </svg>
-                                                                                                                                        <span>${item.conducted_by || 'Unknown Staff'}</span>
-                                                                                                                                    </div>
+                                                                                                                                                                <!-- Person and date/time with icons -->
+                                                                                                                                                                <div class="flex items-center mt-2">
+                                                                                                                                                                    <!-- Person icon and name -->
+                                                                                                                                                                    <div class="flex items-center text-xs text-gray-600 mr-4">
+                                                                                                                                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                                                                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                                                                                                                                        </svg>
+                                                                                                                                                                        <span>${item.conducted_by || 'Unknown Staff'}</span>
+                                                                                                                                                                    </div>
 
-                                                                                                                                    <!-- Time/date icon and info -->
-                                                                                                                                    <div class="flex items-center text-xs text-gray-600">
-                                                                                                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                                                                                                        </svg>
-                                                                                                                                        <span>${formattedDay} ${formattedDate}, ${formattedTime}</span>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    `;
+                                                                                                                                                                    <!-- Time/date icon and info -->
+                                                                                                                                                                    <div class="flex items-center text-xs text-gray-600">
+                                                                                                                                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                                                                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                                                                                                                        </svg>
+                                                                                                                                                                        <span>${formattedDay} ${formattedDate}, ${formattedTime}</span>
+                                                                                                                                                                    </div>
+                                                                                                                                                                </div>
+                                                                                                                                                            </div>
+                                                                                                                                                        </div>
+                                                                                                                                                    `;
 
                             historyTimeline.appendChild(timelineItem);
                         });
@@ -746,19 +746,19 @@
                             const warningHeader = document.createElement('div');
                             warningHeader.className = 'bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4';
                             warningHeader.innerHTML = `
-                                                                                                                                                <div class="flex items-center">
-                                                                                                                                                    <div class="flex-shrink-0">
-                                                                                                                                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                                                                                                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                                                                                                                                        </svg>
-                                                                                                                                                    </div>
-                                                                                                                                                    <div class="ml-3">
-                                                                                                                                                        <p class="text-sm text-yellow-700 font-medium">
-                                                                                                                                                            Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
-                                                                                                                                                        </p>
-                                                                                                                                                    </div>
-                                                                                                                                                </div>
-                                                                                                                                            `;
+                                                                                                                                                                                <div class="flex items-center">
+                                                                                                                                                                                    <div class="flex-shrink-0">
+                                                                                                                                                                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                                                                                                                                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                                                                                                                                                                        </svg>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div class="ml-3">
+                                                                                                                                                                                        <p class="text-sm text-yellow-700 font-medium">
+                                                                                                                                                                                            Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
+                                                                                                                                                                                        </p>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                </div>
+                                                                                                                                                                            `;
                             requirementsContainer.appendChild(warningHeader);
 
                             // Create a list for missing requirements
@@ -773,11 +773,11 @@
                                 const listItem = document.createElement('li');
                                 listItem.className = 'flex items-center text-sm py-2 px-1 border-b border-gray-100';
                                 listItem.innerHTML = `
-                                                                                                                                                    <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                                                                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                                                                                                                    </svg>
-                                                                                                                                                    <span class="text-gray-800">${reqName}</span>
-                                                                                                                                                `;
+                                                                                                                                                                                    <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                                                                                                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                                                                                                                                    </svg>
+                                                                                                                                                                                    <span class="text-gray-800">${reqName}</span>
+                                                                                                                                                                                `;
                                 list.appendChild(listItem);
                             });
 
@@ -785,25 +785,25 @@
                             const noteElement = document.createElement('div');
                             noteElement.className = 'mt-4 text-sm text-gray-600 pt-3 border-t border-gray-100 bg-gray-50 rounded-lg p-4';
                             noteElement.innerHTML = `
-                                                                                                                                                <div class="flex items-start">
-                                                                                                                                                    <div class="flex-shrink-0 mt-1">
-                                                                                                                                                        <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                                                                                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-                                                                                                                                                        </svg>
-                                                                                                                                                    </div>
-                                                                                                                                                    <div class="ml-3">
-                                                                                                                                                        <p class="mb-2 mt-1 font-medium">
-                                                                                                                                                            <span class="text-green-700">Mahalagang Paalala:</span>
-                                                                                                                                                        </p>
-                                                                                                                                                        <p class="mb-3">
-                                                                                                                                                            Kinakailangan pong maipasa ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
-                                                                                                                                                        </p>
-                                                                                                                                                        <p class="flex items-center italic">
-                                                                                                                                                            Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.
-                                                                                                                                                        </p>
-                                                                                                                                                    </div>
-                                                                                                                                                </div>
-                                                                                                                                            `;
+                                                                                                                                                                                <div class="flex items-start">
+                                                                                                                                                                                    <div class="flex-shrink-0 mt-1">
+                                                                                                                                                                                        <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                                                                                                                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                                                                                                                                                                        </svg>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div class="ml-3">
+                                                                                                                                                                                        <p class="mb-2 mt-1 font-medium">
+                                                                                                                                                                                            <span class="text-green-700">Mahalagang Paalala:</span>
+                                                                                                                                                                                        </p>
+                                                                                                                                                                                        <p class="mb-3">
+                                                                                                                                                                                            Kinakailangan pong maipasa ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
+                                                                                                                                                                                        </p>
+                                                                                                                                                                                        <p class="flex items-center italic">
+                                                                                                                                                                                            Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.
+                                                                                                                                                                                        </p>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                </div>
+                                                                                                                                                                            `;
                             requirementsContainer.appendChild(noteElement);
                         } else {
                             // All requirements are complete
@@ -814,19 +814,19 @@
                             const completeMessage = document.createElement('div');
                             completeMessage.className = 'bg-green-50 border-l-4 border-green-400 p-4';
                             completeMessage.innerHTML = `
-                                                                                                                                                <div class="flex">
-                                                                                                                                                    <div class="flex-shrink-0">
-                                                                                                                                                        <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                                                                                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                                                                                                                                        </svg>
-                                                                                                                                                    </div>
-                                                                                                                                                    <div class="ml-3">
-                                                                                                                                                        <p class="text-sm text-green-700">
-                                                                                                                                                            Lahat ng kinakailangang dokumento ay kumpleto na.
-                                                                                                                                                        </p>
-                                                                                                                                                    </div>
-                                                                                                                                                </div>
-                                                                                                                                            `;
+                                                                                                                                                                                <div class="flex">
+                                                                                                                                                                                    <div class="flex-shrink-0">
+                                                                                                                                                                                        <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                                                                                                                                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                                                                                                                                                                        </svg>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div class="ml-3">
+                                                                                                                                                                                        <p class="text-sm text-green-700">
+                                                                                                                                                                                            Lahat ng kinakailangang dokumento ay kumpleto na.
+                                                                                                                                                                                        </p>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                </div>
+                                                                                                                                                                            `;
                             requirementsContainer.appendChild(completeMessage);
                         }
                     } else {
@@ -913,9 +913,9 @@
                         trackButton.disabled = false;
                         // Restore the original SVG icon
                         trackButton.innerHTML = `
-                                                                                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                                                                                                            </svg>`;
+                                                                                                                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                                                                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                                                                                                                                            </svg>`;
                     }
                 });
 
@@ -966,8 +966,8 @@
                 <div class="text-center mb-12">
                     <div class="inline-block">
                         <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-green-900 mb-2">
-                            ANO ANG <span style="color: #09ca59ff;">CFIDP?</span>
-                        </h2>
+                        <span style="color: #09ca59ff;">CFIDP:</span> Para saan ito?
+                    </h2>
                         <div class="h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full"></div>
                     </div>
                 </div>
@@ -976,20 +976,17 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     <!-- Text Content -->
                     <div class="order-2 lg:order-1">
-                        <p class="text-gray-700 text-sm lg:text-base leading-relaxed text-justify mb-6">
-                            Ang Coconut Farmers and Industry Development Plan (CFIDP) ay isang pangunahing programa ng
-                            pamahalaan sa ilalim ng Republic Act No. 11524, na idinisenyo upang tugunan ang
-                            pangangailangan ng mga magniniyog at palaguin ang industriya ng niyog sa Pilipinas. Layunin ng CFIDP
-                            na
-                            paunlarin ang kabuhayan ng 2.5 milyong magniniyog sa pamamagitan ng pagtaas ng kita, pagbibigay ng
-                            seguro sa pananim, at pag-aaral para sa kanilang mga anak.
+                      <p class="text-gray-700 text-sm lg:text-base leading-relaxed text-justify mb-6">
+                        Ang Coconut Farmers and Industry Development Plan (CFIDP) ay isang pangunahing programa ng pamahalaan sa ilalim ng Republic Act No. 11524.  
+                        Layunin nitong tugunan ang mga pangangailangan ng mga magniniyog at paunlarin ang industriya ng niyog sa Pilipinas.  
+                        Sa pamamagitan ng CFIDP, inaasahang mapapataas ang kita ng mga magniniyog, mabibigyan sila ng crop insurance, at maisusulong ang edukasyon ng kanilang mga anak.
                         </p>
+
                         <p class="text-gray-700 text-sm lg:text-base leading-relaxed text-justify mb-6">
-                            Kasama rin dito ang modernisasyon ng sektor sa tulong ng makabagong teknolohiya,
-                            pananaliksik, at sustainable farming practices tulad ng replanting ng mga puno at
-                            intercropping (hal. pagtatanim ng kape o cacao kasama ng niyog). Pinopondohan ang programang
-                            ito mula sa Coconut Levy Trust Fund.
+                        Kasama rin sa programa ang modernisasyon ng sektor sa tulong ng makabagong teknolohiya, research, at sustainable farming practices tulad ng replanting at intercropping (halimbawa: pagtatanim ng kape o cacao kasabay ng niyog).  
+                        Pinopondohan ang programang ito mula sa Coconut Levy Trust Fund.
                         </p>
+
 
                         <!-- CTA Button -->
                         <a href="/coconut-farmers-faq" target="_blank"
@@ -1073,133 +1070,32 @@
             </div>
         </section>
 
-        <!-- Carousel JavaScript -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const images = document.querySelectorAll('.carousel-image');
-                const dots = document.querySelectorAll('.carousel-dot');
-                const prevBtn = document.querySelector('.carousel-btn.prev');
-                const nextBtn = document.querySelector('.carousel-btn.next');
-                const captionEl = document.querySelector('.carousel-caption');
-
-                const captions = [
-                    'CFIDP: Empowering Coconut Farmers',
-                    'Health and Wellness Programs',
-                    'Sustainable Farming Practices',
-                    'Community Development Initiatives',
-                    'Building Prosperous Livelihoods'
-                ];
-
-                let currentIndex = 0;
-                let autoPlayInterval;
-
-                function showImage(index) {
-                    images.forEach((img, i) => {
-                        if (i === index) {
-                            img.classList.add('active');
-                            img.style.opacity = '1';
-                        } else {
-                            img.classList.remove('active');
-                            img.style.opacity = '0';
-                        }
-                    });
-
-                    dots.forEach((dot, i) => {
-                        if (i === index) {
-                            dot.style.backgroundColor = '#09ca59ff';
-                            dot.style.transform = 'scale(1.2)';
-                        } else {
-                            dot.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
-                            dot.style.transform = 'scale(1)';
-                        }
-                    });
-
-                    if (captionEl) {
-                        captionEl.style.opacity = '0';
-                        setTimeout(() => {
-                            captionEl.textContent = captions[index];
-                            captionEl.style.opacity = '1';
-                        }, 200);
-                    }
-                }
-
-                function nextImage() {
-                    currentIndex = (currentIndex + 1) % images.length;
-                    showImage(currentIndex);
-                }
-
-                function prevImage() {
-                    currentIndex = (currentIndex - 1 + images.length) % images.length;
-                    showImage(currentIndex);
-                }
-
-                function startAutoPlay() {
-                    autoPlayInterval = setInterval(nextImage, 5000); // Change image every 5 seconds
-                }
-
-                function stopAutoPlay() {
-                    clearInterval(autoPlayInterval);
-                }
-
-                // Event Listeners
-                nextBtn.addEventListener('click', () => {
-                    nextImage();
-                    stopAutoPlay();
-                    startAutoPlay(); // Restart autoplay after manual navigation
-                });
-
-                prevBtn.addEventListener('click', () => {
-                    prevImage();
-                    stopAutoPlay();
-                    startAutoPlay();
-                });
-
-                dots.forEach((dot, index) => {
-                    dot.addEventListener('click', () => {
-                        currentIndex = index;
-                        showImage(currentIndex);
-                        stopAutoPlay();
-                        startAutoPlay();
-                    });
-                });
-
-                // Add smooth transition to caption
-                if (captionEl) {
-                    captionEl.style.transition = 'opacity 0.3s ease-in-out';
-                }
-
-                // Start autoplay
-                startAutoPlay();
-
-                // Pause autoplay when user hovers over carousel
-                const carouselContainer = document.querySelector('.carousel-images').parentElement;
-                carouselContainer.addEventListener('mouseenter', stopAutoPlay);
-                carouselContainer.addEventListener('mouseleave', startAutoPlay);
-            });
-        </script>
-
         <!-- Application Programs Section -->
-        <div class="min-h-screen" style="background-color:rgb(230, 253, 212);">
-            <div class="container mx-auto px-4 py-8">
+        <div class="relative py-16 sm:py-20 overflow-hidden bg-gradient-to-br from-green-50 via-white to-green-50">
+            <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Title Section -->
-                <div class="text-center mb-8 scroll-animate opacity-0 translate-y-8 transition-all duration-1000 ease-out">
-                    <h1 class="text-2xl md:text-5xl font-bold text-green-800 mb-2 mt-10 transform transition-all duration-700">
-                        APPLICATION BASED</h1>
-                    <h2 class="text-2xl md:text-5xl font-bold text-green-800 mb-4 transform transition-all duration-700">
-                        PROGRAMS OF PCA-CFIDP</h2>
-                    <p class="text-xs md:text-base text-gray-600 transform transition-all duration-700">MGA PROGRAMANG
-                        NAKABATAY SA APLIKASYON NG PCA-CFIDP</p>
+                <div class="text-center mb-12">
+                    <div class="inline-block">
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-green-900 mb-2">
+                            <span style="color: #09ca59ff;">Mga CFIDP Program</span> na maaaring matrack
+                        </h2>
+                        <p class="text-sm md:text-base text-gray-600 mt-2 font-normal">
+                            Ito ang mga programang sakop at maaaring subaybayan sa pamamagitan ng PCAppTrack.
+                        </p>
+                        <div class="mt-4 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full"></div>
+                    </div>
                 </div>
 
                 <!-- Program Cards -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Social Protection Program -->
                     <div
-                        class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden group">
-                        <div class="p-6 sm:p-8 flex flex-col h-full text-center">
-                            <div class="flex items-center justify-center mb-4">
-                                <div class="w-12 h-12 rounded-lg flex items-center justify-center"
-                                    style="background-color:rgba(216, 247, 191, 1);">
+                        class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden transition-shadow duration-200 hover:shadow-lg">
+                        <!-- Content -->
+                        <div class="p-6 flex flex-col h-full">
+                            <!-- Icon -->
+                            <div class="mb-4">
+                                <div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-green-50">
                                     <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
@@ -1207,14 +1103,22 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Social Protection</h3>
-                            <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">Nagbibigay ng benepisyo
-                                sa kalusugan, scholarship, at insurance para sa mga magsasaka ng niyog.</p>
+
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                                Social Protection
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-gray-600 text-sm mb-4 flex-grow leading-relaxed">
+                                Nagbibigay ng benepisyo sa kalusugan, scholarship, at insurance para sa mga magsasaka ng niyog.
+                            </p>
+
+                            <!-- Button -->
                             <button onclick="document.getElementById('social-protection').scrollIntoView({behavior: 'smooth'})"
-                                class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto hover:opacity-90"
-                                style="background-color: #09ca59ff;">
+                                class="inline-flex items-center gap-1 text-green-700 text-sm font-medium hover:text-green-800 transition-colors duration-200">
                                 Alamin Pa
-                                <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                                     </path>
                                 </svg>
@@ -1224,27 +1128,35 @@
 
                     <!-- Integrated Coconut Processing Program -->
                     <div
-                        class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden group">
-                        <div class="p-6 sm:p-8 flex flex-col h-full text-center">
-                            <div class="flex items-center justify-center mb-4">
-                                <div class="w-12 h-12 rounded-lg flex items-center justify-center"
-                                    style="background-color:rgba(246, 247, 191, 1);">
-                                    <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden transition-shadow duration-200 hover:shadow-lg">
+                        <!-- Content -->
+                        <div class="p-6 flex flex-col h-full">
+                            <!-- Icon -->
+                            <div class="mb-4">
+                                <div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-green-50">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
                                         </path>
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Integrated Coconut
-                                Processing</h3>
-                            <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">Nagpapahintulot sa mga
-                                magsasaka na iproseso ang niyog upang madagdagan ang kanilang kita.</p>
+
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                                Integrated Coconut Processing
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-gray-600 text-sm mb-4 flex-grow leading-relaxed">
+                                Nagpapahintulot sa mga magsasaka na iproseso ang niyog upang madagdagan ang kanilang kita.
+                            </p>
+
+                            <!-- Button -->
                             <button onclick="document.getElementById('integrated-coconut').scrollIntoView({behavior: 'smooth'})"
-                                class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto hover:opacity-90"
-                                style="background-color: #09ca59ff;">
+                                class="inline-flex items-center gap-1 text-green-700 text-sm font-medium hover:text-green-800 transition-colors duration-200">
                                 Alamin Pa
-                                <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                                     </path>
                                 </svg>
@@ -1254,26 +1166,36 @@
 
                     <!-- Support Services Program -->
                     <div
-                        class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden group sm:col-span-2 lg:col-span-1">
-                        <div class="p-6 sm:p-8 flex flex-col h-full text-center">
-                            <div class="flex items-center justify-center mb-4">
-                                <div class="w-12 h-12 rounded-lg flex items-center justify-center"
-                                    style="background-color:rgba(251, 204, 255, 1);">
-                                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden transition-shadow duration-200 hover:shadow-lg sm:col-span-2 lg:col-span-1">
+                        <!-- Content -->
+                        <div class="p-6 flex flex-col h-full">
+                            <!-- Icon -->
+                            <div class="mb-4">
+                                <div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-green-50">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
                                         </path>
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 leading-tight">Support Services</h2>
-                            <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">Nagbibigay ng tulong
-                                pinansyal, kalsada, at serbisyo sa marketing upang suportahan ang mga magsasaka.</p>
+
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                                Support Services
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-gray-600 text-sm mb-4 flex-grow leading-relaxed">
+                                Nagbibigay ng tulong pinansyal, kalsada, at serbisyo sa marketing upang suportahan ang mga
+                                magsasaka.
+                            </p>
+
+                            <!-- Button -->
                             <button onclick="document.getElementById('support-services').scrollIntoView({behavior: 'smooth'})"
-                                class="w-full text-white px-6 py-3 rounded-lg text-sm sm:text-base font-semibold transition-all duration-200 transform group-hover:scale-105 mt-auto hover:opacity-90"
-                                style="background-color: #09ca59ff;">
+                                class="inline-flex items-center gap-1 text-green-700 text-sm font-medium hover:text-green-800 transition-colors duration-200">
                                 Alamin Pa
-                                <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                                     </path>
                                 </svg>
@@ -1282,9 +1204,12 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                <div class="text-center mb-8 mt-10">
+        <!-- Requirements Section -->
+        <div class="bg-white py-16">
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8">
                     <h2 class="text-2xl md:text-5xl font-bold text-green-800 mb-2">MGA KAILANGANG IHANDA:</h2>
                     <h3 class="text-lg md:text-3xl font-extrabold text-green-800 mb-4">MGA DOKUMENTO PARA SA <span
                             style="color: #09ca59ff">CFIDP PROPOSAL</span> </h3>
@@ -2838,7 +2763,6 @@
                     }
                 </style>
             </div>
-        </div>
         </div>
 
         <section class="py-12" style="background-color:rgb(230, 253, 212);">
