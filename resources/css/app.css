@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Import Logo Carousel Styles */
+@import './logo-carousel.css';

@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function startAutoPlay() {
-        autoPlayInterval = setInterval(nextImage, 5000); // Change image every 5 seconds
+        autoPlayInterval = setInterval(nextImage, 4000); // Change image every 5 seconds
     }
 
     function stopAutoPlay() {
