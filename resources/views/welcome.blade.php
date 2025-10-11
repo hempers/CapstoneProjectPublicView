@@ -536,7 +536,7 @@
 
                         if (!response.ok) {
                             if (response.status === 404) {
-                                throw new Error('Application not found. Please check your Application ID.');
+                                throw new Error('Please check your Application ID.');
                             } else {
                                 throw new Error(`API Error: ${response.status} - ${response.statusText}`);
                             }

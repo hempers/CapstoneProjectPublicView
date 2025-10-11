@@ -9,6 +9,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('test', function () {
+    return view('modal-test');
+})->name('test');
+
 // Coconut Farmers FAQ page
 Route::get('/coconut-farmers-faq', function () {
     return view('coconut-farmers-faq');
