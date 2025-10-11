@@ -617,78 +617,209 @@
             <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Header Section -->
                 <div class="text-center mb-12">
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-green-900 mb-2">
-                        Sino ang <span style="color: #09ca59ff;">Makikinabang</span> sa CFIDP?
-                    </h2>
-                    <p class="text-sm md:text-base text-gray-600 mt-2 font-normal">
-                        Alamin kung kayo ay kwalipikado sa mga programa ng Coconut Farmers and Industry Development Plan
-                    </p>
-                    <div class="mt-4 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full"></div>
+                    <div class="inline-block">
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-green-900 mb-2">
+                            Sino ang <span style="color: #09ca59ff;">Makikinabang</span> sa CFIDP?
+                        </h2>
+                        <p class="text-sm md:text-base text-gray-600 mt-2 font-normal">
+                            Alamin kung kayo ay kwalipikado sa mga programa ng Coconut Farmers and Industry Development Plan
+                        </p>
+                        <div class="mt-4 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full">
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Eligibility Content -->
-                <div class="max-w-5xl mx-auto">
-                    <!-- Main Content Container -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 md:p-10">
-                        <!-- Legal Reference -->
-                        <div class="mb-8 p-5 border border-gray-200 rounded-lg bg-gray-50">
-                            <p class="text-sm md:text-base text-gray-700 leading-relaxed">
-                                <strong class="text-gray-900">Republic Act 11524:</strong> Ang mga makikinabang sa batas na
-                                ito ay mga "coconut
-                                farmers" o magniniyog na may lupa na hindi hihigit sa limang (5) ektarya.
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+                    <!-- Legal Reference Card -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Legal na Batayan</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">Alinsunod sa Republic Act 11524, ang mga
+                                makikinabang ay mga "coconut farmers" o magniniyog na may lupang hindi hihigit sa limang (5)
+                                ektarya.</p>
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl px-4 py-3">
+                                <p class="text-xs text-gray-700"><span class="font-semibold">Batas:</span>
+                                    <span class="text-green-700">Republic Act 11524 - CFITF Act</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Type 1: Landowner Card -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">May-ari ng Lupa</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">Nagmamay-ari ng lupain o niyugan na hindi
+                                hihigit sa limang (5) ektarya na nagsasaka o namamahala ng lupa.</p>
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl px-4 py-3 mb-4">
+                                <p class="text-xs text-gray-700"><span class="font-semibold">Kategorya:</span>
+                                    <span class="text-green-700">Landowner - ≤5 ektarya</span>
+                                </p>
+                            </div>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-600 mr-2 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Nag-lilinang ng kanyang lupa (owner-cultivator)
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-600 mr-2 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    May kontrol o namamahala ng lupa
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Type 2: Lessee/Tenant Card -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Nangungupahan ng Lupa</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">Nangungupahan o tenant ng hindi hihigit sa
+                                limang (5) ektaryang niyugan upang mag-linang at mag-ani.</p>
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl px-4 py-3 mb-4">
+                                <p class="text-xs text-gray-700"><span class="font-semibold">Kategorya:</span>
+                                    <span class="text-green-700">Lessee/Tenant - ≤5 ektarya</span>
+                                </p>
+                            </div>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-600 mr-2 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    May kasunduan ng pag-upa ng lupa
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-600 mr-2 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Aktibong nagsasaka ng niyugan
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Type 3: Farm Worker Card -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Manggagawa sa Niyugan</h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">Manggagawa sa niyugan (seasonal o
+                                itinerant) na ang pangunahing kabuhayan ay pag-sasaka ng niyog at pag-proproseso ng kopra.
                             </p>
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl px-4 py-3 mb-4">
+                                <p class="text-xs text-gray-700"><span class="font-semibold">Kategorya:</span>
+                                    <span class="text-green-700">Farm Worker (Seasonal/Itinerant)</span>
+                                </p>
+                            </div>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-600 mr-2 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Pangunahing kabuhayan: Pagsasaka ng niyog
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-600 mr-2 flex-shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Kasama ang pagproseso ng kopra
+                                </li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <!-- Definition -->
-                        <div class="mb-8">
-                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">Ang "Coconut Farmer" o Magniniyog
-                                ay:</h3>
-
-                            <ol class="space-y-6">
-                                <li class="flex items-start">
-                                    <span
-                                        class="flex-shrink-0 w-8 h-8 bg-gray-100 border border-gray-300 rounded-full flex items-center justify-center font-semibold text-gray-700 text-sm mr-4">1</span>
-                                    <div>
-                                        <p class="text-base font-semibold text-gray-900 mb-2">Nagmamay-ari ng lupain/niyugan
-                                            na hindi
-                                            hihigit sa limang (5) ektarya na:</p>
-                                        <ul class="ml-4 space-y-1 text-sm text-gray-700">
-                                            <li>• Nag-lilinang ng kanyang lupa (owner-cultivator); o</li>
-                                            <li>• May kontrol o namamahala ng lupa</li>
-                                        </ul>
-                                    </div>
-                                </li>
-
-                                <li class="flex items-start">
-                                    <span
-                                        class="flex-shrink-0 w-8 h-8 bg-gray-100 border border-gray-300 rounded-full flex items-center justify-center font-semibold text-gray-700 text-sm mr-4">2</span>
-                                    <p class="text-sm md:text-base text-gray-700 leading-relaxed">Nangungupahan ng hindi
-                                        hihigit sa limang (5) ektaryang niyugan
-                                        upang mag-linang</p>
-                                </li>
-
-                                <li class="flex items-start">
-                                    <span
-                                        class="flex-shrink-0 w-8 h-8 bg-gray-100 border border-gray-300 rounded-full flex items-center justify-center font-semibold text-gray-700 text-sm mr-4">3</span>
-                                    <p class="text-sm md:text-base text-gray-700 leading-relaxed">Manggagawa sa niyugan
-                                        (seasonal o itinerant) na ang pangunahing
-                                        kabuhayan ay pag-sasaka ng niyog at pag-proproseso ng kopra</p>
-                                </li>
-                            </ol>
-                        </div>
-
-                        <!-- Registration Notice -->
-                        <div class="bg-green-50 border border-green-200 rounded-lg p-5">
-                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Kailangan ng Rehistrasyon:</h4>
-                            <p class="text-sm md:text-base text-gray-700 mb-3 leading-relaxed">
+                    <!-- Registration Requirement Card -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300 lg:col-span-2">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Mahalagang Paalala: Kailangan ng Rehistrasyon
+                                </h3>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
                                 Lahat ng benepisyaryo ay kailangang nakalista sa <strong class="text-gray-900">National
-                                    Coconut Farmers Registry
-                                    System (NCFRS)</strong> ng Philippine Coconut Authority.
+                                    Coconut Farmers Registry System (NCFRS)</strong> ng Philippine Coconut Authority upang
+                                makatanggap ng mga benepisyo mula sa CFIDP.
                             </p>
-                            <p class="text-sm text-gray-600">
-                                Hindi pa nakarehistro? <a href="#registration" class="font-semibold underline"
-                                    style="color: #09ca59ff;">Mag-register dito →</a>
-                            </p>
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl px-4 py-3">
+                                <p class="text-sm text-gray-700">
+                                    <span class="font-semibold">Hindi pa nakarehistro?</span>
+                                    <a href="#registration" class="font-semibold underline hover:no-underline"
+                                        style="color: #09ca59ff;">Mag-register dito →</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -696,163 +827,185 @@
         </section>
 
         <!-- Registration Process -->
-        <section id="registration" class="py-16 bg-white">
-            <div class="container mx-auto px-4">
+        <section id="registration" class="py-16 sm:py-20 bg-gradient-to-br from-green-50 via-white to-green-50">
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Header Section -->
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-4">
-                        Paano <span style="color: #09ca59ff;">Mag-Register</span> sa NCFRS?
-                    </h2>
-                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                        Sundin ang mga hakbang na ito para maging registered coconut farmer at mapakinabangan ang mga
-                        programa ng CFIDP
-                    </p>
+                    <div class="inline-block">
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-green-900 mb-2">
+                            Paano <span style="color: #09ca59ff;">Mag-Register</span> sa NCFRS?
+                        </h2>
+                        <p class="text-sm md:text-base text-gray-600 mt-2">
+                            Sundin ang mga hakbang na ito para maging registered coconut farmer at mapakinabangan ang mga
+                            programa ng CFIDP
+                        </p>
+                        <div class="mt-4 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="max-w-8xl mx-auto">
+                <div class="max-w-6xl mx-auto">
+
+
                     <!-- Introduction to Registration Methods -->
-                    <div class="bg-white rounded-xl shadow-md p-8 mb-8">
-                        <h3 class="text-2xl font-bold text-green-900 mb-6 text-center">Iba't ibang paraan ng pagrehistrong
-                            NCFRS</h3>
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-6 md:p-8 mb-8">
+
+                        <div class="mb-8">
+                            <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4">Ang National Coconut Farmers
+                                Registry System o NCFRS ay opisyal na talaan ng pamahalaan upang mabigyaan ng
+                                pagkakakilanlan
+                                ang mga magniniyog na Pilipino. Ito ang magiging batayan para sa pagtanggap ng mga benepisyo
+                                mula sa CFIDP.</p>
+
+                            <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                                <span class="font-medium text-gray-700">Libre</span> ang pagpaparehistro sa <span
+                                    class="font-medium text-gray-700">NCFRS</span>. Ang pag-update ng listahan ay
+                                <span class="font-medium text-gray-700">isinagawa kada taon</span> upang masiguro ang tamang
+                                datos ng mga magniniyog. Maaari kang
+                                magtungo sa <span class="font-medium text-gray-700">anumang PCA Office</span> sa inyong
+                                lugar para sa tulong o katanungan. Para sa
+                                karagdagang impormasyon, makipag-ugnayan sa <span class="font-medium text-gray-700">PCA
+                                    regional o provincial office</span> sa inyong
+                                rehiyon o magpadala ng mensahe sa kanilang <span class="font-medium text-gray-700">opisyal
+                                    na Facebook page</span>.
+                            </p>
+                        </div>
+
+                        <h3 class="text-base md:text-lg font-semibold text-gray-700 mb-6 text-center">Iba't ibang paraan ng
+                            pagrehistrong NCFRS</h3>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
                             <!-- Option A -->
-                            <div class="bg-green-50 rounded-lg p-5 border border-green-200">
-                                <div class="flex items-center mb-3">
-                                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-3">
-                                        <span class="text-xl font-bold text-white">A</span>
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-300">
+                                <div class="flex flex-col items-center text-center mb-3">
+                                    <div
+                                        class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                                        <span class="text-2xl font-bold text-white">A</span>
                                     </div>
-                                    <h4 class="text-lg font-bold text-green-800">Mass Registration</h4>
+                                    <h4 class="text-sm font-semibold text-gray-700 mb-2">Mass Registration</h4>
                                 </div>
-                                <p class="text-gray-700 text-sm">Sa nakatakdang iskedyul sa inyong mga barangay o
-                                    munisipalidad</p>
+                                <p class="text-gray-600 text-xs text-center leading-relaxed">Sa nakatakdang iskedyul sa
+                                    inyong mga barangay
+                                    o munisipalidad</p>
                             </div>
 
                             <!-- Option B -->
-                            <div class="bg-green-50 rounded-lg p-5 border border-green-200">
-                                <div class="flex items-center mb-3">
-                                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-3">
-                                        <span class="text-xl font-bold text-white">B</span>
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-300">
+                                <div class="flex flex-col items-center text-center mb-3">
+                                    <div
+                                        class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                                        <span class="text-2xl font-bold text-white">B</span>
                                     </div>
-                                    <h4 class="text-lg font-bold text-green-800">Walk-in Registration</h4>
+                                    <h4 class="text-sm font-semibold text-gray-700 mb-2">Walk-in Registration</h4>
                                 </div>
-                                <p class="text-gray-700 text-sm">Sa PCA regional/provincial office at sa mga authorized
-                                    partners (i.e. LGUs)</p>
+                                <p class="text-gray-600 text-xs text-center leading-relaxed">Sa PCA regional/provincial
+                                    office at sa mga
+                                    authorized partners (i.e. LGUs)</p>
                             </div>
 
                             <!-- Option C -->
-                            <div class="bg-green-50 rounded-lg p-5 border border-green-200">
-                                <div class="flex items-center mb-3">
-                                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-3">
-                                        <span class="text-xl font-bold text-white">C</span>
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-300">
+                                <div class="flex flex-col items-center text-center mb-3">
+                                    <div
+                                        class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                                        <span class="text-2xl font-bold text-white">C</span>
                                     </div>
-                                    <h4 class="text-lg font-bold text-green-800">Form Download</h4>
+                                    <h4 class="text-sm font-semibold text-gray-700 mb-2">Form Download</h4>
                                 </div>
-                                <p class="text-gray-700 text-sm">I-download ang form sa: <a
-                                        href="https://bit.ly/ncrscocolevyy" class="text-green-600 hover:underline"
-                                        target="_blank">bit.ly/ncrscocolevyy</a></p>
+                                <p class="text-gray-600 text-xs text-center leading-relaxed">I-download ang form sa: <a
+                                        href="https://bit.ly/ncrscocolevyy" style="color: #09ca59ff;"
+                                        class="hover:underline font-medium" target="_blank">bit.ly/ncrscocolevyy</a></p>
                             </div>
 
                             <!-- Option D -->
-                            <div class="bg-green-50 rounded-lg p-5 border border-green-200">
-                                <div class="flex items-center mb-3">
-                                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-3">
-                                        <span class="text-xl font-bold text-white">D</span>
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-300">
+                                <div class="flex flex-col items-center text-center mb-3">
+                                    <div
+                                        class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                                        <span class="text-2xl font-bold text-white">D</span>
                                     </div>
-                                    <h4 class="text-lg font-bold text-green-800">Online Registration</h4>
+                                    <h4 class="text-sm font-semibold text-gray-700 mb-2">Online Registration</h4>
                                 </div>
-                                <p class="text-gray-700 text-sm">Sa link na ito: <a href="https://bit.ly/ncrscocolevyy"
-                                        class="text-green-600 hover:underline" target="_blank">bit.ly/ncrscocolevyy</a></p>
+                                <p class="text-gray-600 text-xs text-center leading-relaxed">Sa link na ito: <a
+                                        href="https://bit.ly/ncrscocolevyy" style="color: #09ca59ff;"
+                                        class="hover:underline font-medium" target="_blank">bit.ly/ncrscocolevyy</a></p>
                             </div>
                         </div>
 
-                        <div class="mb-8">
-                            <h3 class="text-xl font-bold text-green-900 mb-4">Ano ang NCFRS?</h3>
-                            <p class="text-gray-700 mb-4">Ang National Coconut Farmers Registry System o NCFRS ay opisyal na
-                                talaan ng pamahalaan upang mabigyaan ng pagkakakilanlan ang mga magniniyog na Pilipino. Ito
-                                ang magiging batayan para sa pagtanggap ng mga benepisyo mula sa CFIDP.</p>
-                        </div>
 
-                        <div class="mb-8">
-                            <h3 class="text-xl font-bold text-green-900 mb-4">Mga Kailangang Dokumento</h3>
-                            <div class="bg-green-50 p-5 rounded-lg">
-                                <ol class="space-y-3">
-                                    <li class="flex items-center">
-                                        <div
-                                            class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-3">
-                                            <span class="text-sm font-bold text-white">1</span>
-                                        </div>
-                                        <span class="text-gray-700">Latest 2x2 ID picture</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <div
-                                            class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-3">
-                                            <span class="text-sm font-bold text-white">2</span>
-                                        </div>
-                                        <span class="text-gray-700">Kopya ng government-issued ID</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <div
-                                            class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-3">
-                                            <span class="text-sm font-bold text-white">3</span>
-                                        </div>
-                                        <span class="text-gray-700">Kopya ng titulo ng lupa o kasunduan ng renta sa may-ari
-                                            ng lupa - o anumang legal na dokumentong patunay sa pagmamay-ari ng lupa</span>
-                                    </li>
-                                </ol>
-                            </div>
+
+                        <div>
+                            <h3 class="text-base md:text-lg font-semibold text-gray-700 mb-3">Mga Kailangang Dokumento</h3>
+                            <ul class="list-disc list-inside space-y-2 text-sm md:text-base text-gray-600 ml-2">
+                                <li>Latest 2x2 ID picture</li>
+                                <li>Kopya ng government-issued ID</li>
+                                <li>Kopya ng titulo ng lupa o kasunduan ng renta sa may-ari ng lupa - o anumang legal na
+                                    dokumentong patunay sa pagmamay-ari ng lupa</li>
+                            </ul>
                         </div>
                     </div>
 
                     <!-- Detailed Registration Methods -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
                         <!-- Online/Download Registration -->
-                        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                            <div class="bg-green-600 py-3 px-6">
-                                <h3 class="text-xl font-bold text-white">Online Registration/Form Download</h3>
+                        <div
+                            class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="bg-green-500 py-4 px-6">
+                                <h3 class="text-base md:text-lg font-semibold text-center text-white">Online
+                                    Registration/Form
+                                    Download</h3>
                             </div>
                             <div class="p-6">
-                                <ol class="space-y-6">
+                                <ol class="space-y-5">
                                     <li class="flex">
                                         <div
-                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                            <span class="text-lg font-bold text-green-800">01</span>
+                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 shadow-sm">
+                                            <span class="text-base font-bold" style="color: #09ca59ff;">01</span>
                                         </div>
                                         <div>
-                                            <p class="text-gray-800 font-medium">I-download ang NCFRS form: <a
-                                                    href="https://bit.ly/ncrscocolevyy"
-                                                    class="text-green-600 hover:underline"
+                                            <p class="text-sm md:text-base text-gray-600 leading-relaxed">I-download ang
+                                                NCFRS form: <a href="https://bit.ly/ncrscocolevyy" style="color: #09ca59ff;"
+                                                    class="hover:underline font-medium"
                                                     target="_blank">bit.ly/ncrscocolevyy</a></p>
                                         </div>
                                     </li>
                                     <li class="flex">
                                         <div
-                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                            <span class="text-lg font-bold text-green-800">02</span>
+                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 shadow-sm">
+                                            <span class="text-base font-bold" style="color: #09ca59ff;">02</span>
                                         </div>
                                         <div>
-                                            <p class="text-gray-800 font-medium">Sagutan ang NCFRS Form at ihanda ang iba
+                                            <p class="text-sm md:text-base text-gray-600 leading-relaxed">Sagutan ang NCFRS
+                                                Form at ihanda ang iba
                                                 pang dokumento</p>
                                         </div>
                                     </li>
                                     <li class="flex">
                                         <div
-                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                            <span class="text-lg font-bold text-green-800">03</span>
+                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 shadow-sm">
+                                            <span class="text-base font-bold" style="color: #09ca59ff;">03</span>
                                         </div>
                                         <div>
-                                            <p class="text-gray-800 font-medium">I-scan o kuhaan ng picture ang mga
+                                            <p class="text-sm md:text-base text-gray-600 leading-relaxed">I-scan o kuhaan ng
+                                                picture ang mga
                                                 dokumento at i-send sa email: <a href="mailto:ncfrs@pca.gov.ph"
-                                                    class="text-green-600 hover:underline">ncfrs@pca.gov.ph</a> (para sa
+                                                    style="color: #09ca59ff;"
+                                                    class="hover:underline font-medium">ncfrs@pca.gov.ph</a> (para sa
                                                 form download) o i-attach sa online form</p>
                                         </div>
                                     </li>
                                     <li class="flex">
                                         <div
-                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                            <span class="text-lg font-bold text-green-800">04</span>
+                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 shadow-sm">
+                                            <span class="text-base font-bold" style="color: #09ca59ff;">04</span>
                                         </div>
                                         <div>
-                                            <p class="text-gray-800 font-medium">Maari ring dalhin o ipasa sa pinakamalapit
+                                            <p class="text-sm md:text-base text-gray-600 leading-relaxed">Maari ring dalhin
+                                                o ipasa sa pinakamalapit
                                                 na PCA Office (para sa form download) o pindutin ang Submit Button (para sa
                                                 online)</p>
                                         </div>
@@ -862,48 +1015,54 @@
                         </div>
 
                         <!-- Walk-in Registration -->
-                        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                            <div class="bg-green-600 py-3 px-6">
-                                <h3 class="text-xl font-bold text-white">Walk-in Registration</h3>
+                        <div
+                            class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="bg-green-500 py-4 px-6">
+                                <h3 class="text-base md:text-lg font-semibold text-center text-white">Walk-in Registration
+                                </h3>
                             </div>
                             <div class="p-6">
-                                <ol class="space-y-6">
+                                <ol class="space-y-5">
                                     <li class="flex">
                                         <div
-                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                            <span class="text-lg font-bold text-green-800">01</span>
+                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 shadow-sm">
+                                            <span class="text-base font-bold" style="color: #09ca59ff;">01</span>
                                         </div>
                                         <div>
-                                            <p class="text-gray-800 font-medium">Kumuha ng NCFRS Form (kung pen & paper) o
+                                            <p class="text-sm md:text-base text-gray-600 leading-relaxed">Kumuha ng NCFRS
+                                                Form (kung pen & paper) o
                                                 umupo sa available na computer (kung computer-aided)</p>
                                         </div>
                                     </li>
                                     <li class="flex">
                                         <div
-                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                            <span class="text-lg font-bold text-green-800">02</span>
+                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 shadow-sm">
+                                            <span class="text-base font-bold" style="color: #09ca59ff;">02</span>
                                         </div>
                                         <div>
-                                            <p class="text-gray-800 font-medium">Sagutan ang NCFRS Form.</p>
+                                            <p class="text-sm md:text-base text-gray-600 leading-relaxed">Sagutan ang NCFRS
+                                                Form.</p>
                                         </div>
                                     </li>
                                     <li class="flex">
                                         <div
-                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                            <span class="text-lg font-bold text-green-800">03</span>
+                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 shadow-sm">
+                                            <span class="text-base font-bold" style="color: #09ca59ff;">03</span>
                                         </div>
                                         <div>
-                                            <p class="text-gray-800 font-medium">Kung computer aided, kuhaan ng picture ang
+                                            <p class="text-sm md:text-base text-gray-600 leading-relaxed">Kung computer
+                                                aided, kuhaan ng picture ang
                                                 mga dokumento na dala at i-attach sa online form</p>
                                         </div>
                                     </li>
                                     <li class="flex">
                                         <div
-                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                            <span class="text-lg font-bold text-green-800">04</span>
+                                            class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 shadow-sm">
+                                            <span class="text-base font-bold" style="color: #09ca59ff;">04</span>
                                         </div>
                                         <div>
-                                            <p class="text-gray-800 font-medium">Kung pen & paper, ibigay ang nasagutang
+                                            <p class="text-sm md:text-base text-gray-600 leading-relaxed">Kung pen & paper,
+                                                ibigay ang nasagutang
                                                 form kasama ang mga dokumentong kailangan sa PCA Authorized representative
                                             </p>
                                         </div>
@@ -914,31 +1073,58 @@
                     </div>
 
                     <!-- Additional Registration Information -->
-                    <div class="bg-white rounded-xl shadow-md p-8 mb-12">
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-6 md:p-8 mb-8">
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                             <!-- Who can register -->
                             <div>
-                                <h3 class="text-xl font-bold text-green-900 mb-4">Sino ang pwedeng magparehistrong NCFRS?
+                                <h3 class="text-base md:text-lg font-semibold text-gray-700 mb-4">Sino ang pwedeng
+                                    magparehistrong
+                                    NCFRS?
                                 </h3>
-                                <ul class="space-y-2 text-gray-700">
+                                <ul class="space-y-3 text-sm md:text-base text-gray-600">
                                     <li class="flex items-center">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color: #09ca59ff;"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
                                         <span>Farmowner</span>
                                     </li>
                                     <li class="flex items-center">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color: #09ca59ff;"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
                                         <span>Owner-Tiller</span>
                                     </li>
                                     <li class="flex items-center">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color: #09ca59ff;"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
                                         <span>Grower</span>
                                     </li>
                                     <li class="flex items-center">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color: #09ca59ff;"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
                                         <span>Tenant/Tenant-worker</span>
                                     </li>
                                     <li class="flex items-center">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-green-600 mr-2"></div>
+                                        <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color: #09ca59ff;"
+                                            fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
                                         <span>Farm worker/Laborer</span>
                                     </li>
                                 </ul>
@@ -946,63 +1132,28 @@
 
                             <!-- Benefits -->
                             <div>
-                                <h3 class="text-xl font-bold text-green-900 mb-4">Ano ang benepisyo ng pagrehistrong NCFRS?
+                                <h3 class="text-base md:text-lg font-semibold text-gray-700 mb-4">Ano ang benepisyo ng
+                                    pagrehistrong NCFRS?
                                 </h3>
                                 <div class="mb-4">
-                                    <p class="text-gray-700 font-medium mb-2">A. Para sa nagmamay-ari ng hindi lalampas sa 5
+                                    <p class="text-sm md:text-base text-gray-600 mb-3"><span
+                                            class="font-medium text-gray-700">A.</span> Para sa nagmamay-ari
+                                        ng hindi lalampas sa 5
                                         ektarya na lupa, tenant, tiller, grower, tenant, o farm worker:</p>
-                                    <ol class="ml-6 list-decimal text-gray-700 space-y-2">
+                                    <ol class="ml-6 list-decimal text-sm md:text-base text-gray-600 space-y-2">
                                         <li>Makakuha ng mga benepisyo na nakasaad sa RA 11524, o Coconut Farmers and
                                             Industry Trust Fund Act</li>
                                         <li>Makalahok sa pagpili ng magiging farmer-representatives sa PCA Board</li>
                                     </ol>
                                 </div>
                                 <div>
-                                    <p class="text-gray-700 font-medium mb-2">B. Para sa nagmamay-ari ng lupa na higit sa 5
+                                    <p class="text-sm md:text-base text-gray-600 mb-2"><span
+                                            class="font-medium text-gray-700">B.</span> Para sa nagmamay-ari
+                                        ng lupa na higit sa 5
                                         ektarya:</p>
-                                    <p class="text-gray-700 ml-6">Upang makasali sa iba pang programa ng pamahalaan</p>
+                                    <p class="text-sm md:text-base text-gray-600 ml-6">Upang makasali sa iba pang programa
+                                        ng pamahalaan</p>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- How to check registration -->
-                        <div class="mt-8">
-                            <h3 class="text-xl font-bold text-green-900 mb-4">Kumpirmasyon ng rehistrong NCFRS</h3>
-                            <div class="bg-green-50 p-5 rounded-lg">
-                                <ul class="space-y-3 text-gray-700">
-                                    <li><strong>Para sa pen-and-paper registration:</strong> Makakatatanggap ka ng text
-                                        message na naglalaman ng iyong reference number.</li>
-                                    <li><strong>Para sa online registration:</strong> Makakatatanggap ka ng email
-                                        notification na naglalaman ng iyong reference number sa email address na iyong
-                                        inilagay sa form.</li>
-                                    <li><strong class="text-green-800">PAALALA:</strong> Itago ang reference/control number
-                                        upang magamit sa anumang transaksyon sa PCA o sa pag-update ng iyong impormasyon sa
-                                        NCFRS.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Important Notes -->
-                    <div class="mt-10 p-6 bg-amber-50 rounded-lg border border-amber-200">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0">
-                                <svg class="w-6 h-6 text-amber-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <div class="ml-3">
-                                <h4 class="text-sm lg:text-base font-semibold text-gray-800 mt-1.5 mb-2">Mahalagang
-                                    Impormasyon:</h4>
-                                <ul class="space-y-2 list-disc list-inside">
-                                    <li>Libre ang pagpaparehistro sa NCFRS</li>
-                                    <li>Ang pag-update ng listahan ay ginagawa kada taon</li>
-                                    <li>Maaaring magtungo sa alinmang PCA Offices sa inyong lugar</li>
-                                    <li>Para sa iba pang impormasyon, makipag-ugnayan sa PCA regional o provincial office sa
-                                        inyong lugar, o i-message ang kanilang Facebook page</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -1011,24 +1162,7 @@
     </div>
     </section>
 
-    <!-- Scroll to Programs Button -->
-    <div id="scroll-to-programs-btn"
-        class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-50 opacity-0 transition-all duration-300 ease-in-out pointer-events-none">
-        <button
-            class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-12 lg:h-12 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 group"
-            style="background-color: #09ca59ff;">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 transform group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24"
-                fill="none">
-                <path d="M12 4L12 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <span
-                class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-                Tingnan ang mga Programa
-            </span>
-        </button>
-    </div>
+
 
     <!-- FAQs Section -->
     <section id="faq-section" class="py-16 sm:py-20 bg-gradient-to-br from-green-50 via-white to-green-50">
@@ -1055,7 +1189,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-1"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">1. Ano ang Coconut
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">Ano ang Coconut
                                     Farmers and Industry Development Plan (CFIDP)?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
@@ -1075,7 +1209,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-2"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">2. Sino-sino ang
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">Sino-sino ang
                                     tinutukoy na "Coconut Farmer" o magniniyog ayon sa batas?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
@@ -1115,7 +1249,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-3"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">3. Anu-ano ang mga
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">Anu-ano ang mga
                                     benepisyong maaaring matanggap ng coconut farmers sa ilalim ng RA 11524?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
@@ -1139,7 +1273,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-4"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">4. Saan ba kami
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">Saan ba kami
                                     lalapit kung gusto namin maging benepisyaryo ng mga proyektong ito?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
@@ -1163,7 +1297,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-5"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">5. Paano masisiguro
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">Paano masisiguro
                                     ng PCA na maipapamahagi o maisasagawa ang mga program/proyekto para sa kapakanan ng
                                     bawat magniniyog sa bansa?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
@@ -1193,7 +1327,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-6"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">6. Ano ang dapat
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">Ano ang dapat
                                     gawin kung mayroong lupa at gusto mapasama sa Hybridization Project mula sa CFIDP pero
                                     hindi rehistrado sa NCFRS?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
@@ -1213,7 +1347,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-7"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">7. Kung buong
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">Kung buong
                                     pamilya, (nanay, tatay at magkakapatid o mga anak) ay coconut farmers, maaari bang lahat
                                     ay maging kabahagi ng proyektong nakapaloob sa RA 11524 at CFIDP?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
@@ -1235,7 +1369,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-8"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">8. Kung buong
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">Kung buong
                                     pamilya, (nanay, tatay at magkakapatid o mga anak) ay coconut farmers, maaari bang lahat
                                     ay maging kabahagi ng proyektong nakapaloob sa RA 11524 at CFIDP?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
@@ -1257,7 +1391,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-9"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">9. May limitasyon ba
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">May limitasyon ba
                                     ang pagtanggap ng benepisyo sa mga programa?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
@@ -1283,7 +1417,7 @@
                         <div class="bg-white rounded-lg border border-green-100 overflow-hidden">
                             <button id="faq-button-10"
                                 class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-start hover:bg-green-50 transition-colors min-h-[60px]">
-                                <span class="font-semibold text-slate-800 pr-4 flex-1 leading-relaxed">10. Kung miyembro na
+                                <span class="font-semibold text-slate-700 pr-4 flex-1 leading-relaxed">Kung miyembro na
                                     ng mga asosasyon at kooperatiba, kailangan ba muling magpa-miyembro sa panibagong
                                     organisasyon upang makasali sa mga proyekto?</span>
                                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
@@ -1363,6 +1497,7 @@
                     closeAllFaqs();
                     openFaq(faqButtons[0]);
                 }
+
                 // Smooth scrolling for navigation links
                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                     anchor.addEventListener('click', function (e) {
@@ -1386,95 +1521,6 @@
                                 behavior: 'smooth',
                                 block: 'start'
                             });
-                        }
-                    });
-                });
-
-                // FAQ toggle functionality with enhanced animation
-                document.querySelectorAll('#faq-section button').forEach(button => {
-                    button.addEventListener('click', function () {
-                        const content = this.nextElementSibling;
-                        const icon = this.querySelector('svg');
-
-                        // Hide all other content first with animation
-                        document.querySelectorAll('#faq-section .bg-green-50/50').forEach(item => {
-                            if (item !== content) {
-                                if (!item.classList.contains('hidden')) {
-                                    // Animate height to zero before hiding
-                                    const currentHeight = item.scrollHeight;
-                                    item.style.height = currentHeight + 'px';
-                                    item.style.overflow = 'hidden';
-                                    item.style.transition = 'height 0.3s ease';
-
-                                    // Trigger reflow
-                                    item.offsetHeight;
-
-                                    // Collapse
-                                    item.style.height = '0px';
-
-                                    // Hide after animation
-                                    setTimeout(() => {
-                                        item.classList.add('hidden');
-                                        item.style.height = '';
-                                        item.style.overflow = '';
-                                    }, 300);
-                                }
-
-                                // Rotate icon
-                                const parentButton = item.previousElementSibling;
-                                if (parentButton && parentButton.querySelector('svg')) {
-                                    parentButton.querySelector('svg').style.transform = 'rotate(0deg)';
-                                    parentButton.querySelector('svg').style.transition = 'transform 0.3s ease';
-                                }
-                            }
-                        });
-
-                        // Toggle current content with animation
-                        if (content.classList.contains('hidden')) {
-                            // Show element but with height 0
-                            content.classList.remove('hidden');
-                            content.style.height = '0px';
-                            content.style.overflow = 'hidden';
-                            content.style.transition = 'height 0.3s ease';
-
-                            // Trigger reflow
-                            content.offsetHeight;
-
-                            // Expand to full height
-                            const targetHeight = content.scrollHeight;
-                            content.style.height = targetHeight + 'px';
-
-                            // Clean up after animation
-                            setTimeout(() => {
-                                content.style.height = '';
-                                content.style.overflow = '';
-                            }, 300);
-
-                            // Rotate icon
-                            icon.style.transform = 'rotate(180deg)';
-                            icon.style.transition = 'transform 0.3s ease';
-                        } else {
-                            // Animate height to zero before hiding
-                            const currentHeight = content.scrollHeight;
-                            content.style.height = currentHeight + 'px';
-                            content.style.overflow = 'hidden';
-                            content.style.transition = 'height 0.3s ease';
-
-                            // Trigger reflow
-                            content.offsetHeight;
-
-                            // Collapse
-                            content.style.height = '0px';
-
-                            // Hide after animation
-                            setTimeout(() => {
-                                content.classList.add('hidden');
-                                content.style.height = '';
-                                content.style.overflow = '';
-                            }, 300);
-
-                            // Rotate icon back
-                            icon.style.transform = 'rotate(0deg)';
                         }
                     });
                 });
