@@ -3,7 +3,8 @@
     class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-100 w-full transition-all duration-300">
     <div class="w-full max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5">
         <!-- Bagong Pilipinas Logo -->
-        <a href="{{ route('welcome') }}" class="flex items-center flex-shrink-0 hover:opacity-80 transition-opacity duration-200">
+        <a href="{{ route('welcome') }}"
+            class="flex items-center flex-shrink-0 hover:opacity-80 transition-opacity duration-200">
             <img src="{{ asset('images/img/bagong-pilipinas.png') }}" alt="Bagong Pilipinas Logo"
                 class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain" style="margin-left:-10px;"
                 onerror="this.onerror=null; this.src='{{ asset('images/cfidpgp.png') }}';">
