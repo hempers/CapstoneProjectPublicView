@@ -275,166 +275,130 @@
                             class="absolute top-1/2 left-1/4 w-6 sm:w-8 h-6 sm:h-8 bg-white opacity-10 rounded-full transform -translate-y-1/2">
                         </div>
 
-                        <div class="flex items-center justify-between relative z-10">
-                            <!-- Left spacer - smaller on mobile -->
-                            <div class="w-6 sm:w-10"></div>
-
-                            <!-- Center content - better responsive sizing -->
-                            <div class="flex-1 text-center px-1 sm:px-4">
-                                <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white mt-2 sm:mt-4">
+                        <div class="relative z-10 px-5 pt-2 pb-0">
+                            <!-- Truly centered heading -->
+                            <div class="text-center">
+                                <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white mb-0.5">
                                     Application Tracking Details</h2>
-                                <div class="w-12 sm:w-16 h-0.5 sm:h-1 bg-white opacity-70 rounded mx-auto"></div>
+                                <p class="text-white text-xs sm:text-sm opacity-80 mx-auto max-w-md -mb-1">
+                                    Tingnan ang latest na update ng iyong application</p>
                             </div>
 
-                            <!-- Close button - better positioning and sizing -->
-                            <div class="flex justify-end">
+                            <!-- Close button - positioned at absolute right corner -->
+                            <div class="absolute right-0 top-0 -mr-2 -mt-1">
                                 <button id="closeModal"
-                                    class="text-white hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 bg-green-600 hover:bg-green-700 rounded-full p-1.5 shadow-lg transition-all duration-200">
-                                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
+                                    class="text-white hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 bg-green-600 hover:bg-green-700 rounded-full p-1 shadow-lg transition-all duration-200">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M6 18L18 6M6 6l12 12"></path>
                                     </svg>
                                 </button>
                             </div>
                         </div>
-
-                        <!-- Description Text - improved responsive padding -->
-                        <div class="mt-3 sm:mt-4 text-xs sm:text-sm text-white leading-relaxed px-2 sm:px-6 relative z-10">
-                            <p class="mb-2 text-center text-white text-opacity-90">
-                                Ang sumusunod na impormasyon ay tumutukoy sa kasalukuyang estado ng inyong aplikasyon
-                                para sa PCA-CFIDP Program. Maaari itong gamitin bilang gabay upang malaman ang progreso
-                                o anumang aksyon na isinasagawa.
-                            </p>
-                        </div>
                     </div>
 
                     <!-- Modal Body -->
-                    <div class="py-4 sm:py-6 px-4 sm:px-6 lg:px-8">
-                        <!-- Application Information Section -->
-                        <div class="mb-8 mt-1 pt-1">
-                            <div class="flex items-center mb-4 space-x-2">
-                                <div
-                                    class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    <div class="px-4 sm:px-6 md:px-8 py-4">
+                        <div class="space-y-4">
+                            <!-- 1. Project Name -->
+                            <div class="text-center pb-3 border-b border-gray-200">
+                                <div id="modalApplicationTitle"
+                                    class="text-sm sm:text-base md:text-lg font-semibold text-gray-600 px-2 sm:px-4">
+                                    -
+                                </div>
+                            </div>
+
+                            <!-- 2. Application Details -->
+                            <div class="bg-gray-50 rounded-lg p-3 sm:p-4 text-xs text-gray-600">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-6 gap-y-2">
+                                    <div>
+                                        <span class="text-gray-500">Current Status:</span>
+                                        <span id="modalCurrentStatusText" class="font-semibold text-gray-700">-</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-500">Application ID:</span>
+                                        <span id="modalReferenceId" class="font-mono font-medium">-</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-500">Applicant:</span>
+                                        <span id="modalProponent" class="font-medium">-</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-500">Submitted:</span>
+                                        <span id="modalDateSubmitted" class="font-medium">-</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- 3. Requirements Status / Warning Section (if needed) -->
+                            <div id="requirementsWarningSection"
+                                class="hidden bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
+                                <div class="flex items-start gap-2 sm:gap-3">
+                                    <svg class="h-4 w-4 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                            clip-rule="evenodd" />
                                     </svg>
-                                </div>
-                                <h3 class="text-base font-bold text-gray-900">Application Information</h3>
-                            </div>
-
-                            <div class="mb-6"> <!-- Clean card container -->
-                                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
-                                    <!-- Current Status - Centered green pill at top -->
-                                    <div class="flex justify-center mb-2 mt-2">
-                                        <div
-                                            class="border border-green-100 bg-green-100 text-green-600 px-4 py-2 rounded-full text-xs">
-                                            Current Status: <span id="modalCurrentStatusText"
-                                                class="text-sm font-semibold">-</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- Reference ID - Centered below status -->
-                                    <div class="flex justify-center mb-6">
-                                        <div class="border border-green-200 rounded-full px-4 py-1">
-                                            <span class="text-xs text-green-600">Application ID: </span>
-                                            <span id="modalReferenceId" class="text-xs font-medium text-green-600">-</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- Two column layout for details -->
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                        <!-- Application Title -->
-                                        <div class="sm:col-span-2">
-                                            <p class="text-gray-600 text-xs font-medium mb-1">Application Title</p>
-                                            <div id="modalApplicationTitle" class="bg-green-50 rounded-md p-3 text-sm">-
-                                            </div>
-                                        </div>
-
-                                        <!-- Contact Person -->
-                                        <div>
-                                            <p class="text-gray-600 text-xs font-medium mb-1">Contact Person</p>
-                                            <div id="modalProponent" class="bg-green-50 rounded-md p-3 text-sm ">
-                                                -</div>
-                                        </div>
-
-                                        <!-- Date Submitted -->
-                                        <div>
-                                            <p class="text-gray-600 text-xs font-medium mb-1">Date Submitted</p>
-                                            <div id="modalDateSubmitted" class="bg-green-50 rounded-md p-3 text-sm">-</div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs font-semibold text-yellow-700 mb-1.5">Mahalagang Paalala:</p>
+                                        <div id="modalRequirements">
+                                            <p class="text-xs text-yellow-800 mb-2" id="requirementsMessage">
+                                                Kinakailangan maipasa ang mga kulang na dokumento sa provincial na opisina
+                                                ng PCA para maiproseso ang inyong application:
+                                            </p>
+                                            <ul class="space-y-1 text-xs text-yellow-900" id="requirementsList">
+                                                <!-- Requirements will be populated dynamically -->
+                                            </ul>
+                                            <p class="text-sm text-gray-500 hidden" id="noRequirementsMsg">No requirements
+                                                submitted yet</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-
-                        <!-- Application History -->
-                        <div class="mb-8">
-                            <div class="flex items-center mb-4 space-x-2">
-                                <div
-                                    class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
-                                </div>
-                                <h3 class="text-base font-bold text-gray-900">Application History</h3>
-                            </div>
-
-                            <div class="overflow-hidden rounded-lg border border-gray-200 shadow-sm bg-white p-4">
-                                <!-- Timeline view for application history -->
-                                <div class="relative" id="historyTimelineContainer">
-                                    <!-- Timeline line -->
-                                    <div class="absolute top-0 bottom-0 left-6 w-0.5 bg-green-100" aria-hidden="true">
-                                    </div>
-
-                                    <!-- Timeline entries will be populated dynamically -->
-                                    <div id="modalHistoryTable" class="space-y-3 relative">
-                                        <!-- History items will be populated dynamically -->
-                                    </div>
-                                </div>
-
-                                <!-- Empty state message (initially hidden) -->
-                                <div id="emptyHistoryState" class="hidden text-center py-6">
-                                    <div class="inline-flex items-center justify-center bg-gray-100 rounded-full p-2 mb-2">
-                                        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
+                            <!-- 4. Timeline Section -->
+                            <div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div
+                                        class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                         </svg>
                                     </div>
-                                    <div>
-                                        <span class="block text-gray-500 font-medium text-[11px]">No history records
-                                            found</span>
-                                        <p class="text-gray-400 text-[9px] mt-0.5">Application history will appear here
-                                            once available</p>
+                                    <h3 class="text-sm font-medium text-gray-700">Application Timeline</h3>
+                                </div>
+                                <div class="bg-white rounded-lg border border-gray-100 shadow-sm p-3 sm:p-4">
+                                    <div class="space-y-4 sm:space-y-6 border-l-2 border-gray-300 ml-3.5 pb-4 sm:pb-6"
+                                        id="historyTimelineContainer">
+                                        <!-- Timeline entries will be populated dynamically -->
+                                        <div id="modalHistoryTable" class="space-y-4 sm:space-y-6">
+                                            <!-- History items will be populated dynamically -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Empty state message (initially hidden) -->
+                                    <div id="emptyHistoryState" class="hidden text-center py-6">
+                                        <div
+                                            class="inline-flex items-center justify-center bg-gray-100 rounded-full p-2 mb-2">
+                                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="block text-gray-500 font-medium text-[11px]">No history records
+                                                found</span>
+                                            <p class="text-gray-400 text-[9px] mt-0.5">Application history will appear here
+                                                once available</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Requirements Status -->
-                        <div class="mb-4">
-                            <div class="flex items-center mb-4 space-x-2">
-                                <div
-                                    class="w-8 h-8 rounded-full flex items-center justify-center bg-green-50 text-green-600">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6m-6 4h6">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <h3 class="text-base font-bold text-gray-900">Requirements Information</h3>
-                            </div>
-                            <div id="modalRequirements"
-                                class="bg-white rounded-lg border border-gray-200 overflow-hidden p-4">
-                                <p class="text-sm text-gray-500" id="noRequirementsMsg">No requirements submitted yet
-                                </p>
-                                <!-- Requirements will be populated dynamically -->
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -684,44 +648,40 @@
                             }
 
                             timelineItem.innerHTML = `
-                                                                                                                                                                                                                                                                                                                                                                                                                                <!-- Timeline line and dot -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="relative flex flex-col items-center mr-4">
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="h-full w-0.5 ${lineColor} absolute"></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="border-2 ${dotBorder} z-10 h-3 w-3 rounded-full ${dotColor} shadow-sm"></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
+                                        <div class="relative">
+                                            <div class="absolute -left-[6px] top-[6px] h-3 w-3 rounded-full ${dotColor} border-2 ${dotBorder} ${firstItem ? 'shadow-sm' : ''}"></div>
+                                            <div class="ml-6 sm:ml-8">
+                                                <!-- Status badge at top -->
+                                                <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
+                                                    ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
+                                                </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                <!-- Content on the right -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <!-- Status badge at top -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
-                                                                                                                                                                                                                                                                                                                                                                                                                                        ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
-                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                <!-- Main content -->
+                                                <div>
+                                                    ${item.remarks ? `<p class="text-xs sm:text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <!-- Main content -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                        ${item.remarks ? `<p class="text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
+                                                    <!-- Person and date/time with icons -->
+                                                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-0 mt-2">
+                                                        <!-- Person icon and name -->
+                                                        <div class="flex items-center text-xs text-gray-600 sm:mr-4">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                            </svg>
+                                                            <span class="truncate">${item.conducted_by || 'Unknown Staff'}</span>
+                                                        </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                        <!-- Person and date/time with icons -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="flex items-center mt-2">
-                                                                                                                                                                                                                                                                                                                                                                                                                                            <!-- Person icon and name -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="flex items-center text-xs text-gray-600 mr-4">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                <span>${item.conducted_by || 'Unknown Staff'}</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                            <!-- Time/date icon and info -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="flex items-center text-xs text-gray-600">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                <span>${formattedDay} ${formattedDate}, ${formattedTime}</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                            `;
+                                                        <!-- Time/date icon and info -->
+                                                        <div class="flex items-center text-xs text-gray-600">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                            </svg>
+                                                            <span class="whitespace-nowrap">${formattedDay} ${formattedDate}, ${formattedTime}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
 
                             historyTimeline.appendChild(timelineItem);
                         });
@@ -734,7 +694,12 @@
 
                     // Populate requirements
                     const requirementsContainer = document.getElementById('modalRequirements');
-                    requirementsContainer.innerHTML = '';
+                    const requirementsWarningSection = document.getElementById('requirementsWarningSection');
+                    const requirementsList = document.getElementById('requirementsList');
+                    const noRequirementsMsg = document.getElementById('noRequirementsMsg');
+
+                    // Clear previous content
+                    if (requirementsList) requirementsList.innerHTML = '';
 
                     // Log the requirements field from the API
                     console.log('Requirements check:', {
@@ -744,9 +709,6 @@
                     const requirementsData = data.requirements || [];
                     console.log('Requirements data:', requirementsData);
 
-                    // Get the no requirements message element
-                    const noRequirementsMsg = document.getElementById('noRequirementsMsg');
-
                     if (requirementsData && requirementsData.length > 0) {
                         // Find missing requirements
                         const missingRequirements = requirementsData.filter(req => {
@@ -755,102 +717,35 @@
                         });
 
                         if (missingRequirements.length > 0) {
-                            // Hide the no requirements message
-                            if (noRequirementsMsg) {
-                                noRequirementsMsg.style.display = 'none';
+                            // Show warning section
+                            if (requirementsWarningSection) {
+                                requirementsWarningSection.classList.remove('hidden');
                             }
-
-                            // Add warning header
-                            const warningHeader = document.createElement('div');
-                            warningHeader.className = 'bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4';
-                            warningHeader.innerHTML = `
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="flex items-center">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="flex-shrink-0">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="ml-3">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p class="text-sm text-yellow-700 font-medium">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Paalala! Ang mga sumusunod na kinakailangang dokumento ay hindi pa kumpleto o kulang sa inyong aplikasyon.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    `;
-                            requirementsContainer.appendChild(warningHeader);
-
-                            // Create a list for missing requirements
-                            const list = document.createElement('ul');
-                            list.className = 'space-y-2 mb-4';
-                            requirementsContainer.appendChild(list);
+                            if (noRequirementsMsg) {
+                                noRequirementsMsg.classList.add('hidden');
+                            }
 
                             // Add each missing requirement to the list
                             missingRequirements.forEach(req => {
                                 const reqName = req.requirement_name || 'Unknown Requirement';
-
                                 const listItem = document.createElement('li');
-                                listItem.className = 'flex items-center text-sm py-2 px-1 border-b border-gray-100';
+                                listItem.className = 'flex items-start';
                                 listItem.innerHTML = `
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <svg class="h-4 w-4 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span class="text-gray-800">${reqName}</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        `;
-                                list.appendChild(listItem);
+                                            <span class="mr-2">•</span>
+                                            <span>${reqName}</span>
+                                        `;
+                                if (requirementsList) requirementsList.appendChild(listItem);
                             });
-
-                            // Add note in Tagalog with icon
-                            const noteElement = document.createElement('div');
-                            noteElement.className = 'mt-4 text-sm text-gray-600 pt-3 border-t border-gray-100 bg-gray-50 rounded-lg p-4';
-                            noteElement.innerHTML = `
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="flex items-start">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="flex-shrink-0 mt-1">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="ml-3">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p class="mb-2 mt-1 font-medium">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span class="text-green-700">Mahalagang Paalala:</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p class="mb-3">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Kinakailangan pong maipasa ang mga kulang na dokumento para maiproseso nang mabilis ang inyong aplikasyon.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p class="flex items-center italic">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Maaari po ninyong ipasa ang mga kulang na dokumento sa opisina ng PCA.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    `;
-                            requirementsContainer.appendChild(noteElement);
                         } else {
-                            // All requirements are complete
-                            if (noRequirementsMsg) {
-                                noRequirementsMsg.style.display = 'none';
+                            // All requirements are complete - hide warning section
+                            if (requirementsWarningSection) {
+                                requirementsWarningSection.classList.add('hidden');
                             }
-
-                            const completeMessage = document.createElement('div');
-                            completeMessage.className = 'bg-green-50 border-l-4 border-green-400 p-4';
-                            completeMessage.innerHTML = `
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="flex">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="flex-shrink-0">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </svg>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="ml-3">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p class="text-sm text-green-700">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Lahat ng kinakailangang dokumento ay kumpleto na.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                </p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    `;
-                            requirementsContainer.appendChild(completeMessage);
                         }
                     } else {
-                        // No requirements data available
-                        if (noRequirementsMsg) {
-                            noRequirementsMsg.textContent = 'Hindi pa available ang listahan ng mga kinakailangang dokumento.';
+                        // No requirements data available - hide warning section
+                        if (requirementsWarningSection) {
+                            requirementsWarningSection.classList.add('hidden');
                         }
                     }
                 }
@@ -931,10 +826,11 @@
                         trackButton.disabled = false;
                         // Restore the original button content with both icon and text
                         trackButton.innerHTML = `
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                                                                    </svg>
-                                                                                    <span>Track Application</span>`;
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                    <span>Track Application</span>
+                                `;
                     }
                 });
 
