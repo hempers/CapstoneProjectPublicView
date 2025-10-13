@@ -648,40 +648,40 @@
                             }
 
                             timelineItem.innerHTML = `
-                                        <div class="relative">
-                                            <div class="absolute -left-[6px] top-[6px] h-3 w-3 rounded-full ${dotColor} border-2 ${dotBorder} ${firstItem ? 'shadow-sm' : ''}"></div>
-                                            <div class="ml-6 sm:ml-8">
-                                                <!-- Status badge at top -->
-                                                <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
-                                                    ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
-                                                </div>
-
-                                                <!-- Main content -->
-                                                <div>
-                                                    ${item.remarks ? `<p class="text-xs sm:text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
-
-                                                    <!-- Person and date/time with icons -->
-                                                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-0 mt-2">
-                                                        <!-- Person icon and name -->
-                                                        <div class="flex items-center text-xs text-gray-600 sm:mr-4">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                            </svg>
-                                                            <span class="truncate">${item.conducted_by || 'Unknown Staff'}</span>
+                                                <div class="relative">
+                                                    <div class="absolute -left-[6px] top-[6px] h-3 w-3 rounded-full ${dotColor} border-2 ${dotBorder} ${firstItem ? 'shadow-sm' : ''}"></div>
+                                                    <div class="ml-6 sm:ml-8">
+                                                        <!-- Status badge at top -->
+                                                        <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
+                                                            ${stageDisplayNames[item.stage] || item.stage || 'Unknown Stage'}
                                                         </div>
 
-                                                        <!-- Time/date icon and info -->
-                                                        <div class="flex items-center text-xs text-gray-600">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                            </svg>
-                                                            <span class="whitespace-nowrap">${formattedDay} ${formattedDate}, ${formattedTime}</span>
+                                                        <!-- Main content -->
+                                                        <div>
+                                                            ${item.remarks ? `<p class="text-xs sm:text-sm text-gray-800 font-medium mb-2">${item.remarks}</p>` : ''}
+
+                                                            <!-- Person and date/time with icons -->
+                                                            <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-0 mt-2">
+                                                                <!-- Person icon and name -->
+                                                                <div class="flex items-center text-xs text-gray-600 sm:mr-4">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                                    </svg>
+                                                                    <span class="truncate">${item.conducted_by || 'Unknown Staff'}</span>
+                                                                </div>
+
+                                                                <!-- Time/date icon and info -->
+                                                                <div class="flex items-center text-xs text-gray-600">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1 text-gray-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                    </svg>
+                                                                    <span class="whitespace-nowrap">${formattedDay} ${formattedDate}, ${formattedTime}</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    `;
+                                            `;
 
                             historyTimeline.appendChild(timelineItem);
                         });
@@ -731,9 +731,9 @@
                                 const listItem = document.createElement('li');
                                 listItem.className = 'flex items-start';
                                 listItem.innerHTML = `
-                                            <span class="mr-2">•</span>
-                                            <span>${reqName}</span>
-                                        `;
+                                                    <span class="mr-2">•</span>
+                                                    <span>${reqName}</span>
+                                                `;
                                 if (requirementsList) requirementsList.appendChild(listItem);
                             });
                         } else {
@@ -826,11 +826,11 @@
                         trackButton.disabled = false;
                         // Restore the original button content with both icon and text
                         trackButton.innerHTML = `
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                    </svg>
-                                    <span>Track Application</span>
-                                `;
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            </svg>
+                                            <span>Track Application</span>
+                                        `;
                     }
                 });
 
@@ -924,10 +924,11 @@
 
                         <!-- CTA Button -->
                         <a href="/coconut-farmers-faq" target="_blank"
-                            class="inline-flex items-center gap-2 px-6 py-3 text-white font-semibold text-sm rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
+                            class="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3 text-white font-semibold text-xs sm:text-sm md:text-base rounded-lg shadow-md hover:shadow-lg transition-all duration-200 w-full sm:w-auto"
                             style="background-color: #09ca59ff;">
-                            Alamin ang buong detalye
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <span class="truncate">Alamin ang buong detalye</span>
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 7l5 5m0 0l-5 5m5-5H6">
                                 </path>
