@@ -12,12 +12,14 @@ class ApplicationController extends Controller
 {
     private $mainApiUrl;
     private $mainApiToken;
+    private $mainApiTimeout;
 
     public function __construct()
     {
-        // Load configuration from .env file
-        $this->mainApiUrl = env('MAIN_API_URL', 'https://pcapptrack-admin.tech/api');
-        $this->mainApiToken = env('MAIN_API_TOKEN');
+        // Load configuration from config file
+        $this->mainApiUrl = config('api.main.url');
+        $this->mainApiToken = config('api.main.token');
+        $this->mainApiTimeout = config('api.main.timeout');
     }
 
     /**
@@ -42,7 +44,7 @@ class ApplicationController extends Controller
 
             // Check if API token is configured
             if (empty($this->mainApiToken)) {
-                Log::error('Main API token is not configured in .env file');
+                Log::error('Main API token is not configured in config/api.php');
                 return response()->json([
                     'success' => false,
                     'message' => 'API configuration error. Please contact administrator.',
@@ -56,7 +58,7 @@ class ApplicationController extends Controller
                 'apiUrl' => $this->mainApiUrl
             ]);
 
-            $response = Http::timeout(30)
+            $response = Http::timeout($this->mainApiTimeout)
                 ->withHeaders([
                     'Authorization' => 'Bearer ' . $this->mainApiToken,
                     'Accept' => 'application/json',
