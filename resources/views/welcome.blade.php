@@ -332,6 +332,7 @@
 
 
                             <!-- 3. Requirements Status / Warning Section (if needed) -->
+                            <!-- Provincial Missing Requirements -->
                             <div id="requirementsWarningSection"
                                 class="hidden bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4">
                                 <div class="flex items-start gap-2 sm:gap-3">
@@ -342,7 +343,7 @@
                                             clip-rule="evenodd" />
                                     </svg>
                                     <div class="flex-1 min-w-0">
-                                        <p class="text-xs font-semibold text-yellow-700 mb-1.5">Mahalagang Paalala:</p>
+                                        <p class="text-xs font-semibold text-yellow-700 mb-1.5">Mahalagang Paalala (Provincial Level):</p>
                                         <div id="modalRequirements">
                                             <p class="text-xs text-yellow-800 mb-2" id="requirementsMessage">
                                                 Kinakailangan maipasa ang mga kulang na dokumento sa provincial na opisina
@@ -352,6 +353,32 @@
                                                 <!-- Requirements will be populated dynamically -->
                                             </ul>
                                             <p class="text-sm text-gray-500 hidden" id="noRequirementsMsg">No requirements
+                                                submitted yet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Regional Missing Requirements -->
+                            <div id="regionalRequirementsWarningSection"
+                                class="hidden bg-red-50 border border-red-200 rounded-lg p-3 sm:p-4">
+                                <div class="flex items-start gap-2 sm:gap-3">
+                                    <svg class="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs font-semibold text-red-700 mb-1.5">Mahalagang Paalala (Regional Level):</p>
+                                        <div id="modalRegionalRequirements">
+                                            <p class="text-xs text-red-800 mb-2" id="regionalRequirementsMessage">
+                                                Kinakailangang maipasa o maitama ang anumang kulang o hindi wastong dokumento at makipag-ugnayan sa provincial office kung saan nagsumite ng iyong aplikasyon.
+                                            </p>
+                                            <ul class="space-y-1 text-xs text-red-900" id="regionalRequirementsList">
+                                                <!-- Regional requirements will be populated dynamically -->
+                                            </ul>
+                                            <p class="text-sm text-gray-500 hidden" id="noRegionalRequirementsMsg">No regional requirements
                                                 submitted yet</p>
                                         </div>
                                     </div>
@@ -424,18 +451,19 @@
                     'Validation': 'Validation',
                     'Visitation': 'Site Visitation',
                     'Inspection': 'Compliance Inspection',
-                    'Generation': 'Endorsement Generation',
+                    'Generation': 'For Endorsement to Regional',
                     'Compliance': 'Compliant',
-                    'Mark_Received': 'Received by Regional',
-                    'Member_Listing': 'Listing of Members',
-                    'Compliance_Check': 'Compliance Check',
+                    'Mark_Received': 'Received by PCA Regional Office V',
+                    'Member_Listing': 'Listing of Members for Certification',
+                    'Compliance_Check': 'Document Check of Submitted Requirements',
                     'Additional_Requirement': 'Additional Documents',
                     'Visitation_Regional': 'Regional Level Visitation',
+                    'Regional_Generation': 'For Endorsement to Implmenting Agency',
                     'Qualification': 'Qualification Verification',
                     'Monitoring': 'Under Monitoring',
                     'Verification': 'Verification',
                     'Certification': 'Application Certification',
-                    'Assigned_for_Review': 'Assigned for Review'
+                    'Assigned_for_Review': 'Assigned for Regional Review'
                 };
 
                 // Stage color mapping for visual distinction
@@ -698,16 +726,24 @@
                     const requirementsList = document.getElementById('requirementsList');
                     const noRequirementsMsg = document.getElementById('noRequirementsMsg');
 
+                    // Regional requirements elements
+                    const regionalRequirementsWarningSection = document.getElementById('regionalRequirementsWarningSection');
+                    const regionalRequirementsList = document.getElementById('regionalRequirementsList');
+                    const noRegionalRequirementsMsg = document.getElementById('noRegionalRequirementsMsg');
+
                     // Clear previous content
                     if (requirementsList) requirementsList.innerHTML = '';
+                    if (regionalRequirementsList) regionalRequirementsList.innerHTML = '';
 
                     // Log the requirements field from the API
                     console.log('Requirements check:', {
-                        requirements: data.requirements
+                        requirements: data.requirements,
+                        regional_requirements: data.regional_requirements
                     });
 
+                    // Handle Provincial Requirements
                     const requirementsData = data.requirements || [];
-                    console.log('Requirements data:', requirementsData);
+                    console.log('Provincial Requirements data:', requirementsData);
 
                     if (requirementsData && requirementsData.length > 0) {
                         // Find missing requirements
@@ -746,6 +782,50 @@
                         // No requirements data available - hide warning section
                         if (requirementsWarningSection) {
                             requirementsWarningSection.classList.add('hidden');
+                        }
+                    }
+
+                    // Handle Regional Requirements
+                    const regionalRequirementsData = data.regional_requirements || [];
+                    console.log('Regional Requirements data:', regionalRequirementsData);
+
+                    if (regionalRequirementsData && regionalRequirementsData.length > 0) {
+                        // Find missing regional requirements
+                        const missingRegionalRequirements = regionalRequirementsData.filter(req => {
+                            const reqStatus = (req.status || '').toLowerCase();
+                            return reqStatus === 'missing' || reqStatus === 'kulang' || reqStatus === 'hindi kumpleto';
+                        });
+
+                        if (missingRegionalRequirements.length > 0) {
+                            // Show regional warning section
+                            if (regionalRequirementsWarningSection) {
+                                regionalRequirementsWarningSection.classList.remove('hidden');
+                            }
+                            if (noRegionalRequirementsMsg) {
+                                noRegionalRequirementsMsg.classList.add('hidden');
+                            }
+
+                            // Add each missing regional requirement to the list
+                            missingRegionalRequirements.forEach(req => {
+                                const reqName = req.requirement_name || 'Unknown Requirement';
+                                const listItem = document.createElement('li');
+                                listItem.className = 'flex items-start';
+                                listItem.innerHTML = `
+                                                    <span class="mr-2">•</span>
+                                                    <span>${reqName}</span>
+                                                `;
+                                if (regionalRequirementsList) regionalRequirementsList.appendChild(listItem);
+                            });
+                        } else {
+                            // All regional requirements are complete - hide warning section
+                            if (regionalRequirementsWarningSection) {
+                                regionalRequirementsWarningSection.classList.add('hidden');
+                            }
+                        }
+                    } else {
+                        // No regional requirements data available - hide warning section
+                        if (regionalRequirementsWarningSection) {
+                            regionalRequirementsWarningSection.classList.add('hidden');
                         }
                     }
                 }
