@@ -1,4 +1,10 @@
-@extends('layouts.public')
+@extends('layouts.public', [
+    'title' => 'PCAppTrack - Track CFIDP Applications | PCA Region V Application Status',
+    'description' => 'PCAppTrack ay online system ng CFIDP sa PCA Region V para sa pagsubaybay ng mga application. I-track ang status ng inyong coconut farmers application gamit ang Application ID - walang login na kailangan.',
+    'keywords' => 'PCAppTrack, PCA Region V, CFIDP tracking, coconut farmers application, Philippine Coconut Authority, magniniyog, coconut industry Philippines, application status, online tracking',
+    'ogTitle' => 'PCAppTrack - Mabilis na Track ng CFIDP Applications',
+    'ogDescription' => 'Track ang progress ng inyong CFIDP application sa PCA Region V. Mabilis, organisado, para sa mga magniniyog na Pilipino.'
+])
 
 @push('head')
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -495,29 +501,7 @@
                     'Assigned_for_Review': 'bg-yellow-50 text-yellow-600'
                 };
 
-                // Helper function to print all top-level keys in an object
-                function debugObject(obj, label = 'Object keys') {
-                    if (obj && typeof obj === 'object') {
-                        console.log(`${label}:`, Object.keys(obj));
-                        // Print a sample of each field's value
-                        Object.keys(obj).forEach(key => {
-                            const value = obj[key];
-                            if (value !== null && value !== undefined) {
-                                if (Array.isArray(value)) {
-                                    console.log(`${key} (array):`, value.length > 0 ? value[0] : 'empty array');
-                                } else if (typeof value === 'object') {
-                                    console.log(`${key} (object):`, Object.keys(value));
-                                } else {
-                                    console.log(`${key} (${typeof value}):`, value);
-                                }
-                            } else {
-                                console.log(`${key}: null or undefined`);
-                            }
-                        });
-                    } else {
-                        console.log(`${label}: Not an object or null`);
-                    }
-                }
+                // Helper function removed - no debug logging needed
 
                 // Autocomplete helper functions
                 function getTrackedApplications() {
@@ -622,8 +606,6 @@
                 // This API will then fetch from the main project (pcapptrack-admin.tech)
                 async function fetchApplicationData(applicationId) {
                     try {
-                        console.log(`Fetching application data for: ${applicationId}`);
-
                         // Call this project's own API endpoint
                         // The ApplicationController will handle fetching from the main project
                         const response = await fetch(`/api/applications/${applicationId}`, {
@@ -643,28 +625,14 @@
                         }
 
                         const responseData = await response.json();
-                        console.log('Full API Response:', responseData);
-
-                        // Use our debug function to print detailed information about the response
-                        debugObject(responseData, 'API Response Keys');
-
-                        // If the data is nested in a 'data' property, debug that too
-                        if (responseData.data) {
-                            debugObject(responseData.data, 'Nested Data Keys');
-                        }
-
                         return responseData;
                     } catch (error) {
-                        console.error('API Error:', error);
                         throw error;
                     }
                 }
 
                 // Function to populate modal with application data
                 function populateModal(data) {
-                    // Log the received data to debug
-                    console.log('Data for modal:', data);
-
                     // Update the modal with the received data using the exact field names from the API
                     document.getElementById('modalApplicationTitle').textContent = data.application_title || '-';
                     document.getElementById('modalReferenceId').textContent = data.application_id || '-';
@@ -678,7 +646,6 @@
                             contactPersonName = data.contact_person.name;
                         }
                     }
-                    console.log('Contact person resolved to:', contactPersonName);
                     document.getElementById('modalProponent').textContent = contactPersonName;
 
                     // Format date if available
@@ -694,11 +661,9 @@
 
                     // Get the status - handle both general_status and application_status field names
                     const statusCode = data.application_status || data.general_status || 'Unknown';
-                    console.log('Status code:', statusCode);
 
                     // Use the more readable display name if available, or fall back to the status code
                     const displayStatus = stageDisplayNames[statusCode] || statusCode;
-                    console.log('Display status:', displayStatus);
 
                     // Update the status text directly
                     if (statusTextElement) {
@@ -710,14 +675,8 @@
                     const emptyHistoryState = document.getElementById('emptyHistoryState');
                     historyTimeline.innerHTML = '';
 
-                    // Log the stage history field from the API
-                    console.log('History field check:', {
-                        stage_history: data.stage_history
-                    });
-
                     // Use the exact stage_history field from the API
                     const historyData = data.stage_history || [];
-                    console.log('Using history data:', historyData);
 
                     if (historyData && historyData.length > 0) {
                         // Hide the empty state
@@ -736,8 +695,6 @@
                         let firstItem = true;
 
                         sortedHistoryData.forEach((item, index) => {
-                            // Debug each history item to check for conducted_by field
-                            console.log(`History item ${index}:`, item, 'Has conducted_by:', item.hasOwnProperty('conducted_by'));
 
                             const timelineItem = document.createElement('div');
                             timelineItem.className = 'flex gap-4 relative mb-6';
@@ -843,15 +800,8 @@
                     if (requirementsList) requirementsList.innerHTML = '';
                     if (regionalRequirementsList) regionalRequirementsList.innerHTML = '';
 
-                    // Log the requirements field from the API
-                    console.log('Requirements check:', {
-                        requirements: data.requirements,
-                        regional_requirements: data.regional_requirements
-                    });
-
                     // Handle Provincial Requirements
                     const requirementsData = data.requirements || [];
-                    console.log('Provincial Requirements data:', requirementsData);
 
                     if (requirementsData && requirementsData.length > 0) {
                         // Find missing requirements
@@ -895,7 +845,6 @@
 
                     // Handle Regional Requirements
                     const regionalRequirementsData = data.regional_requirements || [];
-                    console.log('Regional Requirements data:', regionalRequirementsData);
 
                     if (regionalRequirementsData && regionalRequirementsData.length > 0) {
                         // Find missing regional requirements
@@ -971,15 +920,11 @@
                     trackButton.innerHTML = '<div class="animate-pulse">Searching...</div>';
 
                     try {
-                        console.log('Attempting to fetch application:', applicationId);
                         const response = await fetchApplicationData(applicationId);
 
                         if (!response) {
                             throw new Error('No data received from API');
                         }
-
-                        // Print the entire response structure to help with debugging
-                        console.log('Full API response structure:', response);
 
                         // Based on the ApplicationController.php, the API response is:
                         // { success: true, message: "...", data: { ... } }
@@ -989,14 +934,10 @@
                         if (response.success === true && response.data) {
                             // The API is returning the expected format with a nested data object
                             applicationData = response.data;
-                            console.log('Using nested data from response.data as expected');
                         } else {
                             // Fallback - use the response itself
                             applicationData = response;
-                            console.log('WARNING: Unexpected API response format, using direct response data');
                         }
-
-                        console.log('Processing data for modal display:', applicationData);
                         
                         // Save this application to tracked applications
                         const appTitle = applicationData.application_title || '';
@@ -1011,7 +952,6 @@
                             applicationModal.classList.remove('opacity-0');
                         }, 10);
                     } catch (error) {
-                        console.error('Error in track button handler:', error);
                         errorText.textContent = error.message;
                         errorMessage.classList.remove('hidden');
                     } finally {

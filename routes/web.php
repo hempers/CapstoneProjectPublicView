@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Api\ApplicationController;
+use App\Http\Controllers\SitemapController;
 
 
 Route::get('/', function () {
@@ -14,4 +14,6 @@ Route::get('/coconut-farmers-faq', function () {
     return view('coconut-farmers-faq');
 })->name('coconut-farmers-faq');
 
-Route::get('/applications/{applicationId}', [ApplicationController::class, 'show']);
+// SEO Routes
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
+Route::get('/robots.txt', [SitemapController::class, 'robots'])->name('robots');

@@ -1,4 +1,10 @@
-@extends('layouts.public', ['title' => 'Ano Ang CFIDP?'])
+@extends('layouts.public', [
+    'title' => 'Ano Ang CFIDP? - Frequently Asked Questions | PCAppTrack',
+    'description' => 'Alamin ang mga detalye tungkol sa Coconut Farmers and Industry Development Plan (CFIDP). FAQ para sa mga magniniyog at coconut industry sa Pilipinas.',
+    'keywords' => 'CFIDP, Coconut Farmers and Industry Development Plan, magniniyog, coconut industry Philippines, PCA programs, coconut levy fund, FAQ',
+    'ogTitle' => 'CFIDP FAQ - Gabay para sa mga Magniniyog',
+    'ogDescription' => 'Komprehensibong gabay tungkol sa CFIDP programs, benefits, at application process para sa mga coconut farmers sa Pilipinas.'
+])
 
 @push('head')
     <script src="https://cdn.tailwindcss.com"></script>
