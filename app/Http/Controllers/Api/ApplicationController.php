@@ -32,9 +32,28 @@ class ApplicationController extends Controller
     public function show(string $applicationId): JsonResponse
     {
         try {
-            // Validate the application ID format to prevent invalid queries.
+            // Enhanced validation for application ID format
             if (empty($applicationId) || !is_string($applicationId)) {
-                Log::warning('Invalid application ID format received.', ['applicationId' => $applicationId]);
+                Log::warning('Invalid application ID format received.', [
+                    'applicationId' => $applicationId,
+                    'ip' => request()->ip(),
+                    'user_agent' => request()->userAgent()
+                ]);
+                return response()->json([
+                    'success' => false,
+                    'message' => 'Invalid application ID format.',
+                    'data' => null
+                ], 400)
+                ->header('Cache-Control', 'no-cache, no-store, must-revalidate, private')
+                ->header('X-Robots-Tag', 'noindex, nofollow, nosnippet, noarchive');
+            }
+
+            // Additional security: Check for suspicious patterns
+            if (preg_match('/[<>"\'\\\\\x00-\x1f\x7f-\xff]/', $applicationId)) {
+                Log::warning('Potentially malicious application ID detected.', [
+                    'applicationId' => $applicationId,
+                    'ip' => request()->ip()
+                ]);
                 return response()->json([
                     'success' => false,
                     'message' => 'Invalid application ID format.',
@@ -42,26 +61,44 @@ class ApplicationController extends Controller
                 ], 400);
             }
 
+            // Rate limiting check - additional layer
+            $cacheKey = 'api_limit_' . request()->ip();
+            $attempts = cache()->get($cacheKey, 0);
+            if ($attempts > 100) { // Per hour limit
+                Log::warning('Rate limit exceeded for IP', ['ip' => request()->ip()]);
+                return response()->json([
+                    'success' => false,
+                    'message' => 'Too many requests. Please try again later.',
+                    'data' => null
+                ], 429);
+            }
+
             // Check if API token is configured
             if (empty($this->mainApiToken)) {
                 Log::error('Main API token is not configured in config/api.php');
                 return response()->json([
                     'success' => false,
-                    'message' => 'API configuration error. Please contact administrator.',
+                    'message' => 'Service temporarily unavailable. Please try again later.',
                     'data' => null
-                ], 500);
+                ], 503);
             }
 
             // Make API request to main project with authentication
             Log::info('Fetching application data from main API', [
                 'applicationId' => $applicationId,
-                'apiUrl' => $this->mainApiUrl
+                'apiUrl' => $this->mainApiUrl,
+                'ip' => request()->ip()
             ]);
+
+            // Track API usage
+            cache()->put($cacheKey, $attempts + 1, now()->addHour());
 
             $response = Http::timeout($this->mainApiTimeout)
                 ->withHeaders([
                     'Authorization' => 'Bearer ' . $this->mainApiToken,
                     'Accept' => 'application/json',
+                    'User-Agent' => 'PCAppTrack-Public/1.0',
+                    'X-Forwarded-For' => request()->ip()
                 ])
                 ->get("{$this->mainApiUrl}/public/applications/{$applicationId}", [
                     'include_missing_requirements' => true
@@ -76,7 +113,11 @@ class ApplicationController extends Controller
                     'statusCode' => $response->status()
                 ]);
 
-                return response()->json($data);
+                return response()->json($data)
+                    ->header('Cache-Control', 'no-cache, no-store, must-revalidate, private')
+                    ->header('Pragma', 'no-cache')
+                    ->header('Expires', '0')
+                    ->header('X-Robots-Tag', 'noindex, nofollow, nosnippet, noarchive');
             }
 
             // Handle various error responses from main API
@@ -86,7 +127,9 @@ class ApplicationController extends Controller
                     'success' => false,
                     'message' => 'Application not found.',
                     'data' => null
-                ], 404);
+                ], 404)
+                ->header('Cache-Control', 'no-cache, no-store, must-revalidate, private')
+                ->header('X-Robots-Tag', 'noindex, nofollow, nosnippet, noarchive');
             }
 
             if ($response->status() === 401) {
