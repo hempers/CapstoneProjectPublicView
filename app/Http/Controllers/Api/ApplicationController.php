@@ -63,7 +63,9 @@ class ApplicationController extends Controller
                     'Authorization' => 'Bearer ' . $this->mainApiToken,
                     'Accept' => 'application/json',
                 ])
-                ->get("{$this->mainApiUrl}/public/applications/{$applicationId}");
+                ->get("{$this->mainApiUrl}/public/applications/{$applicationId}", [
+                    'include_missing_requirements' => true
+                ]);
 
             // Handle API response
             if ($response->successful()) {
