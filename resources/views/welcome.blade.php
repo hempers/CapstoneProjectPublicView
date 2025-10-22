@@ -79,13 +79,18 @@
                         <!-- Search Form -->
                         <div class="space-y-5">
                             <!-- Input Field -->
-                            <div>
+                            <div class="relative">
                                 <label for="referenceIdInput" class="block text-sm font-semibold text-gray-700 mb-3">
                                     Enter Application ID
                                 </label>
                                 <input type="text" id="referenceIdInput" placeholder="Halimbawa: FADXUQAWUN"
                                     class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-base transition-all duration-200 hover:border-gray-300"
-                                    style="font-family: 'Montserrat', sans-serif;">
+                                    style="font-family: 'Montserrat', sans-serif;" autocomplete="off">
+                                
+                                <!-- Autocomplete Suggestions Dropdown -->
+                                <div id="autocompleteSuggestions" class="hidden absolute top-full left-0 right-0 bg-white border-2 border-gray-200 rounded-xl mt-1 shadow-lg z-50 max-h-48 overflow-y-auto">
+                                    <!-- Suggestions will be populated dynamically -->
+                                </div>
                             </div>
 
                             <!-- Search Button -->
@@ -444,6 +449,10 @@
                 const loadingSpinner = document.getElementById('loadingSpinner');
                 const errorMessage = document.getElementById('errorMessage');
                 const errorText = document.getElementById('errorText');
+                const autocompleteSuggestions = document.getElementById('autocompleteSuggestions');
+
+                // LocalStorage key for storing tracked applications
+                const TRACKED_APPS_KEY = 'pca_tracked_applications';
 
                 // Stage mapping for display purposes
                 const stageDisplayNames = {
@@ -458,7 +467,7 @@
                     'Compliance_Check': 'Document Check of Submitted Requirements',
                     'Additional_Requirement': 'Additional Documents',
                     'Visitation_Regional': 'Regional Level Visitation',
-                    'Regional_Generation': 'For Endorsement to Implmenting Agency',
+                    'Regional_Generation': 'For Endorsement to Implementing Agency',
                     'Qualification': 'Qualification Verification',
                     'Monitoring': 'Under Monitoring',
                     'Verification': 'Verification',
@@ -508,6 +517,105 @@
                     } else {
                         console.log(`${label}: Not an object or null`);
                     }
+                }
+
+                // Autocomplete helper functions
+                function getTrackedApplications() {
+                    try {
+                        const stored = localStorage.getItem(TRACKED_APPS_KEY);
+                        return stored ? JSON.parse(stored) : [];
+                    } catch (e) {
+                        console.error('Error getting tracked applications:', e);
+                        return [];
+                    }
+                }
+
+                function saveTrackedApplication(applicationId, applicationTitle = '') {
+                    try {
+                        let trackedApps = getTrackedApplications();
+                        
+                        // Remove if already exists to avoid duplicates
+                        trackedApps = trackedApps.filter(app => app.id !== applicationId);
+                        
+                        // Add to beginning of array (most recent first)
+                        trackedApps.unshift({
+                            id: applicationId,
+                            title: applicationTitle,
+                            lastTracked: new Date().toISOString()
+                        });
+                        
+                        // Keep only last 10 tracked applications
+                        if (trackedApps.length > 10) {
+                            trackedApps = trackedApps.slice(0, 10);
+                        }
+                        
+                        localStorage.setItem(TRACKED_APPS_KEY, JSON.stringify(trackedApps));
+                    } catch (e) {
+                        console.error('Error saving tracked application:', e);
+                    }
+                }
+
+                function showAutocompleteSuggestions(query = '') {
+                    const trackedApps = getTrackedApplications();
+                    
+                    if (trackedApps.length === 0) {
+                        hideAutocompleteSuggestions();
+                        return;
+                    }
+                    
+                    // Filter applications based on query
+                    const filteredApps = query.trim() === '' 
+                        ? trackedApps 
+                        : trackedApps.filter(app => 
+                            app.id.toLowerCase().includes(query.toLowerCase())
+                        );
+                    
+                    if (filteredApps.length === 0) {
+                        hideAutocompleteSuggestions();
+                        return;
+                    }
+                    
+                    // Build suggestions HTML
+                    const headerHTML = `
+                        <div class="px-4 py-2 bg-gray-50 border-b border-gray-200 text-xs font-medium text-gray-600">
+                            Previously Tracked Applications
+                        </div>
+                    `;
+                    
+                    const suggestionsHTML = filteredApps.map(app => {
+                        const lastTracked = new Date(app.lastTracked).toLocaleDateString('en-PH', {
+                            month: 'short',
+                            day: 'numeric'
+                        });
+                        
+                        return `
+                            <div class="suggestion-item px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-b-0" data-app-id="${app.id}">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-medium text-gray-900 text-sm truncate">${app.id}</div>
+                                    </div>
+                                    <div class="text-xs text-gray-400 ml-2 flex-shrink-0">${lastTracked}</div>
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+                    
+                    autocompleteSuggestions.innerHTML = headerHTML + suggestionsHTML;
+                    autocompleteSuggestions.classList.remove('hidden');
+                    
+                    // Add click handlers to suggestion items
+                    autocompleteSuggestions.querySelectorAll('.suggestion-item').forEach(item => {
+                        item.addEventListener('click', function() {
+                            const appId = this.getAttribute('data-app-id');
+                            referenceIdInput.value = appId;
+                            hideAutocompleteSuggestions();
+                            referenceIdInput.focus();
+                        });
+                    });
+                }
+
+                function hideAutocompleteSuggestions() {
+                    autocompleteSuggestions.classList.add('hidden');
                 }
 
                 // Function to fetch application data via this project's API
@@ -889,6 +997,11 @@
                         }
 
                         console.log('Processing data for modal display:', applicationData);
+                        
+                        // Save this application to tracked applications
+                        const appTitle = applicationData.application_title || '';
+                        saveTrackedApplication(applicationId, appTitle);
+                        
                         populateModal(applicationData);
 
                         // Show modal with animation
@@ -961,9 +1074,44 @@
                     });
                 }
 
-                // Clear error when user starts typing
+                // Handle input events for autocomplete and error clearing
                 referenceIdInput.addEventListener('input', function () {
                     errorMessage.classList.add('hidden');
+                    
+                    // Show suggestions based on current input
+                    const query = this.value.trim();
+                    if (query.length >= 0) { // Show suggestions even for empty input
+                        showAutocompleteSuggestions(query);
+                    } else {
+                        hideAutocompleteSuggestions();
+                    }
+                });
+
+                // Show suggestions when input is focused
+                referenceIdInput.addEventListener('focus', function () {
+                    const query = this.value.trim();
+                    showAutocompleteSuggestions(query);
+                });
+
+                // Hide suggestions when clicking outside
+                document.addEventListener('click', function (e) {
+                    if (!referenceIdInput.contains(e.target) && !autocompleteSuggestions.contains(e.target)) {
+                        hideAutocompleteSuggestions();
+                    }
+                });
+
+                // Handle keyboard navigation in suggestions
+                referenceIdInput.addEventListener('keydown', function (e) {
+                    const suggestions = autocompleteSuggestions.querySelectorAll('.suggestion-item');
+                    if (suggestions.length === 0) return;
+
+                    if (e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        // Focus first suggestion or move down
+                        // Implementation can be enhanced for full keyboard navigation
+                    } else if (e.key === 'Escape') {
+                        hideAutocompleteSuggestions();
+                    }
                 });
             });
         </script>
