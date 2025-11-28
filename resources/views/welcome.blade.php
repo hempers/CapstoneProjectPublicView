@@ -618,17 +618,16 @@
                         });
 
                         if (!response.ok) {
-                            if (response.status === 404) {
-                                throw new Error('Please check your Application ID.');
-                            } else {
-                                throw new Error(`API Error: ${response.status} - ${response.statusText}`);
-                            }
+                            // Don't expose technical error details to users
+                            // Just throw a generic error that will be caught and handled with a user-friendly message
+                            throw new Error('Application not found');
                         }
 
                         const responseData = await response.json();
                         return responseData;
                     } catch (error) {
-                        throw error;
+                        // Re-throw as a simple error without technical details
+                        throw new Error('Application not found');
                     }
                 }
 
@@ -953,7 +952,9 @@
                             applicationModal.classList.remove('opacity-0');
                         }, 10);
                     } catch (error) {
-                        errorText.textContent = error.message;
+                        // Show user-friendly error message without technical details
+                        const userFriendlyMessage = 'Hindi mahanap ang Application ID. Mangyaring suriin kung tama ang inyong Application ID.';
+                        errorText.textContent = userFriendlyMessage;
                         errorMessage.classList.remove('hidden');
                     } finally {
                         loadingSpinner.classList.add('hidden');
