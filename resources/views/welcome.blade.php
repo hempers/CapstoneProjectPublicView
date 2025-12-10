@@ -466,7 +466,7 @@
                     'Validation': 'Validation',
                     'Visitation': 'Site Visitation',
                     'Inspection': 'Compliance Inspection',
-                    'Generation': 'For Endorsement to Regional',
+                    'Generation': 'Endorsed to Regional Office',
                     'Compliance': 'Compliant',
                     'Mark_Received': 'Received by PCA Regional Office V',
                     'Member_Listing': 'Listing of Members for Certification',
@@ -474,7 +474,7 @@
                     'Additional_Requirement': 'Additional Documents',
                     'Regional_Visitation': 'Regional Level Visitation',
                     'Regional_Inspection': 'Regional Level Inspection',
-                    'Regional_Generation': 'For Endorsement to Implementing Agency',
+                    'Regional_Generation': 'Endorsed to Implementing Agency',
                     'Qualification': 'Qualification Verification',
                     'Monitoring': 'Under Monitoring',
                     'Verification': 'Verification',
@@ -693,8 +693,14 @@
 
                         // Add a visual label for the most recent activity
                         let firstItem = true;
+                        
+                        // Check if the last item (oldest in timeline display) is Regional_Generation or Monitoring
+                        const lastItem = sortedHistoryData[sortedHistoryData.length - 1];
+                        const isEndStage = lastItem && (lastItem.stage === 'Regional_Generation' || lastItem.stage === 'Monitoring');
 
                         sortedHistoryData.forEach((item, index) => {
+                            const isLastItem = index === sortedHistoryData.length - 1;
+                            const isEndOfTimeline = isLastItem && isEndStage;
 
                             const timelineItem = document.createElement('div');
                             timelineItem.className = 'flex gap-4 relative mb-6';
@@ -739,10 +745,18 @@
                                 lineColor = 'bg-green-200';
                                 firstItem = false;
                             }
+                            
+                            // Override colors for end of timeline (Regional_Generation or Monitoring as last item)
+                            if (isEndOfTimeline) {
+                                dotColor = 'bg-red-500';
+                                dotBorder = 'border-red-100';
+                                stageClass = 'bg-red-100 text-red-700'; // Red for end of timeline
+                            }
 
                             timelineItem.innerHTML = `
                                                 <div class="relative">
-                                                    <div class="absolute -left-[6px] top-[6px] h-3 w-3 rounded-full ${dotColor} border-2 ${dotBorder} ${firstItem ? 'shadow-sm' : ''}"></div>
+                                                    <div class="absolute -left-[6px] top-[6px] h-3 w-3 rounded-full ${dotColor} border-2 ${dotBorder} ${firstItem || isEndOfTimeline ? 'shadow-sm' : ''}"></div>
+                                                    ${!isEndOfTimeline ? '<div class="absolute left-0 top-[18px] bottom-0 w-0.5 ' + lineColor + '"></div>' : ''}
                                                     <div class="ml-6 sm:ml-8">
                                                         <!-- Status badge at top -->
                                                         <div class="${stageClass} inline-block text-xs font-medium px-3 py-1 rounded-xl mb-2">
