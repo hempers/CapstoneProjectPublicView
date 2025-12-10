@@ -694,13 +694,8 @@
                         // Add a visual label for the most recent activity
                         let firstItem = true;
                         
-                        // Check if the last item (oldest in timeline display) is Regional_Generation or Monitoring
-                        const lastItem = sortedHistoryData[sortedHistoryData.length - 1];
-                        const isEndStage = lastItem && (lastItem.stage === 'Regional_Generation' || lastItem.stage === 'Monitoring');
-
                         sortedHistoryData.forEach((item, index) => {
-                            const isLastItem = index === sortedHistoryData.length - 1;
-                            const isEndOfTimeline = isLastItem && isEndStage;
+                            const isEndOfTimeline = index === sortedHistoryData.length - 1;
 
                             const timelineItem = document.createElement('div');
                             timelineItem.className = 'flex gap-4 relative mb-6';
