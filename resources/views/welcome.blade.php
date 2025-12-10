@@ -755,7 +755,7 @@
 
                             timelineItem.innerHTML = `
                                                 <div class="relative">
-                                                    <div class="absolute -left-[6px] top-[6px] h-3 w-3 rounded-full ${dotColor} border-2 ${dotBorder} ${firstItem || isEndOfTimeline ? 'shadow-sm' : ''}"></div>
+                                                    <div class="absolute -left-[6px] top-[6px] h-3 w-3 rounded-full ${dotColor} border-2 ${dotBorder}"></div>
                                                     ${!isEndOfTimeline ? '<div class="absolute left-0 top-[18px] bottom-0 w-0.5 ' + lineColor + '"></div>' : ''}
                                                     <div class="ml-6 sm:ml-8">
                                                         <!-- Status badge at top -->
